@@ -1,6 +1,15 @@
-export default {
-  server: {
-    host: true,
-    open: true,
+// vite.config.js
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  base: "",
+  esbuild: {
+    supported: {
+      "top-level-await": true,
+    },
   },
-};
+  server: {
+    open: true,
+    host: true,
+  },
+});
