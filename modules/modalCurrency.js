@@ -89,6 +89,24 @@ export const settingNodepBonus = (currencyAbbr) => {
   });
 };
 
+const settingFooterPayments = (currencyAbbr) => {
+  const selectedCurrency =
+    nodepBonuses.find((c) => c.currency === currencyAbbr) ||
+    nodepBonuses.find((c) => c.currency === "EUR");
+
+  const footerPaymentsList = document.querySelector(".footer-payments-list");
+  footerPaymentsList.innerHTML = "";
+
+  selectedCurrency.paymentMethods.forEach((payment) => {
+    const img = document.createElement("img");
+    img.classList.add("grayscale-100");
+    img.classList.add("transition");
+    img.classList.add("hover:grayscale-0");
+    img.setAttribute("src", `./img/payments/${payment}.svg`);
+    footerPaymentsList.appendChild(img);
+  });
+};
+
 async function settingModalCurrency() {
   try {
     let locationData = await getLocation();
@@ -116,6 +134,7 @@ async function settingModalCurrency() {
       settingInitialBonusValue(currencyData.abbr);
       settingNodepBonus(currencyData.abbr);
     }, 300);
+    settingFooterPayments(currencyData.abbr);
   } catch (error) {
     console.error("Error fetching location data:", error);
   }

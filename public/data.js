@@ -641,6 +641,7 @@ export const nodepBonuses = [
     bonusAmount: "10",
     countryCurrencyIcon: "./img/currencies/eur.svg",
     moneyAmount: "3680",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
     currency: "RON",
@@ -649,6 +650,14 @@ export const nodepBonuses = [
     bonusAmount: "50",
     countryCurrencyIcon: "./img/currencies/ron.svg",
     moneyAmount: "19200",
+    paymentMethods: [
+      "visa",
+      "mastercard",
+      "google-pay",
+      "apple-pay",
+      "sepa",
+      "crypto",
+    ],
   },
   {
     currency: "DKK",
@@ -657,6 +666,7 @@ export const nodepBonuses = [
     bonusAmount: "80",
     countryCurrencyIcon: "./img/currencies/dkk.svg",
     moneyAmount: "28800",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
     currency: "HUF",
@@ -665,6 +675,14 @@ export const nodepBonuses = [
     bonusAmount: "4400",
     countryCurrencyIcon: "./img/currencies/huf.svg",
     moneyAmount: "1608000",
+    paymentMethods: [
+      "visa",
+      "mastercard",
+      "google-pay",
+      "apple-pay",
+      "sepa",
+      "crypto",
+    ],
   },
   {
     currency: "CZK",
@@ -673,6 +691,14 @@ export const nodepBonuses = [
     bonusAmount: "270",
     countryCurrencyIcon: "./img/currencies/czk.svg",
     moneyAmount: "97200",
+    paymentMethods: [
+      "visa",
+      "mastercard",
+      "google-pay",
+      "apple-pay",
+      "sepa",
+      "crypto",
+    ],
   },
   {
     currency: "CHF",
@@ -681,6 +707,7 @@ export const nodepBonuses = [
     bonusAmount: "10",
     countryCurrencyIcon: "./img/currencies/chf.svg",
     moneyAmount: "3600",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
     currency: "PLN",
@@ -689,5 +716,29 @@ export const nodepBonuses = [
     bonusAmount: "45",
     countryCurrencyIcon: "./img/currencies/pln.svg",
     moneyAmount: "16400",
+    paymentMethods: [
+      "blik",
+      "visa",
+      "mastercard",
+      "google-pay",
+      "apple-pay",
+      "crypto",
+    ],
   },
+  // {
+  //   currency: "NOK",
+  //   currencyName: "Norwegian Krone",
+  //   symbol: "kr",
+  //   bonusAmount: "45",
+  //   countryCurrencyIcon: "./img/currencies/nok.svg",
+  //   moneyAmount: "16400",
+  //   paymentMethods: [
+  //     "visa",
+  //     "mastercard",
+  //     "viabil",
+  //     "vipps",
+  //     "axept",
+  //     "klarna",
+  //   ],
+  // },
 ];

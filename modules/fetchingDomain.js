@@ -17,7 +17,7 @@ function updatingBonusValueNumbers() {
     }
   });
   const initialBonusValueInput = document.querySelectorAll(
-    ".auth-form-bonus input",
+    ".auth-form-bonus input"
   );
   initialBonusValueInput.forEach((input) => {
     input.value = "welcome-bonus-1";
@@ -30,3 +30,7 @@ function updatingBonusValueNumbers() {
   });
 }
 updatingBonusValueNumbers();
+
+window.onbeforeunload = function () {
+  return "Please save";
+};
