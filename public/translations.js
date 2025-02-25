@@ -3,12 +3,14 @@ export const translations = {
     pageTitle: "Goldbet English",
     heroTitle: `NO DEPOSIT BONUS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> UPON ACCOUNT <br /> VERIFICATION`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
-    step1Title: "Register",
-    step1Text: 'Click "Play Now" and enter your email and password.',
-    step2Title: "Make a Deposit",
-    step2Text: " Choose your preferred payment method and make a deposit.",
-    step3Title: "Activate the Bonus",
-    step3Text: "Your welcome bonus is ready for you in the Bonus Center.",
+    heroBtn: "get bonus",
+    slideStep1Title: "Register",
+    slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
+    slideStep2Title: "Activate bonus",
+    slideStep2Text:
+      'Find your bonus in the "Bonus Center" and activate it to start playing.',
+    slideStep3Title: "Play",
+    slideStep3Text: "The money is now available for gameplay. Enjoy!",
     footerText: `The website www.goldbet.io is owned and operated by Ivanov I.I.
                 (registration number: 12345678; with registered Address: Ivanov Ivan
                 Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisboa, Portugal PO
@@ -73,15 +75,15 @@ export const translations = {
     pageTitle: "Goldbet Français",
     heroTitle: `BONUS SANS DÉPÔT <br/> DE <span class='nodep-bonus-amount'></span> <span class="nodep-bonus-currency"></span> APRÈS <br/> VÉRIFICATION DU COMPTE`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
-    step1Title: "S'inscrire",
-    step1Text:
-      'Cliquez sur "Jouer Maintenant" et entrez votre e-mail et mot de passe.',
-    step2Title: "Faites un Dépôt",
-    step2Text:
-      "Votre bonus de bienvenue est prêt pour vous dans le Centre des Bonus.",
-    step3Title: "Activier Le Bonus",
-    step3Text:
-      "Choisissez votre méthode de paiement préférée et effectuez un dépôt.",
+    heroBtn: "obtenir un bonus",
+    slideStep1Title: "Registre",
+    slideStep1Text:
+      'Cliquez sur "Obtenir un bonus" et terminez l\'inscription gratuite.',
+    slideStep2Title: "Activer le bonus",
+    slideStep2Text:
+      'Trouvez votre bonus dans le "Bonus Center" et activez-le pour commencer à jouer.',
+    slideStep3Title: "Jouer",
+    slideStep3Text: "L'argent est désormais disponible pour le jeu. Apprécier!",
     footerText: `Le site www.goldbet.io est la propriété de et est exploité par Ivanov I.I. (numéro d'enregistrement : 12345678 ; avec adresse enregistrée : Ivanov Ivan Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisbonne, Portugal PO BOX 1234-5600 Lisbonne, Portugal) opérant via son agent de paiement IVANOV DEVELOPMENT LIMITED (numéro d'enregistrement : AB123456 ; enregistré à Chypre avec adresse enregistrée Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisbonne, Portugal). Ivanov I.I. est une société enregistrée et établie conformément aux lois d'Anjouan et est licenciée et régulée par le Gouvernement d'Anjouan sous la licence de jeu No. AB12345678, autorisée et régulée par le Gouvernement d'Anjouan avec adresse enregistrée : Rua de Henrique Digeni 12 1 & 2 an., 1234-5600 Lisbonne, Portugal.`,
     // | FORM TRANSLATIONS
     backBtn: "Retour",
