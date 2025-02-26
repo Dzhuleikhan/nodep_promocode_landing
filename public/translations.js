@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    pageTitle: "Goldbet English",
+    pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `NO DEPOSIT BONUS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> UPON ACCOUNT <br /> VERIFICATION`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
@@ -72,7 +72,7 @@ export const translations = {
     returnToWebsite: "Return to Website",
   },
   fr: {
-    pageTitle: "Goldbet Français",
+    pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `BONUS SANS DÉPÔT <br/> DE <span class='nodep-bonus-amount'></span> <span class="nodep-bonus-currency"></span> APRÈS <br/> VÉRIFICATION DU COMPTE`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
