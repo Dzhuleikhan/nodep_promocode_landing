@@ -352,17 +352,17 @@
       </footer>
       <!-- Two step overlay -->
       <div
-        class="two-step-overlay fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] large:py-5 small:justify-start small:gap-[15px] small:px-[15px] small:pt-[24px]"
+        class="two-step-overlay fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
       >
         <!-- Header -->
         <div
-          class="flex items-center justify-between small:absolute small:left-0 small:top-[15px] small:px-[15px]"
+          class="flex items-center w-full justify-between max-[576px]:absolute max-[576px]:left-0 max-[576px]:top-[15px] max-[576px]:px-[15px]"
         >
           <div
             class="two-step-header-back-btn invisible flex items-center gap-3 opacity-0"
           >
             <button
-              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-white/5 small:h-10 small:w-10"
+              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-white/5 max-[576px]:h-10 max-[576px]:w-10"
             >
               <svg
                 class="pointer-events-none"
@@ -383,11 +383,11 @@
             </button>
             <span
               data-translate="backBtn"
-              class="text-lg font-bold leading-[117%] tracking-[0.02em] text-white small:hidden"
+              class="text-lg font-bold leading-[117%] tracking-[0.02em] text-white max-[576px]:hidden"
               >Back</span
             >
           </div>
-          <a href="/" class="inline-flex items-center gap-1 small:hidden">
+          <a href="/" class="inline-flex items-center gap-1 max-[576px]:hidden">
             <img
               class="tbl:max-w-[100px]"
               width="134"
@@ -406,11 +406,11 @@
           <div class="two-step-modal-close-btn flex items-center gap-3">
             <span
               data-translate="closeBtn"
-              class="text-lg font-bold leading-[117%] tracking-[0.02em] text-white"
+              class="text-lg font-bold leading-[117%] max-[576px]:hidden tracking-[0.02em] text-white"
               >Close</span
             >
             <button
-              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-white/5"
+              class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-white/5 max-[576px]:h-10 max-[576px]:w-10"
             >
               <svg
                 class="pointer-events-none"
@@ -435,7 +435,7 @@
         <div
           class="two-step-modal two-step-modal-socials flex items-center justify-center"
         >
-          <div class="w-full max-w-[500px] p-[30px] small:p-0">
+          <div class="w-full max-w-[500px] p-[30px] max-[576px]:p-0">
             <form action="#" class="two-step-form">
               <!-- FIRST BONUS STEP -->
               <div class="two-step-form-step is-active two-step-form-step-1">
@@ -647,7 +647,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn mt-[15px] cursor-pointer grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] small:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn mt-[15px] cursor-pointer grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
                 >
                   <span class="h-6 w-6"></span>
                   <p data-translate="continueBtn">Continue</p>
@@ -699,13 +699,13 @@
                     <div class="space-y-[5px]">
                       <p
                         data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
                         10 EUR to the balance
                       </p>
                       <p
                         data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
                       >
                         Without deposit
                       </p>
@@ -785,7 +785,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] small:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <span class="h-6 w-6"></span>
@@ -838,13 +838,13 @@
                     <div class="space-y-[5px]">
                       <p
                         data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
                         10 EUR to the balance
                       </p>
                       <p
                         data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
                       >
                         Without deposit
                       </p>
@@ -1054,7 +1054,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] small:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <span class="h-6 w-6"></span>
@@ -1107,13 +1107,13 @@
                     <div class="space-y-[5px]">
                       <p
                         data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
                         10 EUR to the balance
                       </p>
                       <p
                         data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
                       >
                         Without deposit
                       </p>
@@ -1553,7 +1553,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="submit-btn mt-[15px] cursor-pointer flex min-h-[68px] w-full justify-center gap-[6px] rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] small:text-base xs:mt-[10px] xs:py-4"
+                  class="submit-btn mt-[15px] cursor-pointer flex min-h-[68px] w-full justify-center gap-[6px] rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <svg
@@ -1684,13 +1684,13 @@
               <div class="space-y-[5px]">
                 <p
                   data-translate="depToBalance"
-                  class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
+                  class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                 >
                   Welcome Bonus
                 </p>
                 <p
                   data-translate="withoutDeposit"
-                  class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                  class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
                 >
                   Without deposit
                 </p>
@@ -1739,7 +1739,7 @@
         </div>
         <!-- Progress -->
         <div
-          class="flex w-full items-center justify-center text-[18px] font-bold leading-[117%] small:-order-3"
+          class="flex w-full items-center justify-center text-[18px] font-bold leading-[117%] max-[576px]:-order-3"
         >
           <div
             class="two-step-progress-circle active flex h-8 w-8 items-center justify-center rounded-full border border-[#8726ff] text-white"
