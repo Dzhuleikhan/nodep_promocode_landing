@@ -1,17 +1,6 @@
 import gsap from "gsap";
 import { Power3 } from "gsap";
 
-gsap.fromTo(
-  ".fire-img-1",
-  { y: 30 },
-  {
-    y: 0,
-    ease: "none",
-    yoyo: true,
-    duration: 4,
-    repeat: -1,
-  }
-);
 gsap.to(".hero-main-img", {
   y: 20,
   ease: "none",
