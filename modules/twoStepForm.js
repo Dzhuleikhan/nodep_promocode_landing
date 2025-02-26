@@ -81,7 +81,7 @@ twoStepBonusCheckbox.forEach((checkbox) => {
     if (bonusValue === "welcome-bonus-1" || bonusValue === "0") {
       twoStepFormData.promocode = "";
     } else {
-      twoStepFormData.promocode = "GATES81";
+      twoStepFormData.promocode = "BASS98";
     }
     twoStepFormData.bonus = bonusValue;
 

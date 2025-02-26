@@ -1,6 +1,13 @@
 import gsap from "gsap";
 import { Power3 } from "gsap";
 
+gsap.to(".water-img", {
+  y: -20,
+  ease: "none",
+  yoyo: true,
+  duration: 4,
+  repeat: -1,
+});
 gsap.to(".hero-main-img", {
   y: 20,
   ease: "none",
