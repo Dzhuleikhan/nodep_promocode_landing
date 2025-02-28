@@ -55,6 +55,11 @@ function updateButtonText(lang) {
   const languageNames = {
     en: "English",
     fr: "Français",
+    ro: "Română",
+    hu: "Magyar",
+    pl: "Polski",
+    cz: "Čeština",
+    sl: "Slovenščina",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -72,6 +77,11 @@ async function determineLanguage() {
   const countryLangMap = {
     EN: "en",
     FR: "fr",
+    RO: "ro",
+    HU: "hu",
+    PL: "pl",
+    CZ: "cz",
+    SL: "sl",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";
@@ -87,6 +97,9 @@ async function mainFunction() {
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
       settingNodepBonus(currencyData.abbr);
+      document.querySelectorAll(".current-domain").forEach((domain) => {
+        domain.innerHTML = window.location.hostname;
+      });
     }, 200);
   } catch (error) {
     console.error("Error determining language:", error);
@@ -107,5 +120,8 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     settingInitialBonusValue(currencyData.abbr);
     settingNodepBonus(currencyData.abbr);
     twoStepFormData.lang = localStorage.getItem("preferredLanguage");
+    document.querySelectorAll(".current-domain").forEach((domain) => {
+      domain.innerHTML = window.location.hostname;
+    });
   });
 });

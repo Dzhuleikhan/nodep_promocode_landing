@@ -6,6 +6,11 @@ import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { canadaProvincesCities } from "../public/data";
 import flatpickr from "flatpickr";
+import {
+  defaulPromocode,
+  receivedPromocode,
+  togglePromocodeWrapper,
+} from "./promocodeCheck";
 
 // ? SOCIALS TWO STEP FORM
 
@@ -80,8 +85,16 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 
     if (bonusValue === "welcome-bonus-1" || bonusValue === "0") {
       twoStepFormData.promocode = "";
+      if (receivedPromocode) {
+        togglePromocodeWrapper("hide");
+      }
     } else {
-      twoStepFormData.promocode = "GATES81";
+      twoStepFormData.promocode = receivedPromocode
+        ? receivedPromocode
+        : defaulPromocode;
+      if (receivedPromocode) {
+        togglePromocodeWrapper("show");
+      }
     }
     twoStepFormData.bonus = bonusValue;
 
@@ -904,19 +917,19 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   console.log(twoStepFormData);
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
-    email
-  )}&password=${password}&phone=${phone}&bonus=${bonus}${
-    promocode ? "&promocode=" + promocode : ""
-  }&lang=${lang}${firstName ? "&f_name=" + firstName : ""}${
-    lastName ? "&l_name=" + lastName : ""
-  }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
-    country ? "&country=" + country : ""
-  }${state ? "&state=" + state : ""}${city ? "&city=" + city : ""}${
-    zipCode ? "&postal=" + zipCode : ""
-  }${address ? "&address=" + encodeURIComponent(address) : ""}${
-    cid ? "&cid=" + cid : ""
-  }`;
+  // window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
+  //   email
+  // )}&password=${password}&phone=${phone}&bonus=${bonus}${
+  //   promocode ? "&promocode=" + promocode : ""
+  // }&lang=${lang}${firstName ? "&f_name=" + firstName : ""}${
+  //   lastName ? "&l_name=" + lastName : ""
+  // }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
+  //   country ? "&country=" + country : ""
+  // }${state ? "&state=" + state : ""}${city ? "&city=" + city : ""}${
+  //   zipCode ? "&postal=" + zipCode : ""
+  // }${address ? "&address=" + encodeURIComponent(address) : ""}${
+  //   cid ? "&cid=" + cid : ""
+  // }`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email

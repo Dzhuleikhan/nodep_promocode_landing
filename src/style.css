@@ -392,3 +392,7 @@
   right: -10px;
   top: -3px;
 }
+
+.form-promocode-wrapper.is-applied {
+  display: block;
+}

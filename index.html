@@ -93,6 +93,81 @@
                     <span class="pointer-events-none">Français</span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    data-lang="ro"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/ro.svg"
+                      alt="RO flag"
+                    />
+                    <span class="pointer-events-none">Română</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="hu"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/hu.svg"
+                      alt="HU flag"
+                    />
+                    <span class="pointer-events-none">Magyar</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="pl"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/pl.svg"
+                      alt="PL flag"
+                    />
+                    <span class="pointer-events-none">Polski</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="cz"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/cz.svg"
+                      alt="CZ flag"
+                    />
+                    <span class="pointer-events-none">Čeština</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="sl"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/sl.svg"
+                      alt="SL flag"
+                    />
+                    <span class="pointer-events-none">Slovenščina</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -157,7 +232,7 @@
               >
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
+                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
                 ></h1>
                 <p
                   data-translate="heroSubtitle"
@@ -165,7 +240,7 @@
                 ></p>
                 <button
                   data-translate="heroBtn"
-                  data-promocode="GATES81"
+                  data-promocode=""
                   class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[576px]:mt-[210px] max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16"
                 >
                   GET BONUS
@@ -591,13 +666,15 @@
                   </label>
                 </div>
                 <!-- promocode -->
-                <div class="mt-[15px] hidden xs:mt-[10px]">
-                  <p
+                <div
+                  class="form-promocode-wrapper pointer-events-none mt-[15px] hidden xs:mt-[10px]"
+                >
+                  <!-- <p
                     data-translate="iHavePromoCode"
                     class="two-step-promocode-btn cursor-pointer text-center text-base font-bold leading-[131%] text-white underline underline-offset-4"
                   >
                     I Have a Promo-Code
-                  </p>
+                  </p> -->
                   <div
                     class="two-step-promocode-wrapper two-step-input-wrapper relative hidden grid-cols-[auto_1fr_auto] items-center gap-[5px] rounded-2xl bg-white px-4 py-[10px]"
                   >
@@ -616,14 +693,14 @@
                     </svg>
                     <input
                       id="promocode"
-                      class="two-step-promocode-input two-step-general-input relative -bottom-1 w-full bg-transparent text-base font-bold uppercase tracking-[-0.02em] text-[#755eeb] outline-none"
+                      class="two-step-promocode-input two-step-general-input relative w-full bg-transparent text-base font-bold uppercase tracking-[-0.02em] text-[#755eeb] outline-none"
                       type="text"
                     />
-                    <label
+                    <!-- <label
                       data-translate="promoCodePlaceHolder"
                       class="two-step-promocode-label two-step-general-label pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 text-base font-bold tracking-[-0.02em] text-[#585858] transition-all"
                       >Promo Code</label
-                    >
+                    > -->
                     <div>
                       <button
                         data-translate="promoCodeApplyBtn"
@@ -1739,7 +1816,7 @@
           </button>
           <button
             data-translate="returnToWebsite"
-            class="two-step-return-btn mt-9 cursor-pointer text-center font-bold text-[#8a95c1] underline underline-offset-4"
+            class="two-step-return-btn mt-9 cursor-pointer text-center font-bold text-[#ffffff] underline underline-offset-4"
           >
             Return to Website
           </button>
