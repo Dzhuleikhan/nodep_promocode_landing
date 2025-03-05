@@ -12,6 +12,10 @@ import {
   togglePromocodeWrapper,
 } from "./promocodeCheck";
 
+document.querySelectorAll("input").forEach((input) => {
+  input.setAttribute("autocomplete", "off");
+});
+
 // ? SOCIALS TWO STEP FORM
 
 export let twoStepFormData = {

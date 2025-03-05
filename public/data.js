@@ -601,13 +601,16 @@ export const countryLanguagesMap = {
   ID: ["id"],
   CN: ["zh"],
   DK: ["de"],
-  NO: ["en"],
+  NO: ["no"],
   RO: ["ro"],
   MD: ["ro"],
   HU: ["hu"],
   PL: ["pl"],
   CZ: ["cs"],
   SI: ["sl"],
+  GR: ["el"],
+  SE: ["sv"],
+  SK: ["sk"],
 };
 
 export const SupportedLanguages = [
@@ -631,6 +634,10 @@ export const SupportedLanguages = [
   "pl",
   "cs",
   "sl",
+  "el",
+  "no",
+  "sv",
+  "sk",
 ];
 
 export const nodepBonuses = [
