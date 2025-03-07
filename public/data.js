@@ -610,7 +610,7 @@ export const countryLanguagesMap = {
   ID: ["id"],
   CN: ["zh"],
   DK: ["de"],
-  NO: ["no"],
+  NO: ["nb"],
   RO: ["ro"],
   MD: ["ro"],
   HU: ["hu"],
@@ -644,7 +644,7 @@ export const SupportedLanguages = [
   "cs",
   "sl",
   "el",
-  "no",
+  "nb",
   "sv",
   "sk",
 ];

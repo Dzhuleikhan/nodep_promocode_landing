@@ -80,7 +80,6 @@ export const availableLang = ["en", "fr"];
 
 async function determineLanguage() {
   const location = await getLocation();
-  console.log(location);
 
   const countryLangMap = {
     EN: "en",
