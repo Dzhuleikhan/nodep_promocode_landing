@@ -58,7 +58,7 @@ function updateButtonText(lang) {
     ro: "Română",
     hu: "Magyar",
     pl: "Polski",
-    cz: "Čeština",
+    cs: "Čeština",
     sl: "Slovenščina",
     gr: "Ελληνικά",
     no: "Norwegian",
@@ -147,6 +147,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     const targetLang = e.target.getAttribute("data-lang");
     // changeLanguage(targetLang);
     applyTranslations(targetLang);
+    updateButtonText(targetLang);
     localStorage.setItem(
       "preferredLanguage",
       getSupportedLanguage(targetLang.toUpperCase())
