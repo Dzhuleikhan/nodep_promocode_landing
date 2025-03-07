@@ -76,56 +76,77 @@ function updateButtonText(lang) {
   document.querySelector("html").setAttribute("lang", lang);
 }
 
-export const availableLang = ["en", "fr"];
+// async function determineLanguage() {
+//   const location = await getLocation();
+//   console.log(location.countryCode);
 
-async function determineLanguage() {
-  const location = await getLocation();
+//   const countryLangMap = {
+//     EN: "en",
+//     FR: "fr",
+//     RO: "ro",
+//     HU: "hu",
+//     PL: "pl",
+//     CZ: "cz",
+//     SL: "sl",
+//     GR: "gr",
+//     NO: "no",
+//     SE: "se",
+//     SK: "sk",
+//     RU: "ru",
+//     ES: "es",
+//     PT: "pt",
+//     // Add more country codes and their corresponding languages as needed
+//   };
+//   lang = countryLangMap[location.countryCode] || "en";
 
-  const countryLangMap = {
-    EN: "en",
-    FR: "fr",
-    RO: "ro",
-    HU: "hu",
-    PL: "pl",
-    CZ: "cz",
-    SL: "sl",
-    GR: "gr",
-    NO: "no",
-    SE: "se",
-    SK: "sk",
-    RU: "ru",
-    ES: "es",
-    PT: "pt",
-    // Add more country codes and their corresponding languages as needed
-  };
-  lang = countryLangMap[location.countryCode] || "en";
+//   return lang;
+// }
 
-  return lang;
+// async function mainFunction() {
+//   try {
+//     lang = await determineLanguage();
+
+//     changeLanguage(lang);
+//     localStorage.setItem("preferredLanguage", lang);
+//     setTimeout(() => {
+//       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
+//       settingNodepBonus(currencyData.abbr);
+//       document.querySelectorAll(".current-domain").forEach((domain) => {
+//         domain.innerHTML = window.location.hostname;
+//       });
+//     }, 200);
+//   } catch (error) {
+//     console.error("Error determining language:", error);
+//   }
+// }
+// mainFunction();
+
+const detectedLanguage = localStorage.getItem("preferredLanguage");
+
+function applyTranslations(lang) {
+  const language = translations[lang] ? lang : "en"; // Use 'en' if language not in translations
+  const elements = document.querySelectorAll("[data-translate]");
+
+  elements.forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (translations[language] && translations[language][key]) {
+      element.innerHTML = translations[language][key];
+    }
+  });
+  document.querySelectorAll(".current-domain").forEach((domain) => {
+    domain.innerHTML = window.location.hostname;
+  });
 }
 
-async function mainFunction() {
-  try {
-    lang = await determineLanguage();
-    changeLanguage(lang);
-    localStorage.setItem("preferredLanguage", lang);
-    setTimeout(() => {
-      const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-      settingNodepBonus(currencyData.abbr);
-      document.querySelectorAll(".current-domain").forEach((domain) => {
-        domain.innerHTML = window.location.hostname;
-      });
-    }, 200);
-  } catch (error) {
-    console.error("Error determining language:", error);
-  }
-}
-mainFunction();
+applyTranslations(detectedLanguage);
+updateButtonText(detectedLanguage);
 
 document.querySelectorAll(".language-link").forEach((langBtn) => {
   langBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const targetLang = e.target.getAttribute("data-lang");
-    changeLanguage(targetLang);
+    // changeLanguage(targetLang);
+    applyTranslations(targetLang);
     localStorage.setItem(
       "preferredLanguage",
       getSupportedLanguage(targetLang.toUpperCase())

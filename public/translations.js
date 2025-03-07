@@ -308,7 +308,7 @@ export const translations = {
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
   },
-  cz: {
+  cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře Gates of Olympus",
