@@ -34,7 +34,3 @@ function updatingBonusValueNumbers() {
   });
 }
 updatingBonusValueNumbers();
-
-window.onbeforeunload = function () {
-  return "Please save";
-};
