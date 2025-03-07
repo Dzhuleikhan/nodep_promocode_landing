@@ -494,6 +494,15 @@ export const countryCurrencyData = [
     amount: "20.000",
     spins: "200FS",
   },
+  {
+    countries: ["NO"],
+    countryCurrency: "NOK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Norwegian krone",
+    countryCurrencyIcon: "./img/currencies/nok.svg",
+    amount: "16.400",
+    spins: "200FS",
+  },
 ];
 
 export const canadaProvincesCities = {
@@ -732,20 +741,20 @@ export const nodepBonuses = [
       "crypto",
     ],
   },
-  // {
-  //   currency: "NOK",
-  //   currencyName: "Norwegian Krone",
-  //   symbol: "kr",
-  //   bonusAmount: "45",
-  //   countryCurrencyIcon: "./img/currencies/nok.svg",
-  //   moneyAmount: "16400",
-  //   paymentMethods: [
-  //     "visa",
-  //     "mastercard",
-  //     "viabil",
-  //     "vipps",
-  //     "axept",
-  //     "klarna",
-  //   ],
-  // },
+  {
+    currency: "NOK",
+    currencyName: "Norwegian Krone",
+    symbol: "kr",
+    bonusAmount: "45",
+    countryCurrencyIcon: "./img/currencies/nok.svg",
+    moneyAmount: "16400",
+    paymentMethods: [
+      "visa",
+      "mastercard",
+      "viabil",
+      "vipps",
+      "axept",
+      "klarna",
+    ],
+  },
 ];

@@ -80,6 +80,7 @@ export const availableLang = ["en", "fr"];
 
 async function determineLanguage() {
   const location = await getLocation();
+  console.log(location);
 
   const countryLangMap = {
     EN: "en",
@@ -107,7 +108,10 @@ async function mainFunction() {
   try {
     lang = await determineLanguage();
     changeLanguage(lang);
-    localStorage.setItem("preferredLanguage", lang);
+    localStorage.setItem(
+      "preferredLanguage",
+      getSupportedLanguage(lang.toUpperCase())
+    );
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
       settingNodepBonus(currencyData.abbr);
