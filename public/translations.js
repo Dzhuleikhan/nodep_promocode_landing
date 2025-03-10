@@ -16,7 +16,7 @@ export const translations = {
     backBtn: "Back",
     closeBtn: "Close",
     // | Step 1
-    depToBalance: `100 FREE SPINS`,
+    depToBalance: `<span>100 FREE SPINS</span>`,
     withoutDeposit: "Without deposit",
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
@@ -78,7 +78,7 @@ export const translations = {
     backBtn: "Retour",
     closeBtn: "Fermer",
     // | Step 1
-    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> au solde`,
+    depToBalance: `<span>de 100 tours gratuits</span>`,
     withoutDeposit: "Sans dépôt",
     step1Title: "Choisissez votre bonus",
     welcomeBonus: "Bonus de bienvenue",
@@ -140,7 +140,7 @@ export const translations = {
     backBtn: "Înapoi",
     closeBtn: "Închide",
     // | Step 1
-    depToBalance: "100 ROTIRI GRATUITE",
+    depToBalance: "<span>100 ROTIRI GRATUITE</span>",
     withoutDeposit: "Fără depunere",
     step1Title: "Alege-ți Bonusul",
     welcomeBonus: "Bonus de Bun Venit",
@@ -202,7 +202,7 @@ export const translations = {
     backBtn: "Vissza",
     closeBtn: "Bezárás",
     // | Step 1
-    depToBalance: `100 INGYENES PÖRGETÉS`,
+    depToBalance: `<span>100 INGYENES PÖRGETÉS</span>`,
     withoutDeposit: "Befizetés nélkül",
     step1Title: "Válaszd ki a bónuszodat",
     welcomeBonus: "Üdvözlő Bónusz",
@@ -264,7 +264,7 @@ export const translations = {
     backBtn: "Wstecz",
     closeBtn: "Zamknij",
     // | Step 1
-    depToBalance: `100 DARMOWYCH SPINÓW`,
+    depToBalance: `<span>100 DARMOWYCH SPINÓW</span>`,
     withoutDeposit: "Bez depozytu",
     step1Title: "Wybierz Swój Bonus",
     welcomeBonus: "Bonus Powitalny",
@@ -328,7 +328,7 @@ export const translations = {
     backBtn: "Zpět",
     closeBtn: "Zavřít",
     // | Step 1
-    depToBalance: `100 VOLNÝCH TOČENÍ`,
+    depToBalance: `<span>100 VOLNÝCH TOČENÍ</span>`,
     withoutDeposit: "Bez vkladu",
     step1Title: "Vyberte svůj bonus",
     welcomeBonus: "Vítací bonus",
@@ -391,7 +391,7 @@ export const translations = {
     backBtn: "Nazaj",
     closeBtn: "Zapri",
     // | Step 1
-    depToBalance: `100 BREZPLAČNIH VRTLJEV`,
+    depToBalance: `<span>100 BREZPLAČNIH VRTLJEV</span>`,
     withoutDeposit: "Brez pologa",
     step1Title: "Izberite svoj bonus",
     welcomeBonus: "Dobrodošli bonus",
@@ -454,7 +454,7 @@ export const translations = {
     backBtn: "Πίσω",
     closeBtn: "Κλείσιμο",
     // | Step 1
-    depToBalance: `100 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ`,
+    depToBalance: `<span>100 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ</span>`,
     withoutDeposit: "Χωρίς κατάθεση",
     step1Title: "Επιλέξτε το μπόνους σας",
     welcomeBonus: "Μπόνους καλωσορίσματος",
@@ -515,7 +515,7 @@ export const translations = {
     backBtn: "Tilbake",
     closeBtn: "Lukk",
     // | Step 1
-    depToBalance: `100 GRATISSPIINN`,
+    depToBalance: `<span>100 GRATISSPIINN</span>`,
     withoutDeposit: "Uten innskudd",
     step1Title: "Velg din bonus",
     welcomeBonus: "Velkomstbonus",
@@ -577,7 +577,7 @@ export const translations = {
     backBtn: "Tillbaka",
     closeBtn: "Stäng",
     // | Step 1
-    depToBalance: `100 GRATISSNURR`,
+    depToBalance: `<span>100 GRATISSNURR</span>`,
     withoutDeposit: "Utan insättning",
     step1Title: "Välj din bonus",
     welcomeBonus: "Välkomstbonus",
@@ -639,7 +639,7 @@ export const translations = {
     backBtn: "Späť",
     closeBtn: "Zatvoriť",
     // | Step 1
-    depToBalance: `100 VOĽNÝCH SPINOV`,
+    depToBalance: `<span>100 VOĽNÝCH SPINOV</span>`,
     withoutDeposit: "Bez vkladu",
     step1Title: "Vyberte si svoj bonus",
     welcomeBonus: "Uvítací bonus",
@@ -701,7 +701,7 @@ export const translations = {
     backBtn: "Назад",
     closeBtn: "Закрыть",
     // | Step 1
-    depToBalance: `100 ФРИСПИНОВ`,
+    depToBalance: `<span>100 ФРИСПИНОВ</span>`,
     withoutDeposit: "Без депозита",
     step1Title: "Выберите свой бонус",
     welcomeBonus: "Приветственный бонус",
@@ -763,7 +763,7 @@ export const translations = {
     backBtn: "Atrás",
     closeBtn: "Cerrar",
     // | Step 1
-    depToBalance: `100 GIROS GRATIS`,
+    depToBalance: `<span>100 GIROS GRATIS</span>`,
     withoutDeposit: "Sin depósito",
     step1Title: "Elige tu bono",
     welcomeBonus: "Bono de bienvenida",
@@ -824,7 +824,7 @@ export const translations = {
     backBtn: "Voltar",
     closeBtn: "Fechar",
     // | Step 1
-    depToBalance: `100 RODADAS GRÁTIS`,
+    depToBalance: `<span>100 RODADAS GRÁTIS</span>`,
     withoutDeposit: "Sem depósito",
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
