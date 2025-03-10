@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `NO DEPOSIT BONUS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> UPON ACCOUNT <br /> VERIFICATION`,
+    heroTitle: `NO DEPOSIT BONUS <br /> <span>100 free spins</span> UPON <br /> ACCOUNT VERIFICATION`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
@@ -11,23 +11,12 @@ export const translations = {
       'Find your bonus in the "Bonus Center" and activate it to start playing.',
     slideStep3Title: "Play",
     slideStep3Text: "The money is now available for gameplay. Enjoy!",
-    footerText: `The website www.goldbet.io is owned and operated by Ivanov I.I.
-                (registration number: 12345678; with registered Address: Ivanov Ivan
-                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisboa, Portugal PO
-                BOX 1234-5600 Lisboa, Portugal) operating through its payment agent
-                IVANOV DEVELOPMENT LIMITED (registration number: AB123456;
-                registered in Cyprus with registered address Rua de Henrique Digeni
-                12, 1 & 2 an., 1234-5600 Lisboa, Portugal). Ivanov I.I. is a company
-                registered and established under the laws of Anjouan and licensed
-                and regulated by the Government of Anjouan under the gaming license
-                No. AB12345678, authorized and regulated by the Government of
-                Anjouan with registered address: Rua de Henrique Digeni 12 1 & 2
-                an., 1234-5600 Lisboa, Portugal.`,
+    footerText: `<span class="current-domain"></span> is an informational platform about bonuses and promotions in online casinos. All information provided is for informational and entertainment purposes only. Bonus terms and conditions may change without prior notice, and <span class="current-domain"></span> is not responsible for any discrepancies. Offers are only available to individuals aged 18 and over who are residents of eligible jurisdictions. Before registering or claiming any bonus, please read the terms and conditions of each casino carefully. Play responsibly!`,
     // | FORM TRANSLATIONS
     backBtn: "Back",
     closeBtn: "Close",
     // | Step 1
-    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> to the balance`,
+    depToBalance: `<span>100 FREE SPINS</span>`,
     withoutDeposit: "Without deposit",
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
@@ -73,7 +62,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `BONUS SANS DÉPÔT <br/> DE <span class='nodep-bonus-amount'></span> <span class="nodep-bonus-currency"></span> APRÈS <br/> VÉRIFICATION DU COMPTE`,
+    heroTitle: `BONUS SANS DÉPÔT <br/> <span>de 100 tours gratuits</span> APRÈS <br/> VÉRIFICATION DU COMPTE`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
@@ -84,12 +73,12 @@ export const translations = {
       'Trouvez votre bonus dans le "Bonus Center" et activez-le pour commencer à jouer.',
     slideStep3Title: "Jouer",
     slideStep3Text: "L'argent est désormais disponible pour le jeu. Apprécier!",
-    footerText: `Le site www.goldbet.io est la propriété de et est exploité par Ivanov I.I. (numéro d'enregistrement : 12345678 ; avec adresse enregistrée : Ivanov Ivan Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisbonne, Portugal PO BOX 1234-5600 Lisbonne, Portugal) opérant via son agent de paiement IVANOV DEVELOPMENT LIMITED (numéro d'enregistrement : AB123456 ; enregistré à Chypre avec adresse enregistrée Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisbonne, Portugal). Ivanov I.I. est une société enregistrée et établie conformément aux lois d'Anjouan et est licenciée et régulée par le Gouvernement d'Anjouan sous la licence de jeu No. AB12345678, autorisée et régulée par le Gouvernement d'Anjouan avec adresse enregistrée : Rua de Henrique Digeni 12 1 & 2 an., 1234-5600 Lisbonne, Portugal.`,
+    footerText: `<span class="current-domain"></span> est une plateforme d'information sur les bonus et promotions des casinos en ligne. Toutes les informations fournies sont à des fins informatives et de divertissement uniquement. Les conditions des bonus peuvent changer sans préavis, et <span class="current-domain"></span> n'est pas responsable des éventuelles divergences. Les offres ne sont disponibles que pour les personnes âgées de 18 ans et plus, résidant dans des juridictions éligibles. Avant de vous inscrire ou de réclamer un bonus, veuillez lire attentivement les termes et conditions de chaque casino. Jouez de manière responsable !`,
     // | FORM TRANSLATIONS
     backBtn: "Retour",
     closeBtn: "Fermer",
     // | Step 1
-    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> au solde`,
+    depToBalance: `<span>DE 100 TOURS GRATUITS</span>`,
     withoutDeposit: "Sans dépôt",
     step1Title: "Choisissez votre bonus",
     welcomeBonus: "Bonus de bienvenue",
