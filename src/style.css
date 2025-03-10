@@ -86,6 +86,7 @@
 
 .hero-title {
   text-shadow: 0 12px 16px #000;
+  text-transform: uppercase;
 }
 
 .hero-subtitle {
