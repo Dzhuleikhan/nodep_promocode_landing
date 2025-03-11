@@ -111,6 +111,10 @@ async function settingModalCurrency() {
   try {
     let locationData = await getLocation();
 
+    if (locationData.currency.code === "CHE") {
+      locationData.currency.code = "CHF";
+    }
+
     const currencyCode =
       nodepBonuses.find(
         (item) => item.currency === locationData.currency.code
