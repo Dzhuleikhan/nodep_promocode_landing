@@ -88,7 +88,7 @@ async function determineLanguage() {
     HU: "hu",
     PL: "pl",
     CZ: "cz",
-    SI: "sl",
+    SI: "si",
     GR: "gr",
     NO: "no",
     SE: "se",
