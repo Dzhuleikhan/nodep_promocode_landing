@@ -396,3 +396,7 @@
 .form-promocode-wrapper.is-applied {
   display: block;
 }
+
+.step-slider .swiper-wrapper {
+  align-items: center;
+}
