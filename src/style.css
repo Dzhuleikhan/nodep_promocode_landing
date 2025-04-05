@@ -396,3 +396,9 @@
 .form-promocode-wrapper.is-applied {
   display: block;
 }
+
+@media (max-width: 576px) {
+  .step-slider .swiper-wrapper {
+    align-items: center;
+  }
+}
