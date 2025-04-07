@@ -832,6 +832,10 @@ if (twoStepFormFourthStep) {
       input.style.color = "#8726FF";
     });
   });
+  twoStepPhoneInput.addEventListener("countrychange", () => {
+    twoStepPhoneInput.value = "";
+    validateInputs1("#4ED937", "#8726FF");
+  });
 }
 
 // | CHANGING STEPS
