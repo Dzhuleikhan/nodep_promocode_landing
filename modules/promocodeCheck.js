@@ -1,6 +1,6 @@
 import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "BUFFALO65";
+export const defaulPromocode = "HEIST75";
 document
   .querySelector(".hero-modal-open-btn")
   .setAttribute("data-promocode", defaulPromocode);
