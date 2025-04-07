@@ -8,10 +8,3 @@ gsap.to(".hero-img", {
   duration: 1,
   repeat: -1,
 });
-gsap.to(".fire-img", {
-  y: 20,
-  ease: "none",
-  yoyo: true,
-  duration: 2,
-  repeat: -1,
-});
