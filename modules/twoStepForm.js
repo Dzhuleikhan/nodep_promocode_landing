@@ -1,4 +1,4 @@
-import { countryFlags } from "../public/data";
+import { countryCurrencyData, countryFlags } from "../public/data";
 import { geoData, getLocation } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
@@ -121,6 +121,31 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 });
 
 export const settingInitialBonusValue = (currency) => {
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency
+  );
+
+  if (currencyEntry) {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.amount;
+    });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrencySymbol;
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = currencyEntry.spins;
+    });
+  } else {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = "4500";
+    });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = "€";
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = "200FS";
+    });
+  }
   if (exceptCurrencies.includes(currency)) {
     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
       text.innerHTML = "100%";
