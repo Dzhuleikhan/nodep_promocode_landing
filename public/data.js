@@ -225,7 +225,7 @@ export const countryCurrencyData = [
     countryCurrencySymbol: "AU$",
     countryCurrencyFullName: "Australian Dollar",
     countryCurrencyIcon: "./img/currencies/aud.svg",
-    amount: "14.000",
+    amount: "7.000",
     spins: "25FS",
   },
   {
@@ -368,7 +368,7 @@ export const countryCurrencyData = [
     countryCurrencySymbol: "NZ$",
     countryCurrencyFullName: "New Zealand Dollar",
     countryCurrencyIcon: "./img/currencies/nzd.svg",
-    amount: "15.000",
+    amount: "7.500",
     spins: "25FS",
   },
   {
@@ -473,7 +473,7 @@ export const countryCurrencyData = [
     countryCurrencySymbol: "Kč",
     countryCurrencyFullName: "Czech Koruna",
     countryCurrencyIcon: "./img/currencies/czk.svg",
-    amount: "120K",
+    amount: "120.000",
     spins: "200FS",
   },
   {
@@ -492,6 +492,15 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Polish Zloty",
     countryCurrencyIcon: "./img/currencies/pln.svg",
     amount: "20.000",
+    spins: "200FS",
+  },
+  {
+    countries: ["NO"],
+    countryCurrency: "NOK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Norwegian krone",
+    countryCurrencyIcon: "./img/currencies/nok.svg",
+    amount: "56.000",
     spins: "200FS",
   },
 ];
