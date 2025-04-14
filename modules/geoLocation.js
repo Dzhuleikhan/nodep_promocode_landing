@@ -20,7 +20,7 @@ export const getSupportedLanguage = (countryCode) => {
       }
     }
   }
-  return "en";
+  return "az";
 };
 
 localStorage.setItem(
