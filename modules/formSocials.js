@@ -251,7 +251,7 @@ formModals.forEach((modal) => {
 });
 
 const mainForm = document.querySelector(".socials-form");
-const lang = localStorage.getItem("preferredLanguage");
+let lang = localStorage.getItem("preferredLanguage");
 
 function disableFormWhileSubmitting() {
   mainForm.classList.add("loading");
@@ -280,7 +280,7 @@ if (mainForm) {
     formData.password = password.value;
     formData.currency = currency.value;
     formData.bonus = bonus;
-    formData.lang = localStorage.getItem("preferredLanguage");
+    lang = localStorage.getItem("preferredLanguage");
     formData.promocode = receivedPromocode;
 
     let code = socialsIti.getSelectedCountryData().dialCode;
@@ -367,7 +367,7 @@ if (mainForm) {
     formData.password = password.value;
     formData.currency = currency.value;
     formData.bonus = bonus;
-    formData.lang = localStorage.getItem("preferredLanguage");
+    lang = localStorage.getItem("preferredLanguage");
     formData.promocode = receivedPromocode;
 
     let code = socialsIti.getSelectedCountryData().dialCode;
@@ -393,13 +393,13 @@ if (mainForm) {
     if (formTab === "email") {
       disableFormWhileSubmitting();
 
-      window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
-        formData.currency
-      }&email=${formData.email}&password=${formData.password}${
-        formData.bonus === "" ? "" : "&bonus=" + formData.bonus
-      }${
-        formData.promocode ? "&promocode=" + formData.promocode : ""
-      }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+      // window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+      //   formData.currency
+      // }&email=${formData.email}&password=${formData.password}${
+      //   formData.bonus === "" ? "" : "&bonus=" + formData.bonus
+      // }${
+      //   formData.promocode ? "&promocode=" + formData.promocode : ""
+      // }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
