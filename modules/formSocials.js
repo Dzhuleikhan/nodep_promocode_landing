@@ -393,13 +393,13 @@ if (mainForm) {
     if (formTab === "email") {
       disableFormWhileSubmitting();
 
-      // window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
-      //   formData.currency
-      // }&email=${formData.email}&password=${formData.password}${
-      //   formData.bonus === "" ? "" : "&bonus=" + formData.bonus
-      // }${
-      //   formData.promocode ? "&promocode=" + formData.promocode : ""
-      // }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+      window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+        formData.currency
+      }&email=${formData.email}&password=${formData.password}${
+        formData.bonus === "" ? "" : "&bonus=" + formData.bonus
+      }${
+        formData.promocode ? "&promocode=" + formData.promocode : ""
+      }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
