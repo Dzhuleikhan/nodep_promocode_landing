@@ -1,6 +1,6 @@
 import { getLocation } from "./geoLocation";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
-import { twoStepFormData, settingInitialBonusValue } from "./twoStepForm";
+import { twoStepFormData } from "./twoStepForm";
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -133,9 +133,9 @@ async function settingModalCurrency() {
     setCurrency(currencyData.abbr, currencyData.name, currencyData.icon);
 
     twoStepFormData.currency = currencyData.abbr;
-    settingInitialBonusValue(twoStepFormData.currency);
+    // settingInitialBonusValue(twoStepFormData.currency);
     setTimeout(() => {
-      settingInitialBonusValue(currencyData.abbr);
+      // settingInitialBonusValue(currencyData.abbr);
       settingNodepBonus(currencyData.abbr);
     }, 300);
     settingFooterPayments(currencyData.abbr);
@@ -218,7 +218,7 @@ formCurrency.forEach((cur) => {
         // Two step currency update
         settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
         twoStepFormData.currency = currencyData.abbr;
-        settingInitialBonusValue(twoStepFormData.currency);
+        // settingInitialBonusValue(twoStepFormData.currency);
         settingNodepBonus(currencyData.abbr);
         document.querySelector(".bonus-currency-symbol").innerHTML =
           currencyData.symbol;

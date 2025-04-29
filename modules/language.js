@@ -1,7 +1,7 @@
 import { translations } from "/public/translations";
 import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
-import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
+import { twoStepFormData } from "./twoStepForm";
 import { settingNodepBonus } from "./modalCurrency";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
@@ -134,7 +134,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
       getSupportedLanguage(targetLang.toUpperCase())
     );
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-    settingInitialBonusValue(currencyData.abbr);
+    // settingInitialBonusValue(currencyData.abbr);
     settingNodepBonus(currencyData.abbr);
     twoStepFormData.lang = localStorage.getItem("preferredLanguage");
     document.querySelectorAll(".current-domain").forEach((domain) => {
