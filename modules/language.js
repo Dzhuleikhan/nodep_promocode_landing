@@ -70,7 +70,7 @@ function updateButtonText(lang) {
   };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/en.svg`
+    `./img/flags/${lang}.svg` || `./img/flags/cz.svg`
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
@@ -98,7 +98,7 @@ async function determineLanguage() {
     PT: "pt",
     // Add more country codes and their corresponding languages as needed
   };
-  lang = countryLangMap[location.countryCode] || "en";
+  lang = countryLangMap[location.countryCode] || "cz";
 
   return lang;
 }
