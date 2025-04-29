@@ -2,7 +2,7 @@ export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> up to <span>120,000 CZK</span> <br/> + <span>200</span> free spins <br/> on your first deposit`,
+    heroSubtitle: `<span>+550%</span> up to <span>120,000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> free spins <br/ class="max-[576px]:hidden"> welcome bonus`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
@@ -21,7 +21,7 @@ export const translations = {
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
     welcomeBonusText:
-      "<span>+550%</span> up to <span>120,000 CZK</span> + <span>200</span> free spins <br/> on your first deposit",
+      "<span>+550%</span> up to <span>120,000 CZK</span> + <span>200</span> free spins",
     cryptoBonus: "Satoshi Bonus",
     cryptoBonusText: "150% on Crypto Deposits",
     highRollerBonus: "High Roller Bonus",
@@ -64,7 +64,7 @@ export const translations = {
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>royal joker</span>.`,
-    heroSubtitle: `<span>+550%</span> jusqu’à <span>120.000 CZK</span> <br/> + <span>200</span> tours gratuits <br/> lors de votre premier dépôt`,
+    heroSubtitle: `<span>+550%</span> jusqu’à <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> tours gratuits <br/ class="max-[576px]:hidden"> bonus de bienvenue`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
     slideStep1Text:
@@ -84,7 +84,7 @@ export const translations = {
     step1Title: "Choisissez votre bonus",
     welcomeBonus: "Bonus de bienvenue",
     welcomeBonusText:
-      "<span>+550%</span> jusqu’à <span>120.000 CZK</span> + <span>200</span> tours gratuits lors de votre premier dépôt",
+      "<span>+550%</span> jusqu’à <span>120.000 CZK</span> + <span>200</span> tours gratuits",
     cryptoBonus: "Satoshi Bonus",
     cryptoBonusText: "150% sur les dépôts cryptographiques",
     highRollerBonus: "High Roller Bonus",
@@ -127,7 +127,7 @@ export const translations = {
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> până la <span>120.000 CZK</span> <br/> + <span>200</span> rotiri gratuite <br/> la prima depunere`,
+    heroSubtitle: `<span>+550%</span> până la <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> rotiri gratuite <br/ class="max-[576px]:hidden"> bonus de bun venit`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
     slideStep1Text:
@@ -147,7 +147,7 @@ export const translations = {
     step1Title: "Alege-ți Bonusul",
     welcomeBonus: "Bonus de Bun Venit",
     welcomeBonusText:
-      "<span>+550%</span> până la <span>120.000 CZK</span> + <span>200</span> rotiri gratuite la prima depunere",
+      "<span>+550%</span> până la <span>120.000 CZK</span> + <span>200</span> rotiri gratuite",
     cryptoBonus: "Bonus Satoshi",
     cryptoBonusText: "150% la depunerile în Crypto",
     highRollerBonus: "Bonus High Roller",
@@ -190,7 +190,7 @@ export const translations = {
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>royal joker</span> játékban`,
-    heroSubtitle: `<span>+550%</span> akár <span>120 000 CZK</span>-ig <br/> + <span>200</span> ingyenes pörgetés <br/> az első befizetésnél`,
+    heroSubtitle: `<span>+550%</span> akár <span>120 000 CZK</span>-ig <br/ class="max-[576px]:hidden"> + <span>200</span> ingyenes pörgetés <br/ class="max-[576px]:hidden"> üdvözlő bónusz`,
     heroBtn: "bónusz igénylése",
     slideStep1Title: "Regisztrálj",
     slideStep1Text:
@@ -210,7 +210,7 @@ export const translations = {
     step1Title: "Válaszd ki a bónuszodat",
     welcomeBonus: "Üdvözlő Bónusz",
     welcomeBonusText:
-      "<span>+550%</span> akár <span>120.000 CZK</span>-ig + <span>200</span> ingyenes pörgetés az első befizetésnél",
+      "<span>+550%</span> akár <span>120.000 CZK</span>-ig + <span>200</span> ingyenes pörgetés",
     cryptoBonus: "Satoshi Bónusz",
     cryptoBonusText: "150% kriptobefizetésekre",
     highRollerBonus: "High Roller Bónusz",
@@ -254,7 +254,7 @@ export const translations = {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
       "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>royal joker</span>",
-    heroSubtitle: `<span>+550%</span> do <span>120.000 CZK</span> <br/> + <span>200</span> darmowych spinów <br/> przy pierwszym depozycie`,
+    heroSubtitle: `<span>+550%</span> do <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> darmowych spinów <br/ class="max-[576px]:hidden"> bonus powitalny`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
     slideStep1Text: 'Kliknij "Odbierz Bonus" i zakończ darmową rejestrację.',
@@ -273,7 +273,7 @@ export const translations = {
     step1Title: "Wybierz Swój Bonus",
     welcomeBonus: "Bonus Powitalny",
     welcomeBonusText:
-      "<span>+550%</span> do <span>120.000 CZK</span> + <span>200</span> darmowych spinów przy pierwszym depozycie",
+      "<span>+550%</span> do <span>120.000 CZK</span> + <span>200</span> darmowych spinów",
     cryptoBonus: "Bonus Satoshi",
     cryptoBonusText: "150% przy wpłatach w kryptowalutach",
     highRollerBonus: "Bonus High Roller",
@@ -317,7 +317,7 @@ export const translations = {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>royal joker</span>",
-    heroSubtitle: `<span>+550%</span> až do <span>120.000 CZK</span> <br/> + <span>200</span> volných zatočení <br/> při prvním vkladu`,
+    heroSubtitle: `<span>+550%</span> až do <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> volných zatočení <br/ class="max-[576px]:hidden"> uvítací bonus`,
     heroBtn: "získat bonus",
     slideStep1Title: "Registrovat se",
     slideStep1Text:
@@ -337,8 +337,7 @@ export const translations = {
     withoutDeposit: "Bez vkladu",
     step1Title: "Vyberte svůj bonus",
     welcomeBonus: "Vítací bonus",
-    welcomeBonusText:
-      "+550% až do 120.000 CZK + 200 volných zatočení při prvním vkladu",
+    welcomeBonusText: "+550% až do 120.000 CZK + 200 volných zatočení",
     cryptoBonus: "Satoshi bonus",
     cryptoBonusText: "150% na vklady v kryptoměnách",
     highRollerBonus: "High Roller bonus",
@@ -382,7 +381,7 @@ export const translations = {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>royal joker</span>",
-    heroSubtitle: `<span>+550%</span> do <span>120.000 CZK</span> <br/> + <span>200</span> brezplačnih vrtljajev <br/> ob prvem pologu`,
+    heroSubtitle: `<span>+550%</span> do <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> brezplačnih vrtljajev <br/ class="max-[576px]:hidden"> dobrodošel bonus`,
     heroBtn: "prevzemite bonus",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
@@ -402,7 +401,7 @@ export const translations = {
     step1Title: "Izberite svoj bonus",
     welcomeBonus: "Dobrodošli bonus",
     welcomeBonusText:
-      "<span>+550%</span> do <span>120.000 CZK</span> + <span>200</span> brezplačnih vrtljajev ob prvem pologu",
+      "<span>+550%</span> do <span>120.000 CZK</span> + <span>200</span> brezplačnih vrtljajev",
     cryptoBonus: "Satoshi bonus",
     cryptoBonusText: "150% pri pologih v kriptovalutah",
     highRollerBonus: "High Roller bonus",
@@ -445,7 +444,7 @@ export const translations = {
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> έως <span>120.000 CZK</span> <br/> + <span>200</span> δωρεάν περιστροφές <br/> με την πρώτη κατάθεση`,
+    heroSubtitle: `<span>+550%</span> έως <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> δωρεάν περιστροφές <br/ class="max-[576px]:hidden"> μπόνους καλωσορίσματος`,
     heroBtn: "πάρε το μπόνους",
     slideStep1Title: "Εγγραφή",
     slideStep1Text:
@@ -466,7 +465,7 @@ export const translations = {
     step1Title: "Επιλέξτε το μπόνους σας",
     welcomeBonus: "Μπόνους καλωσορίσματος",
     welcomeBonusText:
-      "<span>+550%</span> έως <span>120.000 CZK</span> + <span>200</span> δωρεάν περιστροφές με την πρώτη κατάθεση",
+      "<span>+550%</span> έως <span>120.000 CZK</span> + <span>200</span> δωρεάν περιστροφές",
     cryptoBonus: "Μπόνους Satoshi",
     cryptoBonusText: "150% στις καταθέσεις με κρυπτονομίσματα",
     highRollerBonus: "Μπόνους High Roller",
@@ -509,7 +508,7 @@ export const translations = {
   no: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> opptil <span>120.000 CZK</span> <br/> + <span>200</span> gratisspinn <br/> ved første innskudd`,
+    heroSubtitle: `<span>+550%</span> opptil <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> gratisspinn <br/ class="max-[576px]:hidden"> velkomstbonus`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer deg",
     slideStep1Text: 'Klikk på "Få bonus" og fullfør den gratis registreringen.',
@@ -528,7 +527,7 @@ export const translations = {
     step1Title: "Velg din bonus",
     welcomeBonus: "Velkomstbonus",
     welcomeBonusText:
-      "<span>+550%</span> opptil <span>120.000 CZK</span> + <span>200</span> gratisspinn ved første innskudd",
+      "<span>+550%</span> opptil <span>120.000 CZK</span> + <span>200</span> gratisspinn",
     cryptoBonus: "Satoshi-bonus",
     cryptoBonusText: "150% på kryptoinnskudd",
     highRollerBonus: "High Roller-bonus",
@@ -571,7 +570,7 @@ export const translations = {
   se: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> upp till <span>120.000 CZK</span> <br/> + <span>200</span> gratissnurr <br/> vid första insättningen`,
+    heroSubtitle: `<span>+550%</span> upp till <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> gratissnurr <br/ class="max-[576px]:hidden"> välkomstbonus`,
     heroBtn: "hämta bonus",
     slideStep1Title: "Registrera dig",
     slideStep1Text:
@@ -591,7 +590,7 @@ export const translations = {
     step1Title: "Välj din bonus",
     welcomeBonus: "Välkomstbonus",
     welcomeBonusText:
-      "<span>+550%</span> upp till <span>120.000 CZK</span> + <span>200</span> gratissnurr vid första insättningen",
+      "<span>+550%</span> upp till <span>120.000 CZK</span> + <span>200</span> gratissnurr",
     cryptoBonus: "Satoshi-bonus",
     cryptoBonusText: "150% på kryptovaluta-insättningar",
     highRollerBonus: "High Roller-bonus",
@@ -634,7 +633,7 @@ export const translations = {
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> až do <span>120.000 CZK</span> <br/> + <span>200</span> voľných otočení <br/> pri prvom vklade`,
+    heroSubtitle: `<span>+550%</span> až do <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> voľných otočení <br/ class="max-[576px]:hidden"> uvítací bonus`,
     heroBtn: "získať bonus",
     slideStep1Title: "Registrovať sa",
     slideStep1Text:
@@ -654,7 +653,7 @@ export const translations = {
     step1Title: "Vyberte si svoj bonus",
     welcomeBonus: "Uvítací bonus",
     welcomeBonusText:
-      "<span>+550%</span> až do <span>120.000 CZK</span> + <span>200</span> voľných otočení pri prvom vklade",
+      "<span>+550%</span> až do <span>120.000 CZK</span> + <span>200</span> voľných otočení",
     cryptoBonus: "Satoshi bonus",
     cryptoBonusText: "150% na vklady v kryptomene",
     highRollerBonus: "High Roller bonus",
@@ -697,7 +696,7 @@ export const translations = {
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> до <span>120.000 CZK</span> <br/> + <span>200</span> бесплатных вращений <br/> при первом депозите`,
+    heroSubtitle: `<span>+550%</span> до <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> бесплатных вращений <br/ class="max-[576px]:hidden"> приветственный бонус`,
     heroBtn: "получить бонус",
     slideStep1Title: "Зарегистрируйтесь",
     slideStep1Text:
@@ -717,7 +716,7 @@ export const translations = {
     step1Title: "Выберите свой бонус",
     welcomeBonus: "Приветственный бонус",
     welcomeBonusText:
-      "<span>+550%</span> до <span>120000 CZK</span> + <span>200</span> бесплатных вращений при первом депозите",
+      "<span>+550%</span> до <span>120000 CZK</span> + <span>200</span> бесплатных вращений",
     cryptoBonus: "Сатоши-бонус",
     cryptoBonusText: "150% на криптовалютные депозиты",
     highRollerBonus: "Бонус для хайроллеров",
@@ -760,7 +759,7 @@ export const translations = {
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> hasta <span>120.000 CZK</span> <br/> + <span>200</span> giros gratis <br/> con el primer depósito`,
+    heroSubtitle: `<span>+550%</span> hasta <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> giros gratis <br/ class="max-[576px]:hidden"> bono de bienvenida`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
     slideStep1Text:
@@ -780,7 +779,7 @@ export const translations = {
     step1Title: "Elige tu bono",
     welcomeBonus: "Bono de bienvenida",
     welcomeBonusText:
-      "<span>+550%</span> hasta <span>120.000 CZK</span> + <span>200</span> giros gratis con el primer depósito",
+      "<span>+550%</span> hasta <span>120.000 CZK</span> + <span>200</span> giros gratis",
     cryptoBonus: "Bono Satoshi",
     cryptoBonusText: "150% en depósitos con criptomonedas",
     highRollerBonus: "Bono High Roller",
@@ -823,7 +822,7 @@ export const translations = {
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>royal joker</span>`,
-    heroSubtitle: `<span>+550%</span> até <span>120.000 CZK</span> <br/> + <span>200</span> giros grátis <br/> no primeiro depósito`,
+    heroSubtitle: `<span>+550%</span> até <span>120.000 CZK</span> <br/ class="max-[576px]:hidden"> + <span>200</span> giros grátis <br/ class="max-[576px]:hidden"> bónus de boas-vindas`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
     slideStep1Text: 'Clique em "Obter Bônus" e complete o cadastro gratuito.',
@@ -842,7 +841,7 @@ export const translations = {
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
     welcomeBonusText:
-      "<span>+550%</span> até <span>120.000 CZK</span> + <span>200</span> giros grátis no primeiro depósito",
+      "<span>+550%</span> até <span>120.000 CZK</span> + <span>200</span> giros grátis",
     cryptoBonus: "Bônus Satoshi",
     cryptoBonusText: "150% em depósitos com criptomoedas",
     highRollerBonus: "Bônus High Roller",
