@@ -40,10 +40,10 @@
                   class="overflow-hidden rounded-full"
                   width="20"
                   height="20"
-                  src="./img/flags/kz.svg"
-                  alt="Kazakh"
+                  src="./img/flags/cz.svg"
+                  alt="Czech"
                 />
-                <span class="inline-block max-[350px]:hidden">Kazakh</span>
+                <span class="inline-block max-[350px]:hidden">Czech</span>
                 <svg
                   width="24"
                   height="24"
@@ -326,20 +326,20 @@
             <!-- inner -->
             <div class="relative z-20">
               <div
-                class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
+                class="flex flex-col items-start max-[992px]:items-center max-[992px]:text-center"
               >
                 <h1
-                  data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
+                  data-translate="heroSubtitle"
+                  class="hero-title text-[48px] uppercase hero-title -order-3 max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
                 ></h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                  class="hero-subtitle max-[350px]:text-[20px] opacity-0 pointer-events-none text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
                 ></p>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
-                  class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[576px]:mt-4 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[350px]:px-4 max-[350px]:w-full"
+                  class="hero-modal-open-btn cursor-pointer hero-btn -order-2 rounded-[36px] max-[576px]:py-5 max-[576px]:mt-4 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[350px]:px-4 max-[350px]:w-full"
                 >
                   GET BONUS
                 </button>
@@ -632,51 +632,7 @@
                 >
                   <label class="two-step-bonus-checkbox relative block">
                     <input
-                      class="welcome-bonus-input absolute appearance-none"
                       checked
-                      type="radio"
-                      name="bonus"
-                      value=""
-                      data-img="./img/twoStepFormImg/two-step-bonus-img2.png"
-                    />
-                    <div
-                      class="two-step-bonus-checkbox-div flex cursor-pointer items-center justify-between gap-5 rounded-2xl border-4 border-transparent bg-[#3d1b68] p-[10px] xs:gap-[10px]"
-                    >
-                      <div class="flex items-center gap-[10px]">
-                        <div
-                          class="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-xl xs:h-10 xs:w-10"
-                        >
-                          <img
-                            width="52"
-                            height="52"
-                            src="./img/twoStepFormImg/two-step-bonus-img2.png"
-                            alt="Image"
-                          />
-                        </div>
-                        <div class="space-y-[5px]">
-                          <p
-                            data-translate="depToBalance"
-                            class="two-step-bonus-checkbox-name text-lg font-bold leading-[117%] tracking-[0.02em] xs:text-sm"
-                          >
-                            <span class="nodep-bonus-amount"></span>
-                            <span class="nodep-bonus-currency"></span> to the
-                            balance
-                          </p>
-                          <p
-                            data-translate="withoutDeposit"
-                            class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
-                          >
-                            Without deposit
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        class="two-step-bonus-checkbox-circle relative h-9 w-9 shrink-0 rounded-full bg-[#22072B] xs:h-7 xs:w-7"
-                      ></div>
-                    </div>
-                  </label>
-                  <label class="two-step-bonus-checkbox relative block">
-                    <input
                       class="welcome-bonus-input absolute appearance-none"
                       type="radio"
                       name="bonus"
@@ -705,13 +661,51 @@
                             Welcome Bonus
                           </p>
                           <p
+                            data-translate="welcomeBonusText"
+                            class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
+                          ></p>
+                        </div>
+                      </div>
+                      <div
+                        class="two-step-bonus-checkbox-circle relative h-9 w-9 shrink-0 rounded-full bg-[#22072B] xs:h-7 xs:w-7"
+                      ></div>
+                    </div>
+                  </label>
+                  <label class="two-step-bonus-checkbox relative block">
+                    <input
+                      class="absolute appearance-none"
+                      name="bonus"
+                      type="radio"
+                      value="highroller"
+                      data-img="./img/twoStepFormImg/two-step-bonus-img3.png"
+                    />
+                    <div
+                      class="two-step-bonus-checkbox-div flex cursor-pointer items-center justify-between gap-5 rounded-2xl border-4 border-transparent bg-[#3d1b68] p-[10px] xs:gap-[10px]"
+                    >
+                      <div class="flex items-center gap-[10px]">
+                        <div
+                          class="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-xl xs:h-10 xs:w-10"
+                        >
+                          <img
+                            width="52"
+                            height="52"
+                            src="./img/twoStepFormImg/two-step-bonus-img3.png"
+                            alt="Image"
+                          />
+                        </div>
+                        <div class="space-y-[5px]">
+                          <p
+                            data-translate="highRollerBonus"
+                            class="two-step-bonus-checkbox-name text-lg font-bold leading-[117%] tracking-[0.02em] xs:text-sm"
+                          >
+                            High Roller Bonus
+                          </p>
+                          <p
+                            data-translate="highRollerBonusText"
                             class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
                           >
-                            <span class="two-step-bonus-percent"></span> +
-                            <span class="two-step-bonus-spins"></span>
-                            <span data-translate="welcomeBonusText"
-                              >on your first deposit</span
-                            >
+                            200% on Deposits Over
+                            <span class="bonus-currency-symbol"></span>
                           </p>
                         </div>
                       </div>
@@ -767,12 +761,12 @@
                 <div
                   class="form-promocode-wrapper pointer-events-none mt-[15px] hidden xs:mt-[10px]"
                 >
-                  <!-- <p
+                  <p
                     data-translate="iHavePromoCode"
                     class="two-step-promocode-btn cursor-pointer text-center text-base font-bold leading-[131%] text-white underline underline-offset-4"
                   >
                     I Have a Promo-Code
-                  </p> -->
+                  </p>
                   <div
                     class="two-step-promocode-wrapper two-step-input-wrapper relative hidden grid-cols-[auto_1fr_auto] items-center gap-[5px] rounded-2xl bg-white px-4 py-[10px]"
                   >
@@ -874,23 +868,21 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="./img/twoStepFormImg/two-step-bonus-img2.png"
+                        src="./img/twoStepFormImg/two-step-bonus-img1.png"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
+                        data-translate="welcomeBonus"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
                       >
-                        10 EUR to the balance
+                        Welcome Bonus
                       </p>
                       <p
-                        data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                        data-translate="welcomeBonusText"
+                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -1003,7 +995,7 @@
                 </div>
                 <!-- Bonus applied -->
                 <div
-                  class="applied-bonus-wrapper text-white relative flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
+                  class="applied-bonus-wrapper text-white relative mt-[15px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
                 >
                   <div class="flex items-center gap-[10px]">
                     <div
@@ -1013,23 +1005,21 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="./img/twoStepFormImg/two-step-bonus-img2.png"
+                        src="./img/twoStepFormImg/two-step-bonus-img1.png"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
+                        data-translate="welcomeBonus"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
                       >
-                        10 EUR to the balance
+                        Welcome Bonus
                       </p>
                       <p
-                        data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                        data-translate="welcomeBonusText"
+                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -1272,7 +1262,7 @@
                 </div>
                 <!-- Bonus applied -->
                 <div
-                  class="applied-bonus-wrapper text-white relative flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
+                  class="applied-bonus-wrapper text-white relative mt-[15px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
                 >
                   <div class="flex items-center gap-[10px]">
                     <div
@@ -1282,23 +1272,21 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="./img/twoStepFormImg/two-step-bonus-img2.png"
+                        src="./img/twoStepFormImg/two-step-bonus-img1.png"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
-                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
+                        data-translate="welcomeBonus"
+                        class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
                       >
-                        10 EUR to the balance
+                        Welcome Bonus
                       </p>
                       <p
-                        data-translate="withoutDeposit"
-                        class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                        data-translate="welcomeBonusText"
+                        class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -1877,23 +1865,21 @@
                   class="applied-bonus-img"
                   width="52"
                   height="52"
-                  src="./img/twoStepFormImg/two-step-bonus-img2.png"
+                  src="./img/twoStepFormImg/two-step-bonus-img1.png"
                   alt="Image"
                 />
               </div>
               <div class="space-y-[5px]">
                 <p
-                  data-translate="depToBalance"
-                  class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
+                  data-translate="welcomeBonus"
+                  class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] small:text-sm"
                 >
                   Welcome Bonus
                 </p>
                 <p
-                  data-translate="withoutDeposit"
-                  class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                >
-                  Without deposit
-                </p>
+                  data-translate="welcomeBonusText"
+                  class="applied-bonus-text text-[15px] leading-[160%] small:text-xs"
+                ></p>
               </div>
             </div>
             <svg

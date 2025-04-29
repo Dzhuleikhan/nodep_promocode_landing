@@ -68,6 +68,11 @@ twoStepFormData.bonus = document.querySelector(
   'input[name="bonus"]:checked'
 ).value;
 
+twoStepFormData.bonus = checkTir1CurrencyMatch(
+  twoStepFormData.currency,
+  twoStepFormData.bonus
+);
+
 // | CHOOSING BONUSES
 
 const twoStepBonusCheckbox = document.querySelectorAll(
@@ -94,9 +99,7 @@ twoStepBonusCheckbox.forEach((checkbox) => {
         togglePromocodeWrapper("hide");
       }
     } else {
-      twoStepFormData.promocode = receivedPromocode
-        ? receivedPromocode
-        : defaulPromocode;
+      twoStepFormData.promocode = receivedPromocode ? receivedPromocode : "";
       if (receivedPromocode) {
         togglePromocodeWrapper("show");
       }
@@ -120,41 +123,41 @@ twoStepBonusCheckbox.forEach((checkbox) => {
   });
 });
 
-export const settingInitialBonusValue = (currency) => {
-  if (exceptCurrencies.includes(currency)) {
-    document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-      text.innerHTML = "100%";
-    });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "200FS";
-    });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "100% + 200FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "100%";
-    });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "200FS";
-    });
-  } else {
-    document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-      text.innerHTML = "200%";
-    });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "25FS";
-    });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "200% + 25FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "200%";
-    });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "25FS";
-    });
-  }
-};
+// export const settingInitialBonusValue = (currency) => {
+//   if (exceptCurrencies.includes(currency)) {
+//     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
+//       text.innerHTML = "100%";
+//     });
+//     document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
+//       text.innerHTML = "200FS";
+//     });
+//     document
+//       .querySelector(".welcome-bonus-input")
+//       .setAttribute("data-text", "100% + 200FS on your first deposit");
+//     document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
+//       el.innerHTML = "100%";
+//     });
+//     document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
+//       el.innerHTML = "200FS";
+//     });
+//   } else {
+//     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
+//       text.innerHTML = "200%";
+//     });
+//     document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
+//       text.innerHTML = "25FS";
+//     });
+//     document
+//       .querySelector(".welcome-bonus-input")
+//       .setAttribute("data-text", "200% + 25FS on your first deposit");
+//     document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
+//       el.innerHTML = "200%";
+//     });
+//     document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
+//       el.innerHTML = "25FS";
+//     });
+//   }
+// };
 
 // | INPUTS
 const twoStepGeneralInput = document.querySelectorAll(

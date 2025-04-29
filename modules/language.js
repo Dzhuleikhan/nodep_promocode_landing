@@ -1,8 +1,8 @@
 import { translations } from "/public/translations";
 import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
-import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
-import { settingNodepBonus } from "./modalCurrency";
+import { twoStepFormData } from "./twoStepForm";
+// import { settingNodepBonus } from "./modalCurrency";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -70,7 +70,7 @@ function updateButtonText(lang) {
   };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/en.svg`
+    `./img/flags/${lang}.svg` || `./img/flags/cz.svg`
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
@@ -98,7 +98,7 @@ async function determineLanguage() {
     PT: "pt",
     // Add more country codes and their corresponding languages as needed
   };
-  lang = countryLangMap[location.countryCode] || "en";
+  lang = countryLangMap[location.countryCode] || "cz";
 
   return lang;
 }
@@ -113,7 +113,7 @@ async function mainFunction() {
     );
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-      settingNodepBonus(currencyData.abbr);
+      // settingNodepBonus(currencyData.abbr);
       document.querySelectorAll(".current-domain").forEach((domain) => {
         domain.innerHTML = window.location.hostname;
       });
@@ -134,8 +134,8 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
       getSupportedLanguage(targetLang.toUpperCase())
     );
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-    settingInitialBonusValue(currencyData.abbr);
-    settingNodepBonus(currencyData.abbr);
+    // settingInitialBonusValue(currencyData.abbr);
+    // settingNodepBonus(currencyData.abbr);
     twoStepFormData.lang = localStorage.getItem("preferredLanguage");
     document.querySelectorAll(".current-domain").forEach((domain) => {
       domain.innerHTML = window.location.hostname;

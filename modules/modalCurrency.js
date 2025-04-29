@@ -1,6 +1,6 @@
 import { getLocation } from "./geoLocation";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
-import { twoStepFormData, settingInitialBonusValue } from "./twoStepForm";
+import { twoStepFormData, checkTir1CurrencyMatch } from "./twoStepForm";
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -66,10 +66,10 @@ function setCurrency(abbr, name, icon) {
 export const settingNodepBonus = (currencyAbbr) => {
   const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
   const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
-  const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
-  const nodepBonusCurrencySymbol = document.querySelectorAll(
-    ".bonus-currency-symbol"
-  );
+  // const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
+  // const nodepBonusCurrencySymbol = document.querySelectorAll(
+  //   ".bonus-currency-symbol"
+  // );
 
   const selectedCurrency =
     nodepBonuses.find((c) => c.currency === currencyAbbr) ||
@@ -81,12 +81,12 @@ export const settingNodepBonus = (currencyAbbr) => {
   nodepBonusCurrency.forEach((text) => {
     text.textContent = selectedCurrency.currency;
   });
-  nodepBonusTotalAmoun.forEach((text) => {
-    text.textContent = selectedCurrency.moneyAmount;
-  });
-  nodepBonusCurrencySymbol.forEach((text) => {
-    text.textContent = selectedCurrency.symbol;
-  });
+  // nodepBonusTotalAmoun.forEach((text) => {
+  //   text.textContent = selectedCurrency.moneyAmount;
+  // });
+  // nodepBonusCurrencySymbol.forEach((text) => {
+  //   text.textContent = selectedCurrency.symbol;
+  // });
 };
 
 const settingFooterPayments = (currencyAbbr) => {
@@ -133,9 +133,10 @@ async function settingModalCurrency() {
     setCurrency(currencyData.abbr, currencyData.name, currencyData.icon);
 
     twoStepFormData.currency = currencyData.abbr;
-    settingInitialBonusValue(twoStepFormData.currency);
+    twoStepFormData.bonus = checkTir1CurrencyMatch(twoStepFormData.currency);
+    // settingInitialBonusValue(twoStepFormData.currency);
     setTimeout(() => {
-      settingInitialBonusValue(currencyData.abbr);
+      // settingInitialBonusValue(currencyData.abbr);
       settingNodepBonus(currencyData.abbr);
     }, 300);
     settingFooterPayments(currencyData.abbr);
@@ -222,6 +223,11 @@ formCurrency.forEach((cur) => {
         settingNodepBonus(currencyData.abbr);
         document.querySelector(".bonus-currency-symbol").innerHTML =
           currencyData.symbol;
+
+        twoStepFormData.bonus = checkTir1CurrencyMatch(
+          twoStepFormData.currency,
+          twoStepFormData.bonus
+        );
       });
     });
 
