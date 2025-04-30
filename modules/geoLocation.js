@@ -27,10 +27,3 @@ localStorage.setItem(
   "preferredLanguage",
   getSupportedLanguage(geoData.countryCode)
 );
-
-function setHeaderFlag(countryCode) {
-  const headerFlagImage = document.querySelector(".header-country-flag");
-  headerFlagImage.src = `./img/flags/${countryCode.toLowerCase()}.svg`;
-  headerFlagImage.classList.remove("hidden");
-}
-setHeaderFlag(geoData.countryCode);

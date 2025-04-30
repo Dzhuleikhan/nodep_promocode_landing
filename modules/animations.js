@@ -1,31 +1,18 @@
 import gsap from "gsap";
-import { Power3 } from "gsap";
+import horizontalLoop from "./marquee";
 
-gsap.to(".hero-main-img", {
-  y: 20,
-  ease: "none",
-  yoyo: true,
-  duration: 4,
+gsap.to(".advantage-img", {
+  scale: 1.1,
   repeat: -1,
-});
-gsap.to(".star-img", {
-  scale: 1.05,
-  ease: "none",
   yoyo: true,
-  duration: 2,
-  repeat: -1,
+  duration: 1,
+  ease: "power1.inOut",
 });
-gsap.to(".seven-img", {
-  scale: 1.05,
-  ease: "none",
-  yoyo: true,
-  duration: 2,
+
+horizontalLoop(".payments-list", {
   repeat: -1,
+  paused: false,
+  speed: 0.3,
 });
-gsap.to(".orange-img", {
-  y: 40,
-  ease: "none",
-  yoyo: true,
-  duration: 3,
-  repeat: -1,
-});
+
+gsap.to(".preloader", { opacity: 0, duration: 0.5, delay: 2 });
