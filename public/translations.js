@@ -1,8 +1,8 @@
 export const translations = {
   az: {
     pageTitle: "🎁 Bonusunuz hazırdır - Goldbet",
-    heroTitle: `<span>gates of olympus</span> oyununda <br/> depozitsiz <span>100 FS</span> <br/> bonusunuzu əldə edin`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>-ə qədər + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> ilk 4 depozitinizə`,
+    heroTitle: `<span>HESABINIZI TƏSDİQLƏDİKDƏN SONRA BONUS</span> <b>77 FS</b> <span>QAZAN!</span>`,
+    heroSubtitle: `<span class="two-step-bonus-percent">+1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>-ə qədər + <span class="two-step-bonus-spins">25 FS</span> ilk 4 depozitinizə`,
     heroBtn: "bonusu əldə et",
     slideStep1Title: "Qeydiyyat",
     slideStep1Text:
@@ -24,7 +24,7 @@ export const translations = {
     signUpBtn: "Qeydiyyatdan keçin",
     promoApplied: "Bonus tətbiq olundu",
     bonusName: "Xoş gəldin kazino bonusu",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>-ə qədər + 25FS`,
+    depositBonus: `<span class='applied-nodep-bonus'>77 FS zeus vs hades oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>-ə qədər + 25FS`,
     depositBonus2: "Depozitə 400% 6000-ə qədər",
     phoneNumber: "Telefon nömrəsi",
     password: "Şifrə",
@@ -126,8 +126,8 @@ export const translations = {
   },
   tr: {
     pageTitle: "🎁 Bonusunuz hazır - Goldbet",
-    heroTitle: `<span>gates of olympus</span> oyununda <br/> yatırımsız <span>100 FS</span> <br/> bonusunuzu alın`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>'a kadar + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> ilk 4 yatırımınıza`,
+    heroTitle: `<span>HESAP DOĞRULAMASINDAN SONRA</span> <b>77 FS</b> <span>BONUSUNU AL!</span>`,
+    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>'a kadar + <span class="two-step-bonus-spins">25 FS</span> ilk 4 yatırımınıza`,
     heroBtn: "bonusu al",
     slideStep1Title: "Kayıt Ol",
     slideStep1Text:
@@ -149,7 +149,7 @@ export const translations = {
     signUpBtn: "Kayıt Ol",
     promoApplied: "Bonus uygulandı",
     bonusName: "Hoş geldin casino bonusu",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>'a kadar + 25FS`,
+    depositBonus: `<span class='applied-nodep-bonus'>77 FS zeus vs hades oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>'a kadar + 25FS`,
     depositBonus2: "Yatırıma %400 6000'e kadar",
     phoneNumber: "Telefon numarası",
     password: "Şifre",
@@ -326,8 +326,8 @@ export const translations = {
   },
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `Get your bonus <br/> <span>100 FS</span> with no deposit <br/> in <span>gates of olympus</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - up to <span class='bonus-total-amount'>17,000</span><span class='bonus-currency-symbol'>₼</span> + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> on your first 4 deposits`,
+    heroTitle: `<span>CLAIM YOUR BONUS</span> <b>77 FS</b> <br/> <span>UPON ACCOUNT VERIFICATION</span>`,
+    heroSubtitle: `<span class="two-step-bonus-percent">+1100%</span> - up to <span class='bonus-total-amount'>17,000</span><span class='bonus-currency-symbol'>₼</span> + <span class="two-step-bonus-spins">25 FS</span> on your first 4 deposits`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
@@ -348,7 +348,7 @@ export const translations = {
     signUpBtn: "Sign Up",
     promoApplied: "Bonus applied",
     bonusName: "Welcome casino bonus",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS in gates of olympus</span> <br/> bonus up to <span class="bonus-value">17,000</span> <span class="bonus-currency">₼</span> + 25FS`,
+    depositBonus: `<span class='applied-nodep-bonus'>77 FS in zeus vs hades</span> <br/> bonus up to <span class="bonus-value">17,000</span> <span class="bonus-currency">₼</span> + 25FS`,
     depositBonus2: "400% on deposit up to 6000",
     phoneNumber: "Phone number",
     password: "Password",

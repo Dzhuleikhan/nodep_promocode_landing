@@ -304,65 +304,20 @@
         </div>
       </header>
       <main>
-        <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="./img/thunder-left.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="./img/thunder-middle.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="./img/thunder-right.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="./img/seven.webp"
-            alt="Seven"
-          />
-          <img
-            class="absolute orange-img left-[50%] z-[11] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="./img/orange.webp"
-            alt="Orange"
-          />
-          <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="./img/watermelon.webp"
-            alt="watermelon"
-          />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="./img/star.webp"
-            alt="star"
-          />
-          <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="./img/plum.webp"
-            alt="plum"
-          />
+        <section
+          id="hero"
+          class="w-full relative overflow-hidden bg-[url(../img/hero-bg.webp)] bg-no-repeat bg-center bg-cover"
+        >
           <!-- container -->
           <div
             class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
           >
             <!-- inner -->
             <div class="relative z-20">
-              <div
-                class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
-              >
+              <div class="flex flex-col items-center text-center">
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
+                  class="hero-title text-[80px] caesar uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
                 >
                   claim your bonus <br />
                   <span>100 free spins</span> <br />
@@ -370,7 +325,7 @@
                 </h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                  class="hero-subtitle max-[350px]:text-[20px] font-[raleway] text-white max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
                 >
                   +<span class="two-step-bonus-percent">100%</span> up to
                   <span class="bonus-total-amount">17.000</span
@@ -387,13 +342,6 @@
                 </button>
               </div>
             </div>
-            <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] max-[992px]:-translate-x-[50%] max-[992px]:left-[50%] z-[3] left-[280px] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              src="./img/zeus.webp"
-              alt="Zeus"
-            />
           </div>
         </section>
         <!-- container -->
@@ -401,7 +349,7 @@
           class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
         >
           <div
-            class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
+            class="bg-[url(../img/steps-bg.webp)] steps-wrapper bg-no-repeat bg-center bg-cover relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
           >
             <div class="step-slider">
               <div class="swiper-wrapper">
@@ -410,20 +358,20 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="steps-bumber text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#BC0F1D] font-[saira] steps-number uppercase"
                     >
                       1
                     </p>
                     <div class="space-y-[10px]">
                       <p
                         data-translate="slideStep1Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
+                        class="steps-title text-[26px] max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#360103]"
                       >
                         REGISTER
                       </p>
                       <p
                         data-translate="slideStep1Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
+                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#1d1d1d]/70 opacity-70 font-[raleway]"
                       >
                         Click "Play Now" and enter your email and password.
                       </p>
@@ -435,20 +383,20 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="steps-bumber text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#BC0F1D] font-[saira] steps-number uppercase"
                     >
                       2
                     </p>
                     <div class="space-y-[10px]">
                       <p
                         data-translate="slideStep2Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
+                        class="steps-title text-[26px] max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#360103]"
                       >
                         MAKE A DEPOSIT
                       </p>
                       <p
                         data-translate="slideStep2Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
+                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#1d1d1d]/70 opacity-70 font-[raleway]"
                       >
                         Choose your preferred payment method and make a deposit.
                       </p>
@@ -460,20 +408,20 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="steps-number text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#BC0F1D] font-[saira] steps-number uppercase"
                     >
                       3
                     </p>
                     <div class="space-y-[10px]">
                       <p
                         data-translate="slideStep3Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
+                        class="steps-title text-[26px] max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#360103]"
                       >
                         GET THE BONUS
                       </p>
                       <p
                         data-translate="slideStep3Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
+                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#1d1d1d]/70 opacity-70 font-[raleway]"
                       >
                         Your welcome bonus is ready for you in the Bonus Center.
                       </p>
@@ -521,7 +469,7 @@
         <div class="max-w-[1140px] px-[15px] mx-auto">
           <p
             data-translate="footerText"
-            class="text-[12px] leading-[140%] text-[#f0f0f0] text-center font-[raleway]"
+            class="text-[12px] leading-[140%] text-[#f0f0f0]/60 text-center font-[raleway]"
           >
             The website www.goldbet.io is owned and operated by Ivanov I.I.
             (registration number: 12345678; with registered Address: Ivanov Ivan
