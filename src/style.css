@@ -180,6 +180,10 @@ body {
   }
 }
 
+.header-lang-list ul::-webkit-scrollbar {
+  display: none;
+}
+
 /* | Language dropdown */
 
 .header-lang-list {
@@ -389,18 +393,6 @@ body {
 
 /* Preloader */
 
-@keyframes pulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 @keyframes animate-svg-draw-1 {
   0% {
     stroke-dashoffset: 277;
@@ -429,13 +421,13 @@ body {
 }
 
 .svg-elem-2 {
-  animation: pulse 3s ease 1s infinite;
+  /* animation: pulse 3s ease 1s infinite; */
   transform-origin: center;
   fill: black;
 }
 
 .svg-elem-3 {
-  animation: pulse 3s ease 1s infinite;
+  /* animation: pulse 3s ease 1s infinite; */
   transform-origin: center;
   fill: #f0f0f0;
 }

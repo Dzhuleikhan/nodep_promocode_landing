@@ -21,7 +21,7 @@ export const translations = {
     passwordPlaceholder: "Password",
     yourCurrency: "Your currency",
     startPlaying: "Start Playing",
-    terms: `I agree to the <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Terms and Conditions</a>`,
+    terms: `I agree to the <span class="text-white underline underline-offset-4">Terms and Conditions</span>`,
     signUpWithGoogle: "Sign Up with Google",
     signUpWithFacebook: "Sign Up with Facebook",
     // | Terms
@@ -183,7 +183,7 @@ export const translations = {
     passwordPlaceholder: "Mot de passe",
     yourCurrency: "Votre devise",
     startPlaying: "Commencer à jouer",
-    terms: `J'accepte les <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Conditions Générales</a>`,
+    terms: `J'accepte les <span class="text-white underline underline-offset-4">Conditions Générales</span>`,
     signUpWithGoogle: "S'inscrire avec Google",
     signUpWithFacebook: "S'inscrire avec Facebook",
     // | Terms
@@ -240,7 +240,7 @@ export const translations = {
     passwordPlaceholder: "Parolă",
     yourCurrency: "Moneda ta",
     startPlaying: "Începe să joci",
-    terms: `Sunt de acord cu <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Termenii și Condițiile</a>`,
+    terms: `Sunt de acord cu <span class="text-white underline underline-offset-4">Termenii și Condițiile</span>`,
     signUpWithGoogle: "Înregistrează-te cu Google",
     signUpWithFacebook: "Înregistrează-te cu Facebook",
     // | Terms
@@ -375,7 +375,7 @@ export const translations = {
     passwordPlaceholder: "Jelszó",
     yourCurrency: "Válassz valutát",
     startPlaying: "Kezdj el játszani",
-    terms: `Elolvastam és elfogadom az <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Általános Szerződési Feltételeket</a>`,
+    terms: `Elolvastam és elfogadom az <span class="text-white underline underline-offset-4">Általános Szerződési Feltételeket</span>`,
     signUpWithGoogle: "Regisztráció Google-lal",
     signUpWithFacebook: "Regisztráció Facebook-kal",
     // | Terms
@@ -433,7 +433,7 @@ export const translations = {
     passwordPlaceholder: "Hasło",
     yourCurrency: "Wybierz walutę",
     startPlaying: "Zacznij grać",
-    terms: `Przeczytałem i akceptuję <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Regulamin</a>`,
+    terms: `Przeczytałem i akceptuję <span class="text-white underline underline-offset-4">Regulamin</span>`,
     signUpWithGoogle: "Zarejestruj się przez Google",
     signUpWithFacebook: "Zarejestruj się przez Facebook",
     // | Terms
@@ -490,7 +490,7 @@ export const translations = {
     passwordPlaceholder: "Heslo",
     yourCurrency: "Vyberte měnu",
     startPlaying: "Začněte hrát",
-    terms: `Přečetl(a) jsem si a souhlasím s <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Podmínkami</a>`,
+    terms: `Přečetl(a) jsem si a souhlasím s <span class="text-white underline underline-offset-4">Podmínkami</span>`,
     signUpWithGoogle: "Zaregistrovat se přes Google",
     signUpWithFacebook: "Zaregistrovat se přes Facebook",
     // | Terms
@@ -548,7 +548,7 @@ export const translations = {
     passwordPlaceholder: "Geslo",
     yourCurrency: "Izberite valuto",
     startPlaying: "Začni igrati",
-    terms: `Prebral(a) sem in se strinjam s <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Pogoji uporabe</a>`,
+    terms: `Prebral(a) sem in se strinjam s <span class="text-white underline underline-offset-4">Pogoji uporabe</span>`,
     signUpWithGoogle: "Registriraj se z Google",
     signUpWithFacebook: "Registriraj se s Facebook",
     // | Terms
@@ -606,7 +606,7 @@ export const translations = {
     passwordPlaceholder: "Κωδικός πρόσβασης",
     yourCurrency: "Επιλέξτε νόμισμα",
     startPlaying: "Ξεκινήστε να παίζετε",
-    terms: `Διάβασα και συμφωνώ με τους <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Όρους και Προϋποθέσεις</a>`,
+    terms: `Διάβασα και συμφωνώ με τους <span class="text-white underline underline-offset-4">Όρους και Προϋποθέσεις</span>`,
     signUpWithGoogle: "Εγγραφή με Google",
     signUpWithFacebook: "Εγγραφή με Facebook",
     // | Terms
@@ -663,7 +663,7 @@ export const translations = {
     passwordPlaceholder: "Passord",
     yourCurrency: "Velg valuta",
     startPlaying: "Begynn å spille",
-    terms: `Jeg har lest og godtar <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Vilkår og betingelser</a>`,
+    terms: `Jeg har lest og godtar <span class="text-white underline underline-offset-4">Vilkår og betingelser</span>`,
     signUpWithGoogle: "Registrer med Google",
     signUpWithFacebook: "Registrer med Facebook",
     // | Terms
@@ -720,7 +720,7 @@ export const translations = {
     passwordPlaceholder: "Lösenord",
     yourCurrency: "Välj valuta",
     startPlaying: "Börja spela",
-    terms: `Jag har läst och godkänner <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Villkor och bestämmelser</a>`,
+    terms: `Jag har läst och godkänner <span class="text-white underline underline-offset-4">Villkor och bestämmelser</span>`,
     signUpWithGoogle: "Registrera med Google",
     signUpWithFacebook: "Registrera med Facebook",
     // | Terms
@@ -776,7 +776,7 @@ export const translations = {
     passwordPlaceholder: "Heslo",
     yourCurrency: "Vyberte menu",
     startPlaying: "Začať hrať",
-    terms: `Prečítal(a) som si a súhlasím s <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Podmienkami a pravidlami</a>`,
+    terms: `Prečítal(a) som si a súhlasím s <span class="text-white underline underline-offset-4">Podmienkami a pravidlami</span>`,
     signUpWithGoogle: "Registrácia cez Google",
     signUpWithFacebook: "Registrácia cez Facebook",
     // | Podmienky
@@ -832,7 +832,7 @@ export const translations = {
     passwordPlaceholder: "Пароль",
     yourCurrency: "Валюта",
     startPlaying: "Начать играть",
-    terms: `Я согласен с <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Условиями и положениями</a>`,
+    terms: `Я согласен с <span class="text-white underline underline-offset-4">Условиями и положениями</span>`,
     signUpWithGoogle: "Зарегистрироваться через Google",
     signUpWithFacebook: "Зарегистрироваться через Facebook",
     // | Условия
@@ -890,7 +890,7 @@ export const translations = {
     passwordPlaceholder: "Contraseña",
     yourCurrency: "Tu moneda",
     startPlaying: "Empezar a jugar",
-    terms: `Acepto los <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Términos y Condiciones</a>`,
+    terms: `Acepto los <span class="text-white underline underline-offset-4">Términos y Condiciones</span>`,
     signUpWithGoogle: "Registrarse con Google",
     signUpWithFacebook: "Registrarse con Facebook",
     // | Términos
@@ -947,7 +947,7 @@ export const translations = {
     passwordPlaceholder: "Senha",
     yourCurrency: "Sua moeda",
     startPlaying: "Começar a jogar",
-    terms: `Eu concordo com os <a data-translate="terms" href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4">Termos e Condições</a>`,
+    terms: `Eu concordo com os <span class="text-white underline underline-offset-4">Termos e Condições</span>`,
     signUpWithGoogle: "Cadastrar-se com Google",
     signUpWithFacebook: "Cadastrar-se com Facebook",
     // | Termos

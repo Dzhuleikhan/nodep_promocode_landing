@@ -209,7 +209,7 @@
       >
         <div class="px-[10px] max-w-[1135px] mx-auto">
           <div class="flex items-center w-full justify-between gap-3">
-            <a href="/" class="">
+            <a href="/" class="header-logo-link">
               <img
                 class="max-[576px]:max-w-[246px] w-full max-w-[296px] max-[360px]:max-w-[200px]"
                 width="296"
@@ -602,6 +602,7 @@
                       >
                         <div class="show-password cursor-pointer">
                           <svg
+                            class="password-visible"
                             width="24"
                             height="24"
                             viewBox="0 0 24 24"
@@ -617,6 +618,22 @@
                             />
                             <path
                               d="M21 12C18.6 16 15.6 18 12 18C8.4 18 5.4 16 3 12C5.4 8 8.4 6 12 6C15.6 6 18.6 8 21 12Z"
+                              stroke="#A9AABF"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <svg
+                            class="password-invisible hidden"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 26 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M25 1C21.8 4.556 17.8 6.3333 13 6.3333C8.2 6.3333 4.2 4.556 1 1M1 8.9999L4.33333 3.9333M25.0001 8.9679L21.6774 3.9333M9 11.6667L9.6667 6.3333M17 11.6667L16.3333 6.3333"
                               stroke="#A9AABF"
                               stroke-width="2"
                               stroke-linecap="round"
@@ -1181,11 +1198,10 @@
                         type="checkbox"
                         checked
                       />
-                      <span
+                      <p
                         data-translate="terms"
                         class="checkbox-content relative block pl-7 text-sm font-semibold leading-[186%] text-white"
-                      >
-                      </span>
+                      ></p>
                     </label>
                   </form>
                   <!-- socials -->

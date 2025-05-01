@@ -96,10 +96,16 @@ passwordInput.addEventListener("input", (event) => {
 });
 
 showPasswordBtn.addEventListener("click", () => {
+  const visibleIcon = showPasswordBtn.querySelector(".password-visible");
+  const invisibleIcon = showPasswordBtn.querySelector(".password-invisible");
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
+    visibleIcon.classList.add("hidden");
+    invisibleIcon.classList.remove("hidden");
   } else {
     passwordInput.type = "password";
+    visibleIcon.classList.remove("hidden");
+    invisibleIcon.classList.add("hidden");
   }
 });
 
