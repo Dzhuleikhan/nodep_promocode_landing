@@ -5,11 +5,6 @@ export const defaulPromocode = "77ZEUS";
 
 const headerLogoLink = document.querySelector(".header-logo-link");
 
-headerLogoLink.setAttribute(
-  "href",
-  `https://${newDomain}?promocode=${defaulPromocode}`
-);
-
 document
   .querySelector(".modal-open-btn")
   .setAttribute("data-promocode", defaulPromocode);
@@ -17,3 +12,10 @@ document
 export const receivedPromocode = (
   getUrlParameter("promocode") || defaulPromocode
 ).toLocaleUpperCase();
+
+headerLogoLink.setAttribute(
+  "href",
+  `https://${newDomain}?promocode=${
+    receivedPromocode ? receivedPromocode : defaulPromocode
+  }`
+);
