@@ -1,10 +1,19 @@
 import { newDomain } from "./fetchingDomain";
+import { formData } from "./formAuth";
+import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "ROYAL7211";
+export const defaulPromocode = "BITFREE888";
+
+export const receivedPromocode = (
+  getUrlParameter("promocode") || defaulPromocode
+).toLocaleUpperCase();
 
 const headerLogoLink = document.querySelector(".header-logo-link");
+formData.promocode = receivedPromocode ? receivedPromocode : defaulPromocode;
 
 headerLogoLink.setAttribute(
   "href",
-  `https://${newDomain}?promocode=${defaulPromocode}`
+  `https://${newDomain}?promocode=${
+    receivedPromocode ? receivedPromocode : defaulPromocode
+  }`
 );
