@@ -7,7 +7,7 @@ const headerLogoLink = document.querySelector(".header-logo-link");
 
 headerLogoLink.setAttribute(
   "href",
-  `${newDomain}?promocode=${defaulPromocode}`
+  `https://${newDomain}?promocode=${defaulPromocode}`
 );
 
 document
