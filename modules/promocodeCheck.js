@@ -1,13 +1,27 @@
+import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
+import { twoStepFormData } from "./twoStepForm";
 
 export const defaulPromocode = "BASS98";
-document
-  .querySelector(".hero-modal-open-btn")
-  .setAttribute("data-promocode", defaulPromocode);
+const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
   getUrlParameter("promocode") || ""
 ).toLocaleUpperCase();
+
+headerLogoLink.setAttribute(
+  "href",
+  `https://${newDomain}?promocode=${
+    receivedPromocode ? receivedPromocode : defaulPromocode
+  }`
+);
+
+document
+  .querySelector(".hero-modal-open-btn")
+  .setAttribute(
+    "data-promocode",
+    receivedPromocode ? receivedPromocode : defaulPromocode
+  );
 
 export const togglePromocodeWrapper = (state) => {
   const formWrapper = document.querySelector(".form-promocode-wrapper");
@@ -31,9 +45,6 @@ export const togglePromocodeWrapper = (state) => {
 };
 
 if (receivedPromocode) {
-  document
-    .querySelector(".hero-modal-open-btn")
-    .setAttribute("data-promocode", receivedPromocode);
   togglePromocodeWrapper("show");
 } else {
   console.log("There is no promocode received");
