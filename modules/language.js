@@ -2,6 +2,7 @@ import { translations } from "/public/translations";
 import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { formData } from "./formAuth";
+import { settingInitialBonusValue } from "./modalCurrency";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -115,6 +116,8 @@ async function mainFunction() {
         domain.innerHTML = window.location.hostname;
       });
     }, 200);
+    const currencyData = JSON.parse(localStorage.getItem("currencyData"));
+    settingInitialBonusValue(currencyData.abbr);
   } catch (error) {
     console.error("Error determining language:", error);
   }
@@ -134,5 +137,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     document.querySelectorAll(".current-domain").forEach((domain) => {
       domain.innerHTML = window.location.hostname;
     });
+    const currencyData = JSON.parse(localStorage.getItem("currencyData"));
+    settingInitialBonusValue(currencyData.abbr);
   });
 });

@@ -29,6 +29,48 @@ function getCountryCurrencyIcon(inputCountry) {
   return "./img/currencies/usd.svg"; // or some default value if country is not found
 }
 
+export const checkTir1CurrencyMatch = (currency) => {
+  const exceptCurrencies = [
+    "RON",
+    "DKK",
+    "HUF",
+    "CZK",
+    "CHF",
+    "PLN",
+    "CAD",
+    "USD",
+    "EUR",
+    "NOK",
+  ];
+  if (exceptCurrencies.includes(currency)) {
+    return "welcome-bonus-alt";
+  } else {
+    return "welcome-bonus";
+  }
+};
+
+export const settingInitialBonusValue = (currency) => {
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency
+  );
+
+  if (currencyEntry) {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.amount;
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrency;
+    });
+  } else {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = "4500";
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = "EUR";
+    });
+  }
+};
+
 function setCurrency(abbr, name, icon) {
   const formCurrency = document.querySelectorAll(".form-currency");
   formCurrency.forEach((cur) => {
@@ -76,6 +118,8 @@ async function settingModalCurrency() {
 
     setCurrency(currencyAbbr, currencyFullName, currencyIcon);
     formData.currency = currencyAbbr;
+    formData.bonus = checkTir1CurrencyMatch(currencyAbbr);
+    settingInitialBonusValue(currencyAbbr);
   } catch (error) {
     console.error("Error fetching location data:", error);
   }
@@ -151,6 +195,8 @@ formCurrency.forEach((cur) => {
         };
         localStorage.setItem("currencyData", JSON.stringify(currencyData));
         formData.currency = curAbbr;
+        formData.bonus = checkTir1CurrencyMatch(curAbbr);
+        settingInitialBonusValue(curAbbr);
 
         settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
       });
@@ -163,23 +209,3 @@ formCurrency.forEach((cur) => {
     });
   }
 });
-
-export const checkTir1CurrencyMatch = (currency, bonus) => {
-  const exceptCurrencies = [
-    "RON",
-    "DKK",
-    "HUF",
-    "CZK",
-    "CHF",
-    "PLN",
-    "CAD",
-    "USD",
-    "EUR",
-  ];
-  if (exceptCurrencies.includes(currency) && bonus === "welcome-bonus-1") {
-    bonus = bonus + "-alt";
-  } else {
-    bonus = bonus;
-  }
-  return bonus;
-};

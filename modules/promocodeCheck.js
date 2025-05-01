@@ -9,11 +9,11 @@ export const receivedPromocode = (
 ).toLocaleUpperCase();
 
 const headerLogoLink = document.querySelector(".header-logo-link");
-formData.promocode = receivedPromocode ? receivedPromocode : defaulPromocode;
+formData.promocode = "";
 
-headerLogoLink.setAttribute(
-  "href",
-  `https://${newDomain}?promocode=${
-    receivedPromocode ? receivedPromocode : defaulPromocode
-  }`
-);
+// headerLogoLink.setAttribute(
+//   "href",
+//   `https://${newDomain}?promocode=${
+//     receivedPromocode ? receivedPromocode : defaulPromocode
+//   }`
+// );

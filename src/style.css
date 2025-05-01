@@ -431,3 +431,7 @@ body {
   transform-origin: center;
   fill: #f0f0f0;
 }
+
+.bonus-currency-symbol {
+  padding-left: 0 !important;
+}
