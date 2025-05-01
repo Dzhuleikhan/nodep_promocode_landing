@@ -24,6 +24,7 @@ export const translations = {
     terms: `I agree to the <span class="text-white underline underline-offset-4">Terms and Conditions</span>`,
     signUpWithGoogle: "Sign Up with Google",
     signUpWithFacebook: "Sign Up with Facebook",
+    signUpWithTelegram: "Sign Up with Telegram",
     // | Terms
     termsTitle1: `Terms And Conditions`,
     termsParagraph1: `These terms and conditions and the documents referred to below
@@ -186,6 +187,7 @@ export const translations = {
     terms: `J'accepte les <span class="text-white underline underline-offset-4">Conditions Générales</span>`,
     signUpWithGoogle: "S'inscrire avec Google",
     signUpWithFacebook: "S'inscrire avec Facebook",
+    signUpWithTelegram: "S'inscrire avec Telegram",
     // | Terms
     termsTitle1: `Conditions Générales`,
     termsParagraph1: `Les présentes conditions générales ainsi que les documents mentionnés ci-dessous (les "Conditions") s’appliquent à l’utilisation du site actuel (le "Site Web") et de ses services associés ou connexes (collectivement, le "Service"). Vous devez lire attentivement ces Conditions car elles contiennent des informations importantes concernant vos droits et obligations en lien avec l'utilisation du Site Web et constituent un accord légalement contraignant entre vous - notre client (le "Client") - et nous (le "Site Web"). En utilisant ce Site Web et/ou en accédant au Service, vous acceptez, que vous soyez invité ou utilisateur enregistré disposant d’un compte (“Compte”), d’être lié par ces Conditions ainsi que par leurs éventuelles modifications, qui peuvent être publiées de temps à autre. Si vous n’acceptez pas ces Conditions, vous devez vous abstenir d'accéder au Service et d'utiliser le Site Web.`,
@@ -243,6 +245,7 @@ export const translations = {
     terms: `Sunt de acord cu <span class="text-white underline underline-offset-4">Termenii și Condițiile</span>`,
     signUpWithGoogle: "Înregistrează-te cu Google",
     signUpWithFacebook: "Înregistrează-te cu Facebook",
+    signUpWithTelegram: "Înscrie-te cu Telegram",
     // | Terms
     termsTitle1: `Termeni și Condiții`,
     termsParagraph1: `Acești termeni și condiții și documentele menționate mai jos
@@ -378,6 +381,7 @@ export const translations = {
     terms: `Elolvastam és elfogadom az <span class="text-white underline underline-offset-4">Általános Szerződési Feltételeket</span>`,
     signUpWithGoogle: "Regisztráció Google-lal",
     signUpWithFacebook: "Regisztráció Facebook-kal",
+    signUpWithTelegram: "Regisztráció Telegrammal",
     // | Terms
     termsTitle1: `Felhasználási Feltételek`,
     termsParagraph1: `Jelen feltételek („Feltételek”) a weboldalunk („Weboldal”) és a kapcsolódó szolgáltatások („Szolgáltatás”) használatára vonatkoznak. Kérjük, figyelmesen olvasd el ezeket, mivel fontos jogokat és kötelezettségeket tartalmaznak, amelyek kötelező érvényű megállapodást képeznek közted (mint „Felhasználó”) és köztünk („Szolgáltató”). A weboldal használatával vagy a szolgáltatás elérésével elfogadod a jelen Feltételeket és az időről időre közzétett módosításokat. Amennyiben nem értesz egyet ezekkel, kérjük, ne használd a Weboldalt vagy a Szolgáltatást.`,
@@ -436,6 +440,7 @@ export const translations = {
     terms: `Przeczytałem i akceptuję <span class="text-white underline underline-offset-4">Regulamin</span>`,
     signUpWithGoogle: "Zarejestruj się przez Google",
     signUpWithFacebook: "Zarejestruj się przez Facebook",
+    signUpWithTelegram: "Zarejestruj się przez Telegram",
     // | Terms
     termsTitle1: `Regulamin`,
     termsParagraph1: `Niniejsze warunki („Warunki”) mają zastosowanie do korzystania z naszej strony internetowej („Strona”) oraz usług z nią związanych („Usługi”). Prosimy o dokładne zapoznanie się z nimi, ponieważ zawierają ważne prawa i obowiązki, które stanowią prawnie wiążącą umowę pomiędzy Tobą („Użytkownik”) a nami („Dostawca”). Korzystając ze Strony lub uzyskując dostęp do Usług, zgadzasz się na niniejsze Warunki oraz ich okresowe zmiany. Jeśli się z nimi nie zgadzasz, prosimy o zaprzestanie korzystania ze Strony i Usług.`,
@@ -493,6 +498,7 @@ export const translations = {
     terms: `Přečetl(a) jsem si a souhlasím s <span class="text-white underline underline-offset-4">Podmínkami</span>`,
     signUpWithGoogle: "Zaregistrovat se přes Google",
     signUpWithFacebook: "Zaregistrovat se přes Facebook",
+    signUpWithTelegram: "Zaregistrovat se přes Telegram",
     // | Terms
     termsTitle1: `Podmínky a pravidla`,
     termsParagraph1: `Tyto podmínky („Podmínky“) se vztahují na používání našich webových stránek („Stránka“) a souvisejících služeb („Služby“). Přečtěte si je prosím pečlivě, protože obsahují důležitá práva a povinnosti, které tvoří právně závaznou smlouvu mezi vámi („Uživatel“) a námi („Poskytovatel“). Používáním Stránky nebo přístupem ke Službám souhlasíte s těmito Podmínkami a jejich případnými změnami. Pokud s nimi nesouhlasíte, prosím, přestaňte používat Stránku a Služby.`,
@@ -551,6 +557,7 @@ export const translations = {
     terms: `Prebral(a) sem in se strinjam s <span class="text-white underline underline-offset-4">Pogoji uporabe</span>`,
     signUpWithGoogle: "Registriraj se z Google",
     signUpWithFacebook: "Registriraj se s Facebook",
+    signUpWithTelegram: "Prijavite se s Telegramom",
     // | Terms
     termsTitle1: `Pogoji uporabe`,
     termsParagraph1: `Ti pogoji ("Pogoji") veljajo za uporabo naše spletne strani ("Stran") in povezanih storitev ("Storitve"). Prosimo, da jih natančno preberete, saj vsebujejo pomembne pravice in obveznosti, ki predstavljajo pravno zavezujoč sporazum med vami ("Uporabnik") in nami ("Ponudnik"). Z uporabo Strani ali dostopom do Storitev se strinjate s temi Pogoji in njihovimi morebitnimi spremembami. Če se z njimi ne strinjate, prosimo, prenehajte uporabljati Stran in Storitve.`,
@@ -609,6 +616,7 @@ export const translations = {
     terms: `Διάβασα και συμφωνώ με τους <span class="text-white underline underline-offset-4">Όρους και Προϋποθέσεις</span>`,
     signUpWithGoogle: "Εγγραφή με Google",
     signUpWithFacebook: "Εγγραφή με Facebook",
+    signUpWithTelegram: "Εγγραφή με το Telegram",
     // | Terms
     termsTitle1: `Όροι και Προϋποθέσεις`,
     termsParagraph1: `Αυτοί οι όροι ("Όροι") ισχύουν για τη χρήση της ιστοσελίδας μας ("Ιστοσελίδα") και των σχετικών υπηρεσιών ("Υπηρεσίες"). Παρακαλούμε διαβάστε τους προσεκτικά, καθώς περιέχουν σημαντικά δικαιώματα και υποχρεώσεις που αποτελούν νομικά δεσμευτική συμφωνία μεταξύ εσάς ("Χρήστης") και εμάς ("Πάροχος"). Χρησιμοποιώντας την Ιστοσελίδα ή αποκτώντας πρόσβαση στις Υπηρεσίες, συμφωνείτε με αυτούς τους Όρους και τις ενδεχόμενες τροποποιήσεις τους. Εάν δεν συμφωνείτε, παρακαλούμε σταματήστε να χρησιμοποιείτε την Ιστοσελίδα και τις Υπηρεσίες.`,
@@ -666,6 +674,7 @@ export const translations = {
     terms: `Jeg har lest og godtar <span class="text-white underline underline-offset-4">Vilkår og betingelser</span>`,
     signUpWithGoogle: "Registrer med Google",
     signUpWithFacebook: "Registrer med Facebook",
+    signUpWithTelegram: "Registrer deg med Telegram",
     // | Terms
     termsTitle1: `Vilkår og betingelser`,
     termsParagraph1: `Disse vilkårene ("Vilkår") gjelder for din bruk av vår nettside ("Nettside") og relaterte tjenester ("Tjenester"). Vennligst les dem nøye, da de inneholder viktige rettigheter og forpliktelser som utgjør en juridisk bindende avtale mellom deg ("Bruker") og oss ("Leverandør"). Ved å bruke Nettsiden eller få tilgang til Tjenestene, godtar du disse Vilkårene og eventuelle endringer. Hvis du ikke godtar, vennligst slutt å bruke Nettsiden og Tjenestene.`,
@@ -723,6 +732,7 @@ export const translations = {
     terms: `Jag har läst och godkänner <span class="text-white underline underline-offset-4">Villkor och bestämmelser</span>`,
     signUpWithGoogle: "Registrera med Google",
     signUpWithFacebook: "Registrera med Facebook",
+    signUpWithTelegram: "Registrera dig med Telegram",
     // | Terms
     termsTitle1: `Villkor och bestämmelser`,
     termsParagraph1: `Dessa villkor ("Villkor") gäller för din användning av vår webbplats ("Webbplats") och relaterade tjänster ("Tjänster"). Vänligen läs dem noggrant, eftersom de innehåller viktiga rättigheter och skyldigheter som utgör ett juridiskt bindande avtal mellan dig ("Användare") och oss ("Leverantör"). Genom att använda Webbplatsen eller få tillgång till Tjänsterna godkänner du dessa Villkor och eventuella ändringar. Om du inte godkänner, vänligen sluta använda Webbplatsen och Tjänsterna.`,
@@ -779,6 +789,7 @@ export const translations = {
     terms: `Prečítal(a) som si a súhlasím s <span class="text-white underline underline-offset-4">Podmienkami a pravidlami</span>`,
     signUpWithGoogle: "Registrácia cez Google",
     signUpWithFacebook: "Registrácia cez Facebook",
+    signUpWithTelegram: "Zaregistrujte sa cez Telegram",
     // | Podmienky
     termsTitle1: `Podmienky a pravidlá`,
     termsParagraph1: `Tieto podmienky ("Podmienky") sa vzťahujú na vaše používanie našej webovej stránky ("Webová stránka") a súvisiacich služieb ("Služby"). Prosím, prečítajte si ich pozorne, pretože obsahujú dôležité práva a povinnosti, ktoré tvoria právne záväznú dohodu medzi vami ("Používateľ") a nami ("Poskytovateľ"). Používaním Webovej stránky alebo prístupom k Službám súhlasíte s týmito Podmienkami a akýmikoľvek zmenami. Ak nesúhlasíte, prosím, prestaňte používať Webovú stránku a Služby.`,
@@ -835,6 +846,7 @@ export const translations = {
     terms: `Я согласен с <span class="text-white underline underline-offset-4">Условиями и положениями</span>`,
     signUpWithGoogle: "Зарегистрироваться через Google",
     signUpWithFacebook: "Зарегистрироваться через Facebook",
+    signUpWithTelegram: "Зарегистрироваться через Telegram",
     // | Условия
     termsTitle1: `Условия и положения`,
     termsParagraph1: `Настоящие условия и положения, а также документы, на которые ссылаются ниже ("Условия"), применяются к использованию данного веб-сайта ("Сайт") и связанных с ним сервисов ("Сервис"). Пожалуйста, внимательно ознакомьтесь с этими Условиями, так как они содержат важную информацию о ваших правах и обязанностях в отношении использования Сайта и формируют юридически обязательное соглашение между вами ("Пользователь") и нами ("Сайт"). Используя этот Сайт и/или получая доступ к Сервису, вы, независимо от того, являетесь ли вы гостем или зарегистрированным пользователем с аккаунтом (“Аккаунт”), соглашаетесь с этими Условиями, а также с возможными изменениями, которые могут быть опубликованы время от времени. Если вы не согласны с этими Условиями, прекратите использовать Сайт и Сервис.`,
@@ -893,6 +905,7 @@ export const translations = {
     terms: `Acepto los <span class="text-white underline underline-offset-4">Términos y Condiciones</span>`,
     signUpWithGoogle: "Registrarse con Google",
     signUpWithFacebook: "Registrarse con Facebook",
+    signUpWithTelegram: "Regístrate con Telegram",
     // | Términos
     termsTitle1: `Términos y Condiciones`,
     termsParagraph1: `Estos términos y condiciones y los documentos mencionados a continuación (los "Términos") se aplican al uso del sitio web actual (el "Sitio") y sus servicios relacionados o conectados (colectivamente, el "Servicio"). Debes revisar cuidadosamente estos Términos, ya que contienen información importante sobre tus derechos y obligaciones con respecto al uso del Sitio y constituyen un acuerdo legal vinculante entre tú - nuestro cliente (el "Cliente"), y nosotros (el "Sitio"). Al usar este Sitio y/o acceder al Servicio, tú, ya seas un invitado o un usuario registrado con una cuenta (“Cuenta”), aceptas estar sujeto a estos Términos, junto con cualquier enmienda que pueda ser publicada de vez en cuando. Si no aceptas estos Términos, deberías abstenerte de acceder al Servicio y usar el Sitio.`,
@@ -950,6 +963,7 @@ export const translations = {
     terms: `Eu concordo com os <span class="text-white underline underline-offset-4">Termos e Condições</span>`,
     signUpWithGoogle: "Cadastrar-se com Google",
     signUpWithFacebook: "Cadastrar-se com Facebook",
+    signUpWithTelegram: "Inscreva-se com o Telegram",
     // | Termos
     termsTitle1: `Termos e Condições`,
     termsParagraph1: `Estes termos e condições e os documentos mencionados abaixo (os "Termos") aplicam-se ao uso do site atual (o "Site") e seus serviços relacionados ou conectados (coletivamente, o "Serviço"). Você deve revisar cuidadosamente estes Termos, pois contêm informações importantes sobre seus direitos e obrigações com relação ao uso do Site e constituem um acordo legal vinculativo entre você - nosso cliente (o "Cliente"), e nós (o "Site"). Ao usar este Site e/ou acessar o Serviço, você, seja um visitante ou um usuário registrado com uma conta (“Conta”), concorda em estar vinculado a estes Termos, juntamente com quaisquer alterações que possam ser publicadas de tempos em tempos. Se você não aceitar estes Termos, deve se abster de acessar o Serviço e usar o Site.`,
