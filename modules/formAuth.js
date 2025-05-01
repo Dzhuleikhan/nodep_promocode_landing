@@ -19,7 +19,6 @@ let passwordValid = false;
 let checkboxValid = true;
 
 formData.lang = lang;
-formData.promocode = defaultPromocode;
 formData.cid = cid;
 
 function enableSubmitButton() {
