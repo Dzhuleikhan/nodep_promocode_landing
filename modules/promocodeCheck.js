@@ -2,7 +2,7 @@ import { newDomain } from "./fetchingDomain";
 import { formData } from "./formAuth";
 import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "BITFREE888";
+export const defaulPromocode = "444JOKER";
 
 export const receivedPromocode = (
   getUrlParameter("promocode") || defaulPromocode
