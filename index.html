@@ -16,7 +16,7 @@
     >
       <!-- Terms Modal  -->
       <div
-        class="terms-modal fixed z-[1000] hidden h-screen w-full place-items-center overflow-y-auto bg-black/50 px-5 py-5"
+        class="terms-modal fixed left-0 top-0 z-[1220] hidden h-screen w-full place-items-center overflow-y-auto bg-black/50 px-5 py-5"
       >
         <div
           class="relative h-[500px] w-full max-w-[800px] overflow-y-auto rounded-[10px] bg-[#14182F] p-8 text-white"
@@ -205,7 +205,7 @@
         </div>
       </div>
       <header
-        class="py-3 absolute top-0 max-[576px]:py-[10px] w-full z-[500] bg-black/20 border-b border-white/15"
+        class="py-3 absolute top-0 max-[576px]:py-[10px] w-full z-[1210] bg-black/20 border-b border-white/15"
       >
         <div class="px-[10px] max-w-[1135px] mx-auto">
           <div class="flex items-center w-full justify-between gap-3">
@@ -475,7 +475,7 @@
           <div id="particle-canvas"></div>
           <!-- container -->
           <div
-            class="max-w-[1135px] px-[10px] mx-auto relative z-[302] pt-[67px] max-[576px]:pt-[30px] pb-[67px] max-[576px]:pb-[33px]"
+            class="max-w-[1135px] px-[10px] mx-auto relative z-[1200] pt-[67px] max-[576px]:pt-[30px] pb-[67px] max-[576px]:pb-[33px]"
           >
             <!-- inner -->
             <div
@@ -515,7 +515,7 @@
                   alt="Mascot"
                 />
                 <img
-                  class="absolute bottom-[43px] -right-[290px] z-[1] max-[576px]:max-w-[300px] max-[576px]:-right-5 max-[576px]:bottom-auto max-[576px]:-top-[180px]"
+                  class="absolute bottom-[43px] -right-[290px] z-[1] max-[576px]:max-w-[300px] max-[576px]:-right-10 max-[576px]:bottom-auto max-[576px]:-top-[180px]"
                   width="472"
                   height="472"
                   src="./img/hero-lion-right.webp"
@@ -1248,7 +1248,124 @@
             </div>
           </div>
         </section>
-        <div class="second-section relative">
+        <!-- Local payments -->
+        <div class="flex items-center justify-center gap-4 flex-wrap">
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/upi.webp"
+            alt="UPI"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/imps.webp"
+            alt="imps"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/sodexo.webp"
+            alt="sodexo"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/paypal.webp"
+            alt="paypal"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/payoneer.webp"
+            alt="payoneer"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/visa.webp"
+            alt="visa"
+          />
+          <img
+            width="52"
+            height="36"
+            src="./img/payments/india/mastercard.webp"
+            alt="mastercard"
+          />
+        </div>
+        <!-- Advantages -->
+        <div
+          class="w-full max-w-[1135px] mt-7 px-[10px] mx-auto font-[raleway] max-[992px]:max-w-[600px]"
+        >
+          <div class="p-[2px] advantages-wrapper rounded-[12px]">
+            <div
+              class="rounded-[10px] bg-[#1F2141] w-full h-full p-8 grid grid-cols-3 gap-4 max-[992px]:grid-cols-1 max-[576px]:p-6"
+            >
+              <div
+                class="advantage-item relative grid grid-cols-[1fr_auto] gap-4 pr-4 max-[992px]:pr-0 max-[992px]:pb-4"
+              >
+                <div class="grid gap-2">
+                  <p
+                    data-translate="advantege1Title"
+                    class="text-[18px] font-bold text-white"
+                  ></p>
+                  <span
+                    data-translate="advantege1Text"
+                    class="text-base leading-[131%] opacity-70 text-white"
+                  ></span>
+                </div>
+                <img
+                  class="advantage-img will-change-transform"
+                  width="80"
+                  height="84"
+                  src="./img/advantages1-img.webp"
+                  alt="Advantage image"
+                />
+              </div>
+              <div
+                class="advantage-item relative grid grid-cols-[1fr_auto] gap-4 pr-4 max-[992px]:pr-0 max-[992px]:pb-4"
+              >
+                <div class="grid gap-2">
+                  <p
+                    data-translate="advantege2Title"
+                    class="text-[18px] font-bold text-white"
+                  ></p>
+                  <span
+                    data-translate="advantege2Text"
+                    class="text-base leading-[131%] opacity-70 text-white"
+                  ></span>
+                </div>
+                <img
+                  class="advantage-img will-change-transform"
+                  width="80"
+                  height="84"
+                  src="./img/advantages2-img.webp"
+                  alt="Advantage image"
+                />
+              </div>
+              <div class="grid grid-cols-[1fr_auto] gap-4">
+                <div class="grid gap-2">
+                  <p
+                    data-translate="advantege3Title"
+                    class="text-[18px] font-bold text-white"
+                  ></p>
+                  <span
+                    data-translate="advantege3Text"
+                    class="text-base leading-[131%] opacity-70 text-white"
+                  ></span>
+                </div>
+                <img
+                  class="advantage-img will-change-transform"
+                  width="80"
+                  height="84"
+                  src="./img/advantages3-img.webp"
+                  alt="Advantage image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-section relative mt-10">
           <!-- Payments -->
           <div
             class="font-[raleway] payments-wrapper py-10 max-[576px]:pb-[50px]"
@@ -1592,81 +1709,9 @@
               </li>
             </ul>
           </div>
-          <!-- Advantages -->
-          <div
-            class="w-full max-w-[1135px] px-[10px] mx-auto font-[raleway] max-[992px]:max-w-[600px]"
-          >
-            <div class="p-[2px] advantages-wrapper rounded-[12px]">
-              <div
-                class="rounded-[10px] bg-[#1F2141] w-full h-full p-8 grid grid-cols-3 gap-4 max-[992px]:grid-cols-1 max-[576px]:p-6"
-              >
-                <div
-                  class="advantage-item relative grid grid-cols-[1fr_auto] gap-4 pr-4 max-[992px]:pr-0 max-[992px]:pb-4"
-                >
-                  <div class="grid gap-2">
-                    <p
-                      data-translate="advantege1Title"
-                      class="text-[18px] font-bold text-white"
-                    ></p>
-                    <span
-                      data-translate="advantege1Text"
-                      class="text-base leading-[131%] opacity-70 text-white"
-                    ></span>
-                  </div>
-                  <img
-                    class="advantage-img will-change-transform"
-                    width="80"
-                    height="84"
-                    src="./img/advantages1-img.webp"
-                    alt="Advantage image"
-                  />
-                </div>
-                <div
-                  class="advantage-item relative grid grid-cols-[1fr_auto] gap-4 pr-4 max-[992px]:pr-0 max-[992px]:pb-4"
-                >
-                  <div class="grid gap-2">
-                    <p
-                      data-translate="advantege2Title"
-                      class="text-[18px] font-bold text-white"
-                    ></p>
-                    <span
-                      data-translate="advantege2Text"
-                      class="text-base leading-[131%] opacity-70 text-white"
-                    ></span>
-                  </div>
-                  <img
-                    class="advantage-img will-change-transform"
-                    width="80"
-                    height="84"
-                    src="./img/advantages2-img.webp"
-                    alt="Advantage image"
-                  />
-                </div>
-                <div class="grid grid-cols-[1fr_auto] gap-4">
-                  <div class="grid gap-2">
-                    <p
-                      data-translate="advantege3Title"
-                      class="text-[18px] font-bold text-white"
-                    ></p>
-                    <span
-                      data-translate="advantege3Text"
-                      class="text-base leading-[131%] opacity-70 text-white"
-                    ></span>
-                  </div>
-                  <img
-                    class="advantage-img will-change-transform"
-                    width="80"
-                    height="84"
-                    src="./img/advantages3-img.webp"
-                    alt="Advantage image"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- Footer -->
           <div
-            class="max-w-[1135px] px-[10px] py-[60px] mx-auto max-[576px]:py-10"
+            class="max-w-[1135px] px-[10px] py-[60px] mx-auto max-[576px]:py-10 max-[576px]:pt-5"
           >
             <p
               data-translate="footerText"
@@ -1690,7 +1735,7 @@
       </main>
     </div>
     <div
-      class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#040225]"
+      class="preloader pointer-events-none fixed left-0 top-0 z-[1500] grid h-screen w-full place-items-center bg-[#040225]"
     >
       <svg
         width="106"
