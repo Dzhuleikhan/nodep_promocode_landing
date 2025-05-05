@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `Claim bonus <b><span>100 FS</span></b> <br/> in <b><span>Bison Storm</span></b>`,
+    heroTitle: `Claim bonus <b><span>777 FS</span></b> <br/> in <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> up to <span>420.000 INR</span> & <span>200 Free Spins</span> with your 1st deposit`,
     heroBtn: "get bonus",
     paymentsTitle: `Accepted <span>41</span> Cryptocurrencies`,
@@ -163,7 +163,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus de <b><span>100 FS</span></b> <br/> dans <b><span>Bison Storm</span></b>`,
+    heroTitle: `Réclamez un bonus de <b><span>777 FS</span></b> <br/> dans <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> jusqu’à <span>420.000 INR</span> & <span>200 Tours Gratuits</span> avec votre premier dépôt`,
     heroBtn: "obtenir le bonus",
     paymentsTitle: `<span>41</span> Cryptomonnaies Acceptées`,
@@ -221,7 +221,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este pregătit - Goldbet",
-    heroTitle: `Revendică bonusul <b><span>100 FS</span></b> <br/> în <b><span>Bison Storm</span></b>`,
+    heroTitle: `Revendică bonusul <b><span>777 FS</span></b> <br/> în <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> până la <span>420.000 INR</span> & <span>200 Rotiri Gratuite</span> la prima depunere`,
     heroBtn: "obține bonusul",
     paymentsTitle: `Acceptăm <span>41</span> criptomonede`,
@@ -357,7 +357,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `Igényeld a <b><span>100 ingyenes pörgetést</span></b> <br/> a <b><span>Bison Storm</span></b> játékban`,
+    heroTitle: `Igényeld a <b><span>100 ingyenes pörgetést</span></b> <br/> a <b><span>Gamba Mamba</span></b> játékban`,
     heroSubtitle: `<span>+100%</span> akár <span>420.000 INR</span>-ig & <span>200 Ingyenes Pörgetés</span> az első befizetésnél`,
     heroBtn: "bónusz igénylése",
     paymentsTitle: `<span>41</span> kriptovalutát elfogadunk`,
@@ -415,7 +415,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `Zgarnij <b><span>100 darmowych spinów</span></b> <br/> w grze <b><span>Bison Storm</span></b>`,
+    heroTitle: `Zgarnij <b><span>100 darmowych spinów</span></b> <br/> w grze <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> do <span>420.000 INR</span> & <span>200 Darmowych Spinów</span> przy pierwszym depozycie`,
     heroBtn: "odbierz bonus",
     paymentsTitle: `Akceptujemy <span>41</span> kryptowalut`,
@@ -474,7 +474,7 @@ export const translations = {
   },
   cz: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle: `Získejte <b><span>100 volných zatočení</span></b> <br/> ve hře <b><span>Bison Storm</span></b>`,
+    heroTitle: `Získejte <b><span>100 volných zatočení</span></b> <br/> ve hře <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> až do výše <span>420.000 INR</span> & <span>200 volných zatočení</span> při prvním vkladu`,
     heroBtn: "získat bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptoměn`,
@@ -532,7 +532,7 @@ export const translations = {
   },
   si: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle: `Prejmite <b><span>100 brezplačnih vrtljajev</span></b> <br/> v igri <b><span>Bison Storm</span></b>`,
+    heroTitle: `Prejmite <b><span>100 brezplačnih vrtljajev</span></b> <br/> v igri <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> do <span>4500 EUR</span> & <span>200 brezplačnih vrtljajev</span> ob prvem pologu`,
     heroBtn: "prevzemi bonus",
     paymentsTitle: `Sprejemamo <span>41</span> kriptovalut`,
@@ -591,7 +591,7 @@ export const translations = {
   },
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `Λάβετε <b><span>100 δωρεάν περιστροφές</span></b> <br/> στο παιχνίδι <b><span>Bison Storm</span></b>`,
+    heroTitle: `Λάβετε <b><span>100 δωρεάν περιστροφές</span></b> <br/> στο παιχνίδι <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> έως <span>420.000 INR</span> & <span>200 δωρεάν περιστροφές</span> με την πρώτη κατάθεση`,
     heroBtn: "λάβετε το μπόνους",
     paymentsTitle: `Δεχόμαστε <span>41</span> κρυπτονομίσματα`,
@@ -650,7 +650,7 @@ export const translations = {
   },
   no: {
     pageTitle: "🎁 Din bonus er klar – Goldbet",
-    heroTitle: `Få <b><span>100 gratisspinn</span></b> <br/> på spillet <b><span>Bison Storm</span></b>`,
+    heroTitle: `Få <b><span>100 gratisspinn</span></b> <br/> på spillet <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> opptil <span>420.000 INR</span> & <span>200 gratisspinn</span> med første innskudd`,
     heroBtn: "hent bonusen",
     paymentsTitle: `Vi godtar <span>41</span> kryptovalutaer`,
@@ -708,7 +708,7 @@ export const translations = {
   },
   se: {
     pageTitle: "🎁 Din bonus är klar – Goldbet",
-    heroTitle: `Få <b><span>100 gratissnurr</span></b> <br/> på spelet <b><span>Bison Storm</span></b>`,
+    heroTitle: `Få <b><span>100 gratissnurr</span></b> <br/> på spelet <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> upp till <span>420.000 INR</span> & <span>200 gratissnurr</span> med första insättningen`,
     heroBtn: "hämta bonusen",
     paymentsTitle: `Vi accepterar <span>41</span> kryptovalutor`,
@@ -766,7 +766,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Váš bonus je pripravený – Goldbet",
-    heroTitle: `Získajte <b><span>100 bezplatných zatočení</span></b> <br/> na hre <b><span>Bison Storm</span></b>`,
+    heroTitle: `Získajte <b><span>100 bezplatných zatočení</span></b> <br/> na hre <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> až do <span>420.000 INR</span> & <span>200 bezplatných zatočení</span> s prvým vkladom`,
     heroBtn: "získať bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptomien`,
@@ -823,7 +823,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `Получите бонус <b><span>100 бесплатных вращений</span></b> <br/> в игре <b><span>Bison Storm</span></b>`,
+    heroTitle: `Получите бонус <b><span>100 бесплатных вращений</span></b> <br/> в игре <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> до <span>420.000 INR</span> & <span>200 бесплатных вращений</span> при первом депозите`,
     heroBtn: "получить бонус",
     paymentsTitle: `Мы принимаем <span>41</span> криптовалюту`,
@@ -880,7 +880,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `Reclama el bono <b><span>100 Giros Gratis</span></b> <br/> en <b><span>Bison Storm</span></b>`,
+    heroTitle: `Reclama el bono <b><span>100 Giros Gratis</span></b> <br/> en <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> hasta <span>420.000 INR</span> & <span>200 Giros Gratis</span> con tu primer depósito`,
     heroBtn: "obtener bono",
     paymentsTitle: `Aceptamos <span>41</span> Criptomonedas`,
@@ -939,7 +939,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 O seu bônus está pronto - Goldbet",
-    heroTitle: `Reclame o bônus <b><span>100 Giros Grátis</span></b> <br/> no <b><span>Bison Storm</span></b>`,
+    heroTitle: `Reclame o bônus <b><span>100 Giros Grátis</span></b> <br/> no <b><span>Gamba Mamba</span></b>`,
     heroSubtitle: `<span>+100%</span> até <span>420.000 INR</span> & <span>200 Giros Grátis</span> com o seu primeiro depósito`,
     heroBtn: "obter bônus",
     paymentsTitle: `Aceitamos <span>41</span> Criptomoedas`,
