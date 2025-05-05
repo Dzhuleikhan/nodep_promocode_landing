@@ -95,10 +95,6 @@ body {
   z-index: 100;
 }
 
-#hero {
-  background: radial-gradient(60.29% 226.8% at -60.29% 0%, #252848 0%, #040225 100%);
-}
-
 .hero-title span {
   background: linear-gradient(127deg, #e3966d 0%, #fc0fba 100%);
   background-clip: text;
