@@ -206,7 +206,7 @@
 var canvasDiv = document.getElementById("particle-canvas");
 var options = {
   particleColor: "#888",
-  background: "../img/bg-flag.png",
+  background: "./img/bg-flag.png",
   interactive: true,
   speed: "medium",
   density: "high",
