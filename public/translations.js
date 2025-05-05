@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `⚽ Get <b><span>550%</span></b> <br/> up to <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Get <b><span>550%</span></b> <br/> up to <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> free spins on your first deposit`,
     heroBtn: "get bonus",
     paymentsTitle: `Accepted <span>41</span> Cryptocurrencies`,
@@ -163,7 +163,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `⚽ Obtenez <b><span>550%</span></b> <br/> jusqu'à <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Obtenez <b><span>550%</span></b> <br/> jusqu'à <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> tours gratuits sur votre premier dépôt`,
     heroBtn: "obtenir le bonus",
     paymentsTitle: `<span>41</span> Cryptomonnaies Acceptées`,
@@ -221,7 +221,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este pregătit - Goldbet",
-    heroTitle: `⚽ Obțineți <b><span>550%</span></b> <br/> până la <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Obțineți <b><span>550%</span></b> <br/> până la <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> rotiri gratuite la prima depunere`,
     heroBtn: "obține bonusul",
     paymentsTitle: `Acceptăm <span>41</span> criptomonede`,
@@ -357,7 +357,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `⚽ Szerezzen <b><span>550%</span></b> <br/> akár <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Szerezzen <b><span>550%</span></b> <br/> akár <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> ingyen pörgetés az első befizetésedre`,
     heroBtn: "bónusz igénylése",
     paymentsTitle: `<span>41</span> kriptovalutát elfogadunk`,
@@ -415,7 +415,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `⚽ Zdobądź <b><span>550%</span></b> <br/> do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Zdobądź <b><span>550%</span></b> <br/> do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> darmowych spinów przy pierwszym depozycie`,
     heroBtn: "odbierz bonus",
     paymentsTitle: `Akceptujemy <span>41</span> kryptowalut`,
@@ -474,7 +474,7 @@ export const translations = {
   },
   cz: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle: `⚽ Získejte <b><span>550%</span></b> <br/> až do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Získejte <b><span>550%</span></b> <br/> až do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> volných otočení při prvním vkladu`,
     heroBtn: "získat bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptoměn`,
@@ -532,7 +532,7 @@ export const translations = {
   },
   si: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle: `⚽ Pridobite <b><span>550%</span></b> <br/> do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Pridobite <b><span>550%</span></b> <br/> do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> brezplačnih vrtljajev ob prvem pologu`,
     heroBtn: "prevzemi bonus",
     paymentsTitle: `Sprejemamo <span>41</span> kriptovalut`,
@@ -591,7 +591,7 @@ export const translations = {
   },
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `⚽ Αποκτήστε <b><span>550%</span></b> <br/> έως <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Αποκτήστε <b><span>550%</span></b> <br/> έως <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> δωρεάν περιστροφές με την πρώτη κατάθεση`,
     heroBtn: "λάβετε το μπόνους",
     paymentsTitle: `Δεχόμαστε <span>41</span> κρυπτονομίσματα`,
@@ -650,7 +650,7 @@ export const translations = {
   },
   no: {
     pageTitle: "🎁 Din bonus er klar – Goldbet",
-    heroTitle: `⚽ Få <b><span>550%</span></b> <br/> opptil <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Få <b><span>550%</span></b> <br/> opptil <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> gratisspinn på ditt første innskudd`,
     heroBtn: "hent bonusen",
     paymentsTitle: `Vi godtar <span>41</span> kryptovalutaer`,
@@ -708,7 +708,7 @@ export const translations = {
   },
   se: {
     pageTitle: "🎁 Din bonus är klar – Goldbet",
-    heroTitle: `⚽ Få <b><span>550%</span></b> <br/> upp till <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Få <b><span>550%</span></b> <br/> upp till <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> gratissnurr vid din första insättning`,
     heroBtn: "hämta bonusen",
     paymentsTitle: `Vi accepterar <span>41</span> kryptovalutor`,
@@ -766,7 +766,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Váš bonus je pripravený – Goldbet",
-    heroTitle: `⚽ Získajte <b><span>550%</span></b> <br/> až do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Získajte <b><span>550%</span></b> <br/> až do <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> voľných točení pri prvom vklade`,
     heroBtn: "získať bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptomien`,
@@ -823,7 +823,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `⚽ Получите <b><span>550%</span></b> <br/> до <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Получите <b><span>550%</span></b> <br/> до <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> бесплатных вращений при первом депозите`,
     heroBtn: "получить бонус",
     paymentsTitle: `Мы принимаем <span>41</span> криптовалюту`,
@@ -880,7 +880,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `⚽ Obtén <b><span>550%</span></b> <br/> hasta <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Obtén <b><span>550%</span></b> <br/> hasta <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> giros gratis en tu primer depósito`,
     heroBtn: "obtener bono",
     paymentsTitle: `Aceptamos <span>41</span> Criptomonedas`,
@@ -939,7 +939,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 O seu bônus está pronto - Goldbet",
-    heroTitle: `⚽ Obtenha <b><span>550%</span></b> <br/> até <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroTitle: `🏏 Obtenha <b><span>550%</span></b> <br/> até <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
     heroSubtitle: `<span>🎰 +200</span> giros grátis no seu primeiro depósito`,
     heroBtn: "obter bônus",
     paymentsTitle: `Aceitamos <span>41</span> Criptomoedas`,
