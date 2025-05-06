@@ -332,8 +332,8 @@ export const countryCurrencyData = [
     countryCurrencySymbol: "₹",
     countryCurrencyFullName: "Indian Rupee",
     countryCurrencyIcon: "./img/currencies/inr.svg",
-    amount: "420.000",
-    spins: "25FS",
+    amount: "415.000",
+    spins: "200FS",
   },
   {
     countries: ["KG"],
