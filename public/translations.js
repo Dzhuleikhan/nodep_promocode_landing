@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `Claim bonus <b><span>100 FS</span></b> <br/> in <b><span>Royal Joker</span></b>`,
+    heroTitle: `Claim bonus <b><span>555 FS</span></b> <br/> in <b><span>Royal Joker</span></b>`,
     heroSubtitle: `<span>+100%</span> up to <span>4500EUR</span> & <span>200 Free Spins</span> with your 1st deposit`,
     heroBtn: "get bonus",
     paymentsTitle: `Accepted <span>41</span> Cryptocurrencies`,
@@ -163,7 +163,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus de <b><span>100 FS</span></b> <br/> dans <b><span>Royal Joker</span></b>`,
+    heroTitle: `Réclamez un bonus de <b><span>555 FS</span></b> <br/> dans <b><span>Royal Joker</span></b>`,
     heroSubtitle: `<span>+100%</span> jusqu’à <span>4500EUR</span> & <span>200 Tours Gratuits</span> avec votre premier dépôt`,
     heroBtn: "obtenir le bonus",
     paymentsTitle: `<span>41</span> Cryptomonnaies Acceptées`,
@@ -221,7 +221,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este pregătit - Goldbet",
-    heroTitle: `Revendică bonusul <b><span>100 FS</span></b> <br/> în <b><span>Royal Joker</span></b>`,
+    heroTitle: `Revendică bonusul <b><span>555 FS</span></b> <br/> în <b><span>Royal Joker</span></b>`,
     heroSubtitle: `<span>+100%</span> până la <span>4500EUR</span> & <span>200 Rotiri Gratuite</span> la prima depunere`,
     heroBtn: "obține bonusul",
     paymentsTitle: `Acceptăm <span>41</span> criptomonede`,
