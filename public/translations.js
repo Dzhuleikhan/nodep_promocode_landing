@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>bison storm</span>`,
+    heroTitle: `claim your bonus <br/> <span>333 free spins</span> <br/> in <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
@@ -16,7 +16,7 @@ export const translations = {
     backBtn: "Back",
     closeBtn: "Close",
     // | Step 1
-    depToBalance: `<span>100 FREE SPINS</span>`,
+    depToBalance: `<span>333 FREE SPINS</span>`,
     withoutDeposit: "Without deposit",
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
@@ -62,7 +62,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>bison storm</span>.`,
+    heroTitle: `Réclamez un bonus <br/> <span>de 333 tours gratuits</span> <br/> dans <span>bison storm</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
@@ -78,7 +78,7 @@ export const translations = {
     backBtn: "Retour",
     closeBtn: "Fermer",
     // | Step 1
-    depToBalance: `<span>de 100 tours gratuits</span>`,
+    depToBalance: `<span>de 333 tours gratuits</span>`,
     withoutDeposit: "Sans dépôt",
     step1Title: "Choisissez votre bonus",
     welcomeBonus: "Bonus de bienvenue",
@@ -124,7 +124,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
-    heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>bison storm</span>`,
+    heroTitle: `reivindică-ți bonusul <br/> <span>333 rotiri gratuite</span> <br/> în <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
@@ -140,7 +140,7 @@ export const translations = {
     backBtn: "Înapoi",
     closeBtn: "Închide",
     // | Step 1
-    depToBalance: "<span>100 ROTIRI GRATUITE</span>",
+    depToBalance: "<span>333 ROTIRI GRATUITE</span>",
     withoutDeposit: "Fără depunere",
     step1Title: "Alege-ți Bonusul",
     welcomeBonus: "Bonus de Bun Venit",
@@ -186,7 +186,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>bison storm</span> játékban`,
+    heroTitle: `igényeld a bónuszod <br/> <span>333 ingyenes pörgetés</span> <br/> a <span>bison storm</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
     slideStep1Title: "Regisztrálj",
@@ -202,7 +202,7 @@ export const translations = {
     backBtn: "Vissza",
     closeBtn: "Bezárás",
     // | Step 1
-    depToBalance: `<span>100 INGYENES PÖRGETÉS</span>`,
+    depToBalance: `<span>333 INGYENES PÖRGETÉS</span>`,
     withoutDeposit: "Befizetés nélkül",
     step1Title: "Válaszd ki a bónuszodat",
     welcomeBonus: "Üdvözlő Bónusz",
@@ -249,7 +249,7 @@ export const translations = {
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
-      "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>bison storm</span>",
+      "odebrój swój bonus <br/> <span>333 darmowych spinów</span> <br/> w <span>bison storm</span>",
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
@@ -264,7 +264,7 @@ export const translations = {
     backBtn: "Wstecz",
     closeBtn: "Zamknij",
     // | Step 1
-    depToBalance: `<span>100 DARMOWYCH SPINÓW</span>`,
+    depToBalance: `<span>333 DARMOWYCH SPINÓW</span>`,
     withoutDeposit: "Bez depozytu",
     step1Title: "Wybierz Swój Bonus",
     welcomeBonus: "Bonus Powitalny",
@@ -311,7 +311,7 @@ export const translations = {
   cz: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
-      "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>bison storm</span>",
+      "získejte svůj bonus <br/> <span>333 volných točení</span> <br/> ve hře <span>bison storm</span>",
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
     slideStep1Title: "Registrovat se",
@@ -328,7 +328,7 @@ export const translations = {
     backBtn: "Zpět",
     closeBtn: "Zavřít",
     // | Step 1
-    depToBalance: `<span>100 VOLNÝCH TOČENÍ</span>`,
+    depToBalance: `<span>333 VOLNÝCH TOČENÍ</span>`,
     withoutDeposit: "Bez vkladu",
     step1Title: "Vyberte svůj bonus",
     welcomeBonus: "Vítací bonus",
@@ -375,7 +375,7 @@ export const translations = {
   si: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
-      "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>bison storm</span>",
+      "prevzemite svoj bonus <br/> <span>333 brezplačnih vrtljajev</span> <br/> v <span>bison storm</span>",
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
     slideStep1Title: "Registrirajte se",
@@ -391,7 +391,7 @@ export const translations = {
     backBtn: "Nazaj",
     closeBtn: "Zapri",
     // | Step 1
-    depToBalance: `<span>100 BREZPLAČNIH VRTLJEV</span>`,
+    depToBalance: `<span>333 BREZPLAČNIH VRTLJEV</span>`,
     withoutDeposit: "Brez pologa",
     step1Title: "Izberite svoj bonus",
     welcomeBonus: "Dobrodošli bonus",
@@ -437,7 +437,7 @@ export const translations = {
   },
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>bison storm</span>`,
+    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>333 δωρεάν περιστροφές</span> <br/> στο <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
     slideStep1Title: "Εγγραφή",
@@ -454,7 +454,7 @@ export const translations = {
     backBtn: "Πίσω",
     closeBtn: "Κλείσιμο",
     // | Step 1
-    depToBalance: `<span>100 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ</span>`,
+    depToBalance: `<span>333 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ</span>`,
     withoutDeposit: "Χωρίς κατάθεση",
     step1Title: "Επιλέξτε το μπόνους σας",
     welcomeBonus: "Μπόνους καλωσορίσματος",
@@ -500,7 +500,7 @@ export const translations = {
   },
   no: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
-    heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>bison storm</span>`,
+    heroTitle: `kreve din bonus <br/> <span>333 gratisspinn</span> <br/> i <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer deg",
@@ -515,7 +515,7 @@ export const translations = {
     backBtn: "Tilbake",
     closeBtn: "Lukk",
     // | Step 1
-    depToBalance: `<span>100 GRATISSPIINN</span>`,
+    depToBalance: `<span>333 GRATISSPIINN</span>`,
     withoutDeposit: "Uten innskudd",
     step1Title: "Velg din bonus",
     welcomeBonus: "Velkomstbonus",
@@ -561,7 +561,7 @@ export const translations = {
   },
   se: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
-    heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>bison storm</span>`,
+    heroTitle: `hämta din bonus <br/> <span>333 gratissnurr</span> <br/> i <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
     slideStep1Title: "Registrera dig",
@@ -577,7 +577,7 @@ export const translations = {
     backBtn: "Tillbaka",
     closeBtn: "Stäng",
     // | Step 1
-    depToBalance: `<span>100 GRATISSNURR</span>`,
+    depToBalance: `<span>333 GRATISSNURR</span>`,
     withoutDeposit: "Utan insättning",
     step1Title: "Välj din bonus",
     welcomeBonus: "Välkomstbonus",
@@ -623,7 +623,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
-    heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>bison storm</span>`,
+    heroTitle: `získajte svoj bonus <br/> <span>333 voľných spinov</span> <br/> v <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
     slideStep1Title: "Registrovať sa",
@@ -639,7 +639,7 @@ export const translations = {
     backBtn: "Späť",
     closeBtn: "Zatvoriť",
     // | Step 1
-    depToBalance: `<span>100 VOĽNÝCH SPINOV</span>`,
+    depToBalance: `<span>333 VOĽNÝCH SPINOV</span>`,
     withoutDeposit: "Bez vkladu",
     step1Title: "Vyberte si svoj bonus",
     welcomeBonus: "Uvítací bonus",
@@ -685,7 +685,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>bison storm</span>`,
+    heroTitle: `заберите свой бонус <br/> <span>333 фриспинов</span> <br/> в <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
     slideStep1Title: "Зарегистрируйтесь",
@@ -701,7 +701,7 @@ export const translations = {
     backBtn: "Назад",
     closeBtn: "Закрыть",
     // | Step 1
-    depToBalance: `<span>100 ФРИСПИНОВ</span>`,
+    depToBalance: `<span>333 ФРИСПИНОВ</span>`,
     withoutDeposit: "Без депозита",
     step1Title: "Выберите свой бонус",
     welcomeBonus: "Приветственный бонус",
@@ -747,7 +747,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>bison storm</span>`,
+    heroTitle: `reclama tu bono <br/> <span>333 giros gratis</span> <br/> en <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
@@ -763,7 +763,7 @@ export const translations = {
     backBtn: "Atrás",
     closeBtn: "Cerrar",
     // | Step 1
-    depToBalance: `<span>100 GIROS GRATIS</span>`,
+    depToBalance: `<span>333 GIROS GRATIS</span>`,
     withoutDeposit: "Sin depósito",
     step1Title: "Elige tu bono",
     welcomeBonus: "Bono de bienvenida",
@@ -809,7 +809,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>bison storm</span>`,
+    heroTitle: `resgate seu bônus <br/> <span>333 rodadas grátis</span> <br/> em <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
@@ -824,7 +824,7 @@ export const translations = {
     backBtn: "Voltar",
     closeBtn: "Fechar",
     // | Step 1
-    depToBalance: `<span>100 RODADAS GRÁTIS</span>`,
+    depToBalance: `<span>333 RODADAS GRÁTIS</span>`,
     withoutDeposit: "Sem depósito",
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
