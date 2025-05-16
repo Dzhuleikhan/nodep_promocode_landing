@@ -656,7 +656,7 @@ export const nodepBonuses = [
     symbol: "€",
     bonusAmount: "10",
     countryCurrencyIcon: "./img/currencies/eur.svg",
-    moneyAmount: "3680",
+    moneyAmount: "4500",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
