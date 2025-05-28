@@ -311,7 +311,9 @@ if (mainForm) {
             disableFormWhileSubmitting();
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
-            }&email=${formData.email}&password=${formData.password}${
+            }&email=${encodeURIComponent(
+              formData.email
+            )}&password=${encodeURIComponent(formData.password)}${
               formData.bonus === "" ? "" : "&bonus=" + formData.bonus
             }${
               formData.promocode ? "&promocode=" + formData.promocode : ""
@@ -319,7 +321,9 @@ if (mainForm) {
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
-              }&email=${formData.email}&password=${formData.password}${
+              }&email=${encodeURIComponent(
+                formData.email
+              )}&password=${encodeURIComponent(formData.password)}${
                 formData.bonus === "" ? "" : "&bonus=" + formData.bonus
               }${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
@@ -329,17 +333,17 @@ if (mainForm) {
             disableFormWhileSubmitting();
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
-            }&phone=${formData.phone}&password=${formData.password}${
-              formData.bonus === "" ? "" : "&bonus=" + formData.bonus
-            }${
+            }&phone=${formData.phone}&password=${encodeURIComponent(
+              formData.password
+            )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
               formData.promocode ? "&promocode=" + formData.promocode : ""
             }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
-              }&phone=${formData.phone}&password=${formData.password}${
-                formData.bonus === "" ? "" : "&bonus=" + formData.bonus
-              }${
+              }&phone=${formData.phone}&password=${encodeURIComponent(
+                formData.password
+              )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
               }&lang=${lang}${cid ? "&cid=" + cid : ""}`
             );
