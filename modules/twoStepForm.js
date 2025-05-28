@@ -953,7 +953,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
     email
-  )}&password=${password}&phone=${phone}&bonus=${bonus}${
+  )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + promocode : ""
   }&lang=${lang}${firstName ? "&f_name=" + firstName : ""}${
     lastName ? "&l_name=" + lastName : ""
@@ -967,7 +967,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email
-    )}&password=${password}&phone=${phone}&bonus=${bonus}${
+    )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + promocode : ""
     }&lang=${lang}${firstName ? "&f_name=" + firstName : ""}${
       lastName ? "&l_name=" + lastName : ""
