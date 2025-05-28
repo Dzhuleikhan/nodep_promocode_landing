@@ -121,15 +121,17 @@ function submitForm(form) {
     disableBtnOnSubmit();
     window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${
       formData.currency
-    }&email=${formData.email}&password=${formData.password}${
-      formData.bonus ? "&bonus=" + formData.bonus : ""
-    }${formData.promocode ? "&promocode=" + formData.promocode : ""}&lang=${
-      formData.lang
-    }${cid ? "&cid=" + cid : ""}`;
+    }&email=${encodeURIComponent(formData.email)}&password=${encodeURIComponent(
+      formData.password
+    )}${formData.bonus ? "&bonus=" + formData.bonus : ""}${
+      formData.promocode ? "&promocode=" + formData.promocode : ""
+    }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}`;
     console.log(
       `https://${newDomain}/api/register?env=prod&type=email&currency=${
         formData.currency
-      }&email=${formData.email}&password=${formData.password}${
+      }&email=${encodeURIComponent(
+        formData.email
+      )}&password=${encodeURIComponent(formData.password)}${
         formData.bonus ? "&bonus=" + formData.bonus : ""
       }${formData.promocode ? "&promocode=" + formData.promocode : ""}&lang=${
         formData.lang
