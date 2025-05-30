@@ -1,7 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "PL222SLOT";
+export const defaulPromocode = "FREE150SPINS";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
