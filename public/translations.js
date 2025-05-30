@@ -17,7 +17,7 @@ export const translations = {
     closeBtn: "Close",
     // | Step 1
     depToBalance: `<span>300 FREE SPINS</span>`,
-    withoutDeposit: "Without deposit",
+    withoutDeposit: "For a minimum deposit",
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
     welcomeBonusText: "on your first deposit",
@@ -79,7 +79,7 @@ export const translations = {
     closeBtn: "Fermer",
     // | Step 1
     depToBalance: `<span>de 150 tours gratuits</span>`,
-    withoutDeposit: "Sans dépôt",
+    withoutDeposit: "Pour un dépôt minimum",
     step1Title: "Choisissez votre bonus",
     welcomeBonus: "Bonus de bienvenue",
     welcomeBonusText: "sur votre premier dépôt",
@@ -141,7 +141,7 @@ export const translations = {
     closeBtn: "Închide",
     // | Step 1
     depToBalance: "<span>300 ROTIRI GRATUITE</span>",
-    withoutDeposit: "Fără depunere",
+    withoutDeposit: "Pentru un depozit minim",
     step1Title: "Alege-ți Bonusul",
     welcomeBonus: "Bonus de Bun Venit",
     welcomeBonusText: "la prima ta depunere",
@@ -203,7 +203,7 @@ export const translations = {
     closeBtn: "Bezárás",
     // | Step 1
     depToBalance: `<span>300 INGYENES PÖRGETÉS</span>`,
-    withoutDeposit: "Befizetés nélkül",
+    withoutDeposit: "Minimális befizetésért",
     step1Title: "Válaszd ki a bónuszodat",
     welcomeBonus: "Üdvözlő Bónusz",
     welcomeBonusText: "az első befizetésedre",
@@ -265,7 +265,7 @@ export const translations = {
     closeBtn: "Zamknij",
     // | Step 1
     depToBalance: `<span>300 DARMOWYCH SPINÓW</span>`,
-    withoutDeposit: "Bez depozytu",
+    withoutDeposit: "Za minimalny depozyt",
     step1Title: "Wybierz Swój Bonus",
     welcomeBonus: "Bonus Powitalny",
     welcomeBonusText: "przy pierwszej wpłacie",
@@ -329,7 +329,7 @@ export const translations = {
     closeBtn: "Zavřít",
     // | Step 1
     depToBalance: `<span>300 VOLNÝCH TOČENÍ</span>`,
-    withoutDeposit: "Bez vkladu",
+    withoutDeposit: "Za minimální vklad",
     step1Title: "Vyberte svůj bonus",
     welcomeBonus: "Vítací bonus",
     welcomeBonusText: "při první depozitu",
@@ -392,7 +392,7 @@ export const translations = {
     closeBtn: "Zapri",
     // | Step 1
     depToBalance: `<span>300 BREZPLAČNIH VRTLJEV</span>`,
-    withoutDeposit: "Brez pologa",
+    withoutDeposit: "Za minimalni polog",
     step1Title: "Izberite svoj bonus",
     welcomeBonus: "Dobrodošli bonus",
     welcomeBonusText: "ob vašem prvem pologu",
@@ -455,7 +455,7 @@ export const translations = {
     closeBtn: "Κλείσιμο",
     // | Step 1
     depToBalance: `<span>300 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ</span>`,
-    withoutDeposit: "Χωρίς κατάθεση",
+    withoutDeposit: "Με ελάχιστη κατάθεση",
     step1Title: "Επιλέξτε το μπόνους σας",
     welcomeBonus: "Μπόνους καλωσορίσματος",
     welcomeBonusText: "στην πρώτη σας κατάθεση",
@@ -516,7 +516,7 @@ export const translations = {
     closeBtn: "Lukk",
     // | Step 1
     depToBalance: `<span>300 GRATISSPIINN</span>`,
-    withoutDeposit: "Uten innskudd",
+    withoutDeposit: "For et minimumsinnskudd",
     step1Title: "Velg din bonus",
     welcomeBonus: "Velkomstbonus",
     welcomeBonusText: "på ditt første innskudd",
@@ -578,7 +578,7 @@ export const translations = {
     closeBtn: "Stäng",
     // | Step 1
     depToBalance: `<span>300 GRATISSNURR</span>`,
-    withoutDeposit: "Utan insättning",
+    withoutDeposit: "För en minsta insättning",
     step1Title: "Välj din bonus",
     welcomeBonus: "Välkomstbonus",
     welcomeBonusText: "på din första insättning",
@@ -640,7 +640,7 @@ export const translations = {
     closeBtn: "Zatvoriť",
     // | Step 1
     depToBalance: `<span>300 VOĽNÝCH SPINOV</span>`,
-    withoutDeposit: "Bez vkladu",
+    withoutDeposit: "Za minimálny vklad",
     step1Title: "Vyberte si svoj bonus",
     welcomeBonus: "Uvítací bonus",
     welcomeBonusText: "pri vašom prvom vklade",
@@ -702,7 +702,7 @@ export const translations = {
     closeBtn: "Закрыть",
     // | Step 1
     depToBalance: `<span>300 ФРИСПИНОВ</span>`,
-    withoutDeposit: "Без депозита",
+    withoutDeposit: "За минимальный депозит",
     step1Title: "Выберите свой бонус",
     welcomeBonus: "Приветственный бонус",
     welcomeBonusText: "на ваш первый депозит",
@@ -764,7 +764,7 @@ export const translations = {
     closeBtn: "Cerrar",
     // | Step 1
     depToBalance: `<span>300 GIROS GRATIS</span>`,
-    withoutDeposit: "Sin depósito",
+    withoutDeposit: "Por un depósito mínimo",
     step1Title: "Elige tu bono",
     welcomeBonus: "Bono de bienvenida",
     welcomeBonusText: "en tu primer depósito",
@@ -825,7 +825,7 @@ export const translations = {
     closeBtn: "Fechar",
     // | Step 1
     depToBalance: `<span>300 RODADAS GRÁTIS</span>`,
-    withoutDeposit: "Sem depósito",
+    withoutDeposit: "Por um depósito mínimo",
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
     welcomeBonusText: "no seu primeiro depósito",
