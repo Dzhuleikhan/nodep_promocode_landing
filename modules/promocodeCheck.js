@@ -8,6 +8,17 @@ export const receivedPromocode = (
   getUrlParameter("promocode") || ""
 ).toLocaleUpperCase();
 
+export const defaulSpinAmount = "300";
+
+export const receivedSpinAmount =
+  getUrlParameter("spinAmount") || defaulSpinAmount;
+
+export function setSpinAmount() {
+  document.querySelectorAll(".actual-spin-amount").forEach((el) => {
+    el.innerHTML = receivedSpinAmount;
+  });
+}
+
 headerLogoLink.setAttribute(
   "href",
   `https://${newDomain}?promocode=${
