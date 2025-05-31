@@ -17,3 +17,14 @@ headerLogoLink.setAttribute(
     receivedPromocode ? receivedPromocode : defaulPromocode
   }`
 );
+
+export const defaulSpinAmount = "777";
+
+export const receivedSpinAmount =
+  getUrlParameter("spinAmount") || defaulSpinAmount;
+
+export function setSpinAmount() {
+  document.querySelectorAll(".actual-spin-amount").forEach((el) => {
+    el.innerHTML = receivedSpinAmount;
+  });
+}

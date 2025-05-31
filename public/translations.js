@@ -2,7 +2,7 @@ export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> up to <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> free spins on your first deposit`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins on your first deposit`,
     heroBtn: "get bonus",
     paymentsTitle: `Accepted <span>41</span> Cryptocurrencies`,
     advantege1Title: "VPN Friendly",
@@ -164,7 +164,7 @@ export const translations = {
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> jusqu'à <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> tours gratuits sur votre premier dépôt`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> tours gratuits sur votre premier dépôt`,
     heroBtn: "obtenir le bonus",
     paymentsTitle: `<span>41</span> Cryptomonnaies Acceptées`,
     advantege1Title: "VPN Autorisé",
@@ -222,7 +222,7 @@ export const translations = {
   ro: {
     pageTitle: "🎁 Bonusul tău este pregătit - Goldbet",
     heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> până la <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> rotiri gratuite la prima depunere`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> rotiri gratuite la prima depunere`,
     heroBtn: "obține bonusul",
     paymentsTitle: `Acceptăm <span>41</span> criptomonede`,
     advantege1Title: "VPN Permis",
@@ -358,7 +358,7 @@ export const translations = {
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `Crypto Highroller bónusz <br/> <b><span>200%</span></b> akár <b><span>100.000 USD</span></b> értékig`,
-    heroSubtitle: `<span>🎰 +777</span> ingyen pörgetés az első befizetésedre`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> ingyen pörgetés az első befizetésedre`,
     heroBtn: "bónusz igénylése",
     paymentsTitle: `<span>41</span> kriptovalutát elfogadunk`,
     advantege1Title: "VPN engedélyezett",
@@ -416,7 +416,7 @@ export const translations = {
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> do <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> darmowych spinów przy pierwszym depozycie`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> darmowych spinów przy pierwszym depozycie`,
     heroBtn: "odbierz bonus",
     paymentsTitle: `Akceptujemy <span>41</span> kryptowalut`,
     advantege1Title: "VPN dozwolony",
@@ -475,7 +475,7 @@ export const translations = {
   cz: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> až do <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> volných otočení při prvním vkladu`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> volných otočení při prvním vkladu`,
     heroBtn: "získat bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptoměn`,
     advantege1Title: "VPN povoleno",
@@ -533,7 +533,7 @@ export const translations = {
   si: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> do <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> brezplačnih vrtljajev ob prvem pologu`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> brezplačnih vrtljajev ob prvem pologu`,
     heroBtn: "prevzemi bonus",
     paymentsTitle: `Sprejemamo <span>41</span> kriptovalut`,
     advantege1Title: "VPN dovoljen",
@@ -592,7 +592,7 @@ export const translations = {
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> έως <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> δωρεάν περιστροφές με την πρώτη κατάθεση`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> δωρεάν περιστροφές με την πρώτη κατάθεση`,
     heroBtn: "λάβετε το μπόνους",
     paymentsTitle: `Δεχόμαστε <span>41</span> κρυπτονομίσματα`,
     advantege1Title: "VPN επιτρέπεται",
@@ -651,7 +651,7 @@ export const translations = {
   no: {
     pageTitle: "🎁 Din bonus er klar – Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> opptil <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> gratisspinn på ditt første innskudd`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratisspinn på ditt første innskudd`,
     heroBtn: "hent bonusen",
     paymentsTitle: `Vi godtar <span>41</span> kryptovalutaer`,
     advantege1Title: "VPN tillatt",
@@ -709,7 +709,7 @@ export const translations = {
   se: {
     pageTitle: "🎁 Din bonus är klar – Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> upp till <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> gratissnurr vid din första insättning`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratissnurr vid din första insättning`,
     heroBtn: "hämta bonusen",
     paymentsTitle: `Vi accepterar <span>41</span> kryptovalutor`,
     advantege1Title: "VPN tillåtet",
@@ -767,7 +767,7 @@ export const translations = {
   sk: {
     pageTitle: "🎁 Váš bonus je pripravený – Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> až do <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> voľných točení pri prvom vklade`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> voľných točení pri prvom vklade`,
     heroBtn: "získať bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptomien`,
     advantege1Title: "VPN povolené",
@@ -824,7 +824,7 @@ export const translations = {
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `Бонус Crypto Highroller <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> бесплатных вращений при первом депозите`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> бесплатных вращений при первом депозите`,
     heroBtn: "получить бонус",
     paymentsTitle: `Мы принимаем <span>41</span> криптовалюту`,
     advantege1Title: "VPN поддерживается",
@@ -881,7 +881,7 @@ export const translations = {
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> hasta <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> giros gratis en tu primer depósito`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> giros gratis en tu primer depósito`,
     heroBtn: "obtener bono",
     paymentsTitle: `Aceptamos <span>41</span> Criptomonedas`,
     advantege1Title: "Compatible con VPN",
@@ -940,7 +940,7 @@ export const translations = {
   pt: {
     pageTitle: "🎁 O seu bônus está pronto - Goldbet",
     heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> até <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +777</span> giros grátis no seu primeiro depósito`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> giros grátis no seu primeiro depósito`,
     heroBtn: "obter bônus",
     paymentsTitle: `Aceitamos <span>41</span> Criptomoedas`,
     advantege1Title: "Compatível com VPN",
