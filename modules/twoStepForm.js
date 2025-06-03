@@ -11,6 +11,7 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
+import { countryCurrencyData } from "../public/data";
 
 document.querySelectorAll("input").forEach((input) => {
   input.setAttribute("autocomplete", "off");
@@ -123,41 +124,45 @@ twoStepBonusCheckbox.forEach((checkbox) => {
   });
 });
 
-// export const settingInitialBonusValue = (currency) => {
-//   if (exceptCurrencies.includes(currency)) {
-//     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-//       text.innerHTML = "100%";
-//     });
-//     document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-//       text.innerHTML = "200FS";
-//     });
-//     document
-//       .querySelector(".welcome-bonus-input")
-//       .setAttribute("data-text", "100% + 200FS on your first deposit");
-//     document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-//       el.innerHTML = "100%";
-//     });
-//     document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-//       el.innerHTML = "200FS";
-//     });
-//   } else {
-//     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-//       text.innerHTML = "200%";
-//     });
-//     document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-//       text.innerHTML = "25FS";
-//     });
-//     document
-//       .querySelector(".welcome-bonus-input")
-//       .setAttribute("data-text", "200% + 25FS on your first deposit");
-//     document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-//       el.innerHTML = "200%";
-//     });
-//     document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-//       el.innerHTML = "25FS";
-//     });
-//   }
-// };
+export const settingInitialBonusValue = (currency) => {
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency
+  );
+
+  if (currencyEntry) {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.amount;
+    });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrencySymbol;
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = currencyEntry.spins;
+    });
+    document.querySelectorAll(".bonus-highroller-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.highrollerAmount;
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrency;
+    });
+  } else {
+    document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
+      el.innerHTML = "4500";
+    });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = "€";
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = "200FS";
+    });
+    document.querySelectorAll(".bonus-highroller-amount").forEach((el) => {
+      el.innerHTML = "180";
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = "EUR";
+    });
+  }
+};
 
 // | INPUTS
 const twoStepGeneralInput = document.querySelectorAll(

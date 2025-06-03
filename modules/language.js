@@ -3,6 +3,7 @@ import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { twoStepFormData } from "./twoStepForm";
 // import { settingNodepBonus } from "./modalCurrency";
+import { settingInitialBonusValue } from "./twoStepForm";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -70,7 +71,7 @@ function updateButtonText(lang) {
   };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/cz.svg`
+    `./img/flags/${lang}.svg` || `./img/flags/en.svg`
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
@@ -98,7 +99,7 @@ async function determineLanguage() {
     PT: "pt",
     // Add more country codes and their corresponding languages as needed
   };
-  lang = countryLangMap[location.countryCode] || "cz";
+  lang = countryLangMap[location.countryCode] || "en";
 
   return lang;
 }
@@ -117,6 +118,7 @@ async function mainFunction() {
       document.querySelectorAll(".current-domain").forEach((domain) => {
         domain.innerHTML = window.location.hostname;
       });
+      settingInitialBonusValue(currencyData.abbr);
     }, 200);
   } catch (error) {
     console.error("Error determining language:", error);
@@ -134,7 +136,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
       getSupportedLanguage(targetLang.toUpperCase())
     );
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-    // settingInitialBonusValue(currencyData.abbr);
+    settingInitialBonusValue(currencyData.abbr);
     // settingNodepBonus(currencyData.abbr);
     twoStepFormData.lang = localStorage.getItem("preferredLanguage");
     document.querySelectorAll(".current-domain").forEach((domain) => {
