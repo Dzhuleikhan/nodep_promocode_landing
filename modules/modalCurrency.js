@@ -57,7 +57,12 @@ async function settingModalCurrency() {
     let locationData = await getLocation();
     let countryInput = locationData.countryCode;
 
-    if (countryInput === "RU") {
+    if (
+      countryInput === "RU" ||
+      countryInput === "MX" ||
+      countryInput === "CO" ||
+      countryInput === "CL"
+    ) {
       countryInput = "US";
     }
 
@@ -175,6 +180,7 @@ export const checkTir1CurrencyMatch = (currency, bonus) => {
     "CAD",
     "USD",
     "EUR",
+    "NOK",
   ];
   if (exceptCurrencies.includes(currency) && bonus === "welcome-bonus-1") {
     bonus = bonus + "-alt";
