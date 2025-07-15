@@ -651,12 +651,21 @@ export const SupportedLanguages = [
 
 export const nodepBonuses = [
   {
+    currency: "USD",
+    currencyName: "USD",
+    symbol: "$",
+    bonusAmount: "10",
+    countryCurrencyIcon: "./img/currencies/eur.svg",
+    moneyAmount: "5000",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
+  },
+  {
     currency: "EUR",
     currencyName: "EURO",
     symbol: "€",
     bonusAmount: "10",
     countryCurrencyIcon: "./img/currencies/eur.svg",
-    moneyAmount: "3680",
+    moneyAmount: "4500",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
