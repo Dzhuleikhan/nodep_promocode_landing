@@ -1,8 +1,6 @@
 import { translations } from "/public/translations";
 import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
-import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
-import { settingNodepBonus } from "./modalCurrency";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -53,52 +51,26 @@ function updateButtonText(lang) {
   const headerLangName = document.querySelector(".header-lang-btn span");
 
   const languageNames = {
-    en: "English",
-    fr: "French",
-    ro: "Romainan",
-    hu: "Hungarian",
-    pl: "Polish",
-    cz: "Czech",
-    si: "Slovenian",
-    gr: "Greek",
-    no: "Norwegian",
-    se: "Swedish",
-    sk: "Slovak",
-    ru: "Russian",
-    es: "Spanish",
-    pt: "Portuguese",
+    tr: "TR",
+    en: "EN",
   };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/en.svg`
+    `./img/flags/${lang}.svg` || `./img/flags/tr.svg`
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
 }
 
-export const availableLang = ["en", "fr"];
-
 async function determineLanguage() {
   const location = await getLocation();
 
   const countryLangMap = {
+    TR: "tr",
     EN: "en",
-    FR: "fr",
-    RO: "ro",
-    HU: "hu",
-    PL: "pl",
-    CZ: "cz",
-    SI: "si",
-    GR: "gr",
-    NO: "no",
-    SE: "se",
-    SK: "sk",
-    RU: "ru",
-    ES: "es",
-    PT: "pt",
     // Add more country codes and their corresponding languages as needed
   };
-  lang = countryLangMap[location.countryCode] || "en";
+  lang = countryLangMap[location.countryCode] || "tr";
 
   return lang;
 }
@@ -112,8 +84,6 @@ async function mainFunction() {
       getSupportedLanguage(lang.toUpperCase())
     );
     setTimeout(() => {
-      const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-      settingNodepBonus(currencyData.abbr);
       document.querySelectorAll(".current-domain").forEach((domain) => {
         domain.innerHTML = window.location.hostname;
       });
@@ -129,14 +99,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     e.preventDefault();
     const targetLang = e.target.getAttribute("data-lang");
     changeLanguage(targetLang);
-    localStorage.setItem(
-      "preferredLanguage",
-      getSupportedLanguage(targetLang.toUpperCase())
-    );
-    const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-    settingInitialBonusValue(currencyData.abbr);
-    settingNodepBonus(currencyData.abbr);
-    twoStepFormData.lang = localStorage.getItem("preferredLanguage");
+    localStorage.setItem("preferredLanguage", targetLang);
     document.querySelectorAll(".current-domain").forEach((domain) => {
       domain.innerHTML = window.location.hostname;
     });

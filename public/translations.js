@@ -1,871 +1,377 @@
 export const translations = {
+  tr: {
+    pageTitle: "🎁 Bonusunuz hazır - Goldbet",
+    heroTitle: `<span>sweet bonanza</span> <br /> kayıt ol ve oyna`,
+    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>340.000</span><span class='bonus-currency-symbol'>₺</span>'ye kadar + <span class="two-step-bonus-spins">25 FS</span> ilk 4 yatırımınıza`,
+    heroBtn: "bonusu al",
+    slideStep1Title: "Kayıt Ol",
+    slideStep1Text:
+      '"Bonusu al" butonuna tıklayın ve ücretsiz kaydı tamamlayın.',
+    slideStep2Title: "Bonusu Aktif Et",
+    slideStep2Text:
+      '"Bonus Merkezi"nde bonusunuzu bulun ve aktif ederek oynamaya başlayın.',
+    slideStep3Title: "Oyna",
+    slideStep3Text: "Para artık oyun için hazır. Keyfini çıkarın!",
+    footerText: `<span class="current-domain"></span>, çevrim içi casinolardaki bonuslar ve promosyonlar hakkında bilgi platformudur. Verilen tüm bilgiler yalnızca bilgilendirme ve eğlence amaçlıdır. Bonus şartları önceden haber verilmeksizin değiştirilebilir ve <span class="current-domain"></span>, herhangi bir uyuşmazlıktan sorumlu değildir. Teklifler yalnızca 18 yaş üstü ve uygun yargı bölgelerinde yaşayan kişiler için geçerlidir. Herhangi bir casinoya kaydolmadan veya bonus talep etmeden önce, lütfen şartlarını dikkatlice okuyun. Sorumlu oynayın!`,
+    // ? SOCIALS
+    signUpEasySteps: "3 kolay adımda kayıt olun",
+    completeToClaimGift: "Tamamlayın ve hediyenizi alın.",
+    signUpWithGoogle: "Google ile kayıt olun",
+    signUpWithFacebook: "Facebook ile kayıt olun",
+    phone: "Telefon",
+    wrongEmail: "Geçersiz e-posta",
+    wrongNumber: "Geçersiz numara",
+    signUpBtn: "Kayıt Ol",
+    promoApplied: "Bonus uygulandı",
+    bonusName: "Hoş geldin casino bonusu",
+    depositBonus: `<span class='applied-nodep-bonus'>gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span>'ye kadar + 25FS`,
+    depositBonus2: "Yatırıma %400 6000'e kadar",
+    phoneNumber: "Telefon numarası",
+    password: "Şifre",
+    minSymbols: "Minimum 6 karakter",
+    atLeast6Chars: "En az 6 karakter",
+    currency: "Para birimi",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4" >Şartları</a> kabul ediyorum</span>`,
+    startPlaying: "Oynamaya başla",
+    areYouSure: `Emin misiniz? <br /> İlerlemeniz kaybolacak`,
+    keepRegistering: "Kayda devam et",
+    returnToWebsite: "Siteye geri dön",
+    step2Title: `Bonusunuzu almak için son adım`,
+    step2Subtitle: `Şifre oluşturun ve hesabınızın para birimini seçin.`,
+    passwordPlaceholder: "Şifre",
+    // | Terms
+    termsTitle1: `Şartlar ve Koşullar`,
+    termsParagraph1: `Bu şartlar ve koşullar ile aşağıda belirtilen belgeler
+                        ("Şartlar"), mevcut web sitesinin ("Web Sitesi") ve
+                        ilgili veya bağlantılı hizmetlerin ("Hizmet") kullanımına
+                        uygulanır. Bu Şartları dikkatlice incelemelisiniz, çünkü
+                        bunlar Web Sitesini kullanımınız ile ilgili haklarınız
+                        ve sorumluluklarınız hakkında önemli bilgiler içerir
+                        ve sizin - müşterimiz ("Müşteri") ile bizim ("Web Sitesi")
+                        aramızda bağlayıcı bir yasal anlaşma oluşturur. Bu Web Sitesini
+                        kullanarak ve/veya Hizmete erişerek, ister misafir olun
+                        ister bir hesaba ("Hesap") sahip kayıtlı kullanıcı olun,
+                        bu Şartlara ve zaman zaman yayınlanabilecek her türlü değişikliğe
+                        uymayı kabul ediyorsunuz. Bu Şartları kabul etmiyorsanız,
+                        Hizmete erişmekten ve Web Sitesini kullanmaktan kaçınmalısınız.`,
+    termsTitle2: `1. Genel Şartlar`,
+    termsParagraph2: `Herhangi bir zamanda Şartları (aşağıda belirtilen ve bağlantılı
+                        belgeler dahil olmak üzere) gözden geçirme ve değiştirme
+                        hakkını saklı tutarız. Bu sayfayı periyodik olarak ziyaret
+                        ederek Şartları gözden geçirmelisiniz. Değişiklikler, bu Web
+                        Sitesinde yayınlandıktan sonra bağlayıcı olacak ve hemen
+                        yürürlüğe girecektir. Bu tür değişikliklere karşı iseniz,
+                        Hizmeti kullanmayı derhal bırakmalısınız. Web Sitesini
+                        kullanmaya devam etmeniz, değiştirilen Şartlara uymayı
+                        kabul ettiğinizi gösterir. Değişen Şartların yürürlüğe
+                        girmesinden önce sonuçlandırılmamış olan bahisler önceki
+                        Şartlara tabi olacaktır. Goldbet'in Şartları ve Koşulları
+                        güncellenirse, platform size bildirimde bulunacak ve onayınızı
+                        talep edecektir.`,
+    termsTitle3: `2. Sorumluluklarınız`,
+    termsParagraph3: `Web Sitesine erişirken ve Hizmeti kullanırken her zaman
+                        aşağıdaki şartları kabul ediyorsunuz: <br />
+                        3.1. 18 yaşından büyüksünüz veya yasal olarak kumar oynayabilmek
+                        için yaş sınırını karşılıyorsunuz. Yaş doğrulama belgelerini
+                        talep etme hakkını saklı tutarız. <br />
+                        3.2. Yasal kapasiteye sahipsiniz ve bizimle bağlayıcı bir yasal
+                        sözleşme yapabilirsiniz. Yasal kapasiteye sahip değilseniz,
+                        Web Sitesine erişmemeli ve Hizmeti kullanmamalısınız. <br />
+                        3.3. Web Sitesine erişim ve sitede sunulan herhangi bir ürünü
+                        kullanmanın bazı ülkelerde yasa dışı olabileceğini biliyorsunuz.
+                        Hizmetin her yargı alanında yasal olup olmadığını doğrulayamıyoruz,
+                        bu nedenle web sitemize erişim ve kullanımınızın ülkenizde geçerli
+                        yasalara uygun olup olmadığını belirlemek sizin sorumluluğunuzdadır
+                        ve ikamet ettiğiniz bölgede kumarın yasal olmadığına dair bize garanti
+                        veriyorsunuz. Çeşitli yasal veya ticari nedenlerle, belirli
+                        yargı bölgelerinde ikamet eden müşterilerin hesap açmalarına
+                        veya kullanmalarına izin vermiyoruz, bu yerler şunları içerir
+                        ancak bunlarla sınırlı değildir: Afganistan, Cezayir, Antigua
+                        ve Barbuda, Avustralya, Beyaz Rusya, Birleşik Arap Emirlikleri,
+                        Belçika, Bhutan, Brunei, Orta Afrika Cumhuriyeti, Çad, Fildişi
+                        Sahili, Hırvatistan, Küba, Çek Cumhuriyeti, Kuzey Kore
+                        (Demokratik Halk Cumhuriyeti), Kongo, Danimarka, Estonya,
+                        Fransa, Yunanistan, Gine-Bissau, Macaristan, İran, Irak,
+                        İzlanda, İsrail, İtalya, Ürdün, Kuveyt, Letonya, Liberya,
+                        Litvanya, Malta, Myanmar, Hollanda, Hollanda Antilleri
+                        (Curaçao, Sint Maarten, Bonaire, Sint Eustatius ve Saba,
+                        Aruba), Norveç, Umman, Filistin, Pakistan, Katar, Rusya,
+                        Saba, Saint Martin, Suudi Arabistan, Sırbistan, Slovenya,
+                        Somali, İspanya, İsviçre, Suriye Arap Cumhuriyeti, Sudan,
+                        Trinidad ve Tobago, Türkiye, Ukrayna, Birleşik Krallık,
+                        Almanya, Komor Birliği, Birleşik Arap Emirlikleri, Amerika
+                        Birleşik Devletleri (ve bağımlılıkları, askeri üsleri ve
+                        toprakları, örn. ABD Küçük Dış Adaları, ABD Virgin Adaları),
+                        Vanuatu, Yemen, Zimbabve. veya zaman zaman tarafımızca bildirilen
+                        diğer sınırlı yargı alanları ("Sınırlı Yargı Alanı"). Web Sitesini
+                        kullanarak, Sınırlı Yargı Alanında ikamet etmediğinizi onaylarsınız.
+                        ...
+  
+                        3.3. Web Sitesine erişim ve sitede sunulan herhangi bir ürünü
+                        kullanmanın bazı ülkelerde yasa dışı olabileceğini biliyorsunuz.
+                        Hizmetin her yargı alanında yasal olup olmadığını doğrulayamıyoruz,
+                        bu nedenle web sitemize erişim ve kullanımınızın ülkenizde geçerli
+                        yasalara uygun olup olmadığını belirlemek sizin sorumluluğunuzdadır
+                        ve ikamet ettiğiniz bölgede kumarın yasal olmadığına dair bize garanti
+                        veriyorsunuz. Çeşitli yasal veya ticari nedenlerle, belirli
+                        yargı bölgelerinde ikamet eden müşterilerin hesap açmalarına
+                        veya kullanmalarına izin vermiyoruz, bu yerler şunları içerir
+                        ancak bunlarla sınırlı değildir: Afganistan, Cezayir, Antigua
+                        ve Barbuda, Avustralya, Beyaz Rusya, Birleşik Arap Emirlikleri,
+                        Belçika, Bhutan, Brunei, Orta Afrika Cumhuriyeti, Çad, Fildişi
+                        Sahili, Hırvatistan, Küba, Çek Cumhuriyeti, Kuzey Kore
+                        (Demokratik Halk Cumhuriyeti), Kongo, Danimarka, Estonya,
+                        Fransa, Yunanistan, Gine-Bissau, Macaristan, İran, Irak,
+                        İzlanda, İsrail, İtalya, Ürdün, Kuveyt, Letonya, Liberya,
+                        Litvanya, Malta, Myanmar, Hollanda, Hollanda Antilleri
+                        (Curaçao, Sint Maarten, Bonaire, Sint Eustatius ve Saba,
+                        Aruba), Norveç, Umman, Filistin, Pakistan, Katar, Rusya,
+                        Saba, Saint Martin, Suudi Arabistan, Sırbistan, Slovenya,
+                        Somali, İspanya, İsviçre, Suriye Arap Cumhuriyeti, Sudan,
+                        Trinidad ve Tobago, Türkiye, Ukrayna, Birleşik Krallık,
+                        Almanya, Komor Birliği, Birleşik Arap Emirlikleri, Amerika
+                        Birleşik Devletleri (ve bağımlılıkları, askeri üsleri ve
+                        toprakları, örn. ABD Küçük Dış Adaları, ABD Virgin Adaları),
+                        Vanuatu, Yemen, Zimbabve. veya zaman zaman tarafımızca bildirilen
+                        diğer sınırlı yargı alanları ("Sınırlı Yargı Alanı"). Web Sitesini
+                        kullanarak, Sınırlı Yargı Alanında ikamet etmediğinizi onaylarsınız. <br />
+                        3.4. Bir hesap açmaya veya Web Sitesini kullanmaya çalışırken,
+                        oyuncunun sorumluluğu, belirli bir yargı alanında kumarın
+                        yasal olup olmadığını doğrulamaktır. <br />
+                        3.5. Kullandığınız ödeme yönteminin yetkili kullanıcısısınız
+                        ve hesabınızda bulunan ve Hizmet içinde kullanılan tüm fonlar
+                        yasaldır. <br />
+                        3.6. Bize tüm ödemeleri iyi niyetle yapmalısınız ve yapılan
+                        bir ödemeyi geri çevirmeye veya üçüncü bir tarafın bunu
+                        geri çevirmesine neden olacak herhangi bir harekette
+                        bulunmamalısınız. <br />
+                        3.7. Bahis yaparken, Hizmete yatırdığınız paranın bir kısmını
+                        veya tamamını kaybedebileceğinizi ve bu kayıptan tamamen
+                        sorumlu olduğunuzu kabul ediyorsunuz. <br />
+                        3.8. Bahis yaparken, bahisin yapıldığı ülkenin yürürlükteki
+                        yasalarını ihlal eden herhangi bir bilgiyi kullanmamalısınız. <br />
+                        3.9. Başka bir kişi adına veya ticari amaçlarla değil,
+                        yalnızca kendi adınıza ve bireysel bir kullanıcı olarak
+                        hareket ediyorsunuz. <br />
+                        3.10. Hizmet içinde herhangi bir piyasayı veya unsuru kötü
+                        niyetle manipüle etmeye veya Hizmetin bütünlüğüne veya
+                        bize zarar verecek şekilde hareket etmeye teşebbüs etmemelisiniz. <br />
+                        3.11. Hizmeti kullanırken ve Hizmet aracılığıyla yapılan tüm
+                        bahislerde her zaman iyi niyetle hareket etmelisiniz. <br />
+                        3.12. Siz veya geçerli ise çalışanlarınız, işverenleriniz,
+                        temsilcileriniz veya aile üyeleriniz, Ortaklık programımızda
+                        Ortak olarak kayıtlı değilsiniz. <br />
+                        3.13. Goldbet'i kullanırken bize yalnızca gerçek, doğru ve
+                        objektif veriler sağlama taahhüdünde bulunuyorsunuz. <br />
+                        3.14. Kripto piyasasının dalgalanmasını anlıyor ve paranızı
+                        çekmeyi beklerken veya para çekme işleminiz Risk Departmanımız
+                        tarafından işlenirken para birimlerinizin değerinde değişiklik
+                        olabileceğini kabul ediyorsunuz. <br />
+                        3.15. Zihinsel olarak yetkin bir kişisiniz ve kumar bağımlılığınız
+                        yok. Bu tür bir sorunla karşılaşan bir kişi Siteye girerse,
+                        sorumluluk yalnızca kendilerine aittir. <br />
+                        3.16. Goldbet'in herhangi bir bölümünde üçüncü taraf yazılımlarını
+                        kullanmama ve platformda bulunan herhangi bir oyun/fonksiyon hatasını
+                        kötüye kullanmama konusunda mutabık kalıyorsunuz. <br />
+                        3.17. Kayıt olduğunuz andan itibaren ve bu anlaşma süresince
+                        bize sağladığınız tüm bilgilerin doğru, eksiksiz ve doğru
+                        olduğunu garanti ediyorsunuz ve bu bilgilerin herhangi bir
+                        değişikliği hakkında bize derhal bilgi vereceğinizi taahhüt
+                        ediyorsunuz. <br />
+                        3.17.1. Kayıt sırasında girilen bilgilerin ve Hizmeti kullanırken
+                        yapılan değişikliklerin sizin kararınıza bağlı olmadığını
+                        onaylıyorsunuz. Bilgilerde herhangi bir değişiklik yapmak
+                        için destek ekibiyle iletişime geçmelisiniz. Goldbet, herhangi
+                        bir bilgi değişikliği için KYC doğrulamasını tamamlamak adına
+                        belgeler talep edebilir. <br />
+                        3.18. Bahis yapmanın veya çevrim içi oyun oynamanın yasaklandığı
+                        herhangi bir yargı alanında bulunduğunuz sürece hizmetlerimizi
+                        kullanmama garantisi veriyorsunuz. <br />
+                        3.19. Ayrıca aşağıdakileri garanti ediyorsunuz: <br />
+                        - Hizmetlere kendi adınıza katılıyorsunuz ve bu şartlar
+                        doğrultusunda herhangi bir kazancı beyan etmeyeceğinizi garanti
+                        ediyorsunuz. <br />
+                        - Hizmetlerimizi kullanmaya izin verilen yargı bölgelerinde
+                        tamamlanan herhangi bir sözleşme kapsamında yasal veya cezai
+                        sorumluluğa dair güncel yasaları bildiğinizi beyan ediyorsunuz. <br />
+                        - İşlemleriniz sonucunda, bir sözleşme kapsamında kayıt
+                        olduktan sonra, sözleşmeye göre geçerli yasalara aykırı olarak
+                        gerçekleştirilen herhangi bir oyun veya hizmet kullanımından
+                        önce bize bilgi vereceğinizi taahhüt ediyorsunuz.`,
+  },
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
+    heroTitle: `<span>sweet bonanza</span> <br /> register and play`,
+    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - up to <span class='bonus-total-amount'>340.000</span><span class='bonus-currency-symbol'>₺</span> + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> on your first 4 deposits`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
-    slideStep2Title: "Activate bonus",
+    slideStep2Title: "Activate Bonus",
     slideStep2Text:
       'Find your bonus in the "Bonus Center" and activate it to start playing.',
     slideStep3Title: "Play",
-    slideStep3Text: "The money is now available for gameplay. Enjoy!",
+    slideStep3Text: "The funds are now ready to play with. Enjoy!",
     footerText: `<span class="current-domain"></span> is an informational platform about bonuses and promotions in online casinos. All information provided is for informational and entertainment purposes only. Bonus terms and conditions may change without prior notice, and <span class="current-domain"></span> is not responsible for any discrepancies. Offers are only available to individuals aged 18 and over who are residents of eligible jurisdictions. Before registering or claiming any bonus, please read the terms and conditions of each casino carefully. Play responsibly!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Back",
-    closeBtn: "Close",
-    // | Step 1
-    depToBalance: `<span>100 FREE SPINS</span>`,
-    withoutDeposit: "Without deposit",
-    step1Title: "Choose Your Bonus",
-    welcomeBonus: "Welcome Bonus",
-    welcomeBonusText: "on your first deposit",
-    cryptoBonus: "Satoshi Bonus",
-    cryptoBonusText: "150% on Crypto Deposits",
-    highRollerBonus: "High Roller Bonus",
-    highRollerBonusText: "250% on Deposits Over $500",
-    withoutBonus: "Without Bonus",
-    withoutBonusText: "You will not get any bonus",
-    iHavePromoCode: "I Have a Promo-Code",
-    promoCodePlaceHolder: "Promo Code",
-    promoCodeApplyBtn: "Apply",
-    continueBtn: "Continue",
-    // | Step 2
-    step2Title: "Enter Your Email",
-    emailPlaceholder: "Enter E-mail",
-    passwordPlaceholder: "Enter Password",
-    // | Step 3
-    step3Title: "What’s Your Name?",
-    namePlaceholder: "Enter Name",
-    lastNamePlaceholder: "Enter Last Name",
-    birthdayPlaceholder: "Select Birthday Date",
-    age18Alert: "Age must be 18+",
-    invalidDate: "Invalid date",
-    male: "Male",
-    female: "Female",
-    finalStepBtn: "Final Step",
-    // | Step 4
-    step4Title: "Select Currency",
-    countryPlaceholder: "Select Country",
-    currencyPlaceholder: "Choose Currency",
-    phoneNumberPlaceholder: "Phone Number",
-    addressPlaceholder: "Enter Address",
-    cityPlaceholder: "Enter City",
-    statePlaceholder: "Choose Province",
-    zipCodePlaceholder: "Enter ZIP Code",
-    createAccountBtn: "Create Account",
-    // | Decline
-    areYouSure: `Are You Sure? <br /> Your Progress Will Be Lost`,
-    keepRegistering: "Keep Registering",
-    returnToWebsite: "Return to Website",
-  },
-  fr: {
-    pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>sweet bonanza</span>.`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
-    heroBtn: "obtenir un bonus",
-    slideStep1Title: "Registre",
-    slideStep1Text:
-      'Cliquez sur "Obtenir un bonus" et terminez l\'inscription gratuite.',
-    slideStep2Title: "Activer le bonus",
-    slideStep2Text:
-      'Trouvez votre bonus dans le "Bonus Center" et activez-le pour commencer à jouer.',
-    slideStep3Title: "Jouer",
-    slideStep3Text: "L'argent est désormais disponible pour le jeu. Apprécier!",
-    footerText: `<span class="current-domain"></span> est une plateforme d'information sur les bonus et promotions des casinos en ligne. Toutes les informations fournies sont à des fins informatives et de divertissement uniquement. Les conditions des bonus peuvent changer sans préavis, et <span class="current-domain"></span> n'est pas responsable des éventuelles divergences. Les offres ne sont disponibles que pour les personnes âgées de 18 ans et plus, résidant dans des juridictions éligibles. Avant de vous inscrire ou de réclamer un bonus, veuillez lire attentivement les termes et conditions de chaque casino. Jouez de manière responsable !`,
-    // | FORM TRANSLATIONS
-    backBtn: "Retour",
-    closeBtn: "Fermer",
-    // | Step 1
-    depToBalance: `<span>de 100 tours gratuits</span>`,
-    withoutDeposit: "Sans dépôt",
-    step1Title: "Choisissez votre bonus",
-    welcomeBonus: "Bonus de bienvenue",
-    welcomeBonusText: "sur votre premier dépôt",
-    cryptoBonus: "Satoshi Bonus",
-    cryptoBonusText: "150% sur les dépôts cryptographiques",
-    highRollerBonus: "High Roller Bonus",
-    highRollerBonusText: "250% sur les dépôts supérieurs à 500$",
-    withoutBonus: "Sans bonus",
-    withoutBonusText: "Vous n'obtiendrez aucun bonus",
-    iHavePromoCode: "J'ai un code promo",
-    promoCodePlaceHolder: "Code Promo",
-    promoCodeApplyBtn: "Appliquer",
-    continueBtn: "Continuer",
-    // | Step 2
-    step2Title: "Entrez votre e-mail",
-    emailPlaceholder: "Entrez E-mail",
-    passwordPlaceholder: "Entrez de passe",
-    // | Step 3
-    step3Title: "Quel est ton nom?",
-    namePlaceholder: "Entrez le nom",
-    lastNamePlaceholder: "Entrez le nom de famille",
-    birthdayPlaceholder: "Sélectionnez la date d'anniversaire",
-    age18Alert: "L'âge doit être de 18+",
-    invalidDate: "Date invalide",
-    male: "Mâle",
-    female: "Femelle",
-    finalStepBtn: "Dernière étape",
-    // | Step 4
-    step4Title: "Sélectionnez la devise",
-    countryPlaceholder: "Sélectionnez un pays",
-    currencyPlaceholder: "Choisissez la devise",
-    phoneNumberPlaceholder: "Numéro de téléphone",
-    addressPlaceholder: "Entrez l'adresse",
-    cityPlaceholder: "Entrez la ville",
-    statePlaceholder: "Choisir une province",
-    zipCodePlaceholder: "Entrez le code postal",
-    createAccountBtn: "Créer un compte",
-    // | Decline
-    areYouSure: `Êtes-vous sûr ? <br /> Votre progression sera perdue.`,
-    keepRegistering: "Continuer l'inscription",
-    returnToWebsite: "Retourner au site web",
-  },
-  ro: {
-    pageTitle: "🎁 Bonusul tău este gata - Goldbet",
-    heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
-    heroBtn: "obține bonus",
-    slideStep1Title: "Înregistrează-te",
-    slideStep1Text:
-      'Clic pe "Obține Bonus" și completează înregistrarea gratuită.',
-    slideStep2Title: "Activează bonusul",
-    slideStep2Text:
-      'Găsește-ți bonusul în "Centrul de Bonusuri" și activează-l pentru a începe să joci.',
-    slideStep3Title: "Joacă",
-    slideStep3Text: "Banii sunt acum disponibili pentru joc. Bucură-te!",
-    footerText: `<span class="current-domain"></span> este o platformă informativă despre bonusuri și promoții în cazinouri online. Toate informațiile oferite sunt doar pentru scopuri informative și de divertisment. Termenii și condițiile bonusurilor pot suferi modificări fără notificare prealabilă, iar <span class="current-domain"></span> nu este responsabil pentru eventualele discrepanțe. Ofertele sunt disponibile doar pentru persoanele cu vârsta de 18 ani și peste, care sunt rezidente în jurisdicțiile eligibile. Înainte de a vă înregistra sau de a revendica un bonus, citiți cu atenție termenii și condițiile fiecărui cazinou. Jucați responsabil!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Înapoi",
-    closeBtn: "Închide",
-    // | Step 1
-    depToBalance: "<span>100 ROTIRI GRATUITE</span>",
-    withoutDeposit: "Fără depunere",
-    step1Title: "Alege-ți Bonusul",
-    welcomeBonus: "Bonus de Bun Venit",
-    welcomeBonusText: "la prima ta depunere",
-    cryptoBonus: "Bonus Satoshi",
-    cryptoBonusText: "150% la depunerile în Crypto",
-    highRollerBonus: "Bonus High Roller",
-    highRollerBonusText: "250% la depuneri de peste 500$",
-    withoutBonus: "Fără Bonus",
-    withoutBonusText: "Nu vei primi niciun bonus",
-    iHavePromoCode: "Am un Cod Promo",
-    promoCodePlaceHolder: "Cod Promo",
-    promoCodeApplyBtn: "Aplică",
-    continueBtn: "Continuă",
-    // | Step 2
-    step2Title: "Introdu E-mailul Tău",
-    emailPlaceholder: "Introdu E-mail",
-    passwordPlaceholder: "Introdu Parola",
-    // | Step 3
-    step3Title: "Care este numele tău?",
-    namePlaceholder: "Introdu Numele",
-    lastNamePlaceholder: "Introdu Prenumele",
-    birthdayPlaceholder: "Selectează Data Nașterii",
-    age18Alert: "Vârsta trebuie să fie 18+",
-    invalidDate: "Dată invalidă",
-    male: "Masculin",
-    female: "Feminin",
-    finalStepBtn: "Ultimul Pas",
-    // | Step 4
-    step4Title: "Selectează Moneda",
-    countryPlaceholder: "Selectează Țara",
-    currencyPlaceholder: "Alege Moneda",
-    phoneNumberPlaceholder: "Număr de Telefon",
-    addressPlaceholder: "Introdu Adresa",
-    cityPlaceholder: "Introdu Orașul",
-    statePlaceholder: "Alege Provincia",
-    zipCodePlaceholder: "Introdu Codul Poștal",
-    createAccountBtn: "Creează Cont",
-    // | Decline
-    areYouSure: `Ești sigur? <br /> Progresul tău va fi pierdut`,
-    keepRegistering: "Continuă Înregistrarea",
-    returnToWebsite: "Întoarce-te la Website",
-  },
-  hu: {
-    pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>sweet bonanza</span> játékban`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
-    heroBtn: "bónusz igénylése",
-    slideStep1Title: "Regisztrálj",
-    slideStep1Text:
-      'Kattints a "Bónusz igénylése" gombra és töltsd ki az ingyenes regisztrációt.',
-    slideStep2Title: "Aktiváld a bónuszt",
-    slideStep2Text:
-      'Keresd meg a bónuszodat a "Bónuszközpontban" és aktiváld, hogy játszhass.',
-    slideStep3Title: "Játssz",
-    slideStep3Text: "A pénz most már elérhető a játékhoz. Élvezd!",
-    footerText: `<span class="current-domain"></span> egy információs platform az online kaszinók bónuszairól és promócióiról. Minden információ kizárólag tájékoztató és szórakoztató célokra szolgál. A bónusz feltételei előzetes értesítés nélkül változhatnak, és <span class="current-domain"></span> nem vállal felelősséget az esetleges eltérésekért. Az ajánlatok csak 18 éves és idősebb, jogosultsággal rendelkező joghatóságokban élő személyek számára elérhetők. Mielőtt regisztrálna vagy bónuszt igényelne, kérjük, alaposan olvassa el minden kaszinó feltételeit és szabályait. Játsszon felelősségteljesen!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Vissza",
-    closeBtn: "Bezárás",
-    // | Step 1
-    depToBalance: `<span>100 INGYENES PÖRGETÉS</span>`,
-    withoutDeposit: "Befizetés nélkül",
-    step1Title: "Válaszd ki a bónuszodat",
-    welcomeBonus: "Üdvözlő Bónusz",
-    welcomeBonusText: "az első befizetésedre",
-    cryptoBonus: "Satoshi Bónusz",
-    cryptoBonusText: "150% kriptobefizetésekre",
-    highRollerBonus: "High Roller Bónusz",
-    highRollerBonusText: "250% 500$ feletti befizetésekre",
-    withoutBonus: "Bónusz nélkül",
-    withoutBonusText: "Nem kapsz bónuszt",
-    iHavePromoCode: "Van promóciós kódom",
-    promoCodePlaceHolder: "Promóciós kód",
-    promoCodeApplyBtn: "Alkalmaz",
-    continueBtn: "Folytatás",
-    // | Step 2
-    step2Title: "Add meg az e-mail címedet",
-    emailPlaceholder: "E-mail megadása",
-    passwordPlaceholder: "Jelszó megadása",
-    // | Step 3
-    step3Title: "Mi a neved?",
-    namePlaceholder: "Keresztnév megadása",
-    lastNamePlaceholder: "Vezetéknév megadása",
-    birthdayPlaceholder: "Születési dátum kiválasztása",
-    age18Alert: "Legalább 18 évesnek kell lenned",
-    invalidDate: "Érvénytelen dátum",
-    male: "Férfi",
-    female: "Nő",
-    finalStepBtn: "Utolsó lépés",
-    // | Step 4
-    step4Title: "Válassz pénznemet",
-    countryPlaceholder: "Ország kiválasztása",
-    currencyPlaceholder: "Pénznem kiválasztása",
-    phoneNumberPlaceholder: "Telefonszám",
-    addressPlaceholder: "Cím megadása",
-    cityPlaceholder: "Város megadása",
-    statePlaceholder: "Megye kiválasztása",
-    zipCodePlaceholder: "Irányítószám megadása",
-    createAccountBtn: "Fiók létrehozása",
-    // | Decline
-    areYouSure: `Biztos vagy benne? <br /> A haladásod elvész`,
-    keepRegistering: "Folytatás a regisztrációval",
-    returnToWebsite: "Vissza a weboldalra",
-  },
-  pl: {
-    pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle:
-      "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
-    heroBtn: "odbierz bonus",
-    slideStep1Title: "Zarejestruj się",
-    slideStep1Text: 'Kliknij "Odbierz Bonus" i zakończ darmową rejestrację.',
-    slideStep2Title: "Aktywuj bonus",
-    slideStep2Text:
-      'Znajdź swój bonus w "Centrum Bonusów" i aktywuj go, aby zacząć grać.',
-    slideStep3Title: "Graj",
-    slideStep3Text: "Pieniądze są teraz dostępne do gry. Miłej zabawy!",
-    footerText: `<span class="current-domain"></span> to platforma informacyjna o bonusach i promocjach w kasynach online. Wszystkie informacje są podawane wyłącznie w celach informacyjnych i rozrywkowych. Warunki bonusów mogą ulec zmianie bez uprzedzenia, a <span class="current-domain"></span> nie ponosi odpowiedzialności za ewentualne rozbieżności. Oferty dostępne są tylko dla osób w wieku 18 lat i starszych, będących mieszkańcami uprawnionych jurysdykcji. Przed rejestracją lub skorzystaniem z bonusu, prosimy dokładnie zapoznać się z warunkami i zasadami każdego kasyna. Graj odpowiedzialnie!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Wstecz",
-    closeBtn: "Zamknij",
-    // | Step 1
-    depToBalance: `<span>100 DARMOWYCH SPINÓW</span>`,
-    withoutDeposit: "Bez depozytu",
-    step1Title: "Wybierz Swój Bonus",
-    welcomeBonus: "Bonus Powitalny",
-    welcomeBonusText: "przy pierwszej wpłacie",
-    cryptoBonus: "Bonus Satoshi",
-    cryptoBonusText: "150% przy wpłatach w kryptowalutach",
-    highRollerBonus: "Bonus High Roller",
-    highRollerBonusText: "250% przy wpłatach powyżej $500",
-    withoutBonus: "Bez Bonusów",
-    withoutBonusText: "Nie otrzymasz żadnego bonusu",
-    iHavePromoCode: "Mam kod promocyjny",
-    promoCodePlaceHolder: "Kod promocyjny",
-    promoCodeApplyBtn: "Zastosuj",
-    continueBtn: "Kontynuuj",
-    // | Step 2
-    step2Title: "Wpisz swój e-mail",
-    emailPlaceholder: "Wpisz e-mail",
-    passwordPlaceholder: "Wpisz hasło",
-    // | Step 3
-    step3Title: "Jak masz na imię?",
-    namePlaceholder: "Wpisz imię",
-    lastNamePlaceholder: "Wpisz nazwisko",
-    birthdayPlaceholder: "Wybierz datę urodzenia",
-    age18Alert: "Musisz mieć 18 lat lub więcej",
-    invalidDate: "Nieprawidłowa data",
-    male: "Mężczyzna",
-    female: "Kobieta",
-    finalStepBtn: "Ostatni krok",
-    // | Step 4
-    step4Title: "Wybierz walutę",
-    countryPlaceholder: "Wybierz kraj",
-    currencyPlaceholder: "Wybierz walutę",
-    phoneNumberPlaceholder: "Numer telefonu",
-    addressPlaceholder: "Wpisz adres",
-    cityPlaceholder: "Wpisz miasto",
-    statePlaceholder: "Wybierz województwo",
-    zipCodePlaceholder: "Wpisz kod pocztowy",
-    createAccountBtn: "Utwórz konto",
-    // | Decline
-    areYouSure: `Czy na pewno chcesz to zrobić? <br /> Twój postęp zostanie utracony`,
-    keepRegistering: "Kontynuuj rejestrację",
-    returnToWebsite: "Wróć na stronę",
-  },
-  cz: {
-    pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle:
-      "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
-    heroBtn: "získat bonus",
-    slideStep1Title: "Registrovat se",
-    slideStep1Text:
-      'Klikněte na "Získat bonus" a dokončete bezplatnou registraci.',
-    slideStep2Title: "Aktivujte bonus",
-    slideStep2Text:
-      'Najděte svůj bonus v "Centru bonusů" a aktivujte ho, abyste mohli začít hrát.',
-    slideStep3Title: "Hrajte",
-    slideStep3Text:
-      "Peněžní prostředky jsou nyní k dispozici pro hru. Užijte si to!",
-    footerText: `<span class="current-domain"></span> je informační platforma o bonusech a promoakcích v online kasinech. Všechny poskytnuté informace slouží pouze k informačním a zábavným účelům. Podmínky bonusů se mohou měnit bez předchozího upozornění a <span class="current-domain"></span> nenese odpovědnost za případné nesrovnalosti. Nabídky jsou dostupné pouze pro osoby starší 18 let, které jsou rezidenty oprávněných jurisdikcí. Před registrací nebo uplatněním jakéhokoli bonusu si pečlivě přečtěte podmínky každého kasina. Hrajte zodpovědně!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Zpět",
-    closeBtn: "Zavřít",
-    // | Step 1
-    depToBalance: `<span>100 VOLNÝCH TOČENÍ</span>`,
-    withoutDeposit: "Bez vkladu",
-    step1Title: "Vyberte svůj bonus",
-    welcomeBonus: "Vítací bonus",
-    welcomeBonusText: "při první depozitu",
-    cryptoBonus: "Satoshi bonus",
-    cryptoBonusText: "150% na vklady v kryptoměnách",
-    highRollerBonus: "High Roller bonus",
-    highRollerBonusText: "250% na vklady nad $500",
-    withoutBonus: "Bez bonusu",
-    withoutBonusText: "Nezískáte žádný bonus",
-    iHavePromoCode: "Mám promo kód",
-    promoCodePlaceHolder: "Promo kód",
-    promoCodeApplyBtn: "Použít",
-    continueBtn: "Pokračovat",
-    // | Step 2
-    step2Title: "Zadejte svůj e-mail",
-    emailPlaceholder: "Zadejte e-mail",
-    passwordPlaceholder: "Zadejte heslo",
-    // | Step 3
-    step3Title: "Jaké je vaše jméno?",
-    namePlaceholder: "Zadejte jméno",
-    lastNamePlaceholder: "Zadejte příjmení",
-    birthdayPlaceholder: "Vyberte datum narození",
-    age18Alert: "Musíte mít 18 let nebo více",
-    invalidDate: "Neplatné datum",
-    male: "Muž",
-    female: "Žena",
-    finalStepBtn: "Poslední krok",
-    // | Step 4
-    step4Title: "Vyberte měnu",
-    countryPlaceholder: "Vyberte zemi",
-    currencyPlaceholder: "Vyberte měnu",
-    phoneNumberPlaceholder: "Telefonní číslo",
-    addressPlaceholder: "Zadejte adresu",
-    cityPlaceholder: "Zadejte město",
-    statePlaceholder: "Vyberte kraj",
-    zipCodePlaceholder: "Zadejte PSČ",
-    createAccountBtn: "Vytvořit účet",
-    // | Decline
-    areYouSure: `Jste si jistí? <br /> Váš pokrok bude ztracen`,
-    keepRegistering: "Pokračujte v registraci",
-    returnToWebsite: "Vrátit se na web",
-  },
-  si: {
-    pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle:
-      "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
-    heroBtn: "prevzemite bonus",
-    slideStep1Title: "Registrirajte se",
-    slideStep1Text:
-      'Kliknite "Prevzemite bonus" in dokončajte brezplačno registracijo.',
-    slideStep2Title: "Aktivirajte bonus",
-    slideStep2Text:
-      'Poiščite svoj bonus v "Centru bonusov" in ga aktivirajte, da začnete igrati.',
-    slideStep3Title: "Igrajte",
-    slideStep3Text: "Denar je zdaj na voljo za igro. Uživajte!",
-    footerText: `<span class="current-domain"></span> je informativna platforma o bonusih in promocijah v spletnih kazinojih. Vse posredovane informacije so zgolj informativne in zabavne narave. Pogoji bonusov se lahko spremenijo brez predhodnega obvestila, <span class="current-domain"></span> pa ne prevzema odgovornosti za morebitne neskladnosti. Ponudbe so na voljo le osebam, starim 18 let in več, ki so prebivalci upravičenih jurisdikcij. Pred registracijo ali unovčenjem bonusa natančno preberite pogoje vsakega kazinoja. Igrajte odgovorno!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Nazaj",
-    closeBtn: "Zapri",
-    // | Step 1
-    depToBalance: `<span>100 BREZPLAČNIH VRTLJEV</span>`,
-    withoutDeposit: "Brez pologa",
-    step1Title: "Izberite svoj bonus",
-    welcomeBonus: "Dobrodošli bonus",
-    welcomeBonusText: "ob vašem prvem pologu",
-    cryptoBonus: "Satoshi bonus",
-    cryptoBonusText: "150% pri pologih v kriptovalutah",
-    highRollerBonus: "High Roller bonus",
-    highRollerBonusText: "250% pri pologih nad $500",
-    withoutBonus: "Brez bonusa",
-    withoutBonusText: "Ne boste prejeli nobenega bonusa",
-    iHavePromoCode: "Imam promocijsko kodo",
-    promoCodePlaceHolder: "Promocijska koda",
-    promoCodeApplyBtn: "Uporabi",
-    continueBtn: "Nadaljuj",
-    // | Step 2
-    step2Title: "Vnesite svoj e-mail",
-    emailPlaceholder: "Vnesite e-mail",
-    passwordPlaceholder: "Vnesite geslo",
-    // | Step 3
-    step3Title: "Kako vam je ime?",
-    namePlaceholder: "Vnesite ime",
-    lastNamePlaceholder: "Vnesite priimek",
-    birthdayPlaceholder: "Izberite datum rojstva",
-    age18Alert: "Morate biti stari 18 let ali več",
-    invalidDate: "Neveljaven datum",
-    male: "Moški",
-    female: "Ženska",
-    finalStepBtn: "Končni korak",
-    // | Step 4
-    step4Title: "Izberite valuto",
-    countryPlaceholder: "Izberite državo",
-    currencyPlaceholder: "Izberite valuto",
-    phoneNumberPlaceholder: "Telefonska številka",
-    addressPlaceholder: "Vnesite naslov",
-    cityPlaceholder: "Vnesite mesto",
-    statePlaceholder: "Izberite pokrajino",
-    zipCodePlaceholder: "Vnesite poštno številko",
-    createAccountBtn: "Ustvari račun",
-    // | Decline
-    areYouSure: `Ste prepričani? <br /> Vaš napredek bo izgubljen`,
-    keepRegistering: "Nadaljujte z registracijo",
-    returnToWebsite: "Vrni se na spletno stran",
-  },
-  gr: {
-    pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
-    heroBtn: "πάρε το μπόνους",
-    slideStep1Title: "Εγγραφή",
-    slideStep1Text:
-      'Κάντε κλικ στο "Πάρε το μπόνους" και ολοκληρώστε την δωρεάν εγγραφή.',
-    slideStep2Title: "Ενεργοποίηση μπόνους",
-    slideStep2Text:
-      'Βρείτε το μπόνους σας στο "Κέντρο Μπόνους" και ενεργοποιήστε το για να ξεκινήσετε το παιχνίδι.',
-    slideStep3Title: "Παίξτε",
-    slideStep3Text:
-      "Τα χρήματα είναι πλέον διαθέσιμα για παιχνίδι. Καλή διασκέδαση!",
-    footerText: `<span class="current-domain"></span> είναι μια ενημερωτική πλατφόρμα για μπόνους και προσφορές σε διαδικτυακά καζίνο. Όλες οι πληροφορίες παρέχονται αποκλειστικά για ενημερωτικούς και ψυχαγωγικούς σκοπούς. Οι όροι και προϋποθέσεις των μπόνους ενδέχεται να αλλάξουν χωρίς προειδοποίηση και το <span class="current-domain"></span> δεν φέρει καμία ευθύνη για τυχόν αποκλίσεις. Οι προσφορές διατίθενται μόνο σε άτομα ηλικίας 18 ετών και άνω, που είναι κάτοικοι επιλέξιμων δικαιοδοσιών. Πριν από την εγγραφή ή τη διεκδίκηση οποιουδήποτε μπόνους, διαβάστε προσεκτικά τους όρους και τις προϋποθέσεις κάθε καζίνο. Παίξτε υπεύθυνα!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Πίσω",
-    closeBtn: "Κλείσιμο",
-    // | Step 1
-    depToBalance: `<span>100 ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ</span>`,
-    withoutDeposit: "Χωρίς κατάθεση",
-    step1Title: "Επιλέξτε το μπόνους σας",
-    welcomeBonus: "Μπόνους καλωσορίσματος",
-    welcomeBonusText: "στην πρώτη σας κατάθεση",
-    cryptoBonus: "Μπόνους Satoshi",
-    cryptoBonusText: "150% στις καταθέσεις με κρυπτονομίσματα",
-    highRollerBonus: "Μπόνους High Roller",
-    highRollerBonusText: "250% σε καταθέσεις άνω των $500",
-    withoutBonus: "Χωρίς μπόνους",
-    withoutBonusText: "Δεν θα λάβετε κανένα μπόνους",
-    iHavePromoCode: "Έχω κωδικό προσφοράς",
-    promoCodePlaceHolder: "Κωδικός προσφοράς",
-    promoCodeApplyBtn: "Εφαρμογή",
-    continueBtn: "Συνέχεια",
-    // | Step 2
-    step2Title: "Εισάγετε το email σας",
-    emailPlaceholder: "Εισάγετε email",
-    passwordPlaceholder: "Εισάγετε κωδικό πρόσβασης",
-    // | Step 3
-    step3Title: "Ποιο είναι το όνομά σας?",
-    namePlaceholder: "Εισάγετε όνομα",
-    lastNamePlaceholder: "Εισάγετε επώνυμο",
-    birthdayPlaceholder: "Επιλέξτε ημερομηνία γέννησης",
-    age18Alert: "Η ηλικία πρέπει να είναι 18+",
-    invalidDate: "Μη έγκυρη ημερομηνία",
-    male: "Άνδρας",
-    female: "Γυναίκα",
-    finalStepBtn: "Τελικό βήμα",
-    // | Step 4
-    step4Title: "Επιλέξτε νόμισμα",
-    countryPlaceholder: "Επιλέξτε χώρα",
-    currencyPlaceholder: "Επιλέξτε νόμισμα",
-    phoneNumberPlaceholder: "Αριθμός τηλεφώνου",
-    addressPlaceholder: "Εισάγετε διεύθυνση",
-    cityPlaceholder: "Εισάγετε πόλη",
-    statePlaceholder: "Επιλέξτε επαρχία",
-    zipCodePlaceholder: "Εισάγετε ταχυδρομικό κώδικα",
-    createAccountBtn: "Δημιουργία λογαριασμού",
-    // | Decline
-    areYouSure: `Είστε σίγουροι? <br /> Η πρόοδός σας θα χαθεί`,
-    keepRegistering: "Συνεχίστε την εγγραφή",
-    returnToWebsite: "Επιστροφή στην ιστοσελίδα",
-  },
-  no: {
-    pageTitle: "🎁 Bonusen din er klar - Goldbet",
-    heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
-    heroBtn: "få bonus",
-    slideStep1Title: "Registrer deg",
-    slideStep1Text: 'Klikk på "Få bonus" og fullfør den gratis registreringen.',
-    slideStep2Title: "Aktiver bonus",
-    slideStep2Text:
-      'Finn bonusen din i "Bonus-senteret" og aktiver den for å begynne å spille.',
-    slideStep3Title: "Spill",
-    slideStep3Text: "Pengene er nå tilgjengelige for spill. Kos deg!",
-    footerText: `<span class="current-domain"></span> er en informasjonsplattform om bonuser og kampanjer i nettcasinoer. All informasjon er kun for informasjons- og underholdningsformål. Bonusvilkår og betingelser kan endres uten forvarsel, og <span class="current-domain"></span> er ikke ansvarlig for eventuelle avvik. Tilbud er kun tilgjengelige for personer over 18 år som er bosatt i kvalifiserte jurisdiksjoner. Før du registrerer deg eller krever en bonus, vennligst les vilkårene og betingelsene til hvert casino nøye. Spill ansvarlig!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Tilbake",
-    closeBtn: "Lukk",
-    // | Step 1
-    depToBalance: `<span>100 GRATISSPIINN</span>`,
-    withoutDeposit: "Uten innskudd",
-    step1Title: "Velg din bonus",
-    welcomeBonus: "Velkomstbonus",
-    welcomeBonusText: "på ditt første innskudd",
-    cryptoBonus: "Satoshi-bonus",
-    cryptoBonusText: "150% på kryptoinnskudd",
-    highRollerBonus: "High Roller-bonus",
-    highRollerBonusText: "250% på innskudd over $500",
-    withoutBonus: "Uten bonus",
-    withoutBonusText: "Du vil ikke motta noen bonus",
-    iHavePromoCode: "Jeg har en kampanjekode",
-    promoCodePlaceHolder: "Kampanjekode",
-    promoCodeApplyBtn: "Bruk",
-    continueBtn: "Fortsett",
-    // | Step 2
-    step2Title: "Skriv inn e-posten din",
-    emailPlaceholder: "Skriv inn e-post",
-    passwordPlaceholder: "Skriv inn passord",
-    // | Step 3
-    step3Title: "Hva heter du?",
-    namePlaceholder: "Skriv inn fornavn",
-    lastNamePlaceholder: "Skriv inn etternavn",
-    birthdayPlaceholder: "Velg fødselsdato",
-    age18Alert: "Alder må være 18+",
-    invalidDate: "Ugyldig dato",
-    male: "Mann",
-    female: "Kvinne",
-    finalStepBtn: "Siste steg",
-    // | Step 4
-    step4Title: "Velg valuta",
-    countryPlaceholder: "Velg land",
-    currencyPlaceholder: "Velg valuta",
-    phoneNumberPlaceholder: "Telefonnummer",
-    addressPlaceholder: "Skriv inn adresse",
-    cityPlaceholder: "Skriv inn by",
-    statePlaceholder: "Velg provins",
-    zipCodePlaceholder: "Skriv inn postnummer",
-    createAccountBtn: "Opprett konto",
-    // | Decline
-    areYouSure: `Er du sikker? <br /> Fremgangen din vil gå tapt`,
-    keepRegistering: "Fortsett registreringen",
-    returnToWebsite: "Tilbake til nettsiden",
-  },
-  se: {
-    pageTitle: "🎁 Din bonus är redo - Goldbet",
-    heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
-    heroBtn: "hämta bonus",
-    slideStep1Title: "Registrera dig",
-    slideStep1Text:
-      'Klicka på "Hämta bonus" och slutför den kostnadsfria registreringen.',
-    slideStep2Title: "Aktivera bonus",
-    slideStep2Text:
-      'Hitta din bonus i "Bonussidan" och aktivera den för att börja spela.',
-    slideStep3Title: "Spela",
-    slideStep3Text: "Pengarna är nu tillgängliga för spel. Ha kul!",
-    footerText: `<span class="current-domain"></span> är en informationsplattform om bonusar och kampanjer på nätcasinon. All information är endast för informations- och underhållningssyften. Bonusvillkor kan ändras utan föregående meddelande, och <span class="current-domain"></span> ansvarar inte för eventuella avvikelser. Erbjudanden är endast tillgängliga för personer över 18 år som är bosatta i godkända jurisdiktioner. Läs noggrant igenom villkoren innan du registrerar dig eller hämtar en bonus. Spela ansvarsfullt!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Tillbaka",
-    closeBtn: "Stäng",
-    // | Step 1
-    depToBalance: `<span>100 GRATISSNURR</span>`,
-    withoutDeposit: "Utan insättning",
-    step1Title: "Välj din bonus",
-    welcomeBonus: "Välkomstbonus",
-    welcomeBonusText: "på din första insättning",
-    cryptoBonus: "Satoshi-bonus",
-    cryptoBonusText: "150% på kryptovaluta-insättningar",
-    highRollerBonus: "High Roller-bonus",
-    highRollerBonusText: "250% på insättningar över $500",
-    withoutBonus: "Utan bonus",
-    withoutBonusText: "Du kommer inte att få någon bonus",
-    iHavePromoCode: "Jag har en kampanjkod",
-    promoCodePlaceHolder: "Kampanjkod",
-    promoCodeApplyBtn: "Använd",
-    continueBtn: "Fortsätt",
-    // | Step 2
-    step2Title: "Ange din e-postadress",
-    emailPlaceholder: "Ange e-postadress",
-    passwordPlaceholder: "Ange lösenord",
-    // | Step 3
-    step3Title: "Vad heter du?",
-    namePlaceholder: "Ange förnamn",
-    lastNamePlaceholder: "Ange efternamn",
-    birthdayPlaceholder: "Välj födelsedatum",
-    age18Alert: "Åldern måste vara 18+",
-    invalidDate: "Ogiltigt datum",
-    male: "Man",
-    female: "Kvinna",
-    finalStepBtn: "Sista steget",
-    // | Step 4
-    step4Title: "Välj valuta",
-    countryPlaceholder: "Välj land",
-    currencyPlaceholder: "Välj valuta",
-    phoneNumberPlaceholder: "Telefonnummer",
-    addressPlaceholder: "Ange adress",
-    cityPlaceholder: "Ange stad",
-    statePlaceholder: "Välj region",
-    zipCodePlaceholder: "Ange postnummer",
-    createAccountBtn: "Skapa konto",
-    // | Decline
-    areYouSure: `Är du säker? <br /> Din framsteg kommer att gå förlorad`,
-    keepRegistering: "Fortsätt registreringen",
-    returnToWebsite: "Återgå till webbplatsen",
-  },
-  sk: {
-    pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
-    heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
-    heroBtn: "získať bonus",
-    slideStep1Title: "Registrovať sa",
-    slideStep1Text:
-      'Kliknite na "Získať bonus" a dokončite bezplatnú registráciu.',
-    slideStep2Title: "Aktivovať bonus",
-    slideStep2Text:
-      'Nájdite svoj bonus v "Bonusovom centre" a aktivujte ho, aby ste začali hrať.',
-    slideStep3Title: "Hrať",
-    slideStep3Text: "Peniaze sú teraz dostupné na hranie. Užite si to!",
-    footerText: `<span class="current-domain"></span> je informačná platforma o bonusoch a promo akciách v online kasínach. Všetky poskytnuté informácie sú len informatívne a zábavné. Podmienky a pravidlá bonusov sa môžu zmeniť bez predchádzajúceho upozornenia a <span class="current-domain"></span> nenesie zodpovednosť za akékoľvek nezrovnalosti. Ponuky sú k dispozícii iba pre osoby vo veku 18 rokov a viac, ktoré sú rezidentmi oprávnených jurisdikcií. Pred registráciou alebo získaním akéhokoľvek bonusu si, prosím, pozorne prečítajte podmienky jednotlivých kasín. Hrajte zodpovedne!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Späť",
-    closeBtn: "Zatvoriť",
-    // | Step 1
-    depToBalance: `<span>100 VOĽNÝCH SPINOV</span>`,
-    withoutDeposit: "Bez vkladu",
-    step1Title: "Vyberte si svoj bonus",
-    welcomeBonus: "Uvítací bonus",
-    welcomeBonusText: "pri vašom prvom vklade",
-    cryptoBonus: "Satoshi bonus",
-    cryptoBonusText: "150% na vklady v kryptomene",
-    highRollerBonus: "High Roller bonus",
-    highRollerBonusText: "250% na vklady nad $500",
-    withoutBonus: "Bez bonusu",
-    withoutBonusText: "Nebudete mať žiadny bonus",
-    iHavePromoCode: "Mám promo kód",
-    promoCodePlaceHolder: "Promo kód",
-    promoCodeApplyBtn: "Použiť",
-    continueBtn: "Pokračovať",
-    // | Step 2
-    step2Title: "Zadajte svoj e-mail",
-    emailPlaceholder: "Zadajte e-mail",
-    passwordPlaceholder: "Zadajte heslo",
-    // | Step 3
-    step3Title: "Aké je vaše meno?",
-    namePlaceholder: "Zadajte meno",
-    lastNamePlaceholder: "Zadajte priezvisko",
-    birthdayPlaceholder: "Vyberte dátum narodenia",
-    age18Alert: "Vek musí byť 18+",
-    invalidDate: "Neplatný dátum",
-    male: "Muž",
-    female: "Žena",
-    finalStepBtn: "Posledný krok",
-    // | Step 4
-    step4Title: "Vyberte si menu",
-    countryPlaceholder: "Vyberte krajinu",
-    currencyPlaceholder: "Vyberte menu",
-    phoneNumberPlaceholder: "Telefónne číslo",
-    addressPlaceholder: "Zadajte adresu",
-    cityPlaceholder: "Zadajte mesto",
-    statePlaceholder: "Vyberte provinciu",
-    zipCodePlaceholder: "Zadajte PSČ",
-    createAccountBtn: "Vytvoriť účet",
-    // | Decline
-    areYouSure: `Ste si istí? <br /> Váš pokrok bude stratený`,
-    keepRegistering: "Pokračovať v registrácii",
-    returnToWebsite: "Vrátiť sa na webovú stránku",
-  },
-  ru: {
-    pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
-    heroBtn: "получить бонус",
-    slideStep1Title: "Зарегистрируйтесь",
-    slideStep1Text:
-      'Нажмите "Получить бонус" и пройдите бесплатную регистрацию.',
-    slideStep2Title: "Активируйте бонус",
-    slideStep2Text:
-      'Найдите свой бонус в "Бонус-центре" и активируйте его, чтобы начать играть.',
-    slideStep3Title: "Играйте",
-    slideStep3Text: "Деньги теперь доступны для игры. Наслаждайтесь!",
-    footerText: `<span class="current-domain"></span> — информационная платформа о бонусах и акциях в онлайн-казино. Вся предоставленная информация носит исключительно информационный и развлекательный характер. Условия бонусов могут изменяться без предварительного уведомления, и <span class="current-domain"></span> не несёт ответственности за возможные несоответствия. Предложения доступны только лицам старше 18 лет, проживающим в соответствующих юрисдикциях. Перед регистрацией или получением бонуса внимательно ознакомьтесь с условиями каждого казино. Играйте ответственно!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Назад",
-    closeBtn: "Закрыть",
-    // | Step 1
-    depToBalance: `<span>100 ФРИСПИНОВ</span>`,
-    withoutDeposit: "Без депозита",
-    step1Title: "Выберите свой бонус",
-    welcomeBonus: "Приветственный бонус",
-    welcomeBonusText: "на ваш первый депозит",
-    cryptoBonus: "Сатоши-бонус",
-    cryptoBonusText: "150% на криптовалютные депозиты",
-    highRollerBonus: "Бонус для хайроллеров",
-    highRollerBonusText: "250% на депозиты от $500",
-    withoutBonus: "Без бонуса",
-    withoutBonusText: "Вы не получите бонус",
-    iHavePromoCode: "У меня есть промокод",
-    promoCodePlaceHolder: "Промокод",
-    promoCodeApplyBtn: "Применить",
-    continueBtn: "Продолжить",
-    // | Step 2
-    step2Title: "Введите ваш e-mail",
-    emailPlaceholder: "Введите e-mail",
-    passwordPlaceholder: "Введите пароль",
-    // | Step 3
-    step3Title: "Как вас зовут?",
-    namePlaceholder: "Введите имя",
-    lastNamePlaceholder: "Введите фамилию",
-    birthdayPlaceholder: "Выберите дату рождения",
-    age18Alert: "Возраст должен быть 18+",
-    invalidDate: "Некорректная дата",
-    male: "Мужчина",
-    female: "Женщина",
-    finalStepBtn: "Последний шаг",
-    // | Step 4
-    step4Title: "Выберите валюту",
-    countryPlaceholder: "Выберите страну",
-    currencyPlaceholder: "Выберите валюту",
-    phoneNumberPlaceholder: "Номер телефона",
-    addressPlaceholder: "Введите адрес",
-    cityPlaceholder: "Введите город",
-    statePlaceholder: "Выберите регион",
-    zipCodePlaceholder: "Введите ZIP-код",
-    createAccountBtn: "Создать аккаунт",
-    // | Decline
-    areYouSure: `Вы уверены? <br /> Ваш прогресс будет утерян`,
-    keepRegistering: "Продолжить регистрацию",
-    returnToWebsite: "Вернуться на сайт",
-  },
-  es: {
-    pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
-    heroBtn: "obtener bono",
-    slideStep1Title: "Regístrate",
-    slideStep1Text:
-      'Haz clic en "Obtener bono" y completa el registro gratuito.',
-    slideStep2Title: "Activa el bono",
-    slideStep2Text:
-      'Encuentra tu bono en el "Centro de Bonos" y actívalo para comenzar a jugar.',
-    slideStep3Title: "Juega",
-    slideStep3Text: "El dinero ahora está disponible para jugar. ¡Disfrútalo!",
-    footerText: `<span class="current-domain"></span> es una plataforma informativa sobre bonos y promociones en casinos en línea. Toda la información proporcionada es solo para fines informativos y de entretenimiento. Los términos y condiciones de los bonos pueden cambiar sin previo aviso, y <span class="current-domain"></span> no es responsable de ninguna discrepancia. Las ofertas solo están disponibles para personas mayores de 18 años que sean residentes de jurisdicciones elegibles. Antes de registrarte o reclamar cualquier bono, lee detenidamente los términos y condiciones de cada casino. ¡Juega con responsabilidad!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Atrás",
-    closeBtn: "Cerrar",
-    // | Step 1
-    depToBalance: `<span>100 GIROS GRATIS</span>`,
-    withoutDeposit: "Sin depósito",
-    step1Title: "Elige tu bono",
-    welcomeBonus: "Bono de bienvenida",
-    welcomeBonusText: "en tu primer depósito",
-    cryptoBonus: "Bono Satoshi",
-    cryptoBonusText: "150% en depósitos con criptomonedas",
-    highRollerBonus: "Bono High Roller",
-    highRollerBonusText: "250% en depósitos superiores a $500",
-    withoutBonus: "Sin bono",
-    withoutBonusText: "No recibirás ningún bono",
-    iHavePromoCode: "Tengo un código promocional",
-    promoCodePlaceHolder: "Código promocional",
-    promoCodeApplyBtn: "Aplicar",
-    continueBtn: "Continuar",
-    // | Step 2
-    step2Title: "Ingresa tu correo electrónico",
-    emailPlaceholder: "Ingresa tu e-mail",
-    passwordPlaceholder: "Ingresa tu contraseña",
-    // | Step 3
-    step3Title: "¿Cuál es tu nombre?",
-    namePlaceholder: "Ingresa tu nombre",
-    lastNamePlaceholder: "Ingresa tu apellido",
-    birthdayPlaceholder: "Selecciona tu fecha de nacimiento",
-    age18Alert: "Debes tener 18+ años",
-    invalidDate: "Fecha inválida",
-    male: "Hombre",
-    female: "Mujer",
-    finalStepBtn: "Último paso",
-    // | Step 4
-    step4Title: "Selecciona tu moneda",
-    countryPlaceholder: "Selecciona tu país",
-    currencyPlaceholder: "Elige tu moneda",
-    phoneNumberPlaceholder: "Número de teléfono",
-    addressPlaceholder: "Ingresa tu dirección",
-    cityPlaceholder: "Ingresa tu ciudad",
-    statePlaceholder: "Selecciona tu provincia",
-    zipCodePlaceholder: "Ingresa tu código postal",
-    createAccountBtn: "Crear cuenta",
-    // | Decline
-    areYouSure: `¿Estás seguro? <br /> Tu progreso se perderá`,
-    keepRegistering: "Seguir registrándome",
-    returnToWebsite: "Volver al sitio web",
-  },
-  pt: {
-    pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
-    heroBtn: "obter bônus",
-    slideStep1Title: "Cadastre-se",
-    slideStep1Text: 'Clique em "Obter Bônus" e complete o cadastro gratuito.',
-    slideStep2Title: "Ative o bônus",
-    slideStep2Text:
-      'Encontre seu bônus no "Centro de Bônus" e ative-o para começar a jogar.',
-    slideStep3Title: "Jogue",
-    slideStep3Text: "O dinheiro agora está disponível para jogar. Aproveite!",
-    footerText: `<span class="current-domain"></span> é uma plataforma informativa sobre bônus e promoções em cassinos online. Todas as informações fornecidas são apenas para fins informativos e de entretenimento. Os termos e condições dos bônus podem mudar sem aviso prévio, e <span class="current-domain"></span> não se responsabiliza por quaisquer discrepâncias. As ofertas estão disponíveis apenas para maiores de 18 anos que sejam residentes de jurisdições elegíveis. Antes de se cadastrar ou resgatar qualquer bônus, leia atentamente os termos e condições de cada cassino. Jogue com responsabilidade!`,
-    // | FORM TRANSLATIONS
-    backBtn: "Voltar",
-    closeBtn: "Fechar",
-    // | Step 1
-    depToBalance: `<span>100 RODADAS GRÁTIS</span>`,
-    withoutDeposit: "Sem depósito",
-    step1Title: "Escolha seu bônus",
-    welcomeBonus: "Bônus de Boas-Vindas",
-    welcomeBonusText: "no seu primeiro depósito",
-    cryptoBonus: "Bônus Satoshi",
-    cryptoBonusText: "150% em depósitos com criptomoedas",
-    highRollerBonus: "Bônus High Roller",
-    highRollerBonusText: "250% em depósitos acima de $500",
-    withoutBonus: "Sem bônus",
-    withoutBonusText: "Você não receberá nenhum bônus",
-    iHavePromoCode: "Tenho um código promocional",
-    promoCodePlaceHolder: "Código promocional",
-    promoCodeApplyBtn: "Aplicar",
-    continueBtn: "Continuar",
-    // | Step 2
-    step2Title: "Insira seu e-mail",
-    emailPlaceholder: "Digite seu e-mail",
-    passwordPlaceholder: "Digite sua senha",
-    // | Step 3
-    step3Title: "Qual é o seu nome?",
-    namePlaceholder: "Digite seu nome",
-    lastNamePlaceholder: "Digite seu sobrenome",
-    birthdayPlaceholder: "Selecione sua data de nascimento",
-    age18Alert: "A idade mínima é 18 anos",
-    invalidDate: "Data inválida",
-    male: "Masculino",
-    female: "Feminino",
-    finalStepBtn: "Última etapa",
-    // | Step 4
-    step4Title: "Selecione sua moeda",
-    countryPlaceholder: "Selecione seu país",
-    currencyPlaceholder: "Escolha sua moeda",
-    phoneNumberPlaceholder: "Número de telefone",
-    addressPlaceholder: "Digite seu endereço",
-    cityPlaceholder: "Digite sua cidade",
-    statePlaceholder: "Escolha seu estado",
-    zipCodePlaceholder: "Digite seu CEP",
-    createAccountBtn: "Criar conta",
-    // | Decline
-    areYouSure: `Tem certeza? <br /> Seu progresso será perdido`,
-    keepRegistering: "Continuar cadastro",
-    returnToWebsite: "Voltar ao site",
+    // ? SOCIALS
+    signUpEasySteps: "Register in 3 easy steps",
+    completeToClaimGift: "Complete and claim your gift.",
+    signUpWithGoogle: "Sign up with Google",
+    signUpWithFacebook: "Sign up with Facebook",
+    phone: "Phone",
+    wrongEmail: "Invalid email",
+    wrongNumber: "Invalid number",
+    signUpBtn: "Sign Up",
+    promoApplied: "Bonus applied",
+    bonusName: "Welcome casino bonus",
+    depositBonus: `<span class='applied-nodep-bonus'>in gates of olympus</span> <br/> bonus up to <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% on deposit up to 6000",
+    phoneNumber: "Phone number",
+    password: "Password",
+    minSymbols: "Minimum 6 characters",
+    atLeast6Chars: "At least 6 characters",
+    currency: "Currency",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4" >I agree to the terms</a></span>`,
+    startPlaying: "Start playing",
+    areYouSure: `Are you sure? <br /> Your progress will be lost`,
+    keepRegistering: "Continue registration",
+    returnToWebsite: "Return to website",
+    step2Title: `Final step to claim your bonus`,
+    step2Subtitle: `Create a password and select your account currency.`,
+    passwordPlaceholder: "Password",
+    // | Terms
+    termsTitle1: `Terms And Conditions`,
+    termsParagraph1: `These terms and conditions and the documents referred to below
+                      (the "Terms") apply to the use of the current website (the
+                      "Website") and its related or connected services
+                      (collectively, the "Service"). You should carefully review
+                      these Terms as they contain important information concerning
+                      your rights and obligations regarding the use of the Website
+                      and form a binding legal agreement between you - our customer
+                      (the "Customer"), and us (the "Website"). By using this
+                      Website and/or accessing the Service, you, whether you are a
+                      guest or a registered user with an account (“Account”), agree
+                      to be bound by these Terms, together with any amendments,
+                      which may be published from time to time. If you do not accept
+                      these Terms, you should refrain from accessing the Service and
+                      using the Website.`,
+    termsTitle2: `1. General Terms`,
+    termsParagraph2: `We reserve the right to revise and amend the Terms (including
+                      any documents referred to and linked below) at any time. You
+                      should visit this page periodically to review the Terms and
+                      Conditions. Amendments will be binding and effective
+                      immediately upon publication on this Website. If you object to
+                      any such changes, you must immediately stop using the Service.
+                      Your continued use of the Website following such publication
+                      will indicate your agreement to be bound by the Terms as
+                      amended. Any bets not settled prior to the changed Terms
+                      taking effect will be subject to the pre-existing Terms. If
+                      the Terms and Conditions of Goldbet will be updated, the
+                      platform will notify you and ask you to confirm your consent.`,
+    termsTitle3: `2. Your Obligations`,
+    termsParagraph3: `You acknowledge that at all times when accessing the Website
+                      and using the Service: <br />
+                      3.1. You are over 18, or of the legal age at which gambling or
+                      gaming activities are allowed under the law or jurisdiction
+                      that applies to you. We reserve the right to request proof of
+                      age documents from you at any time. <br />
+                      3.2. You are of legal capacity and can enter into a binding
+                      legal agreement with us. You must not access the Website or
+                      utilize the Service if you are not of legal capacity. <br />
+                      3.3. You are aware that the right to access and use the
+                      Website and any products there offered, may be considered
+                      illegal in certain countries. We are not able to verify the
+                      legality of service in each and every jurisdiction,
+                      consequently, you are responsible in determining whether your
+                      accessing and using our website is compliant with the
+                      applicable laws in your country and you warrant to us that
+                      gambling is not illegal in the territory where you reside. For
+                      various legal or commercial reasons, we do not permit accounts
+                      to be opened or used by customers resident in certain
+                      jurisdictions, including but not limited to: Afghanistan,
+                      Algeria, Antigua & Barbuda, Australia, Belarus, Bahrain,
+                      Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte
+                      d'Ivoire, Croatia, Cuba, Czech Republic, Democratic People’s
+                      Republic of Korea (North Korea), Democratic Republic of the
+                      Congo, Denmark, Estonia, France, Greece, Guinea-Bissau,
+                      Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait,
+                      Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands,
+                      Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint
+                      Eustatius, and Saba, Aruba), Norway, Oman, Palestine,
+                      Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia,
+                      Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab
+                      Republic, Sudan, Trinidad and Tobago, Turkey, Ukraine, United
+                      Kingdom, Germany, Union of Comoros, United Arab Emirates,
+                      United States (and its dependencies, military bases and
+                      territories i.e. U.S. Minor Outlying Islands, U.S. Virgin
+                      Islands), Vanuatu, Yemen, Zimbabwe. or other restricted
+                      jurisdictions ("Restricted Jurisdiction") that are reported by
+                      us from time to time. By using the Website you confirm you are
+                      not a resident in a Restricted Jurisdiction. <br />
+                      3.4. When attempting to open an account or using the Website,
+                      it is the responsibility of the player to verify whether
+                      gambling is legal in that particular jurisdiction. <br />
+                      3.5. You are the authorized user of the payment method you use
+                      and all funds, which are on your account and used within the
+                      Services are legal. <br />
+                      3.6. You must make all payments to us in good faith and not
+                      attempt to reverse a payment made or take any action which
+                      will cause such payment to be reversed by a third party.
+                      <br />
+                      3.7. When placing bets you may lose some or all of your money
+                      deposited to the Service in accordance with these Terms and
+                      you will be fully responsible for that loss. <br />
+                      3.8. When placing bets you must not use any information
+                      obtained in breach of any legislation in force in the country
+                      in which you were when the bet was placed. <br />
+                      3.9. You are not acting on behalf of another party or for any
+                      commercial purposes, but solely on your own behalf as a
+                      private individual in a personal capacity. <br />
+                      3.10. You must not either attempt to manipulate any market or
+                      element within the Service in bad faith nor in a manner that
+                      adversely affects the integrity of the Service or us. <br />
+                      3.11. You must generally act in good faith in relation to the
+                      use of the Service at all times and for all bets made using
+                      the Service. <br />
+                      3.12. You, or, if applicable, your employees, employers,
+                      agents, or family members, are not registered as an Affiliate
+                      in our Affiliate program. <br />
+                      3.13. While using Goldbet at any time you consent to provide
+                      us only true, real, and objective data on default and when We
+                      request it. <br />
+                      3.14. You understand the volatility of the crypto market and
+                      you accept the possibility of your currency/currencies price
+                      changing while you are waiting for your withdrawal or your
+                      withdrawal is being processed by our Risk Department. <br />
+                      3.15. You are a mentally competent person and you do not
+                      suffer from gambling addiction. In case a person with such a
+                      problem enters the Site - the responsibility lies on their
+                      side only. <br />
+                      3.16. You agree not to use any third-party software in any of
+                      the subdivisions of Goldbet as well as not to abuse any
+                      game/functioning bugs found on the platform. <br />
+                      3.17. You warrant that all information that you provide to us
+                      from the moment of registration and during the term of
+                      validity of this agreement is true, complete, correct, and
+                      that you shall immediately notify us of any change of such
+                      information. <br />
+                      3.17.1. You confirm your understanding that the information
+                      which entered at the registration and during use the Service
+                      cannot be changed at your decision. To change any information,
+                      you should contact the support team. For the change of any
+                      information, Goldbet can request any documents for passing the
+                      KYC at its own decision. <br />
+                      3.18. You warrant that you will not use our services while
+                      located in any jurisdiction that prohibits the placing and/or
+                      accepting of bets online and/or playing casino and/or live
+                      games. <br />
+                      3.19.You also warrant that: <br />
+                      - You participate in the Services on your own behalf and not
+                      on the behalf of any other person; <br />
+                      - You are solely responsible for reporting and accounting for
+                      any taxes applicable to you under relevant laws for any
+                      winnings that you receive from us; <br />
+                      - You are solely responsible for any applicable taxes which
+                      may be payable on cryptocurrency awarded to you through your
+                      using the Service.`,
   },
 };
