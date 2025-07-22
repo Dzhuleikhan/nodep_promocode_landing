@@ -1,133 +1,8 @@
 export const translations = {
-  az: {
-    pageTitle: "🎁 Bonusunuz hazırdır - Goldbet",
-    heroTitle: `<span>gates of olympus</span> oyununda <br/> depozitsiz <span>100 FS</span> <br/> bonusunuzu əldə edin`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>-ə qədər + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> ilk 4 depozitinizə`,
-    heroBtn: "bonusu əldə et",
-    slideStep1Title: "Qeydiyyat",
-    slideStep1Text:
-      '"Bonusu əldə et" düyməsinə klikləyin və pulsuz qeydiyyatı tamamlayın.',
-    slideStep2Title: "Bonusu aktiv et",
-    slideStep2Text:
-      '"Bonus Mərkəzi"ndə bonusunuzu tapın və aktivləşdirərək oynamağa başlayın.',
-    slideStep3Title: "Oyna",
-    slideStep3Text: "Pul artıq oyunda istifadəyə hazırdır. Əyləncə sizindir!",
-    footerText: `<span class="current-domain"></span> onlayn kazinolarda bonuslar və promosyonlar haqqında məlumat platformasıdır. Verilən bütün məlumatlar yalnız məlumatlandırma və əyləncə məqsədi daşıyır. Bonus şərtləri xəbərdarlıq edilmədən dəyişə bilər və <span class="current-domain"></span> hər hansı uyğunsuzluğa görə məsuliyyət daşımır. Təkliflər yalnız 18 yaşdan yuxarı və uyğun yurisdiksiyalarda yaşayan şəxslər üçün keçərlidir. Hər hansı bir kazino saytında qeydiyyatdan keçməzdən və ya bonus tələb etməzdən əvvəl, lütfən, onun şərtlərini diqqətlə oxuyun. Məsuliyyətlə oynayın!`,
-    // ? SOCIALS
-    signUpEasySteps: "3 asan addımla qeydiyyatdan keçin",
-    completeToClaimGift: "Tamamlayın və hədiyyənizi alın.",
-    signUpWithGoogle: "Google ilə qeydiyyatdan keçin",
-    signUpWithFacebook: "Facebook ilə qeydiyyatdan keçin",
-    phone: "Telefon",
-    wrongEmail: "Yanlış e-mail",
-    wrongNumber: "Yanlış nömrə",
-    signUpBtn: "Qeydiyyatdan keçin",
-    promoApplied: "Bonus tətbiq olundu",
-    bonusName: "Xoş gəldin kazino bonusu",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>-ə qədər + 25FS`,
-    depositBonus2: "Depozitə 400% 6000-ə qədər",
-    phoneNumber: "Telefon nömrəsi",
-    password: "Şifrə",
-    minSymbols: "Minimum 6 simvol",
-    atLeast6Chars: "Ən azı 6 simvol",
-    currency: "Valyuta",
-    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-white underline underline-offset-4" >Şərtlərlə</a> razıyam</span>`,
-    startPlaying: "Oynamağa başlayın",
-    areYouSure: `Əminsiniz? <br /> İrəliləyişiniz itəcək`,
-    keepRegistering: "Qeydiyyata davam edin",
-    returnToWebsite: "Sayta qayıdın",
-    step2Title: `Bonusunuzu əldə etmək üçün son addım`,
-    step2Subtitle: `Şifrə yaradın və hesabınızın valyutasını seçin.`,
-    passwordPlaceholder: "Şifrə",
-    // | Terms
-    termsTitle1: `Şərtlər və Qaydalar`,
-    termsParagraph1: `Bu şərtlər və qaydalar və aşağıda göstərilən sənədlər 
-                        ("Şərtlər") hazırkı vebsaytdan ("Vebsayt") və əlaqəli xidmətlərdən 
-                        ("Xidmət") istifadəni əhatə edir. Bu Şərtləri diqqətlə nəzərdən keçirməlisiniz,
-                        çünki onlar Vebsaytdan istifadə ilə bağlı hüquq və öhdəliklərinizi,
-                        həmçinin sizinlə bizim ("Müştəri" və "Vebsayt") aramızda məcburi hüquqi
-                        sazişi təşkil edir. Bu Vebsaytdan istifadə edərək və ya Xidmətə daxil
-                        olaraq, qonaq və ya qeydiyyatdan keçmiş istifadəçi olmağınızdan asılı
-                        olmayaraq, bu Şərtlərə və vaxtaşırı dərc oluna biləcək düzəlişlərə razı
-                        olduğunuzu təsdiqləyirsiniz. Əgər bu Şərtləri qəbul etmirsinizsə,
-                        Xidmətə daxil olmaqdan və Vebsaytdan istifadə etməkdən çəkinməlisiniz.`,
-    termsTitle2: `1. Ümumi Şərtlər`,
-    termsParagraph2: `Biz istənilən vaxt bu Şərtləri (və aşağıda qeyd edilən sənədləri)
-                        yeniləmə və dəyişdirmə hüququna malikik. Şərtləri yenidən nəzərdən keçirmək
-                        üçün bu səhifəni müntəzəm olaraq ziyarət etməlisiniz. Dəyişikliklər dərhal 
-                        Vebsaytda dərc edildikdən sonra qüvvəyə minir və məcburi olacaq. Belə 
-                        dəyişikliklərə etiraz edirsinizsə, dərhal Xidmətdən istifadəni dayandırmalısınız.
-                        Dəyişikliklərdən sonra Vebsaytdan istifadəyə davam etməyiniz, yenilənmiş Şərtlərə 
-                        razı olduğunuz anlamına gəlir. Dəyişikliklər qüvvəyə minməzdən əvvəlki bütün 
-                        bahis və mərcələr əvvəlki Şərtlərə əsasən idarə olunacaq. Goldbet-in Şərtləri 
-                        yenilənərsə, platforma sizi xəbərdar edəcək və razılığınızı təsdiqləməyinizi 
-                        xahiş edəcək.`,
-    termsTitle3: `2. Sizin Öhdəlikləriniz`,
-    termsParagraph3: `Vebsayta daxil olduğunuz və Xidmətdən istifadə etdiyiniz zaman aşağıdakılara 
-                        əməl etdiyinizi təsdiq edirsiniz: <br />
-                        3.1. 18 yaşdan böyük və ya oynamaq üçün qanuni yaş həddinə çatmış olduğunuzu 
-                        təsdiqləyirsiniz. İstənilən vaxt yaşınızı təsdiq edən sənədləri tələb etmək hüququmuzu 
-                        saxlayırıq. <br />
-                        3.2. Hüquqi qabiliyyətiniz olduğunu və bizimlə məcburi hüquqi saziş bağlaya 
-                        biləcəyinizi təsdiqləyirsiniz. Hüquqi qabiliyyətiniz olmadıqda, Vebsayta daxil 
-                        olmamalı və Xidmətdən istifadə etməməlisiniz. <br />
-                        3.3. Vebsayta və orada təklif olunan hər hansı məhsula giriş və istifadənin bəzi ölkələrdə qanunsuz sayılacağını dərk edirsiniz. Xidmətin hər bir yurisdiksiyada qanuniliyini təsdiq edə bilmədiyimiz üçün, vebsaytımıza giriş və istifadənin ölkənizdə tətbiq olunan qanunlara uyğun olub-olmadığını müəyyən etmək sizin məsuliyyətinizdir və siz bizə zəmanət verirsiniz ki, qumar oynamaq yaşadığınız ərazidə qanunla qadağan deyil. Müxtəlif hüquqi və ya kommersiya səbəblərinə görə biz müəyyən yurisdiksiyalarda yaşayan şəxslərə hesab açmağa və istifadə etməyə icazə vermirik, bunlara daxildir, lakin bununla məhdudlaşmır: Əfqanıstan, Əlcəzair, Antiqua və Barbuda, Avstraliya, Belarus, Bəhreyn, Belçika, Butan, Bruney, Mərkəzi Afrika Respublikası, Çad, Fil Dişi Sahili, Xorvatiya, Kuba, Çex Respublikası, Koreya Xalq Demokratik Respublikası (Şimali Koreya), Konqo Demokratik Respublikası, Danimarka, Estoniya, Fransa, Yunanıstan, Qvineya-Bisau, Macarıstan, İran, İraq, İslandiya, İsrail, İtaliya, İordaniya, Küveyt, Latviya, Liberiya, Litva, Malta, Myanma, Niderland, Niderland Antilyaları (Kurasao, Sint Maarten, Bonaire, Sint Eustatius və Saba, Aruba), Norveç, Oman, Fələstin, Pakistan, Qətər, Rusiya, Saba, Saint Martin, Səudiyyə Ərəbistanı, Serbiya, Sloveniya, Somali, İspaniya, İsveçrə, Suriya Ərəb Respublikası, Sudan, Trinidad və Tobaqo, Türkiyə, Ukrayna, Birləşmiş Krallıq, Almaniya, Komor Adaları İttifaqı, Birləşmiş Ərəb Əmirlikləri, Amerika Birləşmiş Ştatları (və onun asılı əraziləri, hərbi bazaları və əraziləri, məsələn, ABŞ-ın Kiçik Ada Əraziləri, ABŞ Virgin Adaları), Vanuatu, Yəmən, Zimbabve və digər məhdudlaşdırılmış yurisdiksiyalar ("Məhdud Yurisdiksiyalar") ki, bunlar tərəfimizdən zaman-zaman bildirilib. Vebsaytdan istifadə etməklə, Məhdud Yurisdiksiyada yaşamadığınızı təsdiq edirsiniz. <br />
-                        3.4. Hesab açmağa cəhd edərkən və ya Vebsaytdan istifadə edərkən,
-                        mərc oyunlarının həmin yurisdiksiyada qanuni olub-olmadığını yoxlamaq
-                        istifadəçinin məsuliyyətidir. <br />
-                        3.5. Siz istifadə etdiyiniz ödəniş metodunun səlahiyyətli istifadəçisisiniz 
-                        və hesabınızdakı və Xidmətlərdə istifadə edilən bütün vəsaitlər qanunidir. <br />
-                        3.6. Bizə edilən bütün ödənişlər dürüstlük prinsipi ilə edilməlidir və 
-                        üçüncü tərəf vasitəsilə geri qaytarılmasını tələb etməməlisiniz. <br />
-                        3.7. Mərc yerləşdirərkən, bu Şərtlərə uyğun olaraq Xidmətə yatırdığınız
-                        pulların bir hissəsini və ya hamısını itirə bilərsiniz və itirdiyiniz 
-                        məbləğə görə tam məsuliyyət daşıyırsınız. <br />
-                        3.8. Mərc yerləşdirərkən, yerləşdirdiyiniz ölkədə qüvvədə olan qanunları pozaraq
-                        əldə edilmiş hər hansı məlumatdan istifadə etməməlisiniz. <br />
-                        3.9. Başqa bir şəxs adından və ya kommersiya məqsədləri üçün deyil,
-                        yalnız şəxsi adınızdan və öz adınızdan çıxış edirsiniz. <br />
-                        3.10. Hər hansı bazarı və ya Xidmət daxilindəki elementi manipulyasiya etməyə 
-                        çalışmamalı, həmçinin Xidmətin və ya bizim etibarlılığımıza zərər gətirəcək 
-                        şəkildə hərəkət etməməlisiniz. <br />
-                        3.11. Xidmətdən istifadə edərkən bütün vaxtlarda dürüstlük prinsiplərinə riayət etməli 
-                        və Xidmət vasitəsilə edilən bütün mərclərdə şəffaf olmalısınız. <br />
-                        3.12. Siz, işçiləriniz, işəgötürənləriniz, agentləriniz və ya ailə üzvləriniz
-                        bizim Partnyor proqramında qeydiyyatdan keçməmişdir. <br />
-                        3.13. Goldbet-dən istifadə edərkən istənilən vaxt yalnız həqiqi, obyektiv 
-                        məlumat təqdim etməyə razılıq verirsiniz. <br />
-                        3.14. Kripto bazarının dəyişkənliyini başa düşürsünüz və çıxarışınızın
-                        qiymətinin dəyişməsini və ya Risk Departamentimiz tərəfindən təsdiqlənməsini qəbul edirsiniz. <br />
-                        3.15. Ağıllı və ruhi cəhətdən sağlam bir şəxs olduğunuzu və qumar asılılığınızın
-                        olmadığını təsdiqləyirsiniz. Əgər belə bir probleminiz varsa, sayta daxil olmağınız 
-                        yalnız sizin məsuliyyətinizdədir. <br />
-                        3.16. Goldbet-in hər hansı bölməsində üçüncü tərəf proqram təminatından 
-                        istifadə etməyəcəyinizə və platformada tapılan oyun/işləmə səhvlərindən 
-                        sui-istifadə etməyəcəyinizə razılaşırsınız. <br />
-                        3.17. Qeydiyyat zamanı və bu müqavilənin qüvvədə olduğu müddət ərzində 
-                        bizə təqdim etdiyiniz bütün məlumatların doğru, tam və düzgün olduğunu və
-                        bu məlumatlarda hər hansı bir dəyişiklik barədə bizi dərhal xəbərdar 
-                        edəcəyinizi təmin edirsiniz. <br />
-                        3.17.1. Qeydiyyat zamanı daxil edilən və Xidmətdən istifadə zamanı daxil edilən 
-                        məlumatların sizin qərarınıza əsasən dəyişdirilə bilməyəcəyini başa düşdüyünüzü 
-                        təsdiqləyirsiniz. Hər hansı bir məlumatı dəyişdirmək üçün dəstək komandasına 
-                        müraciət etməlisiniz. Hər hansı məlumatın dəyişdirilməsi üçün Goldbet KYC 
-                        prosedurunu həyata keçirmək məqsədilə hər hansı sənədi tələb edə bilər. <br />
-                        3.18. Onlayn mərc qoymağın və ya kazino oynamağın və ya canlı oyunlar oynamağın 
-                        qadağan olunduğu yurisdiksiyalarda olduğunuz halda, xidmətlərimizdən istifadə 
-                        etməyəcəyinizə təminat verirsiniz. <br />
-                        3.19. Siz həmçinin təminat verirsiniz ki: <br />
-                        - Xidmətlərdə yalnız öz adınızdan iştirak edirsiniz və başqa bir şəxs adından 
-                        çıxış etmirsiniz; <br />
-                        - Tətbiq olunan qanunvericiliyə əsasən bizdən əldə etdiyiniz hər hansı qazancın 
-                        vergisi ilə bağlı bütün hesabatların və mühasibat uçotunun aparılması sizin 
-                        məsuliyyətinizdir; <br />
-                        - Xidmətdən istifadə etməklə əldə etdiyiniz kriptovalyuta ilə bağlı ödəməli 
-                        olduğunuz bütün tətbiq olunan vergilərin məsuliyyəti yalnız sizə aiddir.`,
-  },
   tr: {
     pageTitle: "🎁 Bonusunuz hazır - Goldbet",
-    heroTitle: `<span>gates of olympus</span> oyununda <br/> yatırımsız <span>100 FS</span> <br/> bonusunuzu alın`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>17.000</span><span class='bonus-currency-symbol'>₼</span>'a kadar + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> ilk 4 yatırımınıza`,
+    heroTitle: `<span>gates of olympus</span> <br /> kayıt ol ve oyna`,
+    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - <span class='bonus-total-amount'>340.000</span><span class='bonus-currency-symbol'>₺</span>'ye kadar + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> ilk 4 yatırımınıza`,
     heroBtn: "bonusu al",
     slideStep1Title: "Kayıt Ol",
     slideStep1Text:
@@ -149,7 +24,7 @@ export const translations = {
     signUpBtn: "Kayıt Ol",
     promoApplied: "Bonus uygulandı",
     bonusName: "Hoş geldin casino bonusu",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">17.000</span> <span class="bonus-currency">₼</span>'a kadar + 25FS`,
+    depositBonus: `<span class='applied-nodep-bonus'>gates of olympus oyununda</span> <br/> bonus <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span>'ye kadar + 25FS`,
     depositBonus2: "Yatırıma %400 6000'e kadar",
     phoneNumber: "Telefon numarası",
     password: "Şifre",
@@ -326,8 +201,8 @@ export const translations = {
   },
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `Get your bonus <br/> <span>100 FS</span> with no deposit <br/> in <span>gates of olympus</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - up to <span class='bonus-total-amount'>17,000</span><span class='bonus-currency-symbol'>₼</span> + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> on your first 4 deposits`,
+    heroTitle: `<span>gates of olympus</span> <br /> register and play`,
+    heroSubtitle: `+<span class="two-step-bonus-percent">1100%</span> - up to <span class='bonus-total-amount'>340.000</span><span class='bonus-currency-symbol'>₺</span> + <span class="two-step-bonus-spins">25 FS</span> <br/ class='max-[576px]:hidden'> on your first 4 deposits`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
@@ -348,7 +223,7 @@ export const translations = {
     signUpBtn: "Sign Up",
     promoApplied: "Bonus applied",
     bonusName: "Welcome casino bonus",
-    depositBonus: `<span class='applied-nodep-bonus'>100 FS in gates of olympus</span> <br/> bonus up to <span class="bonus-value">17,000</span> <span class="bonus-currency">₼</span> + 25FS`,
+    depositBonus: `<span class='applied-nodep-bonus'>in gates of olympus</span> <br/> bonus up to <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% on deposit up to 6000",
     phoneNumber: "Phone number",
     password: "Password",

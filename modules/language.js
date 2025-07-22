@@ -51,13 +51,12 @@ function updateButtonText(lang) {
   const headerLangName = document.querySelector(".header-lang-btn span");
 
   const languageNames = {
-    az: "AZ",
     tr: "TR",
     en: "EN",
   };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/az.svg`
+    `./img/flags/${lang}.svg` || `./img/flags/tr.svg`
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
@@ -67,12 +66,11 @@ async function determineLanguage() {
   const location = await getLocation();
 
   const countryLangMap = {
-    AZ: "az",
     TR: "tr",
     EN: "en",
     // Add more country codes and their corresponding languages as needed
   };
-  lang = countryLangMap[location.countryCode] || "az";
+  lang = countryLangMap[location.countryCode] || "tr";
 
   return lang;
 }

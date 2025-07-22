@@ -59,7 +59,7 @@ async function settingModalCurrency() {
     const excludedCountries = ["RU", "MX", "CL", "CO", "TH", "ID"];
 
     if (excludedCountries.includes(countryInput)) {
-      countryInput = "AZ";
+      countryInput = "TR";
     }
 
     const currencyAbbr = getCountryCurrencyABBR(countryInput);

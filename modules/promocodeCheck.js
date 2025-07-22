@@ -1,7 +1,7 @@
 import { getUrlParameter } from "./params";
 import { newDomain } from "./fetchingDomain";
 
-export const defaulPromocode = "OLYMPUSAZ629";
+export const defaulPromocode = "";
 
 document
   .querySelector(".modal-open-btn")
