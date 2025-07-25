@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
   </head>
-  <body class="bg-[#251309] overscroll-none">
+  <body class="bg-[#000B07] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
       <header
         class="py-[29px] max-[1200px]:py-[13px] absolute leading-0 top-0 w-full z-[500]"
@@ -25,27 +25,25 @@
                 alt="Goldbet logo"
               />
               <img
-                class="header-country-flag hidden"
+                class="header-country-flag rounded-full overflow-hidden hidden"
                 width="24"
                 height="24"
-                src="./img/flags/kz.svg"
-                alt="KZ Flag"
+                src="./img/flags/au.svg"
+                alt="AU Flag"
               />
             </a>
             <div class="header-lang-box relative cursor-pointer">
               <button
-                class="header-lang-btn flex items-center justify-center gap-2 rounded-lg bg-[#ffffff] px-3 py-[9px] font-bold text-black transition-all"
+                class="header-lang-btn cursor-pointer flex items-center justify-center gap-2 rounded-lg bg-[#ffffff] px-3 py-[9px] font-bold text-black transition-all"
               >
                 <img
                   class="overflow-hidden rounded-full"
                   width="20"
                   height="20"
-                  src="./img/flags/kz.svg"
-                  alt="Kazakh"
+                  src="./img/flags/en.svg"
+                  alt="English"
                 />
-                <span class="inline-block w-[70px] max-[350px]:hidden"
-                  >Kazakh</span
-                >
+                <span class="inline-block max-[350px]:hidden">EN</span>
                 <svg
                   width="24"
                   height="24"
@@ -63,7 +61,7 @@
                 </svg>
               </button>
               <ul
-                class="header-lang-list absolute right-0 top-[110%] w-full overflow-hidden rounded-lg font-bold text-black duration-300 max-[350px]:min-w-max"
+                class="header-lang-list absolute right-0 top-[110%] w-full overflow-hidden rounded-lg font-bold text-black duration-300"
               >
                 <li>
                   <a
@@ -77,7 +75,7 @@
                       src="./img/flags/en.svg"
                       alt="eng flag"
                     />
-                    <span class="pointer-events-none">English</span>
+                    <span class="pointer-events-none">EN</span>
                   </a>
                 </li>
                 <li>
@@ -92,7 +90,22 @@
                       src="./img/flags/fr.svg"
                       alt="Fr flag"
                     />
-                    <span class="pointer-events-none">Français</span>
+                    <span class="pointer-events-none">FR</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="es"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/es.svg"
+                      alt="ES flag"
+                    />
+                    <span class="pointer-events-none">ES</span>
                   </a>
                 </li>
               </ul>
@@ -101,49 +114,13 @@
         </div>
       </header>
       <main>
-        <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            width="980"
-            height="646"
-            class="absolute fire-img-1 left-0 bottom-0 z-[1]"
-            src="./img/fire.webp"
-            alt="Fire"
-          />
-          <img
-            width="980"
-            height="646"
-            class="absolute fire-img-1 right-0 bottom-0 z-[1]"
-            src="./img/fire.webp"
-            alt="Fire"
-          />
-          <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="./img/seven.webp"
-            alt="Seven"
-          />
-          <img
-            class="absolute orange-img left-[50%] z-[8] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="./img/orange.webp"
-            alt="Orange"
-          />
-          <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="./img/watermelon.webp"
-            alt="watermelon"
-          />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="./img/star.webp"
-            alt="star"
-          />
-          <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="./img/plum.webp"
-            alt="plum"
-          />
+        <section
+          id="hero"
+          class="w-full relative overflow-hidden max-[992px]:bg-[url(./img/hero-bg-mobile.webp)] bg-[url(./img/hero-bg-desktop.webp)] bg-no-repeat bg-center bg-cover"
+        >
           <!-- container -->
           <div
-            class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
+            class="max-w-[1140px] max-[992px]:pb-[70px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
           >
             <!-- inner -->
             <div class="relative z-[5]">
@@ -153,26 +130,40 @@
                 <h1
                   data-translate="heroTitle"
                   class="hero-title text-[48px] hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                ></h1>
+                >
+                  NO DEPOSIT BONUS <br />
+                  <span>15</span> <span>AUD</span> UPON ACCOUNT <br />
+                  VERIFICATION
+                </h1>
                 <p
                   data-translate="heroSubtitle"
                   class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                ></p>
+                >
+                  +<span>100%</span> up to <span>1480</span> <span>AUD</span> &
+                  <span>200</span> Free Spins With your 1st deposit
+                </p>
+                <img
+                  class="hidden max-[992px]:block w-full max-[576px]:max-w-[210px] max-w-[350px] relative z-[1] -bottom-[50px] pointer-events-none"
+                  width="453"
+                  height="633"
+                  src="./img/hero-img-mobile.webp"
+                  alt="Frog"
+                />
                 <button
                   data-translate="heroBtn"
-                  class="hero-modal-open-btn modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[576px]:mt-4 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[350px]:px-4 max-[350px]:w-full"
+                  class="hero-modal-open-btn relative z-[2] modal-open-btn max-[992px]:mt-0 cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[576px]:mt-4 text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[350px]:px-4 max-[350px]:w-full"
                 >
                   GET BONUS
                 </button>
               </div>
             </div>
-            <img
+            <!-- <img
               class="absolute hero-main-img w-full min-w-[1288px] max-[576px]:min-w-[650px] max-[992px]:min-w-[900px] max-[992px]:-translate-x-[50%] max-[992px]:left-[50%] z-[3] left-[140px] -bottom-[30px] max-[576px]:relative max-[576px]:-bottom-[30px]"
               width="1288"
               height="722"
               src="./img/pirate.webp"
               alt="Pirate"
-            />
+            /> -->
           </div>
         </section>
         <!-- container -->
@@ -180,7 +171,7 @@
           class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
         >
           <div
-            class="bg-[#6c310b] relative border-2 border-[#ce7237] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
+            class="bg-[#990205] relative border-2 border-[#FFAA00] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
           >
             <div class="step-slider">
               <div class="swiper-wrapper">
@@ -189,7 +180,7 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFF052] font-[saira] steps-number uppercase"
                     >
                       1
                     </p>
@@ -214,7 +205,7 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFF052] font-[saira] steps-number uppercase"
                     >
                       2
                     </p>
@@ -239,7 +230,7 @@
                     class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
                   >
                     <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
+                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFF052] font-[saira] steps-number uppercase"
                     >
                       3
                     </p>
@@ -302,18 +293,15 @@
             data-translate="footerText"
             class="text-[12px] leading-[140%] text-[#f0f0f0] text-center font-[raleway]"
           >
-            The website www.goldbet.io is owned and operated by Ivanov I.I.
-            (registration number: 12345678; with registered Address: Ivanov Ivan
-            Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisboa, Portugal PO
-            BOX 1234-5600 Lisboa, Portugal) operating through its payment agent
-            IVANOV DEVELOPMENT LIMITED (registration number: AB123456;
-            registered in Cyprus with registered address Rua de Henrique Digeni
-            12, 1 & 2 an., 1234-5600 Lisboa, Portugal). Ivanov I.I. is a company
-            registered and established under the laws of Anjouan and licensed
-            and regulated by the Government of Anjouan under the gaming license
-            No. AB12345678, authorized and regulated by the Government of
-            Anjouan with registered address: Rua de Henrique Digeni 12 1 & 2
-            an., 1234-5600 Lisboa, Portugal.
+            <span class="current-domain"></span> is an informational platform
+            about bonuses and promotions in online casinos. All information
+            provided is for informational and entertainment purposes only. Bonus
+            terms and conditions may change without prior notice, and
+            <span class="current-domain"></span> is not responsible for any
+            discrepancies. Offers are only available to individuals aged 18 and
+            over who are residents of eligible jurisdictions. Before registering
+            or claiming any bonus, please read the terms and conditions of each
+            casino carefully. Play responsibly!
           </p>
           <div
             class="footer-payments-list flex items-center max-[576px]:mt-[30px] justify-center gap-5 flex-wrap mt-12 py-[17px]"
@@ -1151,7 +1139,7 @@
                         class="pointer-events-none mt-[5px] flex items-center gap-[5px]"
                       >
                         <img
-                          class="two-step-country-image"
+                          class="two-step-country-image rounded-full"
                           src="./img/twoStepFormImg/country-flag-placeholder.svg"
                           alt="Flag"
                         />
@@ -1277,6 +1265,23 @@
                           class="currency-item-icon"
                           width="24"
                           height="24"
+                          src="./img/currencies/usd.svg"
+                          alt="USD"
+                        />
+                        <span class="currency-item-name">US Dollar</span>
+                        <div>
+                          <span class="currency-item-symbol">$</span>
+                          |
+                          <span class="currency-item-abbr">USD</span>
+                        </div>
+                      </li>
+                      <li
+                        class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-[#755EEB]/20 bg-white px-4 py-[10px] text-base font-bold text-[#1c1c1c] transition-all [&.active]:bg-[#b4aae7]"
+                      >
+                        <img
+                          class="currency-item-icon"
+                          width="24"
+                          height="24"
                           src="./img/currencies/eur.svg"
                           alt="EUR"
                         />
@@ -1285,6 +1290,25 @@
                           <span class="currency-item-symbol">€</span>
                           |
                           <span class="currency-item-abbr">EUR</span>
+                        </div>
+                      </li>
+                      <li
+                        class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-[#755EEB]/20 bg-white px-4 py-[10px] text-base font-bold text-[#1c1c1c] transition-all [&.active]:bg-[#b4aae7]"
+                      >
+                        <img
+                          class="currency-item-icon"
+                          width="24"
+                          height="24"
+                          src="./img/currencies/aud.svg"
+                          alt="AUD"
+                        />
+                        <span class="currency-item-name"
+                          >Australian Dollar</span
+                        >
+                        <div>
+                          <span class="currency-item-symbol">$AU</span>
+                          |
+                          <span class="currency-item-abbr">AUD</span>
                         </div>
                       </li>
                       <li
@@ -1786,7 +1810,7 @@
         </div>
       </div>
       <div
-        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#261309]"
+        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#004126]"
       >
         <svg
           width="106"

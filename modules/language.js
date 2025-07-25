@@ -2,7 +2,7 @@ import { translations } from "/public/translations";
 import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
-import { settingNodepBonus } from "./modalCurrency";
+// import { settingNodepBonus } from "./modalCurrency";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -53,8 +53,9 @@ function updateButtonText(lang) {
   const headerLangName = document.querySelector(".header-lang-btn span");
 
   const languageNames = {
-    en: "English",
-    fr: "Français",
+    en: "EN",
+    fr: "FR",
+    es: "ES",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -72,6 +73,7 @@ async function determineLanguage() {
   const countryLangMap = {
     EN: "en",
     FR: "fr",
+    ES: "es",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";
@@ -85,8 +87,11 @@ async function mainFunction() {
     changeLanguage(lang);
     localStorage.setItem("preferredLanguage", lang);
     setTimeout(() => {
-      const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-      settingNodepBonus(currencyData.abbr);
+      // const currencyData = JSON.parse(localStorage.getItem("currencyData"));
+      // settingNodepBonus(currencyData.abbr);
+      document.querySelectorAll(".current-domain").forEach((domain) => {
+        domain.innerHTML = window.location.hostname;
+      });
     }, 200);
   } catch (error) {
     console.error("Error determining language:", error);
@@ -105,7 +110,10 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     );
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
     settingInitialBonusValue(currencyData.abbr);
-    settingNodepBonus(currencyData.abbr);
+    // settingNodepBonus(currencyData.abbr);
     twoStepFormData.lang = localStorage.getItem("preferredLanguage");
+    document.querySelectorAll(".current-domain").forEach((domain) => {
+      domain.innerHTML = window.location.hostname;
+    });
   });
 });

@@ -63,31 +63,31 @@ function setCurrency(abbr, name, icon) {
 
 // | setting no deposit bonus amount and currency
 
-export const settingNodepBonus = (currencyAbbr) => {
-  const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
-  const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
-  const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
-  const nodepBonusCurrencySymbol = document.querySelectorAll(
-    ".bonus-currency-symbol"
-  );
+// export const settingNodepBonus = (currencyAbbr) => {
+//   const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
+//   const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
+//   const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
+//   const nodepBonusCurrencySymbol = document.querySelectorAll(
+//     ".bonus-currency-symbol"
+//   );
 
-  const selectedCurrency =
-    nodepBonuses.find((c) => c.currency === currencyAbbr) ||
-    nodepBonuses.find((c) => c.currency === "USD");
+//   const selectedCurrency =
+//     nodepBonuses.find((c) => c.currency === currencyAbbr) ||
+//     nodepBonuses.find((c) => c.currency === "USD");
 
-  nodepBonusAmount.forEach((text) => {
-    text.textContent = selectedCurrency.bonusAmount;
-  });
-  nodepBonusCurrency.forEach((text) => {
-    text.textContent = selectedCurrency.currency;
-  });
-  nodepBonusTotalAmoun.forEach((text) => {
-    text.textContent = selectedCurrency.moneyAmount;
-  });
-  nodepBonusCurrencySymbol.forEach((text) => {
-    text.textContent = selectedCurrency.symbol;
-  });
-};
+//   nodepBonusAmount.forEach((text) => {
+//     text.textContent = selectedCurrency.bonusAmount;
+//   });
+//   nodepBonusCurrency.forEach((text) => {
+//     text.textContent = selectedCurrency.currency;
+//   });
+//   nodepBonusTotalAmoun.forEach((text) => {
+//     text.textContent = selectedCurrency.moneyAmount;
+//   });
+//   nodepBonusCurrencySymbol.forEach((text) => {
+//     text.textContent = selectedCurrency.symbol;
+//   });
+// };
 
 const settingFooterPayments = (currencyAbbr) => {
   const selectedCurrency =
@@ -110,17 +110,29 @@ const settingFooterPayments = (currencyAbbr) => {
 async function settingModalCurrency() {
   try {
     let locationData = await getLocation();
+    // let countryInput = locationData.countryCode;
+    let countryInput = "AU";
 
-    const currencyCode =
-      nodepBonuses.find(
-        (item) => item.currency === locationData.currency.code
-      ) || nodepBonuses.find((item) => item.currency === "EUR");
+    const excludedCountries = ["RU", "MX", "CL", "CO", "TH", "ID"];
+
+    if (excludedCountries.includes(countryInput)) {
+      countryInput = "US";
+    }
+
+    if (countryInput === "GB") {
+      countryInput = "FR";
+    }
+
+    const currencyAbbr = getCountryCurrencyABBR(countryInput);
+    const currencyFullName = getCountryCurrencyFullName(countryInput);
+    const currencyIcon = getCountryCurrencyIcon(countryInput);
+    const currencySymbol = getCountryCurrencySymbol(countryInput);
 
     const currencyData = {
-      abbr: currencyCode.currency,
-      name: currencyCode.currencyName,
-      icon: currencyCode.countryCurrencyIcon,
-      symbol: currencyCode.symbol,
+      abbr: currencyAbbr,
+      name: currencyFullName,
+      icon: currencyIcon,
+      symbol: currencySymbol,
     };
 
     // Save to local storage
@@ -132,7 +144,7 @@ async function settingModalCurrency() {
     settingInitialBonusValue(twoStepFormData.currency);
     setTimeout(() => {
       settingInitialBonusValue(currencyData.abbr);
-      settingNodepBonus(currencyData.abbr);
+      // settingNodepBonus(currencyData.abbr);
     }, 300);
     settingFooterPayments(currencyData.abbr);
   } catch (error) {
@@ -215,9 +227,9 @@ formCurrency.forEach((cur) => {
         settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
         twoStepFormData.currency = currencyData.abbr;
         settingInitialBonusValue(twoStepFormData.currency);
-        settingNodepBonus(currencyData.abbr);
-        document.querySelector(".bonus-currency-symbol").innerHTML =
-          currencyData.symbol;
+        // settingNodepBonus(currencyData.abbr);
+        // document.querySelector(".bonus-currency-symbol").innerHTML =
+        //   currencyData.symbol;
       });
     });
 

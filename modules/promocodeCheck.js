@@ -2,7 +2,7 @@ import { getUrlParameter } from "./params";
 import { newDomain } from "./fetchingDomain";
 import { twoStepFormData } from "./twoStepForm";
 
-export const defaulPromocode = "NODEP10GBP";
+export const defaulPromocode = "AUD1520";
 
 document
   .querySelector(".modal-open-btn")

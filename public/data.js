@@ -644,6 +644,15 @@ export const SupportedLanguages = [
 
 export const nodepBonuses = [
   {
+    currency: "AUD",
+    currencyName: "AUD",
+    symbol: "AU$",
+    bonusAmount: "15",
+    countryCurrencyIcon: "./img/currencies/aud.svg",
+    moneyAmount: "7000",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
+  },
+  {
     currency: "EUR",
     currencyName: "EURO",
     symbol: "€",
