@@ -48,6 +48,7 @@ export const exceptCurrencies = [
   "USD",
   "EUR",
   "NOK",
+  "AUD",
 ];
 
 export const checkTir1CurrencyMatch = (currency, bonus) => {

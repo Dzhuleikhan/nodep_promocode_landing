@@ -53,20 +53,9 @@ function updateButtonText(lang) {
   const headerLangName = document.querySelector(".header-lang-btn span");
 
   const languageNames = {
-    en: "English",
-    fr: "French",
-    ro: "Romainan",
-    hu: "Hungarian",
-    pl: "Polish",
-    cz: "Czech",
-    si: "Slovenian",
-    gr: "Greek",
-    no: "Norwegian",
-    se: "Swedish",
-    sk: "Slovak",
-    ru: "Russian",
-    es: "Spanish",
-    pt: "Portuguese",
+    en: "EN",
+    fr: "FR",
+    es: "ES",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -84,18 +73,7 @@ async function determineLanguage() {
   const countryLangMap = {
     EN: "en",
     FR: "fr",
-    RO: "ro",
-    HU: "hu",
-    PL: "pl",
-    CZ: "cz",
-    SI: "si",
-    GR: "gr",
-    NO: "no",
-    SE: "se",
-    SK: "sk",
-    RU: "ru",
     ES: "es",
-    PT: "pt",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";

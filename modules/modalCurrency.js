@@ -110,21 +110,29 @@ const settingFooterPayments = (currencyAbbr) => {
 async function settingModalCurrency() {
   try {
     let locationData = await getLocation();
+    // let countryInput = locationData.countryCode;
+    let countryInput = "AU";
 
-    if (locationData.currency.code === "CHE") {
-      locationData.currency.code = "CHF";
+    const excludedCountries = ["RU", "MX", "CL", "CO", "TH", "ID"];
+
+    if (excludedCountries.includes(countryInput)) {
+      countryInput = "US";
     }
 
-    const currencyCode =
-      nodepBonuses.find(
-        (item) => item.currency === locationData.currency.code
-      ) || nodepBonuses.find((item) => item.currency === "EUR");
+    if (countryInput === "GB") {
+      countryInput = "FR";
+    }
+
+    const currencyAbbr = getCountryCurrencyABBR(countryInput);
+    const currencyFullName = getCountryCurrencyFullName(countryInput);
+    const currencyIcon = getCountryCurrencyIcon(countryInput);
+    const currencySymbol = getCountryCurrencySymbol(countryInput);
 
     const currencyData = {
-      abbr: currencyCode.currency,
-      name: currencyCode.currencyName,
-      icon: currencyCode.countryCurrencyIcon,
-      symbol: currencyCode.symbol,
+      abbr: currencyAbbr,
+      name: currencyFullName,
+      icon: currencyIcon,
+      symbol: currencySymbol,
     };
 
     // Save to local storage
