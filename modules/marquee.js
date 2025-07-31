@@ -29,7 +29,7 @@ export default function horizontalLoop(items, config) {
       let w = (widths[i] = parseFloat(gsap.getProperty(el, "width", "px")));
       xPercents[i] = snap(
         (parseFloat(gsap.getProperty(el, "x", "px")) / w) * 100 +
-          gsap.getProperty(el, "xPercent"),
+          gsap.getProperty(el, "xPercent")
       );
       return xPercents[i];
     },
@@ -54,13 +54,13 @@ export default function horizontalLoop(items, config) {
         xPercent: snap(((curX - distanceToLoop) / widths[i]) * 100),
         duration: distanceToLoop / pixelsPerSecond,
       },
-      0,
+      0
     )
       .fromTo(
         item,
         {
           xPercent: snap(
-            ((curX - distanceToLoop + totalWidth) / widths[i]) * 100,
+            ((curX - distanceToLoop + totalWidth) / widths[i]) * 100
           ),
         },
         {
@@ -69,7 +69,7 @@ export default function horizontalLoop(items, config) {
             (curX - distanceToLoop + totalWidth - curX) / pixelsPerSecond,
           immediateRender: false,
         },
-        distanceToLoop / pixelsPerSecond,
+        distanceToLoop / pixelsPerSecond
       )
       .add("label" + i, distanceToStart / pixelsPerSecond);
     times[i] = distanceToStart / pixelsPerSecond;
