@@ -503,6 +503,16 @@ export const countryCurrencyData = [
     amount: "16.400",
     spins: "200FS",
   },
+  {
+    countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
+    countryCurrency: "ZAR",
+    countryCurrencySymbol: "R",
+    countryCurrencyFullName: "South African Rand",
+    countryCurrencyIcon: "./img/currencies/zar.svg",
+    amount: "88.000",
+    spins: "200 FS",
+    highrollerAmount: "3600",
+  },
 ];
 
 export const canadaProvincesCities = {
