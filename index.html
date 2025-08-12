@@ -514,7 +514,7 @@
       </footer>
       <!-- Two step overlay -->
       <div
-        class="two-step-overlay fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
+        class="two-step-overlay is-open fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
       >
         <!-- Header -->
         <div
@@ -565,7 +565,9 @@
               alt="Belgium"
             />
           </a>
-          <div class="two-step-modal-close-btn flex items-center gap-3">
+          <div
+            class="two-step-modal-close-btn opacity-0 invisible items-center gap-3"
+          >
             <span
               data-translate="closeBtn"
               class="text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:hidden text-white"
