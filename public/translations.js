@@ -995,4 +995,65 @@ export const translations = {
   - Você é totalmente responsável por relatar e pagar os impostos aplicáveis conforme as leis pertinentes por qualquer ganho recebido de nós;<br />
   - Você é responsável pelos impostos que possam ser aplicáveis a criptomoedas que fornecemos a você através do Serviço.`,
   },
+  de: {
+    pageTitle: "🎁 Ihr Bonus ist bereit - Goldbet",
+    heroTitle: `Erhalte <b><span>550%</span></b> <br/> bis zu <b><span>5.000 USDT</span></b>`,
+    heroSubtitle: `<span>🎰 +200</span> Freispiele bei Ihrer ersten Einzahlung`,
+    heroBtn: "Bonus erhalten",
+    paymentsTitle: `Wir akzeptieren <span>41</span> Kryptowährungen`,
+    advantege1Title: "VPN-kompatibel",
+    advantege1Text:
+      "Sie können ein VPN verwenden, um problemlos auf unsere Plattform zuzugreifen.",
+    advantege2Title: "Keine KYC erforderlich",
+    advantege2Text:
+      "Für Ein- und Auszahlungen mit Kryptowährungen ist keine KYC-Verifizierung erforderlich.",
+    advantege3Title: "25% Empfehlungsbonus",
+    advantege3Text:
+      "Laden Sie Spieler ein und verdienen Sie 25% des Casino-Umsatzes.",
+    footerText: `<span class="current-domain"></span> ist Eigentum von und wird betrieben von Goldkey Technologies Limited. Registrierungsnummer: 3-102-892568, eingetragene Adresse: Puntarenas - Pastor Diaz Ave., Provinz Puntarenas, Jaco, 61101, Costa Rica. Kontaktieren Sie uns per E-Mail unter hello@goldbet.io. Goldbet.io ist lizenziert und reguliert durch die Regierung der Autonomen Insel Anjouan, Komorenunion, und operiert unter Lizenz Nr. ALSI-012401005-F11. Goldbet.io hat alle regulatorischen Anforderungen erfüllt und ist rechtlich befugt, Glücksspiel- und Wettoperationen durchzuführen. Bitte beachten Sie, dass Glücksspiel süchtig machen kann. Spielen Sie verantwortungsbewusst. Goldbet.io akzeptiert nur Kunden ab 18 Jahren, entsprechend ihrer Gerichtsbarkeit. Goldkey Technologies Limited, Registrierungsnummer 3-102-892568, eine nach den Gesetzen Zyperns gegründete und bestehende Gesellschaft, ist der Zahlungsanbieter von Goldkey Technologies Limited und agiert als Zahlungsagent im Namen von Goldkey Technologies Limited.`,
+    // | Formular
+    signUpTitle: "Registrieren",
+    emailPlaceholder: "E-Mail",
+    wrongEmail: "Ungültige E-Mail",
+    wrongPassword: "Mindestens 6 Zeichen.",
+    passwordPlaceholder: "Passwort",
+    yourCurrency: "Ihre Währung",
+    startPlaying: "Mit dem Spielen beginnen",
+    terms: `Ich stimme den <span class="text-white underline underline-offset-4">Allgemeinen Geschäftsbedingungen</span> zu`,
+    signUpWithGoogle: "Mit Google registrieren",
+    signUpWithFacebook: "Mit Facebook registrieren",
+    signUpWithTelegram: "Mit Telegram registrieren",
+    // | Termos
+    termsTitle1: `Allgemeine Geschäftsbedingungen`,
+    termsParagraph1: `Diese Allgemeinen Geschäftsbedingungen und die unten aufgeführten Dokumente (die "Bedingungen") gelten für die Nutzung der aktuellen Website (die "Website") und ihrer damit verbundenen oder angeschlossenen Dienste (zusammen der "Dienst"). Sie sollten diese Bedingungen sorgfältig prüfen, da sie wichtige Informationen über Ihre Rechte und Pflichten im Zusammenhang mit der Nutzung der Website enthalten und eine rechtsverbindliche Vereinbarung zwischen Ihnen – unserem Kunden (der "Kunde") – und uns (der "Website") darstellen. Durch die Nutzung dieser Website und/oder den Zugriff auf den Dienst stimmen Sie, sei es als Besucher oder als registrierter Benutzer mit einem Konto („Konto“), zu, an diese Bedingungen gebunden zu sein, einschließlich aller Änderungen, die von Zeit zu Zeit veröffentlicht werden. Wenn Sie diesen Bedingungen nicht zustimmen, sollten Sie den Zugriff auf den Dienst und die Nutzung der Website unterlassen.`,
+
+    termsTitle2: `1. Allgemeine Bestimmungen`,
+    termsParagraph2: `Wir behalten uns das Recht vor, die Bedingungen (einschließlich aller unten genannten und verlinkten Dokumente) jederzeit zu überprüfen und zu ändern. Sie sollten diese Seite regelmäßig besuchen, um die Allgemeinen Geschäftsbedingungen zu prüfen. Änderungen sind verbindlich und treten unmittelbar nach ihrer Veröffentlichung auf dieser Website in Kraft. Wenn Sie mit Änderungen nicht einverstanden sind, müssen Sie die Nutzung des Dienstes sofort einstellen. Die Nutzung der Website nach der Veröffentlichung der Änderungen gilt als Zustimmung zu den geänderten Bedingungen. Ausstehende Wetten vor einer Änderung der Bedingungen unterliegen den vorherigen Bedingungen. Wenn die Allgemeinen Geschäftsbedingungen von Goldbet aktualisiert werden, wird die Plattform Sie benachrichtigen und um Ihre Zustimmung bitten.`,
+
+    termsTitle3: `2. Ihre Pflichten`,
+    termsParagraph3: `Sie erkennen an, dass Sie jederzeit beim Zugriff auf die Website und die Nutzung des Dienstes: <br />
+3.1. Sie über 18 Jahre alt sind oder das gesetzliche Mindestalter für Glücksspiele gemäß den Gesetzen oder der geltenden Rechtsordnung in Ihrem Land erreicht haben. Wir behalten uns das Recht vor, jederzeit Altersnachweise anzufordern. <br />
+3.2. Sie die rechtliche Fähigkeit besitzen, einen verbindlichen Vertrag mit uns abzuschließen. Sie dürfen die Website oder den Dienst nicht nutzen, wenn Sie nicht rechtsfähig sind. <br />
+3.3. Sie sich darüber im Klaren sind, dass der Zugriff auf und die Nutzung der Website und ihrer angebotenen Produkte in einigen Ländern illegal sein kann. Wir können die Rechtmäßigkeit des Dienstes in allen Rechtsordnungen nicht überprüfen. Daher liegt es in Ihrer Verantwortung zu bestimmen, ob Ihr Zugriff und Ihre Nutzung der Website den geltenden Gesetzen Ihres Landes entspricht, und Sie garantieren uns, dass das Spielen in Ihrem Wohnsitzland nicht illegal ist. Aus verschiedenen rechtlichen oder geschäftlichen Gründen erlauben wir nicht, dass Konten von Kunden in bestimmten Ländern eröffnet oder genutzt werden, einschließlich, aber nicht beschränkt auf: Afghanistan, Algerien, Antigua und Barbuda, Australien, Belarus, Bahrain, Belgien, Bhutan, Brunei, Zentralafrikanische Republik, Tschad, Elfenbeinküste, Kroatien, Kuba, Tschechische Republik, Demokratische Volksrepublik Korea (Nordkorea), Demokratische Republik Kongo, Dänemark, Estland, Frankreich, Griechenland, Guinea-Bissau, Ungarn, Iran, Irak, Island, Israel, Italien, Jordanien, Kuwait, Lettland, Liberia, Litauen, Malta, Myanmar, Niederlande, Niederländische Antillen (Curaçao, Sint Maarten, Bonaire, Sint Eustatius und Saba, Aruba), Norwegen, Oman, Palästina, Pakistan, Katar, Russland, Saba, Sint Maarten, Saudi-Arabien, Serbien, Slowenien, Somalia, Spanien, Schweiz, Syrien, Sudan, Trinidad und Tobago, Türkei, Ukraine, Vereinigtes Königreich, Deutschland, Union der Komoren, Vereinigte Arabische Emirate, Vereinigte Staaten (einschließlich deren Abhängigkeiten, Militärbasen und Territorien, d.h. US-Außengebiete, US-Jungferninseln), Vanuatu, Jemen, Simbabwe oder andere von uns gelegentlich gemeldete eingeschränkte Jurisdiktionen ("Eingeschränkte Jurisdiktionen"). Durch die Nutzung der Website bestätigen Sie, dass Sie kein Bewohner einer Eingeschränkten Jurisdiktion sind. <br />
+3.4. Sie sind dafür verantwortlich, vor dem Versuch, ein Konto zu eröffnen oder die Website zu nutzen, zu überprüfen, ob das Glücksspiel in Ihrer Jurisdiktion legal ist. <br />
+3.5. Sie sind der autorisierte Benutzer der von Ihnen verwendeten Zahlungsmethode und alle Gelder auf Ihrem Konto, die innerhalb des Dienstes verwendet werden, sind legal. <br />
+3.6. Sie müssen alle Zahlungen nach Treu und Glauben leisten und dürfen keine Zahlung zurückholen oder Maßnahmen ergreifen, die dazu führen, dass eine Zahlung durch Dritte zurückgebucht wird. <br />
+3.7. Bei Wetten können Sie einen Teil oder das gesamte eingezahlte Geld verlieren und sind allein für diesen Verlust verantwortlich. <br />
+3.8. Bei Wetten dürfen Sie keine Informationen verwenden, die in Verletzung geltender Gesetze im Land der Wette erlangt wurden. <br />
+3.9. Sie handeln nicht im Namen einer anderen Person oder zu kommerziellen Zwecken, sondern ausschließlich in Ihrem eigenen Namen und als Privatperson. <br />
+3.10. Sie dürfen keine Märkte oder Elemente innerhalb des Dienstes in böser Absicht oder zum Nachteil der Integrität des Dienstes oder unserer Plattform manipulieren. <br />
+3.11. Sie müssen den Dienst und alle getätigten Wetten nach Treu und Glauben nutzen. <br />
+3.12. Sie oder, falls zutreffend, Ihre Mitarbeiter, Arbeitgeber, Vertreter oder Familienangehörigen sind nicht als Partner in unserem Partnerprogramm registriert. <br />
+3.13. Durch die Nutzung von Goldbet erklären Sie sich damit einverstanden, uns nur wahrheitsgemäße, echte und objektive Daten bereitzustellen, sowohl standardmäßig als auch auf Anfrage. <br />
+3.14. Sie verstehen die Volatilität des Kryptowährungsmarktes und akzeptieren, dass sich der Wert Ihrer Kryptowährung ändern kann, während Sie auf Ihre Auszahlung warten oder während die Auszahlung von unserer Risikoabteilung bearbeitet wird. <br />
+3.15. Sie sind geistig kompetent und nicht spielsüchtig. Wenn eine Person mit diesem Problem auf die Website zugreift, liegt die Verantwortung bei ihr selbst. <br />
+3.16. Sie stimmen zu, keine Drittanbieter-Software in einem Bereich von Goldbet zu verwenden oder Fehler im Spiel/Funktion der Plattform auszunutzen. <br />
+3.17. Sie garantieren, dass alle von Ihnen seit der Registrierung und während der Laufzeit dieses Vertrags bereitgestellten Informationen wahr, vollständig und korrekt sind und dass Sie uns unverzüglich über Änderungen informieren. <br />
+3.17.1. Sie bestätigen, dass Sie verstehen, dass die bei der Registrierung eingegebenen Informationen nicht nach Ihrem Ermessen geändert werden können. Um Informationen zu ändern, müssen Sie den Kundensupport kontaktieren. Für Änderungen kann Goldbet Dokumente zur Durchführung des KYC-Verfahrens verlangen. <br />
+3.18. Sie garantieren, dass Sie unsere Dienste nicht nutzen, während Sie sich in einer Jurisdiktion befinden, die Online-Glücksspiel, Casino-Spiele oder Live-Spiele verbietet. <br />
+3.19. Darüber hinaus garantieren Sie: <br />
+- Sie nutzen die Dienste in Ihrem eigenen Namen und nicht im Namen einer anderen Person;<br />
+- Sie sind vollständig verantwortlich für die Meldung und Zahlung der geltenden Steuern auf alle von uns erhaltenen Gewinne;<br />
+- Sie sind für eventuelle Steuern auf Kryptowährungen verantwortlich, die Ihnen über den Dienst bereitgestellt werden.`,
+  },
 };
