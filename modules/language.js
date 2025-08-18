@@ -66,6 +66,7 @@ function updateButtonText(lang) {
     ru: "Russian",
     es: "Spanish",
     pt: "Portuguese",
+    de: "Deutsch",
   };
   headerLangBtn.setAttribute(
     "src",
