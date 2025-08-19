@@ -861,7 +861,7 @@ export const translations = {
     addressPlaceholder: "Digite seu endereço",
     cityPlaceholder: "Digite sua cidade",
     statePlaceholder: "Escolha seu estado",
-    zipCodePlaceholder: "Digite seu CEP",
+    zipCodePlaceholder: "Código Postal",
     createAccountBtn: "Criar conta",
     // | Decline
     areYouSure: `Tem certeza? <br /> Seu progresso será perdido`,
