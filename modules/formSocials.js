@@ -259,6 +259,8 @@ function disableFormWhileSubmitting() {
 }
 
 let cid = getUrlParameter("cid");
+let partner = getUrlParameter("partner");
+let offer = getUrlParameter("offer");
 
 if (mainForm) {
   mainForm.addEventListener("keydown", (e) => {
@@ -317,7 +319,9 @@ if (mainForm) {
               formData.bonus === "" ? "" : "&bonus=" + formData.bonus
             }${
               formData.promocode ? "&promocode=" + formData.promocode : ""
-            }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+            }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+              partner ? "&partner=" + partner : ""
+            }${offer ? "&offer=" + offer : ""}`;
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
@@ -327,7 +331,9 @@ if (mainForm) {
                 formData.bonus === "" ? "" : "&bonus=" + formData.bonus
               }${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
-              }&lang=${lang}${cid ? "&cid=" + cid : ""}`
+              }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+                partner ? "&partner=" + partner : ""
+              }${offer ? "&offer=" + offer : ""}`
             );
           } else if (formTab === "phone") {
             disableFormWhileSubmitting();
@@ -337,7 +343,9 @@ if (mainForm) {
               formData.password
             )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
               formData.promocode ? "&promocode=" + formData.promocode : ""
-            }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+            }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+              partner ? "&partner=" + partner : ""
+            }${offer ? "&offer=" + offer : ""}s`;
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
@@ -345,7 +353,9 @@ if (mainForm) {
                 formData.password
               )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
-              }&lang=${lang}${cid ? "&cid=" + cid : ""}`
+              }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+                partner ? "&partner=" + partner : ""
+              }${offer ? "&offer=" + offer : ""}s`
             );
           }
         }
@@ -405,7 +415,9 @@ if (mainForm) {
         formData.bonus === "" ? "" : "&bonus=" + formData.bonus
       }${
         formData.promocode ? "&promocode=" + formData.promocode : ""
-      }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+      }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+        partner ? "&partner=" + partner : ""
+      }${offer ? "&offer=" + offer : ""}`;
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
@@ -415,7 +427,9 @@ if (mainForm) {
           formData.bonus === "" ? "" : "&bonus=" + formData.bonus
         }${
           formData.promocode ? "&promocode=" + formData.promocode : ""
-        }&lang=${lang}${cid ? "&cid=" + cid : ""}`
+        }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+          partner ? "&partner=" + partner : ""
+        }${offer ? "&offer=" + offer : ""}`
       );
     } else if (formTab === "phone") {
       disableFormWhileSubmitting();
@@ -426,7 +440,9 @@ if (mainForm) {
         formData.password
       )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
         formData.promocode ? "&promocode=" + formData.promocode : ""
-      }&lang=${lang}${cid ? "&cid=" + cid : ""}`;
+      }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+        partner ? "&partner=" + partner : ""
+      }${offer ? "&offer=" + offer : ""}`;
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
@@ -434,7 +450,9 @@ if (mainForm) {
           formData.password
         )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
           formData.promocode ? "&promocode=" + formData.promocode : ""
-        }&lang=${lang}${cid ? "&cid=" + cid : ""}`
+        }&lang=${lang}${cid ? "&cid=" + cid : ""}${
+          partner ? "&partner=" + partner : ""
+        }${offer ? "&offer=" + offer : ""}`
       );
     }
   });
@@ -469,12 +487,16 @@ formSocialLinks.forEach((link) => {
         bonus === "" ? "" : "&bonus=" + bonus
       }${promocode ? "&promocode=" + promocode : ""}&lang=${lang}${
         cid ? "&cid=" + cid : ""
+      }${partner ? "&partner=" + partner : ""}${
+        offer ? "&offer=" + offer : ""
       }`;
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${
           bonus === "" ? "" : "&bonus=" + bonus
         }${promocode ? "&promocode=" + promocode : ""}&lang=${lang}${
           cid ? "&cid=" + cid : ""
+        }${partner ? "&partner=" + partner : ""}${
+          offer ? "&offer=" + offer : ""
         }`
       );
     });
