@@ -12,6 +12,8 @@ const lang = getSupportedLanguage(localStorage.getItem("lang"));
 
 const defaultPromocode = "ROYALFREE";
 let cid = getUrlParameter("cid");
+let partner = getUrlParameter("partner");
+let offer = getUrlParameter("offer");
 
 export let formData = {};
 let emailValid = false;
@@ -126,7 +128,9 @@ function submitForm(form) {
       formData.password
     )}${formData.bonus ? "&bonus=" + formData.bonus : ""}${
       formData.promocode ? "&promocode=" + formData.promocode : ""
-    }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}`;
+    }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}${
+      partner ? "&partner=" + partner : ""
+    }${offer ? "&offer=" + offer : ""}`;
     console.log(
       `https://${newDomain}/api/register?env=prod&type=email&currency=${
         formData.currency
@@ -136,7 +140,9 @@ function submitForm(form) {
         formData.bonus ? "&bonus=" + formData.bonus : ""
       }${formData.promocode ? "&promocode=" + formData.promocode : ""}&lang=${
         formData.lang
-      }${formData.cid ? "&cid=" + formData.cid : ""}`
+      }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+        offer ? "&offer=" + offer : ""
+      }`
     );
     console.log(formData);
   });
@@ -155,13 +161,17 @@ socialsRegBtns.forEach((btn) => {
       formData.currency
     }${formData.bonus ? "&bonus=" + formData.bonus : ""}${
       formData.promocode ? "&promocode=" + formData.promocode : ""
-    }&lang=${formData.lang}${formData.cid ? "&cid=" + formData.cid : ""}`;
+    }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}${
+      partner ? "&partner=" + partner : ""
+    }${offer ? "&offer=" + offer : ""}`;
     console.log(
       `https://${newDomain}/api/register?env=prod&type=${regType}&currency=${
         formData.currency
       }${formData.bonus ? "&bonus=" + formData.bonus : ""}${
         formData.promocode ? "&promocode=" + formData.promocode : ""
-      }&lang=${formData.lang}${formData.cid ? "&cid=" + formData.cid : ""}`
+      }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}${
+        partner ? "&partner=" + partner : ""
+      }${offer ? "&offer=" + offer : ""}`
     );
   });
 });
