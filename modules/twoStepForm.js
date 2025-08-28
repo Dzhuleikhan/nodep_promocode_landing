@@ -896,6 +896,8 @@ if (headerbackBtn) {
 const twoStepFormMain = document.querySelector(".two-step-form");
 
 let cid = getUrlParameter("cid");
+let partner = getUrlParameter("partner");
+let offer = getUrlParameter("offer");
 
 twoStepFormMain.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -946,7 +948,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     zipCode ? "&postal=" + zipCode : ""
   }${address ? "&address=" + encodeURIComponent(address) : ""}${
     cid ? "&cid=" + cid : ""
-  }`;
+  }${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email
@@ -960,7 +962,9 @@ twoStepFormMain.addEventListener("submit", (e) => {
       city ? "&city=" + city : ""
     }${zipCode ? "&postal=" + zipCode : ""}${
       address ? "&address=" + encodeURIComponent(address) : ""
-    }${cid ? "&cid=" + cid : ""}`
+    }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+      offer ? "&offer=" + offer : ""
+    }`
   );
 });
 
