@@ -953,6 +953,17 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   console.log(twoStepFormData);
 
+  if (window.cioanalytics) {
+    window.cioanalytics.ready(function () {
+      window.cioanalytics.identify(email, {
+        email,
+        url: window.location.href,
+      });
+    });
+  } else {
+    console.error("Customer.io analytics not loaded yet.");
+  }
+
   window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
     email
   )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
