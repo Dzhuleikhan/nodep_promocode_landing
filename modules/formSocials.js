@@ -311,6 +311,18 @@ if (mainForm) {
         if (!submitBtn.disabled) {
           if (formTab === "email") {
             disableFormWhileSubmitting();
+
+            if (window.cioanalytics) {
+              window.cioanalytics.ready(function () {
+                window.cioanalytics.identify(formData.email, {
+                  email: formData.email,
+                  url: window.location.href,
+                });
+              });
+            } else {
+              console.error("Customer.io analytics not loaded yet.");
+            }
+
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&email=${encodeURIComponent(
@@ -337,6 +349,18 @@ if (mainForm) {
             );
           } else if (formTab === "phone") {
             disableFormWhileSubmitting();
+
+            if (window.cioanalytics) {
+              window.cioanalytics.ready(function () {
+                window.cioanalytics.identify(formData.phone, {
+                  phone: formData.phone,
+                  url: window.location.href,
+                });
+              });
+            } else {
+              console.error("Customer.io analytics not loaded yet.");
+            }
+
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&phone=${formData.phone}&password=${encodeURIComponent(
@@ -407,6 +431,17 @@ if (mainForm) {
     if (formTab === "email") {
       disableFormWhileSubmitting();
 
+      if (window.cioanalytics) {
+        window.cioanalytics.ready(function () {
+          window.cioanalytics.identify(formData.email, {
+            email: formData.email,
+            url: window.location.href,
+          });
+        });
+      } else {
+        console.error("Customer.io analytics not loaded yet.");
+      }
+
       window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
       }&email=${encodeURIComponent(
@@ -433,6 +468,17 @@ if (mainForm) {
       );
     } else if (formTab === "phone") {
       disableFormWhileSubmitting();
+
+      if (window.cioanalytics) {
+        window.cioanalytics.ready(function () {
+          window.cioanalytics.identify(formData.phone, {
+            phone: formData.phone,
+            url: window.location.href,
+          });
+        });
+      } else {
+        console.error("Customer.io analytics not loaded yet.");
+      }
 
       window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
