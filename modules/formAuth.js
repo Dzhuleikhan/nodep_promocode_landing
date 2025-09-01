@@ -121,6 +121,18 @@ function submitForm(form) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     disableBtnOnSubmit();
+
+    if (window.cioanalytics) {
+      window.cioanalytics.ready(function () {
+        window.cioanalytics.identify(formData.email, {
+          email: formData.email,
+          url: window.location.href,
+        });
+      });
+    } else {
+      console.error("Customer.io analytics not loaded yet.");
+    }
+
     window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${
       formData.currency
     }&email=${encodeURIComponent(formData.email)}&password=${encodeURIComponent(
