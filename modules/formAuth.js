@@ -22,7 +22,6 @@ let checkboxValid = true;
 
 formData.lang = lang;
 formData.cid = cid;
-formData.email = "";
 
 function enableSubmitButton() {
   if (emailValid && passwordValid && checkboxValid) {
