@@ -400,3 +400,7 @@
 .step-slider .swiper-wrapper {
   align-items: center;
 }
+
+.actual-spin-amount {
+  font-style: normal;
+}
