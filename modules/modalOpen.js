@@ -1,4 +1,5 @@
 import { addUrlParameter, getUrlParameter } from "./params";
+import { receivedPromocode } from "./promocodeCheck";
 import { twoStepFormData } from "./twoStepForm";
 
 const modalOpenBtns = document.querySelectorAll(".hero-modal-open-btn");
@@ -18,17 +19,9 @@ function showModalFromParam(param) {
     modal || document.querySelector(`[data-modal="${defaultModalParam}"]`)
   )?.classList.add("is-open");
 }
-
-modalOpenBtns.forEach((btn) => {
-  let currentPromocode = btn.getAttribute("data-promocode");
-  twoStepFormData.promocode = currentPromocode;
-  if (btn) {
-    btn.addEventListener("click", () => {
-      showModalFromParam(modalParam);
-      document.body.style.overflow = "hidden";
-    });
-  }
-});
+twoStepFormData.promocode = receivedPromocode;
+showModalFromParam(modalParam);
+document.body.style.overflow = "hidden";
 
 const formModalClosebtn = document.querySelector(".form-modal-close-btn");
 const tryToCloseWindow = document.querySelector(".try-to-close");
