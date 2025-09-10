@@ -822,7 +822,7 @@
       <!-- Two step overlay -->
       <div
         data-modal="two-step"
-        class="two-step-overlay hidden fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
+        class="two-step-overlay hidden fixed left-0 backdrop-blur-[20px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
       >
         <!-- Header -->
         <div
@@ -873,7 +873,9 @@
               alt="Belgium"
             />
           </a>
-          <div class="two-step-modal-close-btn flex items-center gap-3">
+          <div
+            class="two-step-modal-close-btn flex items-center gap-3 opacity-0 invisible"
+          >
             <span
               data-translate="closeBtn"
               class="text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:hidden text-white"
@@ -2276,7 +2278,7 @@
       <!-- Socials overlay -->
       <div
         data-modal="socials"
-        class="two-step-overlay modal-overlay hidden fixed left-0 backdrop-blur-[10px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
+        class="two-step-overlay modal-overlay hidden fixed left-0 backdrop-blur-[20px] top-0 z-[600] h-dvh w-full flex-col justify-between overflow-y-auto px-9 bg-[#34014D]/40 pb-[50px] pt-[30px] max-[1200px]:py-5 max-[576px]:justify-start max-[576px]:gap-[15px] max-[576px]:px-[15px] max-[576px]:pt-[24px]"
       >
         <!-- Socials form -->
         <div
@@ -2362,7 +2364,7 @@
             class="form-modal-right relative h-full w-full bg-[url(../img/socialsFormImg/form-right-green-bg.webp)] bg-cover bg-center bg-no-repeat px-[30px] py-[60px] max-[576px]:p-[15px] max-[576px]:pt-[70px]"
           >
             <button
-              class="form-modal-close-btn absolute right-[15px] top-[15px] flex h-12 w-12 items-center justify-center rounded-lg bg-white/5 transition-all duration-200 hover:bg-white/15 max-[576px]:right-[15px] max-[576px]:top-[15px]"
+              class="form-modal-close-btn opacity-0 invisible absolute right-[15px] top-[15px] flex h-12 w-12 items-center justify-center rounded-lg bg-white/5 transition-all duration-200 hover:bg-white/15 max-[576px]:right-[15px] max-[576px]:top-[15px]"
             >
               <svg
                 width="32"
