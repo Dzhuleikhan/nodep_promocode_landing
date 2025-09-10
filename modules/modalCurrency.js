@@ -1,6 +1,7 @@
 import { getLocation } from "./geoLocation";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
 import { twoStepFormData, settingInitialBonusValue } from "./twoStepForm";
+import { getUrlParameter } from "./params";
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -64,8 +65,8 @@ function setCurrency(abbr, name, icon) {
 // | setting no deposit bonus amount and currency
 
 export const settingNodepBonus = (currencyAbbr) => {
-  const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
-  const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
+  // const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
+  // const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
   const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
   const nodepBonusCurrencySymbol = document.querySelectorAll(
     ".bonus-currency-symbol"
@@ -75,12 +76,12 @@ export const settingNodepBonus = (currencyAbbr) => {
     nodepBonuses.find((c) => c.currency === currencyAbbr) ||
     nodepBonuses.find((c) => c.currency === "USD");
 
-  nodepBonusAmount.forEach((text) => {
-    text.textContent = selectedCurrency.bonusAmount;
-  });
-  nodepBonusCurrency.forEach((text) => {
-    text.textContent = selectedCurrency.currency;
-  });
+  // nodepBonusAmount.forEach((text) => {
+  //   text.textContent = selectedCurrency.bonusAmount;
+  // });
+  // nodepBonusCurrency.forEach((text) => {
+  //   text.textContent = selectedCurrency.currency;
+  // });
   nodepBonusTotalAmoun.forEach((text) => {
     text.textContent = selectedCurrency.moneyAmount;
   });
@@ -136,7 +137,7 @@ async function settingModalCurrency() {
     settingInitialBonusValue(twoStepFormData.currency);
     setTimeout(() => {
       settingInitialBonusValue(currencyData.abbr);
-      settingNodepBonus(currencyData.abbr);
+      // settingNodepBonus(currencyData.abbr);
     }, 300);
     settingFooterPayments(currencyData.abbr);
   } catch (error) {
@@ -219,7 +220,7 @@ formCurrency.forEach((cur) => {
         settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
         twoStepFormData.currency = currencyData.abbr;
         settingInitialBonusValue(twoStepFormData.currency);
-        settingNodepBonus(currencyData.abbr);
+        // settingNodepBonus(currencyData.abbr);
         document.querySelector(".bonus-currency-symbol").innerHTML =
           currencyData.symbol;
       });
@@ -232,3 +233,24 @@ formCurrency.forEach((cur) => {
     });
   }
 });
+
+export const checkTir1CurrencyMatch = (currency, bonus) => {
+  const exceptCurrencies = [
+    "RON",
+    "DKK",
+    "HUF",
+    "CZK",
+    "CHF",
+    "PLN",
+    "CAD",
+    "USD",
+    "EUR",
+    "NOK",
+  ];
+  if (exceptCurrencies.includes(currency) && bonus === "welcome-bonus-1") {
+    bonus = bonus + "-alt";
+  } else {
+    bonus = bonus;
+  }
+  return bonus;
+};

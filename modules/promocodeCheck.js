@@ -1,7 +1,7 @@
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { addUrlParameter, getUrlParameter } from "./params";
 
-export const defaulPromocode = "GATES81";
+export const defaulPromocode = "";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
@@ -48,4 +48,17 @@ if (receivedPromocode) {
 } else {
   console.log("There is no promocode received");
   togglePromocodeWrapper("hide");
+}
+
+export const defaulNodepAmount = "10";
+
+export const receivedNodepAmount =
+  getUrlParameter("nodepAmount") || defaulNodepAmount;
+
+addUrlParameter("nodepAmount", receivedNodepAmount);
+
+export function setNodepAmount() {
+  document.querySelectorAll(".nodep-bonus-amount").forEach((el) => {
+    el.innerHTML = receivedNodepAmount;
+  });
 }
