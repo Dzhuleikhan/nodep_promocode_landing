@@ -1,6 +1,7 @@
 import { getLocation } from "./geoLocation";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
 import { twoStepFormData, settingInitialBonusValue } from "./twoStepForm";
+import { getUrlParameter } from "./params";
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -232,3 +233,24 @@ formCurrency.forEach((cur) => {
     });
   }
 });
+
+export const checkTir1CurrencyMatch = (currency, bonus) => {
+  const exceptCurrencies = [
+    "RON",
+    "DKK",
+    "HUF",
+    "CZK",
+    "CHF",
+    "PLN",
+    "CAD",
+    "USD",
+    "EUR",
+    "NOK",
+  ];
+  if (exceptCurrencies.includes(currency) && bonus === "welcome-bonus-1") {
+    bonus = bonus + "-alt";
+  } else {
+    bonus = bonus;
+  }
+  return bonus;
+};

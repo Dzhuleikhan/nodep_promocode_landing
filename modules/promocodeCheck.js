@@ -1,7 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "GATES81";
+export const defaulPromocode = "";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
@@ -14,6 +14,17 @@ headerLogoLink.setAttribute(
     receivedPromocode ? receivedPromocode : defaulPromocode
   }`
 );
+
+export const defaulSpinAmount = "100";
+
+export const receivedSpinAmount =
+  getUrlParameter("spinAmount") || defaulSpinAmount;
+
+export function setSpinAmount() {
+  document.querySelectorAll(".actual-spin-amount").forEach((el) => {
+    el.innerHTML = receivedSpinAmount;
+  });
+}
 
 document
   .querySelector(".hero-modal-open-btn")

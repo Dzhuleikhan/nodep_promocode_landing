@@ -88,7 +88,7 @@ twoStepBonusCheckbox.forEach((checkbox) => {
       ".two-step-bonus-checkbox-text"
     ).innerHTML;
 
-    if (bonusValue === "welcome-bonus-1" || bonusValue === "0") {
+    if (bonusValue === "0") {
       twoStepFormData.promocode = "";
       if (receivedPromocode) {
         togglePromocodeWrapper("hide");
