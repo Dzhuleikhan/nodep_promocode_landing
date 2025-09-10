@@ -12,3 +12,6 @@ import "../modules/modalCurrency";
 import "../modules/modalOpen";
 import "../modules/language";
 import "../modules/promocodeCheck";
+import "../modules/formSocials";
+import "../modules/marquee";
+import "../modules/termsModal";
