@@ -150,10 +150,8 @@ formModals.forEach((modal) => {
             formTab = tab;
 
             if (tab === "email") {
-              if (!phoneInput.value != "" && !socialsIti.isValidNumber()) {
-                formGroupPhone.classList.remove("not-valid");
-                phoneInput.value = "";
-              }
+              formGroupPhone.classList.remove("not-valid");
+              phoneInput.value = "";
               if (emalInput.value != "" && emalInput.value.match(emailRegEx)) {
                 formStepBtnNext.disabled = false;
               } else {
@@ -161,13 +159,8 @@ formModals.forEach((modal) => {
               }
             }
             if (tab === "phone") {
-              if (
-                !emalInput.value != "" &&
-                !emalInput.value.match(emailRegEx)
-              ) {
-                formGroupEmail.classList.remove("not-valid");
-                emalInput.value = "";
-              }
+              formGroupEmail.classList.remove("not-valid");
+              emalInput.value = "";
               if (phoneInput.value != "" && socialsIti.isValidNumber()) {
                 formStepBtnNext.disabled = false;
               } else {
