@@ -239,7 +239,9 @@ if (twoStepPromocodeWrapper) {
   promocodeApplyBtn.addEventListener("click", () => {
     console.log(promoIsValid);
     if (promoIsValid) {
-      twoStepFormData.promocode = input.value.toUpperCase();
+      twoStepFormData.promocode = validateStringInput(
+        input.value
+      ).toUpperCase();
       console.log("Промокод верный");
       twoStepPromocodeWrapper.classList.add("is-valid");
       twoStepPromocodeWrapper.classList.remove("is-not-valid");
@@ -337,6 +339,10 @@ if (twoStepFormSecondStep) {
     }
   });
 }
+
+const validateStringInput = (input) => {
+  return input.trim().replace(/\s+/g, " ");
+};
 
 // | STEP 3 -- FIRST NAME, LAST NAME, DATE, GENDER
 const twoStepFormThirdStep = document.querySelector(".two-step-form-step-3");
@@ -498,8 +504,8 @@ if (twoStepFormThirdStep) {
 
     if (percentage === 100) {
       nextBtn.disabled = false;
-      twoStepFormData.firstName = firstName.value;
-      twoStepFormData.lastName = lastName.value;
+      twoStepFormData.firstName = validateStringInput(firstName.value);
+      twoStepFormData.lastName = validateStringInput(lastName.value);
 
       twoStepFormData.gender = document.querySelector(
         'input[name="gender"]:checked'
@@ -820,9 +826,9 @@ if (twoStepFormFourthStep) {
 
     if (percentage === 100) {
       submitBtn.disabled = false;
-      twoStepFormData.city = twoStepCityInput.value;
-      twoStepFormData.address = twoStepAddressInput.value;
-      twoStepFormData.zipCode = twoStepZipcodeInput.value;
+      twoStepFormData.city = validateStringInput(twoStepCityInput.value);
+      twoStepFormData.address = validateStringInput(twoStepAddressInput.value);
+      twoStepFormData.zipCode = validateStringInput(twoStepZipcodeInput.value);
       if (twoStepPhoneInput.value.trim() !== "" && twoStepiti.isValidNumber()) {
         twoStepFormData.phone = fullPhoneNumber;
       }
@@ -950,33 +956,33 @@ twoStepFormMain.addEventListener("submit", (e) => {
   window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
     email
   )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
-    promocode ? "&promocode=" + encodeURIComponent(promocode.trim()) : ""
-  }&lang=${lang}${
-    firstName ? "&f_name=" + encodeURIComponent(firstName.trim()) : ""
-  }${lastName ? "&l_name=" + encodeURIComponent(lastName.trim()) : ""}${
-    birthday ? "&birth=" + birthday : ""
-  }${gender ? "&gender=" + gender : ""}${country ? "&country=" + country : ""}${
-    state ? "&state=" + state : ""
-  }${city ? "&city=" + encodeURIComponent(city.trim()) : ""}${
-    zipCode ? "&postal=" + encodeURIComponent(zipCode.trim()) : ""
-  }${address ? "&address=" + encodeURIComponent(address.trim()) : ""}${
-    cid ? "&cid=" + cid : ""
-  }${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
+    promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
+  }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
+    lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
+  }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
+    country ? "&country=" + country : ""
+  }${state ? "&state=" + state : ""}${
+    city ? "&city=" + encodeURIComponent(city) : ""
+  }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
+    address ? "&address=" + encodeURIComponent(address) : ""
+  }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+    offer ? "&offer=" + offer : ""
+  }`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email
     )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
-      promocode ? "&promocode=" + encodeURIComponent(promocode.trim()) : ""
+      promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
     }&lang=${lang}${
-      firstName ? "&f_name=" + encodeURIComponent(firstName.trim()) : ""
-    }${lastName ? "&l_name=" + encodeURIComponent(lastName.trim()) : ""}${
+      firstName ? "&f_name=" + encodeURIComponent(firstName) : ""
+    }${lastName ? "&l_name=" + encodeURIComponent(lastName) : ""}${
       birthday ? "&birth=" + birthday : ""
     }${gender ? "&gender=" + gender : ""}${
       country ? "&country=" + country : ""
     }${state ? "&state=" + state : ""}${
-      city ? "&city=" + encodeURIComponent(city.trim()) : ""
-    }${zipCode ? "&postal=" + encodeURIComponent(zipCode.trim()) : ""}${
-      address ? "&address=" + encodeURIComponent(address.trim()) : ""
+      city ? "&city=" + encodeURIComponent(city) : ""
+    }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
+      address ? "&address=" + encodeURIComponent(address) : ""
     }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
       offer ? "&offer=" + offer : ""
     }`
