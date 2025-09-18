@@ -4,7 +4,7 @@ import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
-import { canadaProvincesCities } from "../public/data";
+import { canadaProvincesCities, australiaStatesCities } from "../public/data";
 import flatpickr from "flatpickr";
 
 // ? SOCIALS TWO STEP FORM
@@ -546,6 +546,7 @@ if (twoStepFormFourthStep) {
   const headerlogoFlag = document.querySelector(".header-logo-flag");
 
   let isCanada = geoData.countryCode === "CA";
+  let isAustralia = geoData.countryCode === "AU";
 
   // Dropdown visibility toggle
   twoStepCountryButton.addEventListener("click", () => {
@@ -558,12 +559,38 @@ if (twoStepFormFourthStep) {
     }
   });
 
-  if (isCanada) {
+  if (isCanada || isAustralia) {
+    renderStates(canadaProvincesCities);
+    document
+      .querySelector(".two-step-state-wrapper")
+      .classList.remove("hidden");
+  } else if (isAustralia) {
+    renderStates(australiaStatesCities);
     document
       .querySelector(".two-step-state-wrapper")
       .classList.remove("hidden");
   } else {
     document.querySelector(".two-step-state-wrapper").classList.add("hidden");
+  }
+
+  // Render states
+  function renderStates(data) {
+    const ul = document.querySelector(".two-step-state-list");
+    ul.innerHTML = "";
+
+    Object.keys(data).forEach((state) => {
+      const li = document.createElement("li");
+      li.textContent = state;
+
+      li.addEventListener("click", () => {
+        twoStepStateInput.value = li.textContent.trim();
+        twoStepStateInputLabel.classList.add("hidden");
+        twoStepFormData.state = twoStepStateInput.value;
+      });
+
+      li.classList.add("two-step-state-list-item");
+      ul.appendChild(li);
+    });
   }
 
   // Choosing country from dropdown
@@ -580,6 +607,12 @@ if (twoStepFormFourthStep) {
       twoStepFormData.country = countryCode;
 
       if (countryCode === "CA") {
+        renderStates(canadaProvincesCities);
+        document
+          .querySelector(".two-step-state-wrapper")
+          .classList.remove("hidden");
+      } else if (countryCode === "AU") {
+        renderStates(australiaStatesCities);
         document
           .querySelector(".two-step-state-wrapper")
           .classList.remove("hidden");
@@ -697,7 +730,7 @@ if (twoStepFormFourthStep) {
     ".two-step-state-list-item"
   );
 
-  if (!isCanada) {
+  if (!isCanada || !isAustralia) {
     twoStepStateBtn.classList.add("hidden");
     twoStepStateInput.value = "";
   } else {
@@ -711,7 +744,19 @@ if (twoStepFormFourthStep) {
     if (cityInput.length > 0 && twoStepFormData.country === "CA") {
       // Only search if there's input
       for (const [province, cities] of Object.entries(canadaProvincesCities)) {
-        if (cities.some((city) => city.toLowerCase().includes(cityInput))) {
+        if (
+          cities.some((city) => city.toLowerCase().trim().includes(cityInput))
+        ) {
+          // Check partial match
+          foundProvince = province;
+          break;
+        }
+      }
+    } else if (cityInput.length > 0 && twoStepFormData.country === "AU") {
+      for (const [province, cities] of Object.entries(australiaStatesCities)) {
+        if (
+          cities.some((city) => city.toLowerCase().trim().includes(cityInput))
+        ) {
           // Check partial match
           foundProvince = province;
           break;
@@ -722,7 +767,7 @@ if (twoStepFormFourthStep) {
     if (foundProvince) {
       twoStepStateInput.value = foundProvince;
       twoStepStateInputLabel.classList.add("hidden");
-      twoStepFormData.state = encodeURIComponent(twoStepStateInput.value);
+      twoStepFormData.state = twoStepStateInput.value;
     } else {
       twoStepStateInput.value = "";
       twoStepStateInputLabel.classList.remove("hidden");
@@ -738,16 +783,6 @@ if (twoStepFormFourthStep) {
 
   twoStepStateBtn.addEventListener("click", () => {
     twoStepStateList.classList.toggle("hidden");
-  });
-
-  twoStepStateListItem.forEach((item) => {
-    if (item) {
-      item.addEventListener("click", () => {
-        twoStepStateInput.value = item.textContent.trim();
-        twoStepStateInputLabel.classList.add("hidden");
-        twoStepFormData.state = encodeURIComponent(twoStepStateInput.value);
-      });
-    }
   });
 
   // Phone input only numbers
@@ -936,7 +971,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
   }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
     country ? "&country=" + country : ""
-  }${state ? "&state=" + state : ""}${
+  }${state ? "&state=" + encodeURIComponent(state) : ""}${
     city ? "&city=" + encodeURIComponent(city) : ""
   }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
     address ? "&address=" + encodeURIComponent(address) : ""
@@ -954,7 +989,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
       birthday ? "&birth=" + birthday : ""
     }${gender ? "&gender=" + gender : ""}${
       country ? "&country=" + country : ""
-    }${state ? "&state=" + state : ""}${
+    }${state ? "&state=" + encodeURIComponent(state) : ""}${
       city ? "&city=" + encodeURIComponent(city) : ""
     }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
       address ? "&address=" + encodeURIComponent(address) : ""
