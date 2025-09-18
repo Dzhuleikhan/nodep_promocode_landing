@@ -624,6 +624,12 @@ if (twoStepFormFourthStep) {
       twoStepFormData.country = countryCode;
 
       if (countryCode === "CA") {
+        renderStates(canadaProvincesCities);
+        document
+          .querySelector(".two-step-state-wrapper")
+          .classList.remove("hidden");
+      } else if (countryCode === "AU") {
+        renderStates(australiaStatesCities);
         document
           .querySelector(".two-step-state-wrapper")
           .classList.remove("hidden");
