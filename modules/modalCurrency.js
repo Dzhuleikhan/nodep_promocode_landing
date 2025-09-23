@@ -1,5 +1,5 @@
 import { getLocation } from "./geoLocation";
-import { countryCurrencyData } from "../public/data";
+import { countryCurrencyData, nodepBonuses } from "../public/data";
 import {
   checkTir1CurrencyMatch,
   twoStepFormData,
@@ -65,6 +65,24 @@ function setCurrency(abbr, name, icon) {
   });
 }
 
+const settingFooterPayments = (currencyAbbr) => {
+  const selectedCurrency =
+    nodepBonuses.find((c) => c.currency === currencyAbbr) ||
+    nodepBonuses.find((c) => c.currency === "EUR");
+
+  const footerPaymentsList = document.querySelector(".footer-payments-list");
+  footerPaymentsList.innerHTML = "";
+
+  selectedCurrency.paymentMethods.forEach((payment) => {
+    const img = document.createElement("img");
+    img.classList.add("grayscale-100");
+    img.classList.add("transition");
+    img.classList.add("hover:grayscale-0");
+    img.setAttribute("src", `./img/payments/${payment}.svg`);
+    footerPaymentsList.appendChild(img);
+  });
+};
+
 async function settingModalCurrency() {
   try {
     let locationData = await getLocation();
@@ -96,6 +114,7 @@ async function settingModalCurrency() {
     localStorage.setItem("currencyData", JSON.stringify(currencyData));
 
     setCurrency(currencyAbbr, currencyFullName, currencyIcon);
+    settingFooterPayments(currencyAbbr);
 
     twoStepFormData.currency = currencyData.abbr;
     twoStepFormData.bonus = checkTir1CurrencyMatch(twoStepFormData.currency);
