@@ -117,7 +117,6 @@ async function settingModalCurrency() {
     settingFooterPayments(currencyAbbr);
 
     twoStepFormData.currency = currencyData.abbr;
-    twoStepFormData.bonus = checkTir1CurrencyMatch(twoStepFormData.currency);
     setTimeout(() => {
       settingInitialBonusValue(twoStepFormData.currency);
     }, 300);
