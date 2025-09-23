@@ -1,4 +1,4 @@
-import { countryFlags } from "../public/data";
+import { countryFlags, countryCurrencyData } from "../public/data";
 import { geoData, getLocation } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
@@ -121,37 +121,42 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 });
 
 export const settingInitialBonusValue = (currency) => {
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency
+  );
+
   if (exceptCurrencies.includes(currency)) {
     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
       text.innerHTML = "100%";
-    });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "200FS";
-    });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "100% + 200FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "100%";
-    });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "200FS";
     });
   } else {
     document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
       text.innerHTML = "200%";
     });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "25FS";
+  }
+
+  if (currencyEntry) {
+    document.querySelectorAll(".bonus-total-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.amount;
     });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "200% + 25FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "200%";
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrencySymbol;
     });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "25FS";
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = currencyEntry.spins;
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrency;
+    });
+  } else {
+    document.querySelectorAll(".bonus-total-amount").forEach((el) => {
+      el.innerHTML = "4500";
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = "€";
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = "200FS";
     });
   }
 };
