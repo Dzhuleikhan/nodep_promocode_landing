@@ -401,6 +401,10 @@
   align-items: center;
 }
 
+.actual-spin-amount {
+  font-style: normal;
+}
+
 /* States dropdown */
 
 .two-step-state-list-item {

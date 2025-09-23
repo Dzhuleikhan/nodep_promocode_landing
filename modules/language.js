@@ -3,6 +3,7 @@ import { getLocation } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
 import { settingNodepBonus } from "./modalCurrency";
+import { setSpinAmount } from "./promocodeCheck";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -119,6 +120,7 @@ async function mainFunction() {
       document.querySelectorAll(".current-domain").forEach((domain) => {
         domain.innerHTML = window.location.hostname;
       });
+      setSpinAmount();
     }, 200);
   } catch (error) {
     console.error("Error determining language:", error);
@@ -142,5 +144,6 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     document.querySelectorAll(".current-domain").forEach((domain) => {
       domain.innerHTML = window.location.hostname;
     });
+    setSpinAmount();
   });
 });
