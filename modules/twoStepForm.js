@@ -19,7 +19,7 @@ document.querySelectorAll("input").forEach((input) => {
 // ? SOCIALS TWO STEP FORM
 
 export let twoStepFormData = {
-  bonus: "welcome-bonus-1",
+  bonus: "",
   promocode: "",
   email: "",
   password: "",
