@@ -16,6 +16,17 @@ headerLogoLink.setAttribute(
   }`
 );
 
+export const defaulSpinAmount = "100";
+
+export const receivedSpinAmount =
+  getUrlParameter("spinAmount") || defaulSpinAmount;
+
+export function setSpinAmount() {
+  document.querySelectorAll(".actual-spin-amount").forEach((el) => {
+    el.innerHTML = receivedSpinAmount;
+  });
+}
+
 document
   .querySelector(".hero-modal-open-btn")
   .setAttribute(
