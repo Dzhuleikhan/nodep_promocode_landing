@@ -665,6 +665,7 @@ export const countryLanguagesMap = {
   GR: ["el"],
   SE: ["sv"],
   SK: ["sk"],
+  IT: ["it"],
 };
 
 export const SupportedLanguages = [
@@ -692,6 +693,7 @@ export const SupportedLanguages = [
   "nb",
   "sv",
   "sk",
+  "it",
 ];
 
 export const nodepBonuses = [
