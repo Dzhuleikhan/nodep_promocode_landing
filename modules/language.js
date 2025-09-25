@@ -67,6 +67,7 @@ function updateButtonText(lang) {
     es: "Spanish",
     pt: "Portuguese",
     de: "Deutsch",
+    it: "Italian",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -150,6 +151,7 @@ async function determineLanguage() {
     GR: "gr",
     SE: "se",
     SK: "sk",
+    IT: "it",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";
