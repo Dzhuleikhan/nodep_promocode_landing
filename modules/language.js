@@ -55,6 +55,7 @@ function updateButtonText(lang) {
   const languageNames = {
     en: "English",
     fr: "Français",
+    it: "Italian",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -72,6 +73,7 @@ async function determineLanguage() {
   const countryLangMap = {
     EN: "en",
     FR: "fr",
+    IT: "it",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";

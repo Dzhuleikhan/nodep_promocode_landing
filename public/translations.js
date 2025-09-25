@@ -133,4 +133,75 @@ export const translations = {
     keepRegistering: "Continuer l'inscription",
     returnToWebsite: "Retourner au site web",
   },
+  it: {
+    pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
+    heroTitle: `BONUS SENZA DEPOSITO <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> ALLA VERIFICA DELL’ACCOUNT`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
+    heroBtn: "ottieni bonus",
+    slideStep1Title: "Registrati",
+    slideStep1Text:
+      'Clicca "Ottieni Bonus" e completa la registrazione gratuita.',
+    slideStep2Title: "Attiva il bonus",
+    slideStep2Text:
+      'Trova il tuo bonus nel "Centro Bonus" e attivalo per iniziare a giocare.',
+    slideStep3Title: "Gioca",
+    slideStep3Text: "Il denaro è ora disponibile per giocare. Divertiti!",
+    footerText: `Il sito web www.goldbet.io è di proprietà e gestito da Ivanov I.I. 
+                (numero di registrazione: 12345678; con indirizzo registrato: Ivanov Ivan 
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisbona, Portogallo PO 
+                BOX 1234-5600 Lisbona, Portogallo) operante tramite il suo agente di pagamento 
+                IVANOV DEVELOPMENT LIMITED (numero di registrazione: AB123456; registrata a 
+                Cipro con indirizzo registrato Rua de Henrique Digeni 12, 1 & 2 an., 
+                1234-5600 Lisbona, Portogallo). Ivanov I.I. è una società registrata e 
+                costituita secondo le leggi di Anjouan e autorizzata e regolamentata dal 
+                Governo di Anjouan con la licenza di gioco n. AB12345678, con indirizzo 
+                registrato: Rua de Henrique Digeni 12 1 & 2 an., 1234-5600 Lisbona, Portogallo.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Indietro",
+    closeBtn: "Chiudi",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> sul saldo`,
+    withoutDeposit: "Senza deposito",
+    step1Title: "Scegli il tuo Bonus",
+    welcomeBonus: "Bonus di Benvenuto",
+    welcomeBonusText: "sul tuo primo deposito",
+    cryptoBonus: "Bonus Satoshi",
+    cryptoBonusText: "150% sui depositi in Crypto",
+    highRollerBonus: "Bonus High Roller",
+    highRollerBonusText: "250% sui depositi superiori a $500",
+    withoutBonus: "Senza Bonus",
+    withoutBonusText: "Non riceverai alcun bonus",
+    iHavePromoCode: "Ho un Codice Promo",
+    promoCodePlaceHolder: "Codice Promo",
+    promoCodeApplyBtn: "Applica",
+    continueBtn: "Continua",
+    // | Step 2
+    step2Title: "Inserisci la tua Email",
+    emailPlaceholder: "Inserisci E-mail",
+    passwordPlaceholder: "Inserisci Password",
+    // | Step 3
+    step3Title: "Come ti chiami?",
+    namePlaceholder: "Inserisci Nome",
+    lastNamePlaceholder: "Inserisci Cognome",
+    birthdayPlaceholder: "Seleziona Data di Nascita",
+    age18Alert: "L'età deve essere 18+",
+    invalidDate: "Data non valida",
+    male: "Maschio",
+    female: "Femmina",
+    finalStepBtn: "Passo Finale",
+    // | Step 4
+    step4Title: "Seleziona la Valuta",
+    countryPlaceholder: "Seleziona Paese",
+    currencyPlaceholder: "Scegli Valuta",
+    phoneNumberPlaceholder: "Numero di Telefono",
+    addressPlaceholder: "Inserisci Indirizzo",
+    cityPlaceholder: "Inserisci Città",
+    statePlaceholder: "Scegli Provincia",
+    zipCodePlaceholder: "Inserisci CAP",
+    createAccountBtn: "Crea Account",
+    // | Decline
+    areYouSure: `Sei Sicuro? <br /> I tuoi progressi andranno persi`,
+    keepRegistering: "Continua la Registrazione",
+    returnToWebsite: "Ritorna al Sito Web",
+  },
 };
