@@ -647,6 +647,7 @@ export const countryLanguagesMap = {
   GR: ["el"],
   SE: ["sv"],
   SK: ["sk"],
+  IT: ["it"],
 };
 
 export const SupportedLanguages = [
@@ -674,6 +675,7 @@ export const SupportedLanguages = [
   "nb",
   "sv",
   "sk",
+  "it",
 ];
 
 export const nodepBonuses = [
@@ -683,7 +685,7 @@ export const nodepBonuses = [
     symbol: "€",
     bonusAmount: "10",
     countryCurrencyIcon: "./img/currencies/eur.svg",
-    moneyAmount: "3680",
+    moneyAmount: "4500",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
   {
