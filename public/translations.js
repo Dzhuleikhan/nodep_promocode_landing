@@ -1054,4 +1054,59 @@ export const translations = {
 - Sie sind vollständig verantwortlich für die Meldung und Zahlung der geltenden Steuern auf alle von uns erhaltenen Gewinne;<br />
 - Sie sind für eventuelle Steuern auf Kryptowährungen verantwortlich, die Ihnen über den Dienst bereitgestellt werden.`,
   },
+  it: {
+    pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
+    heroTitle: `⚽ Ottieni <b><span>550%</span></b> <br/> fino a <b><span class="two-step-welcome-amount"></span><span class="bonus-currency-symbol"></span></b>`,
+    heroSubtitle: `<span>🎰 +200</span> giri gratuiti sul tuo primo deposito`,
+    heroBtn: "ottieni bonus",
+    paymentsTitle: `Accettate <span>41</span> criptovalute`,
+    advantege1Title: "Compatibile con VPN",
+    advantege1Text:
+      "Puoi usare una VPN per accedere facilmente alla nostra piattaforma.",
+    advantege2Title: "Nessuna KYC richiesta",
+    advantege2Text:
+      "Nessuna verifica KYC necessaria per depositi e prelievi in criptovalute.",
+    advantege3Title: "Bonus di Referral del 25%",
+    advantege3Text: "Invita giocatori e guadagna il 25% dei ricavi del casinò.",
+    footerText: `<span class="current-domain"></span> è di proprietà e gestito da Goldkey Technologies Limitada. Numero di registrazione: 3-102-892568, indirizzo registrato: Puntarenas - Pastor Diaz ave. Provincia di Puntarenas, Jaco, 61101, Costa Rica. Contattaci: hello@goldbet.io. Goldbet.io è autorizzato e regolamentato dal Governo dell'Isola Autonoma di Anjouan, Unione delle Comore e opera sotto Licenza n. ALSI-012401005-F11. Goldbet.io ha superato tutte le verifiche normative ed è legalmente autorizzato a condurre operazioni di gioco per tutti i giochi di fortuna e scommesse. Ricorda che il gioco d'azzardo può creare dipendenza. Gioca responsabilmente. Goldbet.io accetta solo clienti di età pari o superiore ai 18 anni secondo la tua giurisdizione. Goldkey Technologies Limitada, numero di registrazione 3-102-892568, società organizzata e esistente secondo le leggi di Cipro, è l'operatore di pagamento di Goldkey Technologies Limitada, agendo come agente pagatore per conto di Goldkey Technologies Limitada.`,
+    // | Form
+    signUpTitle: "Registrati",
+    emailPlaceholder: "E-mail",
+    wrongEmail: "E-mail non valida",
+    wrongPassword: "Almeno 6 caratteri.",
+    passwordPlaceholder: "Password",
+    yourCurrency: "La tua valuta",
+    startPlaying: "Inizia a giocare",
+    terms: `Accetto i <span class="text-white underline underline-offset-4">Termini e Condizioni</span>`,
+    signUpWithGoogle: "Registrati con Google",
+    signUpWithFacebook: "Registrati con Facebook",
+    signUpWithTelegram: "Registrati con Telegram",
+    // | Terms
+    termsTitle1: `Termini e Condizioni`,
+    termsParagraph1: `Questi termini e condizioni e i documenti ad essi riferiti (i "Termini") si applicano all'uso del sito web corrente (il "Sito Web") e ai servizi correlati o connessi (collettivamente, il "Servizio"). Leggere attentamente questi Termini poiché contengono informazioni importanti sui tuoi diritti e obblighi riguardo all'uso del Sito Web e formano un accordo legale vincolante tra te - nostro cliente (il "Cliente") - e noi (il "Sito Web"). Utilizzando questo Sito Web e/o accedendo al Servizio, sia come ospite sia come utente registrato con un account ("Account"), accetti di essere vincolato da questi Termini, insieme ad eventuali modifiche pubblicate di volta in volta. Se non accetti questi Termini, non accedere al Servizio né utilizzare il Sito Web.`,
+    termsTitle2: `1. Termini Generali`,
+    termsParagraph2: `Ci riserviamo il diritto di rivedere e modificare i Termini (inclusi i documenti collegati) in qualsiasi momento. È consigliato visitare periodicamente questa pagina. Le modifiche saranno vincolanti ed efficaci immediatamente dopo la pubblicazione sul Sito Web. Se non accetti tali modifiche, devi cessare immediatamente l'uso del Servizio. L'uso continuato del Sito Web indica il tuo consenso ai Termini modificati. Eventuali scommesse non regolate prima dell'entrata in vigore dei Termini aggiornati saranno soggette ai Termini precedenti. Se i Termini e le Condizioni di Goldbet vengono aggiornati, la piattaforma ti notificherà e richiederà di confermare il tuo consenso.`,
+    termsTitle3: `2. I Tuoi Obblighi`,
+    termsParagraph3: `Riconosci che ogni volta che accedi al Sito Web e utilizzi il Servizio: <br />
+3.1. Hai più di 18 anni o l'età legale per il gioco nella tua giurisdizione. Possiamo richiedere documenti di verifica. <br />
+3.2. Hai capacità legale per stipulare un accordo vincolante. <br />
+3.3. Sei consapevole che l'accesso al Sito Web può essere illegale in alcune giurisdizioni. Sei responsabile di verificare la legalità e garantisci che il gioco d'azzardo non sia vietato dove risiedi. <br />
+3.4. È tua responsabilità verificare la legalità del gioco prima di aprire un account o usare il Sito Web. <br />
+3.5. Sei l'utilizzatore autorizzato del metodo di pagamento usato e tutti i fondi sul tuo account sono legali. <br />
+3.6. Effettui pagamenti in buona fede senza tentare di revocarli. <br />
+3.7. Puoi perdere parte o tutto il denaro depositato e ne sei pienamente responsabile. <br />
+3.8. Non usare informazioni ottenute illegalmente. <br />
+3.9. Agisci a titolo personale e non per conto di altri o a fini commerciali. <br />
+3.10. Non manipolare mercati o elementi del Servizio in malafede. <br />
+3.11. Agisci sempre in buona fede. <br />
+3.12. Tu o i tuoi familiari non siete registrati come affiliati nel nostro programma. <br />
+3.13. Fornisci solo dati veritieri quando richiesto. <br />
+3.14. Accetti la volatilità del mercato crypto durante i prelievi. <br />
+3.15. Sei mentalmente competente e non soffri di dipendenza dal gioco. <br />
+3.16. Non usare software di terze parti né sfruttare bug. <br />
+3.17. Garantiamo che le informazioni fornite siano veritiere e aggiornate. <br />
+3.17.1. Per modificare informazioni, contatta il supporto. Goldbet può richiedere documenti per KYC. <br />
+3.18. Non usare i nostri servizi in giurisdizioni vietate al gioco online. <br />
+3.19. Garantisci che: <br />- Partecipi a titolo personale; <br />- Sei responsabile delle tasse sulle vincite; <br />- Sei responsabile delle tasse sulle criptovalute ricevute.`,
+  },
 };
