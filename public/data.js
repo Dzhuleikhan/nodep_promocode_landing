@@ -693,6 +693,10 @@ export const countryLanguagesMap = {
   SE: ["sv"],
   SK: ["sk"],
   IT: ["it"],
+  EE: ["ee"],
+  LV: ["lv"],
+  LT: ["lt"],
+  HR: ["hr"],
 };
 
 export const SupportedLanguages = [
@@ -721,6 +725,10 @@ export const SupportedLanguages = [
   "sv",
   "sk",
   "it",
+  "ee",
+  "lv",
+  "lt",
+  "hr",
 ];
 
 export const nodepBonuses = [
@@ -832,3 +840,44 @@ export const nodepBonuses = [
     ],
   },
 ];
+
+export const countryZipCodeTranslates = {
+  CZ: "PSČ (Poštovní směrovací číslo)",
+  PL: "Kod pocztowy",
+  DE: "PLZ (Postleitzahl)",
+  US: "ZIP Code (Zone Improvement Plan code)",
+  HU: "Irányítószám",
+  BR: "CEP (Código de Endereçamento Postal)",
+  ZA: "Postal Code",
+  CA: "Postal Code",
+  NL: "Postcode",
+  NZ: "Postcode",
+  AZ: "Poçt İndeksi",
+  AU: "Postcode",
+  RO: "Cod poștal",
+  RU: "Почтовый индекс",
+  SE: "Postnummer",
+  GB: "Postcode",
+  FR: "Code postal",
+  AT: "PLZ (Postleitzahl)",
+  PT: "Código postal",
+  MX: "Código postal",
+  SK: "PSČ (Poštové smerovacie číslo)",
+  BE: "Postcode",
+  IE: "Eircode",
+  NO: "Postnummer",
+  ES: "Código Postal",
+  DK: "Postnummer",
+  UA: "Поштовий індекс",
+  IT: "CAP (Codice di Avviamento Postale)",
+  TR: "Posta kodu",
+  GR: "Ταχυδρομικός Κώδικας",
+  AR: "Código Postal",
+  UZ: "Pochta indeksi",
+  CH: "PLZ (Postleitzahl)",
+  EE: "Postiindeks",
+  LV: "Pasta indekss",
+  SI: "Poštna številka",
+  LT: "Pašto kodas",
+  HR: "Poštanski broj",
+};
