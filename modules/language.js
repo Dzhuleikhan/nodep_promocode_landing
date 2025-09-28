@@ -55,7 +55,12 @@ function updateButtonText(lang) {
   const languageNames = {
     en: "English",
     fr: "Français",
+    az: "Azerbaijani",
     it: "Italian",
+    ee: "Estonian",
+    lv: "Latvian",
+    lt: "Lithuanian",
+    hr: "Croatian",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -73,7 +78,12 @@ async function determineLanguage() {
   const countryLangMap = {
     EN: "en",
     FR: "fr",
+    AZ: "az",
     IT: "it",
+    EE: "ee",
+    LV: "lv",
+    LT: "lt",
+    HR: "hr",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";
