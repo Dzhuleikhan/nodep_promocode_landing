@@ -184,4 +184,358 @@ export const translations = {
     keepRegistering: "Continua la Registrazione",
     returnToWebsite: "Ritorna al Sito Web",
   },
+  az: {
+    pageTitle: "🎁 Bonusunuz hazırdır - Goldbet",
+    heroTitle: `DEPOZİTSİZ BONUS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> HESAB DOĞRULAMASINDAN <br /> SONRA`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> qədər <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Pulsuz Fırlanma 1-ci depozitinizlə`,
+    heroBtn: "bonusu götür",
+    slideStep1Title: "Qeydiyyat",
+    slideStep1Text:
+      '"Bonusu Götür" düyməsinə klikləyin və pulsuz qeydiyyatı tamamlayın.',
+    slideStep2Title: "Bonusu aktivləşdirin",
+    slideStep2Text:
+      'Bonusunuzu "Bonus Mərkəzi"ndə tapın və aktivləşdirin ki, oynamaya başlaya biləsiniz.',
+    slideStep3Title: "Oynayın",
+    slideStep3Text: "Pul artıq oyun üçün mövcuddur. Əylənin!",
+    footerText: `www.goldbet.io vebsaytı Ivanov I.I. tərəfindən idarə olunur
+                (qeydiyyat nömrəsi: 12345678; Qeydiyyat ünvanı: Ivanov Ivan
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisboa, Portuqaliya PO
+                BOX 1234-5600 Lisboa, Portuqaliya) ödəniş agenti
+                IVANOV DEVELOPMENT LIMITED (qeydiyyat nömrəsi: AB123456;
+                Kiprdə qeydiyyatdan keçmiş, ünvanı Rua de Henrique Digeni
+                12, 1 & 2 an., 1234-5600 Lisboa, Portuqaliya) vasitəsilə fəaliyyət göstərir. Ivanov I.I.
+                Anjouan qanunlarına əsasən qeydiyyatdan keçmiş və fəaliyyət göstərən şirkətdir və
+                Anjouan Hökuməti tərəfindən verilmiş No. AB12345678 oyun lisenziyası ilə
+                lisenziyalaşdırılmış və tənzimlənir. Qeydiyyat ünvanı: Rua de Henrique Digeni 12 1 & 2
+                an., 1234-5600 Lisboa, Portuqaliya.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Geri",
+    closeBtn: "Bağla",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> balansınıza`,
+    withoutDeposit: "Depozitsiz",
+    step1Title: "Bonusunuzu Seçin",
+    welcomeBonus: "Xoş Gəldin Bonusu",
+    welcomeBonusText: "ilk depozitinizdə",
+    cryptoBonus: "Satoshi Bonusu",
+    cryptoBonusText: "Kripto Depozitlərdə 150%",
+    highRollerBonus: "High Roller Bonusu",
+    highRollerBonusText: "$500-dan yuxarı depozitlərdə 250%",
+    withoutBonus: "Bonussuz",
+    withoutBonusText: "Heç bir bonus almayacaqsınız",
+    iHavePromoCode: "Promo-Kodum var",
+    promoCodePlaceHolder: "Promo Kod",
+    promoCodeApplyBtn: "Tətbiq et",
+    continueBtn: "Davam et",
+    // | Step 2
+    step2Title: "E-mailinizi Daxil Edin",
+    emailPlaceholder: "E-mail daxil edin",
+    passwordPlaceholder: "Şifrə daxil edin",
+    // | Step 3
+    step3Title: "Adınız Nədir?",
+    namePlaceholder: "Adı daxil edin",
+    lastNamePlaceholder: "Soyadı daxil edin",
+    birthdayPlaceholder: "Doğum tarixini seçin",
+    age18Alert: "Yaş 18+ olmalıdır",
+    invalidDate: "Yanlış tarix",
+    male: "Kişi",
+    female: "Qadın",
+    finalStepBtn: "Son Addım",
+    // | Step 4
+    step4Title: "Valyuta Seçin",
+    countryPlaceholder: "Ölkə seçin",
+    currencyPlaceholder: "Valyuta seçin",
+    phoneNumberPlaceholder: "Telefon Nömrəsi",
+    addressPlaceholder: "Ünvanı daxil edin",
+    cityPlaceholder: "Şəhəri daxil edin",
+    statePlaceholder: "Vilayəti seçin",
+    zipCodePlaceholder: "Poçt Kodunu daxil edin",
+    createAccountBtn: "Hesab Yarat",
+    // | Decline
+    areYouSure: `Əminsinizmi? <br /> İrəliləyişiniz itiriləcək`,
+    keepRegistering: "Qeydiyyata davam et",
+    returnToWebsite: "Sayta qayıt",
+  },
+  ee: {
+    pageTitle: "🎁 Teie boonus on valmis - Goldbet",
+    heroTitle: `ILMASELT BOONUS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> PEALE KONTO <br /> KINNITAMIST`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tasuta Spinni teie 1. sissemaksega`,
+    heroBtn: "võta boonus",
+    slideStep1Title: "Registreeru",
+    slideStep1Text: 'Klõpsa "Võta boonus" ja lõpeta tasuta registreerimine.',
+    slideStep2Title: "Aktiveeri boonus",
+    slideStep2Text:
+      'Leia oma boonus "Boonuskeskusest" ja aktiveeri see, et mängima hakata.',
+    slideStep3Title: "Mängi",
+    slideStep3Text: "Raha on nüüd mängimiseks saadaval. Naudi!",
+    footerText: `Veebisaiti www.goldbet.io haldab Ivanov I.I.
+                (registrinumber: 12345678; registreeritud aadress: Ivanov Ivan
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lissabon, Portugal PO
+                BOX 1234-5600 Lissabon, Portugal), kes tegutseb oma makseagendi
+                IVANOV DEVELOPMENT LIMITED (registrinumber: AB123456;
+                registreeritud Küprosel aadressiga Rua de Henrique Digeni 12, 1 & 2 an.,
+                1234-5600 Lissabon, Portugal) kaudu. Ivanov I.I. on ettevõte, mis on
+                registreeritud ja asutatud Anjouani seaduste alusel ning litsentseeritud ja reguleeritud
+                Anjouani valitsuse poolt hasartmängulitsentsi nr AB12345678 alusel, registreeritud
+                aadress: Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lissabon, Portugal.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Tagasi",
+    closeBtn: "Sulge",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> saldosse`,
+    withoutDeposit: "Ilma sissemakseta",
+    step1Title: "Vali oma boonus",
+    welcomeBonus: "Tervitusboonus",
+    welcomeBonusText: "esimesel sissemaksel",
+    cryptoBonus: "Satoshi boonus",
+    cryptoBonusText: "150% krüpto sissemaksetel",
+    highRollerBonus: "High Roller boonus",
+    highRollerBonusText: "250% sissemaksetel üle $500",
+    withoutBonus: "Ilma boonuseta",
+    withoutBonusText: "Te ei saa ühtegi boonust",
+    iHavePromoCode: "Mul on sooduskood",
+    promoCodePlaceHolder: "Sooduskood",
+    promoCodeApplyBtn: "Rakenda",
+    continueBtn: "Jätka",
+    // | Step 2
+    step2Title: "Sisestage oma e-mail",
+    emailPlaceholder: "Sisestage e-mail",
+    passwordPlaceholder: "Sisestage parool",
+    // | Step 3
+    step3Title: "Mis on teie nimi?",
+    namePlaceholder: "Sisestage eesnimi",
+    lastNamePlaceholder: "Sisestage perekonnanimi",
+    birthdayPlaceholder: "Valige sünnikuupäev",
+    age18Alert: "Vanus peab olema 18+",
+    invalidDate: "Vale kuupäev",
+    male: "Mees",
+    female: "Naine",
+    finalStepBtn: "Viimane samm",
+    // | Step 4
+    step4Title: "Vali valuuta",
+    countryPlaceholder: "Vali riik",
+    currencyPlaceholder: "Vali valuuta",
+    phoneNumberPlaceholder: "Telefoninumber",
+    addressPlaceholder: "Sisestage aadress",
+    cityPlaceholder: "Sisestage linn",
+    statePlaceholder: "Valige maakond",
+    zipCodePlaceholder: "Sisestage postiindeks",
+    createAccountBtn: "Loo konto",
+    // | Decline
+    areYouSure: `Olete kindel? <br /> Teie progress läheb kaotsi`,
+    keepRegistering: "Jätka registreerimist",
+    returnToWebsite: "Naase veebisaidile",
+  },
+  lv: {
+    pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
+    heroTitle: `BEZDEPozĪTA BONUSS <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> PĒC KONTa <br /> VERIFIKĀCIJAS`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar jūsu 1. iemaksu`,
+    heroBtn: "saņemt bonusu",
+    slideStep1Title: "Reģistrējies",
+    slideStep1Text:
+      'Noklikšķini uz "Saņemt bonusu" un pabeidz bezmaksas reģistrāciju.',
+    slideStep2Title: "Aktivizē bonusu",
+    slideStep2Text:
+      'Atrodi savu bonusu "Bonusu centrā" un aktivizē to, lai sāktu spēlēt.',
+    slideStep3Title: "Spēlē",
+    slideStep3Text: "Nauda jau ir pieejama spēlēšanai. Izbaudi!",
+    footerText: `Vietni www.goldbet.io pārvalda Ivanov I.I.
+                (reģistrācijas numurs: 12345678; reģistrētā adrese: Ivanov Ivan
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabona, Portugāle PO
+                BOX 1234-5600 Lisabona, Portugāle), kas darbojas ar maksājumu aģenta
+                IVANOV DEVELOPMENT LIMITED (reģistrācijas numurs: AB123456;
+                reģistrēts Kiprā ar reģistrēto adresi Rua de Henrique Digeni
+                12, 1 & 2 an., 1234-5600 Lisabona, Portugāle). Ivanov I.I. ir uzņēmums,
+                kas reģistrēts un dibināts saskaņā ar Anjouan likumiem un licencēts un
+                regulēts Anjouan valdības ar azartspēļu licenci Nr. AB12345678, ar
+                reģistrēto adresi: Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabona, Portugāle.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Atpakaļ",
+    closeBtn: "Aizvērt",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> bilancē`,
+    withoutDeposit: "Bez iemaksas",
+    step1Title: "Izvēlies savu bonusu",
+    welcomeBonus: "Iepazīšanās bonuss",
+    welcomeBonusText: "par pirmo iemaksu",
+    cryptoBonus: "Satoshi bonuss",
+    cryptoBonusText: "150% par kripto iemaksām",
+    highRollerBonus: "High Roller bonuss",
+    highRollerBonusText: "250% par iemaksām virs $500",
+    withoutBonus: "Bez bonusa",
+    withoutBonusText: "Jūs nesaņemsiet bonusu",
+    iHavePromoCode: "Man ir promo kods",
+    promoCodePlaceHolder: "Promo kods",
+    promoCodeApplyBtn: "Piemērot",
+    continueBtn: "Turpināt",
+    // | Step 2
+    step2Title: "Ievadiet savu e-pastu",
+    emailPlaceholder: "Ievadiet e-pastu",
+    passwordPlaceholder: "Ievadiet paroli",
+    // | Step 3
+    step3Title: "Kāds ir jūsu vārds?",
+    namePlaceholder: "Ievadiet vārdu",
+    lastNamePlaceholder: "Ievadiet uzvārdu",
+    birthdayPlaceholder: "Izvēlieties dzimšanas datumu",
+    age18Alert: "Vecumam jābūt 18+",
+    invalidDate: "Nederīgs datums",
+    male: "Vīrietis",
+    female: "Sieviete",
+    finalStepBtn: "Pēdējais solis",
+    // | Step 4
+    step4Title: "Izvēlieties valūtu",
+    countryPlaceholder: "Izvēlieties valsti",
+    currencyPlaceholder: "Izvēlieties valūtu",
+    phoneNumberPlaceholder: "Tālruņa numurs",
+    addressPlaceholder: "Ievadiet adresi",
+    cityPlaceholder: "Ievadiet pilsētu",
+    statePlaceholder: "Izvēlieties novadu",
+    zipCodePlaceholder: "Ievadiet pasta indeksu",
+    createAccountBtn: "Izveidot kontu",
+    // | Decline
+    areYouSure: `Vai esat pārliecināts? <br /> Jūsu progress tiks zaudēts`,
+    keepRegistering: "Turpināt reģistrāciju",
+    returnToWebsite: "Atgriezties uz vietni",
+  },
+  lt: {
+    pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
+    heroTitle: `PREMija BE INDIĖLO <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> PO PASKYROS <br /> PATVIRTINIMO`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokami sukimai su jūsų 1-uoju indėliu`,
+    heroBtn: "gauti premiją",
+    slideStep1Title: "Registruokitės",
+    slideStep1Text:
+      'Spustelėkite "Gauti premiją" ir užbaikite nemokamą registraciją.',
+    slideStep2Title: "Aktyvuokite premiją",
+    slideStep2Text:
+      'Raskite savo premiją "Premijų centre" ir aktyvuokite ją, kad pradėtumėte žaisti.',
+    slideStep3Title: "Žaiskite",
+    slideStep3Text: "Pinigai jau pasiekiami žaidimui. Mėgaukitės!",
+    footerText: `Svetainę www.goldbet.io valdo Ivanov I.I.
+                (registracijos numeris: 12345678; registruotas adresas: Ivanov Ivan
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabona, Portugalija PO
+                BOX 1234-5600 Lisabona, Portugalija), veikiantis per savo mokėjimų agentą
+                IVANOV DEVELOPMENT LIMITED (registracijos numeris: AB123456;
+                registruota Kipre, registruotu adresu Rua de Henrique Digeni
+                12, 1 & 2 an., 1234-5600 Lisabona, Portugalija). Ivanov I.I. yra įmonė,
+                registruota ir įsteigta pagal Anjouan įstatymus ir licencijuota bei
+                reguliuojama Anjouan Vyriausybės pagal lošimų licenciją Nr. AB12345678,
+                registruotu adresu: Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabona, Portugalija.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Atgal",
+    closeBtn: "Uždaryti",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> į balansą`,
+    withoutDeposit: "Be indėlio",
+    step1Title: "Pasirinkite savo premiją",
+    welcomeBonus: "Sveikinimo premija",
+    welcomeBonusText: "su pirmuoju indėliu",
+    cryptoBonus: "Satoshi premija",
+    cryptoBonusText: "150% už kripto indėlius",
+    highRollerBonus: "High Roller premija",
+    highRollerBonusText: "250% už indėlius virš $500",
+    withoutBonus: "Be premijos",
+    withoutBonusText: "Jūs negausite jokios premijos",
+    iHavePromoCode: "Turiu promo kodą",
+    promoCodePlaceHolder: "Promo kodas",
+    promoCodeApplyBtn: "Pritaikyti",
+    continueBtn: "Tęsti",
+    // | Step 2
+    step2Title: "Įveskite savo el. paštą",
+    emailPlaceholder: "Įveskite el. paštą",
+    passwordPlaceholder: "Įveskite slaptažodį",
+    // | Step 3
+    step3Title: "Koks jūsų vardas?",
+    namePlaceholder: "Įveskite vardą",
+    lastNamePlaceholder: "Įveskite pavardę",
+    birthdayPlaceholder: "Pasirinkite gimimo datą",
+    age18Alert: "Amžius turi būti 18+",
+    invalidDate: "Neteisinga data",
+    male: "Vyras",
+    female: "Moteris",
+    finalStepBtn: "Paskutinis žingsnis",
+    // | Step 4
+    step4Title: "Pasirinkite valiutą",
+    countryPlaceholder: "Pasirinkite šalį",
+    currencyPlaceholder: "Pasirinkite valiutą",
+    phoneNumberPlaceholder: "Telefono numeris",
+    addressPlaceholder: "Įveskite adresą",
+    cityPlaceholder: "Įveskite miestą",
+    statePlaceholder: "Pasirinkite apskritį",
+    zipCodePlaceholder: "Įveskite pašto kodą",
+    createAccountBtn: "Sukurti paskyrą",
+    // | Decline
+    areYouSure: `Ar esate tikri? <br /> Jūsų progresas bus prarastas`,
+    keepRegistering: "Tęsti registraciją",
+    returnToWebsite: "Grįžti į svetainę",
+  },
+  hr: {
+    pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
+    heroTitle: `BONUS BEZ UPLATE <br /> <span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> NAKON VERIFIKACIJE <br /> RAČUNA`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih vrtnji s vašom prvom uplatom`,
+    heroBtn: "uzmi bonus",
+    slideStep1Title: "Registriraj se",
+    slideStep1Text: 'Kliknite "Uzmi bonus" i dovršite besplatnu registraciju.',
+    slideStep2Title: "Aktiviraj bonus",
+    slideStep2Text:
+      'Pronađite svoj bonus u "Bonus Centru" i aktivirajte ga kako biste počeli igrati.',
+    slideStep3Title: "Igraj",
+    slideStep3Text: "Novac je sada dostupan za igru. Uživajte!",
+    footerText: `Web stranicu www.goldbet.io posjeduje i vodi Ivanov I.I.
+                (registracijski broj: 12345678; registrirana adresa: Ivanov Ivan
+                Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabon, Portugal, PO
+                BOX 1234-5600 Lisabon, Portugal), koji posluje putem svog platnog agenta
+                IVANOV DEVELOPMENT LIMITED (registracijski broj: AB123456;
+                registriran na Cipru s registriranom adresom Rua de Henrique Digeni
+                12, 1 & 2 an., 1234-5600 Lisabon, Portugal). Ivanov I.I. je tvrtka
+                registrirana i osnovana prema zakonima Anjouana te licencirana i
+                regulirana od strane Vlade Anjouana pod licencom za igre na sreću br. AB12345678,
+                s registriranom adresom: Rua de Henrique Digeni 12, 1 & 2 an., 1234-5600 Lisabon, Portugal.`,
+    // | FORM TRANSLATIONS
+    backBtn: "Natrag",
+    closeBtn: "Zatvori",
+    // | Step 1
+    depToBalance: `<span class="nodep-bonus-amount"></span> <span class="nodep-bonus-currency"></span> na stanje`,
+    withoutDeposit: "Bez uplate",
+    step1Title: "Odaberite svoj bonus",
+    welcomeBonus: "Bonus dobrodošlice",
+    welcomeBonusText: "na vašu prvu uplatu",
+    cryptoBonus: "Satoshi bonus",
+    cryptoBonusText: "150% na kripto uplate",
+    highRollerBonus: "High Roller bonus",
+    highRollerBonusText: "250% na uplate iznad $500",
+    withoutBonus: "Bez bonusa",
+    withoutBonusText: "Nećete dobiti bonus",
+    iHavePromoCode: "Imam promo kod",
+    promoCodePlaceHolder: "Promo kod",
+    promoCodeApplyBtn: "Primijeni",
+    continueBtn: "Nastavi",
+    // | Step 2
+    step2Title: "Unesite svoj e-mail",
+    emailPlaceholder: "Unesite e-mail",
+    passwordPlaceholder: "Unesite lozinku",
+    // | Step 3
+    step3Title: "Kako se zovete?",
+    namePlaceholder: "Unesite ime",
+    lastNamePlaceholder: "Unesite prezime",
+    birthdayPlaceholder: "Odaberite datum rođenja",
+    age18Alert: "Morate imati 18+ godina",
+    invalidDate: "Nevažeći datum",
+    male: "Muško",
+    female: "Žensko",
+    finalStepBtn: "Završni korak",
+    // | Step 4
+    step4Title: "Odaberite valutu",
+    countryPlaceholder: "Odaberite državu",
+    currencyPlaceholder: "Odaberite valutu",
+    phoneNumberPlaceholder: "Broj telefona",
+    addressPlaceholder: "Unesite adresu",
+    cityPlaceholder: "Unesite grad",
+    statePlaceholder: "Odaberite županiju",
+    zipCodePlaceholder: "Unesite poštanski broj",
+    createAccountBtn: "Kreiraj račun",
+    // | Decline
+    areYouSure: `Jeste li sigurni? <br /> Vaš će napredak biti izgubljen`,
+    keepRegistering: "Nastavi registraciju",
+    returnToWebsite: "Povratak na web stranicu",
+  },
 };
