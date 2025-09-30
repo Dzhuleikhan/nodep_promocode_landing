@@ -1299,4 +1299,75 @@ export const translations = {
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
   },
+  kz: {
+    pageTitle: "🎁 Сіздің бонусыңыз дайын - Goldbet",
+    heroTitle: `бонусыңызды алыңыз <br/> <span><i class="actual-spin-amount">100</i> тегін айналым</span> <br/> ойында <span>Gates of Olympus</span>`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> дейін <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> және <span class="two-step-bonus-spins"></span> тегін айналым алғашқы депозитпен`,
+    heroBtn: "бонус алу",
+
+    slideStep1Title: "Тіркелу",
+    slideStep1Text: '"Бонус алу" түймесін басып, тегін тіркеуді аяқтаңыз.',
+
+    slideStep2Title: "Бонусты белсендіру",
+    slideStep2Text:
+      '"Бонус орталығынан" өз бонусыңызды тауып, ойынды бастау үшін белсендіріңіз.',
+
+    slideStep3Title: "Ойнау",
+    slideStep3Text: "Қаражат енді ойынға қолжетімді. Ләззат алыңыз!",
+
+    footerText: `<span class="current-domain"></span> онлайн-казинодағы бонустар мен акциялар туралы ақпараттық платформа болып табылады. Барлық ақпарат тек ақпараттық және ойын-сауық мақсатында ұсынылған. Бонус шарттары алдын ала ескертусіз өзгеруі мүмкін, және <span class="current-domain"></span> кез келген сәйкессіздік үшін жауап бермейді. Ұсыныстар тек 18 жасқа толған және тиісті юрисдикцияларда тұратын адамдарға қолжетімді. Тіркелмес бұрын немесе кез келген бонусты талап етпес бұрын, әрбір казиноның шарттарымен мұқият танысыңыз. Жауапкершілікпен ойнаңыз!`,
+
+    // | FORM TRANSLATIONS
+    backBtn: "Артқа",
+    closeBtn: "Жабу",
+
+    // | Step 1
+    depToBalance: `<span><i class="actual-spin-amount">100</i> ТЕГІН АЙНАЛЫМ</span>`,
+    withoutDeposit: "Депозитсіз",
+    step1Title: "Бонусыңызды таңдаңыз",
+    welcomeBonus: "Қош келдіңіз бонусы",
+    welcomeBonusText: "алғашқы депозитке",
+    cryptoBonus: "Satoshi Бонусы",
+    cryptoBonusText: "Крипто-депозиттерге 150%",
+    highRollerBonus: "High Roller Бонусы",
+    highRollerBonusText: "$500-ден жоғары депозиттерге 250%",
+    withoutBonus: "Бонустасыз",
+    withoutBonusText: "Сіз ешқандай бонус алмайсыз",
+    iHavePromoCode: "Менде промо-код бар",
+    promoCodePlaceHolder: "Промо-код",
+    promoCodeApplyBtn: "Қолдану",
+    continueBtn: "Жалғастыру",
+
+    // | Step 2
+    step2Title: "Электрондық поштаңызды енгізіңіз",
+    emailPlaceholder: "E-mail енгізіңіз",
+    passwordPlaceholder: "Құпиясөз енгізіңіз",
+
+    // | Step 3
+    step3Title: "Атыңыз кім?",
+    namePlaceholder: "Атыңызды енгізіңіз",
+    lastNamePlaceholder: "Тегіңізді енгізіңіз",
+    birthdayPlaceholder: "Туған күнді таңдаңыз",
+    age18Alert: "Жасыңыз 18-ден жоғары болуы керек",
+    invalidDate: "Жарамсыз күн",
+    male: "Ер",
+    female: "Әйел",
+    finalStepBtn: "Соңғы қадам",
+
+    // | Step 4
+    step4Title: "Валютаны таңдаңыз",
+    countryPlaceholder: "Елді таңдаңыз",
+    currencyPlaceholder: "Валютаны таңдаңыз",
+    phoneNumberPlaceholder: "Телефон нөмірі",
+    addressPlaceholder: "Мекенжай енгізіңіз",
+    cityPlaceholder: "Қаланы енгізіңіз",
+    statePlaceholder: "Облысты таңдаңыз",
+    zipCodePlaceholder: "Поштамен индекс енгізіңіз",
+    createAccountBtn: "Аккаунт құру",
+
+    // | Decline
+    areYouSure: `Сіз сенімдісіз бе? <br /> Сіздің прогрессіңіз жойылады`,
+    keepRegistering: "Тіркеуді жалғастыру",
+    returnToWebsite: "Сайтқа оралу",
+  },
 };
