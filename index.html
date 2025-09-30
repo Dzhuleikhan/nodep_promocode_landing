@@ -470,6 +470,36 @@
                     <span class="pointer-events-none">Ukrainian</span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    data-lang="uz"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/uz.svg"
+                      alt="UZ flag"
+                    />
+                    <span class="pointer-events-none">Uzbek</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-lang="kz"
+                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+                    href="#"
+                    ><img
+                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                      width="20"
+                      height="20"
+                      src="./img/flags/kz.svg"
+                      alt="KZ flag"
+                    />
+                    <span class="pointer-events-none">Kazakh</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -849,10 +879,13 @@
                             balance
                           </p>
                           <p
-                            data-translate="withoutDeposit"
                             class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
                           >
-                            Without deposit
+                            <span class="two-step-bonus-percent"></span> +
+                            <span class="actual-spin-amount"></span>FS
+                            <span data-translate="welcomeBonusText"
+                              >on your first deposit</span
+                            >
                           </p>
                         </div>
                       </div>
@@ -861,6 +894,7 @@
                       ></div>
                     </div>
                   </label>
+                  <!-- 
                   <label class="two-step-bonus-checkbox relative block">
                     <input
                       class="welcome-bonus-input absolute appearance-none"
@@ -906,6 +940,7 @@
                       ></div>
                     </div>
                   </label>
+                   -->
                   <label class="two-step-bonus-checkbox relative block">
                     <input
                       class="absolute appearance-none"
