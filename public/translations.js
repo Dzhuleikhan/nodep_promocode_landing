@@ -1299,4 +1299,77 @@ export const translations = {
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
   },
+  uz: {
+    pageTitle: "🎁 Bonusingiz tayyor - Goldbet",
+    heroTitle: `bonusingizni oling <br/> <span><i class="actual-spin-amount">100</i> bepul aylanish</span> <br/> o‘yinda <span>Big Bass Splash</span>`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> gacha <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> va <span class="two-step-bonus-spins"></span> bepul aylanish birinchi depozit bilan`,
+    heroBtn: "bonusni olish",
+
+    slideStep1Title: "Ro‘yxatdan o‘tish",
+    slideStep1Text:
+      '"Bonusni olish" tugmasini bosing va bepul ro‘yxatdan o‘tishni yakunlang.',
+
+    slideStep2Title: "Bonusni faollashtirish",
+    slideStep2Text:
+      '"Bonus markazi"dan bonusingizni topib, o‘ynashni boshlash uchun uni faollashtiring.',
+
+    slideStep3Title: "O‘ynash",
+    slideStep3Text:
+      "Pul endi o‘yinda foydalanish uchun mavjud. Marhamat, o‘ynang!",
+
+    footerText: `<span class="current-domain"></span> onlayn kazinolardagi bonuslar va aksiyalar haqida axborot beruvchi platforma hisoblanadi. Barcha ma’lumotlar faqat axborot va ko‘ngilochar maqsadlarda taqdim etilgan. Bonus shartlari oldindan ogohlantirmasdan o‘zgarishi mumkin, va <span class="current-domain"></span> hech qanday nomuvofiqlik uchun javobgar emas. Takliflar faqat 18 yoshdan oshgan va mos yurisdiktsiyalarda yashovchi shaxslarga taqdim etiladi. Ro‘yxatdan o‘tish yoki bonusni olishdan oldin har bir kazino shartlarini diqqat bilan o‘qing. Mas’uliyat bilan o‘ynang!`,
+
+    // | FORM TRANSLATIONS
+    backBtn: "Orqaga",
+    closeBtn: "Yopish",
+
+    // | Step 1
+    depToBalance: `<span><i class="actual-spin-amount">100</i> BEPUL AYLANISH</span>`,
+    withoutDeposit: "Depozitsiz",
+    step1Title: "Bonusingizni tanlang",
+    welcomeBonus: "Xush kelibsiz bonusi",
+    welcomeBonusText: "birinchi depozitda",
+    cryptoBonus: "Satoshi Bonusi",
+    cryptoBonusText: "Kripto depozitlarda 150%",
+    highRollerBonus: "High Roller Bonusi",
+    highRollerBonusText: "$500 dan yuqori depozitlarda 250%",
+    withoutBonus: "Bonussiz",
+    withoutBonusText: "Siz hech qanday bonus olmaysiz",
+    iHavePromoCode: "Menda promo-kod bor",
+    promoCodePlaceHolder: "Promo-kod",
+    promoCodeApplyBtn: "Qo‘llash",
+    continueBtn: "Davom etish",
+
+    // | Step 2
+    step2Title: "E-pochta manzilingizni kiriting",
+    emailPlaceholder: "E-pochta kiriting",
+    passwordPlaceholder: "Parol kiriting",
+
+    // | Step 3
+    step3Title: "Ismingiz nima?",
+    namePlaceholder: "Ismingizni kiriting",
+    lastNamePlaceholder: "Familiyangizni kiriting",
+    birthdayPlaceholder: "Tug‘ilgan sanani tanlang",
+    age18Alert: "Yosh 18+ bo‘lishi kerak",
+    invalidDate: "Noto‘g‘ri sana",
+    male: "Erkak",
+    female: "Ayol",
+    finalStepBtn: "Oxirgi qadam",
+
+    // | Step 4
+    step4Title: "Valyutani tanlang",
+    countryPlaceholder: "Mamlakatni tanlang",
+    currencyPlaceholder: "Valyutani tanlang",
+    phoneNumberPlaceholder: "Telefon raqami",
+    addressPlaceholder: "Manzilni kiriting",
+    cityPlaceholder: "Shaharni kiriting",
+    statePlaceholder: "Viloyatni tanlang",
+    zipCodePlaceholder: "Pochta indeksini kiriting",
+    createAccountBtn: "Hisob yaratish",
+
+    // | Decline
+    areYouSure: `Ishonchingiz komilmi? <br /> Sizning jarayoningiz yo‘qoladi`,
+    keepRegistering: "Ro‘yxatdan o‘tishni davom ettirish",
+    returnToWebsite: "Veb-saytga qaytish",
+  },
 };
