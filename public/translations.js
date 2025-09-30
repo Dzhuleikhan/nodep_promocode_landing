@@ -1299,4 +1299,76 @@ export const translations = {
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
   },
+  ua: {
+    pageTitle: "🎁 Ваш бонус готовий - Goldbet",
+    heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>The Dog House</span>`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим першим депозитом`,
+    heroBtn: "отримати бонус",
+
+    slideStep1Title: "Реєстрація",
+    slideStep1Text:
+      'Натисніть "Отримати бонус" та завершіть безкоштовну реєстрацію.',
+
+    slideStep2Title: "Активуйте бонус",
+    slideStep2Text:
+      'Знайдіть свій бонус у "Бонусному центрі" та активуйте його, щоб почати гру.',
+
+    slideStep3Title: "Грайте",
+    slideStep3Text: "Гроші тепер доступні для гри. Насолоджуйтесь!",
+
+    footerText: `<span class="current-domain"></span> є інформаційною платформою про бонуси та акції в онлайн-казино. Уся надана інформація має виключно інформаційний та розважальний характер. Умови бонусів можуть змінюватися без попереднього повідомлення, і <span class="current-domain"></span> не несе відповідальності за будь-які розбіжності. Пропозиції доступні лише особам віком від 18 років і старше, які проживають у відповідних юрисдикціях. Перед реєстрацією або отриманням бонусу уважно ознайомтеся з умовами кожного казино. Грайте відповідально!`,
+
+    // | FORM TRANSLATIONS
+    backBtn: "Назад",
+    closeBtn: "Закрити",
+
+    // | Step 1
+    depToBalance: `<span><i class="actual-spin-amount">100</i> БЕЗКОШТОВНИХ ОБЕРТАНЬ</span>`,
+    withoutDeposit: "Без депозиту",
+    step1Title: "Виберіть свій бонус",
+    welcomeBonus: "Вітальний бонус",
+    welcomeBonusText: "на ваш перший депозит",
+    cryptoBonus: "Satoshi Бонус",
+    cryptoBonusText: "150% на криптодепозити",
+    highRollerBonus: "High Roller Бонус",
+    highRollerBonusText: "250% на депозити понад $500",
+    withoutBonus: "Без бонусу",
+    withoutBonusText: "Ви не отримаєте жодного бонусу",
+    iHavePromoCode: "У мене є промокод",
+    promoCodePlaceHolder: "Промокод",
+    promoCodeApplyBtn: "Застосувати",
+    continueBtn: "Продовжити",
+
+    // | Step 2
+    step2Title: "Введіть свою електронну пошту",
+    emailPlaceholder: "Введіть E-mail",
+    passwordPlaceholder: "Введіть пароль",
+
+    // | Step 3
+    step3Title: "Як вас звати?",
+    namePlaceholder: "Введіть ім’я",
+    lastNamePlaceholder: "Введіть прізвище",
+    birthdayPlaceholder: "Оберіть дату народження",
+    age18Alert: "Вік має бути 18+",
+    invalidDate: "Недійсна дата",
+    male: "Чоловік",
+    female: "Жінка",
+    finalStepBtn: "Останній крок",
+
+    // | Step 4
+    step4Title: "Оберіть валюту",
+    countryPlaceholder: "Оберіть країну",
+    currencyPlaceholder: "Оберіть валюту",
+    phoneNumberPlaceholder: "Номер телефону",
+    addressPlaceholder: "Введіть адресу",
+    cityPlaceholder: "Введіть місто",
+    statePlaceholder: "Оберіть область",
+    zipCodePlaceholder: "Введіть поштовий індекс",
+    createAccountBtn: "Створити акаунт",
+
+    // | Decline
+    areYouSure: `Ви впевнені? <br /> Ваш прогрес буде втрачено`,
+    keepRegistering: "Продовжити реєстрацію",
+    returnToWebsite: "Повернутися на сайт",
+  },
 };
