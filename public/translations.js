@@ -124,7 +124,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
-    heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>buffalo's sun 3</span>`,
+    heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>buffalo's sun 3</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
@@ -744,7 +744,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>buffalo's sun 3</span>`,
+    heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>buffalo's sun 3</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
@@ -760,7 +760,7 @@ export const translations = {
     backBtn: "Atrás",
     closeBtn: "Cerrar",
     // | Step 1
-    depToBalance: `<span>100 GIROS GRATIS</span>`,
+    depToBalance: `<span><i class="actual-spin-amount">100</i> GIROS GRATIS</span>`,
     withoutDeposit: "Sin depósito",
     step1Title: "Elige tu bono",
     welcomeBonus: "Bono de bienvenida",
@@ -806,7 +806,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>buffalo's sun 3</span>`,
+    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>buffalo's sun 3</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
@@ -821,7 +821,7 @@ export const translations = {
     backBtn: "Voltar",
     closeBtn: "Fechar",
     // | Step 1
-    depToBalance: `<span>100 RODADAS GRÁTIS</span>`,
+    depToBalance: `<span><i class="actual-spin-amount">100</i> RODADAS GRÁTIS</span>`,
     withoutDeposit: "Sem depósito",
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
