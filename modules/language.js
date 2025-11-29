@@ -1,5 +1,5 @@
 import { translations } from "/public/translations";
-import { getLocation } from "./geoLocation";
+import { geoData } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 
 const headerLangBtn = document.querySelector(".header-lang-btn");
@@ -63,7 +63,7 @@ function updateButtonText(lang) {
 }
 
 async function determineLanguage() {
-  const location = await getLocation();
+  const location = geoData;
 
   const countryLangMap = {
     TR: "tr",
