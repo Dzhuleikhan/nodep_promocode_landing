@@ -1,5 +1,5 @@
 import { translations } from "/public/translations";
-import { getLocation } from "./geoLocation";
+import { geoData } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { formData } from "./formAuth";
 import { setSpinAmount } from "./promocodeCheck";
@@ -82,7 +82,7 @@ function updateButtonText(lang) {
 export const availableLang = ["en", "fr"];
 
 async function determineLanguage() {
-  const location = await getLocation();
+  const location = geoData;
 
   const countryLangMap = {
     EN: "en",
