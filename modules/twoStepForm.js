@@ -1,5 +1,5 @@
 import { countryFlags } from "../public/data";
-import { geoData, getLocation, settingZipCodePlaceholder } from "./geoLocation";
+import { geoData, settingZipCodePlaceholder } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
@@ -646,7 +646,7 @@ if (twoStepFormFourthStep) {
 
   // Apply detected country
   const applyDetectedCountry = async () => {
-    const locationData = await getLocation();
+    const locationData = geoData;
     settingZipCodePlaceholder(locationData.countryCode);
 
     const mathedCountry = countryFlags.find((country) => {
