@@ -650,7 +650,7 @@ if (twoStepFormFourthStep) {
 
   // Apply detected country
   const applyDetectedCountry = async () => {
-    const locationData = await getLocation();
+    const locationData = geoData;
     settingZipCodePlaceholder(locationData.countryCode);
 
     const mathedCountry = countryFlags.find((country) => {
