@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "https://goldbet.wiki/freespins/monkeyheist/",
+  base: "https://monkeyheist/",
   esbuild: {
     supported: {
       "top-level-await": true,
