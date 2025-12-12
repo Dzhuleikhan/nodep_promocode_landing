@@ -513,6 +513,17 @@ export const countryCurrencyData = [
     spins: "200 FS",
     highrollerAmount: "3600",
   },
+  // NEW AFRICAN CURRENCIES
+  {
+    countries: ["NG"],
+    countryCurrency: "NGN",
+    countryCurrencySymbol: "₦",
+    countryCurrencyFullName: "Nigerian Naira",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
+    // amount: "88.000",
+    // spins: "200 FS",
+    // highrollerAmount: "3600",
+  },
 ];
 
 export const canadaProvincesCities = {
