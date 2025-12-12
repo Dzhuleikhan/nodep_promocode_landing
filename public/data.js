@@ -514,15 +514,15 @@ export const countryCurrencyData = [
     highrollerAmount: "3600",
   },
   // NEW AFRICAN CURRENCIES
-  {
-    countries: ["NG"],
-    countryCurrency: "NGN",
-    countryCurrencySymbol: "₦",
-    countryCurrencyFullName: "Nigerian Naira",
-    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
-    amount: "5.000",
-    spins: "200FS",
-  },
+  // {
+  //   countries: ["NG"],
+  //   countryCurrency: "NGN",
+  //   countryCurrencySymbol: "₦",
+  //   countryCurrencyFullName: "Nigerian Naira",
+  //   countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
+  //   amount: "5.000",
+  //   spins: "200FS",
+  // },
 ];
 
 export const canadaProvincesCities = {
@@ -830,6 +830,16 @@ export const nodepBonuses = [
       "axept",
       "klarna",
     ],
+  },
+  // NEW AFRICAN CURRENCIES
+  {
+    currency: "NGN",
+    currencyName: "Nigerian Naira",
+    symbol: "₦",
+    bonusAmount: "10",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
+    moneyAmount: "5000",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
 ];
 
