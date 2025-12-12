@@ -569,7 +569,7 @@ export const countryCurrencyData = [
     spins: "25",
   },
   {
-    countries: ["CM"],
+    countries: ["CM", "CG"],
     countryCurrency: "XAF",
     countryCurrencySymbol: "Fr",
     countryCurrencyFullName: "Central African CFA Franc",
@@ -578,7 +578,7 @@ export const countryCurrencyData = [
     spins: "25",
   },
   {
-    countries: ["SN"],
+    countries: ["SN", "CI"],
     countryCurrency: "XOF",
     countryCurrencySymbol: "Fr",
     countryCurrencyFullName: "West African CFA Franc",
@@ -593,24 +593,6 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Sierra Leonean Leone",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/SLL.svg",
     amount: "45 K",
-    spins: "25",
-  },
-  {
-    countries: ["CI"],
-    countryCurrency: "XOF",
-    countryCurrencySymbol: "Fr",
-    countryCurrencyFullName: "West African CFA Franc",
-    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XOF.svg",
-    amount: "1.9 MLN",
-    spins: "25",
-  },
-  {
-    countries: ["CG"],
-    countryCurrency: "XAF",
-    countryCurrencySymbol: "Fr",
-    countryCurrencyFullName: "Central African CFA Franc",
-    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XAF.svg",
-    amount: "1.9 MLN",
     spins: "25",
   },
 ];
