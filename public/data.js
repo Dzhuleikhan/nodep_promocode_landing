@@ -208,7 +208,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Colombian Peso",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/COP.svg",
     amount: "4.17 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AR"],
@@ -217,7 +217,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Argentine Peso",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ARS.svg",
     amount: "9 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AU", "CX", "CC", "KI", "NR", "NF", "TV"],
@@ -226,7 +226,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Australian Dollar",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/AUD.svg",
     amount: "7.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AZ"],
@@ -235,7 +235,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Azerbaijani Manat",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/AZN.svg",
     amount: "17.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["BD"],
@@ -244,7 +244,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Bangladeshi Taka",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/BDT.svg",
     amount: "1 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["BR"],
@@ -253,7 +253,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Brazilian Real",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/BRL.svg",
     amount: "54.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["CA"],
@@ -262,7 +262,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Canadian Dollar",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CAD.svg",
     amount: "6.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CL"],
@@ -271,7 +271,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Chilean Peso",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CLP.svg",
     amount: "9 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: [
@@ -315,7 +315,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Euro",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/EUR.svg",
     amount: "4.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["ID"],
@@ -324,7 +324,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Indonesian Rupiah",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/IDR.svg",
     amount: "150 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["IN", "BT", "NP"],
@@ -333,7 +333,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Indian Rupee",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/INR.svg",
     amount: "830.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["KG"],
@@ -342,7 +342,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Kyrgyzstani Som",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KGS.svg",
     amount: "850.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["KZ"],
@@ -351,7 +351,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Kazakhstani Tenge",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KZT.svg",
     amount: "4.7 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["MX"],
@@ -360,7 +360,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Mexican Peso",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/MXN.svg",
     amount: "190.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["NZ", "CK", "NU", "PN", "TK"],
@@ -369,7 +369,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "New Zealand Dollar",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NZD.svg",
     amount: "7.500",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["RU"],
@@ -378,7 +378,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Russian Ruble",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/RUB.svg",
     amount: "900.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["TH"],
@@ -387,7 +387,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Thai Baht",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/THB.svg",
     amount: "320.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["TR", "CY"],
@@ -396,7 +396,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Turkish Lira",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/TRY.svg",
     amount: "340.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["UA"],
@@ -405,7 +405,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Ukrainian Hryvnia",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UAH.svg",
     amount: "400.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: [
@@ -428,7 +428,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "US Dollar",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/USD.svg",
     amount: "5.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["UZ"],
@@ -437,7 +437,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Uzbekistani Som",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UZS.svg",
     amount: "127 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   // | New currencies
   {
@@ -447,7 +447,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Romanian Leu",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/RON.svg",
     amount: "24.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["DK"],
@@ -456,7 +456,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Danish Krone",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/DKK.svg",
     amount: "36.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["HU"],
@@ -465,7 +465,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Hungarian Forint",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/HUF.svg",
     amount: "2 MLN",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CZ"],
@@ -474,7 +474,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Czech Koruna",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CZK.svg",
     amount: "120.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CH"],
@@ -483,7 +483,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Swiss Franc",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CHF.svg",
     amount: "4.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["PL"],
@@ -492,7 +492,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Polish Zloty",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/PLN.svg",
     amount: "20.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["NO"],
@@ -501,7 +501,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Norwegian krone",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NOK.svg",
     amount: "56.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -510,7 +510,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "South African Rand",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ZAR.svg",
     amount: "88.000",
-    spins: "200 FS",
+    spins: "200",
     highrollerAmount: "3600",
   },
   // NEW AFRICAN CURRENCIES
@@ -521,7 +521,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Nigerian Naira",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
     amount: "12.2 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["KE"],
@@ -530,7 +530,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Kenyan Shilling",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KES.svg",
     amount: "430 K",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["GH"],
@@ -539,7 +539,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Ghanaian Cedi",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/GHS.svg",
     amount: "55 K",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["UG"],
@@ -548,7 +548,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Ugandan Shilling",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UGX.svg",
     amount: "7.4 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["TZ"],
@@ -557,7 +557,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Tanzanian Shilling",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/TZS.svg",
     amount: "5 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["ZM"],
@@ -566,7 +566,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Zambian Kwacha",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ZMW.svg",
     amount: "45 K",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["CM"],
@@ -575,7 +575,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Central African CFA Franc",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XAF.svg",
     amount: "1.9 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["SN"],
@@ -584,7 +584,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "West African CFA Franc",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XOF.svg",
     amount: "1.9 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["SL"],
@@ -593,7 +593,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Sierra Leonean Leone",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/SLL.svg",
     amount: "45 K",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["CI"],
@@ -602,7 +602,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "West African CFA Franc",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XOF.svg",
     amount: "1.9 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
   {
     countries: ["CG"],
@@ -611,7 +611,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Central African CFA Franc",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XAF.svg",
     amount: "1.9 MLN",
-    spins: "25 FS",
+    spins: "25",
   },
 ];
 
