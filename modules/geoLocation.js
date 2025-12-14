@@ -42,7 +42,7 @@ localStorage.setItem(
 
 function setHeaderFlag(countryCode) {
   const headerFlagImage = document.querySelector(".header-country-flag");
-  headerFlagImage.src = `./img/flags/${countryCode.toLowerCase()}.svg`;
+  headerFlagImage.src = `https://3344112-img.b-cdn.net/graphic/flags/flag-${countryCode.toLowerCase()}.svg`;
   headerFlagImage.classList.remove("hidden");
 }
 setHeaderFlag(geoData.countryCode);
