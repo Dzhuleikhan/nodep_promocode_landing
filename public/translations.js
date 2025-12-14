@@ -2,7 +2,7 @@ export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span>500 free spins</span> <br/> in <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
@@ -63,7 +63,7 @@ export const translations = {
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de 500 tours gratuits</span> <br/> dans <span>monkey heist</span>.`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
     slideStep1Text:
@@ -125,7 +125,7 @@ export const translations = {
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span>500 rotiri gratuite</span> <br/> în <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
     slideStep1Text:
@@ -187,7 +187,7 @@ export const translations = {
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span>500 ingyenes pörgetés</span> <br/> a <span>monkey heist</span> játékban`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
     slideStep1Title: "Regisztrálj",
     slideStep1Text:
@@ -250,7 +250,7 @@ export const translations = {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
       "odebrój swój bonus <br/> <span>500 darmowych spinów</span> <br/> w <span>monkey heist</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
     slideStep1Text: 'Kliknij "Odbierz Bonus" i zakończ darmową rejestrację.',
@@ -312,7 +312,7 @@ export const translations = {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span>500 volných točení</span> <br/> ve hře <span>monkey heist</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
     slideStep1Title: "Registrovat se",
     slideStep1Text:
@@ -376,7 +376,7 @@ export const translations = {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>500 brezplačnih vrtljajev</span> <br/> v <span>monkey heist</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
@@ -438,7 +438,7 @@ export const translations = {
   gr: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>500 δωρεάν περιστροφές</span> <br/> στο <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
     slideStep1Title: "Εγγραφή",
     slideStep1Text:
@@ -501,7 +501,7 @@ export const translations = {
   no: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span>500 gratisspinn</span> <br/> i <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer deg",
     slideStep1Text: 'Klikk på "Få bonus" og fullfør den gratis registreringen.',
@@ -562,7 +562,7 @@ export const translations = {
   se: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span>500 gratissnurr</span> <br/> i <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
     slideStep1Title: "Registrera dig",
     slideStep1Text:
@@ -624,7 +624,7 @@ export const translations = {
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span>500 voľných spinov</span> <br/> v <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
     slideStep1Title: "Registrovať sa",
     slideStep1Text:
@@ -686,7 +686,7 @@ export const translations = {
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span>500 фриспинов</span> <br/> в <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
     slideStep1Title: "Зарегистрируйтесь",
     slideStep1Text:
@@ -748,7 +748,7 @@ export const translations = {
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span>500 giros gratis</span> <br/> en <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
     slideStep1Text:
@@ -810,7 +810,7 @@ export const translations = {
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span>500 rodadas grátis</span> <br/> em <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
     slideStep1Text: 'Clique em "Obter Bônus" e complete o cadastro gratuito.',
@@ -871,7 +871,7 @@ export const translations = {
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
     heroTitle: `Beanspruche deinen Bonus <br/> <span>500 Freispiele</span> <br/> in <span>Monkey Heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Freispiele bei deiner 1. Einzahlung`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Freispiele bei deiner 1. Einzahlung`,
     heroBtn: "Bonus erhalten",
     slideStep1Title: "Registrieren",
     slideStep1Text:
@@ -933,7 +933,7 @@ export const translations = {
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
     heroTitle: `richiedi il tuo bonus <br/> <span>500 giri gratuiti</span> <br/> in <span>monkey heist</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> giri gratuiti con il tuo primo deposito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> giri gratuiti con il tuo primo deposito`,
     heroBtn: "ottieni bonus",
     slideStep1Title: "Registrati",
     slideStep1Text:
@@ -995,7 +995,7 @@ export const translations = {
   az: {
     pageTitle: "🎁 Bonusunuz hazırdır - Goldbet",
     heroTitle: `bonusunuzu tələb edin <br/> <span>100 pulsuz fırlanma</span> <br/> <span>monkey heist</span> oyununda`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> qədər <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Pulsuz Fırlanma İlk depozitinizlə`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> qədər <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Pulsuz Fırlanma İlk depozitinizlə`,
     heroBtn: "Bonus əldə et",
     slideStep1Title: "Qeydiyyatdan keçin",
     slideStep1Text:
@@ -1057,7 +1057,7 @@ export const translations = {
   ee: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span>100 tasuta keerutust</span> <br/> <span>monkey heist</span> mängus`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tasuta keerutust teie esimesel sissemaksel`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tasuta keerutust teie esimesel sissemaksel`,
     heroBtn: "Hangi boonus",
     slideStep1Title: "Registreeru",
     slideStep1Text:
@@ -1119,7 +1119,7 @@ export const translations = {
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
     heroTitle: `piekļūstiet savam bonusam <br/> <span>100 bezmaksas griezieni</span> <br/> <span>monkey heist</span> spēlē`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar jūsu pirmo iemaksu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar jūsu pirmo iemaksu`,
     heroBtn: "Saņemt bonusu",
     slideStep1Title: "Reģistrējieties",
     slideStep1Text:
@@ -1181,7 +1181,7 @@ export const translations = {
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
     heroTitle: `atsiimkite savo premiją <br/> <span>100 nemokamų sukimų</span> <br/> <span>monkey heist</span> žaidime`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų sukimų su pirmuoju įnašu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų sukimų su pirmuoju įnašu`,
     heroBtn: "Gauti premiją",
     slideStep1Title: "Registruotis",
     slideStep1Text:
@@ -1243,7 +1243,7 @@ export const translations = {
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
     heroTitle: `preuzmite svoj bonus <br/> <span>100 besplatnih okretaja</span> <br/> <span>monkey heist</span> igri`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
     heroBtn: "Preuzmi bonus",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
