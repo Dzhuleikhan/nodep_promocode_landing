@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "",
+  base: "https://landing-res.b-cdn.net/casinobonusesfinder/monkeyheist/dep300/",
   esbuild: {
     supported: {
       "top-level-await": true,
