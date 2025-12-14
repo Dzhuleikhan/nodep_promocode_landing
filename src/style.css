@@ -308,7 +308,7 @@ body {
 }
 
 .checkbox-input:checked+.checkbox-content::before {
-  background: url("../img/checked.svg");
+  background: url("https://3344112-img.b-cdn.net/graphic/landings/cryptoHighrollers/checked.svg");
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
