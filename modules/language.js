@@ -71,6 +71,10 @@ function updateButtonText(lang) {
     pt: "Portuguese",
     de: "Deutsch",
     it: "Italian",
+    ee: "Estonian",
+    lv: "Latvian",
+    lt: "Lithuanian",
+    hr: "Croatian",
     kz: "Kazakh",
   };
   headerLangBtn.setAttribute(
@@ -104,6 +108,10 @@ async function determineLanguage() {
     PT: "pt",
     DE: "de",
     IT: "it",
+    EE: "ee",
+    LV: "lv",
+    LT: "lt",
+    HR: "hr",
     KZ: "kz",
     // Add more country codes and their corresponding languages as needed
   };

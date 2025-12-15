@@ -1205,4 +1205,707 @@ export const translations = {
                       - Сіз Қызмет арқылы алған криптовалюта бойынша қолданылатын салықтарды
                       өзіңіз төлеуге міндеттісіз.`,
   },
+  ee: {
+    pageTitle: "🎁 Sinu boonus on valmis – Goldbet",
+    heroTitle: `Krüpto Highrolleri boonus <br/> <b><span>200%</span></b> kuni <b><span>100 000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> tasuta spinni sinu esimesel sissemaksel`,
+    heroBtn: "võta boonus",
+    paymentsTitle: `Aktsepteeritud <span>41</span> krüptovaluutat`,
+    advantege1Title: "VPN-sõbralik",
+    advantege1Text: "Sa saad meie platvormile ligi pääseda ka VPN-i kasutades.",
+    advantege2Title: "KYC pole nõutav",
+    advantege2Text:
+      "Krüptosissemaksete ja -väljamaksete jaoks ei ole KYC kinnitust vaja.",
+    advantege3Title: "25% soovitusboonus",
+    advantege3Text: "Kutsu mängijaid ja teeni 25% kasiino tulust.",
+    footerText: `<span class="current-domain"></span> kuulub ja seda haldab Goldkey Technologies Limitada. Registreerimisnumber: 3-102-892568, registreeritud aadress: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Võta meiega ühendust: hello@goldbet.io. Goldbet.io on litsentseeritud ja reguleeritud Anjouani autonoomse saare valitsuse poolt, Komooride Liidus, ning tegutseb litsentsi nr ALSI-012401005-F11 alusel. Goldbet.io on läbinud kõik regulatiivsed vastavuskontrollid ning on seaduslikult volitatud korraldama kõiki hasartmänge ja panustamistegevusi. Pea meeles, et hasartmängud võivad tekitada sõltuvust. Mängi vastutustundlikult. Goldbet.io aktsepteerib ainult 18-aastaseid ja vanemaid kliente vastavalt sinu jurisdiktsioonile. Goldkey Technologies Limitada, registreerimisnumber 3-102-892568, Küprose seaduste alusel asutatud ja tegutsev ettevõte, on Goldkey Technologies Limitada makseoperaator ning tegutseb makseagendina Goldkey Technologies Limitada nimel`,
+    // | Form
+    signUpTitle: "Registreeru",
+    emailPlaceholder: "E-post",
+    wrongEmail: "Vale e-posti aadress",
+    wrongPassword: "Vähemalt 6 tähemärki.",
+    passwordPlaceholder: "Parool",
+    yourCurrency: "Sinu valuuta",
+    startPlaying: "Alusta mängimist",
+    terms: `Nõustun <span class="text-white underline underline-offset-4">tingimustega</span>`,
+    signUpWithGoogle: "Registreeru Google'iga",
+    signUpWithFacebook: "Registreeru Facebookiga",
+    signUpWithTelegram: "Registreeru Telegramiga",
+    // | Terms
+    termsTitle1: `Tingimused`,
+    termsParagraph1: `Need tingimused ja allpool viidatud dokumendid
+                      ("Tingimused") kehtivad käesoleva veebilehe
+                      ("Veebileht") ja sellega seotud teenuste
+                      (ühiselt "Teenus") kasutamisele. Palun vaata
+                      need Tingimused hoolikalt läbi, kuna need
+                      sisaldavad olulist teavet sinu õiguste ja
+                      kohustuste kohta seoses Veebilehe kasutamisega
+                      ning moodustavad siduva juriidilise lepingu sinu
+                      kui meie kliendi ("Klient") ja meie ("Veebileht")
+                      vahel. Kasutades seda Veebilehte ja/või teenusele
+                      ligi pääsedes nõustud sa, olenemata sellest, kas
+                      oled külaline või registreeritud kasutaja
+                      kontoga (“Konto”), nende Tingimustega koos kõigi
+                      aeg-ajalt avaldatavate muudatustega. Kui sa ei
+                      nõustu nende Tingimustega, peaksid hoiduma
+                      teenusele ligi pääsemisest ja Veebilehe
+                      kasutamisest.`,
+    termsTitle2: `1. Üldtingimused`,
+    termsParagraph2: `Jätame endale õiguse Tingimusi (sealhulgas kõiki
+                      allpool viidatud ja lingitud dokumente) igal ajal
+                      muuta ja täiendada. Soovitame sul seda lehte
+                      perioodiliselt külastada, et Tingimustega
+                      tutvuda. Muudatused jõustuvad ja on siduvad
+                      koheselt pärast nende avaldamist Veebilehel.
+                      Kui sa ei nõustu selliste muudatustega, pead
+                      teenuse kasutamise viivitamatult lõpetama.
+                      Veebilehe jätkuv kasutamine pärast muudatuste
+                      avaldamist tähendab sinu nõusolekut muudetud
+                      Tingimustega. Kõik panused, mida ei ole enne
+                      Tingimuste muutumist lahendatud, kuuluvad
+                      varasemate Tingimuste alla. Kui Goldbeti
+                      tingimusi uuendatakse, teavitab platvorm sind
+                      sellest ja palub sul oma nõusolekut kinnitada.`,
+    termsTitle3: `2. Sinu kohustused`,
+    termsParagraph3: `Kinnitad, et Veebilehele ligi pääsedes ja Teenust
+                      kasutades kehtib alati järgmine: <br />
+                      3.1. Sa oled vähemalt 18-aastane või vanuses, mis
+                      vastab sinu jurisdiktsioonis hasartmängude või
+                      mängutegevuse seaduslikule miinimumile. Jätame
+                      endale õiguse igal ajal küsida vanust tõendavaid
+                      dokumente. <br />
+                      3.2. Sul on õigus- ja teovõime ning sa suudad
+                      sõlmida siduva juriidilise lepingu. Kui sul see
+                      puudub, ei tohi sa Veebilehte ega Teenust
+                      kasutada. <br />
+                      3.3. Sa oled teadlik, et Veebilehe ja pakutavate
+                      toodete kasutamine võib olla teatud riikides
+                      ebaseaduslik. Me ei saa kontrollida Teenuse
+                      seaduslikkust igas jurisdiktsioonis ning seetõttu
+                      vastutad sina ise selle eest, et Veebilehe
+                      kasutamine vastaks sinu riigi seadustele, ning
+                      kinnitad, et hasartmängud ei ole sinu elukohas
+                      keelatud. Õiguslikel või ärilistel põhjustel ei
+                      luba me kontode avamist või kasutamist teatud
+                      jurisdiktsioonide elanikel, sealhulgas, kuid
+                      mitte ainult: Afganistan, Alžeeria, Antigua ja
+                      Barbuda, Austraalia, Valgevene, Bahrein,
+                      Belgia, Bhutan, Brunei, Kesk-Aafrika Vabariik,
+                      Tšaad, Côte d'Ivoire, Horvaatia, Kuuba,
+                      Tšehhi Vabariik, Korea Rahvademokraatlik
+                      Vabariik (Põhja-Korea), Kongo Demokraatlik
+                      Vabariik, Taani, Eesti, Prantsusmaa, Kreeka,
+                      Guinea-Bissau, Ungari, Iraan, Iraak, Island,
+                      Iisrael, Itaalia, Jordaania, Kuveit, Läti,
+                      Libeeria, Leedu, Malta, Myanmar, Holland,
+                      Hollandi Antillid (Curaçao, Sint Maarten,
+                      Bonaire, Sint Eustatius ja Saba, Aruba), Norra,
+                      Omaan, Palestiina, Pakistan, Katar, Venemaa,
+                      Saba, Saint Martin, Saudi Araabia, Serbia,
+                      Sloveenia, Somaalia, Hispaania, Šveits,
+                      Süüria Araabia Vabariik, Sudaan, Trinidad ja
+                      Tobago, Türgi, Ukraina, Ühendkuningriik,
+                      Saksamaa, Komooride Liit, Araabia Ühendemiraadid,
+                      Ameerika Ühendriigid (ja nende sõltlasterritooriumid,
+                      sõjaväebaasid ja territooriumid, nt USA väikesed
+                      äärealad ja Neitsisaared), Vanuatu, Jeemen,
+                      Zimbabwe või muud piiratud jurisdiktsioonid
+                      ("Piiratud jurisdiktsioon"), millest me aeg-ajalt
+                      teatame. Veebilehte kasutades kinnitad, et sa ei
+                      ole Piiratud jurisdiktsiooni elanik. <br />
+                      3.4. Konto avamisel või Veebilehe kasutamisel on
+                      mängija kohustus kontrollida, kas hasartmängud
+                      on vastavas jurisdiktsioonis seaduslikud. <br />
+                      3.5. Sa oled kasutatava makseviisi volitatud
+                      kasutaja ning kõik Teenuses kasutatavad vahendid
+                      on seadusliku päritoluga. <br />
+                      3.6. Sa pead tegema kõik maksed heas usus ega tohi
+                      püüda makseid tagasi pöörata ega algatada
+                      tegevusi, mis võimaldaksid kolmandal osapoolel
+                      makseid tagasi pöörata. <br />
+                      3.7. Panuseid tehes võid kaotada osa või kogu oma
+                      Teenusesse kantud rahast ning vastutad selle
+                      kaotuse eest täielikult. <br />
+                      3.8. Panuseid tehes ei tohi kasutada teavet, mis
+                      on saadud vastuolus seadustega riigis, kus panus
+                      tehti. <br />
+                      3.9. Sa ei tegutse kellegi teise nimel ega
+                      ärilistel eesmärkidel, vaid üksnes isiklikult. <br />
+                      3.10. Sa ei tohi pahatahtlikult manipuleerida ühegi
+                      turu või Teenuse elemendiga ega kahjustada
+                      Teenuse või meie terviklikkust. <br />
+                      3.11. Sa pead Teenuse kasutamisel alati tegutsema
+                      heas usus. <br />
+                      3.12. Sina ega sinu töötajad, tööandjad, esindajad
+                      või pereliikmed ei ole registreeritud meie
+                      partnerprogrammis. <br />
+                      3.13. Goldbeti kasutades nõustud esitama ainult
+                      tõeseid ja korrektseid andmeid ning ajakohastama
+                      neid meie nõudmisel. <br />
+                      3.14. Sa mõistad krüptoturu volatiilsust ja
+                      aktsepteerid võimalust, et sinu valuuta väärtus
+                      võib muutuda väljamakse töötlemise ajal. <br />
+                      3.15. Sa oled vaimselt pädev isik ega kannata
+                      hasartmängusõltuvuse all. Kui sellise probleemiga
+                      isik siseneb saidile, lasub vastutus ainult temal. <br />
+                      3.16. Sa nõustud mitte kasutama kolmanda osapoole
+                      tarkvara ega kuritarvitama platvormil leiduvaid
+                      vigu. <br />
+                      3.17. Sa kinnitad, et kogu teave, mille meile
+                      esitad registreerimisel ja Teenuse kasutamise
+                      ajal, on tõene, täielik ja korrektne ning
+                      teavitad meid viivitamatult muudatustest. <br />
+                      3.17.1. Sa mõistad, et registreerimisel esitatud
+                      teavet ei saa omal soovil muuta; muudatuste
+                      tegemiseks tuleb pöörduda klienditoe poole.
+                      Goldbet võib selliste muudatuste jaoks nõuda KYC
+                      dokumente. <br />
+                      3.18. Sa kinnitad, et ei kasuta meie teenuseid
+                      jurisdiktsioonides, kus veebipõhine panustamine
+                      või kasiinomängud on keelatud. <br />
+                      3.19. Samuti kinnitad, et: <br />
+                      - Osaled Teenuses oma nimel, mitte kellegi teise
+                      nimel; <br />
+                      - Vastutad ise kõigi maksude deklareerimise ja
+                      tasumise eest vastavalt kehtivatele seadustele; <br />
+                      - Vastutad ise kõigi maksude eest, mis võivad
+                      kaasneda krüptovaluuta saamisega Teenuse
+                      kasutamise tulemusena.`,
+  },
+  lv: {
+    pageTitle: "🎁 Tavs bonuss ir gatavs – Goldbet",
+    heroTitle: `Kripto Highroller bonuss <br/> <b><span>200%</span></b> līdz <b><span>100 000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> bezmaksas griezieni par pirmo depozītu`,
+    heroBtn: "saņemt bonusu",
+    paymentsTitle: `Pieņemtas <span>41</span> kriptovalūtas`,
+    advantege1Title: "Draudzīgs VPN",
+    advantege1Text: "Tu vari ērti piekļūt mūsu platformai, izmantojot VPN.",
+    advantege2Title: "Nav nepieciešams KYC",
+    advantege2Text:
+      "Kripto iemaksām un izmaksām nav nepieciešama KYC verifikācija.",
+    advantege3Title: "25% ieteikumu bonuss",
+    advantege3Text: "Uzaicini spēlētājus un nopelni 25% no kazino ieņēmumiem.",
+    footerText: `<span class="current-domain"></span> pieder un to pārvalda Goldkey Technologies Limitada. Reģistrācijas numurs: 3-102-892568, reģistrētā adrese: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Kostarika. Sazinies ar mums: hello@goldbet.io. Goldbet.io ir licencēts un regulēts Anžuānas Autonomās salas valdības (Komoru Savienība) uzraudzībā un darbojas saskaņā ar licenci Nr. ALSI-012401005-F11. Goldbet.io ir izpildījis visas normatīvās prasības un ir juridiski pilnvarots veikt jebkādas azartspēles un derību darbības. Atceries, ka azartspēles var izraisīt atkarību. Spēlē atbildīgi. Goldbet.io pieņem tikai klientus no 18 gadu vecuma atbilstoši tavai jurisdikcijai. Goldkey Technologies Limitada, reģistrācijas numurs 3-102-892568, uzņēmums, kas dibināts un darbojas saskaņā ar Kipras tiesību aktiem, ir Goldkey Technologies Limitada maksājumu operators un darbojas kā maksājumu aģents Goldkey Technologies Limitada vārdā`,
+    // | Form
+    signUpTitle: "Reģistrēties",
+    emailPlaceholder: "E-pasts",
+    wrongEmail: "Nepareizs e-pasts",
+    wrongPassword: "Vismaz 6 rakstzīmes.",
+    passwordPlaceholder: "Parole",
+    yourCurrency: "Tava valūta",
+    startPlaying: "Sākt spēlēt",
+    terms: `Es piekrītu <span class="text-white underline underline-offset-4">noteikumiem un nosacījumiem</span>`,
+    signUpWithGoogle: "Reģistrēties ar Google",
+    signUpWithFacebook: "Reģistrēties ar Facebook",
+    signUpWithTelegram: "Reģistrēties ar Telegram",
+    // | Terms
+    termsTitle1: `Noteikumi un nosacījumi`,
+    termsParagraph1: `Šie noteikumi un nosacījumi, kā arī turpmāk minētie
+                      dokumenti ("Noteikumi") attiecas uz šīs vietnes
+                      ("Vietne") un ar to saistīto pakalpojumu
+                      (kopā – "Pakalpojums") izmantošanu. Lūdzu,
+                      rūpīgi iepazīsties ar šiem Noteikumiem, jo tie
+                      satur svarīgu informāciju par tavām tiesībām un
+                      pienākumiem saistībā ar Vietnes izmantošanu un
+                      veido saistošu juridisku līgumu starp tevi kā
+                      mūsu klientu ("Klients") un mums ("Vietne").
+                      Izmantojot šo Vietni un/vai piekļūstot
+                      Pakalpojumam, neatkarīgi no tā, vai esi viesis
+                      vai reģistrēts lietotājs ar kontu (“Konts”),
+                      tu piekrīti šiem Noteikumiem un jebkuriem to
+                      grozījumiem, kas laiku pa laikam var tikt
+                      publicēti. Ja tu nepiekrīti šiem Noteikumiem,
+                      tev jāatturas no Pakalpojuma izmantošanas un
+                      Vietnes apmeklēšanas.`,
+    termsTitle2: `1. Vispārīgie noteikumi`,
+    termsParagraph2: `Mēs paturam tiesības jebkurā laikā pārskatīt un
+                      grozīt Noteikumus (tostarp visus zemāk minētos
+                      un saistītos dokumentus). Iesakām periodiski
+                      apmeklēt šo lapu, lai iepazītos ar Noteikumiem.
+                      Grozījumi stājas spēkā un ir saistoši nekavējoties
+                      pēc to publicēšanas Vietnē. Ja tu nepiekrīti
+                      šādām izmaiņām, tev nekavējoties jāpārtrauc
+                      Pakalpojuma izmantošana. Vietnes turpmāka
+                      izmantošana pēc grozījumu publicēšanas nozīmē
+                      tavu piekrišanu grozītajiem Noteikumiem.
+                      Visas likmes, kas nav nokārtotas pirms
+                      Noteikumu izmaiņu stāšanās spēkā, tiks regulētas
+                      saskaņā ar iepriekšējiem Noteikumiem. Ja Goldbet
+                      Noteikumi tiks atjaunināti, platforma tevi par
+                      to informēs un lūgs apstiprināt piekrišanu.`,
+    termsTitle3: `2. Tavi pienākumi`,
+    termsParagraph3: `Tu apliecini, ka, piekļūstot Vietnei un
+                      izmantojot Pakalpojumu, vienmēr ir spēkā
+                      sekojošais: <br />
+                      3.1. Tu esi vismaz 18 gadus vecs vai sasniedzis
+                      vecumu, kurā azartspēles ir atļautas saskaņā ar
+                      tavā jurisdikcijā spēkā esošajiem likumiem.
+                      Mēs paturam tiesības jebkurā laikā pieprasīt
+                      vecumu apliecinošus dokumentus. <br />
+                      3.2. Tev ir tiesībspēja un rīcībspēja noslēgt
+                      saistošu juridisku līgumu. Ja tas tā nav, tu
+                      nedrīksti izmantot Vietni vai Pakalpojumu. <br />
+                      3.3. Tu apzinies, ka tiesības piekļūt un
+                      izmantot Vietni un tajā piedāvātos produktus
+                      var būt nelikumīgas noteiktās valstīs. Mēs
+                      nespējam pārbaudīt Pakalpojuma likumību katrā
+                      jurisdikcijā, tāpēc tu pats esi atbildīgs par
+                      to, lai Vietnes izmantošana atbilstu tavas
+                      valsts likumiem, un apliecini, ka azartspēles
+                      nav aizliegtas tavā dzīvesvietā. Juridisku vai
+                      komerciālu iemeslu dēļ mēs neļaujam atvērt vai
+                      izmantot kontus klientiem no noteiktām
+                      jurisdikcijām, tostarp, bet ne tikai:
+                      Afganistāna, Alžīrija, Antigva un Barbuda,
+                      Austrālija, Baltkrievija, Bahreina, Beļģija,
+                      Butāna, Bruneja, Centrālāfrikas Republika,
+                      Čada, Kotdivuāra, Horvātija, Kuba, Čehijas
+                      Republika, Korejas Tautas Demokrātiskā
+                      Republika (Ziemeļkoreja), Kongo Demokrātiskā
+                      Republika, Dānija, Igaunija, Francija,
+                      Grieķija, Gvineja-Bisava, Ungārija, Irāna,
+                      Irāka, Islande, Izraēla, Itālija, Jordānija,
+                      Kuveita, Latvija, Libērija, Lietuva, Malta,
+                      Mjanma, Nīderlande, Nīderlandes Antiļas
+                      (Kirasao, Sintmārtena, Bonēra, Sintēstatiusa
+                      un Saba, Aruba), Norvēģija, Omāna,
+                      Palestīna, Pakistāna, Katara, Krievija,
+                      Saba, Senmartēna, Saūda Arābija, Serbija,
+                      Slovēnija, Somālija, Spānija, Šveice,
+                      Sīrijas Arābu Republika, Sudāna, Trinidāda
+                      un Tobāgo, Turcija, Ukraina, Apvienotā
+                      Karaliste, Vācija, Komoru Savienība,
+                      Apvienotie Arābu Emirāti, Amerikas
+                      Savienotās Valstis (un to atkarīgās
+                      teritorijas, militārās bāzes un teritorijas,
+                      t. i., ASV Mazās Aizjūras salas un Virdžīnu
+                      salas), Vanuatu, Jemena, Zimbabve vai citas
+                      ierobežotās jurisdikcijas ("Ierobežotā
+                      jurisdikcija"), par kurām mēs laiku pa laikam
+                      ziņojam. Izmantojot Vietni, tu apstiprini,
+                      ka neesi Ierobežotās jurisdikcijas iedzīvotājs. <br />
+                      3.4. Atverot kontu vai izmantojot Vietni,
+                      spēlētāja pienākums ir pārbaudīt, vai
+                      azartspēles konkrētajā jurisdikcijā ir
+                      likumīgas. <br />
+                      3.5. Tu esi izmantotā maksājuma veida
+                      pilnvarots lietotājs, un visi līdzekļi, kas
+                      atrodas tavā kontā un tiek izmantoti
+                      Pakalpojumā, ir likumīgas izcelsmes. <br />
+                      3.6. Tev jāveic visi maksājumi godprātīgi un
+                      tu nedrīksti mēģināt atsaukt maksājumu vai
+                      veikt darbības, kas ļautu trešajai pusei
+                      to atsaukt. <br />
+                      3.7. Veicot likmes, tu vari zaudēt daļu vai
+                      visus Pakalpojumā iemaksātos līdzekļus un
+                      pilnībā atbildi par šādiem zaudējumiem. <br />
+                      3.8. Veicot likmes, tu nedrīksti izmantot
+                      informāciju, kas iegūta, pārkāpjot likumus
+                      valstī, kurā likme tika veikta. <br />
+                      3.9. Tu nerīkojies citas personas vārdā vai
+                      komerciāliem nolūkiem, bet tikai savā
+                      personīgajā interesē. <br />
+                      3.10. Tu nedrīksti ļaunprātīgi manipulēt ar
+                      tirgiem vai Pakalpojuma elementiem, kā arī
+                      kaitēt Pakalpojuma vai mūsu integritātei. <br />
+                      3.11. Tu vienmēr rīkosies godprātīgi,
+                      izmantojot Pakalpojumu. <br />
+                      3.12. Tu vai, ja piemērojams, tavi darbinieki,
+                      darba devēji, pārstāvji vai ģimenes locekļi
+                      nav reģistrēti mūsu partneru programmā. <br />
+                      3.13. Izmantojot Goldbet, tu piekrīti sniegt
+                      tikai patiesus, precīzus un objektīvus datus
+                      un atjaunināt tos pēc mūsu pieprasījuma. <br />
+                      3.14. Tu saproti kriptovalūtu tirgus
+                      svārstīgumu un pieņem iespēju, ka tavas
+                      valūtas vērtība var mainīties, kamēr
+                      tiek apstrādāta tava izmaksa. <br />
+                      3.15. Tu esi garīgi spējīga persona un
+                      necieš no azartspēļu atkarības. Ja persona ar
+                      šādu problēmu ieiet vietnē, atbildība gulstas
+                      tikai uz viņu. <br />
+                      3.16. Tu piekrīti neizmantot trešo pušu
+                      programmatūru un neizmantot platformas
+                      kļūdas. <br />
+                      3.17. Tu apliecini, ka visa informācija, ko
+                      sniedz reģistrācijas brīdī un Pakalpojuma
+                      izmantošanas laikā, ir patiesa, pilnīga un
+                      korekta, un tu nekavējoties informēsi mūs par
+                      jebkurām izmaiņām. <br />
+                      3.17.1. Tu apstiprini, ka saproti – reģistrācijas
+                      laikā sniegto informāciju nevar mainīt pēc
+                      savas iniciatīvas; lai veiktu izmaiņas, jāsazinās
+                      ar atbalsta dienestu. Goldbet var pieprasīt
+                      KYC dokumentus šādu izmaiņu veikšanai. <br />
+                      3.18. Tu apliecini, ka neizmanto mūsu
+                      pakalpojumus, atrodoties jurisdikcijās, kur
+                      tiešsaistes derības vai kazino spēles ir
+                      aizliegtas. <br />
+                      3.19. Tu arī apliecini, ka: <br />
+                      - Piedalies Pakalpojumā savā vārdā, nevis
+                      citas personas vārdā; <br />
+                      - Tu esi pilnībā atbildīgs par visu
+                      piemērojamo nodokļu deklarēšanu un samaksu
+                      saskaņā ar attiecīgajiem likumiem par jebkādiem
+                      laimestiem, ko saņem no mums; <br />
+                      - Tu esi pilnībā atbildīgs par visiem
+                      nodokļiem, kas var būt jāmaksā par
+                      kriptovalūtu, kas piešķirta, izmantojot
+                      Pakalpojumu.`,
+  },
+  lt: {
+    pageTitle: "🎁 Tavo premija paruošta – Goldbet",
+    heroTitle: `Kripto Highroller premija <br/> <b><span>200%</span></b> iki <b><span>100 000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> nemokami sukimai už pirmąjį įnašą`,
+    heroBtn: "gauti premiją",
+    paymentsTitle: `Priimamos <span>41</span> kriptovaliutos`,
+    advantege1Title: "Draugiška VPN",
+    advantege1Text: "Gali lengvai naudotis mūsų platforma naudodamas VPN.",
+    advantege2Title: "Nereikalingas KYC",
+    advantege2Text: "Kripto įnašams ir išmokėjimams nereikia KYC patvirtinimo.",
+    advantege3Title: "25% rekomendacijų premija",
+    advantege3Text: "Pakviesk žaidėjus ir uždirbk 25% kazino pajamų.",
+    footerText: `<span class="current-domain"></span> priklauso ir yra valdoma Goldkey Technologies Limitada. Registracijos numeris: 3-102-892568, registruotas adresas: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Kosta Rika. Susisiekite su mumis: hello@goldbet.io. Goldbet.io yra licencijuota ir reguliuojama Anžuano autonominės salos vyriausybės (Komorų Sąjunga) ir veikia pagal licenciją Nr. ALSI-012401005-F11. Goldbet.io atitinka visus reguliavimo reikalavimus ir yra teisėtai įgaliota vykdyti bet kokias azartinių lošimų ir lažybų veiklas. Atminkite, kad azartiniai lošimai gali sukelti priklausomybę. Žaiskite atsakingai. Goldbet.io priima tik 18 metų ir vyresnius klientus pagal jūsų jurisdikciją. Goldkey Technologies Limitada, registracijos numeris 3-102-892568, bendrovė, įsteigta ir veikianti pagal Kipro įstatymus, yra Goldkey Technologies Limitada mokėjimų operatorius ir veikia kaip mokėjimų agentas Goldkey Technologies Limitada vardu`,
+    // | Form
+    signUpTitle: "Registruotis",
+    emailPlaceholder: "El. paštas",
+    wrongEmail: "Neteisingas el. paštas",
+    wrongPassword: "Mažiausiai 6 simboliai.",
+    passwordPlaceholder: "Slaptažodis",
+    yourCurrency: "Tavo valiuta",
+    startPlaying: "Pradėti žaisti",
+    terms: `Sutinku su <span class="text-white underline underline-offset-4">taisyklėmis ir sąlygomis</span>`,
+    signUpWithGoogle: "Registruotis su Google",
+    signUpWithFacebook: "Registruotis su Facebook",
+    signUpWithTelegram: "Registruotis su Telegram",
+    // | Terms
+    termsTitle1: `Taisyklės ir sąlygos`,
+    termsParagraph1: `Šios taisyklės ir sąlygos bei toliau nurodyti
+                      dokumentai ("Taisyklės") taikomi šios svetainės
+                      ("Svetainė") ir su ja susijusių paslaugų
+                      (bendrai – "Paslauga") naudojimui. Prašome
+                      atidžiai susipažinti su šiomis Taisyklėmis, nes
+                      jose pateikiama svarbi informacija apie jūsų
+                      teises ir pareigas, susijusias su Svetainės
+                      naudojimu, ir jos sudaro teisiškai privalomą
+                      sutartį tarp jūsų kaip mūsų kliento ("Klientas")
+                      ir mūsų ("Svetainė"). Naudodamiesi šia Svetaine
+                      ir / arba gaudami prieigą prie Paslaugos,
+                      nepriklausomai nuo to, ar esate svečias, ar
+                      registruotas vartotojas su paskyra (“Paskyra”),
+                      jūs sutinkate laikytis šių Taisyklių ir bet
+                      kokių jų pakeitimų, kurie gali būti paskelbti
+                      laikas nuo laiko. Jei nesutinkate su šiomis
+                      Taisyklėmis, turėtumėte susilaikyti nuo
+                      Paslaugos naudojimo ir Svetainės lankymo.`,
+    termsTitle2: `1. Bendrosios taisyklės`,
+    termsParagraph2: `Pasiliekame teisę bet kuriuo metu peržiūrėti ir
+                      keisti Taisykles (įskaitant visus žemiau
+                      nurodytus ir susietus dokumentus). Rekomenduojame
+                      periodiškai lankytis šiame puslapyje ir
+                      susipažinti su Taisyklėmis. Pakeitimai įsigalioja
+                      ir tampa privalomi iškart po jų paskelbimo
+                      Svetainėje. Jei nesutinkate su tokiais
+                      pakeitimais, turite nedelsiant nutraukti
+                      Paslaugos naudojimą. Tolesnis Svetainės
+                      naudojimas po pakeitimų paskelbimo reiškia jūsų
+                      sutikimą su pakeistomis Taisyklėmis. Visi
+                      statymai, kurie nebuvo užbaigti iki Taisyklių
+                      pakeitimų įsigaliojimo, bus reglamentuojami
+                      pagal ankstesnes Taisykles. Jei Goldbet
+                      Taisyklės bus atnaujintos, platforma jus apie
+                      tai informuos ir paprašys patvirtinti sutikimą.`,
+    termsTitle3: `2. Jūsų įsipareigojimai`,
+    termsParagraph3: `Jūs patvirtinate, kad bet kuriuo metu naudodamiesi
+                      Svetaine ir Paslauga laikotės šių sąlygų: <br />
+                      3.1. Jums yra ne mažiau kaip 18 metų arba jūs
+                      esate sulaukę teisėto amžiaus, nuo kurio
+                      leidžiama dalyvauti azartiniuose lošimuose
+                      pagal jūsų jurisdikcijos įstatymus. Pasiliekame
+                      teisę bet kuriuo metu pareikalauti amžių
+                      patvirtinančių dokumentų. <br />
+                      3.2. Jūs turite teisnumą ir veiksnumą sudaryti
+                      teisiškai privalomą sutartį. Jei to neturite,
+                      negalite naudotis Svetaine ar Paslauga. <br />
+                      3.3. Jūs suprantate, kad teisė naudotis
+                      Svetaine ir joje siūlomais produktais kai kuriose
+                      šalyse gali būti laikoma neteisėta. Mes negalime
+                      patikrinti Paslaugos teisėtumo kiekvienoje
+                      jurisdikcijoje, todėl jūs pats esate atsakingas
+                      už tai, kad naudojimasis Svetaine atitiktų jūsų
+                      šalies įstatymus, ir patvirtinate, kad azartiniai
+                      lošimai nėra draudžiami jūsų gyvenamojoje
+                      vietoje. Dėl teisinių ar komercinių priežasčių
+                      mes neleidžiame atidaryti ar naudoti paskyrų
+                      klientams iš tam tikrų jurisdikcijų, įskaitant,
+                      bet neapsiribojant: Afganistaną, Alžyrą,
+                      Antigvą ir Barbudą, Australiją, Baltarusiją,
+                      Bahreiną, Belgiją, Butaną, Brunėjų, Centrinės
+                      Afrikos Respubliką, Čadą, Dramblio Kaulo Krantą,
+                      Kroatiją, Kubą, Čekijos Respubliką, Korėjos
+                      Liaudies Demokratinę Respubliką (Šiaurės Korėją),
+                      Kongo Demokratinę Respubliką, Daniją, Estiją,
+                      Prancūziją, Graikiją, Gvinėją-Bisau, Vengriją,
+                      Iraną, Iraką, Islandiją, Izraelį, Italiją,
+                      Jordaniją, Kuveitą, Latviją, Liberiją, Lietuvą,
+                      Maltą, Mianmarą, Nyderlandus, Nyderlandų Antilus
+                      (Kiurasao, Sint Marteną, Bonerę, Sint Eustatijų
+                      ir Sabą, Arubą), Norvegiją, Omaną, Palestiną,
+                      Pakistaną, Katarą, Rusiją, Sabą, Sen Marteną,
+                      Saudo Arabiją, Serbiją, Slovėniją, Somalį,
+                      Ispaniją, Šveicariją, Sirijos Arabų Respubliką,
+                      Sudaną, Trinidadą ir Tobagą, Turkiją, Ukrainą,
+                      Jungtinę Karalystę, Vokietiją, Komorų Sąjungą,
+                      Jungtinius Arabų Emyratus, Jungtines Amerikos
+                      Valstijas (ir jų priklausomas teritorijas,
+                      karines bazes ir teritorijas, pvz., JAV Mažąsias
+                      atokias salas ir Mergelių salas), Vanuatu,
+                      Jemeną, Zimbabvę ar kitas ribotas jurisdikcijas
+                      ("Ribota jurisdikcija"), apie kurias mes kartais
+                      pranešame. Naudodamiesi Svetaine patvirtinate,
+                      kad nesate Ribotos jurisdikcijos gyventojas. <br />
+                      3.4. Bandydamas atidaryti paskyrą ar naudodamasis
+                      Svetaine, žaidėjas privalo patikrinti, ar
+                      azartiniai lošimai yra teisėti atitinkamoje
+                      jurisdikcijoje. <br />
+                      3.5. Jūs esate naudojamo mokėjimo būdo
+                      įgaliotasis naudotojas, o visos lėšos, esančios
+                      jūsų paskyroje ir naudojamos Paslaugose, yra
+                      teisėtos kilmės. <br />
+                      3.6. Jūs privalote atlikti visus mokėjimus
+                      sąžiningai ir nebandyti atšaukti mokėjimų ar
+                      imtis veiksmų, dėl kurių trečioji šalis galėtų
+                      juos atšaukti. <br />
+                      3.7. Atlikdami statymus galite prarasti dalį ar
+                      visas į Paslaugą įneštas lėšas ir esate visiškai
+                      atsakingi už tokius nuostolius. <br />
+                      3.8. Atlikdami statymus negalite naudoti
+                      informacijos, gautos pažeidžiant įstatymus
+                      šalyje, kurioje buvo atliktas statymas. <br />
+                      3.9. Jūs neveikiate kito asmens vardu ar
+                      komerciniais tikslais, o tik savo asmeniniais
+                      interesais. <br />
+                      3.10. Jūs neturite bandyti nesąžiningai
+                      manipuliuoti jokiais rinkos ar Paslaugos
+                      elementais ar pakenkti Paslaugos ar mūsų
+                      vientisumui. <br />
+                      3.11. Naudodamiesi Paslauga visada turite veikti
+                      sąžiningai. <br />
+                      3.12. Jūs ar, jei taikoma, jūsų darbuotojai,
+                      darbdaviai, atstovai ar šeimos nariai nėra
+                      registruoti mūsų partnerių programoje. <br />
+                      3.13. Naudodamiesi Goldbet, jūs sutinkate teikti
+                      tik tikrus, teisingus ir objektyvius duomenis ir
+                      atnaujinti juos mūsų prašymu. <br />
+                      3.14. Jūs suprantate kriptovaliutų rinkos
+                      nepastovumą ir sutinkate su galimybe, kad jūsų
+                      valiutos vertė gali pasikeisti, kol laukiama
+                      išmokėjimo arba jis yra apdorojamas. <br />
+                      3.15. Jūs esate protiškai pajėgus asmuo ir
+                      nekenčiate nuo azartinių lošimų priklausomybės.
+                      Jei asmuo, turintis tokią problemą, patenka į
+                      svetainę, atsakomybė tenka tik jam. <br />
+                      3.16. Jūs sutinkate nenaudoti jokios trečiųjų
+                      šalių programinės įrangos ir nepiktnaudžiauti
+                      platformoje rastomis klaidomis. <br />
+                      3.17. Jūs patvirtinate, kad visa informacija,
+                      kurią pateikiate registracijos metu ir
+                      Paslaugos naudojimo laikotarpiu, yra teisinga,
+                      išsami ir tiksli, ir nedelsdami pranešite mums
+                      apie bet kokius jos pakeitimus. <br />
+                      3.17.1. Jūs suprantate, kad registracijos metu
+                      pateiktos informacijos negalima keisti savo
+                      nuožiūra; norėdami pakeisti informaciją,
+                      turite susisiekti su palaikymo komanda.
+                      Goldbet gali pareikalauti KYC dokumentų
+                      tokiems pakeitimams atlikti. <br />
+                      3.18. Jūs patvirtinate, kad nesinaudojate mūsų
+                      paslaugomis būdami jurisdikcijose, kuriose
+                      internetiniai statymai ir (arba) kazino
+                      žaidimai yra draudžiami. <br />
+                      3.19. Taip pat patvirtinate, kad: <br />
+                      - Dalyvaujate Paslaugose savo vardu, o ne kito
+                      asmens vardu; <br />
+                      - Esate visiškai atsakingi už visų taikomų
+                      mokesčių deklaravimą ir sumokėjimą pagal
+                      galiojančius įstatymus už bet kokius laimėjimus,
+                      kuriuos gaunate iš mūsų; <br />
+                      - Esate visiškai atsakingi už visus mokesčius,
+                      kurie gali būti taikomi kriptovaliutai, gautai
+                      naudojantis Paslauga.`,
+  },
+  hr: {
+    pageTitle: "🎁 Tvoj bonus je spreman – Goldbet",
+    heroTitle: `Kripto Highroller bonus <br/> <b><span>200%</span></b> do <b><span>100 000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> besplatnih okretaja na tvoj prvi depozit`,
+    heroBtn: "preuzmi bonus",
+    paymentsTitle: `Prihvaćene <span>41</span> kriptovalute`,
+    advantege1Title: "Prijateljski prema VPN-u",
+    advantege1Text:
+      "Možeš jednostavno pristupiti našoj platformi koristeći VPN.",
+    advantege2Title: "Nije potreban KYC",
+    advantege2Text:
+      "Za kripto uplate i isplate nije potrebna KYC verifikacija.",
+    advantege3Title: "25% referral bonus",
+    advantege3Text: "Pozovi igrače i zaradi 25% prihoda kasina.",
+    footerText: `<span class="current-domain"></span> je u vlasništvu i pod upravljanjem tvrtke Goldkey Technologies Limitada. Registracijski broj: 3-102-892568, registrirana adresa: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Kostarika. Kontaktirajte nas: hello@goldbet.io. Goldbet.io je licenciran i reguliran od strane Vlade Autonomnog otoka Anjouan, Savez Komora, te posluje pod licencom br. ALSI-012401005-F11. Goldbet.io je prošao sve regulatorne provjere i zakonski je ovlašten za obavljanje svih igara na sreću i klađenja. Imajte na umu da kockanje može izazvati ovisnost. Igrajte odgovorno. Goldbet.io prihvaća samo korisnike starije od 18 godina u skladu s vašom jurisdikcijom. Goldkey Technologies Limitada, registracijski broj 3-102-892568, društvo osnovano i koje posluje prema zakonima Cipra, je platni operator tvrtke Goldkey Technologies Limitada te djeluje kao platni agent u ime Goldkey Technologies Limitada`,
+    // | Form
+    signUpTitle: "Registracija",
+    emailPlaceholder: "E-pošta",
+    wrongEmail: "Neispravna e-pošta",
+    wrongPassword: "Najmanje 6 znakova.",
+    passwordPlaceholder: "Lozinka",
+    yourCurrency: "Tvoja valuta",
+    startPlaying: "Počni igrati",
+    terms: `Slažem se s <span class="text-white underline underline-offset-4">Uvjetima i odredbama</span>`,
+    signUpWithGoogle: "Registriraj se putem Googlea",
+    signUpWithFacebook: "Registriraj se putem Facebooka",
+    signUpWithTelegram: "Registriraj se putem Telegrama",
+    // | Terms
+    termsTitle1: `Uvjeti i odredbe`,
+    termsParagraph1: `Ovi uvjeti i odredbe te dokumenti navedeni u nastavku
+                      ("Uvjeti") primjenjuju se na korištenje ove
+                      web-stranice ("Web-stranica") i povezanih
+                      usluga (zajedno "Usluga"). Pažljivo pročitajte
+                      ove Uvjete jer sadrže važne informacije o vašim
+                      pravima i obvezama vezanim uz korištenje
+                      Web-stranice te čine obvezujući pravni ugovor
+                      između vas kao našeg korisnika ("Korisnik") i
+                      nas ("Web-stranica"). Korištenjem ove
+                      Web-stranice i/ili pristupanjem Usluzi,
+                      neovisno o tome jeste li gost ili registrirani
+                      korisnik s računom ("Račun"), pristajete na ove
+                      Uvjete i sve njihove izmjene koje mogu biti
+                      objavljene s vremena na vrijeme. Ako ne
+                      prihvaćate ove Uvjete, trebali biste se
+                      suzdržati od korištenja Usluge i Web-stranice.`,
+    termsTitle2: `1. Opći uvjeti`,
+    termsParagraph2: `Zadržavamo pravo izmjene i dopune Uvjeta
+                      (uključujući sve dokumente navedene i povezane
+                      u nastavku) u bilo kojem trenutku. Preporučujemo
+                      da povremeno posjetite ovu stranicu kako biste
+                      pregledali Uvjete. Izmjene stupaju na snagu i
+                      postaju obvezujuće odmah nakon objave na
+                      Web-stranici. Ako se ne slažete s takvim
+                      izmjenama, morate odmah prestati koristiti
+                      Uslugu. Nastavak korištenja Web-stranice nakon
+                      objave izmjena znači vaše prihvaćanje izmijenjenih
+                      Uvjeta. Sve oklade koje nisu riješene prije
+                      stupanja na snagu izmijenjenih Uvjeta bit će
+                      regulirane prethodnim Uvjetima. Ako se Uvjeti
+                      Goldbeta ažuriraju, platforma će vas o tome
+                      obavijestiti i zatražiti vašu potvrdu pristanka.`,
+    termsTitle3: `2. Vaše obveze`,
+    termsParagraph3: `Potvrđujete da u svakom trenutku prilikom
+                      pristupanja Web-stranici i korištenja Usluge
+                      vrijedi sljedeće: <br />
+                      3.1. Imate najmanje 18 godina ili ste navršili
+                      zakonsku dob za sudjelovanje u igrama na sreću
+                      prema zakonima vaše jurisdikcije. Zadržavamo
+                      pravo u bilo kojem trenutku zatražiti dokaz o
+                      dobi. <br />
+                      3.2. Imate pravnu sposobnost za sklapanje
+                      obvezujućeg pravnog ugovora. Ako to nije slučaj,
+                      ne smijete koristiti Web-stranicu niti Uslugu. <br />
+                      3.3. Svjesni ste da pravo pristupa i korištenja
+                      Web-stranice i ponuđenih proizvoda može biti
+                      nezakonito u određenim državama. Nismo u
+                      mogućnosti provjeriti zakonitost Usluge u svakoj
+                      jurisdikciji, stoga ste vi odgovorni za
+                      utvrđivanje je li korištenje Web-stranice u
+                      skladu sa zakonima vaše države te jamčite da
+                      kockanje nije nezakonito u mjestu vašeg
+                      prebivališta. Iz pravnih ili komercijalnih
+                      razloga ne dopuštamo otvaranje ili korištenje
+                      računa korisnicima iz određenih jurisdikcija,
+                      uključujući, ali ne ograničavajući se na:
+                      Afganistan, Alžir, Antigvu i Barbudu, Australiju,
+                      Bjelorusiju, Bahrein, Belgiju, Butan, Brunej,
+                      Srednjoafričku Republiku, Čad, Obalu Bjelokosti,
+                      Hrvatsku, Kubu, Češku Republiku, Demokratsku
+                      Narodnu Republiku Koreju (Sjeverna Koreja),
+                      Demokratsku Republiku Kongo, Dansku, Estoniju,
+                      Francusku, Grčku, Gvineju-Bisau, Mađarsku, Iran,
+                      Irak, Island, Izrael, Italiju, Jordan, Kuvajt,
+                      Latviju, Liberiju, Litvu, Maltu, Mjanmar,
+                      Nizozemsku, Nizozemske Antile (Curaçao, Sint
+                      Maarten, Bonaire, Sint Eustatius i Saba, Aruba),
+                      Norvešku, Oman, Palestinu, Pakistan, Katar,
+                      Rusiju, Sabu, Saint Martin, Saudijsku Arabiju,
+                      Srbiju, Sloveniju, Somaliju, Španjolsku,
+                      Švicarsku, Sirijsku Arapsku Republiku, Sudan,
+                      Trinidad i Tobago, Tursku, Ukrajinu,
+                      Ujedinjeno Kraljevstvo, Njemačku, Savez Komora,
+                      Ujedinjene Arapske Emirate, Sjedinjene Američke
+                      Države (i njihove ovisne teritorije, vojne baze
+                      i područja, npr. Mala udaljena otočja SAD-a i
+                      Djevičanske Otoke SAD-a), Vanuatu, Jemen,
+                      Zimbabve ili druge ograničene jurisdikcije
+                      ("Ograničena jurisdikcija") koje povremeno
+                      navodimo. Korištenjem Web-stranice potvrđujete
+                      da niste stanovnik Ograničene jurisdikcije. <br />
+                      3.4. Prilikom otvaranja računa ili korištenja
+                      Web-stranice, odgovornost je igrača provjeriti
+                      jesu li igre na sreću zakonite u toj
+                      jurisdikciji. <br />
+                      3.5. Ovlašteni ste korisnik načina plaćanja koji
+                      koristite i sva sredstva na vašem računu koja
+                      se koriste u Uslugama imaju zakonito porijeklo. <br />
+                      3.6. Sve uplate morate izvršavati u dobroj vjeri
+                      i ne smijete pokušavati opozvati uplatu niti
+                      poduzimati radnje koje bi omogućile trećoj strani
+                      da je opozove. <br />
+                      3.7. Prilikom klađenja možete izgubiti dio ili
+                      cjelokupan iznos položenih sredstava te ste u
+                      potpunosti odgovorni za takav gubitak. <br />
+                      3.8. Prilikom klađenja ne smijete koristiti
+                      informacije pribavljene kršenjem zakona države
+                      u kojoj je oklada postavljena. <br />
+                      3.9. Ne djelujete u ime druge osobe niti u
+                      komercijalne svrhe, već isključivo u osobnom
+                      svojstvu. <br />
+                      3.10. Ne smijete pokušavati zlonamjerno
+                      manipulirati tržištima ili elementima Usluge
+                      niti narušavati integritet Usluge ili nas. <br />
+                      3.11. Uvijek morate postupati u dobroj vjeri
+                      prilikom korištenja Usluge. <br />
+                      3.12. Vi, ili ako je primjenjivo vaši zaposlenici,
+                      poslodavci, zastupnici ili članovi obitelji,
+                      niste registrirani u našem partnerskom
+                      programu. <br />
+                      3.13. Korištenjem Goldbeta pristajete pružati
+                      samo istinite, točne i objektivne podatke te ih
+                      ažurirati na naš zahtjev. <br />
+                      3.14. Razumijete volatilnost kripto tržišta i
+                      prihvaćate mogućnost promjene vrijednosti vaše
+                      valute tijekom obrade isplate. <br />
+                      3.15. Mentalno ste sposobna osoba i ne patite od
+                      ovisnosti o kockanju. Ako osoba s takvim
+                      problemom uđe na Stranicu, odgovornost je
+                      isključivo na njoj. <br />
+                      3.16. Slažete se da nećete koristiti softver
+                      trećih strana niti zloupotrebljavati greške
+                      pronađene na platformi. <br />
+                      3.17. Jamčite da su svi podaci koje nam pružite
+                      od trenutka registracije i tijekom korištenja
+                      Usluge istiniti, potpuni i točni te da ćete nas
+                      odmah obavijestiti o svakoj promjeni. <br />
+                      3.17.1. Potvrđujete da razumijete kako se podaci
+                      uneseni prilikom registracije ne mogu mijenjati
+                      po vašoj odluci; za izmjene se morate obratiti
+                      korisničkoj podršci. Goldbet može zatražiti KYC
+                      dokumente radi takvih izmjena. <br />
+                      3.18. Jamčite da nećete koristiti naše usluge
+                      dok se nalazite u jurisdikcijama koje zabranjuju
+                      online klađenje i/ili kasino igre. <br />
+                      3.19. Također jamčite da: <br />
+                      - Sudjelujete u Uslugama u svoje ime, a ne u ime
+                      druge osobe; <br />
+                      - Isključivo ste odgovorni za prijavu i plaćanje
+                      svih poreza koji se na vas primjenjuju prema
+                      važećim zakonima za sve dobitke koje ostvarite; <br />
+                      - Isključivo ste odgovorni za sve poreze koji se
+                      mogu primjenjivati na kriptovalute dodijeljene
+                      korištenjem Usluge.`,
+  },
 };
