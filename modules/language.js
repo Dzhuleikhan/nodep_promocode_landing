@@ -76,6 +76,9 @@ function updateButtonText(lang) {
     lv: "Latvian",
     lt: "Lithuanian",
     hr: "Croatian",
+    fi: "Finnish",
+    dk: "Danish",
+    bg: "Bulgarian",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -113,6 +116,9 @@ async function determineLanguage() {
     LV: "lv",
     LT: "lt",
     HR: "hr",
+    DK: "dk",
+    FI: "fi",
+    BG: "bg",
     // Add more country codes and their corresponding languages as needed
   };
   lang = countryLangMap[location.countryCode] || "en";
