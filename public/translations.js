@@ -1908,4 +1908,156 @@ export const translations = {
                       mogu primjenjivati na kriptovalute dodijeljene
                       korištenjem Usluge.`,
   },
+  dk: {
+    pageTitle: "🎁 Din bonus er klar - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> op til <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis spins ved din første indbetaling`,
+    heroBtn: "få bonus",
+    paymentsTitle: `Accepterede <span>41</span> kryptovalutaer`,
+    advantege1Title: "VPN Venlig",
+    advantege1Text: "Du kan bruge en VPN for nem adgang til vores platform.",
+    advantege2Title: "Ingen KYC Krævet",
+    advantege2Text:
+      "Ingen KYC-verifikation nødvendig for kryptodepoter og -udbetalinger.",
+    advantege3Title: "25% Henvisningsbonus",
+    advantege3Text: "Invitér spillere og tjen 25% af kasinoets indtægter.",
+    footerText: `<span class="current-domain"></span> ejes og drives af Goldkey Technologies Limitada. Registreringsnummer: 3-102-892568, registreret adresse: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Kontakt os på hello@goldbet.io. Goldbet.io er licenseret og reguleret af regeringen på den autonome ø Anjouan, Unionen af Comorerne, og opererer under licens nr. ALSI-012401005-F11. Goldbet.io har bestået alle lovgivningsmæssige krav og er juridisk autoriseret til at udføre spilaktiviteter for alle chance- og væddemålsspil. Husk, at spil kan være vanedannende. Spil ansvarligt. Goldbet.io accepterer kun kunder på 18 år eller ældre i overensstemmelse med din jurisdiktion. Goldkey Technologies Limitada, registreringsnummer 3-102-892568, et selskab organiseret under Cyperns love, er betalingsoperatør for Goldkey Technologies Limitada og handler som betalingsagent på vegne af Goldkey Technologies Limitada.`,
+    // | Form
+    signUpTitle: "Tilmeld dig",
+    emailPlaceholder: "E-mail",
+    wrongEmail: "Forkert e-mail",
+    wrongPassword: "Mindst 6 tegn.",
+    passwordPlaceholder: "Adgangskode",
+    yourCurrency: "Din valuta",
+    startPlaying: "Begynd at spille",
+    terms: `Jeg accepterer <span class="text-white underline underline-offset-4">Vilkår og betingelser</span>`,
+    signUpWithGoogle: "Tilmeld med Google",
+    signUpWithFacebook: "Tilmeld med Facebook",
+    signUpWithTelegram: "Tilmeld med Telegram",
+    // | Terms
+    termsTitle1: `Vilkår og Betingelser`,
+    termsParagraph1: `Disse vilkår og betingelser og de dokumenter, der henvises til nedenfor
+                  ("Vilkårene") gælder for brugen af det nuværende websted ("Webstedet")
+                  og dets tilknyttede tjenester ("Tjenesten"). Du bør nøje gennemgå
+                  disse vilkår, da de indeholder vigtig information om dine rettigheder og
+                  forpligtelser ved brug af Webstedet og udgør en bindende juridisk aftale
+                  mellem dig (kunden) og os (Webstedet). Ved at bruge Webstedet
+                  og/eller få adgang til Tjenesten accepterer du at være bundet af
+                  disse Vilkår, inklusive eventuelle ændringer, som kan offentliggøres fra tid til anden.
+                  Hvis du ikke accepterer Vilkårene, bør du undlade at bruge Tjenesten.`,
+    termsTitle2: `1. Generelle Vilkår`,
+    termsParagraph2: `Vi forbeholder os retten til at revidere og ændre Vilkårene (inklusive
+                  tilknyttede dokumenter) til enhver tid. Du bør periodisk besøge denne side for at
+                  gennemgå Vilkårene. Ændringer vil være bindende straks efter offentliggørelse på Webstedet.
+                  Hvis du er uenig i ændringerne, skal du straks stoppe med at bruge Tjenesten.
+                  Din fortsatte brug af Webstedet efter offentliggørelse vil indikere din accept af de ændrede Vilkår.`,
+    termsTitle3: `2. Dine Forpligtelser`,
+    termsParagraph3: `Du anerkender, at når du får adgang til Webstedet og bruger Tjenesten: <br />
+                  3.1. Du er over 18 år eller af den lovlige alder, hvor gambling er tilladt. Vi kan til enhver tid
+                  kræve dokumentation for alder. <br />
+                  3.2. Du har juridisk kapacitet til at indgå en bindende aftale. <br />
+                  3.3. Du er ansvarlig for at sikre, at brugen af Webstedet er lovlig i dit land. <br />
+                  3.4. Du er autoriseret bruger af betalingsmetoden og alle midler på din konto er lovlige. <br />
+                  3.5. Alle betalinger skal foretages i god tro. <br />
+                  3.6. Ved væddemål kan du miste nogle eller alle indskudte midler. <br />
+                  3.7. Du må ikke misbruge systemer eller forsøge at manipulere Tjenesten. <br />
+                  3.8. Du handler på egne vegne og ikke kommercielt eller på vegne af andre. <br />
+                  3.9. Du accepterer korrekt og sandfærdig information til Goldbet under registrering og brug. <br />
+                  3.10. Du er mentalt kompetent og uden spilafhængighed. <br />
+                  3.11. Du må ikke bruge tredjepartssoftware til at udnytte spil eller fejl på platformen. <br />
+                  3.12. Du er ansvarlig for skatter og overholdelse af gældende love i forhold til gevinster og kryptovaluta.`,
+  },
+  fi: {
+    pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> jopa <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> ilmaiskierrosta ensimmäisellä talletuksellasi`,
+    heroBtn: "hae bonus",
+    paymentsTitle: `Hyväksytään <span>41</span> kryptovaluuttaa`,
+    advantege1Title: "VPN Ystävällinen",
+    advantege1Text: "Voit käyttää VPN:ää päästäksesi alustallemme helposti.",
+    advantege2Title: "Ei KYC-tarkistusta",
+    advantege2Text: "Krypto talletukset ja nostot eivät vaadi KYC-tarkistusta.",
+    advantege3Title: "25% Suosittelubonus",
+    advantege3Text: "Kutsu pelaajia ja ansaitse 25% kasinon tuotoista.",
+    footerText: `<span class="current-domain"></span> omistaa ja hallinnoi Goldkey Technologies Limitada. Rekisterinumero: 3-102-892568, rekisteröity osoite: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Ota yhteyttä hello@goldbet.io. Goldbet.io on lisensoitu ja säännelty Anjouanin autonomisen saaren hallituksen, Komorien unionin toimesta, ja toimii lisenssillä ALSI-012401005-F11. Goldbet.io on läpäissyt kaikki sääntelyvaatimukset ja on laillisesti valtuutettu harjoittamaan rahapelejä. Muistathan, että pelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Goldbet.io hyväksyy vain asiakkaita, jotka ovat vähintään 18-vuotiaita oman lainkäyttöalueesi mukaisesti.`,
+    // | Form
+    signUpTitle: "Rekisteröidy",
+    emailPlaceholder: "Sähköposti",
+    wrongEmail: "Väärä sähköposti",
+    wrongPassword: "Vähintään 6 merkkiä.",
+    passwordPlaceholder: "Salasana",
+    yourCurrency: "Valuuttasi",
+    startPlaying: "Aloita pelaaminen",
+    terms: `Hyväksyn <span class="text-white underline underline-offset-4">Ehdot ja Säännöt</span>`,
+    signUpWithGoogle: "Rekisteröidy Googlen kautta",
+    signUpWithFacebook: "Rekisteröidy Facebookin kautta",
+    signUpWithTelegram: "Rekisteröidy Telegramin kautta",
+    // | Terms
+    termsTitle1: `Ehdot ja Säännöt`,
+    termsParagraph1: `Nämä ehdot ja niihin viitatut asiakirjat ("Ehdot") koskevat tämän verkkosivuston ("Sivusto") käyttöä
+                  ja siihen liittyviä palveluja ("Palvelu"). Tarkista ehdot huolellisesti,
+                  sillä ne sisältävät tärkeää tietoa oikeuksistasi ja velvollisuuksistasi ja muodostavat
+                  sitovan sopimuksen käyttäjän ja palveluntarjoajan välillä. Käyttämällä Sivustoa hyväksyt ehdot.`,
+    termsTitle2: `1. Yleiset ehdot`,
+    termsParagraph2: `Pidätämme oikeuden muuttaa ehtoja milloin tahansa. Tarkista tämä sivu säännöllisesti.
+                  Jatkamalla Sivuston käyttöä hyväksyt uudet ehdot. Aiemmin tehdyt panokset käsitellään
+                  vanhojen ehtojen mukaan.`,
+    termsTitle3: `2. Velvollisuutesi`,
+    termsParagraph3: `Hyväksyt, että käytettäessä Sivustoa: <br />
+                  3.1. Olet vähintään 18-vuotias tai lainmukaisen ikärajan täyttänyt. <br />
+                  3.2. Sinulla on oikeus tehdä sitova sopimus. <br />
+                  3.3. Vastuullasi on varmistaa, että palvelun käyttö on laillista omassa maassasi. <br />
+                  3.4. Maksutavat ovat laillisia ja sinun tulee käyttää niitä vastuullisesti. <br />
+                  3.5. Panokset voivat johtaa tappioihin. <br />
+                  3.6. Et saa yrittää manipuloida palvelua tai käyttää sitä väärin. <br />
+                  3.7. Toimit omalla vastuullasi etkä edusta muita. <br />
+                  3.8. Anna vain oikeat ja totuudenmukaiset tiedot Goldbetille. <br />
+                  3.9. Olet henkisesti kykenevä ja ilman peliriippuvuutta. <br />
+                  3.10. Vastaat veroista ja laillisten velvoitteiden noudattamisesta voitoistasi ja kryptovaluutoista.`,
+  },
+  bg: {
+    pageTitle: "🎁 Вашият бонус е готов - Goldbet",
+    heroTitle: `Crypto Highroller Бонус <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> безплатни завъртания при първия ви депозит`,
+    heroBtn: "вземи бонус",
+    paymentsTitle: `Приети <span>41</span> криптовалути`,
+    advantege1Title: "Поддържа VPN",
+    advantege1Text:
+      "Можете да използвате VPN за лесен достъп до нашата платформа.",
+    advantege2Title: "Без KYC проверка",
+    advantege2Text:
+      "Не е необходима KYC проверка за крипто депозити и тегления.",
+    advantege3Title: "25% Бонус за препоръки",
+    advantege3Text: "Поканете играчи и печелете 25% от приходите на казиното.",
+    footerText: `<span class="current-domain"></span> се притежава и управлява от Goldkey Technologies Limitada. Регистрационен номер: 3-102-892568, регистриран адрес: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Свържете се с нас hello@goldbet.io. Goldbet.io е лицензирано и регулирано от правителството на автономния остров Анжуан, Съюз на Коморските острови и оперира с лиценз № ALSI-012401005-F11. Goldbet.io е изпълнило всички регулаторни изисквания и е законно упълномощено да извършва игрални операции за всякакви хазартни игри и залагания. Помнете, че хазарта може да бъде пристрастяващ. Играйте отговорно. Goldbet.io приема само клиенти на възраст 18+ според вашата юрисдикция.`,
+    // | Form
+    signUpTitle: "Регистрация",
+    emailPlaceholder: "Имейл",
+    wrongEmail: "Невалиден имейл",
+    wrongPassword: "Поне 6 знака.",
+    passwordPlaceholder: "Парола",
+    yourCurrency: "Вашата валута",
+    startPlaying: "Започни да играеш",
+    terms: `Съгласявам се с <span class="text-white underline underline-offset-4">Правила и условия</span>`,
+    signUpWithGoogle: "Регистрация с Google",
+    signUpWithFacebook: "Регистрация с Facebook",
+    signUpWithTelegram: "Регистрация с Telegram",
+    // | Terms
+    termsTitle1: `Правила и условия`,
+    termsParagraph1: `Тези правила и условия и документите, на които се позовават ("Условия"), се прилагат за използването на настоящия уебсайт ("Уебсайт") и свързаните услуги ("Услуга"). Прегледайте внимателно Условията, тъй като те съдържат важна информация за вашите права и задължения и представляват юридически обвързващо споразумение между вас (клиент) и нас (Уебсайт). Използвайки Уебсайта, потвърждавате, че приемате Условията.`,
+    termsTitle2: `1. Общи условия`,
+    termsParagraph2: `Запазваме правото да променяме Условията по всяко време. Проверявайте страницата периодично. Продължаването на използването на Уебсайта след промяна означава, че приемате новите Условия. Предишни залози ще се уреждат според старите Условия.`,
+    termsTitle3: `2. Вашите задължения`,
+    termsParagraph3: `Вие потвърждавате, че при достъп до Уебсайта и използване на Услугата: <br />
+                  3.1. Имате 18+ години или законна възраст за хазарт. <br />
+                  3.2. Имате юридическа способност да сключвате договори. <br />
+                  3.3. Отговаряте за законността на използване във вашата юрисдикция. <br />
+                  3.4. Плащанията са легални и се извършват от вас. <br />
+                  3.5. Залагането може да доведе до загуби. <br />
+                  3.6. Не използвайте услугата за манипулации или измами. <br />
+                  3.7. Действате от свое име, а не от името на трети лица. <br />
+                  3.8. Давате верни данни при регистрация и използване на услугата. <br />
+                  3.9. Имате психическа компетентност и не страдате от хазартна зависимост. <br />
+                  3.10. Отговаряте за данъци и правни задължения спрямо печалби и криптовалута.`,
+  },
 };
