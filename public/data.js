@@ -737,7 +737,7 @@ export const countryLanguagesMap = {
   ID: ["id"],
   CN: ["zh"],
   DK: ["de"],
-  NO: ["nb"],
+  NO: ["dk"],
   RO: ["ro"],
   MD: ["ro"],
   HU: ["hu"],
@@ -752,6 +752,8 @@ export const countryLanguagesMap = {
   LV: ["lv"],
   LT: ["lt"],
   HR: ["hr"],
+  FI: ["fi"],
+  BG: ["bg"],
 };
 
 export const SupportedLanguages = [
@@ -784,6 +786,9 @@ export const SupportedLanguages = [
   "lv",
   "lt",
   "hr",
+  "dk",
+  "fi",
+  "bg",
 ];
 
 export const nodepBonuses = [
