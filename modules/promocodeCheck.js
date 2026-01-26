@@ -1,7 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 
-export const defaulPromocode = "GATES81";
+export const defaulPromocode = "BOOKDEAD72";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
@@ -12,7 +12,7 @@ headerLogoLink.setAttribute(
   "href",
   `https://${newDomain}?promocode=${
     receivedPromocode ? receivedPromocode : defaulPromocode
-  }`
+  }`,
 );
 
 export const defaulSpinAmount = "100";
@@ -30,7 +30,7 @@ document
   .querySelector(".hero-modal-open-btn")
   .setAttribute(
     "data-promocode",
-    receivedPromocode ? receivedPromocode : defaulPromocode
+    receivedPromocode ? receivedPromocode : defaulPromocode,
   );
 
 export const togglePromocodeWrapper = (state) => {
@@ -49,7 +49,7 @@ export const togglePromocodeWrapper = (state) => {
     promoInput.value = "";
   } else {
     console.warn(
-      "Invalid state passed to togglePromocodeWrapper. Use 'show' or 'hide'."
+      "Invalid state passed to togglePromocodeWrapper. Use 'show' or 'hide'.",
     );
   }
 };

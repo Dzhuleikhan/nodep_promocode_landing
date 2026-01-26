@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +9,45 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1231049965651796");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
   </head>
-  <body class="bg-[#091025] overscroll-none">
+  <body class="bg-[#000000] overscroll-none">
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1231049965651796&ev=PageView&noscript=1"
+      />
+    </noscript>
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
       <header
         class="py-[29px] max-[1200px]:py-[13px] absolute leading-0 top-0 w-full z-[500]"
@@ -445,56 +482,31 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/seven.webp"
-            alt="Seven"
-          />
-          <img
-            class="absolute orange-img left-[50%] z-[11] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/orange.webp"
-            alt="Orange"
-          />
-          <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/watermelon.webp"
-            alt="watermelon"
-          />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star.webp"
-            alt="star"
-          />
-          <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/plum.webp"
-            alt="plum"
-          />
           <!-- container -->
           <div
             class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
           >
+            <img
+              class="absolute hero-image left-[48%] translate-x-[-50%] bottom-[100px] z-10 pointer-events-none w-full max-w-[180px]"
+              width="163"
+              height="163"
+              src="https://3344112-img.b-cdn.net/graphic/landings/bookofdead/letter_j.webp"
+              alt="Letter"
+            />
+            <img
+              class="absolute hero-image top-[150px] right-[-100px] z-10 pointer-events-none w-full max-w-[180px]"
+              width="163"
+              height="163"
+              src="https://3344112-img.b-cdn.net/graphic/landings/bookofdead/letter_q.webp"
+              alt="Letter"
+            />
+            <img
+              class="absolute hero-image right-[-200px] bottom-[120px] z-10 pointer-events-none w-full max-w-[230px]"
+              width="210"
+              height="210"
+              src="https://3344112-img.b-cdn.net/graphic/landings/bookofdead/letter_num.webp"
+              alt="Letter"
+            />
             <!-- inner -->
             <div class="relative z-20">
               <div
@@ -511,17 +523,17 @@
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
-                  class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[350px]:px-4 max-[350px]:w-full"
+                  class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[992px]:mt-[450px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[350px]:px-4 max-[350px]:w-full"
                 >
-                  GET BONUS
+                  <span>GET BONUS</span>
                 </button>
               </div>
             </div>
             <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] max-[992px]:-translate-x-[50%] max-[992px]:left-[50%] z-[3] left-[280px] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
+              class="absolute hero-main-img w-full max-w-[570px] max-[576px]:w-full max-[992px]:bottom-[150px] max-[992px]:-translate-x-[50%] max-[992px]:left-[50%] z-[3] left-[550px] bottom-[50px] max-[576px]:relative max-[576px]:-bottom-[30px]"
+              width="579"
+              height="564"
+              src="https://3344112-img.b-cdn.net/graphic/landings/bookofdead/hero_img.webp"
               alt="Zeus"
             />
           </div>
@@ -531,7 +543,7 @@
           class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
         >
           <div
-            class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
+            class="bg-[#68411D] step-wrapper relative border-2 border-[#CE7237] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
           >
             <div class="step-slider">
               <div class="swiper-wrapper">
@@ -2500,7 +2512,7 @@
         </div>
       </div>
       <div
-        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#091025]"
+        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#0f0f0f]"
       >
         <svg
           width="106"
