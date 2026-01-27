@@ -24,7 +24,7 @@ jobs:
       - name: Build project
         run: npm run build # Adjust if your build command differs
 
-      # goldbet.wiki/
+      # goldbet.wiki//
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
