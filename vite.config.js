@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "https://landing-res.b-cdn.net/freespins/gatesofolympus/",
+  base: "https://landing-res.b-cdn.net/freespins/gatesofolympus/au/insight/",
   esbuild: {
     supported: {
       "top-level-await": true,
