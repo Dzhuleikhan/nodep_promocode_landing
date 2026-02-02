@@ -13,3 +13,4 @@ import "../modules/marquee";
 import "../modules/language";
 import "../modules/promocodeCheck";
 import "../modules/formSocials";
+import "../modules/fb_pixel";
