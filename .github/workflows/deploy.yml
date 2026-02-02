@@ -53,7 +53,7 @@ jobs:
       #     local-dir: ./dist/ # The folder containing your built project
       #     server-dir: /www/promogb.top/indiacas/vip/ # The directory on the server where you want to upload the dist folder
 
-      # promogb.com
+      # promogb.com //
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
