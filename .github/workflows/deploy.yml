@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -53,7 +53,7 @@ jobs:
       #     local-dir: ./dist/ # The folder containing your built project
       #     server-dir: /www/promogb.top/indiacas/vip/ # The directory on the server where you want to upload the dist folder
 
-      # promogb.com //
+      # promogb.com
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
