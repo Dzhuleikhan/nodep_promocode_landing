@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -27,7 +27,7 @@ jobs:
       # goldbet.wiki/
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -36,7 +36,7 @@ jobs:
           server-dir: /www/goldbet.wiki/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -45,7 +45,7 @@ jobs:
           server-dir: /www/goldbet.wiki/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -56,7 +56,7 @@ jobs:
       # promogb.top
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -65,7 +65,7 @@ jobs:
           server-dir: /www/promogb.top/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -74,7 +74,7 @@ jobs:
           server-dir: /www/promogb.top/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -85,7 +85,7 @@ jobs:
       # promogb.com
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -94,7 +94,7 @@ jobs:
           server-dir: /www/promogb.com/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -103,7 +103,7 @@ jobs:
           server-dir: /www/promogb.com/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -114,7 +114,7 @@ jobs:
       # goldbet.website
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -123,7 +123,7 @@ jobs:
           server-dir: /www/goldbet.website/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -132,7 +132,7 @@ jobs:
           server-dir: /www/goldbet.website/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -143,7 +143,7 @@ jobs:
       # goldbetio.com
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -152,7 +152,7 @@ jobs:
           server-dir: /www/goldbetio.com/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -161,7 +161,7 @@ jobs:
           server-dir: /www/goldbetio.com/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -172,7 +172,7 @@ jobs:
       # goldbet.sbs
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -181,7 +181,7 @@ jobs:
           server-dir: /www/goldbet.sbs/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -190,7 +190,7 @@ jobs:
           server-dir: /www/goldbet.sbs/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -201,7 +201,7 @@ jobs:
       # goldbet.monster
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -210,7 +210,7 @@ jobs:
           server-dir: /www/goldbet.monster/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -219,7 +219,7 @@ jobs:
           server-dir: /www/goldbet.monster/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -230,7 +230,7 @@ jobs:
       # goldbet.lol
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -239,7 +239,7 @@ jobs:
           server-dir: /www/goldbet.lol/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -248,7 +248,7 @@ jobs:
           server-dir: /www/goldbet.lol/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -259,7 +259,7 @@ jobs:
       # goldbet.cam
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -268,7 +268,7 @@ jobs:
           server-dir: /www/goldbet.cam/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -277,7 +277,7 @@ jobs:
           server-dir: /www/goldbet.cam/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -288,7 +288,7 @@ jobs:
       # goldbet.cfd
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -297,7 +297,7 @@ jobs:
           server-dir: /www/goldbet.cfd/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -306,7 +306,7 @@ jobs:
           server-dir: /www/goldbet.cfd/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -317,7 +317,7 @@ jobs:
       # goldbet.click
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -326,7 +326,7 @@ jobs:
           server-dir: /www/goldbet.click/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -335,7 +335,7 @@ jobs:
           server-dir: /www/goldbet.click/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -346,7 +346,7 @@ jobs:
       # goldbet.cyou
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -355,7 +355,7 @@ jobs:
           server-dir: /www/goldbet.cyou/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -364,7 +364,7 @@ jobs:
           server-dir: /www/goldbet.cyou/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
@@ -375,7 +375,7 @@ jobs:
       # goldbet.fun
 
       - name: Deploy to VPS 185.206.180.88 - PRIMA
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_PRIMA }}
           username: ${{ secrets.FTP_USER_PRIMA }}
@@ -384,7 +384,7 @@ jobs:
           server-dir: /www/goldbet.fun/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 194.164.235.224 - Hostkey
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_HOSTKEY }}
           username: ${{ secrets.FTP_USER_HOSTKEY }}
@@ -393,7 +393,7 @@ jobs:
           server-dir: /www/goldbet.fun/casinobonusesfinder/monkeyheist/dep500/ # The directory on the server where you want to upload the dist folder
 
       - name: Deploy to VPS 148.113.44.74 - OVH
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST_OVH }}
           username: ${{ secrets.FTP_USER_OVH }}
