@@ -12,3 +12,4 @@ import "../modules/modalCurrency";
 import "../modules/modalOpen";
 import "../modules/language";
 import "../modules/promocodeCheck";
+import "../modules/fb_pixel";
