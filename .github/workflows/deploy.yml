@@ -3,7 +3,7 @@ name: Deploy to VPS Servers
 on:
   push:
     branches:
-      - WELCOME_HamsterRun
+      - WELCOME_IceFishing
 
 jobs:
   deploy:
@@ -60,4 +60,4 @@ jobs:
           username: ${{ secrets[format('FTP_USER_{0}', matrix.vps)] }}
           password: ${{ secrets[format('FTP_PASSWORD_{0}', matrix.vps)] }}
           local-dir: ./dist/
-          server-dir: /www/${{ matrix.site }}/hamsterrun/welcome/
+          server-dir: /www/${{ matrix.site }}/icefishing/welcome/
