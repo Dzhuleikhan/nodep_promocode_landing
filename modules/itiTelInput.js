@@ -2,7 +2,7 @@ import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 import { geoData } from "./geoLocation";
 import Inputmask from "inputmask";
 
-const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
+const socialsPhoneInput = document.querySelector(".socials-phone-input");
 
 const geoIpLookup = (success, failure) => {
   if (geoData && geoData.countryCode) {
@@ -12,11 +12,11 @@ const geoIpLookup = (success, failure) => {
   }
 };
 
-export const twoStepiti = intlTelInput(twoStepPhoneInput, {
+export const socialsIti = intlTelInput(socialsPhoneInput, {
   initialCountry: "auto",
   separateDialCode: true,
   useFullscreenPopup: false,
-  autoPlaceholder: "aggressive",
+  autoPlaceholder: "polite",
   geoIpLookup,
   customPlaceholder: function (selectedCountryPlaceholder) {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");
@@ -24,7 +24,7 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
 });
 
 const applyMask = () => {
-  const placeholder = twoStepPhoneInput.getAttribute("placeholder");
+  const placeholder = socialsPhoneInput.getAttribute("placeholder");
 
   if (!placeholder) return;
 
@@ -34,9 +34,9 @@ const applyMask = () => {
     mask: maskPattern,
     placeholder: "X",
     clearMaskOnLostFocus: true,
-  }).mask(twoStepPhoneInput);
+  }).mask(socialsPhoneInput);
 };
 
-twoStepPhoneInput.addEventListener("focus", applyMask);
-twoStepPhoneInput.addEventListener("click", applyMask);
-twoStepPhoneInput.addEventListener("countrychange", applyMask);
+socialsPhoneInput.addEventListener("focus", applyMask);
+socialsPhoneInput.addEventListener("click", applyMask);
+socialsPhoneInput.addEventListener("countrychange", applyMask);
