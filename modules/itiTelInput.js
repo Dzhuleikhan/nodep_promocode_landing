@@ -23,8 +23,6 @@ export const socialsIti = intlTelInput(socialsPhoneInput, {
   },
 });
 
-// check
-
 const applyMask = () => {
   const placeholder = socialsPhoneInput.getAttribute("placeholder");
 
