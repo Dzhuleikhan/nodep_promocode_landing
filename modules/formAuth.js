@@ -1,6 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getSupportedLanguage } from "./geoLocation";
 import { getUrlParameter } from "./params";
+import { defaulPromocode, receivedPromocode } from "./promocodeCheck";
 
 // | AUTH FORM VALIDATION AND SUBMITTING
 
@@ -23,6 +24,7 @@ let checkboxValid = true;
 formData.lang = lang;
 formData.promocode = defaultPromocode;
 formData.cid = cid;
+formData.promocode = receivedPromocode ? receivedPromocode : defaulPromocode;
 
 function enableSubmitButton() {
   if (emailValid && passwordValid && checkboxValid) {
@@ -127,7 +129,7 @@ function submitForm(form) {
     window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${
       formData.currency
     }&email=${encodeURIComponent(formData.email)}&password=${encodeURIComponent(
-      formData.password
+      formData.password,
     )}${formData.bonus ? "&bonus=" + formData.bonus : ""}${
       formData.promocode ? "&promocode=" + formData.promocode : ""
     }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}${
@@ -137,14 +139,14 @@ function submitForm(form) {
       `https://${newDomain}/api/register?env=prod&type=email&currency=${
         formData.currency
       }&email=${encodeURIComponent(
-        formData.email
+        formData.email,
       )}&password=${encodeURIComponent(formData.password)}${
         formData.bonus ? "&bonus=" + formData.bonus : ""
       }${formData.promocode ? "&promocode=" + formData.promocode : ""}&lang=${
         formData.lang
       }${formData.cid ? "&cid=" + formData.cid : ""}${
         partner ? "&partner=" + partner : ""
-      }${offer ? "&offer=" + offer : ""}`
+      }${offer ? "&offer=" + offer : ""}`,
     );
     console.log(formData);
   });
@@ -173,7 +175,7 @@ socialsRegBtns.forEach((btn) => {
         formData.promocode ? "&promocode=" + formData.promocode : ""
       }&lang=${formData.lang}${formData.cid ? "&cid=" + formData.cid : ""}${
         partner ? "&partner=" + partner : ""
-      }${offer ? "&offer=" + offer : ""}`
+      }${offer ? "&offer=" + offer : ""}`,
     );
   });
 });
