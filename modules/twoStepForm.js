@@ -929,6 +929,7 @@ if (headerbackBtn) {
 
 // | SUBMITTING FORM
 const twoStepFormMain = document.querySelector(".two-step-form");
+twoStepFormData.lang = localStorage.getItem("preferredLanguage");
 
 let cid = getUrlParameter("cid");
 let partner = getUrlParameter("partner");
