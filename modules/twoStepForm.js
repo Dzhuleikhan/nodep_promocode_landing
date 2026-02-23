@@ -67,13 +67,13 @@ export const checkTir1CurrencyMatch = (currency, bonus) => {
 };
 
 twoStepFormData.bonus = document.querySelector(
-  'input[name="bonus"]:checked'
+  'input[name="bonus"]:checked',
 ).value;
 
 // | CHOOSING BONUSES
 
 const twoStepBonusCheckbox = document.querySelectorAll(
-  ".two-step-bonus-checkbox"
+  ".two-step-bonus-checkbox",
 );
 const appliedBonusWrapper = document.querySelectorAll(".applied-bonus-wrapper");
 
@@ -84,10 +84,10 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 
     const bonusImg = input.getAttribute("data-img");
     const bonusName = checkbox.querySelector(
-      ".two-step-bonus-checkbox-name"
+      ".two-step-bonus-checkbox-name",
     ).innerHTML;
     const bonusText = checkbox.querySelector(
-      ".two-step-bonus-checkbox-text"
+      ".two-step-bonus-checkbox-text",
     ).innerHTML;
 
     if (bonusValue === "welcome-bonus-1" || bonusValue === "0") {
@@ -107,7 +107,7 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 
     twoStepFormData.bonus = checkTir1CurrencyMatch(
       twoStepFormData.currency,
-      twoStepFormData.bonus
+      twoStepFormData.bonus,
     );
 
     appliedBonusWrapper.forEach((appliedBonus) => {
@@ -124,7 +124,7 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 
 export const settingInitialBonusValue = (currency) => {
   const currencyEntry = countryCurrencyData.find(
-    (entry) => entry.countryCurrency === currency
+    (entry) => entry.countryCurrency === currency,
   );
 
   if (exceptCurrencies.includes(currency)) {
@@ -165,7 +165,7 @@ export const settingInitialBonusValue = (currency) => {
 
 // | INPUTS
 const twoStepGeneralInput = document.querySelectorAll(
-  ".two-step-general-input"
+  ".two-step-general-input",
 );
 
 twoStepGeneralInput.forEach((input) => {
@@ -180,7 +180,7 @@ twoStepGeneralInput.forEach((input) => {
 // | PROMOCODE
 const twoStepPromocodeBtn = document.querySelector(".two-step-promocode-btn");
 const twoStepPromocodeWrapper = document.querySelector(
-  ".two-step-promocode-wrapper"
+  ".two-step-promocode-wrapper",
 );
 if (twoStepPromocodeBtn) {
   twoStepPromocodeBtn.addEventListener("click", () => {
@@ -198,10 +198,10 @@ promocodeWrapperTl
 
 if (twoStepPromocodeWrapper) {
   const input = twoStepPromocodeWrapper.querySelector(
-    ".two-step-promocode-input"
+    ".two-step-promocode-input",
   );
   const promocodeApplyBtn = twoStepPromocodeWrapper.querySelector(
-    ".two-step-promocode-apply-btn"
+    ".two-step-promocode-apply-btn",
   );
 
   let promoIsValid;
@@ -217,7 +217,7 @@ if (twoStepPromocodeWrapper) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ code: promoCode }),
-        }
+        },
       );
 
       const result = await response.json();
@@ -239,7 +239,7 @@ if (twoStepPromocodeWrapper) {
     console.log(promoIsValid);
     if (promoIsValid) {
       twoStepFormData.promocode = validateStringInput(
-        input.value
+        input.value,
       ).toUpperCase();
       console.log("Промокод верный");
       twoStepPromocodeWrapper.classList.add("is-valid");
@@ -262,10 +262,10 @@ if (twoStepFormSecondStep) {
     twoStepFormSecondStep.querySelector(".next-step-btn");
 
   const twoStepFormEmailInput = twoStepFormSecondStep.querySelector(
-    ".two-step-email-input"
+    ".two-step-email-input",
   );
   const twoStepFormPasswordInput = twoStepFormSecondStep.querySelector(
-    ".two-step-password-input"
+    ".two-step-password-input",
   );
   const btnOverlap = twoStepFormSecondStepBtn.querySelector(".disable-overlap");
 
@@ -301,10 +301,10 @@ if (twoStepFormSecondStep) {
   };
 
   twoStepFormEmailInput.addEventListener("focusout", () =>
-    validateInputs("#4ED937", "#ff5530")
+    validateInputs("#4ED937", "#ff5530"),
   );
   twoStepFormPasswordInput.addEventListener("focusout", () =>
-    validateInputs("#4ED937", "#ff5530")
+    validateInputs("#4ED937", "#ff5530"),
   );
 
   if (
@@ -325,7 +325,7 @@ if (twoStepFormSecondStep) {
 
   // Show password
   const passwordShowBtn = twoStepFormSecondStep.querySelector(
-    ".two-step-password-show-btn"
+    ".two-step-password-show-btn",
   );
   passwordShowBtn.addEventListener("click", () => {
     let img = passwordShowBtn.querySelector("img");
@@ -333,13 +333,13 @@ if (twoStepFormSecondStep) {
       twoStepFormPasswordInput.type = "text";
       img.setAttribute(
         "src",
-        CDN + "/graphic/landings/twoStepFormImages/password-hide-icon.svg"
+        CDN + "/graphic/landings/twoStepFormImages/password-hide-icon.svg",
       );
     } else {
       twoStepFormPasswordInput.type = "password";
       img.setAttribute(
         "src",
-        CDN + "/graphic/landings/twoStepFormImages/password-show-icon.svg"
+        CDN + "/graphic/landings/twoStepFormImages/password-show-icon.svg",
       );
     }
   });
@@ -353,20 +353,20 @@ const validateStringInput = (input) => {
 const twoStepFormThirdStep = document.querySelector(".two-step-form-step-3");
 if (twoStepFormThirdStep) {
   const firstName = twoStepFormThirdStep.querySelector(
-    ".two-step-first-name-input"
+    ".two-step-first-name-input",
   );
   const lastName = twoStepFormThirdStep.querySelector(
-    ".two-step-last-name-input"
+    ".two-step-last-name-input",
   );
   const twoStepBirthdayInput = twoStepFormThirdStep.querySelector(
-    ".two-step-birthday-input"
+    ".two-step-birthday-input",
   );
 
   const twoStepBirthdayAlert = document.querySelector(
-    ".two-step-birthday-alert"
+    ".two-step-birthday-alert",
   );
   const twoStepBirthdayAlertInvalid = document.querySelector(
-    ".two-step-birthday-alert-invalid"
+    ".two-step-birthday-alert-invalid",
   );
 
   const nextBtn = twoStepFormThirdStep.querySelector(".next-step-btn");
@@ -513,7 +513,7 @@ if (twoStepFormThirdStep) {
       twoStepFormData.lastName = validateStringInput(lastName.value);
 
       twoStepFormData.gender = document.querySelector(
-        'input[name="gender"]:checked'
+        'input[name="gender"]:checked',
       ).value;
     } else {
       nextBtn.disabled = true;
@@ -532,7 +532,7 @@ if (twoStepFormThirdStep) {
 
   // GENDER CHECKBOXES
   const genderCheckboxInputs = document.querySelectorAll(
-    ".gender-checkbox-input"
+    ".gender-checkbox-input",
   );
 
   genderCheckboxInputs.forEach((input) => {
@@ -549,28 +549,28 @@ const twoStepFormFourthStep = document.querySelector(".two-step-form-step-4");
 if (twoStepFormFourthStep) {
   // ? Country
   const twoStepAppliedCountryInput = twoStepFormFourthStep.querySelector(
-    ".two-step-country-input"
+    ".two-step-country-input",
   );
   const twoStepAppliedCountryImage = twoStepFormFourthStep.querySelector(
-    ".two-step-country-image"
+    ".two-step-country-image",
   );
   const twoStepCountryWrapper = twoStepFormFourthStep.querySelector(
-    ".two-step-country-wrapper"
+    ".two-step-country-wrapper",
   );
   const twoStepCountryButton = twoStepFormFourthStep.querySelector(
-    ".two-step-country-button"
+    ".two-step-country-button",
   );
   const twoStepCountryDropdown = twoStepFormFourthStep.querySelector(
-    ".two-step-country-drowpdown"
+    ".two-step-country-drowpdown",
   );
   const twoStepCountryList = twoStepCountryDropdown.querySelector(
-    ".two-step-country-list"
+    ".two-step-country-list",
   );
   const twoStepCountryListItems = twoStepCountryDropdown.querySelectorAll(
-    ".two-step-country-list-item"
+    ".two-step-country-list-item",
   );
   const twoStepCountrySearchInput = twoStepCountryDropdown.querySelector(
-    ".two-step-country-search-input"
+    ".two-step-country-search-input",
   );
 
   const headerlogoFlag = document.querySelector(".header-logo-flag");
@@ -687,7 +687,7 @@ if (twoStepFormFourthStep) {
 
     // Filter countries based on the search input
     const filteredCountries = countryFlags.filter((country) =>
-      country.name.toLowerCase().includes(filter.toLowerCase())
+      country.name.toLowerCase().includes(filter.toLowerCase()),
     );
 
     // Render each country in the filtered list
@@ -736,32 +736,32 @@ if (twoStepFormFourthStep) {
   const submitBtn = twoStepFormFourthStep.querySelector(".submit-btn");
   const btnOverlap = twoStepFormFourthStep.querySelector(".disable-overlap");
   const twoStepPhoneInput = twoStepFormFourthStep.querySelector(
-    ".two-step-phone-input"
+    ".two-step-phone-input",
   );
   const twoStepCityInput = twoStepFormFourthStep.querySelector(
-    ".two-step-city-input"
+    ".two-step-city-input",
   );
   const twoStepAddressInput = twoStepFormFourthStep.querySelector(
-    ".two-step-address-input"
+    ".two-step-address-input",
   );
   const twoStepZipcodeInput = twoStepFormFourthStep.querySelector(
-    ".two-step-zipcode-input"
+    ".two-step-zipcode-input",
   );
 
   const twoStepStateBtn = twoStepFormFourthStep.querySelector(
-    ".two-step-state-wrapper"
+    ".two-step-state-wrapper",
   );
   const twoStepStateInput = twoStepStateBtn.querySelector(
-    ".two-step-state-input"
+    ".two-step-state-input",
   );
   const twoStepStateInputLabel = twoStepStateBtn.querySelector(
-    ".two-step-state-label"
+    ".two-step-state-label",
   );
   const twoStepStateList = twoStepFormFourthStep.querySelector(
-    ".two-step-state-list"
+    ".two-step-state-list",
   );
   const twoStepStateListItem = twoStepStateList.querySelectorAll(
-    ".two-step-state-list-item"
+    ".two-step-state-list-item",
   );
 
   if (!isCanada || !isAustralia) {
@@ -956,7 +956,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   const twoStepSubmitBtn = twoStepFormMain.querySelector(".submit-btn");
   const btnLoader = twoStepSubmitBtn.querySelector(
-    ".two-step-submit-btn-loader"
+    ".two-step-submit-btn-loader",
   );
   const btnIcon = twoStepSubmitBtn.querySelector(".two-step-submit-btn-icon");
   const btnText = twoStepSubmitBtn.querySelector(".two-step-submit-btn-text");
@@ -987,7 +987,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
   console.log(twoStepFormData);
 
   window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
-    email
+    email,
   )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
   }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
@@ -1003,7 +1003,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
   }`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
-      email
+      email,
     )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
     }&lang=${lang}${
@@ -1018,7 +1018,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
       address ? "&address=" + encodeURIComponent(address) : ""
     }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
       offer ? "&offer=" + offer : ""
-    }`
+    }`,
   );
 });
 
@@ -1027,7 +1027,7 @@ gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
 // Closing modal
 
 const twoStepModalCloseBtn = document.querySelector(
-  ".two-step-modal-close-btn"
+  ".two-step-modal-close-btn",
 );
 const twoStepFormInner = document.querySelector(".two-step-modal");
 const twoStepDeclineInner = document.querySelector(".two-step-decline");
@@ -1055,4 +1055,20 @@ if (twoStepReturnBtn) {
     twoStepDeclineInner.classList.add("hidden");
     document.body.style.overflow = "visible";
   });
+}
+
+// One-tap google auth
+window.onload = function () {
+  google.accounts.id.initialize({
+    client_id:
+      "757023558262-l0ffftmca719f5a4ksq4r5l2rugankkn.apps.googleusercontent.com",
+    callback: handleCredentialResponse,
+    auto_select: false,
+    cancel_on_tap_outside: true,
+  });
+  google.accounts.id.prompt();
+};
+
+function handleCredentialResponse() {
+  window.location.href = `https://${newDomain}/api/register?env=prod&type=google&currency=${twoStepFormData.currency}${twoStepFormData.promocode ? "&promocode=" + twoStepFormData.promocode : ""}&lang=${twoStepFormData.lang}${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
 }
