@@ -54,7 +54,7 @@ formModals.forEach((modal) => {
       const emailRegEx =
         /^(?!.*\.\.)[a-zA-Z0-9][a-zA-Z0-9!#$%&'*+/=?^_`{|}~.-]{0,62}[a-zA-Z0-9]@(?:\[(?:\d{1,3}\.){3}\d{1,3}\]|[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z]{2,})+)$/;
       const formGroupEmail = formStep1.querySelector(
-        ".socials-form-group-email"
+        ".socials-form-group-email",
       );
       const emalInput = formGroupEmail.querySelector(".email-input");
 
@@ -87,7 +87,7 @@ formModals.forEach((modal) => {
 
       // Phone validation
       const formGroupPhone = formStep1.querySelector(
-        ".socials-form-group-phone"
+        ".socials-form-group-phone",
       );
       const phoneInput = formGroupPhone.querySelector(".phone-input");
 
@@ -185,7 +185,7 @@ formModals.forEach((modal) => {
 
       // Password validation
       const formGroupPassword = formStep2.querySelector(
-        ".socials-form-group-password"
+        ".socials-form-group-password",
       );
       const passwordInput = formGroupPassword.querySelector(".password-input");
       const passwordShowIcon =
@@ -319,7 +319,7 @@ if (mainForm) {
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&email=${encodeURIComponent(
-              formData.email
+              formData.email,
             )}&password=${encodeURIComponent(formData.password)}${
               formData.bonus === "" ? "" : "&bonus=" + formData.bonus
             }${
@@ -331,14 +331,14 @@ if (mainForm) {
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
               }&email=${encodeURIComponent(
-                formData.email
+                formData.email,
               )}&password=${encodeURIComponent(formData.password)}${
                 formData.bonus === "" ? "" : "&bonus=" + formData.bonus
               }${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
               }&lang=${lang}${cid ? "&cid=" + cid : ""}${
                 partner ? "&partner=" + partner : ""
-              }${offer ? "&offer=" + offer : ""}`
+              }${offer ? "&offer=" + offer : ""}`,
             );
           } else if (formTab === "phone") {
             disableFormWhileSubmitting();
@@ -346,7 +346,7 @@ if (mainForm) {
             window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&phone=${formData.phone}&password=${encodeURIComponent(
-              formData.password
+              formData.password,
             )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
               formData.promocode ? "&promocode=" + formData.promocode : ""
             }&lang=${lang}${cid ? "&cid=" + cid : ""}${
@@ -356,12 +356,12 @@ if (mainForm) {
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
               }&phone=${formData.phone}&password=${encodeURIComponent(
-                formData.password
+                formData.password,
               )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
                 formData.promocode ? "&promocode=" + formData.promocode : ""
               }&lang=${lang}${cid ? "&cid=" + cid : ""}${
                 partner ? "&partner=" + partner : ""
-              }${offer ? "&offer=" + offer : ""}s`
+              }${offer ? "&offer=" + offer : ""}s`,
             );
           }
         }
@@ -416,7 +416,7 @@ if (mainForm) {
       window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
       }&email=${encodeURIComponent(
-        formData.email
+        formData.email,
       )}&password=${encodeURIComponent(formData.password)}${
         formData.bonus === "" ? "" : "&bonus=" + formData.bonus
       }${
@@ -428,14 +428,14 @@ if (mainForm) {
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
         }&email=${encodeURIComponent(
-          formData.email
+          formData.email,
         )}&password=${encodeURIComponent(formData.password)}${
           formData.bonus === "" ? "" : "&bonus=" + formData.bonus
         }${
           formData.promocode ? "&promocode=" + formData.promocode : ""
         }&lang=${lang}${cid ? "&cid=" + cid : ""}${
           partner ? "&partner=" + partner : ""
-        }${offer ? "&offer=" + offer : ""}`
+        }${offer ? "&offer=" + offer : ""}`,
       );
     } else if (formTab === "phone") {
       disableFormWhileSubmitting();
@@ -443,7 +443,7 @@ if (mainForm) {
       window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
       }&phone=${formData.phone}&password=${encodeURIComponent(
-        formData.password
+        formData.password,
       )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
         formData.promocode ? "&promocode=" + formData.promocode : ""
       }&lang=${lang}${cid ? "&cid=" + cid : ""}${
@@ -453,12 +453,12 @@ if (mainForm) {
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
         }&phone=${formData.phone}&password=${encodeURIComponent(
-          formData.password
+          formData.password,
         )}${formData.bonus === "" ? "" : "&bonus=" + formData.bonus}${
           formData.promocode ? "&promocode=" + formData.promocode : ""
         }&lang=${lang}${cid ? "&cid=" + cid : ""}${
           partner ? "&partner=" + partner : ""
-        }${offer ? "&offer=" + offer : ""}`
+        }${offer ? "&offer=" + offer : ""}`,
       );
     }
   });
@@ -503,11 +503,31 @@ formSocialLinks.forEach((link) => {
           cid ? "&cid=" + cid : ""
         }${partner ? "&partner=" + partner : ""}${
           offer ? "&offer=" + offer : ""
-        }`
+        }`,
       );
     });
   }
 });
+
+// One-tap google auth
+let currencyStoredData = localStorage.getItem("currencyData");
+let currencyData = JSON.parse(currencyStoredData);
+let currency = currencyData.abbr;
+
+window.onload = function () {
+  google.accounts.id.initialize({
+    client_id:
+      "757023558262-l0ffftmca719f5a4ksq4r5l2rugankkn.apps.googleusercontent.com",
+    callback: handleCredentialResponse,
+    auto_select: false,
+    cancel_on_tap_outside: true,
+  });
+  google.accounts.id.prompt();
+};
+
+function handleCredentialResponse() {
+  window.location.href = `https://${newDomain}/api/register?env=prod&type=google&currency=${currency}${receivedPromocode ? "&promocode=" + receivedPromocode : ""}&lang=${lang}${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
+}
 
 // | SOCIALS FORM ANIMATIONS
 
@@ -548,7 +568,7 @@ modalTimeLine
       yoyo: true,
       repeat: -1,
     },
-    "<"
+    "<",
   )
   .to(
     ".marquee-2",
@@ -559,7 +579,7 @@ modalTimeLine
       yoyo: true,
       repeat: -1,
     },
-    "<"
+    "<",
   )
   .fromTo(
     ".lion-image",
@@ -573,7 +593,7 @@ modalTimeLine
       yoyo: true,
       repeat: -1,
     },
-    "<"
+    "<",
   )
   .to(
     ".wallet-image",
@@ -585,5 +605,5 @@ modalTimeLine
       repeat: -1,
       duration: 2,
     },
-    "<"
+    "<",
   );
