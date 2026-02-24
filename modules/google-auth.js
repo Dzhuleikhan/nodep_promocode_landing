@@ -1,5 +1,4 @@
 import { newDomain } from "./fetchingDomain";
-import { getSupportedLanguage } from "./geoLocation";
 import { getUrlParameter } from "./params";
 import { defaulPromocode, receivedPromocode } from "./promocodeCheck";
 
@@ -8,7 +7,7 @@ let currencyStoredData = localStorage.getItem("currencyData");
 let currencyData = JSON.parse(currencyStoredData);
 let currency = currencyData.abbr;
 const promocode = receivedPromocode ? receivedPromocode : defaulPromocode;
-const lang = getSupportedLanguage(localStorage.getItem("lang"));
+const lang = localStorage.getItem("preferredLanguage");
 const cid = getUrlParameter("cid");
 const partner = getUrlParameter("partner");
 const offer = getUrlParameter("offer");
