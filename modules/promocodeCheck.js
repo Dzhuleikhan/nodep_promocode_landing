@@ -9,11 +9,9 @@ export const receivedPromocode = (
   getUrlParameter("promocode") || ""
 ).toLocaleUpperCase();
 
-formData.promocode = receivedPromocode ? receivedPromocode : defaulPromocode;
-
 headerLogoLink.setAttribute(
   "href",
   `https://${newDomain}?promocode=${
     receivedPromocode ? receivedPromocode : defaulPromocode
-  }`
+  }`,
 );
