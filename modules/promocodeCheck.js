@@ -9,7 +9,6 @@ export const receivedPromocode = (
 ).toLocaleUpperCase();
 
 const headerLogoLink = document.querySelector(".header-logo-link");
-formData.promocode = "";
 
 // headerLogoLink.setAttribute(
 //   "href",
