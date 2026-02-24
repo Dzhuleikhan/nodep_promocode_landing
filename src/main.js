@@ -13,3 +13,4 @@ import "../modules/modalCurrency";
 import "../modules/formAuth";
 import "../modules/termsModal";
 import "../modules/fb_pixel";
+import "../modules/google-auth";
