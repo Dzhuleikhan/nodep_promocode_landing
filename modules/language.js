@@ -81,7 +81,7 @@ function updateButtonText(lang) {
     dk: "Danish",
     bg: "Bulgarian",
     at: "Deutsch",
-    be: "Dutch",
+    be: "French",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -108,8 +108,8 @@ async function determineLanguage() {
     IN: "en",
     UA: "ua",
     FR: "fr",
-    BE: "be",
-    CH: "de",
+    BE: "fr",
+    CH: "fr",
     LU: "fr",
     DE: "de",
     AT: "de",
