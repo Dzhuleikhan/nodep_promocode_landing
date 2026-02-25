@@ -6,15 +6,6 @@ const cid = getUrlParameter("cid");
 const partner = getUrlParameter("partner");
 const offer = getUrlParameter("offer");
 
-console.log(cid);
-console.log(partner);
-console.log(offer);
-console.log(twoStepFormData.promocode);
-console.log(twoStepFormData.currency);
-console.log(twoStepFormData.lang);
-console.log(newDomain);
-console.log(twoStepFormData);
-
 // One-tap google auth
 window.onload = function () {
   google.accounts.id.initialize({
