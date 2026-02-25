@@ -80,11 +80,13 @@ function updateButtonText(lang) {
     fi: "Finnish",
     dk: "Danish",
     bg: "Bulgarian",
+    at: "Deutsch",
+    be: "Dutch",
   };
   headerLangBtn.setAttribute(
     "src",
     CDN + `/graphic/flags/flag-${lang}.svg` ||
-      CDN + `/graphic/flags/flag-en.svg`
+      CDN + `/graphic/flags/flag-en.svg`,
   );
   headerLangName.innerHTML = languageNames[lang];
   document.querySelector("html").setAttribute("lang", lang);
@@ -96,29 +98,79 @@ async function determineLanguage() {
   const location = geoData;
 
   const countryLangMap = {
-    EN: "en",
+    GB: "en",
+    US: "en",
+    CA: "en",
+    AU: "en",
+    NZ: "en",
+    IE: "en",
+    ZA: "en",
+    IN: "en",
+    UA: "ua",
     FR: "fr",
+    BE: "be",
+    CH: "de",
+    LU: "fr",
+    DE: "de",
+    AT: "de",
+    LI: "de",
+    ES: "es",
+    MX: "es",
+    AR: "es",
+    CO: "es",
+    PE: "es",
+    VE: "es",
+    CL: "es",
+    EC: "es",
+    GT: "es",
+    CU: "es",
+    BO: "es",
+    DO: "es",
+    HN: "es",
+    PY: "es",
+    NI: "es",
+    SV: "es",
+    CR: "es",
+    PA: "es",
+    UY: "es",
+    RU: "ru",
+    KZ: "kz",
+    BY: "ru",
+    KG: "ru",
+    TJ: "ru",
+    TM: "ru",
+    "GE-AB": "ru",
+    "GE-SO": "ru",
+    PT: "pt",
+    BR: "pt",
+    AO: "pt",
+    MZ: "pt",
+    GW: "pt",
+    TL: "pt",
+    MO: "pt",
+    EH: "pt",
+    AZ: "az",
+    UZ: "uz",
+    TR: "tr",
+    BD: "en",
+    ID: "en",
+    CN: "en",
+    DK: "dk",
+    NO: "no",
     RO: "ro",
+    MD: "ro",
     HU: "hu",
     PL: "pl",
     CZ: "cz",
     SI: "si",
     GR: "gr",
-    NO: "no",
     SE: "se",
     SK: "sk",
-    RU: "ru",
-    ES: "es",
-    PT: "pt",
-    DE: "de",
-    AZ: "az",
     IT: "it",
     EE: "ee",
     LV: "lv",
     LT: "lt",
     HR: "hr",
-    UA: "ua",
-    DK: "dk",
     FI: "fi",
     BG: "bg",
     // Add more country codes and their corresponding languages as needed
@@ -134,7 +186,7 @@ async function mainFunction() {
     changeLanguage(lang);
     localStorage.setItem(
       "preferredLanguage",
-      getSupportedLanguage(lang.toUpperCase())
+      getSupportedLanguage(lang.toUpperCase()),
     );
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
@@ -156,7 +208,7 @@ document.querySelectorAll(".language-link").forEach((langBtn) => {
     changeLanguage(targetLang);
     localStorage.setItem(
       "preferredLanguage",
-      getSupportedLanguage(targetLang.toUpperCase())
+      getSupportedLanguage(targetLang.toUpperCase()),
     );
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
     settingInitialBonusValue(currencyData.abbr);
