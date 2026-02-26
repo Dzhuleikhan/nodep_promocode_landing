@@ -37,8 +37,9 @@ export const getSupportedLanguage = (countryCode) => {
 
 localStorage.setItem(
   "preferredLanguage",
-  getSupportedLanguage(geoData.countryCode)
+  getSupportedLanguage(geoData.countryCode),
 );
+export const language = localStorage.getItem("preferredLanguage");
 
 function setHeaderFlag(countryCode) {
   const headerFlagImage = document.querySelector(".header-country-flag");

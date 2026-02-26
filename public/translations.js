@@ -307,7 +307,7 @@ export const translations = {
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
   },
-  cz: {
+  cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
@@ -370,7 +370,7 @@ export const translations = {
     keepRegistering: "Pokračujte v registraci",
     returnToWebsite: "Vrátit se na web",
   },
-  si: {
+  sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
@@ -432,7 +432,7 @@ export const translations = {
     keepRegistering: "Nadaljujte z registracijo",
     returnToWebsite: "Vrni se na spletno stran",
   },
-  gr: {
+  el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
@@ -495,7 +495,7 @@ export const translations = {
     keepRegistering: "Συνεχίστε την εγγραφή",
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
   },
-  no: {
+  nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
@@ -556,7 +556,7 @@ export const translations = {
     keepRegistering: "Fortsett registreringen",
     returnToWebsite: "Tilbake til nettsiden",
   },
-  se: {
+  sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
@@ -1051,7 +1051,7 @@ export const translations = {
     keepRegistering: "Qeydiyyata davam et",
     returnToWebsite: "Vebsayta qayıt",
   },
-  ee: {
+  et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
@@ -1299,7 +1299,7 @@ export const translations = {
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
   },
-  kz: {
+  kk: {
     pageTitle: "🎁 Сіздің бонусыңыз дайын - Goldbet",
     heroTitle: `бонусыңызды алыңыз <br/> <span><i class="actual-spin-amount">100</i> тегін айналым</span> <br/> ойында <span>Gates of Olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> дейін <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> және <span class="two-step-bonus-spins"></span> тегін айналым алғашқы депозитпен`,
@@ -1370,7 +1370,7 @@ export const translations = {
     keepRegistering: "Тіркеуді жалғастыру",
     returnToWebsite: "Сайтқа оралу",
   },
-  dk: {
+  da: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
@@ -1555,7 +1555,7 @@ export const translations = {
     keepRegistering: "Продължи регистрацията",
     returnToWebsite: "Върни се към сайта",
   },
-  be: {
+  nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
