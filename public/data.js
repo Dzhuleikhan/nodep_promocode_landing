@@ -785,6 +785,7 @@ export const languageOptions = {
   dk: { name: "DK", flag: "dk" },
   bg: { name: "BG", flag: "bg" },
   nl: { name: "NL", flag: "nl" },
+  uk: { name: "UK", flag: "ua" },
 };
 
 export const SupportedLanguages = [
