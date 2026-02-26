@@ -1370,7 +1370,7 @@ export const translations = {
     keepRegistering: "Тіркеуді жалғастыру",
     returnToWebsite: "Сайтқа оралу",
   },
-  ua: {
+  uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
     heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>The Dog House</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим першим депозитом`,
@@ -1442,7 +1442,7 @@ export const translations = {
     keepRegistering: "Продовжити реєстрацію",
     returnToWebsite: "Повернутися на сайт",
   },
-  da: {
+  dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>the dog house</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
