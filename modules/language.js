@@ -67,11 +67,9 @@ function updateContent(lang) {
   });
 }
 
-export const SupportedLanguages1 = ["es", "fr", "nl"];
-
 function getInitialLanguage(country, fallbackLang) {
   const browserLang = navigator.language.split("-")[0];
-  const supportedLang = SupportedLanguages1.includes(browserLang)
+  const supportedLang = SupportedLanguages.includes(browserLang)
     ? browserLang
     : fallbackLang;
 
