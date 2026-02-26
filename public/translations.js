@@ -307,7 +307,7 @@ export const translations = {
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
   },
-  cz: {
+  cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
@@ -370,7 +370,7 @@ export const translations = {
     keepRegistering: "Pokračujte v registraci",
     returnToWebsite: "Vrátit se na web",
   },
-  si: {
+  sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
@@ -432,7 +432,7 @@ export const translations = {
     keepRegistering: "Nadaljujte z registracijo",
     returnToWebsite: "Vrni se na spletno stran",
   },
-  gr: {
+  el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
@@ -495,7 +495,7 @@ export const translations = {
     keepRegistering: "Συνεχίστε την εγγραφή",
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
   },
-  no: {
+  nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
@@ -556,7 +556,7 @@ export const translations = {
     keepRegistering: "Fortsett registreringen",
     returnToWebsite: "Tilbake til nettsiden",
   },
-  se: {
+  sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
@@ -1051,7 +1051,7 @@ export const translations = {
     keepRegistering: "Qeydiyyata davam et",
     returnToWebsite: "Vebsayta qayıt",
   },
-  ee: {
+  et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
@@ -1372,7 +1372,78 @@ export const translations = {
     keepRegistering: "Ro‘yxatdan o‘tishni davom ettirish",
     returnToWebsite: "Veb-saytga qaytish",
   },
-  dk: {
+  kk: {
+    pageTitle: "🎁 Сіздің бонусыңыз дайын - Goldbet",
+    heroTitle: `бонусыңызды алыңыз <br/> <span><i class="actual-spin-amount">100</i> тегін айналым</span> <br/> ойында <span>Big Bass Splash</span>`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> дейін <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> және <span class="two-step-bonus-spins"></span> тегін айналым алғашқы депозитпен`,
+    heroBtn: "бонус алу",
+
+    slideStep1Title: "Тіркелу",
+    slideStep1Text: '"Бонус алу" түймесін басып, тегін тіркеуді аяқтаңыз.',
+
+    slideStep2Title: "Бонусты белсендіру",
+    slideStep2Text:
+      '"Бонус орталығынан" өз бонусыңызды тауып, ойынды бастау үшін белсендіріңіз.',
+
+    slideStep3Title: "Ойнау",
+    slideStep3Text: "Қаражат енді ойынға қолжетімді. Ләззат алыңыз!",
+
+    footerText: `<span class="current-domain"></span> онлайн-казинодағы бонустар мен акциялар туралы ақпараттық платформа болып табылады. Барлық ақпарат тек ақпараттық және ойын-сауық мақсатында ұсынылған. Бонус шарттары алдын ала ескертусіз өзгеруі мүмкін, және <span class="current-domain"></span> кез келген сәйкессіздік үшін жауап бермейді. Ұсыныстар тек 18 жасқа толған және тиісті юрисдикцияларда тұратын адамдарға қолжетімді. Тіркелмес бұрын немесе кез келген бонусты талап етпес бұрын, әрбір казиноның шарттарымен мұқият танысыңыз. Жауапкершілікпен ойнаңыз!`,
+
+    // | FORM TRANSLATIONS
+    backBtn: "Артқа",
+    closeBtn: "Жабу",
+
+    // | Step 1
+    depToBalance: `<span><i class="actual-spin-amount">100</i> ТЕГІН АЙНАЛЫМ</span>`,
+    withoutDeposit: "Депозитсіз",
+    step1Title: "Бонусыңызды таңдаңыз",
+    welcomeBonus: "Қош келдіңіз бонусы",
+    welcomeBonusText: "алғашқы депозитке",
+    cryptoBonus: "Satoshi Бонусы",
+    cryptoBonusText: "Крипто-депозиттерге 150%",
+    highRollerBonus: "High Roller Бонусы",
+    highRollerBonusText: "$500-ден жоғары депозиттерге 250%",
+    withoutBonus: "Бонустасыз",
+    withoutBonusText: "Сіз ешқандай бонус алмайсыз",
+    iHavePromoCode: "Менде промо-код бар",
+    promoCodePlaceHolder: "Промо-код",
+    promoCodeApplyBtn: "Қолдану",
+    continueBtn: "Жалғастыру",
+
+    // | Step 2
+    step2Title: "Электрондық поштаңызды енгізіңіз",
+    emailPlaceholder: "E-mail енгізіңіз",
+    passwordPlaceholder: "Құпиясөз енгізіңіз",
+
+    // | Step 3
+    step3Title: "Атыңыз кім?",
+    namePlaceholder: "Атыңызды енгізіңіз",
+    lastNamePlaceholder: "Тегіңізді енгізіңіз",
+    birthdayPlaceholder: "Туған күнді таңдаңыз",
+    age18Alert: "Жасыңыз 18-ден жоғары болуы керек",
+    invalidDate: "Жарамсыз күн",
+    male: "Ер",
+    female: "Әйел",
+    finalStepBtn: "Соңғы қадам",
+
+    // | Step 4
+    step4Title: "Валютаны таңдаңыз",
+    countryPlaceholder: "Елді таңдаңыз",
+    currencyPlaceholder: "Валютаны таңдаңыз",
+    phoneNumberPlaceholder: "Телефон нөмірі",
+    addressPlaceholder: "Мекенжай енгізіңіз",
+    cityPlaceholder: "Қаланы енгізіңіз",
+    statePlaceholder: "Облысты таңдаңыз",
+    zipCodePlaceholder: "Поштамен индекс енгізіңіз",
+    createAccountBtn: "Аккаунт құру",
+
+    // | Decline
+    areYouSure: `Сіз сенімдісіз бе? <br /> Сіздің прогрессіңіз жойылады`,
+    keepRegistering: "Тіркеуді жалғастыру",
+    returnToWebsite: "Сайтқа оралу",
+  },
+  da: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
@@ -1557,7 +1628,7 @@ export const translations = {
     keepRegistering: "Продължи регистрацията",
     returnToWebsite: "Върни се към сайта",
   },
-  be: {
+  nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>Big Bass Splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
