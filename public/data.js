@@ -782,7 +782,7 @@ export const languageOptions = {
   hr: { name: "HR", flag: "hr" },
   kk: { name: "KK", flag: "kz" },
   fi: { name: "FI", flag: "fi" },
-  da: { name: "DA", flag: "dk" },
+  dk: { name: "DK", flag: "dk" },
   bg: { name: "BG", flag: "bg" },
   nl: { name: "NL", flag: "nl" },
 };

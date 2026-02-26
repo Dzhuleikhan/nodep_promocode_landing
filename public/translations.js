@@ -1370,7 +1370,7 @@ export const translations = {
     keepRegistering: "Тіркеуді жалғастыру",
     returnToWebsite: "Сайтқа оралу",
   },
-  da: {
+  dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
