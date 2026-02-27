@@ -821,7 +821,7 @@ export const translations = {
     backBtn: "Voltar",
     closeBtn: "Fechar",
     // | Step 1
-    depToBalance: `<span>100 RODADAS GRÁTIS</span>`,
+    depToBalance: `<span><span><i class="actual-spin-amount">100</i> RODADAS GRÁTIS</span>`,
     withoutDeposit: "Sem depósito",
     step1Title: "Escolha seu bônus",
     welcomeBonus: "Bônus de Boas-Vindas",
