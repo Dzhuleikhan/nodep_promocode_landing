@@ -806,7 +806,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>the dog house</span>`,
+    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>the dog house</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
