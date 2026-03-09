@@ -30,6 +30,10 @@ const applyMask = () => {
 
   const maskPattern = placeholder.replace(/X/g, "9");
 
+  if (twoStepPhoneInput.inputmask) {
+    twoStepPhoneInput.inputmask.remove();
+  }
+
   Inputmask({
     mask: maskPattern,
     placeholder: "X",
@@ -38,5 +42,6 @@ const applyMask = () => {
 };
 
 twoStepPhoneInput.addEventListener("focus", applyMask);
-twoStepPhoneInput.addEventListener("click", applyMask);
-twoStepPhoneInput.addEventListener("countrychange", applyMask);
+twoStepPhoneInput.addEventListener("countrychange", () => {
+  setTimeout(applyMask, 0);
+});
