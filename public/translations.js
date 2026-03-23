@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>big bass splash</span>`,
+    heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
@@ -62,7 +62,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>big bass splash</span>.`,
+    heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>book of ra</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
@@ -124,7 +124,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
-    heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>big bass splash</span>`,
+    heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
@@ -186,7 +186,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `igényeld a bónuszod <br/> <span><i class="actual-spin-amount">100</i> ingyenes pörgetés</span> <br/> a <span>big bass splash</span> játékban`,
+    heroTitle: `igényeld a bónuszod <br/> <span><i class="actual-spin-amount">100</i> ingyenes pörgetés</span> <br/> a <span>book of ra</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
     slideStep1Title: "Regisztrálj",
@@ -248,7 +248,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>big bass splash</span>`,
+    heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
@@ -309,7 +309,7 @@ export const translations = {
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>big bass splash</span>`,
+    heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
     slideStep1Title: "Registrovat se",
@@ -372,7 +372,7 @@ export const translations = {
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>big bass splash</span>`,
+    heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
     slideStep1Title: "Registrirajte se",
@@ -434,7 +434,7 @@ export const translations = {
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>big bass splash</span>`,
+    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
     slideStep1Title: "Εγγραφή",
@@ -497,7 +497,7 @@ export const translations = {
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
-    heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>big bass splash</span>`,
+    heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer deg",
@@ -558,7 +558,7 @@ export const translations = {
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
-    heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>big bass splash</span>`,
+    heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
     slideStep1Title: "Registrera dig",
@@ -620,7 +620,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
-    heroTitle: `získajte svoj bonus <br/> <span><i class="actual-spin-amount">100</i> voľných spinov</span> <br/> v <span>big bass splash</span>`,
+    heroTitle: `získajte svoj bonus <br/> <span><i class="actual-spin-amount">100</i> voľných spinov</span> <br/> v <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
     slideStep1Title: "Registrovať sa",
@@ -682,7 +682,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `заберите свой бонус <br/> <span><i class="actual-spin-amount">100</i> фриспинов</span> <br/> в <span>big bass splash</span>`,
+    heroTitle: `заберите свой бонус <br/> <span><i class="actual-spin-amount">100</i> фриспинов</span> <br/> в <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
     slideStep1Title: "Зарегистрируйтесь",
@@ -744,7 +744,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>big bass splash</span>`,
+    heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
@@ -806,7 +806,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>big bass splash</span>`,
+    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
@@ -867,7 +867,7 @@ export const translations = {
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
-    heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>big bass splash</span>`,
+    heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Freispiele mit deiner 1. Einzahlung`,
     heroBtn: "bonus holen",
     slideStep1Title: "Registrieren",
@@ -929,7 +929,7 @@ export const translations = {
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
-    heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>big bass splash</span>`,
+    heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
     heroBtn: "ottieni bonus",
     slideStep1Title: "Registrati",
@@ -991,7 +991,7 @@ export const translations = {
   },
   az: {
     pageTitle: "🎁 Bonusunuz hazırdır - Goldbet",
-    heroTitle: `bonusunuzu tələb edin <br/> <span><i class="actual-spin-amount">100</i> pulsuz fırlanma</span> <br/> <span>big bass splash</span> oyununda`,
+    heroTitle: `bonusunuzu tələb edin <br/> <span><i class="actual-spin-amount">100</i> pulsuz fırlanma</span> <br/> <span>book of ra</span> oyununda`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> qədər <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> pulsuz fırlanma ilk depozitinizlə`,
     heroBtn: "bonus alın",
     slideStep1Title: "Qeydiyyatdan keçin",
@@ -1053,7 +1053,7 @@ export const translations = {
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
-    heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>big bass splash</span>`,
+    heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
     heroBtn: "saada boonus",
     slideStep1Title: "Registreeru",
@@ -1115,7 +1115,7 @@ export const translations = {
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
-    heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>big bass splash</span>`,
+    heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
     heroBtn: "saņemt bonusu",
     slideStep1Title: "Reģistrējieties",
@@ -1177,7 +1177,7 @@ export const translations = {
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
-    heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>big bass splash</span>`,
+    heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
     heroBtn: "gauti premiją",
     slideStep1Title: "Užsiregistruokite",
@@ -1239,7 +1239,7 @@ export const translations = {
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
-    heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>big bass splash</span>`,
+    heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
     heroBtn: "preuzmi bonus",
     slideStep1Title: "Registrirajte se",
@@ -1301,7 +1301,7 @@ export const translations = {
   },
   uz: {
     pageTitle: "🎁 Bonusingiz tayyor - Goldbet",
-    heroTitle: `bonusingizni oling <br/> <span><i class="actual-spin-amount">100</i> bepul aylanish</span> <br/> o‘yinda <span>Big Bass Splash</span>`,
+    heroTitle: `bonusingizni oling <br/> <span><i class="actual-spin-amount">100</i> bepul aylanish</span> <br/> o‘yinda <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> gacha <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> va <span class="two-step-bonus-spins"></span> bepul aylanish birinchi depozit bilan`,
     heroBtn: "bonusni olish",
 
@@ -1374,7 +1374,7 @@ export const translations = {
   },
   kk: {
     pageTitle: "🎁 Сіздің бонусыңыз дайын - Goldbet",
-    heroTitle: `бонусыңызды алыңыз <br/> <span><i class="actual-spin-amount">100</i> тегін айналым</span> <br/> ойында <span>Big Bass Splash</span>`,
+    heroTitle: `бонусыңызды алыңыз <br/> <span><i class="actual-spin-amount">100</i> тегін айналым</span> <br/> ойында <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> дейін <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> және <span class="two-step-bonus-spins"></span> тегін айналым алғашқы депозитпен`,
     heroBtn: "бонус алу",
 
@@ -1445,7 +1445,7 @@ export const translations = {
   },
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>big bass splash</span>`,
+    heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer",
@@ -1506,7 +1506,7 @@ export const translations = {
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
-    heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>big bass splash</span>`,
+    heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Ilmaiskierrosta ensimmäisellä talletuksellasi`,
     heroBtn: "hae bonus",
     slideStep1Title: "Rekisteröidy",
@@ -1568,7 +1568,7 @@ export const translations = {
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
-    heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>big bass splash</span>`,
+    heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Безплатни завъртания с първия ви депозит`,
     heroBtn: "вземи бонус",
     slideStep1Title: "Регистрация",
@@ -1630,7 +1630,7 @@ export const translations = {
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>Big Bass Splash</span>`,
+    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer dig",
@@ -1691,7 +1691,7 @@ export const translations = {
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
-    heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>Big Bass Splash</span>`,
+    heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>book of ra</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим першим депозитом`,
     heroBtn: "отримати бонус",
 

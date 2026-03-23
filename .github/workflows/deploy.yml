@@ -3,7 +3,7 @@ name: Deploy to VPS Servers
 on:
   push:
     branches:
-      - 100fs_big_bass_splash
+      - 100fs_book_of_ra
 
 jobs:
   deploy:
@@ -65,4 +65,4 @@ jobs:
           username: ${{ secrets[format('FTP_USER_{0}', matrix.vps)] }}
           password: ${{ secrets[format('FTP_PASSWORD_{0}', matrix.vps)] }}
           local-dir: ./dist/
-          server-dir: /www/${{ matrix.site }}/freespins/bigbasssplash/
+          server-dir: /www/${{ matrix.site }}/freespins/bookofra/

@@ -1,29 +1,15 @@
 import gsap from "gsap";
 import { Power3 } from "gsap";
 
-gsap.to(".hero-main-img", {
+gsap.to(".animation-down", {
   y: 20,
   ease: "none",
   yoyo: true,
-  duration: 4,
+  duration: 3,
   repeat: -1,
 });
-gsap.to(".star-img", {
-  scale: 1.05,
-  ease: "none",
-  yoyo: true,
-  duration: 2,
-  repeat: -1,
-});
-gsap.to(".seven-img", {
-  scale: 1.05,
-  ease: "none",
-  yoyo: true,
-  duration: 2,
-  repeat: -1,
-});
-gsap.to(".orange-img", {
-  y: 40,
+gsap.to(".animation-up", {
+  y: -20,
   ease: "none",
   yoyo: true,
   duration: 3,
