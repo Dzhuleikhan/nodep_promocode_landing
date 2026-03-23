@@ -2,7 +2,7 @@ import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import { twoStepFormData } from "./twoStepForm";
 
-export const defaulPromocode = "";
+export const defaulPromocode = "G61IE7";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (
