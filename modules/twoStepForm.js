@@ -16,11 +16,6 @@ document.querySelectorAll("input").forEach((input) => {
   input.setAttribute("autocomplete", "off");
 });
 
-function consoleTest() {
-  console.log("CDN Test");
-}
-consoleTest();
-
 // ? SOCIALS TWO STEP FORM
 
 export let twoStepFormData = {
