@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "",
+  base: "https://landing-res.b-cdn.net/freespins/bisonstorm/50/",
   esbuild: {
     supported: {
       "top-level-await": true,
