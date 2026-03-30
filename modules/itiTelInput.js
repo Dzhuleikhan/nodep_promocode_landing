@@ -1,6 +1,5 @@
 import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 import { geoData } from "./geoLocation";
-import Inputmask from "inputmask";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
@@ -23,25 +22,10 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
   },
 });
 
-const applyMask = () => {
-  const placeholder = twoStepPhoneInput.getAttribute("placeholder");
+twoStepPhoneInput.addEventListener("input", function (e) {
+  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+});
 
-  if (!placeholder) return;
-
-  const maskPattern = placeholder.replace(/X/g, "9");
-
-  if (twoStepPhoneInput.inputmask) {
-    twoStepPhoneInput.inputmask.remove();
-  }
-
-  Inputmask({
-    mask: maskPattern,
-    placeholder: "X",
-    clearMaskOnLostFocus: true,
-  }).mask(twoStepPhoneInput);
-};
-
-twoStepPhoneInput.addEventListener("focus", applyMask);
 twoStepPhoneInput.addEventListener("countrychange", () => {
-  setTimeout(applyMask, 0);
+  twoStepPhoneInput.value = "";
 });
