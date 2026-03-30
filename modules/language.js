@@ -5,25 +5,113 @@ import { twoStepFormData } from "./twoStepForm";
 // import { settingNodepBonus } from "./modalCurrency";
 import { settingInitialBonusValue } from "./twoStepForm";
 
+export const languageOptions = [
+  { code: "en", name: "EN", flag: "en" },
+  { code: "fr", name: "FR", flag: "fr" },
+  { code: "ru", name: "RU", flag: "ru" },
+  { code: "es", name: "ES", flag: "es" },
+  { code: "pt", name: "PT", flag: "pt" },
+  { code: "ro", name: "RO", flag: "ro" },
+  { code: "hu", name: "HU", flag: "hu" },
+  { code: "pl", name: "PL", flag: "pl" },
+  { code: "cs", name: "CZ", flag: "cz" },
+  { code: "sl", name: "SI", flag: "si" },
+  { code: "nb", name: "NO", flag: "no" },
+  { code: "sv", name: "SE", flag: "se" },
+  { code: "sk", name: "SK", flag: "sk" },
+  { code: "el", name: "GR", flag: "gr" },
+  { code: "de", name: "DE", flag: "de" },
+  { code: "it", name: "IT", flag: "it" },
+  { code: "et", name: "EE", flag: "ee" },
+  { code: "lv", name: "LV", flag: "lv" },
+  { code: "lt", name: "LT", flag: "lt" },
+  { code: "hr", name: "HR", flag: "hr" },
+  { code: "sw", name: "SW", flag: "tz" },
+  { code: "rw", name: "RW", flag: "rw" },
+  { code: "ar", name: "AR", flag: "sa" },
+];
+
+const countryLangMap = {
+  EN: "en",
+  FR: "fr",
+  RO: "ro",
+  HU: "hu",
+  PL: "pl",
+  CZ: "cs",
+  SI: "sl",
+  GR: "el",
+  NO: "nb",
+  SE: "sv",
+  SK: "sk",
+  RU: "ru",
+  ES: "es",
+  PT: "pt",
+  DE: "de",
+  IT: "it",
+  EE: "et",
+  LV: "lv",
+  LT: "lt",
+  HR: "hr",
+  TZ: "sw",
+  KE: "sw",
+  RW: "rw",
+  SA: "ar",
+  AE: "ar",
+  EG: "ar",
+  IQ: "ar",
+  JO: "ar",
+  KW: "ar",
+  LB: "ar",
+  MA: "ar",
+  QA: "ar",
+  OM: "ar",
+  BH: "ar",
+};
+
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
-const languageLinks = document.querySelectorAll(".language-link");
 
 let lang;
+
+function buildLanguageList() {
+  headerLangList.innerHTML = languageOptions
+    .map(
+      ({ code, name, flag }) => `
+      <li>
+        <a data-lang="${code}" class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all" href="#">
+          <img class="pointer-events-none shrink-0 overflow-hidden rounded-full" width="20" height="20" src="https://3344112-img.b-cdn.net/graphic/flags/flag-${flag}.svg" alt="${flag.toUpperCase()} flag" />
+          <span class="pointer-events-none">${name}</span>
+        </a>
+      </li>`,
+    )
+    .join("");
+
+  headerLangList.addEventListener("click", (e) => {
+    const link = e.target.closest(".language-link");
+    if (!link) return;
+    e.preventDefault();
+    const targetLang = link.getAttribute("data-lang");
+    changeLanguage(targetLang);
+    headerLangList.classList.remove("is-open");
+    localStorage.setItem(
+      "preferredLanguage",
+      getSupportedLanguage(targetLang.toUpperCase()),
+    );
+    const currencyData = JSON.parse(localStorage.getItem("currencyData"));
+    settingInitialBonusValue(currencyData.abbr);
+    // settingNodepBonus(currencyData.abbr);
+    twoStepFormData.lang = localStorage.getItem("preferredLanguage");
+    document.querySelectorAll(".current-domain").forEach((domain) => {
+      domain.innerHTML = window.location.hostname;
+    });
+  });
+}
 
 if (headerLangBtn) {
   headerLangBtn.addEventListener("click", () => {
     headerLangList.classList.toggle("is-open");
   });
 }
-
-languageLinks.forEach((link) => {
-  if (link) {
-    link.addEventListener("click", () => {
-      headerLangList.classList.remove("is-open");
-    });
-  }
-});
 
 function updateContent(lang) {
   const elements = document.querySelectorAll("[data-translate]");
@@ -52,79 +140,31 @@ function setActiveLanguageBtn(currentLang) {
 function updateButtonText(lang) {
   const headerLangBtn = document.querySelector(".header-lang-btn img");
   const headerLangName = document.querySelector(".header-lang-btn span");
+  const option = languageOptions.find((o) => o.code === lang);
+  const flagCode = option ? option.flag : lang;
 
-  const languageNames = {
-    en: "English",
-    fr: "French",
-    ro: "Romainan",
-    hu: "Hungarian",
-    pl: "Polish",
-    cz: "Czech",
-    si: "Slovenian",
-    gr: "Greek",
-    no: "Norwegian",
-    se: "Swedish",
-    sk: "Slovak",
-    ru: "Russian",
-    es: "Spanish",
-    pt: "Portuguese",
-    de: "Deutsch",
-    az: "Azerbaijani",
-    it: "Italian",
-    ee: "Estonian",
-    lv: "Latvian",
-    lt: "Lithuanian",
-    hr: "Croatian",
-  };
   headerLangBtn.setAttribute(
     "src",
-    `./img/flags/${lang}.svg` || `./img/flags/en.svg`
+    `https://3344112-img.b-cdn.net/graphic/flags/flag-${flagCode}.svg`,
   );
-  headerLangName.innerHTML = languageNames[lang];
+  headerLangName.innerHTML = option ? option.name : lang;
   document.querySelector("html").setAttribute("lang", lang);
 }
 
-export const availableLang = ["en", "fr"];
-
 async function determineLanguage() {
   const location = geoData;
-
-  const countryLangMap = {
-    EN: "en",
-    FR: "fr",
-    RO: "ro",
-    HU: "hu",
-    PL: "pl",
-    CZ: "cz",
-    SI: "si",
-    GR: "gr",
-    NO: "no",
-    SE: "se",
-    SK: "sk",
-    RU: "ru",
-    ES: "es",
-    PT: "pt",
-    DE: "de",
-    AZ: "az",
-    IT: "it",
-    EE: "ee",
-    LV: "lv",
-    LT: "lt",
-    HR: "hr",
-    // Add more country codes and their corresponding languages as needed
-  };
   lang = countryLangMap[location.countryCode] || "en";
-
   return lang;
 }
 
 async function mainFunction() {
   try {
+    buildLanguageList();
     lang = await determineLanguage();
     changeLanguage(lang);
     localStorage.setItem(
       "preferredLanguage",
-      getSupportedLanguage(lang.toUpperCase())
+      getSupportedLanguage(lang.toUpperCase()),
     );
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
@@ -139,22 +179,3 @@ async function mainFunction() {
   }
 }
 mainFunction();
-
-document.querySelectorAll(".language-link").forEach((langBtn) => {
-  langBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const targetLang = e.target.getAttribute("data-lang");
-    changeLanguage(targetLang);
-    localStorage.setItem(
-      "preferredLanguage",
-      getSupportedLanguage(targetLang.toUpperCase())
-    );
-    const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-    settingInitialBonusValue(currencyData.abbr);
-    // settingNodepBonus(currencyData.abbr);
-    twoStepFormData.lang = localStorage.getItem("preferredLanguage");
-    document.querySelectorAll(".current-domain").forEach((domain) => {
-      domain.innerHTML = window.location.hostname;
-    });
-  });
-});

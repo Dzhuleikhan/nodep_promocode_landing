@@ -27,7 +27,7 @@ function getCountryCurrencyIcon(inputCountry) {
       return data.countryCurrencyIcon;
     }
   }
-  return "./img/currencies/usd.svg"; // or some default value if country is not found
+  return "https://3344112-img.b-cdn.net/currency_icons/USD.svg"; // or some default value if country is not found
 }
 
 function getCountryCurrencySymbol(inputCountry) {
@@ -50,7 +50,7 @@ function setCurrency(abbr, name, icon) {
     currencyIcon.src = icon;
 
     const currencyListItem = cur.querySelectorAll(
-      ".form-currency-dropdown ul li"
+      ".form-currency-dropdown ul li",
     );
 
     currencyListItem.forEach((item) => {
@@ -103,13 +103,42 @@ const settingFooterPayments = (currencyAbbr) => {
     img.classList.add("grayscale-100");
     img.classList.add("transition");
     img.classList.add("hover:grayscale-0");
-    img.setAttribute("src", `./img/payments/${payment}.svg`);
+    img.setAttribute(
+      "src",
+      `https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/${payment}.svg`,
+    );
     footerPaymentsList.appendChild(img);
   });
 };
 
+const hiddenCurrencies = ["COP", "CLP", "IDR", "MXN", "RUB", "THB"];
+
+function buildCurrencyList() {
+  const dropdownItems = countryCurrencyData.filter(
+    (c) => !hiddenCurrencies.includes(c.countryCurrency),
+  );
+
+  document.querySelectorAll(".currency-list").forEach((ul) => {
+    ul.innerHTML = dropdownItems
+      .map(
+        (c) => `
+        <li class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-[#755EEB]/20 bg-white px-4 py-[10px] text-base font-bold text-[#1c1c1c] transition-all [&.active]:bg-[#b4aae7]">
+          <img class="currency-item-icon" width="24" height="24" src="${c.countryCurrencyIcon}" alt="${c.countryCurrency}" />
+          <span class="currency-item-name">${c.countryCurrencyFullName}</span>
+          <div>
+            <span class="currency-item-symbol">${c.countryCurrencySymbol}</span>
+            |
+            <span class="currency-item-abbr">${c.countryCurrency}</span>
+          </div>
+        </li>`,
+      )
+      .join("");
+  });
+}
+
 async function settingModalCurrency() {
   try {
+    buildCurrencyList();
     let locationData = geoData;
     let countryInput = locationData.countryCode;
 
@@ -156,10 +185,10 @@ settingModalCurrency();
  */
 export const settingBonusOnCurrencyChange = (
   currencyDataArray,
-  targetCurrency
+  targetCurrency,
 ) => {
   const matchedObject = currencyDataArray.find(
-    (item) => item.countryCurrency === targetCurrency.abbr
+    (item) => item.countryCurrency === targetCurrency.abbr,
   );
   const amount = matchedObject ? matchedObject.amount : null;
   const symbol = matchedObject ? matchedObject.countryCurrencySymbol : null;
@@ -193,47 +222,42 @@ formCurrency.forEach((cur) => {
       currencyDropdownList.classList.toggle("active");
     });
 
-    const currencyListItems = currencyDropdownList.querySelectorAll("li");
+    currencyDropdownList.addEventListener("click", (e) => {
+      const item = e.target.closest("li");
+      if (!item) return;
 
-    currencyListItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        currencyListItems.forEach((el) => {
-          el.classList.remove("active");
-        });
-        item.classList.add("active");
-        hideDropdown();
-
-        // Taking currency value from item
-        let curIcon = item.querySelector(".currency-item-icon").src;
-        let curName = item.querySelector(".currency-item-name").textContent;
-        let curAbbr = item.querySelector(".currency-item-abbr").textContent;
-        let curSymbol = item.querySelector(".currency-item-symbol").textContent;
-
-        // Update all currency inputs on the page
-        setCurrency(curAbbr, curName, curIcon);
-
-        // Update local storage
-        const currencyData = {
-          abbr: curAbbr,
-          name: curName,
-          icon: curIcon,
-          symbol: curSymbol,
-        };
-        localStorage.setItem("currencyData", JSON.stringify(currencyData));
-
-        // Two step currency update
-        settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
-        twoStepFormData.currency = currencyData.abbr;
-        settingInitialBonusValue(twoStepFormData.currency);
-        settingNodepBonus(currencyData.abbr);
-        document.querySelector(".bonus-currency-symbol").innerHTML =
-          currencyData.symbol;
-
-        twoStepFormData.bonus = checkTir1CurrencyMatch(
-          twoStepFormData.currency,
-          twoStepFormData.bonus
-        );
+      currencyDropdownList.querySelectorAll("li").forEach((el) => {
+        el.classList.remove("active");
       });
+      item.classList.add("active");
+      hideDropdown();
+
+      let curIcon = item.querySelector(".currency-item-icon").src;
+      let curName = item.querySelector(".currency-item-name").textContent;
+      let curAbbr = item.querySelector(".currency-item-abbr").textContent;
+      let curSymbol = item.querySelector(".currency-item-symbol").textContent;
+
+      setCurrency(curAbbr, curName, curIcon);
+
+      const currencyData = {
+        abbr: curAbbr,
+        name: curName,
+        icon: curIcon,
+        symbol: curSymbol,
+      };
+      localStorage.setItem("currencyData", JSON.stringify(currencyData));
+
+      settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
+      twoStepFormData.currency = currencyData.abbr;
+      settingInitialBonusValue(twoStepFormData.currency);
+      settingNodepBonus(currencyData.abbr);
+      document.querySelector(".bonus-currency-symbol").innerHTML =
+        currencyData.symbol;
+
+      twoStepFormData.bonus = checkTir1CurrencyMatch(
+        twoStepFormData.currency,
+        twoStepFormData.bonus,
+      );
     });
 
     document.addEventListener("click", (event) => {
