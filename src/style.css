@@ -135,8 +135,23 @@
   box-shadow: 0 8px 0 0 #420C00;
 }
 
-.step-wrapper-item-1 {
-  background: linear-gradient(180deg, #FFE507 0%, #F90 100%);
+.step-wrapper-item.step-active {
+}
+
+.step-wrapper-item.step-active .step-wrapper-item-number {
+  color: #000 !important;
+}
+
+.step-wrapper-item.step-active .step-wrapper-item-icon {
+  background: #000 !important;
+}
+
+.step-wrapper-item.step-active .space-y-\[10px\] {
+  color: #000 !important;
+}
+
+.step-wrapper-item.step-active .space-y-\[10px\] p {
+  color: #000 !important;
 }
 
 .socilas-form-wrapper::before {

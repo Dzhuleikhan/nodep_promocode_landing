@@ -1,7 +1,9 @@
 import { geoData } from "./geoLocation";
-import { countryCurrencyData, nodepBonuses } from "../public/data";
+import { countryCurrencyData, nodepBonuses, bonusSumAndWager } from "../public/data";
+import { getUrlParameter } from "./params";
 
 const CDN = "https://3344112-img.b-cdn.net";
+const bonusType = getUrlParameter("bonusType") || "freebet";
 
 const settingFooterPayments = (currencyAbbr) => {
   const selectedCurrency =
@@ -65,6 +67,51 @@ export function settingHeroBonusValues(currency) {
       el.innerHTML = "200FS";
     });
   }
+}
+
+function updateCashUrlParams(currency) {
+  const entry = bonusSumAndWager.find((p) => p.currency === currency);
+  const amount = entry ? entry.amount : 20;
+  const url = new URL(window.location.href);
+  url.searchParams.set("sumAmount", amount);
+  url.searchParams.set("currency", currency);
+  window.history.replaceState({}, "", url);
+}
+
+export function settingCashBonusValues(currency) {
+  const url = new URL(window.location.href);
+  const urlSumAmount = url.searchParams.get("sumAmount");
+  const urlCurrency = url.searchParams.get("currency");
+
+  let amount, symbol, currencyCode;
+
+  if (urlSumAmount && urlCurrency) {
+    amount = urlSumAmount;
+    currencyCode = urlCurrency;
+    const currencyEntry = countryCurrencyData.find(
+      (e) => e.countryCurrency === urlCurrency,
+    );
+    symbol = currencyEntry ? currencyEntry.countryCurrencySymbol : urlCurrency;
+  } else {
+    const entry = bonusSumAndWager.find((p) => p.currency === currency);
+    amount = entry ? entry.amount : 20;
+    currencyCode = currency;
+    const currencyEntry = countryCurrencyData.find(
+      (e) => e.countryCurrency === currency,
+    );
+    symbol = currencyEntry ? currencyEntry.countryCurrencySymbol : "$";
+
+    url.searchParams.set("sumAmount", amount);
+    url.searchParams.set("currency", currencyCode);
+    window.history.replaceState({}, "", url);
+  }
+
+  document.querySelectorAll(".bonus-value").forEach((el) => {
+    el.innerHTML = amount;
+  });
+  document.querySelectorAll(".bonus-currency").forEach((el) => {
+    el.innerHTML = symbol;
+  });
 }
 
 export function getCountryCurrencyABBR(inputCountry) {
@@ -147,22 +194,15 @@ async function settingModalCurrency() {
 
     setCurrency(currencyAbbr, currencyFullName, currencyIcon);
     settingHeroBonusValues(currencyAbbr);
+    if (bonusType === "cash") {
+      settingCashBonusValues(currencyAbbr);
+    }
     settingFooterPayments(currencyAbbr);
   } catch (error) {
     console.error("Error fetching location data:", error);
   }
 }
 
-function loadCurrencyFromLocalStorage() {
-  const currencyData = JSON.parse(localStorage.getItem("currencyData"));
-  if (currencyData) {
-    setCurrency(currencyData.abbr, currencyData.name, currencyData.icon);
-    settingHeroBonusValues(currencyData.abbr);
-    settingFooterPayments(currencyData.abbr);
-  } else {
-    settingModalCurrency();
-  }
-}
 
 /**
  *  Currency dropdown
@@ -194,7 +234,7 @@ function generateCurrencyList() {
   });
 }
 generateCurrencyList();
-loadCurrencyFromLocalStorage();
+settingModalCurrency();
 
 const formCurrency = document.querySelectorAll(".form-currency");
 
@@ -239,6 +279,10 @@ formCurrency.forEach((cur) => {
         };
         localStorage.setItem("currencyData", JSON.stringify(currencyData));
         settingHeroBonusValues(curAbbr);
+        if (bonusType === "cash") {
+          updateCashUrlParams(curAbbr);
+          settingCashBonusValues(curAbbr);
+        }
         settingFooterPayments(curAbbr);
       });
     });

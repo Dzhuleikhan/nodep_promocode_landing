@@ -2,8 +2,11 @@ import { translations } from "/public/translations";
 import { geoData, language } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { setSpinAmount } from "./promocodeCheck";
-import { settingHeroBonusValues } from "./modalCurrency";
+import { settingHeroBonusValues, settingCashBonusValues } from "./modalCurrency";
 import { languageOptions, SupportedLanguages } from "../public/data";
+import { getUrlParameter } from "./params";
+
+const bonusType = getUrlParameter("bonusType") || "freebet";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -63,6 +66,16 @@ function updateContent(lang) {
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach((element) => {
     const key = element.getAttribute("data-translate");
+    if (bonusType === "cash") {
+      if (key === "heroTitle" && translations[lang].heroTitleCash) {
+        element.innerHTML = translations[lang].heroTitleCash;
+        return;
+      }
+      if (key === "bonusName" && translations[lang].bonusNameCash) {
+        element.innerHTML = translations[lang].bonusNameCash;
+        return;
+      }
+    }
     element.innerHTML = translations[lang][key];
   });
 }
@@ -102,6 +115,9 @@ function refreshHeroBonusValues() {
   const currencyData = JSON.parse(localStorage.getItem("currencyData"));
   if (currencyData) {
     settingHeroBonusValues(currencyData.abbr);
+    if (bonusType === "cash") {
+      settingCashBonusValues(currencyData.abbr);
+    }
   }
 }
 
