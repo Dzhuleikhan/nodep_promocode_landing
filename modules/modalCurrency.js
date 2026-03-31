@@ -1,5 +1,71 @@
 import { geoData } from "./geoLocation";
-import { countryCurrencyData } from "../public/data";
+import { countryCurrencyData, nodepBonuses } from "../public/data";
+
+const CDN = "https://3344112-img.b-cdn.net";
+
+const settingFooterPayments = (currencyAbbr) => {
+  const selectedCurrency =
+    nodepBonuses.find((c) => c.currency === currencyAbbr) ||
+    nodepBonuses.find((c) => c.currency === "EUR");
+
+  const footerPaymentsList = document.querySelector(".footer-payments-list");
+  if (!footerPaymentsList || !selectedCurrency) return;
+
+  footerPaymentsList.innerHTML = selectedCurrency.paymentMethods
+    .map(
+      (payment) =>
+        `<img width="100" height="51" class="grayscale-100 w-[100px] max-[576px]:max-w-[50px] transition hover:grayscale-0" src="${CDN}/graphic/landings/paymentMethods/nodep/${payment}.svg" alt="${payment}" />`,
+    )
+    .join("");
+};
+
+const exceptCurrenciesForPercent = [
+  "RON",
+  "DKK",
+  "HUF",
+  "CZK",
+  "CHF",
+  "PLN",
+  "CAD",
+  "USD",
+  "EUR",
+  "NOK",
+];
+
+export function settingHeroBonusValues(currency) {
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency,
+  );
+
+  const percent = exceptCurrenciesForPercent.includes(currency)
+    ? "100%"
+    : "200%";
+  document.querySelectorAll(".two-step-bonus-percent").forEach((el) => {
+    el.innerHTML = percent;
+  });
+
+  if (currencyEntry) {
+    document.querySelectorAll(".bonus-total-amount").forEach((el) => {
+      el.innerHTML = currencyEntry.amount;
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrencySymbol;
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = currencyEntry.spins;
+    });
+  } else {
+    document.querySelectorAll(".bonus-total-amount").forEach((el) => {
+      el.innerHTML = "20.000";
+    });
+    document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+      el.innerHTML = "zł";
+    });
+    document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
+      el.innerHTML = "200FS";
+    });
+  }
+}
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -7,7 +73,7 @@ export function getCountryCurrencyABBR(inputCountry) {
       return data.countryCurrency;
     }
   }
-  return "USD"; // or some default value if country is not found
+  return "PLN";
 }
 
 function getCountryCurrencyFullName(inputCountry) {
@@ -16,7 +82,7 @@ function getCountryCurrencyFullName(inputCountry) {
       return data.countryCurrencyFullName;
     }
   }
-  return "US Dollar"; // or some default value if country is not found
+  return "Polish Zloty";
 }
 
 function getCountryCurrencyIcon(inputCountry) {
@@ -25,7 +91,7 @@ function getCountryCurrencyIcon(inputCountry) {
       return data.countryCurrencyIcon;
     }
   }
-  return "./img/currencies/usd.svg"; // or some default value if country is not found
+  return "https://3344112-img.b-cdn.net/currency_icons/PLN.svg";
 }
 
 function setCurrency(abbr, name, icon) {
@@ -39,7 +105,7 @@ function setCurrency(abbr, name, icon) {
     currencyIcon.src = icon;
 
     const currencyListItem = cur.querySelectorAll(
-      ".form-currency-dropdown ul li"
+      ".form-currency-dropdown ul li",
     );
 
     currencyListItem.forEach((item) => {
@@ -59,7 +125,11 @@ async function settingModalCurrency() {
     const excludedCountries = ["RU", "MX", "CL", "CO", "TH", "ID"];
 
     if (excludedCountries.includes(countryInput)) {
-      countryInput = "TR";
+      countryInput = "US";
+    }
+
+    if (countryInput === "GB") {
+      countryInput = "FR";
     }
 
     const currencyAbbr = getCountryCurrencyABBR(countryInput);
@@ -76,6 +146,8 @@ async function settingModalCurrency() {
     localStorage.setItem("currencyData", JSON.stringify(currencyData));
 
     setCurrency(currencyAbbr, currencyFullName, currencyIcon);
+    settingHeroBonusValues(currencyAbbr);
+    settingFooterPayments(currencyAbbr);
   } catch (error) {
     console.error("Error fetching location data:", error);
   }
@@ -85,16 +157,44 @@ function loadCurrencyFromLocalStorage() {
   const currencyData = JSON.parse(localStorage.getItem("currencyData"));
   if (currencyData) {
     setCurrency(currencyData.abbr, currencyData.name, currencyData.icon);
+    settingHeroBonusValues(currencyData.abbr);
+    settingFooterPayments(currencyData.abbr);
   } else {
     settingModalCurrency();
   }
 }
 
-loadCurrencyFromLocalStorage();
-
 /**
- *  Currency dropdownxw
+ *  Currency dropdown
  */
+
+function generateCurrencyList() {
+  const seen = new Set();
+  const uniqueCurrencies = countryCurrencyData.filter((entry) => {
+    if (seen.has(entry.countryCurrency)) return false;
+    seen.add(entry.countryCurrency);
+    return true;
+  });
+
+  document.querySelectorAll(".currency-list").forEach((ul) => {
+    ul.innerHTML = uniqueCurrencies
+      .map(
+        (entry) => `
+        <li class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#171929] p-3 text-base font-bold transition-all hover:bg-[#242843] [&.active]:bg-[#242843]">
+          <img class="currency-item-icon" width="24" height="24" src="${entry.countryCurrencyIcon}" alt="${entry.countryCurrency}" />
+          <span class="currency-item-name">${entry.countryCurrencyFullName}</span>
+          <div>
+            <span class="currency-item-symbol">${entry.countryCurrencySymbol}</span>
+            |
+            <span class="currency-item-abbr">${entry.countryCurrency}</span>
+          </div>
+        </li>`,
+      )
+      .join("");
+  });
+}
+generateCurrencyList();
+loadCurrencyFromLocalStorage();
 
 const formCurrency = document.querySelectorAll(".form-currency");
 
@@ -138,6 +238,8 @@ formCurrency.forEach((cur) => {
           icon: curIcon,
         };
         localStorage.setItem("currencyData", JSON.stringify(currencyData));
+        settingHeroBonusValues(curAbbr);
+        settingFooterPayments(curAbbr);
       });
     });
 

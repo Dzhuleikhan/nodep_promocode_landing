@@ -7,7 +7,6 @@ import "../modules/fetchingDomain";
 import "../modules/geoLocation";
 import "../modules/params";
 import "../modules/modalOpen";
-import "../modules/marquee";
 import "../modules/formSocials";
 import "../modules/itiTelInput";
 import "../modules/modalCurrency";

@@ -11,7 +11,7 @@
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
-  <body class="bg-[#091025] overscroll-none">
+  <body class="bg-[#1E0002] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
       <!-- Terms Modal -->
       <div
@@ -219,285 +219,659 @@
                 class="header-country-flag hidden"
                 width="24"
                 height="24"
-                src="./img/flags/tr.svg"
-                alt="TR Flag"
+                src="https://3344112-img.b-cdn.net/graphic/flags/flag-gb.svg"
+                alt="Flag"
               />
             </a>
             <div class="header-lang-box relative">
-              <button
-                class="header-lang-btn cursor-pointer flex items-center justify-center gap-2 rounded-lg bg-[#ffffff] px-3 py-[9px] font-bold text-black transition-all"
+              <div
+                class="p-[6px] pr-3 bg-white/15 border border-white/20 rounded-[64px]"
               >
-                <img
-                  class="overflow-hidden rounded-full"
-                  width="20"
-                  height="20"
-                  src="./img/flags/tr.svg"
-                  alt="Turkish"
-                />
-                <span class="inline-block max-[350px]:hidden">TR</span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  class="header-lang-btn cursor-pointer flex items-center justify-center gap-[5px] font-bold text-black transition-all"
                 >
-                  <path
-                    d="M6 9L12 15L18 9"
-                    stroke="#000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <ul
-                class="header-lang-list max-h-[180px] absolute overflow-y-auto right-0 top-[110%] w-full overflow-hidden rounded-lg font-bold text-black duration-300 max-[350px]:min-w-max"
-              >
-                <li>
-                  <a
-                    data-lang="tr"
-                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
-                    href="#"
-                    ><img
-                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                  <p
+                    class="flex items-center gap-[5px] bg-[#FFE738] rounded-[64px] p-2 pr-3"
+                  >
+                    <img
+                      class="overflow-hidden rounded-full"
                       width="20"
                       height="20"
-                      src="./img/flags/tr.svg"
-                      alt="TR flag"
-                    />
-                    <span class="pointer-events-none">TR</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    data-lang="en"
-                    class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
-                    href="#"
-                    ><img
-                      class="pointer-events-none shrink-0 overflow-hidden rounded-full"
-                      width="20"
-                      height="20"
-                      src="./img/flags/en.svg"
+                      src="https://3344112-img.b-cdn.net/graphic/flags/flag-gb.svg"
                       alt="EN flag"
                     />
-                    <span class="pointer-events-none">EN</span>
-                  </a>
-                </li>
-              </ul>
+                    <span class="inline-block max-[350px]:hidden">EN</span>
+                  </p>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9L12 15L18 9"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <ul
+                class="header-lang-list space-y-1 max-h-[180px] min-w-[140px] rounded-xl absolute bg-[#852727] border-[2px] border-[#0f0f0f20] p-[6px] overflow-y-auto right-0 top-[110%] w-full overflow-hidden font-bold text-black duration-300 max-[350px]:min-w-max"
+              ></ul>
             </div>
           </div>
         </div>
       </header>
-      <main>
+      <main class="max-h-[940px]">
         <section id="hero" class="w-full relative overflow-hidden">
           <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="./img/thunder-left.webp"
-            alt="Thunder"
+            class="absolute right-0 top-[80px] z-2 w-full max-w-[628px]"
+            width="628"
+            height="512"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken.webp"
+            alt="Chicken"
           />
           <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="./img/thunder-middle.webp"
-            alt="Thunder"
+            class="absolute left-0 bottom-0 w-full max-w-[1060px] z-[1]"
+            width="1060"
+            height="190"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/coins-left.webp"
+            alt="Coins"
           />
           <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="./img/thunder-right.webp"
-            alt="Thunder"
+            class="absolute right-0 bottom-0 w-full max-w-[995px] z-[1]"
+            width="995"
+            height="188"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/coins-right.webp"
+            alt="Coins"
           />
           <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="./img/seven.webp"
-            alt="Seven"
+            class="absolute left-0 bottom-0 w-full max-w-[149px] z-0"
+            width="149"
+            height="743"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/fire-left.webp"
+            alt="Fire"
           />
           <img
-            class="absolute orange-img left-[50%] z-[11] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="./img/orange.webp"
-            alt="Orange"
+            class="absolute right-0 bottom-0 w-full max-w-[194px] z-0"
+            width="194"
+            height="743"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/fire-right.webp"
+            alt="Fire"
           />
           <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="./img/watermelon.webp"
-            alt="watermelon"
+            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+            width="194"
+            height="743"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/lines.webp"
+            alt="lines"
           />
           <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="./img/star.webp"
-            alt="star"
+            class="absolute left-[20px] bottom-[30%] z-3"
+            width="96"
+            height="96"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-1.webp"
+            alt="Feather"
           />
           <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="./img/plum.webp"
-            alt="plum"
+            class="absolute right-[210px] top-[-40px] z-3 rotate-[105deg]"
+            width="96"
+            height="96"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-2.webp"
+            alt="Feather"
+          />
+          <img
+            class="absolute top-7 left-[184px] z-3 rotate-6"
+            width="96"
+            height="96"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-2.webp"
+            alt="Feather"
           />
           <!-- container -->
           <div
-            class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
+            class="max-w-[1140px] flex items-center justify-between gap-5 px-[14px] mx-auto pb-[170px] relative pt-[110px]"
           >
             <!-- inner -->
-            <div class="relative z-20">
+            <div class="relative z-20 font-bold max-w-[550px]">
               <div
                 class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
               >
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                >
-                  <span>gates of olympus</span> <br />
-                  kayıt ol ve oyna
-                </h1>
+                  class="hero-title text-[48px] text-balance uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] font-[sfrounded] font-black hero-title leading-[112%] text-white"
+                ></h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                >
-                  +<span class="two-step-bonus-percent">1100%</span> -
-                  <span class="bonus-total-amount">340.000</span
-                  ><span class="bonus-currency-symbol">₺</span>'ye kadar +
-                  <span class="two-step-bonus-spins">25 FS</span>
-                  <br class="max-[576px]:hidden" />
-                  ilk 4 yatırımınıza
-                </p>
-                <button
-                  data-translate="heroBtn"
-                  data-promocode=""
-                  class="modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[350px]:px-4 max-[350px]:w-full"
-                >
-                  GET BONUS
-                </button>
+                  class="hero-subtitle text-white mt-[14px] text-balance font-bold font-[sfrounded] text-[24px] leading-[143%] max-[576px]:text-[24px] max-[576px]:mt-2 max-[350px]:text-[20px]"
+                ></p>
               </div>
             </div>
-            <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] max-[992px]:-translate-x-[50%] max-[992px]:left-[50%] z-[3] left-[280px] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              src="./img/zeus.webp"
-              alt="Zeus"
-            />
+            <!-- Socials form -->
+            <div class="socilas-form-wrapper w-full max-w-[430px] relative">
+              <div class="socials-form form-wrap p-6 relative z-[4]">
+                <div class="back-btn-wrapper hidden items-center gap-4">
+                  <button
+                    class="form-step-btn-prev w-12 h-12 cursor-pointer justify-center items-center gap-3 flex p-[15px] rounded-lg"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.125 12.0002C22.125 12.2986 22.0065 12.5847 21.7955 12.7957C21.5845 13.0067 21.2984 13.1252 21 13.1252L5.71499 13.1252L9.79499 17.2052C9.99371 17.4185 10.1019 17.7006 10.0968 17.992C10.0916 18.2835 9.97354 18.5615 9.76742 18.7677C9.5613 18.9738 9.28322 19.0919 8.99177 19.097C8.70032 19.1021 8.41825 18.994 8.20499 18.7952L2.20499 12.7952C1.99431 12.5843 1.87598 12.2984 1.87598 12.0002C1.87598 11.7021 1.99431 11.4162 2.20499 11.2052L8.20499 5.20523C8.41825 5.00651 8.70032 4.89833 8.99177 4.90347C9.28322 4.90861 9.5613 5.02668 9.76742 5.2328C9.97354 5.43892 10.0916 5.717 10.0967 6.00845C10.1019 6.2999 9.99371 6.58197 9.79499 6.79523L5.71499 10.8752L21 10.8752C21.2984 10.8752 21.5845 10.9938 21.7955 11.2047C22.0065 11.4157 22.125 11.7019 22.125 12.0002Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                  <div class="space-y-1 font-[montserrat] text-[#171717]">
+                    <p data-translate="choosePassword" class="font-bold"></p>
+                    <p data-translate="gameCurrency" class="opacity-70"></p>
+                  </div>
+                </div>
+                <form action="#" class="form socials-form h-full">
+                  <input
+                    type="hidden"
+                    class="bonus-input"
+                    data-bonus="welcome-bonus-1"
+                  />
+                  <div class="flex h-full flex-col">
+                    <!-- Step 1 -->
+                    <div
+                      class="socials-form-step socials-form-step-1 mb-[15px]"
+                    >
+                      <!-- Socials -->
+                      <div class="space-y-[12px]">
+                        <a
+                          data-reg-type="google"
+                          href="#"
+                          class="socials-form-social-link flex items-center justify-center gap-[10px] rounded-xl bg-white p-[11px]"
+                        >
+                          <img
+                            class="pointer-events-none"
+                            width="32"
+                            height="32"
+                            src="./img/google.svg"
+                            alt="Google icon"
+                          />
+                          <span
+                            data-translate="signUpWithGoogle"
+                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight text-[#171717]"
+                            >Sign Up with Google</span
+                          >
+                        </a>
+                        <a
+                          data-reg-type="facebook"
+                          href="#"
+                          class="socials-form-social-link text-white flex items-center justify-center gap-[10px] rounded-xl bg-[#337FFF] p-[11px]"
+                        >
+                          <img
+                            class="pointer-events-none"
+                            width="32"
+                            height="32"
+                            src="./img/facebook-logo.svg"
+                            alt="Facebook logo"
+                          />
+                          <span
+                            data-translate="signUpWithFacebook"
+                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight"
+                            >Sign Up with Facebook</span
+                          >
+                        </a>
+                      </div>
+                      <!-- Form type tabs -->
+                      <div class="form-type-buttons grid grid-cols-2 mt-3">
+                        <div
+                          data-tab="email"
+                          class="socials-form-type-btn active group relative flex cursor-pointer items-center justify-center gap-[5px] p-[10px]"
+                        >
+                          <svg
+                            class="pointer-events-none stroke-[#00000050] transition group-hover:stroke-[#000000]"
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5 7C3.5 6.46957 3.71071 5.96086 4.08579 5.58579C4.46086 5.21071 4.96957 5 5.5 5H19.5C20.0304 5 20.5391 5.21071 20.9142 5.58579C21.2893 5.96086 21.5 6.46957 21.5 7M3.5 7V17C3.5 17.5304 3.71071 18.0391 4.08579 18.4142C4.46086 18.7893 4.96957 19 5.5 19H19.5C20.0304 19 20.5391 18.7893 20.9142 18.4142C21.2893 18.0391 21.5 17.5304 21.5 17V7M3.5 7L12.5 13L21.5 7"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span
+                            class="pointer-events-none font-[raleway] font-bold tracking-tight text-[#00000050] transition-colors group-hover:text-[#000000]"
+                            >E-Mail</span
+                          >
+                        </div>
+                        <div
+                          data-tab="phone"
+                          class="socials-form-type-btn group relative flex cursor-pointer items-center justify-center gap-[5px] p-[10px]"
+                        >
+                          <svg
+                            class="pointer-events-none stroke-[#00000050] transition group-hover:stroke-[#000000]"
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.5 4H13.5M12.5 17V17.01M6.5 5C6.5 4.46957 6.71071 3.96086 7.08579 3.58579C7.46086 3.21071 7.96957 3 8.5 3H16.5C17.0304 3 17.5391 3.21071 17.9142 3.58579C18.2893 3.96086 18.5 4.46957 18.5 5V19C18.5 19.5304 18.2893 20.0391 17.9142 20.4142C17.5391 20.7893 17.0304 21 16.5 21H8.5C7.96957 21 7.46086 20.7893 7.08579 20.4142C6.71071 20.0391 6.5 19.5304 6.5 19V5Z"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span
+                            data-translate="phone"
+                            class="pointer-events-none font-[raleway] font-bold tracking-tight text-[#00000050] transition-colors group-hover:text-[#000000]"
+                            >Phone</span
+                          >
+                        </div>
+                      </div>
+                      <!-- Inputs -->
+                      <div class="form-tab-content mt-3">
+                        <div
+                          class="socials-form-group active socials-form-group-email relative h-[64px] items-end rounded-xl bg-[#171929] px-4 py-[15px]"
+                        >
+                          <div class="flex items-center gap-2 w-full">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M3 7C3 6.46957 3.21071 5.96086 3.58579 5.58579C3.96086 5.21071 4.46957 5 5 5H19C19.5304 5 20.0391 5.21071 20.4142 5.58579C20.7893 5.96086 21 6.46957 21 7M3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7M3 7L12 13L21 7"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <input
+                              class="email-input w-full bg-transparent text-lg font-[raleway] font-bold tracking-tight text-white outline-none"
+                              type="email"
+                              id="form-email"
+                              placeholder=" "
+                              name="email"
+                            />
+                            <label
+                              class="pointer-events-none absolute left-12 top-0 z-[2] flex h-full w-full items-center font-bold tracking-tight text-[#ffffff50]"
+                              for="form-email"
+                              >E-mail</label
+                            >
+                          </div>
+                          <svg
+                            class="not-valid-icon absolute right-5 top-1/2 hidden -translate-y-1/2"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M24 8L8 24M8 8L24 24"
+                              stroke="#FF5530"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <div
+                            data-translate="wrongEmail"
+                            class="tooltip absolute -right-4 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
+                          >
+                            Wrong email
+                          </div>
+                        </div>
+                        <div
+                          class="socials-form-group socials-form-group-phone relative h-[64px] flex-col gap-[5px] rounded-xl bg-[#171929] px-3 py-[10px]"
+                        >
+                          <span
+                            data-translate="phoneNumber"
+                            class="block text-xs font-bold leading-none tracking-tight text-[#ffffff50]"
+                            >Phone Number</span
+                          >
+                          <input
+                            class="phone-input socials-phone-input bg-transparent text-lg font-bold tracking-tight text-[#ffffff] outline-none"
+                            type="phone"
+                            name="phone"
+                          />
+                          <svg
+                            class="not-valid-icon absolute right-5 top-1/2 hidden -translate-y-1/2"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M24 8L8 24M8 8L24 24"
+                              stroke="#FF5530"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <div
+                            data-translate="wrongNumber"
+                            class="tooltip absolute -right-4 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
+                          >
+                            Wrong number
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Step Button -->
+                      <button
+                        disabled
+                        class="form-step-btn form-step-btn-1 btn-disabled form-step-btn-next mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl px-[14px] p-[15px] text-center font-[montserrat] font-bold tracking-tight text-[#0f0f0f]"
+                      >
+                        <span data-translate="signUpBtn">Sign Up</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.87501 11.9998C1.87501 11.7014 1.99354 11.4153 2.20452 11.2043C2.4155 10.9933 2.70165 10.8748 3.00001 10.8748L18.285 10.8748L14.205 6.79477C14.0063 6.58151 13.8981 6.29944 13.9033 6.00799C13.9084 5.71653 14.0265 5.43846 14.2326 5.23234C14.4387 5.02622 14.7168 4.90815 15.0082 4.90301C15.2997 4.89787 15.5818 5.00605 15.795 5.20477L21.795 11.2048C22.0057 11.4157 22.124 11.7016 22.124 11.9998C22.124 12.2979 22.0057 12.5838 21.795 12.7948L15.795 18.7948C15.5818 18.9935 15.2997 19.1017 15.0082 19.0965C14.7168 19.0914 14.4387 18.9733 14.2326 18.7672C14.0265 18.5611 13.9084 18.283 13.9033 17.9916C13.8981 17.7001 14.0063 17.418 14.205 17.2048L18.285 13.1248L3.00001 13.1248C2.70165 13.1248 2.4155 13.0062 2.20452 12.7953C1.99354 12.5843 1.87501 12.2981 1.87501 11.9998Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Step 2 -->
+                    <div
+                      class="socials-form-step socials-form-step-2 mb-[15px] hidden"
+                    >
+                      <!-- inputs -->
+                      <div
+                        class="socials-form-group-password relative mt-[15px] h-[64px] flex-col gap-[5px] rounded-xl bg-[#171929] px-3 py-[10px]"
+                      >
+                        <span
+                          data-translate="passwordPlaceholder"
+                          class="block text-xs font-bold leading-none tracking-tight text-[#ffffff50]"
+                          >Password</span
+                        >
+                        <input
+                          class="password-input mt-1 bg-transparent text-lg font-bold tracking-tight text-[#ffffff] outline-none placeholder:text-[#ffffff]/50"
+                          type="password"
+                          placeholder=""
+                          name="password"
+                        />
+                        <svg
+                          class="not-valid-icon absolute right-[57px] top-1/2 hidden -translate-y-1/2"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M24 8L8 24M8 8L24 24"
+                            stroke="#FF5530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <img
+                          class="show-password-btn absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer"
+                          width="32"
+                          height="32"
+                          src="./img/password-invisible.svg"
+                          alt="Password icon"
+                        />
+                        <div
+                          data-translate="atLeast6Chars"
+                          class="tooltip pointer-events-none absolute -right-2 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
+                        >
+                          At least 6 characters.
+                        </div>
+                      </div>
+                      <!-- Currency -->
+                      <div class="form-currency relative mt-[15px]">
+                        <input
+                          class="currency-input"
+                          name="currency"
+                          type="hidden"
+                          value="USD"
+                        />
+                        <div
+                          class="form-currency-btn grid cursor-pointer grid-cols-[1fr_auto] items-center gap-2 rounded-2xl border-2 border-white bg-[#171929] px-3 py-2"
+                        >
+                          <div>
+                            <p
+                              data-translate="currency"
+                              class="text-xs font-bold leading-none text-white"
+                            >
+                              Currency
+                            </p>
+                            <div class="mt-[6px] flex items-center gap-2">
+                              <img
+                                class="main-currency-icon"
+                                width="24"
+                                height="24"
+                                src="https://3344112-img.b-cdn.net/currency_icons/USD.svg"
+                                alt="USD"
+                              />
+                              <span
+                                class="main-currency-name text-lg font-bold text-white"
+                                >US Dollar</span
+                              >
+                            </div>
+                          </div>
+                          <div
+                            class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5"
+                          >
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6 9L12 15L18 9"
+                                stroke="#F0F0F0"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="form-currency-dropdown max-h-[225px] overflow-y-auto invisible absolute left-0 top-[105%] z-[3] w-full overflow-hidden rounded-2xl border-2 border-white opacity-0 [&.active]:visible [&.active]:opacity-100"
+                        >
+                          <ul class="currency-list text-white"></ul>
+                        </div>
+                      </div>
+                      <!-- Terms and Conditions -->
+                      <label
+                        class="checkbox terms-modal-btn mt-[15px] block cursor-pointer"
+                      >
+                        <input
+                          checked
+                          type="checkbox"
+                          class="checkbox-input absolute opacity-0"
+                        />
+                        <span
+                          data-translate="terms"
+                          class="checkbox-content relative block pl-7 text-sm font-bold leading-tight text-[#000000]"
+                        >
+                          I agree to the
+                          <a
+                            class="text-[#000000] underline underline-offset-2"
+                            href="#"
+                            >Terms and Conditions</a
+                          ></span
+                        >
+                      </label>
+                      <!-- Step Button -->
+                      <button
+                        disabled
+                        type="submit"
+                        class="form-step-btn main-form-submit-btn form-step-btn-2 btn-disabled form-step-btn-next mt-3 w-full cursor-pointer flex items-center justify-center gap-2 rounded-2xl p-[15px] font-[sfrounded] text-center text-lg font-bold tracking-tight text-[#0f0f0f]"
+                      >
+                        <span data-translate="startPlaying"></span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.87501 11.9998C1.87501 11.7014 1.99354 11.4153 2.20452 11.2043C2.4155 10.9933 2.70165 10.8748 3.00001 10.8748L18.285 10.8748L14.205 6.79477C14.0063 6.58151 13.8981 6.29944 13.9033 6.00799C13.9084 5.71653 14.0265 5.43846 14.2326 5.23234C14.4387 5.02622 14.7168 4.90815 15.0082 4.90301C15.2997 4.89787 15.5818 5.00605 15.795 5.20477L21.795 11.2048C22.0057 11.4157 22.124 11.7016 22.124 11.9998C22.124 12.2979 22.0057 12.5838 21.795 12.7948L15.795 18.7948C15.5818 18.9935 15.2997 19.1017 15.0082 19.0965C14.7168 19.0914 14.4387 18.9733 14.2326 18.7672C14.0265 18.5611 13.9084 18.283 13.9033 17.9916C13.8981 17.7001 14.0063 17.418 14.205 17.2048L18.285 13.1248L3.00001 13.1248C2.70165 13.1248 2.4155 13.0062 2.20452 12.7953C1.99354 12.5843 1.87501 12.2981 1.87501 11.9998Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Bonus -->
+                    <div
+                      class="bonus-wrapper form-bonus mt-auto rounded-2xl bg-[#FCA400] p-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[5px] rounded-[14px] bg-[#171929] px-[14px] py-[9px]"
+                      >
+                        <div class="w-full">
+                          <p
+                            data-translate="promoApplied"
+                            class="text-xs font-bold font-[montserrat] tracking-tight text-[#FCA400]"
+                          >
+                            Promocode applied
+                          </p>
+                          <input
+                            disabled
+                            class="promocode-input pointer-events-none w-full bg-transparent text-lg font-[sfrounded] font-bold uppercase tracking-tight text-[#f0f0f0] outline-none"
+                            value=""
+                            type="text"
+                          />
+                        </div>
+                        <span class="text-[34px] gift-box">🎁</span>
+                      </div>
+                      <div
+                        class="my-2 flex items-center justify-center gap-1 text-sm font-bold tracking-tight text-[#000000]"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 6.16707V17.0004M10.5 6.16707C10.1986 4.92491 9.67954 3.86292 9.01061 3.11966C8.34169 2.37641 7.5539 1.98636 6.75 2.00036C6.19747 2.00036 5.66756 2.21986 5.27686 2.61056C4.88616 3.00126 4.66667 3.53116 4.66667 4.0837C4.66667 4.63623 4.88616 5.16614 5.27686 5.55684C5.66756 5.94754 6.19747 6.16703 6.75 6.16703M10.5 6.16707C10.8014 4.92491 11.3205 3.86292 11.9894 3.11966C12.6583 2.37641 13.4461 1.98636 14.25 2.00036C14.8025 2.00036 15.3324 2.21986 15.7231 2.61056C16.1138 3.00126 16.3333 3.53116 16.3333 4.0837C16.3333 4.63623 16.1138 5.16614 15.7231 5.55684C15.3324 5.94754 14.8025 6.16703 14.25 6.16703M16.3333 9.50041V15.3337C16.3333 15.7758 16.1577 16.1997 15.8452 16.5123C15.5326 16.8248 15.1087 17.0004 14.6667 17.0004H6.33333C5.89131 17.0004 5.46738 16.8248 5.15482 16.5123C4.84226 16.1997 4.66667 15.7758 4.66667 15.3337V9.50041M3 7.00041C3 6.77939 3.0878 6.56743 3.24408 6.41115C3.40036 6.25487 3.61232 6.16707 3.83333 6.16707H17.1667C17.3877 6.16707 17.5996 6.25487 17.7559 6.41115C17.9122 6.56743 18 6.77939 18 7.00041V8.66707C18 8.88809 17.9122 9.10005 17.7559 9.25633C17.5996 9.41261 17.3877 9.50041 17.1667 9.50041H3.83333C3.61232 9.50041 3.40036 9.41261 3.24408 9.25633C3.0878 9.10005 3 8.88809 3 8.66707V7.00041Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p
+                          data-translate="bonusName"
+                          class="pomocode-text pomocode-text-1"
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
         <!-- container -->
-        <div
-          class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
-        >
-          <div
-            class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
-          >
-            <div class="step-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div
-                    class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
-                  >
-                    <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
-                    >
-                      1
-                    </p>
-                    <div class="space-y-[10px]">
-                      <p
-                        data-translate="slideStep1Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
-                      >
-                        REGISTER
-                      </p>
-                      <p
-                        data-translate="slideStep1Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
-                      >
-                        Click "Play Now" and enter your email and password.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
-                  >
-                    <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
-                    >
-                      2
-                    </p>
-                    <div class="space-y-[10px]">
-                      <p
-                        data-translate="slideStep2Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
-                      >
-                        MAKE A DEPOSIT
-                      </p>
-                      <p
-                        data-translate="slideStep2Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
-                      >
-                        Choose your preferred payment method and make a deposit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="flex gap-[30px] max-[576px]:gap-[15px] max-w-[320px]"
-                  >
-                    <p
-                      class="text-[90px] max-[350px]:text-[70px] leading-none min-w-max text-[#FFAE0C] font-[saira] steps-number uppercase"
-                    >
-                      3
-                    </p>
-                    <div class="space-y-[10px]">
-                      <p
-                        data-translate="slideStep3Title"
-                        class="text-2xl max-[350px]:text-[16px] max-[576px]:text-[20px] font-black font-[raleway] text-[#f0f0f0]"
-                      >
-                        GET THE BONUS
-                      </p>
-                      <p
-                        data-translate="slideStep3Text"
-                        class="text-[15px] max-[350px]:text-[12px] leading-[140%] text-[#f0f0f0] opacity-70 font-[raleway]"
-                      >
-                        Your welcome bonus is ready for you in the Bonus Center.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-button-prev hidden max-[576px]:block absolute left-2 top-[50%] -translate-y-[50%]"
-              >
-                <svg
-                  class="stroke-[#F0F0F0]"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+        <div class="max-w-[1110px] mx-auto relative -top-[120px] z-[20]">
+          <div class="steps-wrapper relative p-2 grid grid-cols-3">
+            <div
+              class="step-wrapper-item font-[sfrounded] space-y-5 step-wrapper-item-1 rounded-2xl p-[30px]"
+            >
+              <div class="flex items-center justify-between w-full h-auto">
+                <span
+                  class="step-wrapper-item-icon text-2xl w-[52px] h-[52px] flex items-center justify-center bg-black p-[14px] rounded-xl"
+                  >🎰</span
                 >
-                  <path
-                    d="M25.5 7L13 19.5L25.5 32"
-                    stroke="#F0F0F0"
-                    stroke-width="4"
-                  />
-                </svg>
-              </div>
-              <div
-                class="swiper-button-next hidden max-[576px]:block absolute right-2 top-[50%] -translate-y-[50%]"
-              >
-                <svg
-                  class="stroke-[#F0F0F0]"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <span
+                  class="step-wrapper-item-number text-black font-black text-[58px] leading-none"
+                  >01</span
                 >
-                  <path d="M12.5 7L25 19.5L12.5 32" stroke-width="4" />
-                </svg>
+              </div>
+              <div class="space-y-[10px]">
+                <p
+                  data-translate="slideStep1Title"
+                  class="text-[22px] font-bold"
+                ></p>
+                <p
+                  data-translate="slideStep1Text"
+                  class="text-black/75 text-balance"
+                ></p>
+              </div>
+            </div>
+            <div
+              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px]"
+            >
+              <div class="flex items-center justify-between w-full h-auto">
+                <span
+                  class="step-wrapper-item-icon text-2xl w-[52px] h-[52px] flex items-center justify-center bg-white p-[14px] rounded-xl"
+                  >💳</span
+                >
+                <span
+                  class="step-wrapper-item-number text-white font-black text-[58px] leading-none"
+                  >02</span
+                >
+              </div>
+              <div class="space-y-[10px] text-white">
+                <p
+                  data-translate="slideStep2Title"
+                  class="text-[22px] font-bold"
+                ></p>
+                <p
+                  data-translate="slideStep2Text"
+                  class="text-white/75 text-balance"
+                ></p>
+              </div>
+            </div>
+            <div
+              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px]"
+            >
+              <div class="flex items-center justify-between w-full h-auto">
+                <span
+                  class="step-wrapper-item-icon text-2xl w-[52px] h-[52px] flex items-center justify-center bg-white p-[14px] rounded-xl"
+                  >🏆</span
+                >
+                <span
+                  class="step-wrapper-item-number text-white font-black text-[58px] leading-none"
+                  >03</span
+                >
+              </div>
+              <div class="space-y-[10px] text-white">
+                <p
+                  data-translate="slideStep3Title"
+                  class="text-[22px] font-bold"
+                ></p>
+                <p
+                  data-translate="slideStep3Text"
+                  class="text-white/75 text-balance"
+                ></p>
               </div>
             </div>
           </div>
@@ -507,7 +881,7 @@
         <div class="max-w-[1140px] px-[15px] mx-auto">
           <p
             data-translate="footerText"
-            class="text-[12px] leading-[140%] text-[#f0f0f0] text-center font-[raleway]"
+            class="text-[12px] leading-[140%] text-[#f0f0f050] text-center font-[raleway]"
           >
             The website www.goldbet.io is owned and operated by Ivanov I.I.
             (registration number: 12345678; with registered Address: Ivanov Ivan
@@ -524,1352 +898,12 @@
           </p>
           <div
             class="footer-payments-list flex items-center max-[576px]:mt-[20px] justify-center gap-5 max-[576px]:gap-3 flex-wrap mt-12 py-[17px]"
-          >
-            <img
-              width="100"
-              height="51"
-              class="grayscale-100 w-[100px] max-[576px]:max-w-[50px]"
-              src="./img/payments/logo-visa.svg"
-              alt="visa"
-            />
-            <img
-              width="100"
-              height="51"
-              class="grayscale-100 w-[100px] max-[576px]:max-w-[50px]"
-              src="./img/payments/logo-mastercard.svg"
-              alt="mastercard"
-            />
-            <img
-              width="100"
-              height="51"
-              class="grayscale-100 w-[100px] max-[576px]:max-w-[50px]"
-              src="./img/payments/logo-google-pay.svg"
-              alt="google-pay"
-            />
-            <img
-              width="100"
-              height="51"
-              class="grayscale-100 w-[100px] max-[576px]:max-w-[50px]"
-              src="./img/payments/logo-apple-pay.svg"
-              alt="apple-pay"
-            />
-            <img
-              width="100"
-              height="51"
-              class="grayscale-100 w-[100px] max-[576px]:max-w-[50px]"
-              src="./img/payments/crypto.svg"
-              alt="crypto"
-            />
-          </div>
+          ></div>
         </div>
       </footer>
-      <!-- Form overlay -->
+      <!-- Prealoader -->
       <div
-        class="form-overlay bg-black/10 backdrop-blur-sm fixed left-0 top-0 z-[500] hidden h-screen w-full place-items-center overflow-y-auto bg-pageBg/80 p-8 max-[576px]:h-dvh max-[576px]:p-0"
-      >
-        <!-- Socials form -->
-        <div
-          class="modal-content form-modal-socials grid modal-content-socials w-full max-w-[1000px] grid-cols-2 overflow-hidden rounded-[24px] border border-white/25 max-[992px]:max-w-[500px] max-[992px]:grid-cols-1 max-[576px]:min-h-svh max-[576px]:max-w-full max-[576px]:rounded-none max-[576px]:border-none [&.active]:grid"
-        >
-          <!-- left -->
-          <div
-            class="relative h-full w-full overflow-hidden bg-[url(../img/socialsFormImg/form-left-bg.webp)] bg-cover bg-center bg-no-repeat max-[992px]:hidden"
-          >
-            <img
-              class="lion-image relative z-10 h-full w-full object-cover will-change-transform"
-              width="750"
-              height="1032"
-              src="./img/socialsFormImg/form-lion.webp"
-              alt="Lion"
-            />
-            <div
-              class="marquee-1 font-raleway absolute z-[5] w-[1000px] bg-[#F4FD2B] py-4 text-[37px] font-black uppercase leading-[100%] tracking-tight text-[#0f0f0f]"
-            >
-              <div
-                class="yellow-line-1 flex items-center gap-4 will-change-transform"
-              >
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-              </div>
-            </div>
-            <div
-              class="marquee-2 font-raleway absolute z-20 w-[1000px] bg-[#F4FD2B] py-4 text-[37px] font-black uppercase leading-[100%] tracking-tight text-[#0f0f0f]"
-            >
-              <div
-                class="yellow-line-1 flex items-center gap-4 will-change-transform"
-              >
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-                <span>•</span>
-                <p>GOLDBET</p>
-                <span>•</span>
-                <p>withdrawals</p>
-              </div>
-            </div>
-            <!-- Wallet Circle -->
-            <div
-              class="wallet-circle-big absolute -left-[80px] top-8 flex h-[230px] w-[230px] items-center justify-center rounded-full p-6"
-            >
-              <div
-                class="wallet-circle-small h-full w-full rounded-full bg-white/30"
-              ></div>
-              <img
-                class="wallet-image absolute will-change-transform"
-                width="185"
-                height="185"
-                src="./img/socialsFormImg/wallet-img.webp"
-                alt="Wallet image"
-              />
-            </div>
-          </div>
-          <!-- right -->
-          <div
-            class="form-modal-right relative h-full w-full bg-[url(../img/socialsFormImg/form-right-green-bg.webp)] bg-cover bg-center bg-no-repeat px-[30px] py-[60px] max-[576px]:p-[15px] max-[576px]:pt-[70px]"
-          >
-            <button
-              class="form-modal-close-btn absolute right-[15px] top-[15px] flex h-12 w-12 items-center justify-center rounded-lg bg-white/5 transition-all duration-200 hover:bg-white/15 max-[576px]:right-[15px] max-[576px]:top-[15px]"
-            >
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24 8L8 24M8 8L24 24"
-                  stroke="#F0F0F0"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              class="form-step-btn-prev absolute left-[15px] top-[15px] flex hidden h-12 w-12 items-center justify-center rounded-lg bg-white/5 transition-all duration-200 hover:bg-white/15 max-[576px]:left-[15px] max-[576px]:top-[15px]"
-            >
-              <svg
-                class="stroke-[#f0f0f0]"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 8L12 16L20 24"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <form action="#" class="form socials-form h-full">
-              <div class="flex h-full flex-col">
-                <!-- Step 1 -->
-                <div class="socials-form-step socials-form-step-1 mb-[15px]">
-                  <!-- Header -->
-                  <div class="space-y-[5px] text-center text-white">
-                    <p
-                      data-translate="signUpEasySteps"
-                      class="text-[24px] font-bold tracking-tight"
-                    >
-                      Sign Up in 3 Easy Steps
-                    </p>
-                    <p
-                      class="font-montserrat relative mx-auto inline-block max-w-[270px] text-[15px] font-normal leading-[160%] tracking-tight"
-                    >
-                      <svg
-                        class="red-arrow absolute bottom-0 left-[110%]"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.19995 3.19995L12 10.4L20.8 3.19995"
-                          stroke="#FF3A33"
-                          stroke-width="4.8"
-                        />
-                        <path
-                          d="M3.19995 13.6001L12 20.8001L20.8 13.6001"
-                          stroke="#FF3A33"
-                          stroke-width="4.8"
-                        />
-                      </svg>
-                      <span data-translate="completeToClaimGift"
-                        >Complete them to claim your gift.</span
-                      >
-                      <svg
-                        class="red-arrow absolute bottom-0 right-[110%]"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.19995 3.19995L12 10.4L20.8 3.19995"
-                          stroke="#FF3A33"
-                          stroke-width="4.8"
-                        />
-                        <path
-                          d="M3.19995 13.6001L12 20.8001L20.8 13.6001"
-                          stroke="#FF3A33"
-                          stroke-width="4.8"
-                        />
-                      </svg>
-                    </p>
-                  </div>
-                  <!-- Socials -->
-                  <div class="mt-[15px] space-y-[15px]">
-                    <a
-                      data-reg-type="google"
-                      href="#"
-                      class="socials-form-social-link flex items-center justify-center gap-[10px] rounded-xl bg-white p-4 transition-transform duration-300 hover:scale-[1.02] active:scale-[0.99]"
-                    >
-                      <img
-                        class="pointer-events-none"
-                        width="32"
-                        height="32"
-                        src="./img/google.svg"
-                        alt="Google icon"
-                      />
-                      <span
-                        data-translate="signUpWithGoogle"
-                        class="pointer-events-none text-lg font-bold tracking-tight text-[#0f0f0f]"
-                        >Sign Up with Google</span
-                      >
-                    </a>
-                    <a
-                      data-reg-type="facebook"
-                      href="#"
-                      class="socials-form-social-link text-white flex items-center justify-center gap-[10px] rounded-xl bg-[#337FFF] p-4 transition-transform duration-300 hover:scale-[1.02] active:scale-[0.99]"
-                    >
-                      <img
-                        class="pointer-events-none"
-                        width="32"
-                        height="32"
-                        src="./img/facebook-logo.svg"
-                        alt="Facebook logo"
-                      />
-                      <span
-                        data-translate="signUpWithFacebook"
-                        class="pointer-events-none text-lg font-bold tracking-tight"
-                        >Sign Up with Facebook</span
-                      >
-                    </a>
-                  </div>
-                  <!-- Form type tabs -->
-                  <div class="form-type-buttons mt-[15px] grid grid-cols-2">
-                    <div
-                      data-tab="email"
-                      class="socials-form-type-btn active group relative flex cursor-pointer items-center justify-center gap-[5px] border-b border-[#5D6A69] p-5"
-                    >
-                      <svg
-                        class="pointer-events-none stroke-[#f0f0f0] transition group-hover:stroke-[#FAD303]"
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.5 7C3.5 6.46957 3.71071 5.96086 4.08579 5.58579C4.46086 5.21071 4.96957 5 5.5 5H19.5C20.0304 5 20.5391 5.21071 20.9142 5.58579C21.2893 5.96086 21.5 6.46957 21.5 7M3.5 7V17C3.5 17.5304 3.71071 18.0391 4.08579 18.4142C4.46086 18.7893 4.96957 19 5.5 19H19.5C20.0304 19 20.5391 18.7893 20.9142 18.4142C21.2893 18.0391 21.5 17.5304 21.5 17V7M3.5 7L12.5 13L21.5 7"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span
-                        class="pointer-events-none text-lg font-bold tracking-tight text-[#f0f0f0] transition-colors group-hover:text-[#FAD303]"
-                        >E-Mail</span
-                      >
-                    </div>
-                    <div
-                      data-tab="phone"
-                      class="socials-form-type-btn group relative flex cursor-pointer items-center justify-center gap-[5px] border-b border-[#5D6A69] p-5"
-                    >
-                      <svg
-                        class="pointer-events-none stroke-[#f0f0f0] transition group-hover:stroke-[#FAD303]"
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.5 4H13.5M12.5 17V17.01M6.5 5C6.5 4.46957 6.71071 3.96086 7.08579 3.58579C7.46086 3.21071 7.96957 3 8.5 3H16.5C17.0304 3 17.5391 3.21071 17.9142 3.58579C18.2893 3.96086 18.5 4.46957 18.5 5V19C18.5 19.5304 18.2893 20.0391 17.9142 20.4142C17.5391 20.7893 17.0304 21 16.5 21H8.5C7.96957 21 7.46086 20.7893 7.08579 20.4142C6.71071 20.0391 6.5 19.5304 6.5 19V5Z"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span
-                        data-translate="phone"
-                        class="pointer-events-none text-lg font-bold tracking-tight text-[#f0f0f0] transition-colors group-hover:text-[#FAD303]"
-                        >Phone</span
-                      >
-                    </div>
-                  </div>
-                  <!-- Inputs -->
-                  <div class="form-tab-content mt-[15px]">
-                    <div
-                      class="socials-form-group active socials-form-group-email relative h-[64px] items-end rounded-xl bg-white px-5 pb-[11px]"
-                    >
-                      <input
-                        class="email-input w-full bg-transparent text-lg font-bold tracking-tight text-[#755EEB] outline-none"
-                        type="email"
-                        id="form-email"
-                        placeholder=" "
-                        name="email"
-                      />
-                      <label
-                        class="pointer-events-none absolute left-5 top-0 z-[2] flex h-full w-full items-center text-lg font-bold tracking-tight text-[#585858]"
-                        for="form-email"
-                        >E-mail</label
-                      >
-                      <svg
-                        class="not-valid-icon absolute right-5 top-1/2 hidden -translate-y-1/2"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M24 8L8 24M8 8L24 24"
-                          stroke="#FF5530"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div
-                        data-translate="wrongEmail"
-                        class="tooltip absolute -right-4 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
-                      >
-                        Wrong email
-                      </div>
-                    </div>
-                    <div
-                      class="socials-form-group socials-form-group-phone relative h-[64px] flex-col gap-[5px] rounded-xl bg-white px-3 py-[10px]"
-                    >
-                      <span
-                        data-translate="phoneNumber"
-                        class="block text-xs font-bold leading-none tracking-tight text-[#585858]"
-                        >Phone Number</span
-                      >
-                      <input
-                        class="phone-input socials-phone-input bg-transparent text-lg font-bold tracking-tight text-[#755EEB] outline-none"
-                        type="phone"
-                        name="phone"
-                      />
-                      <svg
-                        class="not-valid-icon absolute right-5 top-1/2 hidden -translate-y-1/2"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M24 8L8 24M8 8L24 24"
-                          stroke="#FF5530"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div
-                        data-translate="wrongNumber"
-                        class="tooltip absolute -right-4 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
-                      >
-                        Wrong number
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Step Button -->
-                  <button
-                    disabled
-                    class="form-step-btn form-step-btn-1 btn-disabled form-step-btn-next mt-[15px] grid w-full cursor-pointer grid-cols-[1fr_auto] gap-1 rounded-2xl bg-[#F4FD2B] px-[14px] py-5 text-center text-lg font-bold tracking-tight text-[#0f0f0f]"
-                  >
-                    <span data-translate="signUpBtn">Sign Up</span>
-                    <svg
-                      class="pointer-events-none"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9 6L15 12L9 18"
-                        stroke="#0F0F0F"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <!-- Step 2 -->
-                <div
-                  class="socials-form-step socials-form-step-2 mb-[15px] hidden"
-                >
-                  <!-- Header -->
-                  <div
-                    class="space-y-[5px] text-center leading-tight text-white"
-                  >
-                    <p
-                      data-translate="step2Title"
-                      class="text-[24px] font-bold tracking-tight"
-                    >
-                      One Last Step <br />
-                      to Claim Your Bonus
-                    </p>
-                    <p
-                      data-translate="step2Subtitle"
-                      class="font-montserrat text-[15px] font-normal leading-[160%] tracking-tight"
-                    >
-                      Create a password and select <br />
-                      your account currency.
-                    </p>
-                  </div>
-                  <!-- inputs -->
-                  <div
-                    class="socials-form-group-password relative mt-[15px] h-[64px] flex-col gap-[5px] rounded-xl bg-white px-3 py-[10px]"
-                  >
-                    <span
-                      data-translate="passwordPlaceholder"
-                      class="block text-xs font-bold leading-none tracking-tight text-[#585858]"
-                      >Password</span
-                    >
-                    <input
-                      class="password-input mt-1 bg-transparent text-lg font-bold tracking-tight text-[#755EEB] outline-none placeholder:text-[#755eeb]/30"
-                      type="password"
-                      placeholder=""
-                      name="password"
-                    />
-                    <svg
-                      class="not-valid-icon absolute right-[57px] top-1/2 hidden -translate-y-1/2"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M24 8L8 24M8 8L24 24"
-                        stroke="#FF5530"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <img
-                      class="show-password-btn absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer"
-                      width="32"
-                      height="32"
-                      src="./img/password-invisible.svg"
-                      alt="Password icon"
-                    />
-                    <div
-                      data-translate="atLeast6Chars"
-                      class="tooltip pointer-events-none absolute -right-2 bottom-[90%] z-30 hidden rounded-md bg-[#f0f0f0] px-2 py-[6px] text-sm font-normal leading-[120%] text-[#0f0f0f]"
-                    >
-                      At least 6 characters.
-                    </div>
-                  </div>
-                  <!-- Currency -->
-                  <div class="form-currency relative mt-[15px]">
-                    <input
-                      class="currency-input"
-                      name="currency"
-                      type="hidden"
-                      value="USD"
-                    />
-                    <div
-                      class="form-currency-btn grid cursor-pointer grid-cols-[1fr_auto] items-center gap-2 rounded-2xl border-2 border-white bg-[#021816] px-3 py-2 transition-all hover:bg-[#042925]"
-                    >
-                      <div>
-                        <p
-                          data-translate="currency"
-                          class="text-xs font-bold leading-none text-white"
-                        >
-                          Currency
-                        </p>
-                        <div class="mt-[6px] flex items-center gap-2">
-                          <img
-                            class="main-currency-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/usd.svg"
-                            alt="USD"
-                          />
-                          <span
-                            class="main-currency-name text-lg font-bold text-white"
-                            >US Dollar</span
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5"
-                      >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6 9L12 15L18 9"
-                            stroke="#F0F0F0"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div
-                      class="form-currency-dropdown max-h-[225px] overflow-y-auto invisible absolute left-0 top-[105%] z-[3] w-full overflow-hidden rounded-2xl border-2 border-white opacity-0 [&.active]:visible [&.active]:opacity-100"
-                    >
-                      <ul class="text-white">
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/eur.svg"
-                            alt="EUR"
-                          />
-                          <span class="currency-item-name">Euro</span>
-                          <div>
-                            <span class="currency-item-symbol">€</span>
-                            |
-                            <span class="currency-item-abbr">EUR</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/usd.svg"
-                            alt="USD"
-                          />
-                          <span class="currency-item-name">US Dollar</span>
-                          <div>
-                            <span class="currency-item-symbol">$</span>
-                            |
-                            <span class="currency-item-abbr">USD</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/kzt.svg"
-                            alt="KZT"
-                          />
-                          <span class="currency-item-name"
-                            >Kazakhstani Tenge</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">₸</span>
-                            |
-                            <span class="currency-item-abbr">KZT</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/try.svg"
-                            alt="TRY"
-                          />
-                          <span class="currency-item-name">Turkish Lira</span>
-                          <div>
-                            <span class="currency-item-symbol">₺</span>
-                            |
-                            <span class="currency-item-abbr">TRY</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/azn.svg"
-                            alt="AZN"
-                          />
-                          <span class="currency-item-name"
-                            >Azerbaijani Manat</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">₼</span>
-                            |
-                            <span class="currency-item-abbr">AZN</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/uzs.svg"
-                            alt="UZS"
-                          />
-                          <span class="currency-item-name"
-                            >Uzbekistani Som</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">SO’M</span>
-                            |
-                            <span class="currency-item-abbr">UZS</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/uah.svg"
-                            alt="UAH"
-                          />
-                          <span class="currency-item-name"
-                            >Ukrainian Hryvnia</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">₴</span>
-                            |
-                            <span class="currency-item-abbr">UAH</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/kgs.svg"
-                            alt="KGS"
-                          />
-                          <span class="currency-item-name"
-                            >Kyrgyzstani Som</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">с</span>
-                            |
-                            <span class="currency-item-abbr">KGS</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/brl.svg"
-                            alt="BRL"
-                          />
-                          <span class="currency-item-name">Brazilian real</span>
-                          <div>
-                            <span class="currency-item-symbol">R$</span>
-                            |
-                            <span class="currency-item-abbr">BRL</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/ars.svg"
-                            alt="ARS"
-                          />
-                          <span class="currency-item-name">Argentine Peso</span>
-                          <div>
-                            <span class="currency-item-symbol">$</span>
-                            |
-                            <span class="currency-item-abbr">ARS</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/aud.svg"
-                            alt="AUD"
-                          />
-                          <span class="currency-item-name"
-                            >Australian Dollar</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">AU$</span>
-                            |
-                            <span class="currency-item-abbr">AUD</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/bdt.svg"
-                            alt="BDT"
-                          />
-                          <span class="currency-item-name"
-                            >Bangladeshi Taka</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">৳</span>
-                            |
-                            <span class="currency-item-abbr">BDT</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/cad.svg"
-                            alt="CAD"
-                          />
-                          <span class="currency-item-name"
-                            >Canadian Dollar</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">$</span>
-                            |
-                            <span class="currency-item-abbr">CAD</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/inr.svg"
-                            alt="INR"
-                          />
-                          <span class="currency-item-name">Indian Rupee</span>
-                          <div>
-                            <span class="currency-item-symbol">₹</span>
-                            |
-                            <span class="currency-item-abbr">INR</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/nzd.svg"
-                            alt="NZD"
-                          />
-                          <span class="currency-item-name"
-                            >New Zealand Dollar</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">NZ$</span>
-                            |
-                            <span class="currency-item-abbr">NZD</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/ron.svg"
-                            alt="RON"
-                          />
-                          <span class="currency-item-name">Romanian Leu</span>
-                          <div>
-                            <span class="currency-item-symbol">lei</span>
-                            |
-                            <span class="currency-item-abbr">RON</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/dkk.svg"
-                            alt="DKK"
-                          />
-                          <span class="currency-item-name">Danish Krone</span>
-                          <div>
-                            <span class="currency-item-symbol">kr</span>
-                            |
-                            <span class="currency-item-abbr">DKK</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/huf.svg"
-                            alt="HUF"
-                          />
-                          <span class="currency-item-name"
-                            >Hungarian Forint</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">Ft</span>
-                            |
-                            <span class="currency-item-abbr">HUF</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/czk.svg"
-                            alt="CZK"
-                          />
-                          <span class="currency-item-name">Czech Koruna</span>
-                          <div>
-                            <span class="currency-item-symbol">Kč</span>
-                            |
-                            <span class="currency-item-abbr">CZK</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/chf.svg"
-                            alt="CHF"
-                          />
-                          <span class="currency-item-name">Swiss Franc</span>
-                          <div>
-                            <span class="currency-item-symbol">CHF</span>
-                            |
-                            <span class="currency-item-abbr">CHF</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/pln.svg"
-                            alt="PLN"
-                          />
-                          <span class="currency-item-name">Polish Zloty</span>
-                          <div>
-                            <span class="currency-item-symbol">zł</span>
-                            |
-                            <span class="currency-item-abbr">PLN</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/nok.svg"
-                            alt="NOK"
-                          />
-                          <span class="currency-item-name"
-                            >Norwegian Krone</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">Kr</span>
-                            |
-                            <span class="currency-item-abbr">NOK</span>
-                          </div>
-                        </li>
-                        <li
-                          class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#021816] p-3 text-base font-bold transition-all hover:bg-[#042925] [&.active]:bg-[#08453f]"
-                        >
-                          <img
-                            class="currency-item-icon"
-                            width="24"
-                            height="24"
-                            src="./img/currencies/zar.svg"
-                            alt="ZAR"
-                          />
-                          <span class="currency-item-name"
-                            >South African Rand</span
-                          >
-                          <div>
-                            <span class="currency-item-symbol">R</span>
-                            |
-                            <span class="currency-item-abbr">ZAR</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- Terms and Conditions -->
-                  <label
-                    class="checkbox terms-modal-btn mt-[15px] block cursor-pointer"
-                  >
-                    <input
-                      checked
-                      type="checkbox"
-                      class="checkbox-input absolute opacity-0"
-                    />
-                    <span
-                      data-translate="terms"
-                      class="checkbox-content relative block pl-7 text-sm font-bold leading-tight text-[#8a95c1]"
-                    >
-                      I agree to the
-                      <a
-                        class="text-[#f0f0f0] underline underline-offset-2"
-                        href="#"
-                        >Terms and Conditions</a
-                      ></span
-                    >
-                  </label>
-                  <!-- Step Button -->
-                  <button
-                    disabled
-                    type="submit"
-                    class="form-step-btn main-form-submit-btn form-step-btn-2 btn-disabled form-step-btn-next mt-[15px] grid w-full cursor-pointer grid-cols-[1fr_auto] gap-1 rounded-2xl bg-[#F4FD2B] px-[14px] py-5 text-center text-lg font-bold tracking-tight text-[#0f0f0f]"
-                  >
-                    <svg
-                      class="loading-icon mx-auto hidden h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 200 200"
-                    >
-                      <radialgradient
-                        id="a135"
-                        cx=".66"
-                        fx=".66"
-                        cy=".3125"
-                        fy=".3125"
-                        gradientTransform="scale(1.5)"
-                      >
-                        <stop offset="0" stop-color="#1A020B"></stop>
-                        <stop
-                          offset=".3"
-                          stop-color="#1A020B"
-                          stop-opacity=".9"
-                        ></stop>
-                        <stop
-                          offset=".6"
-                          stop-color="#1A020B"
-                          stop-opacity=".6"
-                        ></stop>
-                        <stop
-                          offset=".8"
-                          stop-color="#1A020B"
-                          stop-opacity=".3"
-                        ></stop>
-                        <stop
-                          offset="1"
-                          stop-color="#1A020B"
-                          stop-opacity="0"
-                        ></stop>
-                      </radialgradient>
-                      <circle
-                        transform-origin="center"
-                        fill="none"
-                        stroke="url(#a135)"
-                        stroke-width="26"
-                        stroke-linecap="round"
-                        stroke-dasharray="200 1000"
-                        stroke-dashoffset="0"
-                        cx="100"
-                        cy="100"
-                        r="70"
-                      >
-                        <animatetransform
-                          type="rotate"
-                          attributeName="transform"
-                          calcMode="spline"
-                          dur="2"
-                          values="360;0"
-                          keyTimes="0;1"
-                          keySplines="0 0 1 1"
-                          repeatCount="indefinite"
-                        ></animatetransform>
-                      </circle>
-                      <circle
-                        transform-origin="center"
-                        fill="none"
-                        opacity=".2"
-                        stroke="#1A020B"
-                        stroke-width="26"
-                        stroke-linecap="round"
-                        cx="100"
-                        cy="100"
-                        r="70"
-                      ></circle>
-                    </svg>
-                    <span data-translate="startPlaying">Start Playing</span>
-                  </button>
-                </div>
-                <!-- Bonus -->
-                <div
-                  class="bonus-wrapper form-bonus mt-auto rounded-2xl bg-white p-[2px] pb-2"
-                >
-                  <div
-                    class="flex items-center gap-[5px] rounded-[14px] bg-[#2BA943] px-[14px] py-[9px]"
-                  >
-                    <div class="w-full">
-                      <p
-                        data-translate="promoApplied"
-                        class="text-xs font-bold tracking-tight text-white"
-                      >
-                        Promocode applied
-                      </p>
-                      <!-- <input
-                        disabled
-                        class="bonus-input pointer-events-none w-full bg-transparent text-lg font-bold uppercase tracking-tight text-[#f0f0f0] outline-none"
-                        value="ASKGAMBLERS200"
-                        type="text"
-                      /> -->
-                      <div
-                        data-bonus="52"
-                        data-translate="depositBonus"
-                        class="bonus-input pointer-events-none max-[576px]:text-[14px] w-full bg-transparent text-lg font-bold uppercase tracking-tight text-[#f0f0f0] outline-none"
-                      >
-                        17.000 AZN-ə qədər + 25FS
-                      </div>
-                    </div>
-                    <svg
-                      class="shrink-0"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16.0133 2.68115C17.0504 2.68122 18.0519 3.05898 18.8306 3.74382L19.036 3.93715L19.9666 4.86782C20.2221 5.12157 20.5556 5.28176 20.9133 5.32249L21.0933 5.33315H22.4266C23.5163 5.33309 24.5646 5.74991 25.3567 6.49814C26.1488 7.24637 26.6247 8.26929 26.6866 9.35715L26.6933 9.59982V10.9332C26.6933 11.2932 26.816 11.6438 27.0373 11.9238L27.1573 12.0572L28.0866 12.9878C28.8569 13.7537 29.3061 14.7846 29.3425 15.8703C29.3789 16.956 28.9999 18.0147 28.2826 18.8305L28.0893 19.0358L27.1586 19.9665C26.9049 20.2219 26.7447 20.5554 26.704 20.9132L26.6933 21.0932V22.4265C26.6934 23.5161 26.2766 24.5645 25.5283 25.3566C24.7801 26.1487 23.7572 26.6245 22.6693 26.6865L22.4266 26.6932H21.0933C20.7338 26.6933 20.3848 26.8144 20.1026 27.0372L19.9693 27.1572L19.0386 28.0865C18.2727 28.8568 17.2418 29.3059 16.1561 29.3423C15.0705 29.3788 14.0118 28.9997 13.196 28.2825L12.9906 28.0892L12.06 27.1585C11.8046 26.9047 11.471 26.7445 11.1133 26.7038L10.9333 26.6932H9.59997C8.51035 26.6932 7.46199 26.2764 6.66988 25.5282C5.87778 24.7799 5.40195 23.757 5.33997 22.6692L5.33331 22.4265V21.0932C5.33319 20.7337 5.21201 20.3847 4.98931 20.1025L4.86931 19.9692L3.93997 19.0385C3.16968 18.2726 2.72054 17.2417 2.68412 16.156C2.6477 15.0703 3.02675 14.0117 3.74397 13.1958L3.93731 12.9905L4.86797 12.0598C5.12172 11.8044 5.28191 11.4709 5.32264 11.1132L5.33331 10.9332V9.59982L5.33997 9.35715C5.39951 8.31108 5.84188 7.32348 6.58276 6.5826C7.32364 5.84172 8.31123 5.39936 9.35731 5.33982L9.59997 5.33315H10.9333C11.2928 5.33303 11.6418 5.21186 11.924 4.98915L12.0573 4.86915L12.988 3.93982C13.3844 3.541 13.8558 3.22449 14.375 3.00848C14.8942 2.79248 15.451 2.68123 16.0133 2.68115ZM20.9426 12.3905C20.6926 12.1405 20.3535 12.0001 20 12.0001C19.6464 12.0001 19.3073 12.1405 19.0573 12.3905L14.6666 16.7798L12.9426 15.0572L12.8173 14.9465C12.5493 14.7393 12.2125 14.6418 11.8753 14.674C11.538 14.7061 11.2257 14.8654 11.0016 15.1194C10.7776 15.3735 10.6587 15.7034 10.669 16.042C10.6793 16.3806 10.8182 16.7025 11.0573 16.9425L13.724 19.6092L13.8493 19.7198C14.1058 19.9188 14.4262 20.0174 14.7502 19.997C15.0743 19.9766 15.3797 19.8387 15.6093 19.6092L20.9426 14.2758L21.0533 14.1505C21.2523 13.8939 21.3509 13.5736 21.3305 13.2496C21.3101 12.9255 21.1722 12.6201 20.9426 12.3905Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    class="mt-[10px] flex items-center justify-center gap-1 text-sm font-bold tracking-tight text-[#2BA943]"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.5 6.16707V17.0004M10.5 6.16707C10.1986 4.92491 9.67954 3.86292 9.01061 3.11966C8.34169 2.37641 7.5539 1.98636 6.75 2.00036C6.19747 2.00036 5.66756 2.21986 5.27686 2.61056C4.88616 3.00126 4.66667 3.53116 4.66667 4.0837C4.66667 4.63623 4.88616 5.16614 5.27686 5.55684C5.66756 5.94754 6.19747 6.16703 6.75 6.16703M10.5 6.16707C10.8014 4.92491 11.3205 3.86292 11.9894 3.11966C12.6583 2.37641 13.4461 1.98636 14.25 2.00036C14.8025 2.00036 15.3324 2.21986 15.7231 2.61056C16.1138 3.00126 16.3333 3.53116 16.3333 4.0837C16.3333 4.63623 16.1138 5.16614 15.7231 5.55684C15.3324 5.94754 14.8025 6.16703 14.25 6.16703M16.3333 9.50041V15.3337C16.3333 15.7758 16.1577 16.1997 15.8452 16.5123C15.5326 16.8248 15.1087 17.0004 14.6667 17.0004H6.33333C5.89131 17.0004 5.46738 16.8248 5.15482 16.5123C4.84226 16.1997 4.66667 15.7758 4.66667 15.3337V9.50041M3 7.00041C3 6.77939 3.0878 6.56743 3.24408 6.41115C3.40036 6.25487 3.61232 6.16707 3.83333 6.16707H17.1667C17.3877 6.16707 17.5996 6.25487 17.7559 6.41115C17.9122 6.56743 18 6.77939 18 7.00041V8.66707C18 8.88809 17.9122 9.10005 17.7559 9.25633C17.5996 9.41261 17.3877 9.50041 17.1667 9.50041H3.83333C3.61232 9.50041 3.40036 9.41261 3.24408 9.25633C3.0878 9.10005 3 8.88809 3 8.66707V7.00041Z"
-                        stroke="#2BA943"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p
-                      data-translate="bonusName"
-                      class="pomocode-text pomocode-text-1"
-                    >
-                      WELCOME CASINO BONUS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <!-- Trying to glose -->
-            <div
-              class="try-to-close absolute left-0 top-0 z-30 flex hidden h-full w-full flex-col justify-center bg-[url(../img/socialsFormImg/form-right-green-bg.webp)] bg-cover bg-center bg-no-repeat p-[15px]"
-            >
-              <p
-                data-translate="areYouSure"
-                class="text-center text-[24px] text-white font-bold tracking-tight"
-              >
-                Are You Sure? <br />
-                Your Progress Will Be Lost
-              </p>
-              <div class="mt-[15px] rounded-2xl bg-white p-[2px] pb-2">
-                <div
-                  class="flex items-center gap-[5px] rounded-[14px] bg-[#2BA943] px-[14px] py-[9px]"
-                >
-                  <div class="w-full text-white">
-                    <p
-                      data-translate="promoApplied"
-                      class="text-xs font-bold tracking-tight"
-                    >
-                      Примененный промо-код
-                    </p>
-                    <p
-                      data-translate="depositBonus"
-                      class="text-lg font-bold uppercase max-[576px]:text-[14px] tracking-tight"
-                    >
-                      17.000 AZN-ə qədər + 25FS
-                    </p>
-                  </div>
-                  <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 16.5002C18.6667 12.5535 16 7.16683 14.6667 5.8335C14.6667 9.88416 12.3027 12.1548 10.6667 13.8335C9.032 15.5135 8 18.1535 8 20.5002C8 22.6219 8.84285 24.6567 10.3431 26.157C11.8434 27.6573 13.8783 28.5002 16 28.5002C18.1217 28.5002 20.1566 27.6573 21.6569 26.157C23.1571 24.6567 24 22.6219 24 20.5002C24 18.4575 22.592 15.2468 21.3333 13.8335C18.952 17.8335 17.612 17.8335 16 16.5002Z"
-                      fill="#F0F0F0"
-                      stroke="#F0F0F0"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="mt-[10px] flex items-center justify-center gap-1 text-sm font-bold tracking-tight text-[#2BA943]"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.5 6.16707V17.0004M10.5 6.16707C10.1986 4.92491 9.67954 3.86292 9.01061 3.11966C8.34169 2.37641 7.5539 1.98636 6.75 2.00036C6.19747 2.00036 5.66756 2.21986 5.27686 2.61056C4.88616 3.00126 4.66667 3.53116 4.66667 4.0837C4.66667 4.63623 4.88616 5.16614 5.27686 5.55684C5.66756 5.94754 6.19747 6.16703 6.75 6.16703M10.5 6.16707C10.8014 4.92491 11.3205 3.86292 11.9894 3.11966C12.6583 2.37641 13.4461 1.98636 14.25 2.00036C14.8025 2.00036 15.3324 2.21986 15.7231 2.61056C16.1138 3.00126 16.3333 3.53116 16.3333 4.0837C16.3333 4.63623 16.1138 5.16614 15.7231 5.55684C15.3324 5.94754 14.8025 6.16703 14.25 6.16703M16.3333 9.50041V15.3337C16.3333 15.7758 16.1577 16.1997 15.8452 16.5123C15.5326 16.8248 15.1087 17.0004 14.6667 17.0004H6.33333C5.89131 17.0004 5.46738 16.8248 5.15482 16.5123C4.84226 16.1997 4.66667 15.7758 4.66667 15.3337V9.50041M3 7.00041C3 6.77939 3.0878 6.56743 3.24408 6.41115C3.40036 6.25487 3.61232 6.16707 3.83333 6.16707H17.1667C17.3877 6.16707 17.5996 6.25487 17.7559 6.41115C17.9122 6.56743 18 6.77939 18 7.00041V8.66707C18 8.88809 17.9122 9.10005 17.7559 9.25633C17.5996 9.41261 17.3877 9.50041 17.1667 9.50041H3.83333C3.61232 9.50041 3.40036 9.41261 3.24408 9.25633C3.0878 9.10005 3 8.88809 3 8.66707V7.00041Z"
-                      stroke="#2BA943"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <p data-translate="bonusName">WELCOME CASINO BONUS</p>
-                </div>
-              </div>
-              <!-- keep registering -->
-              <button
-                class="keep-registering mt-[15px] grid w-full cursor-pointer grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#F4FD2B] px-[14px] py-5 text-center text-lg font-bold tracking-tight text-[#0f0f0f]"
-              >
-                <svg
-                  class="pointer-events-none"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 6.5L9 12.5L15 18.5"
-                    stroke="#0F0F0F"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span
-                  class="pointer-events-none"
-                  data-translate="keepRegistering"
-                  >Keep Registering</span
-                >
-                <div class="h-6 w-6"></div>
-              </button>
-              <!-- return to website -->
-              <button
-                data-translate="returnToWebsite"
-                class="return-to-website mt-9 text-center text-lg font-bold text-[#8a95c1] underline underline-offset-2 transition-colors hover:text-white"
-              >
-                Return to Website
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Decline modal -->
-      <div
-        class="decline-overlay fixed left-0 top-0 z-[500] hidden h-screen w-full place-items-center overflow-hidden overflow-y-auto bg-pageBg/75 p-5 transition-all duration-300 max-[576px]:px-[10px] max-[576px]:py-[30px] [&.active]:grid"
-      >
-        <div
-          class="decline-modal relative flex w-full max-w-[500px] flex-col items-center gap-4 overflow-hidden rounded-2xl bg-[url(../img/authFormImg/decline-bonus-bg.webp)] bg-cover bg-center bg-no-repeat p-6 max-[576px]:min-h-[500px] max-[576px]:rounded-xl"
-        >
-          <button
-            class="decline-close-btn group absolute right-6 top-6 max-[576px]:right-4 max-[576px]:top-4 xs:right-3 xs:top-3"
-          >
-            <svg
-              class="stroke-lightGray transition-all group-hover:stroke-white"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24 8L8 24M8 8L24 24"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <p
-            data-translate="oneStepAway"
-            class="text-center text-xl font-semibold uppercase max-[576px]:text-base"
-          >
-            ONE STEP AWAY <br />
-            FROM RECEIVING THE BONUS
-          </p>
-          <div class="relative min-h-[220px] max-[576px]:min-h-[180px]">
-            <img
-              class="max-[576px]:max-w-[180px]"
-              width="214"
-              height="138"
-              src="./img/authFormImg/fire.webp"
-              alt="Fire"
-            />
-            <img
-              class="absolute bottom-0 left-1/2 max-w-[186px] -translate-x-1/2 max-[576px]:max-w-[140px]"
-              width="186"
-              height="140"
-              src="./img/authFormImg/money.webp"
-              alt="Money"
-            />
-          </div>
-          <div>
-            <p
-              data-translate="areYourSure"
-              class="text-center text-sm font-semibold uppercase leading-[136%]"
-            >
-              ARE YOU SURE YOU WANT TO
-            </p>
-            <p
-              data-translate="declineYourBonus"
-              class="decline-title text-center text-[48px] font-black uppercase italic leading-none -tracking-[0.02em] max-[576px]:text-[37px] xs:text-[32px]"
-            >
-              <span>decline</span>
-              your bonus?
-            </p>
-          </div>
-          <div
-            class="grid w-full grid-cols-2 gap-4 max-[576px]:grid-cols-1 max-[576px]:gap-2"
-          >
-            <button
-              class="decline-close-btn form-yellow-btn decline-yellow-btn top-0 flex items-center justify-center gap-1 overflow-hidden rounded-lg p-[14px] text-base font-bold text-black"
-            >
-              <span class="relative z-[4]" data-translate="continue"
-                >Continue</span
-              >
-              <svg
-                class="relative z-[4]"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 6L15 12L9 18"
-                  stroke="#0F0F0F"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              class="decline-red-cancel flex items-center justify-center gap-1 rounded-lg border-2 border-stateFail bg-stateFail/20 p-[14px] text-base font-bold transition-all hover:bg-stateFail"
-            >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.5 6L6.5 18M6.5 6L18.5 18"
-                  stroke="#F0F0F0"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span data-translate="declineBonus">Decline Bonus</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#091025]"
+        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#1E0002]"
       >
         <svg
           width="106"

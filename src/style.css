@@ -1,34 +1,11 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Saira';
-  src: url('../fonts/Saira-BlackItalic.woff2') format('woff2');
-  font-weight: 900;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -44,6 +21,14 @@
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -72,41 +57,114 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'SFRounded';
+  src: url('../fonts/SFRounded-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('../fonts/SFRounded-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('../fonts/SFRounded-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --gilroy: "Girloy", "sans-serif";
-  --raleway: "Raleway", "sans-serif";
-  --montserrat: "Montserrat", "sans-serif";
-  --saira: "Saira", "sans-serif";
+  --raleway: "Raleway", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --sfrounded: "SFRounded", sans-serif;
 }
 
 
 #hero {
-  background: radial-gradient(49.93% 49.93% at 50% 50.07%, #377bbe 0%, #120803 100%);
+  background: #2c0000;
 }
 
-.hero-title {
-  text-shadow: 0 12px 16px #000;
+.hero-title span,
+.hero-subtitle span {
+  background: linear-gradient(90deg, #FFE62E 0%, #FFF6B0 50%, #FFE62E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'liga' off;
 }
 
-.hero-subtitle {
-  text-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+.form-wrap {
+  border-radius: 24px;
+  background: #FCE5C0;
+  box-shadow: 0 8px 0 0 #95733C;
 }
 
-.hero-btn {
-  box-shadow: inset 0 6px 6px 0 #fff, 0 8px 12px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(180deg, #ffc814 53.2%, #ff8d01 100%);
+.socials-form-social-link {
+  box-shadow: 0 4px 0 0 #000;
 }
 
-.step-slider .swiper-slide {
-  max-width: 320px;
+.gift-box {
+  text-shadow: 0 0 15.692px rgba(255, 236, 94, 0.50);
 }
 
-.swiper-button-disabled {
-  opacity: 0.4;
+.form-step-btn-prev {
+  background: white;
+  box-shadow: 0 4px 0 0 #000;
 }
 
-.hero-title span {
-  color: #FF8D01;
+.language-link.active {
+  background: #FFE738;
+}
+
+.language-link.active span {
+  color: #000000;
+}
+
+.steps-wrapper {
+  border-radius: 28px;
+  background: #6F1400;
+  box-shadow: 0 8px 0 0 #420C00;
+}
+
+.step-wrapper-item-1 {
+  background: linear-gradient(180deg, #FFE507 0%, #F90 100%);
+}
+
+.socilas-form-wrapper::before {
+  content: "";
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #3A0000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.socilas-form-wrapper::after {
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border-radius: 515px;
+  background: #F00;
+  filter: blur(180px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 /* | Language dropdown */
@@ -238,11 +296,11 @@
 }
 
 .socials-form .iti__dial-code {
-  color: #755eeb !important;
+  color: #ffffff !important;
 }
 
 .socials-form .iti__selected-dial-code {
-  color: #755eeb !important;
+  color: #ffffff !important;
 }
 
 .socials-form .iti .phone-input {
@@ -259,23 +317,23 @@
   content: "";
   width: 100%;
   height: 3px;
-  background: #fad303;
+  background: #00000050;
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: 0;
 }
 
 .socials-form-type-btn.active::before {
+  background: #FCA400;
   opacity: 1;
 }
 
 .socials-form-type-btn.active span {
-  color: #fad303;
+  color: #000000;
 }
 
 .socials-form-type-btn.active svg {
-  stroke: #fad303;
+  stroke: #000000;
 }
 
 .socials-form-group-email label {
@@ -286,11 +344,17 @@
 .socials-form-group-email input:focus+label,
 .socials-form-group-email input:not(:placeholder-shown)+label {
   font-size: 12px;
-  transform: translateY(-14px);
+  transform: translateY(-16px);
+}
+
+.form-step-btn {
+  border-radius: 12px;
+  background: linear-gradient(90deg, #FCA400 0%, #FFDB98 50%, #FCA400 100%);
+  box-shadow: 0 4px 0 0 #000;
 }
 
 .form-step-btn:disabled {
-  background: #8a8e37;
+  opacity: 0.5;
 }
 
 .socials-form-group {
@@ -334,18 +398,18 @@
 }
 
 .socials-form input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #f0f0f0 inset;
-  -webkit-text-fill-color: #755eeb;
+  -webkit-box-shadow: 0 0 0 1000px #171929 inset;
+  -webkit-text-fill-color: #fff;
 }
 
 .socials-form input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px #f0f0f0 inset;
-  -webkit-text-fill-color: #755eeb;
+  -webkit-box-shadow: 0 0 0 1000px #171929 inset;
+  -webkit-text-fill-color: #fff;
 }
 
 .socials-form input:-webkit-autofill:hover {
-  -webkit-box-shadow: 0 0 0 1000px #f0f0f0 inset;
-  -webkit-text-fill-color: #755eeb;
+  -webkit-box-shadow: 0 0 0 1000px #171929 inset;
+  -webkit-text-fill-color: #fff;
 }
 
 .checkbox .checkbox-content::before {
@@ -422,4 +486,8 @@
   width: 100%;
   height: 1px;
   background-color: #fff;
+}
+
+.actual-spin-amount {
+  font-style: normal;
 }
