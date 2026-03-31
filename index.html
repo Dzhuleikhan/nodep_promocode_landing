@@ -266,38 +266,41 @@
           </div>
         </div>
       </header>
-      <main class="max-h-[940px]">
-        <section id="hero" class="w-full relative overflow-hidden">
+      <main class="max-h-[940px] max-[767px]:max-h-max">
+        <section
+          id="hero"
+          class="w-full relative overflow-hidden max-[576px]:overflow-visible"
+        >
           <img
-            class="absolute right-0 top-[80px] z-2 w-full max-w-[628px]"
+            class="absolute right-0 top-[80px] z-2 w-full max-w-[628px] max-[767px]:hidden"
             width="628"
             height="512"
-            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken.webp"
+            src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken-1.webp"
             alt="Chicken"
           />
           <img
-            class="absolute left-0 bottom-0 w-full max-w-[1060px] z-[1]"
+            class="absolute left-0 bottom-0 w-full max-w-[1060px] z-[1] max-[576px]:min-w-[900px] max-[576px]:bottom-[390px]"
             width="1060"
             height="190"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/coins-left.webp"
             alt="Coins"
           />
           <img
-            class="absolute right-0 bottom-0 w-full max-w-[995px] z-[1]"
+            class="absolute right-0 bottom-0 w-full max-w-[995px] z-[1] max-[767px]:hidden"
             width="995"
             height="188"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/coins-right.webp"
             alt="Coins"
           />
           <img
-            class="absolute left-0 bottom-0 w-full max-w-[149px] z-0"
+            class="absolute left-0 bottom-0 w-full max-w-[149px] z-0 max-[992px]:hidden"
             width="149"
             height="743"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/fire-left.webp"
             alt="Fire"
           />
           <img
-            class="absolute right-0 bottom-0 w-full max-w-[194px] z-0"
+            class="absolute right-0 bottom-0 w-full max-w-[194px] z-0 max-[992px]:hidden"
             width="194"
             height="743"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/fire-right.webp"
@@ -311,21 +314,21 @@
             alt="lines"
           />
           <img
-            class="absolute left-[20px] bottom-[30%] z-3"
+            class="absolute left-[20px] bottom-[30%] z-3 max-[767px]:hidden"
             width="96"
             height="96"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-1.webp"
             alt="Feather"
           />
           <img
-            class="absolute right-[210px] top-[-40px] z-3 rotate-[105deg]"
+            class="absolute right-[210px] top-[-40px] z-3 rotate-[105deg] max-[767px]:right-[10px] max-[767px]:top-[300px] max-[576px]:max-w-[57px] max-[576px]:right-[-15px]"
             width="96"
             height="96"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-2.webp"
             alt="Feather"
           />
           <img
-            class="absolute top-7 left-[184px] z-3 rotate-6"
+            class="absolute top-7 left-[184px] z-3 rotate-6 max-[767px]:left-[10px] max-[767px]:top-[220px] max-[576px]:max-w-[57px] max-[576px]:left-[-25px]"
             width="96"
             height="96"
             src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/feather-2.webp"
@@ -333,26 +336,41 @@
           />
           <!-- container -->
           <div
-            class="max-w-[1140px] flex items-center justify-between gap-5 px-[14px] mx-auto pb-[170px] relative pt-[110px]"
+            class="max-w-[1140px] flex items-center justify-between gap-5 px-[14px] mx-auto pb-[170px] relative pt-[110px] max-[767px]:flex-col max-[767px]:pb-5 max-[767px]:pt-[90px] max-[576px]:px-0 max-[576px]:pb-0"
           >
+            <div
+              class="chicken-sircle-mobile w-[300px] h-[300px] relative hidden max-[767px]:block max-[576px]:w-[227px] max-[576px]:h-[227px]"
+            >
+              <img
+                class="absolute left-[-45px] top-[-10px] z-3 w-full min-w-[360px] max-[576px]:min-w-[282px]"
+                width="282"
+                height="230"
+                src="https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken-1.webp"
+                alt="Chicken"
+              />
+            </div>
             <!-- inner -->
-            <div class="relative z-20 font-bold max-w-[550px]">
-              <div
-                class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
-              >
+            <div
+              class="relative z-20 max-w-[550px] max-[767px]:text-center max-[576px]:px-[10px] max-[576px]:mb-12"
+            >
+              <div class="max-[576px]:space-y-3">
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] text-balance uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] font-[sfrounded] font-black hero-title leading-[112%] text-white"
+                  class="hero-title text-[48px] text-balance uppercase hero-title font-[sfrounded] font-bold hero-title leading-[112%] text-white max-[576px]:text-[32px] max-[576px]:leading-[125%] max-[350px]:text-[28px]"
                 ></h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle text-white mt-[14px] text-balance font-bold font-[sfrounded] text-[24px] leading-[143%] max-[576px]:text-[24px] max-[576px]:mt-2 max-[350px]:text-[20px]"
+                  class="hero-subtitle text-white/75 mt-[14px] text-balance font-[sfrounded] text-[24px] leading-[143%] max-[576px]:text-[20px] max-[576px]:leading-[150%] max-[350px]:text-[16px]"
                 ></p>
               </div>
             </div>
             <!-- Socials form -->
-            <div class="socilas-form-wrapper w-full max-w-[430px] relative">
-              <div class="socials-form form-wrap p-6 relative z-[4]">
+            <div
+              class="socilas-form-wrapper w-full max-w-[430px] relative shrink-0 max-[767px]:before:hidden max-[767px]:after:hidden max-[576px]:bottom-[-40px] max-[576px]:max-w-full"
+            >
+              <div
+                class="socials-form form-wrap p-6 relative z-[4] max-[576px]:p-[15px]"
+              >
                 <div class="back-btn-wrapper hidden items-center gap-4">
                   <button
                     class="form-step-btn-prev w-12 h-12 cursor-pointer justify-center items-center gap-3 flex p-[15px] rounded-lg"
@@ -404,7 +422,7 @@
                           />
                           <span
                             data-translate="signUpWithGoogle"
-                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight text-[#171717]"
+                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight text-[#171717] max-[350px]:text-xs"
                             >Sign Up with Google</span
                           >
                         </a>
@@ -422,7 +440,7 @@
                           />
                           <span
                             data-translate="signUpWithFacebook"
-                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight"
+                            class="pointer-events-none text-lg font-bold font-[montserrat] tracking-tight max-[350px]:text-xs"
                             >Sign Up with Facebook</span
                           >
                         </a>
@@ -800,10 +818,14 @@
           </div>
         </section>
         <!-- container -->
-        <div class="max-w-[1110px] mx-auto relative -top-[120px] z-[20]">
-          <div class="steps-wrapper relative p-2 grid grid-cols-3">
+        <div
+          class="max-w-[1110px] mx-auto relative -top-[120px] z-[20] px-[10px] max-[992px]:mt-[20px] max-[767px]:-top-0 max-[576px]:mt-[70px]"
+        >
+          <div
+            class="steps-wrapper relative p-2 grid grid-cols-3 max-[767px]:grid-cols-1"
+          >
             <div
-              class="step-wrapper-item font-[sfrounded] space-y-5 step-wrapper-item-1 rounded-2xl p-[30px]"
+              class="step-wrapper-item font-[sfrounded] space-y-5 step-wrapper-item-1 rounded-2xl p-[30px] max-[576px]:p-[15px] max-[576px]:space-y-[10px]"
             >
               <div class="flex items-center justify-between w-full h-auto">
                 <span
@@ -827,7 +849,7 @@
               </div>
             </div>
             <div
-              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px]"
+              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px] max-[576px]:p-[15px] max-[576px]:space-y-[10px]"
             >
               <div class="flex items-center justify-between w-full h-auto">
                 <span
@@ -851,7 +873,7 @@
               </div>
             </div>
             <div
-              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px]"
+              class="step-wrapper-item font-[sfrounded] space-y-5 rounded-2xl p-[30px] max-[576px]:p-[15px] max-[576px]:space-y-[10px]"
             >
               <div class="flex items-center justify-between w-full h-auto">
                 <span
@@ -877,7 +899,7 @@
           </div>
         </div>
       </main>
-      <footer class="pt-2 max-[576px]:pt-[25px]">
+      <footer class="pt-2 max-[767px]:pt-[25px]">
         <div class="max-w-[1140px] px-[15px] mx-auto">
           <p
             data-translate="footerText"
@@ -897,7 +919,7 @@
             an., 1234-5600 Lisboa, Portugal.
           </p>
           <div
-            class="footer-payments-list flex items-center max-[576px]:mt-[20px] justify-center gap-5 max-[576px]:gap-3 flex-wrap mt-12 py-[17px]"
+            class="footer-payments-list flex items-center max-[767px]:mt-[10px] max-[576px]:mt-[20px] justify-center gap-5 max-[576px]:gap-3 flex-wrap mt-12 py-[17px]"
           ></div>
         </div>
       </footer>

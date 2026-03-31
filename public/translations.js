@@ -438,7 +438,7 @@ export const translations = {
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle: `Odbierz swój bonus <span><i class="actual-spin-amount">100</i> FS</span> po weryfikacji konta`,
-    heroSubtitle: `Zarejestruj się i otrzymaj <span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> oraz <span class="two-step-bonus-spins"></span> darmowych spinów przy pierwszej wpłacie`,
+    heroSubtitle: `Zarejestruj się i otrzymaj <span class="two-step-bonus-percent font-bold"></span> do <span class='bonus-total-amount font-bold'></span> <span class='bonus-currency-symbol font-bold'></span> oraz <span class="two-step-bonus-spins font-bold"></span> darmowych spinów przy pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Rejestracja",
     slideStep1Text: 'Kliknij "Odbierz bonus" i wprowadź swój email oraz hasło.',

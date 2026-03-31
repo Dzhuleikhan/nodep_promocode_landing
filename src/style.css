@@ -167,6 +167,43 @@
   z-index: 0;
 }
 
+.chicken-sircle-mobile::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #3A0000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.chicken-sircle-mobile::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #F00;
+  filter: blur(180px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+
+  .chicken-sircle-mobile::before,
+  .chicken-sircle-mobile::after {
+    width: 227px;
+    height: 227px;
+  }
+
+}
+
 /* | Language dropdown */
 
 .header-lang-list {
