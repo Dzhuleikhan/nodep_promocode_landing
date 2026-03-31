@@ -2,7 +2,7 @@ import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 
 const bonusType = getUrlParameter("bonusType") || "freebet";
-export const defaulPromocode = bonusType === "cash" ? "M9EV48" : "GURWF7";
+export const defaulPromocode = bonusType === "cash" ? "Z9DW7S" : "V3MLBR";
 const headerLogoLink = document.querySelector(".header-logo-link");
 
 export const receivedPromocode = (

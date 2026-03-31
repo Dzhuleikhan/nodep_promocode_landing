@@ -2,48 +2,99 @@ import gsap from "gsap";
 
 gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
 
-// Chicken float
-gsap.to(".chicken-img", {
-  y: 15,
-  duration: 1.5,
+// Boxes rocking
+gsap.to(".boxes-img", {
+  x: 30,
+  duration: 2,
   ease: "sine.inOut",
   repeat: -1,
   yoyo: true,
+  transformOrigin: "center bottom",
 });
 
+// Yellow balls — random floating & scaling
+document.querySelectorAll(".yellow-ball").forEach((ball) => {
+  const dur = 2 + Math.random() * 3;
+  const delay = Math.random() * 2;
 
-// Fire flicker
-gsap.to(".fire-left", {
-  opacity: 0.6,
-  scaleY: 1.03,
-  duration: 0.8,
-  ease: "sine.inOut",
-  repeat: -1,
-  yoyo: true,
-  transformOrigin: "bottom center",
+  gsap.to(ball, {
+    x: () => -30 + Math.random() * 60,
+    y: () => -30 + Math.random() * 60,
+    scale: 0.65 + Math.random() * 0.7,
+    duration: dur,
+    ease: "cubic-bezier(" + Math.random().toFixed(2) + "," + Math.random().toFixed(2) + "," + Math.random().toFixed(2) + "," + Math.random().toFixed(2) + ")",
+    repeat: -1,
+    yoyo: true,
+    delay,
+  });
 });
 
-gsap.to(".fire-right", {
-  opacity: 0.55,
-  scaleY: 1.04,
-  duration: 1,
-  ease: "sine.inOut",
-  repeat: -1,
-  yoyo: true,
-  delay: 0.3,
-  transformOrigin: "bottom center",
-});
+// Comets zigzag
+const comets = document.querySelectorAll(".comet");
+const hero = document.querySelector("#hero");
+if (comets.length && hero) {
+  function getZone(ci) {
+    const w = hero.offsetWidth;
+    const mobile = w <= 576;
+    const top = mobile ? 30 : 80;
+    const bottom = mobile ? 350 : hero.offsetHeight - 200;
+    let zoneW, sx;
+    if (mobile) {
+      zoneW = w;
+      sx = 0;
+    } else {
+      zoneW = 250;
+      if (ci === 0) sx = 50;
+      else if (ci === 1) sx = w - 300;
+      else sx = (w - zoneW) / 2;
+    }
+    return { top, bottom, zoneW, sx };
+  }
 
-// Coins shimmer
-gsap.fromTo(".coins-left",
-  { y: 0, filter: "brightness(1)" },
-  { y: -5, filter: "brightness(1.3)", duration: 2, ease: "sine.inOut", repeat: -1, yoyo: true },
-);
+  comets.forEach((el, ci) => {
+    const startFromTop = ci % 2 === 0;
+    const z0 = getZone(ci);
 
-gsap.fromTo(".coins-right",
-  { y: 0, filter: "brightness(1)" },
-  { y: -4, filter: "brightness(1.25)", duration: 2.4, ease: "sine.inOut", repeat: -1, yoyo: true, delay: 0.5 },
-);
+    const pos = { x: z0.sx + Math.random() * z0.zoneW, y: startFromTop ? z0.top : z0.bottom };
+    let prevX = pos.x;
+    let prevY = pos.y;
+    let goingDown = startFromTop;
+    const speed = 120 + Math.random() * 100;
+
+    gsap.set(el, { left: pos.x, top: pos.y });
+
+    function fly() {
+      const z = getZone(ci);
+      const nextX = z.sx + Math.random() * z.zoneW;
+      const nextY = goingDown ? z.bottom + Math.random() * 40 - 20 : z.top + Math.random() * 40 - 20;
+      goingDown = !goingDown;
+
+      const dist = Math.hypot(nextX - pos.x, nextY - pos.y);
+      const dur = dist / speed;
+
+      gsap.to(pos, {
+        x: nextX,
+        y: nextY,
+        duration: dur,
+        ease: "none",
+        onUpdate() {
+          const dx = pos.x - prevX;
+          const dy = pos.y - prevY;
+          if (Math.abs(dx) > 0.3 || Math.abs(dy) > 0.3) {
+            const angle = Math.atan2(dy, dx) * (180 / Math.PI) - 90;
+            gsap.set(el, { rotation: angle });
+          }
+          gsap.set(el, { left: pos.x, top: pos.y });
+          prevX = pos.x;
+          prevY = pos.y;
+        },
+        onComplete: fly,
+      });
+    }
+
+    fly();
+  });
+}
 
 // Hero title & subtitle — text shadow glow pulse
 gsap.fromTo(".hero-title",
@@ -56,50 +107,6 @@ gsap.fromTo(".hero-subtitle",
   { textShadow: "0 0 15px rgba(255, 229, 7, 0.35), 0 0 40px rgba(255, 153, 0, 0.2)", duration: 2.5, ease: "sine.inOut", repeat: -1, yoyo: true, delay: 0.5 },
 );
 
-// Falling feathers
-const heroSection = document.querySelector("#hero");
-if (heroSection) {
-  const CDN = "https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew";
-  const featherSrcs = [`${CDN}/feather-1.webp`, `${CDN}/feather-2.webp`];
-
-  function spawnFeather() {
-    const img = document.createElement("img");
-    img.src = featherSrcs[Math.floor(Math.random() * featherSrcs.length)];
-    img.style.cssText =
-      "position:absolute;pointer-events:none;z-index:1;opacity:0";
-
-    const size = 30 + Math.random() * 50;
-    img.style.width = size + "px";
-    img.style.height = size + "px";
-    img.style.left = Math.random() * 100 + "%";
-    img.style.top = "-80px";
-
-    heroSection.appendChild(img);
-
-    const duration = 4 + Math.random() * 4;
-    const drift = -60 + Math.random() * 120;
-    const rotation = Math.random() * 360 + (-180 + Math.random() * 360);
-    const fallDist = heroSection.offsetHeight + 100;
-
-    const tl = gsap.timeline({ onComplete: () => img.remove() });
-    tl.to(img, { opacity: 0.7, duration: 0.5 })
-      .to(img, { y: fallDist, x: drift, rotation, duration, ease: "sine.inOut" }, 0)
-      .to(img, { opacity: 0, duration: 1 }, duration - 1);
-  }
-
-  // Spawn initial batch
-  for (let i = 0; i < 15; i++) {
-    setTimeout(spawnFeather, i * 300);
-  }
-
-  // Keep ~15-20 on screen
-  function featherLoop() {
-    spawnFeather();
-    setTimeout(featherLoop, 400 + Math.random() * 600);
-  }
-  setTimeout(featherLoop, 4500);
-}
-
 // Steps highlight — sliding overlay
 const stepsWrapper = document.querySelector(".steps-wrapper");
 const steps = document.querySelectorAll(".step-wrapper-item");
@@ -110,7 +117,7 @@ if (stepsWrapper && steps.length) {
   const overlay = document.createElement("span");
   overlay.className = "step-overlay";
   overlay.style.cssText =
-    "position:absolute;background:linear-gradient(180deg, #FFE507 0%, #F90 100%);border-radius:14px;pointer-events:none;transition:none;z-index:0;overflow:hidden";
+    "position:absolute;background:#FECA00;border-radius:14px;pointer-events:none;transition:none;z-index:0;overflow:hidden";
 
   const overlayShimmer = document.createElement("span");
   overlayShimmer.style.cssText =

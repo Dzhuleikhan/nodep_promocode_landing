@@ -1,5 +1,9 @@
 import { geoData } from "./geoLocation";
-import { countryCurrencyData, nodepBonuses, bonusSumAndWager } from "../public/data";
+import {
+  countryCurrencyData,
+  nodepBonuses,
+  bonusSumAndWager,
+} from "../public/data";
 import { getUrlParameter } from "./params";
 
 const CDN = "https://3344112-img.b-cdn.net";
@@ -203,7 +207,6 @@ async function settingModalCurrency() {
   }
 }
 
-
 /**
  *  Currency dropdown
  */
@@ -220,7 +223,7 @@ function generateCurrencyList() {
     ul.innerHTML = uniqueCurrencies
       .map(
         (entry) => `
-        <li class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#171929] p-3 text-base font-bold transition-all hover:bg-[#242843] [&.active]:bg-[#242843]">
+        <li class="grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-[#212A36] p-3 text-base font-bold transition-all hover:bg-[#121422] [&.active]:bg-[#121422]">
           <img class="currency-item-icon" width="24" height="24" src="${entry.countryCurrencyIcon}" alt="${entry.countryCurrency}" />
           <span class="currency-item-name">${entry.countryCurrencyFullName}</span>
           <div>
