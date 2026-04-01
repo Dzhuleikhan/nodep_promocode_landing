@@ -11,7 +11,8 @@ export const translations = {
     slideStep2Text: "Choose your preferred payment method and make a deposit.",
     slideStep3Title: "Get the Bonus",
     slideStep3Text: "Your welcome bonus is ready for you in the Bonus Center.",
-    footerText: `<span class="current-domain"></span> is an informational platform about bonuses and promotions in online casinos. All information provided is for informational and entertainment purposes only. Bonus terms and conditions may change without prior notice, and <span class="current-domain"></span> is not responsible for any discrepancies. Offers are only available to individuals aged 18 and over who are residents of eligible jurisdictions. Before registering or claiming any bonus, please read the terms and conditions of each casino carefully. Play responsibly!`,
+    footerText:
+      "Goldbet.io is owned and operated by Goldkey Technologies Limitada. Registration number: 3-102-892568, registered address: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Contact us hello@goldbet.io. Goldbet.io is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License No. ALSI-012401005-F11. Goldbet.io has passed all regulatory compliance and is legally authorized to conduct gaming operations for any and all games of chance and wagering. Remember that gambling can be addictive. Play responsibly. Goldbet.io only accepts customers 18 years of age or older in accordance with your jurisdiction. Goldkey Technologies Limitada, registration number 3-102-892568, a company organized and operated by the Costa Rica Law, is the payment operator of Goldkey Technologies Limitada, acting as a paying agent on behalf of Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD duly incorporated and organized in the Republic of Cyprus, under Company Registration Number HE456057 ",
     // ? SOCIALS
     choosePassword: "Choose a password",
     gameCurrency: "And game currency",
@@ -22,7 +23,7 @@ export const translations = {
     wrongNumber: "Invalid number",
     signUpBtn: "Get Bonus",
     promoApplied: "Promocode applied",
-    bonusName: `<span class="two-step-bonus-percent"></span> on Deposit + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `No Deposit Bonus <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>in gates of olympus</span> <br/> bonus up to <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% on deposit up to 6000",
@@ -185,7 +186,8 @@ export const translations = {
     slideStep3Title: "Recevoir le bonus",
     slideStep3Text:
       "Votre bonus de bienvenue est disponible dans le Centre de Bonus.",
-    footerText: `<span class="current-domain"></span> est une plateforme informative sur les bonus et promotions des casinos en ligne. Toutes les informations fournies sont à titre informatif et de divertissement uniquement. Les conditions des bonus peuvent être modifiées sans préavis, et <span class="current-domain"></span> n’est pas responsable des éventuelles divergences. Les offres sont réservées aux personnes âgées de 18 ans et plus résidant dans des juridictions éligibles. Avant de vous inscrire ou de réclamer un bonus, veuillez lire attentivement les conditions de chaque casino. Jouez de manière responsable !`,
+    footerText:
+      "Goldbet.io est détenu et exploité par Goldkey Technologies Limitada. Numéro d'enregistrement : 3-102-892568, adresse enregistrée : Puntarenas - Pastor Diaz ave. Province de Puntarenas, Jaco, 61101, Costa Rica. Contactez-nous hello@goldbet.io. Goldbet.io est licencié et réglementé par le Gouvernement de l'île autonome d'Anjouan, Union des Comores et opère sous la licence n° ALSI-012401005-F11. Goldbet.io a satisfait à toutes les exigences de conformité réglementaire et est légalement autorisé à mener des opérations de jeux pour tous les jeux de hasard et de pari. N'oubliez pas que le jeu peut être addictif. Jouez de manière responsable. Goldbet.io accepte uniquement les clients âgés de 18 ans ou plus conformément à votre juridiction. Goldkey Technologies Limitada, numéro d'enregistrement 3-102-892568, une société organisée et exploitée selon la loi du Costa Rica, est l'opérateur de paiement de Goldkey Technologies Limitada, agissant en tant qu'agent payeur au nom de Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD dûment constituée et organisée en République de Chypre, sous le numéro d'enregistrement de la société HE456057 ",
     // ? SOCIALS
     choosePassword: "Choisissez un mot de passe",
     gameCurrency: "Et la devise du jeu",
@@ -196,7 +198,7 @@ export const translations = {
     wrongNumber: "Numéro invalide",
     signUpBtn: "Obtenir le bonus",
     promoApplied: "Code promo appliqué",
-    bonusName: `<span class="two-step-bonus-percent"></span> sur dépôt + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus sans dépôt <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>dans Gates of Olympus</span> <br/> bonus jusqu’à <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% sur dépôt jusqu’à 6000",
@@ -290,7 +292,8 @@ export const translations = {
     slideStep3Title: "Primește bonusul",
     slideStep3Text:
       "Bonusul tău de bun venit te așteaptă în Centrul de Bonusuri.",
-    footerText: `<span class="current-domain"></span> este o platformă informativă despre bonusuri și promoții din cazinouri online. Toate informațiile sunt oferite doar în scop informativ și de divertisment. Termenii și condițiile bonusurilor se pot modifica fără notificare prealabilă, iar <span class="current-domain"></span> nu este responsabil pentru eventuale discrepanțe. Ofertele sunt disponibile doar persoanelor cu vârsta de peste 18 ani care sunt rezidenți ai jurisdicțiilor eligibile. Înainte de înregistrare sau revendicarea oricărui bonus, citește cu atenție termenii și condițiile fiecărui cazinou. Joacă responsabil!`,
+    footerText:
+      "Goldbet.io este deținut și operat de Goldkey Technologies Limitada. Număr de înregistrare: 3-102-892568, adresă înregistrată: Puntarenas - Pastor Diaz ave. Provincia Puntarenas, Jaco, 61101, Costa Rica. Contactați-ne hello@goldbet.io. Goldbet.io este licențiat și reglementat de Guvernul Insulei Autonome Anjouan, Uniunea Comorelor și operează sub Licența nr. ALSI-012401005-F11. Goldbet.io a trecut toate cerințele de conformitate reglementară și este autorizat legal să desfășoare operațiuni de joc pentru toate jocurile de noroc și pariuri. Rețineți că jocurile de noroc pot crea dependență. Jucați responsabil. Goldbet.io acceptă doar clienți cu vârsta de 18 ani sau mai mult în conformitate cu jurisdicția dumneavoastră. Goldkey Technologies Limitada, număr de înregistrare 3-102-892568, o companie organizată și operată conform legislației din Costa Rica, este operatorul de plăți al Goldkey Technologies Limitada, acționând ca agent de plată în numele Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD constituită și organizată în mod corespunzător în Republica Cipru, sub numărul de înregistrare al companiei HE456057 ",
     // ? SOCIALS
     choosePassword: "Alege o parolă",
     gameCurrency: "Și moneda de joc",
@@ -301,7 +304,7 @@ export const translations = {
     wrongNumber: "Număr invalid",
     signUpBtn: "Obține bonusul",
     promoApplied: "Cod promoțional aplicat",
-    bonusName: `<span class="two-step-bonus-percent"></span> la depunere + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus fără depunere <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>în Gates of Olympus</span> <br/> bonus până la <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% la depunere până la 6000",
@@ -381,7 +384,8 @@ export const translations = {
     slideStep2Text: "Válaszd ki a kívánt fizetési módot és fizess be.",
     slideStep3Title: "Bónusz megszerzése",
     slideStep3Text: "Az üdvözlő bónuszod a Bónusz Központban vár rád.",
-    footerText: `<span class="current-domain"></span> egy információs platform az online kaszinók bónuszairól és promócióiról. Minden információ kizárólag tájékoztató és szórakoztató célt szolgál. A bónusz feltételek előzetes értesítés nélkül változhatnak, és <span class="current-domain"></span> nem vállal felelősséget az esetleges eltérésekért. Az ajánlatok kizárólag 18 éven felüli, jogosult joghatóságokban élő személyek számára érhetők el. Regisztráció vagy bónuszigénylés előtt kérjük, olvasd el figyelmesen az adott kaszinó feltételeit. Játssz felelősségteljesen!`,
+    footerText:
+      "A Goldbet.io tulajdonosa és üzemeltetője a Goldkey Technologies Limitada. Cégjegyzékszám: 3-102-892568, bejegyzett cím: Puntarenas - Pastor Diaz ave. Puntarenas tartomány, Jaco, 61101, Costa Rica. Kapcsolat hello@goldbet.io. A Goldbet.io az Anjouan Autonóm Sziget Kormánya, a Comore-szigetek Uniója által engedélyezett és szabályozott, és az ALSI-012401005-F11 számú engedély alapján működik. A Goldbet.io minden szabályozási megfelelőségi követelménynek megfelelt, és jogszerűen jogosult szerencsejáték- és fogadási tevékenységek végzésére minden típusú játék esetében. Ne feledje, hogy a szerencsejáték függőséget okozhat. Játsszon felelősségteljesen. A Goldbet.io csak 18 éves vagy annál idősebb ügyfeleket fogad el az Ön joghatóságának megfelelően. A Goldkey Technologies Limitada, 3-102-892568 cégjegyzékszámmal, a Costa Rica-i törvények szerint alapított és működtetett társaság, a Goldkey Technologies Limitada fizetési üzemeltetője, amely fizetési ügynökként jár el a Goldkey Technologies Limitada nevében. A GOLD SYNG INC.TECH LTD megfelelően bejegyzett és működtetett társaság a Ciprusi Köztársaságban, HE456057 cégjegyzékszám alatt ",
     // ? SOCIALS
     choosePassword: "Válassz jelszót",
     gameCurrency: "És játékvaluta",
@@ -392,7 +396,7 @@ export const translations = {
     wrongNumber: "Érvénytelen szám",
     signUpBtn: "Bónusz igénylése",
     promoApplied: "Promókód alkalmazva",
-    bonusName: `<span class="two-step-bonus-percent"></span> befizetésre + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Befizetés nélküli bónusz <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>a Gates of Olympus játékban</span> <br/> bónusz akár <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% befizetésre akár 6000-ig",
@@ -455,7 +459,8 @@ export const translations = {
     slideStep2Text: "Wybierz preferowaną metodę płatności i dokonaj wpłaty.",
     slideStep3Title: "Odbierz bonus",
     slideStep3Text: "Twój bonus powitalny czeka w Centrum Bonusów.",
-    footerText: `<span class="current-domain"></span> to platforma informacyjna o bonusach i promocjach w kasynach online. Wszystkie informacje mają charakter wyłącznie informacyjny i rozrywkowy. Warunki bonusów mogą ulec zmianie bez wcześniejszego powiadomienia, a <span class="current-domain"></span> nie ponosi odpowiedzialności za ewentualne rozbieżności. Oferty są dostępne wyłącznie dla osób powyżej 18 roku życia, będących mieszkańcami uprawnionych jurysdykcji. Przed rejestracją lub odebraniem bonusu zapoznaj się dokładnie z regulaminem danego kasyna. Graj odpowiedzialnie!`,
+    footerText:
+      "Goldbet.io jest własnością i jest obsługiwany przez Goldkey Technologies Limitada. Numer rejestracyjny: 3-102-892568, zarejestrowany adres: Puntarenas - Pastor Diaz ave. Prowincja Puntarenas, Jaco, 61101, Kostaryka. Skontaktuj się z nami hello@goldbet.io. Goldbet.io jest licencjonowany i regulowany przez Rząd Autonomicznej Wyspy Anjouan, Związek Komorów i działa na podstawie licencji nr ALSI-012401005-F11. Goldbet.io spełnił wszystkie wymogi zgodności regulacyjnej i jest prawnie upoważniony do prowadzenia działalności hazardowej dla wszelkich gier losowych i zakładów. Pamiętaj, że hazard może uzależniać. Graj odpowiedzialnie. Goldbet.io przyjmuje wyłącznie klientów w wieku 18 lat lub starszych zgodnie z obowiązującą jurysdykcją. Goldkey Technologies Limitada, numer rejestracyjny 3-102-892568, spółka zorganizowana i działająca zgodnie z prawem Kostaryki, jest operatorem płatności Goldkey Technologies Limitada, działając jako agent płatniczy w imieniu Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD należycie utworzona i zorganizowana w Republice Cypryjskiej, pod numerem rejestracyjnym spółki HE456057 ",
     // ? SOCIALS
     choosePassword: "Wybierz hasło",
     gameCurrency: "I walutę gry",
@@ -466,7 +471,7 @@ export const translations = {
     wrongNumber: "Nieprawidłowy numer",
     signUpBtn: "Odbierz bonus",
     promoApplied: "Kod promocyjny zastosowany",
-    bonusName: `<span class="two-step-bonus-percent"></span> od wpłaty + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus bez depozytu <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>w grze Gates of Olympus</span> <br/> bonus do <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% od wpłaty do 6000",
@@ -527,7 +532,8 @@ export const translations = {
     slideStep2Text: "Vyberte preferovanou platební metodu a proveďte vklad.",
     slideStep3Title: "Získejte bonus",
     slideStep3Text: "Váš uvítací bonus na vás čeká v Centru bonusů.",
-    footerText: `<span class="current-domain"></span> je informační platforma o bonusech a promocích v online kasinech. Veškeré informace jsou poskytovány pouze pro informační a zábavní účely. Podmínky bonusů se mohou změnit bez předchozího upozornění a <span class="current-domain"></span> nenese odpovědnost za případné nesrovnalosti. Nabídky jsou dostupné pouze osobám starším 18 let, které jsou rezidenty oprávněných jurisdikcí. Před registrací nebo uplatněním jakéhokoli bonusu si pečlivě přečtěte podmínky každého kasina. Hrajte zodpovědně!`,
+    footerText:
+      "Goldbet.io je vlastněn a provozován společností Goldkey Technologies Limitada. Registrační číslo: 3-102-892568, registrovaná adresa: Puntarenas - Pastor Diaz ave. Provincie Puntarenas, Jaco, 61101, Kostarika. Kontaktujte nás hello@goldbet.io. Goldbet.io je licencován a regulován vládou Autonomního ostrova Anjouan, Svaz Komor, a provozuje činnost pod licencí č. ALSI-012401005-F11. Goldbet.io splnil všechny požadavky regulační shody a je právně oprávněn provozovat herní činnosti pro všechny hry náhody a sázení. Pamatujte, že hazardní hry mohou být návykové. Hrajte zodpovědně. Goldbet.io přijímá pouze zákazníky starší 18 let v souladu s vaší jurisdikcí. Goldkey Technologies Limitada, registrační číslo 3-102-892568, společnost organizovaná a provozovaná podle práva Kostariky, je platebním operátorem Goldkey Technologies Limitada, jednající jako platební agent jménem Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD řádně založená a organizovaná v Kyperské republice, pod registračním číslem společnosti HE456057 ",
     // ? SOCIALS
     choosePassword: "Zvolte heslo",
     gameCurrency: "A herní měnu",
@@ -538,7 +544,7 @@ export const translations = {
     wrongNumber: "Neplatné číslo",
     signUpBtn: "Získat bonus",
     promoApplied: "Promo kód použit",
-    bonusName: `<span class="two-step-bonus-percent"></span> na vklad + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus bez vkladu <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>ve hře Gates of Olympus</span> <br/> bonus až <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% na vklad až do 6000",
@@ -609,7 +615,8 @@ export const translations = {
     slideStep2Text: "Izaberite željeni način plaćanja i izvršite uplatu.",
     slideStep3Title: "Preuzmite bonus",
     slideStep3Text: "Vaš bonus dobrodošlice vas čeka u Bonus centru.",
-    footerText: `<span class="current-domain"></span> je informativna platforma o bonusima i promocijama u online kazinima. Sve informacije su namenjene isključivo u informativne i zabavne svrhe. Uslovi bonusa mogu se promeniti bez prethodne najave, a <span class="current-domain"></span> ne snosi odgovornost za eventualna odstupanja. Ponude su dostupne samo osobama starijim od 18 godina koje su rezidenti dozvoljenih jurisdikcija. Pre registracije ili preuzimanja bilo kog bonusa pažljivo pročitajte uslove i odredbe svakog kazina. Igrajte odgovorno!`,
+    footerText:
+      "Goldbet.io je v lasti in upravljanju podjetja Goldkey Technologies Limitada. Registrska številka: 3-102-892568, registrirani naslov: Puntarenas - Pastor Diaz ave. Provinca Puntarenas, Jaco, 61101, Kostarika. Kontaktirajte nas hello@goldbet.io. Goldbet.io je licenciran in reguliran s strani Vlade Avtonomnega otoka Anjouan, Zveza Komorov, in deluje pod licenco št. ALSI-012401005-F11. Goldbet.io je izpolnil vse zahteve glede regulativne skladnosti in je zakonito pooblaščen za izvajanje iger na srečo in stav za vse vrste iger na srečo. Ne pozabite, da lahko igre na srečo povzročijo zasvojenost. Igrajte odgovorno. Goldbet.io sprejema samo stranke, stare 18 let ali več, v skladu z vašo jurisdikcijo. Goldkey Technologies Limitada, registrska številka 3-102-892568, podjetje, ustanovljeno in upravljano v skladu z zakonodajo Kostarike, je plačilni operater Goldkey Technologies Limitada, ki deluje kot plačilni agent v imenu Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD ustrezno ustanovljeno in organizirano v Republiki Ciper, pod registrsko številko podjetja HE456057 ",
     // ? SOCIALS
     choosePassword: "Izaberite lozinku",
     gameCurrency: "I valutu igre",
@@ -620,7 +627,7 @@ export const translations = {
     wrongNumber: "Nevažeći broj",
     signUpBtn: "Uzmi bonus",
     promoApplied: "Promo kod primenjen",
-    bonusName: `<span class="two-step-bonus-percent"></span> na uplatu + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus bez depozita <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>u igri Gates of Olympus</span> <br/> bonus do <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% na uplatu do 6000",
@@ -695,7 +702,8 @@ export const translations = {
     slideStep3Title: "Λάβετε το μπόνους",
     slideStep3Text:
       "Το μπόνους καλωσορίσματος σας σας περιμένει στο Κέντρο Μπόνους.",
-    footerText: `<span class="current-domain"></span> είναι μια ενημερωτική πλατφόρμα για μπόνους και προσφορές σε online καζίνο. Όλες οι πληροφορίες παρέχονται μόνο για ενημερωτικούς και ψυχαγωγικούς σκοπούς. Οι όροι των μπόνους ενδέχεται να αλλάξουν χωρίς προηγούμενη ειδοποίηση και το <span class="current-domain"></span> δεν φέρει ευθύνη για τυχόν αποκλίσεις. Οι προσφορές είναι διαθέσιμες μόνο σε άτομα άνω των 18 ετών που είναι κάτοικοι επιλέξιμων δικαιοδοσιών. Πριν από την εγγραφή ή τη διεκδίκηση οποιουδήποτε μπόνους, διαβάστε προσεκτικά τους όρους και τις προϋποθέσεις κάθε καζίνο. Παίξτε υπεύθυνα!`,
+    footerText:
+      "Το Goldbet.io ανήκει και λειτουργεί από την Goldkey Technologies Limitada. Αριθμός εγγραφής: 3-102-892568, καταχωρημένη διεύθυνση: Puntarenas - Pastor Diaz ave. Επαρχία Puntarenas, Jaco, 61101, Κόστα Ρίκα. Επικοινωνήστε μαζί μας hello@goldbet.io. Το Goldbet.io διαθέτει άδεια και ρυθμίζεται από την Κυβέρνηση του Αυτόνομου Νησιού Anjouan, Ένωση των Κομορών και λειτουργεί υπό την Άδεια Αρ. ALSI-012401005-F11. Το Goldbet.io έχει συμμορφωθεί με όλες τις κανονιστικές απαιτήσεις και είναι νομικά εξουσιοδοτημένο να διεξάγει δραστηριότητες τυχερών παιχνιδιών για κάθε είδους παιχνίδια τύχης και στοιχηματισμού. Να θυμάστε ότι ο τζόγος μπορεί να είναι εθιστικός. Παίξτε υπεύθυνα. Το Goldbet.io δέχεται μόνο πελάτες ηλικίας 18 ετών και άνω σύμφωνα με τη δικαιοδοσία σας. Η Goldkey Technologies Limitada, αριθμός εγγραφής 3-102-892568, εταιρεία οργανωμένη και λειτουργούσα σύμφωνα με το δίκαιο της Κόστα Ρίκα, είναι ο φορέας πληρωμών της Goldkey Technologies Limitada, ενεργώντας ως πράκτορας πληρωμών εκ μέρους της Goldkey Technologies Limitada. Η GOLD SYNG INC.TECH LTD δεόντως συσταθείσα και οργανωμένη στη Δημοκρατία της Κύπρου, με αριθμό εγγραφής εταιρείας HE456057 ",
     // ? SOCIALS
     choosePassword: "Επιλέξτε κωδικό πρόσβασης",
     gameCurrency: "Και νόμισμα παιχνιδιού",
@@ -706,7 +714,7 @@ export const translations = {
     wrongNumber: "Μη έγκυρος αριθμός",
     signUpBtn: "Λάβετε το μπόνους",
     promoApplied: "Ο κωδικός προσφοράς εφαρμόστηκε",
-    bonusName: `<span class="two-step-bonus-percent"></span> στην κατάθεση + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Μπόνους χωρίς κατάθεση <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>στο παιχνίδι Gates of Olympus</span> <br/> μπόνους έως <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% στην κατάθεση έως 6000",
@@ -779,7 +787,8 @@ export const translations = {
     slideStep2Text: "Velg din foretrukne betalingsmetode og gjør et innskudd.",
     slideStep3Title: "Få bonusen",
     slideStep3Text: "Velkomstbonusen din venter på deg i Bonus-senteret.",
-    footerText: `<span class="current-domain"></span> er en informasjonsplattform om bonuser og kampanjer i nettcasinoer. All informasjon gis kun for informasjons- og underholdningsformål. Bonusvilkår kan endres uten forhåndsvarsel, og <span class="current-domain"></span> er ikke ansvarlig for eventuelle avvik. Tilbudene er kun tilgjengelige for personer over 18 år som er bosatt i kvalifiserte jurisdiksjoner. Før du registrerer deg eller gjør krav på en bonus, bør du lese vilkårene og betingelsene for hvert kasino nøye. Spill ansvarlig!`,
+    footerText:
+      "Goldbet.io eies og drives av Goldkey Technologies Limitada. Registreringsnummer: 3-102-892568, registrert adresse: Puntarenas - Pastor Diaz ave. Puntarenas-provinsen, Jaco, 61101, Costa Rica. Kontakt oss hello@goldbet.io. Goldbet.io er lisensiert og regulert av myndighetene på den autonome øya Anjouan, Unionen av Komorene, og opererer under lisens nr. ALSI-012401005-F11. Goldbet.io har oppfylt alle regulatoriske krav og er lovlig autorisert til å drive spillvirksomhet for alle typer hasardspill og veddemål. Husk at gambling kan være vanedannende. Spill ansvarlig. Goldbet.io aksepterer kun kunder som er 18 år eller eldre i henhold til din jurisdiksjon. Goldkey Technologies Limitada, registreringsnummer 3-102-892568, et selskap organisert og drevet i henhold til lovene i Costa Rica, er betalingsoperatør for Goldkey Technologies Limitada, og opptrer som betalingsagent på vegne av Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD behørig stiftet og organisert i Republikken Kypros, under selskapsregistreringsnummer HE456057 ",
     // ? SOCIALS
     choosePassword: "Velg et passord",
     gameCurrency: "Og spillvaluta",
@@ -790,7 +799,7 @@ export const translations = {
     wrongNumber: "Ugyldig nummer",
     signUpBtn: "Få bonus",
     promoApplied: "Promokode brukt",
-    bonusName: `<span class="two-step-bonus-percent"></span> på innskudd + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus uten innskudd <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>i spillet Gates of Olympus</span> <br/> bonus opptil <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% på innskudd opptil 6000",
@@ -864,7 +873,8 @@ export const translations = {
       "Välj din föredragna betalningsmetod och gör en insättning.",
     slideStep3Title: "Få bonusen",
     slideStep3Text: "Din välkomstbonus väntar på dig i Bonuscentret.",
-    footerText: `<span class="current-domain"></span> är en informationsplattform om bonusar och kampanjer i onlinekasinon. All information tillhandahålls endast i informations- och underhållningssyfte. Bonusvillkor kan ändras utan föregående meddelande, och <span class="current-domain"></span> ansvarar inte för eventuella avvikelser. Erbjudanden är endast tillgängliga för personer över 18 år som är bosatta i berättigade jurisdiktioner. Innan du registrerar dig eller gör anspråk på någon bonus, läs noggrant villkoren för varje kasino. Spela ansvarsfullt!`,
+    footerText:
+      "Goldbet.io ägs och drivs av Goldkey Technologies Limitada. Registreringsnummer: 3-102-892568, registrerad adress: Puntarenas - Pastor Diaz ave. Puntarenas-provinsen, Jaco, 61101, Costa Rica. Kontakta oss hello@goldbet.io. Goldbet.io är licensierat och reglerat av regeringen på den autonoma ön Anjouan, Unionen Komorerna, och verkar under licens nr ALSI-012401005-F11. Goldbet.io har uppfyllt alla regulatoriska krav och är lagligt auktoriserat att bedriva spelverksamhet för alla typer av hasardspel och vadslagning. Kom ihåg att spel kan vara beroendeframkallande. Spela ansvarsfullt. Goldbet.io accepterar endast kunder som är 18 år eller äldre i enlighet med din jurisdiktion. Goldkey Technologies Limitada, registreringsnummer 3-102-892568, ett företag organiserat och drivet enligt lagarna i Costa Rica, är betalningsoperatör för Goldkey Technologies Limitada, och agerar som betalningsagent på uppdrag av Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD vederbörligen bildat och organiserat i Republiken Cypern, under företagsregistreringsnummer HE456057 ",
     // ? SOCIALS
     choosePassword: "Välj ett lösenord",
     gameCurrency: "Och spelvaluta",
@@ -875,7 +885,7 @@ export const translations = {
     wrongNumber: "Ogiltigt nummer",
     signUpBtn: "Hämta bonus",
     promoApplied: "Kampanjkod tillämpad",
-    bonusName: `<span class="two-step-bonus-percent"></span> på insättning + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus utan insättning <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>i spelet Gates of Olympus</span> <br/> bonus upp till <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% på insättning upp till 6000",
@@ -947,7 +957,8 @@ export const translations = {
     slideStep2Text: "Vyberte si preferovaný spôsob platby a vykonajte vklad.",
     slideStep3Title: "Získajte bonus",
     slideStep3Text: "Váš uvítací bonus na vás čaká v Centre bonusov.",
-    footerText: `<span class="current-domain"></span> je informačná platforma o bonusoch a promo akciách v online kasínach. Všetky informácie sú poskytované iba na informačné a zábavné účely. Podmienky bonusov sa môžu zmeniť bez predchádzajúceho upozornenia a <span class="current-domain"></span> nenesie zodpovednosť za prípadné nezrovnalosti. Ponuky sú dostupné iba pre osoby staršie ako 18 rokov, ktoré sú rezidentmi oprávnených jurisdikcií. Pred registráciou alebo uplatnením akéhokoľvek bonusu si dôkladne prečítajte podmienky každého kasína. Hrajte zodpovedne!`,
+    footerText:
+      "Goldbet.io je vlastnený a prevádzkovaný spoločnosťou Goldkey Technologies Limitada. Registračné číslo: 3-102-892568, registrovaná adresa: Puntarenas - Pastor Diaz ave. Provincia Puntarenas, Jaco, 61101, Kostarika. Kontaktujte nás hello@goldbet.io. Goldbet.io je licencovaný a regulovaný vládou Autonómneho ostrova Anjouan, Únia Komor, a prevádzkuje činnosť pod licenciou č. ALSI-012401005-F11. Goldbet.io splnil všetky požiadavky regulačnej zhody a je právne oprávnený vykonávať herné operácie pre všetky hry náhody a stávkovanie. Pamätajte, že hazardné hry môžu byť návykové. Hrajte zodpovedne. Goldbet.io prijíma iba zákazníkov vo veku 18 rokov alebo starších v súlade s vašou jurisdikciou. Goldkey Technologies Limitada, registračné číslo 3-102-892568, spoločnosť organizovaná a prevádzkovaná podľa zákonov Kostariky, je platobným operátorom Goldkey Technologies Limitada, konajúcim ako platobný agent v mene Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD riadne založená a organizovaná v Cyperskej republike, pod registračným číslom spoločnosti HE456057 ",
     // ? SOCIALS
     choosePassword: "Zvoľte heslo",
     gameCurrency: "A hernú menu",
@@ -958,7 +969,7 @@ export const translations = {
     wrongNumber: "Neplatné číslo",
     signUpBtn: "Získať bonus",
     promoApplied: "Promo kód použitý",
-    bonusName: `<span class="two-step-bonus-percent"></span> na vklad + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus bez vkladu <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>v hre Gates of Olympus</span> <br/> bonus až do <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% na vklad až do 6000",
@@ -1031,7 +1042,8 @@ export const translations = {
       "Выберите предпочтительный способ оплаты и внесите депозит.",
     slideStep3Title: "Получите бонус",
     slideStep3Text: "Ваш приветственный бонус ждет вас в Бонусном центре.",
-    footerText: `<span class="current-domain"></span> — это информационная платформа о бонусах и акциях в онлайн-казино. Вся информация предоставляется исключительно в информационных и развлекательных целях. Условия бонусов могут изменяться без предварительного уведомления, и <span class="current-domain"></span> не несет ответственности за возможные расхождения. Предложения доступны только лицам старше 18 лет, являющимся резидентами допустимых юрисдикций. Перед регистрацией или получением любого бонуса внимательно ознакомьтесь с условиями каждого казино. Играйте ответственно!`,
+    footerText:
+      "Goldbet.io принадлежит и управляется компанией Goldkey Technologies Limitada. Регистрационный номер: 3-102-892568, зарегистрированный адрес: Puntarenas - Pastor Diaz ave. Провинция Пунтаренас, Хако, 61101, Коста-Рика. Свяжитесь с нами hello@goldbet.io. Goldbet.io лицензирован и регулируется Правительством Автономного острова Анжуан, Союз Коморских Островов, и работает по лицензии № ALSI-012401005-F11. Goldbet.io прошёл все требования нормативного соответствия и имеет законное право осуществлять игровую деятельность для любых азартных игр и ставок. Помните, что азартные игры могут вызывать зависимость. Играйте ответственно. Goldbet.io принимает только клиентов в возрасте 18 лет и старше в соответствии с вашей юрисдикцией. Goldkey Technologies Limitada, регистрационный номер 3-102-892568, компания, организованная и действующая в соответствии с законодательством Коста-Рики, является платежным оператором Goldkey Technologies Limitada, действуя в качестве платёжного агента от имени Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD должным образом учреждена и организована в Республике Кипр, под регистрационным номером компании HE456057 ",
     // ? SOCIALS
     choosePassword: "Выберите пароль",
     gameCurrency: "И игровую валюту",
@@ -1042,7 +1054,7 @@ export const translations = {
     wrongNumber: "Неверный номер",
     signUpBtn: "Получить бонус",
     promoApplied: "Промокод применен",
-    bonusName: `<span class="two-step-bonus-percent"></span> на депозит + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Бездепозитный бонус <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>в игре Gates of Olympus</span> <br/> бонус до <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% на депозит до 6000",
@@ -1115,7 +1127,8 @@ export const translations = {
     slideStep2Text: "Elige tu método de pago preferido y realiza un depósito.",
     slideStep3Title: "Obtén el bono",
     slideStep3Text: "Tu bono de bienvenida te espera en el Centro de Bonos.",
-    footerText: `<span class="current-domain"></span> es una plataforma informativa sobre bonos y promociones en casinos en línea. Toda la información se proporciona únicamente con fines informativos y de entretenimiento. Los términos y condiciones de los bonos pueden cambiar sin previo aviso, y <span class="current-domain"></span> no se hace responsable de posibles discrepancias. Las ofertas están disponibles solo para personas mayores de 18 años que sean residentes de jurisdicciones elegibles. Antes de registrarte o reclamar cualquier bono, lee atentamente los términos y condiciones de cada casino. ¡Juega con responsabilidad!`,
+    footerText:
+      "Goldbet.io es propiedad y está operado por Goldkey Technologies Limitada. Número de registro: 3-102-892568, dirección registrada: Puntarenas - Pastor Diaz ave. Provincia de Puntarenas, Jaco, 61101, Costa Rica. Contáctenos hello@goldbet.io. Goldbet.io está licenciado y regulado por el Gobierno de la Isla Autónoma de Anjouan, Unión de las Comoras, y opera bajo la Licencia Nº ALSI-012401005-F11. Goldbet.io ha cumplido con todos los requisitos de conformidad regulatoria y está legalmente autorizado para llevar a cabo operaciones de juego para todos los juegos de azar y apuestas. Recuerde que el juego puede ser adictivo. Juegue de manera responsable. Goldbet.io solo acepta clientes mayores de 18 años de acuerdo con su jurisdicción. Goldkey Technologies Limitada, número de registro 3-102-892568, una empresa organizada y operada conforme a la ley de Costa Rica, es el operador de pagos de Goldkey Technologies Limitada, actuando como agente de pagos en nombre de Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD debidamente constituida y organizada en la República de Chipre, bajo el número de registro de la empresa HE456057 ",
     // ? SOCIALS
     choosePassword: "Elige una contraseña",
     gameCurrency: "Y moneda del juego",
@@ -1126,7 +1139,7 @@ export const translations = {
     wrongNumber: "Número inválido",
     signUpBtn: "Obtener bono",
     promoApplied: "Código promocional aplicado",
-    bonusName: `<span class="two-step-bonus-percent"></span> en depósito + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bono sin depósito <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>en el juego Gates of Olympus</span> <br/> bono hasta <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% en depósito hasta 6000",
@@ -1200,7 +1213,8 @@ export const translations = {
     slideStep3Title: "Receba o bônus",
     slideStep3Text:
       "Seu bônus de boas-vindas está esperando por você no Centro de Bônus.",
-    footerText: `<span class="current-domain"></span> é uma plataforma informativa sobre bônus e promoções em cassinos online. Todas as informações são fornecidas apenas para fins informativos e de entretenimento. Os termos e condições dos bônus podem mudar sem aviso prévio, e <span class="current-domain"></span> não se responsabiliza por possíveis discrepâncias. As ofertas estão disponíveis apenas para pessoas maiores de 18 anos que sejam residentes de jurisdições elegíveis. Antes de se registrar ou reivindicar qualquer bônus, leia atentamente os termos e condições de cada cassino. Jogue com responsabilidade!`,
+    footerText:
+      "Goldbet.io é de propriedade e operado por Goldkey Technologies Limitada. Número de registro: 3-102-892568, endereço registrado: Puntarenas - Pastor Diaz ave. Província de Puntarenas, Jaco, 61101, Costa Rica. Entre em contato conosco hello@goldbet.io. Goldbet.io é licenciado e regulamentado pelo Governo da Ilha Autônoma de Anjouan, União das Comores, e opera sob a Licença Nº ALSI-012401005-F11. Goldbet.io cumpriu todos os requisitos de conformidade regulatória e está legalmente autorizado a conduzir operações de jogos para todos os jogos de azar e apostas. Lembre-se de que o jogo pode ser viciante. Jogue com responsabilidade. Goldbet.io aceita apenas clientes com 18 anos ou mais de acordo com sua jurisdição. Goldkey Technologies Limitada, número de registro 3-102-892568, uma empresa organizada e operada de acordo com a lei da Costa Rica, é o operador de pagamentos da Goldkey Technologies Limitada, atuando como agente de pagamentos em nome da Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD devidamente constituída e organizada na República de Chipre, sob o número de registro da empresa HE456057 ",
     // ? SOCIALS
     choosePassword: "Escolha uma senha",
     gameCurrency: "E moeda do jogo",
@@ -1211,7 +1225,7 @@ export const translations = {
     wrongNumber: "Número inválido",
     signUpBtn: "Obter bônus",
     promoApplied: "Código promocional aplicado",
-    bonusName: `<span class="two-step-bonus-percent"></span> no depósito + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bônus sem depósito <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>no jogo Gates of Olympus</span> <br/> bônus até <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% no depósito até 6000",
@@ -1285,7 +1299,8 @@ export const translations = {
       "Wählen Sie Ihre bevorzugte Zahlungsmethode und tätigen Sie eine Einzahlung.",
     slideStep3Title: "Bonus erhalten",
     slideStep3Text: "Ihr Willkommensbonus wartet im Bonuszentrum auf Sie.",
-    footerText: `<span class="current-domain"></span> ist eine Informationsplattform über Boni und Aktionen in Online-Casinos. Alle Informationen werden ausschließlich zu Informations- und Unterhaltungszwecken bereitgestellt. Bonusbedingungen können sich ohne vorherige Ankündigung ändern, und <span class="current-domain"></span> übernimmt keine Verantwortung für mögliche Abweichungen. Angebote sind nur für Personen über 18 Jahre verfügbar, die in berechtigten Gerichtsbarkeiten ansässig sind. Bevor Sie sich registrieren oder einen Bonus in Anspruch nehmen, lesen Sie bitte die Bedingungen jedes Casinos sorgfältig durch. Spielen Sie verantwortungsbewusst!`,
+    footerText:
+      "Goldbet.io ist Eigentum von Goldkey Technologies Limitada und wird von diesem Unternehmen betrieben. Registrierungsnummer: 3-102-892568, eingetragene Adresse: Puntarenas - Pastor Diaz ave. Provinz Puntarenas, Jaco, 61101, Costa Rica. Kontaktieren Sie uns hello@goldbet.io. Goldbet.io ist von der Regierung der Autonomen Insel Anjouan, Union der Komoren, lizenziert und reguliert und arbeitet unter der Lizenz Nr. ALSI-012401005-F11. Goldbet.io hat alle regulatorischen Anforderungen erfüllt und ist gesetzlich berechtigt, Glücksspielaktivitäten für alle Arten von Glücksspielen und Wetten durchzuführen. Denken Sie daran, dass Glücksspiel süchtig machen kann. Spielen Sie verantwortungsbewusst. Goldbet.io akzeptiert nur Kunden ab 18 Jahren gemäß Ihrer Gerichtsbarkeit. Goldkey Technologies Limitada, Registrierungsnummer 3-102-892568, ein nach dem Recht von Costa Rica organisiertes und betriebenes Unternehmen, ist der Zahlungsbetreiber von Goldkey Technologies Limitada und handelt als Zahlungsagent im Namen von Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD ordnungsgemäß gegründet und organisiert in der Republik Zypern, unter der Unternehmensregistrierungsnummer HE456057 ",
     // ? SOCIALS
     choosePassword: "Wählen Sie ein Passwort",
     gameCurrency: "Und Spielwährung",
@@ -1296,7 +1311,7 @@ export const translations = {
     wrongNumber: "Ungültige Nummer",
     signUpBtn: "Bonus erhalten",
     promoApplied: "Promocode angewendet",
-    bonusName: `<span class="two-step-bonus-percent"></span> auf Einzahlung + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus ohne Einzahlung <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>im Spiel Gates of Olympus</span> <br/> Bonus bis zu <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% auf Einzahlung bis zu 6000",
@@ -1370,7 +1385,8 @@ export const translations = {
       "Scegli il tuo metodo di pagamento preferito ed effettua un deposito.",
     slideStep3Title: "Ottieni il bonus",
     slideStep3Text: "Il tuo bonus di benvenuto ti aspetta nel Centro Bonus.",
-    footerText: `<span class="current-domain"></span> è una piattaforma informativa sui bonus e le promozioni nei casinò online. Tutte le informazioni sono fornite esclusivamente a scopo informativo e di intrattenimento. I termini e le condizioni dei bonus possono cambiare senza preavviso e <span class="current-domain"></span> non è responsabile per eventuali discrepanze. Le offerte sono disponibili solo per persone di età superiore ai 18 anni residenti in giurisdizioni idonee. Prima di registrarti o richiedere qualsiasi bonus, leggi attentamente i termini e le condizioni di ciascun casinò. Gioca responsabilmente!`,
+    footerText:
+      "Goldbet.io è di proprietà e gestito da Goldkey Technologies Limitada. Numero di registrazione: 3-102-892568, indirizzo registrato: Puntarenas - Pastor Diaz ave. Provincia di Puntarenas, Jaco, 61101, Costa Rica. Contattaci hello@goldbet.io. Goldbet.io è autorizzato e regolamentato dal Governo dell'Isola Autonoma di Anjouan, Unione delle Comore, e opera sotto la Licenza n. ALSI-012401005-F11. Goldbet.io ha soddisfatto tutti i requisiti di conformità normativa ed è legalmente autorizzato a condurre operazioni di gioco per tutti i giochi d'azzardo e le scommesse. Ricorda che il gioco d'azzardo può creare dipendenza. Gioca responsabilmente. Goldbet.io accetta solo clienti di età pari o superiore a 18 anni in conformità con la tua giurisdizione. Goldkey Technologies Limitada, numero di registrazione 3-102-892568, una società organizzata e gestita secondo la legge della Costa Rica, è l'operatore dei pagamenti di Goldkey Technologies Limitada, agendo come agente di pagamento per conto di Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD debitamente costituita e organizzata nella Repubblica di Cipro, con numero di registrazione della società HE456057 ",
     // ? SOCIALS
     choosePassword: "Scegli una password",
     gameCurrency: "E valuta di gioco",
@@ -1381,7 +1397,7 @@ export const translations = {
     wrongNumber: "Numero non valido",
     signUpBtn: "Ottieni bonus",
     promoApplied: "Codice promozionale applicato",
-    bonusName: `<span class="two-step-bonus-percent"></span> sul deposito + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus senza deposito <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>nel gioco Gates of Olympus</span> <br/> bonus fino a <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% sul deposito fino a 6000",
@@ -1453,7 +1469,8 @@ export const translations = {
     slideStep2Text: "Valige eelistatud makseviis ja tehke sissemakse.",
     slideStep3Title: "Saage boonus",
     slideStep3Text: "Teie tervitusboonus ootab teid Boonuskeskuses.",
-    footerText: `<span class="current-domain"></span> on informatiivne platvorm boonuste ja kampaaniate kohta online-kasiinodes. Kogu teave on esitatud ainult informatiivsetel ja meelelahutuslikel eesmärkidel. Boonustingimused võivad muutuda ilma ette teatamata ning <span class="current-domain"></span> ei vastuta võimalike lahknevuste eest. Pakkumised on saadaval ainult üle 18-aastastele isikutele, kes on sobivate jurisdiktsioonide elanikud. Enne registreerimist või mis tahes boonuse kasutamist lugege hoolikalt iga kasiino tingimusi. Mängige vastutustundlikult!`,
+    footerText:
+      "Goldbet.io kuulub ettevõttele Goldkey Technologies Limitada ja seda haldab nimetatud ettevõte. Registrinumber: 3-102-892568, registreeritud aadress: Puntarenas - Pastor Diaz ave. Puntarenase provints, Jaco, 61101, Costa Rica. Võtke meiega ühendust hello@goldbet.io. Goldbet.io on litsentseeritud ja reguleeritud Anjouani autonoomse saare valitsuse, Komooride Liidu poolt ning tegutseb litsentsi nr ALSI-012401005-F11 alusel. Goldbet.io on täitnud kõik regulatiivse vastavuse nõuded ja on seaduslikult volitatud läbi viima hasartmängu- ja panustamistegevusi kõigi õnnemängude jaoks. Pidage meeles, et hasartmängud võivad tekitada sõltuvust. Mängige vastutustundlikult. Goldbet.io aktsepteerib ainult kliente, kes on vähemalt 18-aastased vastavalt teie jurisdiktsioonile. Goldkey Technologies Limitada, registrinumber 3-102-892568, Costa Rica seaduste alusel organiseeritud ja tegutsev ettevõte, on Goldkey Technologies Limitada makseoperaator, tegutsedes makseagendina Goldkey Technologies Limitada nimel. GOLD SYNG INC.TECH LTD nõuetekohaselt asutatud ja organiseeritud Küprose Vabariigis, ettevõtte registrinumbriga HE456057 ",
     // ? SOCIALS
     choosePassword: "Valige parool",
     gameCurrency: "Ja mängu valuuta",
@@ -1464,7 +1481,7 @@ export const translations = {
     wrongNumber: "Vigane number",
     signUpBtn: "Võta boonus",
     promoApplied: "Promokood rakendatud",
-    bonusName: `<span class="two-step-bonus-percent"></span> sissemaksel + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Boonus ilma sissemakseta <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>mängus Gates of Olympus</span> <br/> boonus kuni <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% sissemaksel kuni 6000",
@@ -1538,7 +1555,8 @@ export const translations = {
       "Izvēlieties sev vēlamo maksājuma metodi un veiciet depozītu.",
     slideStep3Title: "Saņemiet bonusu",
     slideStep3Text: "Jūsu sagaidīšanas bonuss jūs gaida Bonusu centrā.",
-    footerText: `<span class="current-domain"></span> ir informatīva platforma par bonusiem un akcijām tiešsaistes kazino. Visa informācija tiek sniegta tikai informatīvos un izklaides nolūkos. Bonusu noteikumi var tikt mainīti bez iepriekšēja brīdinājuma, un <span class="current-domain"></span> neuzņemas atbildību par iespējamām neatbilstībām. Piedāvājumi ir pieejami tikai personām, kas vecākas par 18 gadiem un ir atbilstošu jurisdikciju rezidenti. Pirms reģistrēšanās vai jebkura bonusa pieprasīšanas rūpīgi izlasiet katra kazino noteikumus un nosacījumus. Spēlējiet atbildīgi!`,
+    footerText:
+      "Goldbet.io pieder un to pārvalda Goldkey Technologies Limitada. Reģistrācijas numurs: 3-102-892568, reģistrētā adrese: Puntarenas - Pastor Diaz ave. Puntarenasas province, Jaco, 61101, Kostarika. Sazinieties ar mums hello@goldbet.io. Goldbet.io ir licencēts un regulēts ar Anžuanas autonomās salas valdības, Komoru Savienības starpniecību, un darbojas saskaņā ar licenci Nr. ALSI-012401005-F11. Goldbet.io ir izpildījis visas normatīvās atbilstības prasības un ir juridiski pilnvarots veikt azartspēļu un derību operācijas visām veiksmes spēlēm. Atcerieties, ka azartspēles var izraisīt atkarību. Spēlējiet atbildīgi. Goldbet.io pieņem tikai klientus, kuri ir vismaz 18 gadus veci saskaņā ar jūsu jurisdikciju. Goldkey Technologies Limitada, reģistrācijas numurs 3-102-892568, uzņēmums, kas organizēts un darbojas saskaņā ar Kostarikas likumiem, ir Goldkey Technologies Limitada maksājumu operators, darbojoties kā maksājumu aģents Goldkey Technologies Limitada vārdā. GOLD SYNG INC.TECH LTD pienācīgi dibināts un organizēts Kipras Republikā, ar uzņēmuma reģistrācijas numuru HE456057 ",
     // ? SOCIALS
     choosePassword: "Izvēlieties paroli",
     gameCurrency: "Un spēles valūtu",
@@ -1549,7 +1567,7 @@ export const translations = {
     wrongNumber: "Nederīgs numurs",
     signUpBtn: "Saņemt bonusu",
     promoApplied: "Promo kods piemērots",
-    bonusName: `<span class="two-step-bonus-percent"></span> uz depozītu + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonuss bez depozīta <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>spēlē Gates of Olympus</span> <br/> bonuss līdz <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% uz depozītu līdz 6000",
@@ -1623,7 +1641,8 @@ export const translations = {
       "Pasirinkite pageidaujamą mokėjimo būdą ir atlikite depozitą.",
     slideStep3Title: "Gaukite bonusą",
     slideStep3Text: "Jūsų pasveikinimo bonusas laukia jūsų Bonusų centre.",
-    footerText: `<span class="current-domain"></span> yra informacinė platforma apie bonusus ir akcijas internetiniuose kazino. Visa informacija pateikiama tik informaciniais ir pramoginiais tikslais. Bonusų sąlygos gali keistis be išankstinio įspėjimo, o <span class="current-domain"></span> neprisiima atsakomybės už galimus neatitikimus. Pasiūlymai galioja tik asmenims nuo 18 metų, kurie yra tinkamų jurisdikcijų gyventojai. Prieš registruodamiesi ar pasinaudodami bet kuriuo bonusu, atidžiai perskaitykite kiekvieno kazino sąlygas. Žaiskite atsakingai!`,
+    footerText:
+      "Goldbet.io priklauso ir yra valdomas Goldkey Technologies Limitada. Registracijos numeris: 3-102-892568, registruotas adresas: Puntarenas - Pastor Diaz ave. Puntarenaso provincija, Jaco, 61101, Kosta Rika. Susisiekite su mumis hello@goldbet.io. Goldbet.io yra licencijuotas ir reguliuojamas Anžuano autonominės salos vyriausybės, Komorų Sąjungos, ir veikia pagal licenciją Nr. ALSI-012401005-F11. Goldbet.io atitiko visus reguliavimo atitikties reikalavimus ir yra teisėtai įgaliotas vykdyti lošimų operacijas visiems azartiniams žaidimams ir lažyboms. Atminkite, kad lošimai gali sukelti priklausomybę. Loškite atsakingai. Goldbet.io priima tik klientus, kurie yra ne jaunesni kaip 18 metų pagal jūsų jurisdikciją. Goldkey Technologies Limitada, registracijos numeris 3-102-892568, įmonė, organizuota ir veikianti pagal Kosta Rikos įstatymus, yra Goldkey Technologies Limitada mokėjimų operatorius, veikiantis kaip mokėjimų agentas Goldkey Technologies Limitada vardu. GOLD SYNG INC.TECH LTD tinkamai įsteigta ir organizuota Kipro Respublikoje, įmonės registracijos numeris HE456057 ",
     // ? SOCIALS
     choosePassword: "Pasirinkite slaptažodį",
     gameCurrency: "Ir žaidimo valiutą",
@@ -1634,7 +1653,7 @@ export const translations = {
     wrongNumber: "Neteisingas numeris",
     signUpBtn: "Gauti bonusą",
     promoApplied: "Promo kodas pritaikytas",
-    bonusName: `<span class="two-step-bonus-percent"></span> už depozitą + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonusas be depozito <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>žaidime Gates of Olympus</span> <br/> bonusas iki <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% už depozitą iki 6000",
@@ -1707,7 +1726,8 @@ export const translations = {
     slideStep2Text: "Odaberite željeni način plaćanja i izvršite uplatu.",
     slideStep3Title: "Preuzmite bonus",
     slideStep3Text: "Vaš bonus dobrodošlice čeka vas u Bonus centru.",
-    footerText: `<span class="current-domain"></span> je informativna platforma o bonusima i promocijama u online casinima. Sve informacije pružene su isključivo u informativne i zabavne svrhe. Uvjeti bonusa mogu se promijeniti bez prethodne najave, a <span class="current-domain"></span> ne snosi odgovornost za moguće nesukladnosti. Ponude su dostupne samo osobama starijim od 18 godina koje su rezidenti prihvatljivih jurisdikcija. Prije registracije ili preuzimanja bilo kojeg bonusa pažljivo pročitajte uvjete svakog casina. Igrajte odgovorno!`,
+    footerText:
+      "Goldbet.io je u vlasništvu i pod upravljanjem Goldkey Technologies Limitada. Registracijski broj: 3-102-892568, registrirana adresa: Puntarenas - Pastor Diaz ave. Provincija Puntarenas, Jaco, 61101, Kostarika. Kontaktirajte nas hello@goldbet.io. Goldbet.io je licenciran i reguliran od strane Vlade Autonomnog otoka Anjouan, Unija Komora, i djeluje pod licencom br. ALSI-012401005-F11. Goldbet.io je ispunio sve regulatorne zahtjeve usklađenosti i zakonski je ovlašten za provođenje aktivnosti igara na sreću za sve igre na sreću i klađenje. Zapamtite da kockanje može izazvati ovisnost. Igrajte odgovorno. Goldbet.io prihvaća samo korisnike starije od 18 godina u skladu s vašom jurisdikcijom. Goldkey Technologies Limitada, registracijski broj 3-102-892568, društvo organizirano i upravljano u skladu sa zakonima Kostarike, je platni operater Goldkey Technologies Limitada, djelujući kao agent za plaćanje u ime Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD uredno osnovana i organizirana u Republici Cipar, pod registarskim brojem tvrtke HE456057 ",
     // ? SOCIALS
     choosePassword: "Odaberite lozinku",
     gameCurrency: "I valutu igre",
@@ -1718,7 +1738,7 @@ export const translations = {
     wrongNumber: "Nevažeći broj",
     signUpBtn: "Preuzmi bonus",
     promoApplied: "Promo kod primijenjen",
-    bonusName: `<span class="two-step-bonus-percent"></span> na depozit + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus bez depozita <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>u igri Gates of Olympus</span> <br/> bonus do <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% na depozit do 6000",
@@ -1791,7 +1811,8 @@ export const translations = {
     slideStep2Text: "Valitse haluamasi maksutapa ja tee talletus.",
     slideStep3Title: "Saa bonus",
     slideStep3Text: "Tervetuliaisbonuksesi odottaa sinua Bonuskeskuksessa.",
-    footerText: `<span class="current-domain"></span> on informatiivinen alusta bonuksista ja kampanjoista online-kasinoissa. Kaikki tiedot annetaan ainoastaan informatiivisiin ja viihdetarkoituksiin. Bonusehdot voivat muuttua ilman ennakkoilmoitusta, eikä <span class="current-domain"></span> ole vastuussa mahdollisista ristiriitaisuuksista. Tarjoukset ovat saatavilla vain yli 18-vuotiaille henkilöille, jotka ovat kelvollisten lainkäyttöalueiden asukkaita. Ennen rekisteröitymistä tai minkä tahansa bonuksen lunastamista lue huolellisesti kunkin kasinon ehdot. Pelaa vastuullisesti!`,
+    footerText:
+      "Goldbet.io on Goldkey Technologies Limitadan omistama ja ylläpitämä. Rekisterinumero: 3-102-892568, rekisteröity osoite: Puntarenas - Pastor Diaz ave. Puntarenasin maakunta, Jaco, 61101, Costa Rica. Ota yhteyttä hello@goldbet.io. Goldbet.io on lisensoitu ja säännelty Anjouanin autonomisen saaren hallituksen, Komorien unionin, toimesta ja toimii lisenssillä nro ALSI-012401005-F11. Goldbet.io on täyttänyt kaikki sääntelyvaatimukset ja on laillisesti valtuutettu harjoittamaan pelitoimintaa kaikissa rahapeleissä ja vedonlyönnissä. Muista, että uhkapelaaminen voi aiheuttaa riippuvuutta. Pelaa vastuullisesti. Goldbet.io hyväksyy vain vähintään 18-vuotiaita asiakkaita toimivaltaisen lainkäyttöalueesi mukaisesti. Goldkey Technologies Limitada, rekisterinumero 3-102-892568, Costa Rican lakien mukaisesti järjestetty ja toimiva yritys, on Goldkey Technologies Limitadan maksuliikenneoperaattori ja toimii maksuedustajana Goldkey Technologies Limitadan puolesta. GOLD SYNG INC.TECH LTD asianmukaisesti perustettu ja järjestetty Kyproksen tasavallassa, yritysrekisterinumero HE456057 ",
     // ? SOCIALS
     choosePassword: "Valitse salasana",
     gameCurrency: "Ja pelivaluutta",
@@ -1802,7 +1823,7 @@ export const translations = {
     wrongNumber: "Virheellinen numero",
     signUpBtn: "Lunasta bonus",
     promoApplied: "Promokoodi käytetty",
-    bonusName: `<span class="two-step-bonus-percent"></span> talletukselle + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus ilman talletusta <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>pelissä Gates of Olympus</span> <br/> bonus jopa <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% talletukselle jopa 6000",
@@ -1875,7 +1896,8 @@ export const translations = {
       "Vælg din foretrukne betalingsmetode og foretag en indbetaling.",
     slideStep3Title: "Få bonus",
     slideStep3Text: "Din velkomstbonus venter på dig i Bonuscenteret.",
-    footerText: `<span class="current-domain"></span> er en informationsplatform om bonusser og kampagner i online casinoer. Alle oplysninger gives udelukkende til informations- og underholdningsformål. Bonusvilkår kan ændres uden forudgående varsel, og <span class="current-domain"></span> er ikke ansvarlig for eventuelle uoverensstemmelser. Tilbud er kun tilgængelige for personer over 18 år, der er bosiddende i berettigede jurisdiktioner. Før du registrerer dig eller gør krav på en bonus, skal du læse vilkårene og betingelserne for hvert casino nøje. Spil ansvarligt!`,
+    footerText:
+      "Goldbet.io ejes og drives af Goldkey Technologies Limitada. Registreringsnummer: 3-102-892568, registreret adresse: Puntarenas - Pastor Diaz ave. Puntarenas-provinsen, Jaco, 61101, Costa Rica. Kontakt os hello@goldbet.io. Goldbet.io er licenseret og reguleret af regeringen på den autonome ø Anjouan, Unionen af Comorerne, og opererer under licens nr. ALSI-012401005-F11. Goldbet.io har opfyldt alle regulatoriske krav og er lovligt autoriseret til at udføre spilaktiviteter for alle former for hasardspil og væddemål. Husk, at spil kan være vanedannende. Spil ansvarligt. Goldbet.io accepterer kun kunder på 18 år eller derover i overensstemmelse med din jurisdiktion. Goldkey Technologies Limitada, registreringsnummer 3-102-892568, et selskab organiseret og drevet i henhold til lovgivningen i Costa Rica, er betalingsoperatør for Goldkey Technologies Limitada og fungerer som betalingsagent på vegne af Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD behørigt stiftet og organiseret i Republikken Cypern, under selskabsregistreringsnummer HE456057 ",
     // ? SOCIALS
     choosePassword: "Vælg en adgangskode",
     gameCurrency: "Og spilvaluta",
@@ -1886,7 +1908,7 @@ export const translations = {
     wrongNumber: "Ugyldigt nummer",
     signUpBtn: "Få bonus",
     promoApplied: "Promokode anvendt",
-    bonusName: `<span class="two-step-bonus-percent"></span> på indbetaling + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus uden indbetaling <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>i spillet Gates of Olympus</span> <br/> bonus op til <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% på indbetaling op til 6000",
@@ -1960,7 +1982,8 @@ export const translations = {
       "Изберете предпочитания от вас метод на плащане и направете депозит.",
     slideStep3Title: "Получете бонуса",
     slideStep3Text: "Вашият бонус за добре дошли ви очаква в Бонус центъра.",
-    footerText: `<span class="current-domain"></span> е информационна платформа за бонуси и промоции в онлайн казина. Цялата информация се предоставя само с информативна и развлекателна цел. Условията на бонусите могат да се променят без предварително уведомление, а <span class="current-domain"></span> не носи отговорност за евентуални несъответствия. Офертите са достъпни само за лица над 18 години, които са жители на допустими юрисдикции. Преди да се регистрирате или да заявите бонус, внимателно прочетете условията на всяко казино. Играйте отговорно!`,
+    footerText:
+      "Goldbet.io е собственост и се управлява от Goldkey Technologies Limitada. Регистрационен номер: 3-102-892568, регистриран адрес: Puntarenas - Pastor Diaz ave. Провинция Пунтаренас, Хако, 61101, Коста Рика. Свържете се с нас hello@goldbet.io. Goldbet.io е лицензиран и регулиран от правителството на Автономния остров Анжуан, Съюз на Коморските острови, и оперира под лиценз № ALSI-012401005-F11. Goldbet.io е изпълнил всички регулаторни изисквания за съответствие и е законно упълномощен да извършва дейности по хазартни игри за всички игри на шанс и залагания. Помнете, че хазартът може да доведе до пристрастяване. Играйте отговорно. Goldbet.io приема само клиенти на възраст 18 години или повече в съответствие с вашата юрисдикция. Goldkey Technologies Limitada, регистрационен номер 3-102-892568, компания, организирана и оперираща съгласно законите на Коста Рика, е платежният оператор на Goldkey Technologies Limitada, действащ като платежен агент от името на Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD надлежно учредена и организирана в Република Кипър, под регистрационен номер на компанията HE456057 ",
     // ? SOCIALS
     choosePassword: "Изберете парола",
     gameCurrency: "И валута за игра",
@@ -1971,7 +1994,7 @@ export const translations = {
     wrongNumber: "Невалиден номер",
     signUpBtn: "Вземи бонус",
     promoApplied: "Промо кодът е приложен",
-    bonusName: `<span class="two-step-bonus-percent"></span> върху депозит + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Бонус без депозит <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>в играта Gates of Olympus</span> <br/> бонус до <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% върху депозит до 6000",
@@ -2043,7 +2066,8 @@ export const translations = {
     slideStep2Text: "Kies je gewenste betaalmethode en doe een storting.",
     slideStep3Title: "Ontvang de bonus",
     slideStep3Text: "Je welkomstbonus staat voor je klaar in het Bonuscentrum.",
-    footerText: `<span class="current-domain"></span> is een informatief platform over bonussen en promoties in online casino’s. Alle informatie wordt uitsluitend verstrekt voor informatieve en amusementsdoeleinden. Bonusvoorwaarden kunnen zonder voorafgaande kennisgeving worden gewijzigd en <span class="current-domain"></span> is niet verantwoordelijk voor eventuele afwijkingen. Aanbiedingen zijn alleen beschikbaar voor personen van 18 jaar en ouder die woonachtig zijn in toegestane jurisdicties. Lees voordat je je registreert of een bonus claimt zorgvuldig de voorwaarden van elk casino. Speel verantwoord!`,
+    footerText:
+      "Goldbet.io is eigendom van en wordt geëxploiteerd door Goldkey Technologies Limitada. Registratienummer: 3-102-892568, geregistreerd adres: Puntarenas - Pastor Diaz ave. Provincie Puntarenas, Jaco, 61101, Costa Rica. Neem contact met ons op hello@goldbet.io. Goldbet.io is gelicentieerd en gereguleerd door de regering van het Autonome Eiland Anjouan, Unie van de Comoren, en opereert onder licentie nr. ALSI-012401005-F11. Goldbet.io heeft aan alle wettelijke nalevingsvereisten voldaan en is wettelijk bevoegd om gokactiviteiten uit te voeren voor alle kansspelen en weddenschappen. Vergeet niet dat gokken verslavend kan zijn. Speel verantwoord. Goldbet.io accepteert alleen klanten van 18 jaar en ouder in overeenstemming met uw jurisdictie. Goldkey Technologies Limitada, registratienummer 3-102-892568, een bedrijf dat is georganiseerd en wordt geëxploiteerd volgens de wetgeving van Costa Rica, is de betalingsoperator van Goldkey Technologies Limitada en treedt op als betalingsagent namens Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD naar behoren opgericht en georganiseerd in de Republiek Cyprus, onder ondernemingsregistratienummer HE456057 ",
     // ? SOCIALS
     choosePassword: "Kies een wachtwoord",
     gameCurrency: "En spelvaluta",
@@ -2054,7 +2078,7 @@ export const translations = {
     wrongNumber: "Ongeldig nummer",
     signUpBtn: "Claim bonus",
     promoApplied: "Promocode toegepast",
-    bonusName: `<span class="two-step-bonus-percent"></span> op storting + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonus zonder storting <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>in het spel Gates of Olympus</span> <br/> bonus tot <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% op storting tot 6000",
@@ -2127,7 +2151,8 @@ export const translations = {
     slideStep2Text: "Оберіть бажаний спосіб оплати та зробіть депозит.",
     slideStep3Title: "Отримайте бонус",
     slideStep3Text: "Ваш вітальний бонус чекає на вас у Бонусному центрі.",
-    footerText: `<span class="current-domain"></span> — це інформаційна платформа про бонуси та акції в онлайн-казино. Уся інформація надається виключно в інформаційних та розважальних цілях. Умови бонусів можуть змінюватися без попереднього повідомлення, і <span class="current-domain"></span> не несе відповідальності за можливі розбіжності. Пропозиції доступні лише для осіб віком від 18 років, які проживають у дозволених юрисдикціях. Перед реєстрацією або отриманням будь-якого бонусу уважно ознайомтеся з умовами кожного казино. Грайте відповідально!`,
+    footerText:
+      "Goldbet.io належить та управляється компанією Goldkey Technologies Limitada. Реєстраційний номер: 3-102-892568, зареєстрована адреса: Puntarenas - Pastor Diaz ave. Провінція Пунтаренас, Хако, 61101, Коста-Рика. Зв'яжіться з нами hello@goldbet.io. Goldbet.io ліцензований і регулюється урядом Автономного острова Анжуан, Союз Коморських Островів, і працює за ліцензією № ALSI-012401005-F11. Goldbet.io виконав усі вимоги регуляторної відповідності та має законне право здійснювати діяльність з азартних ігор для всіх ігор на випадок і ставок. Пам’ятайте, що азартні ігри можуть викликати залежність. Грайте відповідально. Goldbet.io приймає лише клієнтів віком від 18 років відповідно до вашої юрисдикції. Goldkey Technologies Limitada, реєстраційний номер 3-102-892568, компанія, організована та діюча відповідно до законодавства Коста-Ріки, є платіжним оператором Goldkey Technologies Limitada, діючи як платіжний агент від імені Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD належним чином заснована та організована в Республіці Кіпр, під реєстраційним номером компанії HE456057 ",
     // ? SOCIALS
     choosePassword: "Оберіть пароль",
     gameCurrency: "І валюту гри",
@@ -2138,7 +2163,7 @@ export const translations = {
     wrongNumber: "Невірний номер",
     signUpBtn: "Отримати бонус",
     promoApplied: "Промокод застосовано",
-    bonusName: `<span class="two-step-bonus-percent"></span> на депозит + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Бездепозитний бонус <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>у грі Gates of Olympus</span> <br/> бонус до <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% на депозит до 6000",
@@ -2212,7 +2237,8 @@ export const translations = {
     slideStep3Title: "Pata bonasi",
     slideStep3Text:
       "Bonasi yako ya ukaribisho inakusubiri katika Kituo cha Bonasi.",
-    footerText: `<span class="current-domain"></span> ni jukwaa la taarifa kuhusu bonasi na promosheni katika kasino za mtandaoni. Taarifa zote zinatolewa kwa madhumuni ya taarifa na burudani pekee. Masharti ya bonasi yanaweza kubadilika bila taarifa ya awali, na <span class="current-domain"></span> haiwajibiki kwa tofauti zozote. Ofa zinapatikana tu kwa watu wenye umri wa miaka 18 na zaidi wanaoishi katika maeneo yanayoruhusiwa. Kabla ya kujisajili au kudai bonasi yoyote, tafadhali soma kwa makini masharti ya kila kasino. Cheza kwa uwajibikaji!`,
+    footerText:
+      "Goldbet.io inamilikiwa na inaendeshwa na Goldkey Technologies Limitada. Nambari ya usajili: 3-102-892568, anwani iliyosajiliwa: Puntarenas - Pastor Diaz ave. Mkoa wa Puntarenas, Jaco, 61101, Costa Rica. Wasiliana nasi hello@goldbet.io. Goldbet.io imepewa leseni na kudhibitiwa na Serikali ya Kisiwa Huru cha Anjouan, Muungano wa Komoro, na inafanya kazi chini ya Leseni Na. ALSI-012401005-F11. Goldbet.io imetimiza mahitaji yote ya kufuata kanuni na imeidhinishwa kisheria kuendesha shughuli za michezo ya kubahatisha kwa aina zote za michezo ya bahati nasibu na kubashiri. Kumbuka kwamba kamari inaweza kusababisha uraibu. Cheza kwa uwajibikaji. Goldbet.io inakubali tu wateja wenye umri wa miaka 18 au zaidi kulingana na mamlaka yako. Goldkey Technologies Limitada, nambari ya usajili 3-102-892568, kampuni iliyoundwa na kuendeshwa kwa mujibu wa sheria za Costa Rica, ni mwendeshaji wa malipo wa Goldkey Technologies Limitada, ikifanya kazi kama wakala wa malipo kwa niaba ya Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD imeanzishwa ipasavyo na kupangwa katika Jamhuri ya Cyprus, chini ya nambari ya usajili wa kampuni HE456057 ",
     // ? SOCIALS
     choosePassword: "Chagua nenosiri",
     gameCurrency: "Na sarafu ya mchezo",
@@ -2223,7 +2249,7 @@ export const translations = {
     wrongNumber: "Nambari si sahihi",
     signUpBtn: "Pata bonasi",
     promoApplied: "Msimbo wa promo umetumika",
-    bonusName: `<span class="two-step-bonus-percent"></span> kwenye amana + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonasi bila amana <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>katika mchezo Gates of Olympus</span> <br/> bonasi hadi <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% kwenye amana hadi 6000",
@@ -2296,7 +2322,8 @@ export const translations = {
     slideStep2Text: "Hitamo uburyo bwo kwishyura wifuza hanyuma ukore idiporo.",
     slideStep3Title: "Fata bonasi",
     slideStep3Text: "Bonasi yawe yo kwakira igutegereje muri Bonus Center.",
-    footerText: `<span class="current-domain"></span> ni urubuga rutanga amakuru ku bijyanye na bonus na promotion mu ma kasino yo kuri internet. Amakuru yose atangwa agamije kumenyesha no kwidagadura gusa. Amategeko ya bonus ashobora guhinduka nta nteguza, kandi <span class="current-domain"></span> ntiryemera inshingano ku kutumvikana gushoboka. Ibi byifashishwa gusa n’abantu bafite imyaka 18 kuzamura batuye mu bice byemewe. Mbere yo kwiyandikisha cyangwa gufata bonus iyo ari yo yose, soma witonze amategeko ya buri kasino. Kina witonze!`,
+    footerText:
+      "Goldbet.io ifitwe kandi ikorwa na Goldkey Technologies Limitada. Nimero yo kwiyandikisha: 3-102-892568, aderesi yanditswe: Puntarenas - Pastor Diaz ave. Intara ya Puntarenas, Jaco, 61101, Costa Rica. Twandikire hello@goldbet.io. Goldbet.io ifite uruhushya kandi igenzurwa na Guverinoma y’Ikirwa cyigenga cya Anjouan, Ubumwe bwa Comoros, kandi ikora munsi y’uruhushya No. ALSI-012401005-F11. Goldbet.io yujuje ibisabwa byose bijyanye n’amabwiriza kandi yemerewe n’amategeko gukora ibikorwa by’imikino y’amahirwe n’itombora. Wibuke ko gukina urusimbi bishobora gutera ubusinzi. Kina witonze. Goldbet.io yakira gusa abakiriya bafite imyaka 18 cyangwa irenga hakurikijwe ububasha bwawe. Goldkey Technologies Limitada, nimero yo kwiyandikisha 3-102-892568, isosiyete yashyizweho kandi ikora hakurikijwe amategeko ya Costa Rica, ni umukozi w’imyishyurire wa Goldkey Technologies Limitada, ikora nk’umukozi wo kwishyura mu izina rya Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD yashyizweho neza kandi itunganijwe muri Repubulika ya Cyprus, munsi ya nimero yo kwiyandikisha y’ikigo HE456057 ",
     // ? SOCIALS
     choosePassword: "Hitamo ijambo ry’ibanga",
     gameCurrency: "N’ifaranga ry’umukino",
@@ -2307,7 +2334,7 @@ export const translations = {
     wrongNumber: "Nimero si yo",
     signUpBtn: "Fata bonasi",
     promoApplied: "Kode ya promo yashyizweho",
-    bonusName: `<span class="two-step-bonus-percent"></span> ku idiporo + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `Bonasi nta diporo <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>mu mukino Gates of Olympus</span> <br/> bonasi kugera kuri <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% ku idiporo kugera kuri 6000",
@@ -2380,7 +2407,8 @@ export const translations = {
     slideStep2Text: "اختر طريقة الدفع المفضلة لديك وقم بإجراء إيداع.",
     slideStep3Title: "احصل على المكافأة",
     slideStep3Text: "مكافأة الترحيب الخاصة بك جاهزة لك في مركز المكافآت.",
-    footerText: `<span class="current-domain"></span> هي منصة معلوماتية حول المكافآت والعروض الترويجية في الكازينوهات عبر الإنترنت. جميع المعلومات المقدمة هي لأغراض معلوماتية وترفيهية فقط. قد تتغير شروط المكافآت دون إشعار مسبق، ولا تتحمل <span class="current-domain"></span> أي مسؤولية عن أي اختلافات. العروض متاحة فقط للأفراد الذين تبلغ أعمارهم 18 عامًا أو أكثر والمقيمين في الولايات القضائية المؤهلة. قبل التسجيل أو المطالبة بأي مكافأة، يرجى قراءة الشروط والأحكام الخاصة بكل كازينو بعناية. العب بمسؤولية!`,
+    footerText:
+      "Goldbet.io مملوك ومدار من قبل Goldkey Technologies Limitada. رقم التسجيل: 3-102-892568، العنوان المسجل: Puntarenas - Pastor Diaz ave. مقاطعة بونتاريناس، جاكو، 61101، كوستاريكا. تواصل معنا hello@goldbet.io. Goldbet.io مرخص ومنظم من قبل حكومة جزيرة أنجوان المستقلة، اتحاد جزر القمر، ويعمل بموجب الترخيص رقم ALSI-012401005-F11. استوفى Goldbet.io جميع متطلبات الامتثال التنظيمي وهو مخول قانونيًا لإجراء عمليات الألعاب لجميع ألعاب الحظ والمراهنات. تذكر أن المقامرة قد تكون مسببة للإدمان. العب بمسؤولية. يقبل Goldbet.io فقط العملاء الذين تبلغ أعمارهم 18 عامًا أو أكثر وفقًا لاختصاصك القضائي. Goldkey Technologies Limitada، رقم التسجيل 3-102-892568، شركة منظمة وتعمل وفقًا لقوانين كوستاريكا، هي مشغل المدفوعات لشركة Goldkey Technologies Limitada، وتعمل كوكيل دفع نيابةً عن Goldkey Technologies Limitada. شركة GOLD SYNG INC.TECH LTD مؤسسة ومنظمة بشكل قانوني في جمهورية قبرص، تحت رقم تسجيل الشركة HE456057 ",
     // ? SOCIALS
     choosePassword: "اختر كلمة مرور",
     gameCurrency: "وعملة اللعبة",
@@ -2391,7 +2419,7 @@ export const translations = {
     wrongNumber: "رقم غير صالح",
     signUpBtn: "احصل على المكافأة",
     promoApplied: "تم تطبيق رمز الترويج",
-    bonusName: `<span class="two-step-bonus-percent"></span> على الإيداع + <span class="two-step-bonus-spins"></span>`,
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
     bonusNameCash: `مكافأة بدون إيداع <span class="bonus-value"></span><span class="bonus-currency"></span>`,
     depositBonus: `<span class='applied-nodep-bonus'>في لعبة Gates of Olympus</span> <br/> مكافأة تصل إلى <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
     depositBonus2: "400% على الإيداع حتى 6000",
