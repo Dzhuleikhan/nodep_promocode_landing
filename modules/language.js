@@ -10,6 +10,8 @@ const bonusType = getUrlParameter("bonusType") || "freebet";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
+const RTL_LANGUAGES = ["ar"];
+
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
 const html = document.querySelector("html");
@@ -121,10 +123,49 @@ function refreshHeroBonusValues() {
   }
 }
 
+function mirrorPositions(isRtl) {
+  const elements = document.querySelectorAll(".yellow-ball");
+  elements.forEach((el) => {
+    if (isRtl) {
+      if (el.dataset.mirrored) return;
+      el.dataset.mirrored = "true";
+
+      const computed = getComputedStyle(el);
+      const left = computed.left;
+      const right = computed.right;
+      const isLeftAuto = left === "auto";
+      const isRightAuto = right === "auto";
+
+      if (!isLeftAuto && isRightAuto) {
+        el.style.right = left;
+        el.style.left = "auto";
+      } else if (isLeftAuto && !isRightAuto) {
+        el.style.left = right;
+        el.style.right = "auto";
+      } else if (!isLeftAuto && !isRightAuto) {
+        el.style.left = right;
+        el.style.right = left;
+      }
+    } else if (el.dataset.mirrored) {
+      el.style.removeProperty("left");
+      el.style.removeProperty("right");
+      delete el.dataset.mirrored;
+    }
+  });
+}
+
+function applyDirection(lang) {
+  const dir = RTL_LANGUAGES.includes(lang) ? "rtl" : "ltr";
+  html.setAttribute("dir", dir);
+  document.body.classList.toggle("is-rtl", dir === "rtl");
+  mirrorPositions(dir === "rtl");
+}
+
 function changeLanguage(lang) {
   updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
+  applyDirection(lang);
   refreshHeroBonusValues();
 }
 

@@ -747,6 +747,7 @@ export const SupportedLanguages = [
   "nb",
   "sv",
   "sk",
+  "ar",
 ];
 
 export const nodepBonuses = [

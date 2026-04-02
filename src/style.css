@@ -134,6 +134,7 @@
     left: -41px;
     top: -41px;
   }
+
   .comet::after {
     width: 70px;
     height: 300px;
@@ -566,4 +567,75 @@
 
 .actual-spin-amount {
   font-style: normal;
+}
+
+/* | RTL Support */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+
+[dir="rtl"] .socials-form-group-email label {
+  left: auto;
+  right: 48px;
+}
+
+[dir="rtl"] .socials-form-group-email input:focus+label,
+[dir="rtl"] .socials-form-group-email input:not(:placeholder-shown)+label {
+  transform: translateY(-16px);
+}
+
+[dir="rtl"] .tooltip--email {
+  right: auto;
+  left: -34px;
+}
+
+[dir="rtl"] .socials-form-group-phone {
+  direction: ltr;
+}
+
+[dir="rtl"] .not-valid-icon--phone {
+  right: 20px !important;
+  left: auto !important;
+}
+
+[dir="rtl"] .tooltip--password {
+  right: auto;
+  left: 16px;
+}
+
+[dir="rtl"] .checkbox .checkbox-content::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .header-lang-list {
+  right: auto;
+  left: 0;
+  transform-origin: top right;
+}
+
+[dir="rtl"] .form-step-btn-prev svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .show-password-btn {
+  right: auto;
+  left: 20px;
+}
+
+[dir="rtl"] .not-valid-icon--email {
+  right: auto !important;
+  left: 20px;
+}
+
+[dir="rtl"] .not-valid-icon--password {
+  right: auto !important;
+  left: 57px;
+}
+
+[dir="rtl"] .applied-nodep-bonus::before {
+  left: auto;
+  right: 0;
 }
