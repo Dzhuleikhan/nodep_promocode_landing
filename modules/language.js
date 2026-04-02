@@ -2,7 +2,10 @@ import { translations } from "/public/translations";
 import { geoData, language } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { setSpinAmount } from "./promocodeCheck";
-import { settingHeroBonusValues, settingCashBonusValues } from "./modalCurrency";
+import {
+  settingHeroBonusValues,
+  settingCashBonusValues,
+} from "./modalCurrency";
 import { languageOptions, SupportedLanguages } from "../public/data";
 import { getUrlParameter } from "./params";
 
@@ -121,10 +124,28 @@ function refreshHeroBonusValues() {
   }
 }
 
+const RTL_LANGUAGES = ["ar"];
+const CHICKEN_SRC_LTR =
+  "https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken-1.webp";
+const CHICKEN_SRC_RTL =
+  "https://3344112-img.b-cdn.net/graphic/landings/сhickenroannew/chicken-rtl-1.webp";
+
+function applyDirection(lang) {
+  const isRtl = RTL_LANGUAGES.includes(lang);
+  html.setAttribute("dir", isRtl ? "rtl" : "ltr");
+  document.body.classList.toggle("rtl", isRtl);
+
+  const chickenImages = document.querySelectorAll(".chicken-img");
+  chickenImages.forEach((img) => {
+    img.src = isRtl ? CHICKEN_SRC_RTL : CHICKEN_SRC_LTR;
+  });
+}
+
 function changeLanguage(lang) {
   updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
+  applyDirection(lang);
   refreshHeroBonusValues();
 }
 

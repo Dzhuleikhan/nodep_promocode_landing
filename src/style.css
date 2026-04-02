@@ -543,3 +543,90 @@
 .actual-spin-amount {
   font-style: normal;
 }
+
+/* | RTL Support */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .header-lang-list {
+  transform-origin: top right;
+}
+
+[dir="rtl"] .socials-form .iti__tel-input {
+  padding-left: 0 !important;
+  padding-right: 100px !important;
+}
+
+[dir="rtl"] .checkbox .checkbox-content::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .tooltip::before {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .socials-form-type-btn::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .applied-nodep-bonus::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .socilas-form-wrapper::before,
+[dir="rtl"] .socilas-form-wrapper::after {
+  left: auto;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+[dir="rtl"] .chicken-sircle-mobile::before,
+[dir="rtl"] .chicken-sircle-mobile::after {
+  left: auto;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+[dir="rtl"] .socials-form-group-email label {
+  left: auto;
+  right: 3rem;
+}
+
+[dir="rtl"] .show-password-btn {
+  right: auto !important;
+  left: 1.25rem;
+}
+
+[dir="rtl"] .socials-form-group-password .not-valid-icon {
+  right: auto !important;
+  left: 57px;
+}
+
+[dir="rtl"] .socials-form-group-email .not-valid-icon {
+  right: auto !important;
+  left: 1.25rem;
+}
+
+[dir="rtl"] .socials-form-group-password .tooltip {
+  right: auto;
+  left: -0.5rem;
+}
+
+/* Hero chicken desktop */
+[dir="rtl"] #hero > .chicken-img {
+  right: auto;
+  left: 0;
+}
+
+/* Hero chicken mobile */
+[dir="rtl"] .chicken-sircle-mobile .chicken-img {
+  left: auto;
+  right: -45px;
+}
