@@ -135,8 +135,7 @@
   box-shadow: 0 8px 0 0 #420C00;
 }
 
-.step-wrapper-item.step-active {
-}
+.step-wrapper-item.step-active {}
 
 .step-wrapper-item.step-active .step-wrapper-item-number {
   color: #000 !important;
@@ -554,20 +553,28 @@
   transform-origin: top right;
 }
 
-[dir="rtl"] .socials-form .iti__tel-input {
-  padding-left: 0 !important;
-  padding-right: 100px !important;
-}
 
 [dir="rtl"] .checkbox .checkbox-content::before {
   left: auto;
   right: 0;
 }
 
-[dir="rtl"] .tooltip::before {
+/* Tooltip arrow RTL — per input */
+[dir="rtl"] .socials-form-group-email .tooltip::before {
   left: auto;
   right: 50%;
   transform: translateX(50%);
+}
+
+
+[dir="rtl"] .socials-form-group-password .tooltip::before {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .socials-form-group-phone .tooltip {
+  right: -10px;
 }
 
 [dir="rtl"] .socials-form-type-btn::before {
@@ -594,12 +601,30 @@
   transform: translate(50%, -50%);
 }
 
+/* ===== EMAIL RTL ===== */
 [dir="rtl"] .socials-form-group-email label {
   left: auto;
   right: 3rem;
 }
 
-[dir="rtl"] .show-password-btn {
+[dir="rtl"] .socials-form-group-email .not-valid-icon {
+  right: auto !important;
+  left: 1.25rem;
+}
+
+[dir="rtl"] .socials-form-group-email .tooltip {
+  right: auto;
+  left: -34px;
+}
+
+
+/* ===== PHONE RTL — force LTR ===== */
+[dir="rtl"] .socials-form-group-phone {
+  direction: ltr;
+}
+
+/* ===== PASSWORD RTL ===== */
+[dir="rtl"] .socials-form-group-password .show-password-btn {
   right: auto !important;
   left: 1.25rem;
 }
@@ -609,18 +634,13 @@
   left: 57px;
 }
 
-[dir="rtl"] .socials-form-group-email .not-valid-icon {
-  right: auto !important;
-  left: 1.25rem;
-}
-
 [dir="rtl"] .socials-form-group-password .tooltip {
   right: auto;
-  left: -0.5rem;
+  left: 16px;
 }
 
 /* Hero chicken desktop */
-[dir="rtl"] #hero > .chicken-img {
+[dir="rtl"] #hero>.chicken-img {
   right: auto;
   left: 0;
 }
