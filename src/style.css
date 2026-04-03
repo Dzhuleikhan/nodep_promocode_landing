@@ -401,6 +401,45 @@
   align-items: center;
 }
 
+/* RTL Support */
+
+[dir="rtl"] .step-slider .swiper-slide {
+  direction: rtl;
+}
+
+[dir="rtl"] .header-lang-list {
+  right: auto;
+  left: 0;
+  transform-origin: top right;
+}
+
+[dir="rtl"] .two-step-general-input:focus+.two-step-general-label,
+[dir="rtl"] .two-step-general-label.active {
+  right: 12px;
+  left: auto;
+}
+
+[dir="rtl"] .two-step-required-label::before {
+  right: auto;
+  left: -10px;
+}
+
+[dir="rtl"] .iti__dropdown-content {
+  right: 0;
+  direction: rtl;
+}
+
+[dir="rtl"] .two-step-form .iti__tel-input {
+  padding-right: 100px !important;
+  text-align: right;
+}
+
+[dir="rtl"] .two-step-bonus-checkbox-circle::before,
+[dir="rtl"] .gender-checkbox-circle::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .actual-spin-amount {
   font-style: normal;
 }

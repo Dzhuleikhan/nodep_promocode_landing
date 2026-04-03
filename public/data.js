@@ -684,14 +684,14 @@ export const countryLanguagesMap = {
   CA: ["en"],
   AU: ["en"],
   NZ: ["en"],
-  IE: ["en"],
+  IE: ["ga"],
   ZA: ["en"],
   IN: ["en"],
   UA: ["uk"],
   FR: ["fr"],
   BE: ["nl"],
   CH: ["fr"],
-  LU: ["fr"],
+  LU: ["lb"],
   DE: ["de"],
   AT: ["de"],
   LI: ["de"],
@@ -774,6 +774,7 @@ export const countryLanguagesMap = {
   OM: ["ar"],
   LY: ["ar"],
   TN: ["ar"],
+  MT: ["mt"],
 };
 
 export const languageOptions = {
@@ -805,6 +806,10 @@ export const languageOptions = {
   sw: { name: "SW", flag: "ke" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
+  ga: { name: "GA", flag: "ie" },
+  lb: { name: "LB", flag: "lu" },
+  mt: { name: "MT", flag: "mt" },
+  zh: { name: "ZH", flag: "cn" },
 };
 
 export const SupportedLanguages = [
@@ -839,6 +844,10 @@ export const SupportedLanguages = [
   "sw",
   "rw",
   "ar",
+  "ga",
+  "lb",
+  "mt",
+  "zh",
 ];
 
 export const nodepBonuses = [
@@ -990,4 +999,23 @@ export const countryZipCodeTranslates = {
   SI: "Poštna številka",
   LT: "Pašto kodas",
   HR: "Poštanski broj",
+  BG: "Пощенски код",
+  SA: "الرمز البريدي",
+  AE: "الرمز البريدي",
+  EG: "الرمز البريدي",
+  QA: "الرمز البريدي",
+  KW: "الرمز البريدي",
+  BH: "الرمز البريدي",
+  OM: "الرمز البريدي",
+  JO: "الرمز البريدي",
+  LB: "الرمز البريدي",
+  IQ: "الرمز البريدي",
+  MA: "الرمز البريدي",
+  DZ: "الرمز البريدي",
+  TN: "الرمز البريدي",
+  LY: "الرمز البريدي",
+  MT: "Kodiċi Postali",
+  LU: "Postleitzuel",
+  CN: "邮政编码",
+  IE: "Cód Poist",
 };
