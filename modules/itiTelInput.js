@@ -1,6 +1,7 @@
 import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 import { geoData } from "./geoLocation";
 import Inputmask from "inputmask";
+import arTranslations from "intl-tel-input/i18n/ar";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
@@ -12,7 +13,9 @@ const geoIpLookup = (success, failure) => {
   }
 };
 
-export const twoStepiti = intlTelInput(twoStepPhoneInput, {
+const RTL_LANGUAGES = ["ar"];
+
+const baseOptions = {
   initialCountry: "auto",
   separateDialCode: true,
   useFullscreenPopup: false,
@@ -21,7 +24,9 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
   customPlaceholder: function (selectedCountryPlaceholder) {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");
   },
-});
+};
+
+export let twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
 
 const applyMask = () => {
   const placeholder = twoStepPhoneInput.getAttribute("placeholder");
@@ -40,3 +45,15 @@ const applyMask = () => {
 twoStepPhoneInput.addEventListener("focus", applyMask);
 twoStepPhoneInput.addEventListener("click", applyMask);
 twoStepPhoneInput.addEventListener("countrychange", applyMask);
+
+export function updateTelInputLanguage(lang) {
+  const currentCountry = twoStepiti.getSelectedCountryData().iso2;
+  twoStepiti.destroy();
+
+  const options = { ...baseOptions, initialCountry: currentCountry || "auto" };
+  if (RTL_LANGUAGES.includes(lang)) {
+    options.i18n = arTranslations;
+  }
+
+  twoStepiti = intlTelInput(twoStepPhoneInput, options);
+}
