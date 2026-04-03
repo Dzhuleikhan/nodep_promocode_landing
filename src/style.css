@@ -650,3 +650,8 @@
   left: auto;
   right: -45px;
 }
+
+[dir="rtl"] span[data-translate="terms"] {
+  padding-right: 30px;
+  padding-left: 0;
+}
