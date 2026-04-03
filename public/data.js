@@ -684,14 +684,14 @@ export const countryLanguagesMap = {
   CA: ["en"],
   AU: ["en"],
   NZ: ["en"],
-  IE: ["en"],
+  IE: ["ga"],
   ZA: ["en"],
   IN: ["en"],
   UA: ["uk"],
   FR: ["fr"],
   BE: ["nl"],
   CH: ["fr"],
-  LU: ["fr"],
+  LU: ["lb"],
   DE: ["de"],
   AT: ["de"],
   LI: ["de"],
@@ -769,6 +769,7 @@ export const countryLanguagesMap = {
   OM: ["ar"],
   LY: ["ar"],
   TN: ["ar"],
+  MT: ["mt"],
 };
 
 export const languageOptions = {
@@ -800,6 +801,10 @@ export const languageOptions = {
   sw: { name: "SW", flag: "ke" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
+  mt: { name: "MT", flag: "mt" },
+  lb: { name: "LB", flag: "lu" },
+  zh: { name: "ZH", flag: "cn" },
+  ga: { name: "GA", flag: "ie" },
 };
 
 export const SupportedLanguages = [
@@ -834,6 +839,9 @@ export const SupportedLanguages = [
   "sw",
   "rw",
   "ar",
+  "mt",
+  "lb",
+  "ga",
 ];
 
 export const nodepBonuses = [
@@ -999,4 +1007,8 @@ export const countryZipCodeTranslates = {
   DZ: "الرمز البريدي",
   TN: "الرمز البريدي",
   LY: "الرمز البريدي",
+  MT: "Kodiċi Postali",
+  LU: "Postleitzuel",
+  CN: "邮政编码",
+  IE: "Cód Poist",
 };
