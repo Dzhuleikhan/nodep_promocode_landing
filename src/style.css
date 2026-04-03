@@ -174,6 +174,12 @@
   font-size: 12px;
 }
 
+[dir="rtl"] .two-step-general-input:focus+.two-step-general-label,
+[dir="rtl"] .two-step-general-label.active {
+  right: 12px;
+  left: auto;
+}
+
 .two-step-promocode-wrapper.is-valid .two-step-promocode-valid-icon {
   fill: #4ED937;
 }
@@ -412,4 +418,67 @@
 .two-step-state-list-item {
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
+}
+
+
+/* RTL Support */
+
+[dir="rtl"] .step-slider .swiper-slide {
+  direction: rtl;
+}
+
+[dir="rtl"] .header-lang-list {
+  right: auto;
+  left: 0;
+  transform-origin: top right;
+}
+
+[dir="rtl"] .two-step-required-label::before {
+  right: auto;
+  left: -10px;
+}
+
+[dir="rtl"] .iti__dropdown-content {
+  right: 0;
+  direction: rtl;
+}
+
+[dir="rtl"] .two-step-form .iti__tel-input {
+  padding-right: 100px !important;
+  text-align: right;
+}
+
+[dir="rtl"] .two-step-bonus-checkbox-circle::before,
+[dir="rtl"] .gender-checkbox-circle::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-main-img {
+  left: auto;
+  right: auto;
+  inset-inline-start: 280px;
+}
+
+[dir="rtl"] .hero-main-img {
+  inset-inline-start: 380px;
+}
+
+@media (max-width: 992px) {
+  .hero-main-img {
+    inset-inline-start: 50%;
+    margin-inline-start: -450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-main-img {
+    inset-inline-start: auto;
+    margin-inline-start: calc(50% - 300px);
+  }
+
+  [dir="rtl"] .hero-main-img {
+    inset-inline-start: auto;
+    margin-inline-start: calc(50% - 300px);
+  }
 }
