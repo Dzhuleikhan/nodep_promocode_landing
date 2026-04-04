@@ -1,7 +1,5 @@
 import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 import { geoData } from "./geoLocation";
-import Inputmask from "inputmask";
-import arTranslations from "intl-tel-input/i18n/ar";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
@@ -12,8 +10,6 @@ const geoIpLookup = (success, failure) => {
     success("PL");
   }
 };
-
-const RTL_LANGUAGES = ["ar"];
 
 const baseOptions = {
   initialCountry: "auto",
@@ -26,34 +22,74 @@ const baseOptions = {
   },
 };
 
-export let twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
-
-const applyMask = () => {
-  const placeholder = twoStepPhoneInput.getAttribute("placeholder");
-
-  if (!placeholder) return;
-
-  const maskPattern = placeholder.replace(/X/g, "9");
-
-  Inputmask({
-    mask: maskPattern,
-    placeholder: "X",
-    clearMaskOnLostFocus: true,
-  }).mask(twoStepPhoneInput);
+const fixItiLTR = () => {
+  const container = twoStepPhoneInput
+    .closest(".iti")
+    ?.querySelector(".iti__country-container");
+  if (container) {
+    container.style.left = "0px";
+    container.style.right = "auto";
+  }
 };
 
-twoStepPhoneInput.addEventListener("focus", applyMask);
-twoStepPhoneInput.addEventListener("click", applyMask);
-twoStepPhoneInput.addEventListener("countrychange", applyMask);
+export let twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
+fixItiLTR();
 
-export function updateTelInputLanguage(lang) {
+let currentFormat = null;
+
+const updatePhoneFormat = () => {
+  const placeholder = twoStepPhoneInput.getAttribute("placeholder");
+  if (!placeholder) return;
+  currentFormat = placeholder;
+};
+
+const formatPhoneValue = () => {
+  if (!currentFormat) return;
+
+  const maxDigits = (currentFormat.match(/X/g) || []).length;
+  const digits = twoStepPhoneInput.value.replace(/\D/g, "").slice(0, maxDigits);
+
+  if (digits.length === 0) {
+    twoStepPhoneInput.value = "";
+    return;
+  }
+
+  let formatted = "";
+  let digitIndex = 0;
+  let cursorPos = 0;
+
+  for (let i = 0; i < currentFormat.length; i++) {
+    if (currentFormat[i] === "X") {
+      if (digitIndex < digits.length) {
+        formatted += digits[digitIndex++];
+        cursorPos = formatted.length;
+      } else {
+        formatted += "X";
+      }
+    } else {
+      formatted += currentFormat[i];
+    }
+  }
+
+  twoStepPhoneInput.value = formatted;
+  twoStepPhoneInput.setSelectionRange(cursorPos, cursorPos);
+};
+
+twoStepPhoneInput.addEventListener("focus", updatePhoneFormat);
+twoStepPhoneInput.addEventListener("input", formatPhoneValue);
+twoStepPhoneInput.addEventListener("countrychange", () => {
+  currentFormat = null;
+  twoStepPhoneInput.value = "";
+  updatePhoneFormat();
+});
+
+export function updateTelInputLanguage() {
   const currentCountry = twoStepiti.getSelectedCountryData().iso2;
   twoStepiti.destroy();
 
   const options = { ...baseOptions, initialCountry: currentCountry || "auto" };
-  if (RTL_LANGUAGES.includes(lang)) {
-    options.i18n = arTranslations;
-  }
 
   twoStepiti = intlTelInput(twoStepPhoneInput, options);
+  fixItiLTR();
+  currentFormat = null;
 }
