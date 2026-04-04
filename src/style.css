@@ -180,6 +180,14 @@
   left: auto;
 }
 
+[dir="rtl"] .two-step-general-input:focus+.two-step-email-label,
+[dir="rtl"] .two-step-general-input:focus+.two-step-password-label,
+[dir="rtl"] .two-step-email-label.active,
+[dir="rtl"] .two-step-password-label.active {
+  right: 45px;
+  left: auto;
+}
+
 .two-step-promocode-wrapper.is-valid .two-step-promocode-valid-icon {
   fill: #4ED937;
 }
@@ -253,6 +261,12 @@
   overflow-y: auto;
 }
 
+.two-step-form .iti,
+.two-step-form .iti * {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 .two-step-form .iti {
   width: 100%;
   height: auto;
@@ -260,6 +274,7 @@
   font-weight: 700;
   line-height: 100% !important;
 }
+
 
 .two-step-form .iti__selected-country-primary:hover {
   background-color: transparent !important;
@@ -436,16 +451,6 @@
 [dir="rtl"] .two-step-required-label::before {
   right: auto;
   left: -10px;
-}
-
-[dir="rtl"] .iti__dropdown-content {
-  right: 0;
-  direction: rtl;
-}
-
-[dir="rtl"] .two-step-form .iti__tel-input {
-  padding-right: 100px !important;
-  text-align: right;
 }
 
 [dir="rtl"] .two-step-bonus-checkbox-circle::before,
