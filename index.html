@@ -498,7 +498,8 @@
                               />
                             </svg>
                             <input
-                              class="email-input w-full bg-transparent text-lg font-[raleway] font-bold tracking-tight text-white outline-none"
+                              dir="ltr"
+                              class="email-input w-full rtl:text-right bg-transparent text-lg font-[raleway] font-bold tracking-tight text-white outline-none"
                               type="email"
                               id="form-email"
                               placeholder=" "
@@ -534,6 +535,7 @@
                           </div>
                         </div>
                         <div
+                          dir="ltr"
                           class="socials-form-group socials-form-group-phone relative h-[64px] flex-col gap-[5px] rounded-xl bg-[#171929] px-3 py-[10px]"
                         >
                           <span
@@ -542,8 +544,9 @@
                             >Phone Number</span
                           >
                           <input
+                            dir="ltr"
                             class="phone-input socials-phone-input bg-transparent text-lg font-bold tracking-tight text-[#ffffff] outline-none"
-                            type="phone"
+                            type="tel"
                             name="phone"
                           />
                           <svg
@@ -606,7 +609,8 @@
                           >Password</span
                         >
                         <input
-                          class="password-input mt-1 bg-transparent text-lg font-bold tracking-tight text-[#ffffff] outline-none placeholder:text-[#ffffff]/50"
+                          dir="ltr"
+                          class="password-input mt-1 rtl:text-right bg-transparent text-lg font-bold tracking-tight text-[#ffffff] outline-none placeholder:text-[#ffffff]/50"
                           type="password"
                           placeholder=""
                           name="password"

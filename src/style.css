@@ -218,6 +218,14 @@
 
 }
 
+.socials-form .iti__dial-code {
+  color: #755eeb !important;
+}
+
+.socials-form .iti__selected-dial-code {
+  color: #ffffff !important;
+}
+
 /* | Language dropdown */
 
 .header-lang-list {
@@ -290,6 +298,12 @@
 
 /* | SOCIALS FORM STYLES */
 
+.socials-form .iti,
+.socials-form .iti * {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 .socials-form .iti {
   width: 100%;
   height: auto;
@@ -346,13 +360,6 @@
   overflow: hidden !important;
 }
 
-.socials-form .iti__dial-code {
-  color: #ffffff !important;
-}
-
-.socials-form .iti__selected-dial-code {
-  color: #ffffff !important;
-}
 
 .socials-form .iti .phone-input {
   font-size: 18px !important;
@@ -618,10 +625,6 @@
 }
 
 
-/* ===== PHONE RTL — force LTR ===== */
-[dir="rtl"] .socials-form-group-phone {
-  direction: ltr;
-}
 
 /* ===== PASSWORD RTL ===== */
 [dir="rtl"] .socials-form-group-password .show-password-btn {

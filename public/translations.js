@@ -2479,4 +2479,290 @@ export const translations = {
                       - مسؤول عن الضرائب؛ <br />
                       - مسؤول عن الضرائب المتعلقة بالعملات الرقمية.`,
   },
+  ga: {
+    pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
+    heroTitle: `Éiligh Do Bhónas <span><i class="actual-spin-amount">100</i> FS</span> Tar éis Fíorú an Chuntais`,
+    heroTitleCash: `Éiligh Do Bhónas <span class="bonus-value"></span> <span class="bonus-currency"></span> Tar éis Fíorú an Chuntais`,
+    heroSubtitle: `Cláraigh agus faigh <span class="two-step-bonus-percent"></span> suas go dtí <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> agus <span class="two-step-bonus-spins"></span> Casadh Saor in Aisce le do chéad taisce`,
+    heroBtn: "faigh bónas",
+    slideStep1Title: "Cláraigh",
+    slideStep1Text:
+      'Cliceáil "Faigh Bónas" agus cuir isteach do r-phost agus pasfhocal.',
+    slideStep2Title: "Déan Taisce",
+    slideStep2Text:
+      "Roghnaigh an modh íocaíochta is fearr leat agus déan taisce.",
+    slideStep3Title: "Faigh an Bónas",
+    slideStep3Text: "Tá do bhónas fáilte réidh duit sa Lárionad Bónas.",
+    footerText:
+      "Tá Goldbet.io faoi úinéireacht agus á oibriú ag Goldkey Technologies Limitada. Uimhir chlárúcháin: 3-102-892568, seoladh cláraithe: Puntarenas - Pastor Diaz ave. Cúige Puntarenas, Jaco, 61101, Costa Rica. Déan teagmháil linn ag hello@goldbet.io. Tá Goldbet.io ceadúnaithe agus rialáilte ag Rialtas Oileán Uathrialach Anjouan, Aontas na gComór agus oibríonn sé faoi Cheadúnas Uimh. ALSI-012401005-F11. Tá Goldbet.io tar éis gach ceanglas rialála a chomhlíonadh agus tá sé údaraithe go dleathach chun oibríochtaí cearrbhachais a dhéanamh do gach cluiche seans agus gealltóireachta. Cuimhnigh gur féidir le cearrbhachas a bheith andúileach. Imir go freagrach. Ní ghlacann Goldbet.io ach le custaiméirí atá 18 mbliana d’aois nó níos sine de réir do dhlínse. Tá Goldkey Technologies Limitada, uimhir chlárúcháin 3-102-892568, cuideachta eagraithe agus oibrithe faoi dhlí Costa Rica, ina hoibreoir íocaíochta ag gníomhú mar ghníomhaire íocaíochta thar ceann Goldkey Technologies Limitada. Tá GOLD SYNG INC.TECH LTD corpraithe go cuí agus eagraithe i bPoblacht na Cipire, faoi Uimhir Chlárúcháin na Cuideachta HE456057 ",
+    // ? SOCIALS
+    choosePassword: "Roghnaigh pasfhocal",
+    gameCurrency: "Agus airgeadra cluiche",
+    signUpWithGoogle: "Cláraigh le Google",
+    signUpWithFacebook: "Cláraigh le Facebook",
+    phone: "Fón",
+    wrongEmail: "R-phost neamhbhailí",
+    wrongNumber: "Uimhir neamhbhailí",
+    signUpBtn: "Faigh Bónas",
+    promoApplied: "Cód promóisin curtha i bhfeidhm",
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
+    bonusNameCash: `Bónas Gan Taisce <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>i Gates of Olympus</span> <br/> bónas suas go dtí <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% ar thaisce suas go dtí 6000",
+    phoneNumber: "Uimhir theileafóin",
+    password: "Pasfhocal",
+    minSymbols: "Ar a laghad 6 charachtar",
+    atLeast6Chars: "Ar a laghad 6 charachtar",
+    currency: "Airgeadra",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >Aontaím leis na téarmaí</a></span>`,
+    startPlaying: "Faigh Bónas",
+    passwordPlaceholder: "Pasfhocal",
+    // | Terms
+    termsTitle1: `Téarmaí agus Coinníollacha`,
+    termsParagraph1: `Baineann na téarmaí agus coinníollacha seo agus na doiciméid dá dtagraítear thíos
+                      (na "Téarmaí") le húsáid an láithreáin ghréasáin reatha (an
+                      "Láithreán") agus a sheirbhísí gaolmhara nó nasctha
+                      (le chéile, an "Seirbhís"). Ba chóir duit na Téarmaí seo a athbhreithniú go cúramach mar go bhfuil faisnéis thábhachtach iontu maidir le do chearta agus do chuid dualgas maidir le húsáid an Láithreáin agus cruthaíonn siad comhaontú dlíthiúil ceangailteach idir tú féin - ár gcustaiméir (an "Custaiméir"), agus sinne (an "Láithreán"). Trí úsáid a bhaint as an Láithreán seo agus/nó rochtain a fháil ar an tSeirbhís, cibé acu is aoi nó úsáideoir cláraithe le cuntas (“Cuntas”) tú, aontaíonn tú a bheith faoi cheangal ag na Téarmaí seo, mar aon le haon leasuithe, a d'fhéadfaí a fhoilsiú ó am go chéile. Mura nglacann tú leis na Téarmaí seo, ba chóir duit staonadh ó rochtain a fháil ar an tSeirbhís agus ón Láithreán a úsáid.`,
+    termsTitle2: `1. Téarmaí Ginearálta`,
+    termsParagraph2: `Coimeádaimid an ceart na Téarmaí a athbhreithniú agus a leasú (lena n-áirítear aon doiciméid dá dtagraítear agus atá nasctha thíos) ag am ar bith. Ba chóir duit cuairt a thabhairt ar an leathanach seo go tréimhsiúil chun na Téarmaí agus Coinníollacha a athbhreithniú. Beidh leasuithe ceangailteach agus éifeachtach láithreach ar fhoilsiú ar an Láithreán seo. Má chuireann tú i gcoinne aon athruithe den sórt sin, ní mór duit stop a chur leis an tSeirbhís a úsáid láithreach. Léireoidh do úsáid leanúnach den Láithreán tar éis an fhoilsithe sin go nglacann tú leis na Téarmaí mar atá leasaithe. Beidh aon ghealltanais nach bhfuil socraithe roimh theacht i bhfeidhm na dTéarmaí athraithe faoi réir na dTéarmaí roimhe seo. Má nuashonraítear Téarmaí agus Coinníollacha Goldbet, cuirfidh an t-ardán ar an eolas tú agus iarrfaidh sé ort do thoiliú a dhearbhú.`,
+    termsTitle3: `2. Do Dhualgais`,
+    termsParagraph3: `Admhaíonn tú go bhfuil, i gcónaí agus tú ag rochtain ar an Láithreán
+                      agus ag úsáid na Seirbhíse: <br />
+                      3.1. Tá tú os cionn 18 mbliana d’aois, nó den aois dhlíthiúil ina gceadaítear gníomhaíochtaí cearrbhachais faoin dlí nó faoin dlínse a bhaineann leat. Coimeádaimid an ceart doiciméid chruthúnais aoise a iarraidh ort ag am ar bith. <br />
+                      3.2. Tá cumas dlíthiúil agat agus is féidir leat comhaontú dlíthiúil ceangailteach a dhéanamh linn. Ní mór duit gan rochtain a fháil ar an Láithreán ná an tSeirbhís a úsáid mura bhfuil an cumas dlíthiúil sin agat. <br />
+                      3.3. Tá tú ar an eolas go bhféadfaí an ceart rochtain a fháil ar an Láithreán agus ar aon táirgí atá ar fáil ann a mheas mídhleathach i dtíortha áirithe. Ní féidir linn dlíthiúlacht na seirbhíse a fhíorú i ngach dlínse, mar sin tá sé de fhreagracht ort a chinneadh an bhfuil do rochtain agus úsáid ar ár Láithreán ag cloí leis na dlíthe is infheidhme i do thír agus deimhníonn tú dúinn nach bhfuil cearrbhachas mídhleathach sa chríoch ina bhfuil tú i do chónaí. Ar chúiseanna dlíthiúla nó tráchtála éagsúla, ní cheadaímid cuntais a oscailt ná a úsáid ag custaiméirí i ndlínseanna áirithe... <br />
+                      3.4. Nuair a dhéanann tú iarracht cuntas a oscailt nó an Láithreán a úsáid, is é freagracht an imreora a fhíorú an bhfuil cearrbhachas dleathach sa dlínse sin. <br />
+                      3.5. Is tú an t-úsáideoir údaraithe den mhodh íocaíochta a úsáideann tú agus tá gach ciste i do chuntas dleathach. <br />
+                      3.6. Ní mór duit gach íocaíocht a dhéanamh go macánta agus gan iarracht a dhéanamh íocaíocht a aisiompú. <br />
+                      3.7. Nuair a chuireann tú geallta, féadfaidh tú cuid nó gach do chuid airgid a chailleadh. <br />
+                      3.8. Ní mór duit gan aon fhaisnéis mhídhleathach a úsáid agus geallta á gcur agat. <br />
+                      3.9. Níl tú ag gníomhú thar ceann páirtí eile. <br />
+                      3.10. Ní mór duit gan iarracht a dhéanamh an córas a ionramháil. <br />
+                      3.11. Ní mór duit gníomhú go macánta i gcónaí. <br />
+                      3.12. Níl tú cláraithe mar chleamhnaithe. <br />
+                      3.13. Aontaíonn tú faisnéis fhíor a sholáthar. <br />
+                      3.14. Tuigeann tú luaineacht an mhargaidh cripte. <br />
+                      3.15. Tá tú meabhrach inniúil agus saor ó andúil cearrbhachais. <br />
+                      3.16. Ní úsáidfidh tú bogearraí tríú páirtí. <br />
+                      3.17. Deimhníonn tú go bhfuil gach faisnéis ceart. <br />
+                      3.17.1. Ní féidir faisnéis a athrú gan tacaíocht. <br />
+                      3.18. Ní úsáidfidh tú an tseirbhís i ndlínse toirmiscthe. <br />
+                      3.19. Aontaíonn tú freisin: <br />
+                      - Go nglacann tú páirt ar do shon féin amháin; <br />
+                      - Go bhfuil tú freagrach as cánacha; <br />
+                      - Go bhfuil tú freagrach as cánacha cripte freisin.`,
+  },
+  zh: {
+    pageTitle: "🎁 您的奖金已准备好 - Goldbet",
+    heroTitle: `完成账户验证即可领取您的奖金 <span><i class="actual-spin-amount">100</i> 次免费旋转</span>`,
+    heroTitleCash: `完成账户验证即可领取您的奖金 <span class="bonus-value"></span> <span class="bonus-currency"></span>`,
+    heroSubtitle: `注册即可获得 <span class="two-step-bonus-percent"></span>，最高可达 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span>，以及 <span class="two-step-bonus-spins"></span> 次免费旋转（首笔存款）`,
+    heroBtn: "领取奖金",
+    slideStep1Title: "注册",
+    slideStep1Text: "点击“领取奖金”，输入您的邮箱和密码。",
+    slideStep2Title: "存款",
+    slideStep2Text: "选择您偏好的支付方式并进行存款。",
+    slideStep3Title: "获取奖金",
+    slideStep3Text: "您的欢迎奖金已在奖金中心为您准备好。",
+    footerText:
+      "Goldbet.io 由 Goldkey Technologies Limitada 拥有并运营。注册号：3-102-892568，注册地址：Costa Rica，Puntarenas 省，Jaco，61101，Pastor Diaz 大道。联系我们：hello@goldbet.io。Goldbet.io 由科摩罗联盟安儒昂自治岛政府授权并监管，许可证编号：ALSI-012401005-F11。Goldbet.io 已通过所有监管合规审查，并被合法授权开展各类博彩及投注业务。请注意赌博可能会上瘾，请理性娱乐。Goldbet.io 仅接受年满 18 周岁的客户（依据您所在司法辖区）。Goldkey Technologies Limitada（注册号 3-102-892568）是一家根据哥斯达黎加法律设立并运营的公司，作为支付运营方代表 Goldkey Technologies Limitada 行事。GOLD SYNG INC.TECH LTD 在塞浦路斯共和国依法注册成立，公司注册号 HE456057。",
+    // ? SOCIALS
+    choosePassword: "设置密码",
+    gameCurrency: "以及游戏货币",
+    signUpWithGoogle: "使用 Google 注册",
+    signUpWithFacebook: "使用 Facebook 注册",
+    phone: "电话",
+    wrongEmail: "无效邮箱",
+    wrongNumber: "无效号码",
+    signUpBtn: "领取奖金",
+    promoApplied: "优惠码已应用",
+    bonusName: `<span class="actual-spin-amount">100</span> 次免费旋转`,
+    bonusNameCash: `无存款奖金 <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>在 Gates of Olympus</span> <br/> 奖金最高可达 <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25 次免费旋转`,
+    depositBonus2: "存款 400% 奖励，最高 6000",
+    phoneNumber: "电话号码",
+    password: "密码",
+    minSymbols: "至少 6 个字符",
+    atLeast6Chars: "至少 6 个字符",
+    currency: "货币",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >我同意条款</a></span>`,
+    startPlaying: "领取奖金",
+    passwordPlaceholder: "密码",
+    // | Terms
+    termsTitle1: `条款和条件`,
+    termsParagraph1: `本条款和条件以及下述引用的文件（以下简称“条款”）适用于当前网站（以下简称“网站”）及其相关或连接的服务（统称“服务”）。您应仔细阅读这些条款，因为其中包含有关您在使用网站时的权利和义务的重要信息，并构成您（作为我们的客户，“客户”）与我们（“网站”）之间具有法律约束力的协议。通过使用本网站和/或访问本服务，无论您是访客还是已注册账户（“账户”）的用户，即表示您同意受这些条款及其不时发布的任何修订的约束。如果您不接受这些条款，请勿访问服务或使用本网站。`,
+    termsTitle2: `1. 一般条款`,
+    termsParagraph2: `我们保留随时修订和修改本条款（包括下述引用和链接的任何文件）的权利。您应定期访问此页面以查看条款和条件。任何修订将在本网站发布后立即生效并具有约束力。如果您不同意这些更改，您必须立即停止使用本服务。在发布后继续使用本网站即表示您同意接受修订后的条款。任何在条款变更生效前未结算的投注将继续受原条款约束。如果 Goldbet 的条款和条件更新，平台将通知您并要求您确认同意。`,
+    termsTitle3: `2. 您的义务`,
+    termsParagraph3: `您确认，在访问网站和使用服务时始终： <br />
+                      3.1. 您已年满 18 周岁，或达到您所在司法辖区允许赌博活动的法定年龄。我们保留随时要求您提供年龄证明文件的权利。 <br />
+                      3.2. 您具有法律行为能力，能够与我们签订具有约束力的法律协议。如不具备该能力，不得使用网站或服务。 <br />
+                      3.3. 您知晓在某些国家访问和使用本网站可能被视为非法。我们无法验证每个司法辖区的合法性，因此您有责任确认您的行为符合当地法律，并保证您所在地区赌博不违法。出于法律或商业原因，我们不允许某些司法辖区的用户注册或使用账户…… <br />
+                      3.4. 开设账户或使用网站时，玩家有责任确认当地赌博是否合法。 <br />
+                      3.5. 您是所使用支付方式的合法持有人，账户资金均为合法来源。 <br />
+                      3.6. 您必须诚信付款，不得尝试撤销支付。 <br />
+                      3.7. 您在投注时可能会损失部分或全部资金。 <br />
+                      3.8. 不得使用非法信息进行投注。 <br />
+                      3.9. 您仅代表自己，不代表他人。 <br />
+                      3.10. 不得操纵系统或市场。 <br />
+                      3.11. 必须始终诚信行事。 <br />
+                      3.12. 您不是联盟会员。 <br />
+                      3.13. 您同意提供真实信息。 <br />
+                      3.14. 您理解加密市场波动。 <br />
+                      3.15. 您精神正常且无赌博成瘾。 <br />
+                      3.16. 不使用第三方软件。 <br />
+                      3.17. 您保证所有信息真实完整。 <br />
+                      3.17.1. 信息更改需联系客服。 <br />
+                      3.18. 不在禁止地区使用服务。 <br />
+                      3.19. 您还同意： <br />
+                      - 您仅代表自己参与； <br />
+                      - 您自行负责税务； <br />
+                      - 您对加密货币税务负责。`,
+  },
+  lb: {
+    pageTitle: "🎁 Äre Bonus ass prett - Goldbet",
+    heroTitle: `Fuerdert Äre Bonus <span><i class="actual-spin-amount">100</i> FS</span> nom Kontverifizéierung`,
+    heroTitleCash: `Fuerdert Äre Bonus <span class="bonus-value"></span> <span class="bonus-currency"></span> nom Kontverifizéierung`,
+    heroSubtitle: `Mellt Iech un a kritt <span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> an <span class="two-step-bonus-spins"></span> Free Spins mat Ärer éischter Depot`,
+    heroBtn: "Bonus kréien",
+    slideStep1Title: "Registréieren",
+    slideStep1Text:
+      'Klickt op "Bonus kréien" a gitt Är E-Mail an Äert Passwuert an.',
+    slideStep2Title: "Depot maachen",
+    slideStep2Text: "Wielt Är bevorzugte Bezuelmethod a maacht eng Depot.",
+    slideStep3Title: "Bonus kréien",
+    slideStep3Text: "Äre Wëllkommensbonus ass prett fir Iech am Bonus Center.",
+    footerText:
+      "Goldbet.io gëtt besëtzt a bedriwwe vun Goldkey Technologies Limitada. Registréierungsnummer: 3-102-892568, registréiert Adress: Puntarenas - Pastor Diaz ave. Puntarenas Provënz, Jaco, 61101, Costa Rica. Kontaktéiert eis op hello@goldbet.io. Goldbet.io ass lizenzéiert a reguléiert vun der Regierung vun der Autonomer Insel Anjouan, Unioun vun de Komoren a funktionéiert ënner Lizenz Nr. ALSI-012401005-F11. Goldbet.io huet all regulatoresch Ufuerderungen erfëllt an ass gesetzlech autoriséiert fir Glécksspill- a Wettoperatiounen duerchzeféieren. Denkt drun datt Glécksspill süchteg ka sinn. Spillt verantwortlech. Goldbet.io akzeptéiert nëmme Clienten déi 18 Joer oder méi al sinn no Ärer Juridictioun. Goldkey Technologies Limitada, Registréierungsnummer 3-102-892568, eng Firma organiséiert an bedriwwen no de Gesetzer vu Costa Rica, ass de Bezueloperateur deen als Bezuelagent am Numm vu Goldkey Technologies Limitada handelt. GOLD SYNG INC.TECH LTD ass korrekt agegliddert an organiséiert an der Republik Zypern, ënner Firmenregistréierungsnummer HE456057 ",
+    // ? SOCIALS
+    choosePassword: "Wielt e Passwuert",
+    gameCurrency: "An d'Spillwährung",
+    signUpWithGoogle: "Mat Google registréieren",
+    signUpWithFacebook: "Mat Facebook registréieren",
+    phone: "Telefon",
+    wrongEmail: "Ongülteg E-Mail",
+    wrongNumber: "Ongülteg Nummer",
+    signUpBtn: "Bonus kréien",
+    promoApplied: "Promocode applizéiert",
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
+    bonusNameCash: `Keng Depot Bonus <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>an Gates of Olympus</span> <br/> Bonus bis zu <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% op Depot bis zu 6000",
+    phoneNumber: "Telefonsnummer",
+    password: "Passwuert",
+    minSymbols: "Minimum 6 Zeechen",
+    atLeast6Chars: "Op d'mannst 6 Zeechen",
+    currency: "Währung",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >Ech stëmmen de Konditiounen zou</a></span>`,
+    startPlaying: "Bonus kréien",
+    passwordPlaceholder: "Passwuert",
+    // | Terms
+    termsTitle1: `Allgemeng Geschäftsbedingungen`,
+    termsParagraph1: `Dës Geschäftsbedingungen an d'Dokumenter déi hei drënner referenzéiert ginn
+                      (d'"Konditiounen") gëllen fir d'Benotzung vun dëser Websäit (d'
+                      "Websäit") an hir verbonnen oder zougeuerdent Servicer
+                      (zesummen, de "Service"). Dir sollt dës Konditiounen suergfälteg iwwerpréiwen well se wichteg Informatioun iwwer Är Rechter an Obligatiounen enthalen a bilden eng verbindlech legal Ofkommes tëscht Iech - eisem Client (de "Client") an eis (d'"Websäit"). Andeems Dir dës Websäit benotzt an/oder op de Service zougräift, egal ob Dir e Gaascht oder e registréierte Benotzer mat engem Kont ("Kont") sidd, stëmmt Dir zou un dës Konditiounen gebonnen ze sinn, zesumme mat all Ännerungen déi vun Zäit zu Zäit publizéiert kënne ginn. Wann Dir dës Konditiounen net akzeptéiert, sollt Dir op d'Benotzung vum Service an der Websäit verzichten.`,
+    termsTitle2: `1. Allgemeng Konditiounen`,
+    termsParagraph2: `Mir behalen eis d'Recht fir d'Konditiounen zu all Moment z'iwwerpréiwen an z'änneren (inklusiv all Dokumenter déi hei drënner verlinkt sinn). Dir sollt dës Säit periodesch besichen fir d'Konditiounen ze iwwerpréiwen. Ännerunge ginn direkt no hirer Verëffentlechung verbindlech. Wann Dir mat esou Ännerungen net averstan sidd, musst Dir d'Benotzung vum Service direkt ophalen. Är weider Benotzung vun der Websäit bedeit datt Dir déi aktualiséiert Konditiounen akzeptéiert. All Wetten déi virun den Ännerungen net ofgeschloss sinn, bleiwen ënner den alen Konditiounen. Wann d'Goldbet Konditiounen aktualiséiert ginn, wäert d'Plattform Iech informéieren an Iech froen Är Zoustëmmung ze confirméieren.`,
+    termsTitle3: `2. Är Obligatiounen`,
+    termsParagraph3: `Dir erkennt un datt Dir zu all Moment beim Zougrëff op d'Websäit
+                      an der Benotzung vum Service: <br />
+                      3.1. Iwwer 18 Joer sidd oder den legale Mindestalter fir Glécksspill an Ärer Juridictioun erreecht hutt. Mir kënnen zu all Moment en Altersbeweis verlaangen. <br />
+                      3.2. Juristesch kapabel sidd fir en bindend Ofkommes anzegoen. <br />
+                      3.3. Dir sidd bewosst datt d'Benotzung an e puer Länner illegal ka sinn an Dir sidd selwer responsabel fir d'Konformitéit mat de lokale Gesetzer... <br />
+                      3.4. Et ass Är Verantwortung d'Légalitéit vum Glécksspill an Ärer Regioun ze kontrolléieren. <br />
+                      3.5. Dir sidd den autoriséierte Besëtzer vun Ärer Bezuelmethod. <br />
+                      3.6. Dir musst Bezuelungen éierlech maachen. <br />
+                      3.7. Dir kënnt Suen verléieren. <br />
+                      3.8. Kee Gebrauch vun illegaler Informatioun. <br />
+                      3.9. Net am Numm vun aneren handelen. <br />
+                      3.10. Kee Manipulatioun. <br />
+                      3.11. Gudde Glawe behalen. <br />
+                      3.12. Net Affiliate. <br />
+                      3.13. Richteg Informatioun ginn. <br />
+                      3.14. Krypto Volatilitéit verstoen. <br />
+                      3.15. Keng Suchtproblemer. <br />
+                      3.16. Keng Drëtt-Partei Software. <br />
+                      3.17. Informatioun ass korrekt. <br />
+                      3.17.1. Ännerungen iwwer Support. <br />
+                      3.18. Net an verbuedene Regiounen benotzen. <br />
+                      3.19. Zousätzlech: <br />
+                      - Nëmmen fir Iech selwer spillen; <br />
+                      - Steieren selwer handhaben; <br />
+                      - Krypto-Steieren selwer droen.`,
+  },
+  mt: {
+    pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
+    heroTitle: `Itlob il-Bonus Tiegħek <span><i class="actual-spin-amount">100</i> FS</span> Wara Verifika tal-Kont`,
+    heroTitleCash: `Itlob il-Bonus Tiegħek <span class="bonus-value"></span> <span class="bonus-currency"></span> Wara Verifika tal-Kont`,
+    heroSubtitle: `Irreġistra u ikseb <span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> u <span class="two-step-bonus-spins"></span> Free Spins bid-depożitu tiegħek tal-ewwel`,
+    heroBtn: "ikseb bonus",
+    slideStep1Title: "Irreġistra",
+    slideStep1Text:
+      'Ikklikkja "Ikseb Bonus" u daħħal l-email u l-password tiegħek.',
+    slideStep2Title: "Agħmel Depożitu",
+    slideStep2Text:
+      "Agħżel il-metodu ta’ ħlas favorit tiegħek u agħmel depożitu.",
+    slideStep3Title: "Ikseb il-Bonus",
+    slideStep3Text:
+      "Il-bonus ta’ merħba tiegħek lest għalik fiċ-Ċentru tal-Bonus.",
+    footerText:
+      "Goldbet.io huwa proprjetà u operat minn Goldkey Technologies Limitada. Numru ta’ reġistrazzjoni: 3-102-892568, indirizz reġistrat: Puntarenas - Pastor Diaz ave. Provinċja ta’ Puntarenas, Jaco, 61101, Costa Rica. Ikkuntattjana fuq hello@goldbet.io. Goldbet.io huwa liċenzjat u rregolat mill-Gvern tal-Gżira Awtonoma ta’ Anjouan, Unjoni tal-Komoros u jopera taħt Liċenzja Nru ALSI-012401005-F11. Goldbet.io għadda mir-rekwiżiti kollha ta’ konformità regolatorja u huwa legalment awtorizzat biex iwettaq operazzjonijiet ta’ logħob u mħatri. Ftakar li l-logħob tal-azzard jista’ jkun dipendenti. Ilgħab b’mod responsabbli. Goldbet.io jaċċetta biss klijenti ta’ 18-il sena jew aktar skont il-ġurisdizzjoni tiegħek. Goldkey Technologies Limitada, numru ta’ reġistrazzjoni 3-102-892568, kumpanija organizzata u operata skont il-liġi ta’ Costa Rica, hija l-operatur tal-ħlas li jaġixxi bħala aġent tal-ħlas f’isem Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD inkorporata kif suppost fir-Repubblika ta’ Ċipru, taħt Numru ta’ Reġistrazzjoni tal-Kumpanija HE456057 ",
+    // ? SOCIALS
+    choosePassword: "Agħżel password",
+    gameCurrency: "U munita tal-logħba",
+    signUpWithGoogle: "Irreġistra b’Google",
+    signUpWithFacebook: "Irreġistra b’Facebook",
+    phone: "Telefon",
+    wrongEmail: "Email mhux valida",
+    wrongNumber: "Numru mhux validu",
+    signUpBtn: "Ikseb Bonus",
+    promoApplied: "Kodiċi promo applikat",
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
+    bonusNameCash: `Bonus mingħajr depożitu <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>fil Gates of Olympus</span> <br/> bonus sa <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% fuq depożitu sa 6000",
+    phoneNumber: "Numru tat-telefon",
+    password: "Password",
+    minSymbols: "Minimu 6 karattri",
+    atLeast6Chars: "Mill-inqas 6 karattri",
+    currency: "Munita",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >Naqbel mat-termini</a></span>`,
+    startPlaying: "Ikseb Bonus",
+    passwordPlaceholder: "Password",
+    // | Terms
+    termsTitle1: `Termini u Kundizzjonijiet`,
+    termsParagraph1: `Dawn it-termini u kundizzjonijiet u d-dokumenti msemmija hawn taħt
+                      ("it-Termini") japplikaw għall-użu tal-websajt preżenti (il-
+                      "Websajt") u s-servizzi relatati jew konnessi tagħha
+                      (kollettivament, is-"Servizz"). Għandek tirrevedi dawn it-Termini bir-reqqa peress li fihom informazzjoni importanti dwar id-drittijiet u l-obbligi tiegħek fir-rigward tal-użu tal-Websajt u jiffurmaw ftehim legali vinkolanti bejnek - il-klijent tagħna ("il-Klijent"), u magħna ("il-Websajt"). Bl-użu ta’ din il-Websajt u/jew billi taċċessa s-Servizz, kemm jekk inti mistieden jew utent irreġistrat b’kont ("Kont"), taqbel li tkun marbut b’dawn it-Termini flimkien ma’ kwalunkwe emendi li jistgħu jiġu ppubblikati minn żmien għal żmien. Jekk ma taċċettax dawn it-Termini, għandek tevita li taċċessa s-Servizz u tuża l-Websajt.`,
+    termsTitle2: `1. Termini Ġenerali`,
+    termsParagraph2: `Aħna nirriżervaw id-dritt li nirrevedu u nemendaw it-Termini (inklużi kwalunkwe dokumenti msemmija u marbuta hawn taħt) fi kwalunkwe ħin. Għandek iżżur din il-paġna perjodikament biex tirrevedi t-Termini u Kundizzjonijiet. L-emendi jkunu vinkolanti u effettivi immedjatament wara l-pubblikazzjoni fuq din il-Websajt. Jekk toġġezzjona għal dawn il-bidliet, trid tieqaf immedjatament tuża s-Servizz. L-użu kontinwu tiegħek tal-Websajt wara tali pubblikazzjoni jindika l-qbil tiegħek li tkun marbut bit-Termini kif emendati. Kwalunkwe mħatri mhux solvuti qabel ma jidħlu fis-seħħ it-Termini mibdula jkunu suġġetti għat-Termini preċedenti. Jekk it-Termini u Kundizzjonijiet ta’ Goldbet jiġu aġġornati, il-pjattaforma tinnotifikak u titlob il-kunsens tiegħek.`,
+    termsTitle3: `2. L-Obbligi Tiegħek`,
+    termsParagraph3: `Inti tagħraf li f’kull ħin meta taċċessa l-Websajt
+                      u tuża s-Servizz: <br />
+                      3.1. Inti għandek aktar minn 18-il sena, jew l-età legali għall-logħob tal-azzard fil-ġurisdizzjoni tiegħek. Aħna nirriżervaw id-dritt li nitolbu prova tal-età fi kwalunkwe ħin. <br />
+                      3.2. Għandek kapaċità legali biex tidħol f’ftehim vinkolanti. <br />
+                      3.3. Inti konxju li l-użu jista’ jkun illegali f’xi pajjiżi u inti responsabbli biex tivverifika l-liġijiet lokali... <br />
+                      3.4. Hija r-responsabbiltà tiegħek li tivverifika l-legalità. <br />
+                      3.5. Inti l-utent awtorizzat tal-metodu ta’ ħlas. <br />
+                      3.6. Trid tagħmel il-ħlasijiet b’mod onest. <br />
+                      3.7. Tista’ titlef il-flus. <br />
+                      3.8. Ma tużax informazzjoni illegali. <br />
+                      3.9. Ma taġixxix għal ħaddieħor. <br />
+                      3.10. L-ebda manipulazzjoni. <br />
+                      3.11. Aġixxi b’bona fide. <br />
+                      3.12. Mhux affiljat. <br />
+                      3.13. Tipprovdi informazzjoni vera. <br />
+                      3.14. Tifhem il-volatilità tal-kripto. <br />
+                      3.15. Mingħajr dipendenza fuq il-logħob. <br />
+                      3.16. L-ebda softwer ta’ partijiet terzi. <br />
+                      3.17. L-informazzjoni hija korretta. <br />
+                      3.17.1. Bidliet permezz tas-support. <br />
+                      3.18. Tużax f’ġurisdizzjonijiet ipprojbiti. <br />
+                      3.19. Inti wkoll taqbel: <br />
+                      - Tipparteċipa għalik innifsek biss; <br />
+                      - Inti responsabbli għat-taxxi; <br />
+                      - Inti responsabbli għat-taxxi tal-kripto.`,
+  },
 };

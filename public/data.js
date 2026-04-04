@@ -888,6 +888,10 @@ export const languageOptions = {
   sw: { name: "SW", flag: "ke" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
+  ga: { name: "GA", flag: "ie" },
+  lb: { name: "LB", flag: "lu" },
+  mt: { name: "MT", flag: "mt" },
+  zh: { name: "ZH", flag: "cn" },
 };
 
 export const bonusSumAndWager = [
