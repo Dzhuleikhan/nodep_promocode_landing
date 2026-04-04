@@ -4,6 +4,7 @@ import { getSupportedLanguage } from "./geoLocation";
 import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
 import { setSpinAmount } from "./promocodeCheck";
 import { languageOptions } from "../public/data";
+import { updateTelInputLanguage } from "./itiTelInput";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -81,6 +82,8 @@ function changeLanguage(lang) {
     html.setAttribute("dir", "ltr");
     document.body.classList.remove("is-rtl");
   }
+
+  updateTelInputLanguage();
 }
 
 function setActiveLanguageBtn(currentLang) {
