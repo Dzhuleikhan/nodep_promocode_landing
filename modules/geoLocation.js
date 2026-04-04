@@ -35,3 +35,4 @@ localStorage.setItem(
   "preferredLanguage",
   getSupportedLanguage(geoData.countryCode)
 );
+export const language = localStorage.getItem("preferredLanguage");

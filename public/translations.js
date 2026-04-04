@@ -477,7 +477,7 @@ export const translations = {
   - Samodzielnie płacisz należne podatki od wygranych;<br />
   - Przestrzegasz przepisów podatkowych związanych z zyskami z kryptowalut.`,
   },
-  cz: {
+  cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> až do <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> volných otočení při prvním vkladu`,
@@ -536,7 +536,7 @@ export const translations = {
   - Sami platíte příslušné daně z výher;<br />
   - Dodržujete daňové předpisy týkající se zisků z kryptoměn.`,
   },
-  si: {
+  sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> do <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> brezplačnih vrtljajev ob prvem pologu`,
@@ -596,7 +596,7 @@ export const translations = {
   - Sami plačujete ustrezne davke od dobitkov;<br />
   - Spoštujete davčne predpise v zvezi z dobički iz kriptovalut.`,
   },
-  gr: {
+  el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> έως <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> δωρεάν περιστροφές με την πρώτη κατάθεση`,
@@ -656,7 +656,7 @@ export const translations = {
   - Πληρώνετε μόνοι σας τους σχετικούς φόρους από τα κέρδη;<br />
   - Συμμορφώνεστε με τους φορολογικούς κανονισμούς που σχετίζονται με τα κέρδη από κρυπτονομίσματα.`,
   },
-  no: {
+  nb: {
     pageTitle: "🎁 Din bonus er klar – Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> opptil <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratisspinn på ditt første innskudd`,
@@ -715,7 +715,7 @@ export const translations = {
   - Du betaler selv de relevante skattene fra gevinster;<br />
   - Du overholder skattereglene knyttet til gevinster fra kryptovaluta.`,
   },
-  se: {
+  sv: {
     pageTitle: "🎁 Din bonus är klar – Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> upp till <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratissnurr vid din första insättning`,
@@ -1129,99 +1129,7 @@ export const translations = {
 - Sei responsabile per la dichiarazione e il pagamento di eventuali tasse sulle vincite; <br />
 - Sei responsabile delle eventuali tasse sulle criptovalute ricevute tramite i Servizi.`,
   },
-  kz: {
-    pageTitle: "🎁 Сіздің бонусыңыз дайын - Goldbet",
-    heroTitle: `Крипто Highroller Бонусы <br/> <b><span>200%</span></b> дейін <b><span>100.000 USD</span></b>`,
-    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> тегін айналымдар алғашқы депозитке`,
-    heroBtn: "Бонусты алу",
-    paymentsTitle: `Қабылданады <span>41</span> Криптовалюта`,
-    advantege1Title: "VPN Достық",
-    advantege1Text: "VPN қолдана отырып, біздің платформаға оңай кіре аласыз.",
-    advantege2Title: "KYC Қажет емес",
-    advantege2Text:
-      "Крипто депозиттері мен алулар үшін KYC тексеруі қажет емес.",
-    advantege3Title: "25% Реферал Бонусы",
-    advantege3Text: "Достарыңызды шақырыңыз және казино кірісінің 25% табыңыз.",
-    footerText: `<span class="current-domain"></span> Goldkey Technologies Limitada компаниясына тиесілі және басқарылады. Тіркеу нөмірі: 3-102-892568, тіркелген мекенжайы: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Коста-Рика. Байланыс: hello@goldbet.io. Goldbet.io Анжуан Автономиялық аралының (Комор одағы) Үкіметі тарапынан лицензияланған және реттелген және ALSI-012401005-F11 нөмірлі лицензия негізінде жұмыс істейді. Goldbet.io барлық нормативтік талаптардан өткен және кез келген құмар ойындарын заңды түрде өткізуге рұқсат етілген. Есіңізде болсын, құмар ойындарға әуестік тәуелділік тудыруы мүмкін. Жауапкершілікпен ойнаңыз. Goldbet.io тек 18 жастан асқан клиенттерді қабылдайды және бұл сіздің юрисдикцияңызға сәйкес орындалуы тиіс. Goldkey Technologies Limitada, тіркеу нөмірі 3-102-892568, Кипр заңдары бойынша ұйымдастырылған және жұмыс істейтін компания, төлем операторы болып табылады және Goldkey Technologies Limitada атынан төлем агенті ретінде әрекет етеді.`,
-    // | Form
-    signUpTitle: "Тіркелу",
-    emailPlaceholder: "E-mail",
-    wrongEmail: "Қате E-mail",
-    wrongPassword: "Кемінде 6 таңба.",
-    passwordPlaceholder: "Құпиясөз",
-    yourCurrency: "Сіздің валютаңыз",
-    startPlaying: "Ойнауды бастау",
-    terms: `Мен <span class="text-white underline underline-offset-4">Ережелер мен Шарттармен</span> келісемін`,
-    signUpWithGoogle: "Google арқылы тіркелу",
-    signUpWithFacebook: "Facebook арқылы тіркелу",
-    signUpWithTelegram: "Telegram арқылы тіркелу",
-    // | Terms
-    termsTitle1: `Ережелер мен Шарттар`,
-    termsParagraph1: `Осы ережелер мен шарттар және төменде көрсетілген құжаттар
-                      ("Ережелер") ағымдағы вебсайтты ("Вебсайт") және онымен байланысты
-                      қызметтерді (бірігіп, "Қызмет") пайдалануға қолданылады.
-                      Сіз бұл Ережелерді мұқият қарап шығуыңыз керек, себебі оларда
-                      Вебсайтты пайдалану құқығыңыз бен міндеттеріңіз туралы маңызды ақпарат бар
-                      және олар біздің клиентіміз ( "Клиент") және біз ("Вебсайт")
-                      арасындағы міндетті заңды келісім болып табылады. Осы Вебсайтты
-                      пайдалану және/немесе Қызметке кіру арқылы, сіз қонақ болсын,
-                      немесе тіркелген пайдаланушы болсын ("Аккаунт"), осы Ережелерге
-                      және уақыт өте келе жариялануы мүмкін кез келген өзгертулерге
-                      келісесіз. Егер сіз осы Ережелермен келіспесеңіз,
-                      Қызметке кірмеуіңіз және Вебсайтты пайдаланбауыңыз керек.`,
-    termsTitle2: `1. Жалпы шарттар`,
-    termsParagraph2: `Біз Ережелерді (оның ішінде төменде көрсетілген және байланысты құжаттарды)
-                      кез келген уақытта қайта қарау және өзгерту құқығын сақтаймыз.
-                      Сіз бұл бетке мерзімді түрде кіріп, Ережелермен танысуыңыз керек.
-                      Өзгерістер осы Вебсайтта жарияланған сәттен бастап күшіне енеді.
-                      Егер сіз бұл өзгертулермен келіспесеңіз, дереу Қызметті пайдалануды
-                      тоқтатуыңыз қажет. Өзгерістер жарияланғаннан кейін Вебсайтты әрі қарай
-                      пайдалануыңыз Ережелермен келісетініңізді білдіреді. Өзгерістер күшіне
-                      енгенге дейін жасалған ставкалар бұрынғы Ережелерге бағынады. Егер
-                      Goldbet Ережелері жаңартылса, платформа сізге хабарлайды және
-                      келісіміңізді сұрайды.`,
-    termsTitle3: `2. Сіздің міндеттеріңіз`,
-    termsParagraph3: `Сіз Вебсайтқа кіргенде және Қызметті пайдаланғанда келесілерді мойындайсыз: <br />
-                      3.1. Сіз 18 жастан асқансыз немесе сізге қатысты заң бойынша құмар
-                      ойындарға рұқсат етілген жастасыз. Біз кез келген уақытта жасқа қатысты
-                      құжаттарды талап ету құқығын сақтаймыз. <br />
-                      3.2. Сіз заңды қабілеттісіз және бізбен заңды келісім жасай аласыз.
-                      Егер сіз заңды қабілетке ие болмасаңыз, Вебсайтқа кірмеуіңіз керек. <br />
-                      3.3. Кейбір елдерде Вебсайт пен Қызметке қол жеткізу заңсыз болуы мүмкін.
-                      Біз әр юрисдикциядағы заңдылықты тексере алмаймыз, сондықтан біздің
-                      Вебсайтты пайдалану заңды ма, жоқ па, өзіңіз анықтап, құмар ойындарының
-                      сіздің тұратын еліңізде заңсыз еместігіне кепілдік бересіз. Кейбір
-                      елдерде біз аккаунттарды тіркеуге тыйым саламыз (мысалы, АҚШ, Ұлыбритания,
-                      Германия, Ресей және басқалар). <br />
-                      3.4. Аккаунт ашуға әрекет жасағанда немесе Вебсайтты пайдаланғанда,
-                      құмар ойындардың заңды екенін тексеру ойыншының жауапкершілігі болып табылады. <br />
-                      3.5. Төлем әдісі сізге тиесілі және барлық қаражат заңды. <br />
-                      3.6. Бізге барлық төлемдерді адал ниетпен жасауға тиіссіз және қайтаруға
-                      әрекет жасамауыңыз керек. <br />
-                      3.7. Ставка жасағанда, ақшаңызды жоғалтуыңыз мүмкін екенін мойындайсыз. <br />
-                      3.8. Ставка жасағанда заңсыз алынған ақпаратты пайдаланбауыңыз керек. <br />
-                      3.9. Сіз тек жеке тұлға ретінде әрекет етесіз. <br />
-                      3.10. Сіз Қызметті теріс пайдаланбауыңыз керек. <br />
-                      3.11. Қызметті пайдаланғанда әрқашан адал әрекет етуіңіз керек. <br />
-                      3.12. Сіз немесе сізбен байланысты тұлғалар біздің Серіктестік бағдарламада тіркелмегенсіз. <br />
-                      3.13. Сіз тек шынайы және дұрыс ақпарат беруге келісесіз. <br />
-                      3.14. Криптовалюта бағасының құбылмалылығын түсінесіз және қабылдайсыз. <br />
-                      3.15. Сіз ақыл-есі толыққансыз және құмар ойын тәуелділігі жоқ. <br />
-                      3.16. Үшінші тараптың бағдарламаларын пайдалануға немесе платформаның
-                      қателіктерін теріс пайдалануға болмайды. <br />
-                      3.17. Сіз берген барлық ақпарат шынайы және толық болуын қамтамасыз етесіз. <br />
-                      3.17.1. Тіркелу кезінде енгізілген ақпаратты өз бетіңізше өзгерте алмайсыз.
-                      Ақпаратты өзгерту үшін қолдау қызметіне хабарласуыңыз қажет. <br />
-                      3.18. Қызметімізді онлайн құмар ойындарына тыйым салынған елдерде
-                      пайдаланбауға кепілдік бересіз. <br />
-                      3.19. Сонымен қатар, сіз кепілдік бересіз: <br />
-                      - Сіз Қызметке тек өз атыңыздан қатысасыз; <br />
-                      - Сіз ұтып алған қаражатқа қатысты барлық салықтарды өзіңіз есептеп,
-                      төлеуге жауаптысыз; <br />
-                      - Сіз Қызмет арқылы алған криптовалюта бойынша қолданылатын салықтарды
-                      өзіңіз төлеуге міндеттісіз.`,
-  },
-  ee: {
+  et: {
     pageTitle: "🎁 Sinu boonus on valmis – Goldbet",
     heroTitle: `Krüpto Highrolleri boonus <br/> <b><span>200%</span></b> kuni <b><span>100 000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> tasuta spinni sinu esimesel sissemaksel`,
@@ -1928,7 +1836,7 @@ export const translations = {
                       mogu primjenjivati na kriptovalute dodijeljene
                       korištenjem Usluge.`,
   },
-  dk: {
+  da: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> op til <b><span>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis spins ved din første indbetaling`,
@@ -2082,5 +1990,1049 @@ export const translations = {
                   3.8. Давате верни данни при регистрация и използване на услугата. <br />
                   3.9. Имате психическа компетентност и не страдате от хазартна зависимост. <br />
                   3.10. Отговаряте за данъци и правни задължения спрямо печалби и криптовалута.`,
+  },
+  nl: {
+    pageTitle: "🎁 Uw bonus is klaar - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> tot <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis spins bij uw eerste storting`,
+    heroBtn: "bonus ontvangen",
+    paymentsTitle: `Geaccepteerd <span>41</span> Cryptocurrencies`,
+    advantege1Title: "VPN-vriendelijk",
+    advantege1Text:
+      "U kunt een VPN gebruiken om eenvoudig toegang te krijgen tot ons platform.",
+    advantege2Title: "Geen KYC vereist",
+    advantege2Text:
+      "Geen KYC-verificatie nodig voor crypto stortingen en opnames.",
+    advantege3Title: "25% Referral Bonus",
+    advantege3Text:
+      "Nodig spelers uit en verdien 25% van de inkomsten van het casino.",
+    footerText:
+      "Goldbet.io is eigendom van en wordt beheerd door Goldkey Technologies Limitada. Registratienummer: 3-102-892568, geregistreerd adres: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Neem contact met ons op via hello@goldbet.io. Goldbet.io is gelicentieerd en gereguleerd door de regering van het Autonome Eiland Anjouan, Unie van de Comoren en opereert onder Licentienummer ALSI-012401005-F11. Goldbet.io heeft alle wettelijke nalevingscontroles doorstaan en is wettelijk gemachtigd om kansspelen en weddenschappen te organiseren. Vergeet niet dat gokken verslavend kan zijn. Speel verantwoord. Goldbet.io accepteert alleen klanten van 18 jaar of ouder in overeenstemming met uw rechtsgebied. Goldkey Technologies Limitada, registratienummer 3-102-892568, een bedrijf opgericht en beheerd onder de wetten van Costa Rica, is de betalingsoperator van Goldkey Technologies Limitada en treedt op als betalingsagent namens Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD, naar behoren opgericht en georganiseerd in de Republiek Cyprus, onder Bedrijfsregistratienummer HE456057 ",
+    // | Form
+    signUpTitle: "Registreren",
+    emailPlaceholder: "E-mail",
+    wrongEmail: "Onjuist e-mailadres",
+    wrongPassword: "Minimaal 6 tekens.",
+    passwordPlaceholder: "Wachtwoord",
+    yourCurrency: "Uw valuta",
+    startPlaying: "Begin met spelen",
+    terms: `Ik ga akkoord met de <span class="text-white underline underline-offset-4">Algemene Voorwaarden</span>`,
+    signUpWithGoogle: "Registreren met Google",
+    signUpWithFacebook: "Registreren met Facebook",
+    signUpWithTelegram: "Registreren met Telegram",
+    // | Terms
+    termsTitle1: `Algemene Voorwaarden`,
+    termsParagraph1: `Deze algemene voorwaarden en de hieronder vermelde documenten
+                      (de "Voorwaarden") zijn van toepassing op het gebruik van de huidige website (de
+                      "Website") en de bijbehorende of verbonden diensten
+                      (gezamenlijk de "Dienst"). U dient deze Voorwaarden zorgvuldig te bekijken
+                      aangezien zij belangrijke informatie bevatten over uw rechten en verplichtingen met betrekking tot het gebruik van de Website
+                      en een bindende juridische overeenkomst vormen tussen u - onze klant
+                      (de "Klant"), en ons (de "Website"). Door gebruik te maken van deze
+                      Website en/of toegang te krijgen tot de Dienst, stemt u, ongeacht of u een
+                      gast bent of een geregistreerde gebruiker met een account (“Account”), ermee in
+                      gebonden te zijn aan deze Voorwaarden, samen met eventuele wijzigingen,
+                      die van tijd tot tijd kunnen worden gepubliceerd. Als u deze Voorwaarden niet accepteert,
+                      dient u af te zien van toegang tot de Dienst en het gebruik van de Website.`,
+    termsTitle2: `1. Algemene Voorwaarden`,
+    termsParagraph2: `Wij behouden ons het recht voor om de Voorwaarden (inclusief
+                      alle hieronder vermelde en gekoppelde documenten) op elk moment te herzien en te wijzigen.
+                      U dient deze pagina regelmatig te bezoeken om de Algemene Voorwaarden te bekijken.
+                      Wijzigingen zijn bindend en worden onmiddellijk van kracht
+                      na publicatie op deze Website. Indien u bezwaar maakt tegen
+                      dergelijke wijzigingen, dient u onmiddellijk te stoppen met het gebruik van de Dienst.
+                      Uw voortgezet gebruik van de Website na dergelijke publicatie
+                      betekent dat u akkoord gaat met de gewijzigde Voorwaarden.
+                      Eventuele weddenschappen die niet zijn afgehandeld voordat de gewijzigde Voorwaarden van kracht worden,
+                      blijven onderworpen aan de eerder geldende Voorwaarden. Indien
+                      de Algemene Voorwaarden van Goldbet worden bijgewerkt, zal het
+                      platform u hiervan op de hoogte stellen en u vragen om uw toestemming te bevestigen.`,
+    termsTitle3: `2. Uw Verplichtingen`,
+    termsParagraph3: `U erkent dat u te allen tijde bij het openen van de Website
+                      en het gebruik van de Dienst: <br />
+                      3.1. U bent ouder dan 18 jaar, of de wettelijke leeftijd waarop gokken of gamingactiviteiten
+                      zijn toegestaan volgens de wet of het rechtsgebied dat op u van toepassing is.
+                      Wij behouden ons het recht voor om op elk moment leeftijdsbewijs van u te vragen. <br />
+                      3.2. U beschikt over de wettelijke bevoegdheid en kunt een bindende juridische overeenkomst met ons aangaan.
+                      U mag de Website niet openen of de Dienst gebruiken als u niet over deze bevoegdheid beschikt. <br />
+                      3.3. U bent zich ervan bewust dat het recht om toegang te krijgen tot en gebruik te maken van de
+                      Website en de aangeboden producten in bepaalde landen als illegaal kan worden beschouwd.
+                      Wij zijn niet in staat om de wettigheid van de dienst in elk rechtsgebied te verifiëren,
+                      daarom bent u zelf verantwoordelijk om te bepalen of uw toegang en gebruik van onze website
+                      in overeenstemming is met de toepasselijke wetgeving in uw land en u garandeert ons dat
+                      gokken niet illegaal is in het gebied waar u woont. Om verschillende juridische of commerciële redenen
+                      staan wij geen accounts toe voor klanten die woonachtig zijn in bepaalde rechtsgebieden,
+                      waaronder maar niet beperkt tot: Afghanistan,
+                      Algerije, Antigua en Barbuda, Australië, Wit-Rusland, Bahrein,
+                      België, Bhutan, Brunei, Centraal-Afrikaanse Republiek, Tsjaad, Ivoorkust, Kroatië, Cuba,
+                      Tsjechië, Democratische Volksrepubliek Korea (Noord-Korea),
+                      Democratische Republiek Congo, Denemarken, Estland, Frankrijk, Griekenland, Guinee-Bissau,
+                      Hongarije, Iran, Irak, IJsland, Israël, Italië, Jordanië, Koeweit,
+                      Letland, Liberia, Litouwen, Malta, Myanmar, Nederland,
+                      Nederlandse Antillen (Curaçao, Sint Maarten, Bonaire, Sint
+                      Eustatius en Saba, Aruba), Noorwegen, Oman, Palestina,
+                      Pakistan, Qatar, Rusland, Saba, Sint Maarten, Saoedi-Arabië,
+                      Servië, Slovenië, Somalië, Spanje, Zwitserland, Syrische Arabische Republiek,
+                      Soedan, Trinidad en Tobago, Turkije, Oekraïne, Verenigd Koninkrijk,
+                      Duitsland, Unie van de Comoren, Verenigde Arabische Emiraten,
+                      Verenigde Staten (en hun afhankelijkheden, militaire bases en gebieden
+                      zoals U.S. Minor Outlying Islands, U.S. Virgin Islands),
+                      Vanuatu, Jemen, Zimbabwe, of andere beperkte rechtsgebieden ("Beperkt Rechtsgebied")
+                      die door ons van tijd tot tijd worden gemeld. Door gebruik te maken van de Website
+                      bevestigt u dat u geen inwoner bent van een Beperkt Rechtsgebied. <br />
+                      3.4. Bij het proberen een account te openen of gebruik te maken van de Website,
+                      is het de verantwoordelijkheid van de speler om te controleren of gokken legaal is in dat specifieke rechtsgebied. <br />
+                      3.5. U bent de bevoegde gebruiker van de betaalmethode die u gebruikt en alle fondsen
+                      op uw account en gebruikt binnen de Diensten zijn legaal. <br />
+                      3.6. U moet alle betalingen aan ons te goeder trouw verrichten en geen poging doen om een betaling
+                      terug te draaien of enige actie te ondernemen die ertoe leidt dat een dergelijke betaling door een derde partij wordt teruggedraaid.
+                      <br />
+                      3.7. Bij het plaatsen van weddenschappen kunt u een deel of al uw gestorte geld verliezen
+                      in overeenstemming met deze Voorwaarden en u bent volledig verantwoordelijk voor dat verlies. <br />
+                      3.8. Bij het plaatsen van weddenschappen mag u geen informatie gebruiken
+                      die is verkregen in strijd met de wetgeving die van kracht is in het land waar u zich bevond
+                      toen de weddenschap werd geplaatst. <br />
+                      3.9. U handelt niet namens een andere partij of voor commerciële doeleinden,
+                      maar uitsluitend namens uzelf als particulier in persoonlijke hoedanigheid. <br />
+                      3.10. U mag niet proberen om een markt of enig element binnen de Dienst
+                      te manipuleren te kwader trouw noch op een manier die de integriteit van de Dienst of ons schaadt. <br />
+                      3.11. U dient zich in het algemeen te allen tijde te goeder trouw te gedragen met betrekking tot het gebruik van de Dienst
+                      en voor alle weddenschappen die via de Dienst worden geplaatst. <br />
+                      3.12. U, of indien van toepassing uw werknemers, werkgevers,
+                      agenten of familieleden, zijn niet geregistreerd als Affiliate in ons Affiliateprogramma. <br />
+                      3.13. Tijdens het gebruik van Goldbet stemt u ermee in om ons alleen ware, echte en objectieve gegevens te verstrekken
+                      standaard en wanneer wij hierom verzoeken. <br />
+                      3.14. U begrijpt de volatiliteit van de cryptomarkt en accepteert de mogelijkheid
+                      dat de prijs van uw valuta kan veranderen terwijl u wacht op uw opname of terwijl uw opname wordt verwerkt
+                      door onze Riskafdeling. <br />
+                      3.15. U bent een mentaal competente persoon en u lijdt niet aan gokverslaving.
+                      In het geval dat een persoon met een dergelijk probleem de Site betreedt, ligt de verantwoordelijkheid uitsluitend bij die persoon. <br />
+                      3.16. U gaat ermee akkoord geen gebruik te maken van software van derden
+                      in enig onderdeel van Goldbet en geen misbruik te maken van bugs in spellen of functionaliteiten op het platform. <br />
+                      3.17. U garandeert dat alle informatie die u ons verstrekt vanaf het moment van registratie
+                      en gedurende de looptijd van deze overeenkomst waar, volledig en correct is
+                      en dat u ons onmiddellijk op de hoogte stelt van eventuele wijzigingen in deze informatie. <br />
+                      3.17.1. U bevestigt dat u begrijpt dat de informatie
+                      die is ingevoerd tijdens de registratie en het gebruik van de Dienst niet naar eigen inzicht kan worden gewijzigd.
+                      Om informatie te wijzigen dient u contact op te nemen met het ondersteuningsteam.
+                      Voor het wijzigen van informatie kan Goldbet naar eigen inzicht documenten opvragen voor KYC-verificatie. <br />
+                      3.18. U garandeert dat u onze diensten niet zult gebruiken terwijl u zich bevindt in een rechtsgebied
+                      dat het plaatsen en/of accepteren van online weddenschappen en/of het spelen van casinospellen en/of live spellen verbiedt. <br />
+                      3.19. U garandeert tevens dat: <br />
+                      - U deelneemt aan de Diensten namens uzelf en niet namens een andere persoon; <br />
+                      - U als enige verantwoordelijk bent voor het rapporteren en afdragen van eventuele belastingen
+                      die op u van toepassing zijn volgens de relevante wetgeving voor eventuele winsten die u van ons ontvangt; <br />
+                      - U als enige verantwoordelijk bent voor eventuele belastingen die verschuldigd kunnen zijn
+                      over cryptocurrency die aan u wordt toegekend via het gebruik van de Dienst.`,
+  },
+  uk: {
+    pageTitle: "🎁 Ваш бонус готовий - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> безкоштовних обертань при першому депозиті`,
+    heroBtn: "отримати бонус",
+    paymentsTitle: `Підтримується <span>41</span> криптовалюта`,
+    advantege1Title: "Підтримка VPN",
+    advantege1Text:
+      "Ви можете використовувати VPN для зручного доступу до нашої платформи.",
+    advantege2Title: "Без KYC",
+    advantege2Text:
+      "Верифікація KYC не потрібна для криптовалютних депозитів і виведень.",
+    advantege3Title: "25% реферальний бонус",
+    advantege3Text: "Запрошуйте гравців і отримуйте 25% від доходу казино.",
+    footerText:
+      "Goldbet.io належить та управляється компанією Goldkey Technologies Limitada. Реєстраційний номер: 3-102-892568, зареєстрована адреса: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Зв’яжіться з нами: hello@goldbet.io. Goldbet.io ліцензовано та регулюється урядом Автономного острова Анжуан, Союз Коморських островів, і працює за ліцензією № ALSI-012401005-F11. Goldbet.io пройшов усі нормативні перевірки та має законне право здійснювати діяльність у сфері азартних ігор та ставок. Пам’ятайте, що азартні ігри можуть викликати залежність. Грайте відповідально. Goldbet.io приймає лише клієнтів віком від 18 років відповідно до вашої юрисдикції. Goldkey Technologies Limitada, реєстраційний номер 3-102-892568, компанія, створена та діюча відповідно до законодавства Коста-Ріки, є платіжним оператором Goldkey Technologies Limitada та діє як платіжний агент від імені Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD належним чином зареєстрована та організована в Республіці Кіпр під реєстраційним номером HE456057 ",
+    // | Form
+    signUpTitle: "Реєстрація",
+    emailPlaceholder: "Електронна пошта",
+    wrongEmail: "Неправильна електронна пошта",
+    wrongPassword: "Щонайменше 6 символів.",
+    passwordPlaceholder: "Пароль",
+    yourCurrency: "Ваша валюта",
+    startPlaying: "Почати гру",
+    terms: `Я погоджуюся з <span class="text-white underline underline-offset-4">Умовами та положеннями</span>`,
+    signUpWithGoogle: "Зареєструватися через Google",
+    signUpWithFacebook: "Зареєструватися через Facebook",
+    signUpWithTelegram: "Зареєструватися через Telegram",
+    // | Terms
+    termsTitle1: `Умови та положення`,
+    termsParagraph1: `Ці умови та положення, а також документи, на які є посилання нижче
+                      (далі "Умови"), застосовуються до використання цього вебсайту (далі
+                      "Вебсайт") та пов’язаних або додаткових сервісів
+                      (разом — "Сервіс"). Вам слід уважно ознайомитися з цими Умовами,
+                      оскільки вони містять важливу інформацію щодо ваших прав та обов’язків
+                      при використанні Вебсайту і формують обов’язкову юридичну угоду між вами — нашим клієнтом
+                      (далі "Клієнт"), і нами (далі "Вебсайт"). Використовуючи цей
+                      Вебсайт та/або отримуючи доступ до Сервісу, незалежно від того, чи є ви
+                      гостем або зареєстрованим користувачем з обліковим записом (“Обліковий запис”),
+                      ви погоджуєтеся дотримуватися цих Умов разом із будь-якими змінами,
+                      які можуть публікуватися час від часу. Якщо ви не приймаєте ці Умови,
+                      вам слід утриматися від доступу до Сервісу та використання Вебсайту.`,
+    termsTitle2: `1. Загальні умови`,
+    termsParagraph2: `Ми залишаємо за собою право змінювати та оновлювати Умови (включаючи
+                      будь-які документи, на які є посилання нижче) у будь-який час.
+                      Вам слід періодично переглядати цю сторінку, щоб ознайомлюватися з Умовами та положеннями.
+                      Зміни є обов’язковими та набирають чинності негайно
+                      після їх публікації на цьому Вебсайті. Якщо ви заперечуєте проти
+                      будь-яких таких змін, ви повинні негайно припинити використання Сервісу.
+                      Ваше подальше використання Вебсайту після публікації змін
+                      означає вашу згоду з оновленими Умовами. Будь-які ставки, не завершені до моменту набрання чинності змін,
+                      підпадають під дію попередніх Умов. Якщо
+                      Умови та положення Goldbet будуть оновлені, платформа повідомить вас
+                      і попросить підтвердити вашу згоду.`,
+    termsTitle3: `2. Ваші обов’язки`,
+    termsParagraph3: `Ви визнаєте, що у будь-який час при доступі до Вебсайту
+                      та використанні Сервісу: <br />
+                      3.1. Вам більше 18 років або ви досягли законного віку, з якого дозволені азартні ігри
+                      відповідно до законодавства або юрисдикції, що застосовується до вас.
+                      Ми залишаємо за собою право у будь-який час вимагати підтвердження віку. <br />
+                      3.2. Ви маєте правоздатність укладати юридично зобов’язуючі угоди з нами.
+                      Ви не повинні отримувати доступ до Вебсайту або використовувати Сервіс, якщо не маєте такої правоздатності. <br />
+                      3.3. Ви усвідомлюєте, що право доступу та використання Вебсайту
+                      та будь-яких запропонованих на ньому продуктів може вважатися незаконним у деяких країнах.
+                      Ми не можемо перевірити законність Сервісу в кожній юрисдикції,
+                      тому ви самостійно відповідаєте за визначення того, чи відповідає ваш доступ і використання нашого вебсайту
+                      чинному законодавству у вашій країні, і гарантуєте нам, що
+                      азартні ігри не є незаконними у вашій юрисдикції. З різних юридичних або комерційних причин
+                      ми не дозволяємо відкриття або використання акаунтів клієнтами, що проживають у певних юрисдикціях,
+                      включаючи, але не обмежуючись: Афганістан,
+                      Алжир, Антигуа і Барбуда, Австралія, Білорусь, Бахрейн,
+                      Бельгія, Бутан, Бруней, Центральноафриканська Республіка, Чад, Кот-д’Івуар, Хорватія, Куба,
+                      Чехія, Корейська Народно-Демократична Республіка (Північна Корея),
+                      Демократична Республіка Конго, Данія, Естонія, Франція, Греція, Гвінея-Бісау,
+                      Угорщина, Іран, Ірак, Ісландія, Ізраїль, Італія, Йорданія, Кувейт,
+                      Латвія, Ліберія, Литва, Мальта, М’янма, Нідерланди,
+                      Нідерландські Антильські острови (Кюрасао, Сінт-Мартен, Бонайре, Сінт
+                      Єстатіус і Саба, Аруба), Норвегія, Оман, Палестина,
+                      Пакистан, Катар, Росія, Саба, Сен-Мартен, Саудівська Аравія,
+                      Сербія, Словенія, Сомалі, Іспанія, Швейцарія, Сирійська Арабська Республіка,
+                      Судан, Тринідад і Тобаго, Туреччина, Україна, Сполучене Королівство,
+                      Німеччина, Союз Коморських островів, Об’єднані Арабські Емірати,
+                      Сполучені Штати (та їх залежні території, військові бази і території,
+                      такі як U.S. Minor Outlying Islands, U.S. Virgin Islands),
+                      Вануату, Ємен, Зімбабве або інші обмежені юрисдикції ("Обмежена юрисдикція"),
+                      які ми можемо час від часу визначати. Використовуючи Вебсайт,
+                      ви підтверджуєте, що не є резидентом Обмеженої юрисдикції. <br />
+                      3.4. При спробі відкрити акаунт або використовувати Вебсайт,
+                      відповідальність за перевірку законності азартних ігор у відповідній юрисдикції покладається на гравця. <br />
+                      3.5. Ви є уповноваженим користувачем платіжного методу, який використовуєте, і всі кошти,
+                      що знаходяться на вашому акаунті та використовуються у Сервісі, є законними. <br />
+                      3.6. Ви повинні здійснювати всі платежі нам добросовісно і не намагатися скасувати платіж
+                      або вживати будь-яких дій, які можуть призвести до його скасування третьою стороною.
+                      <br />
+                      3.7. При розміщенні ставок ви можете втратити частину або всі кошти,
+                      внесені на Сервіс, відповідно до цих Умов, і ви повністю несете відповідальність за такі втрати. <br />
+                      3.8. При розміщенні ставок ви не повинні використовувати інформацію,
+                      отриману з порушенням законодавства країни, в якій ви перебували на момент розміщення ставки. <br />
+                      3.9. Ви не дієте від імені іншої особи або з комерційною метою,
+                      а виключно від свого імені як приватна особа. <br />
+                      3.10. Ви не повинні намагатися маніпулювати будь-яким ринком або елементом Сервісу
+                      недобросовісно або способом, що негативно впливає на цілісність Сервісу або нас. <br />
+                      3.11. Ви повинні діяти добросовісно щодо використання Сервісу
+                      у будь-який час і для всіх ставок, зроблених через Сервіс. <br />
+                      3.12. Ви або, якщо застосовно, ваші працівники, роботодавці,
+                      агенти або члени сім’ї не зареєстровані як афілійовані особи у нашій партнерській програмі. <br />
+                      3.13. Під час використання Goldbet ви погоджуєтеся надавати нам лише правдиві,
+                      реальні та об’єктивні дані за замовчуванням і на наш запит. <br />
+                      3.14. Ви розумієте волатильність крипторинку і приймаєте можливість
+                      зміни вартості ваших валют під час очікування виведення або обробки вашого запиту
+                      нашим відділом ризиків. <br />
+                      3.15. Ви є психічно здоровою особою і не страждаєте від ігрової залежності.
+                      У разі, якщо така особа користується Сайтом, відповідальність лежить виключно на ній. <br />
+                      3.16. Ви погоджуєтеся не використовувати будь-яке стороннє програмне забезпечення
+                      у будь-яких розділах Goldbet, а також не зловживати помилками чи недоліками платформи. <br />
+                      3.17. Ви гарантуєте, що вся інформація, яку ви надаєте нам з моменту реєстрації
+                      і протягом дії цієї угоди, є правдивою, повною та точною,
+                      і ви негайно повідомите нас про будь-які зміни такої інформації. <br />
+                      3.17.1. Ви підтверджуєте, що розумієте, що інформація,
+                      введена під час реєстрації та використання Сервісу, не може бути змінена за вашим бажанням.
+                      Для зміни інформації необхідно звернутися до служби підтримки.
+                      Для внесення змін Goldbet може вимагати документи для проходження KYC за власним рішенням. <br />
+                      3.18. Ви гарантуєте, що не будете використовувати наші послуги, перебуваючи в юрисдикції,
+                      де заборонено онлайн-ставки та/або ігри в казино та/або live-ігри. <br />
+                      3.19. Ви також гарантуєте, що: <br />
+                      - Ви берете участь у Сервісі від свого імені, а не від імені іншої особи; <br />
+                      - Ви самостійно відповідаєте за декларування та сплату будь-яких податків,
+                      що застосовуються до вас відповідно до законодавства щодо будь-яких виграшів, отриманих від нас; <br />
+                      - Ви самостійно відповідаєте за будь-які податки, що можуть підлягати сплаті
+                      щодо криптовалюти, отриманої вами через використання Сервісу.`,
+  },
+  zh: {
+    pageTitle: "🎁 您的 бонус 已准备好 - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> 最高可达 <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> 首次存款赠送免费旋转`,
+    heroBtn: "领取 бонус",
+    paymentsTitle: `支持 <span>41</span> 种加密货币`,
+    advantege1Title: "支持 VPN",
+    advantege1Text: "您可以使用 VPN 轻松访问我们的平台。",
+    advantege2Title: "无需 KYC",
+    advantege2Text: "加密货币存款和提现无需进行 KYC 验证。",
+    advantege3Title: "25% 推荐奖励",
+    advantege3Text: "邀请玩家并赚取赌场收入的 25%。",
+    footerText:
+      "Goldbet.io 由 Goldkey Technologies Limitada 拥有并运营。注册编号：3-102-892568，注册地址：Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica。联系我们：hello@goldbet.io。Goldbet.io 由科摩罗联盟安儒昂自治岛政府许可和监管，并在许可证号 ALSI-012401005-F11 下运营。Goldbet.io 已通过所有监管合规审核，并被合法授权开展所有博彩和投注业务。请记住，赌博可能会上瘾。请理性娱乐。Goldbet.io 仅接受年满 18 周岁的客户，具体取决于您所在的司法管辖区。Goldkey Technologies Limitada，注册编号 3-102-892568，是一家根据哥斯达黎加法律成立并运营的公司，同时也是 Goldkey Technologies Limitada 的支付运营商，作为其支付代理行事。GOLD SYNG INC.TECH LTD 已在塞浦路斯共和国正式注册成立，公司注册号为 HE456057 ",
+    // | Form
+    signUpTitle: "注册",
+    emailPlaceholder: "电子邮件",
+    wrongEmail: "电子邮件格式错误",
+    wrongPassword: "至少 6 个字符。",
+    passwordPlaceholder: "密码",
+    yourCurrency: "您的货币",
+    startPlaying: "开始游戏",
+    terms: `我同意<span class="text-white underline underline-offset-4">条款和条件</span>`,
+    signUpWithGoogle: "使用 Google 注册",
+    signUpWithFacebook: "使用 Facebook 注册",
+    signUpWithTelegram: "使用 Telegram 注册",
+    // | Terms
+    termsTitle1: `条款和条件`,
+    termsParagraph1: `本条款和条件以及下文提及的文件
+                      （以下简称“条款”）适用于当前网站（以下简称“网站”）的使用以及其相关或连接的服务
+                      （统称为“服务”）。您应仔细阅读这些条款，因为其中包含有关您在使用网站时的权利和义务的重要信息，
+                      并构成您（我们的客户，以下简称“客户”）与我们（以下简称“网站”）之间具有约束力的法律协议。
+                      通过使用本网站和/或访问服务，无论您是访客还是拥有账户（“账户”）的注册用户，
+                      即表示您同意受这些条款的约束，包括可能不时发布的任何修订。如果您不接受这些条款，
+                      您应停止访问服务并停止使用网站。`,
+    termsTitle2: `1. 一般条款`,
+    termsParagraph2: `我们保留随时修订和修改条款（包括下文提及和链接的任何文件）的权利。
+                      您应定期访问本页面以查看条款和条件。修改一经在本网站发布即具有约束力并立即生效。
+                      如果您不同意这些更改，您必须立即停止使用服务。
+                      在发布更改后继续使用网站将表示您同意受修订后条款的约束。
+                      在条款更改生效前尚未结算的任何投注将继续受原条款的约束。
+                      如果 Goldbet 的条款和条件更新，平台将通知您并要求您确认同意。`,
+    termsTitle3: `2. 您的义务`,
+    termsParagraph3: `您承认，在任何时候访问网站和使用服务时： <br />
+                      3.1. 您已年满 18 岁，或已达到适用于您的法律或司法管辖区允许进行博彩或游戏活动的法定年龄。
+                      我们保留随时要求您提供年龄证明文件的权利。 <br />
+                      3.2. 您具有法律行为能力，能够与我们签订具有约束力的法律协议。
+                      如果您不具备此能力，则不得访问网站或使用服务。 <br />
+                      3.3. 您了解在某些国家，访问和使用网站及其提供的产品可能被视为非法。
+                      我们无法核实每个司法管辖区的服务合法性，因此您有责任自行确定您访问和使用我们网站的行为
+                      是否符合您所在国家的适用法律，并向我们保证博彩在您居住的地区并不违法。
+                      由于各种法律或商业原因，我们不允许某些司法管辖区的客户注册或使用账户，
+                      包括但不限于：阿富汗、阿尔及利亚、安提瓜和巴布达、澳大利亚、白俄罗斯、巴林、
+                      比利时、不丹、文莱、中非共和国、乍得、科特迪瓦、克罗地亚、古巴、
+                      捷克、朝鲜民主主义人民共和国（朝鲜）、刚果民主共和国、丹麦、爱沙尼亚、法国、希腊、几内亚比绍、
+                      匈牙利、伊朗、伊拉克、冰岛、以色列、意大利、约旦、科威特、
+                      拉脱维亚、利比里亚、立陶宛、马耳他、缅甸、荷兰、
+                      荷属安的列斯（库拉索、圣马丁、博内尔、圣尤斯特歇斯和萨巴、阿鲁巴）、挪威、阿曼、巴勒斯坦、
+                      巴基斯坦、卡塔尔、俄罗斯、萨巴、圣马丁、沙特阿拉伯、
+                      塞尔维亚、斯洛文尼亚、索马里、西班牙、瑞士、叙利亚阿拉伯共和国、
+                      苏丹、特立尼达和多巴哥、土耳其、乌克兰、英国、
+                      德国、科摩罗联盟、阿拉伯联合酋长国、
+                      美国（及其附属领地、军事基地和领土，例如美国本土外小岛屿、美属维尔京群岛），
+                      瓦努阿图、也门、津巴布韦，或我们不时指定的其他受限司法管辖区（“受限司法管辖区”）。
+                      使用本网站即表示您确认您不是受限司法管辖区的居民。 <br />
+                      3.4. 在尝试开设账户或使用网站时，玩家有责任核实博彩在其所在司法管辖区是否合法。 <br />
+                      3.5. 您是您所使用的支付方式的授权用户，并且您账户中的所有资金均为合法来源。 <br />
+                      3.6. 您必须本着诚信向我们付款，不得尝试撤销已进行的付款或采取任何可能导致第三方撤销付款的行为。
+                      <br />
+                      3.7. 在下注时，您可能会损失部分或全部存入服务的资金，并且您对此类损失负全部责任。 <br />
+                      3.8. 在下注时，您不得使用任何违反您所在国家现行法律获取的信息。 <br />
+                      3.9. 您不得代表他人或出于商业目的行事，而应仅以个人身份代表自己参与。 <br />
+                      3.10. 您不得以恶意方式操纵服务中的任何市场或元素，也不得以损害服务完整性或我们的方式行事。 <br />
+                      3.11. 您在任何时候都必须本着诚信使用服务，并对通过服务进行的所有投注负责。 <br />
+                      3.12. 您本人或您的员工、雇主、代理或家庭成员（如适用）均未注册为我们的联盟计划成员。 <br />
+                      3.13. 在使用 Goldbet 时，您同意在默认情况下以及在我们要求时，仅向我们提供真实、准确和客观的数据。 <br />
+                      3.14. 您了解加密市场的波动性，并接受在您等待提款或提款由我们的风险部门处理期间，
+                      您的货币价格可能发生变化的可能性。 <br />
+                      3.15. 您是精神正常的人，并且不患有赌博成瘾。
+                      如果有此类问题的人进入本网站，其责任完全由其本人承担。 <br />
+                      3.16. 您同意在 Goldbet 的任何部分不使用任何第三方软件，也不利用平台中的任何漏洞或错误。 <br />
+                      3.17. 您保证，自注册之时起以及在本协议有效期内向我们提供的所有信息都是真实、完整和准确的，
+                      并且您将立即通知我们任何此类信息的变更。 <br />
+                      3.17.1. 您确认您理解，在注册和使用服务期间输入的信息不能由您自行更改。
+                      若需更改任何信息，您应联系支持团队。
+                      对于信息更改，Goldbet 可自行决定要求您提供任何 KYC 验证文件。 <br />
+                      3.18. 您保证在任何禁止在线下注和/或赌场游戏和/或现场游戏的司法管辖区内，
+                      不会使用我们的服务。 <br />
+                      3.19. 您还保证： <br />
+                      - 您是以个人名义参与服务，而非代表他人； <br />
+                      - 您对根据相关法律应缴纳的任何税款（包括您从我们获得的任何收益）负有全部责任； <br />
+                      - 您对通过使用服务获得的加密货币可能产生的任何税款负全部责任。`,
+  },
+  ar: {
+    pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
+    heroTitle: `مكافأة كبار اللاعبين بالعملات الرقمية <br/> <b><span>200%</span></b> حتى <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> لفة مجانية عند أول إيداع`,
+    heroBtn: "احصل على المكافأة",
+    paymentsTitle: `مدعوم <span>41</span> عملة رقمية`,
+    advantege1Title: "يدعم VPN",
+    advantege1Text: "يمكنك استخدام VPN للوصول إلى منصتنا بسهولة.",
+    advantege2Title: "لا يتطلب KYC",
+    advantege2Text:
+      "لا حاجة للتحقق من الهوية KYC للإيداعات والسحوبات بالعملات الرقمية.",
+    advantege3Title: "مكافأة إحالة 25%",
+    advantege3Text: "قم بدعوة اللاعبين واكسب 25% من إيرادات الكازينو.",
+    footerText:
+      "يتم امتلاك وتشغيل Goldbet.io بواسطة Goldkey Technologies Limitada. رقم التسجيل: 3-102-892568، العنوان المسجل: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. تواصل معنا عبر hello@goldbet.io. Goldbet.io مرخص ومنظم من قبل حكومة جزيرة أنجوان ذات الحكم الذاتي، اتحاد جزر القمر، ويعمل بموجب الترخيص رقم ALSI-012401005-F11. لقد اجتاز Goldbet.io جميع متطلبات الامتثال التنظيمي وهو مخول قانونياً لإجراء جميع عمليات الألعاب والمراهنات. تذكر أن القمار قد يسبب الإدمان. العب بمسؤولية. يقبل Goldbet.io فقط العملاء الذين تبلغ أعمارهم 18 عاماً أو أكثر وفقاً لولايتك القضائية. Goldkey Technologies Limitada، رقم التسجيل 3-102-892568، شركة منظمة وتعمل وفق قوانين كوستاريكا، وهي مشغل المدفوعات لـ Goldkey Technologies Limitada وتعمل كوكيل دفع نيابة عنها. GOLD SYNG INC.TECH LTD شركة مسجلة ومؤسسة حسب الأصول في جمهورية قبرص تحت رقم تسجيل الشركة HE456057 ",
+    // | Form
+    signUpTitle: "التسجيل",
+    emailPlaceholder: "البريد الإلكتروني",
+    wrongEmail: "بريد إلكتروني غير صحيح",
+    wrongPassword: "6 أحرف على الأقل.",
+    passwordPlaceholder: "كلمة المرور",
+    yourCurrency: "عملتك",
+    startPlaying: "ابدأ اللعب",
+    terms: `أوافق على <span class="text-white underline underline-offset-4">الشروط والأحكام</span>`,
+    signUpWithGoogle: "التسجيل عبر Google",
+    signUpWithFacebook: "التسجيل عبر Facebook",
+    signUpWithTelegram: "التسجيل عبر Telegram",
+    // | Terms
+    termsTitle1: `الشروط والأحكام`,
+    termsParagraph1: `تنطبق هذه الشروط والأحكام والمستندات المشار إليها أدناه
+                      (يشار إليها بـ "الشروط") على استخدام هذا الموقع الحالي (يشار إليه بـ
+                      "الموقع") وخدماته المرتبطة أو المتصلة
+                      (يشار إليها مجتمعة بـ "الخدمة"). يجب عليك مراجعة هذه الشروط بعناية
+                      لأنها تحتوي على معلومات مهمة تتعلق بحقوقك والتزاماتك فيما يتعلق باستخدام الموقع
+                      وتشكل اتفاقية قانونية ملزمة بينك - كعميلنا
+                      (يشار إليه بـ "العميل")، وبيننا (يشار إليه بـ "الموقع"). باستخدامك لهذا
+                      الموقع و/أو الوصول إلى الخدمة، سواء كنت
+                      زائراً أو مستخدماً مسجلاً لديه حساب ("الحساب")، فإنك توافق
+                      على الالتزام بهذه الشروط، إلى جانب أي تعديلات
+                      قد يتم نشرها من وقت لآخر. إذا كنت لا توافق على هذه الشروط،
+                      فيجب عليك الامتناع عن الوصول إلى الخدمة واستخدام الموقع.`,
+    termsTitle2: `1. الشروط العامة`,
+    termsParagraph2: `نحتفظ بالحق في مراجعة وتعديل الشروط (بما في ذلك
+                      أي مستندات مشار إليها ومرتبطة أدناه) في أي وقت.
+                      يجب عليك زيارة هذه الصفحة بشكل دوري لمراجعة الشروط والأحكام.
+                      ستكون التعديلات ملزمة وسارية المفعول فور
+                      نشرها على هذا الموقع. إذا كنت تعترض على
+                      أي من هذه التغييرات، يجب عليك التوقف فوراً عن استخدام الخدمة.
+                      استمرارك في استخدام الموقع بعد نشر هذه التغييرات
+                      يعني موافقتك على الالتزام بالشروط المعدلة.
+                      أي رهانات لم يتم تسويتها قبل دخول التعديلات حيز التنفيذ
+                      ستخضع للشروط السابقة. في حال
+                      تحديث الشروط والأحكام الخاصة بـ Goldbet، ستقوم المنصة بإخطارك
+                      وطلب تأكيد موافقتك.`,
+    termsTitle3: `2. التزاماتك`,
+    termsParagraph3: `أنت تقر بأنه في جميع الأوقات عند الوصول إلى الموقع
+                      واستخدام الخدمة: <br />
+                      3.1. أنك تبلغ من العمر 18 عاماً أو أكثر، أو بلغت السن القانوني الذي يسمح فيه بالمقامرة أو أنشطة الألعاب
+                      وفقاً للقانون أو الولاية القضائية المطبقة عليك.
+                      نحتفظ بالحق في طلب إثبات العمر منك في أي وقت. <br />
+                      3.2. أنك تتمتع بالأهلية القانونية ويمكنك إبرام اتفاقية قانونية ملزمة معنا.
+                      يجب ألا تصل إلى الموقع أو تستخدم الخدمة إذا لم تكن تتمتع بهذه الأهلية. <br />
+                      3.3. أنك تدرك أن الحق في الوصول إلى واستخدام الموقع وأي منتجات معروضة عليه
+                      قد يُعتبر غير قانوني في بعض الدول.
+                      نحن غير قادرين على التحقق من قانونية الخدمة في كل ولاية قضائية،
+                      وبالتالي فإنك مسؤول عن تحديد ما إذا كان وصولك واستخدامك لموقعنا
+                      متوافقاً مع القوانين المعمول بها في بلدك وتضمن لنا أن
+                      المقامرة ليست غير قانونية في الإقليم الذي تقيم فيه. لأسباب قانونية أو تجارية مختلفة،
+                      لا نسمح بفتح أو استخدام الحسابات من قبل العملاء المقيمين في بعض الولايات القضائية،
+                      بما في ذلك على سبيل المثال لا الحصر: أفغانستان،
+                      الجزائر، أنتيغوا وباربودا، أستراليا، بيلاروسيا، البحرين،
+                      بلجيكا، بوتان، بروناي، جمهورية أفريقيا الوسطى، تشاد، كوت ديفوار، كرواتيا، كوبا،
+                      جمهورية التشيك، جمهورية كوريا الديمقراطية الشعبية (كوريا الشمالية)،
+                      جمهورية الكونغو الديمقراطية، الدنمارك، إستونيا، فرنسا، اليونان، غينيا بيساو،
+                      المجر، إيران، العراق، آيسلندا، إسرائيل، إيطاليا، الأردن، الكويت،
+                      لاتفيا، ليبيريا، ليتوانيا، مالطا، ميانمار، هولندا،
+                      جزر الأنتيل الهولندية (كوراساو، سينت مارتن، بونير، سينت
+                      أوستاتيوس وسابا، أروبا)، النرويج، عمان، فلسطين،
+                      باكستان، قطر، روسيا، سابا، سان مارتن، المملكة العربية السعودية،
+                      صربيا، سلوفينيا، الصومال، إسبانيا، سويسرا، الجمهورية العربية السورية،
+                      السودان، ترينيداد وتوباغو، تركيا، أوكرانيا، المملكة المتحدة،
+                      ألمانيا، اتحاد جزر القمر، الإمارات العربية المتحدة،
+                      الولايات المتحدة (وتبعياتها، القواعد العسكرية والأقاليم مثل
+                      الجزر الخارجية الصغيرة للولايات المتحدة، جزر العذراء الأمريكية)،
+                      فانواتو، اليمن، زيمبابوي، أو أي ولايات قضائية مقيدة أخرى ("الولاية القضائية المقيدة")
+                      التي قد نحددها من وقت لآخر. باستخدامك للموقع فإنك تؤكد أنك لست مقيماً في ولاية قضائية مقيدة. <br />
+                      3.4. عند محاولة فتح حساب أو استخدام الموقع،
+                      تقع على عاتق اللاعب مسؤولية التحقق مما إذا كانت المقامرة قانونية في تلك الولاية القضائية. <br />
+                      3.5. أنت المستخدم المصرح له لطريقة الدفع التي تستخدمها وجميع الأموال
+                      الموجودة في حسابك والمستخدمة ضمن الخدمات قانونية. <br />
+                      3.6. يجب عليك إجراء جميع المدفوعات لنا بحسن نية وعدم محاولة عكس أي دفعة
+                      أو اتخاذ أي إجراء قد يؤدي إلى عكس هذه الدفعة من قبل طرف ثالث.
+                      <br />
+                      3.7. عند وضع الرهانات قد تخسر بعض أو كل أموالك المودعة
+                      وفقاً لهذه الشروط وستكون مسؤولاً بالكامل عن تلك الخسارة. <br />
+                      3.8. عند وضع الرهانات يجب ألا تستخدم أي معلومات
+                      تم الحصول عليها في خرق لأي تشريع ساري في البلد الذي كنت فيه عند وضع الرهان. <br />
+                      3.9. أنت لا تتصرف نيابة عن طرف آخر أو لأغراض تجارية،
+                      بل فقط نيابة عن نفسك كفرد وبصفة شخصية. <br />
+                      3.10. يجب ألا تحاول التلاعب بأي سوق أو عنصر داخل الخدمة
+                      بسوء نية أو بطريقة تؤثر سلباً على نزاهة الخدمة أو علينا. <br />
+                      3.11. يجب عليك التصرف بحسن نية بشكل عام فيما يتعلق باستخدام الخدمة في جميع الأوقات
+                      ولجميع الرهانات التي تتم باستخدام الخدمة. <br />
+                      3.12. أنت، أو إذا كان ذلك ينطبق، موظفوك أو أصحاب العمل أو
+                      وكلاؤك أو أفراد عائلتك، لستم مسجلين كمسوقين بالعمولة في برنامج الشراكة الخاص بنا. <br />
+                      3.13. أثناء استخدام Goldbet فإنك توافق على تزويدنا فقط ببيانات حقيقية وواقعية وموضوعية
+                      بشكل افتراضي وعند طلبنا. <br />
+                      3.14. أنت تفهم تقلبات سوق العملات الرقمية وتقبل احتمال
+                      تغير قيمة عملتك أثناء انتظار السحب أو أثناء معالجة طلب السحب
+                      من قبل قسم المخاطر لدينا. <br />
+                      3.15. أنت شخص سليم عقلياً ولا تعاني من إدمان القمار.
+                      في حال دخول شخص يعاني من هذه المشكلة إلى الموقع، تقع المسؤولية عليه فقط. <br />
+                      3.16. توافق على عدم استخدام أي برنامج طرف ثالث
+                      في أي جزء من Goldbet وكذلك عدم استغلال أي أخطاء أو ثغرات في المنصة. <br />
+                      3.17. تضمن أن جميع المعلومات التي تقدمها لنا منذ لحظة التسجيل
+                      وخلال مدة سريان هذه الاتفاقية صحيحة وكاملة ودقيقة،
+                      وأنك ستقوم بإبلاغنا فوراً بأي تغيير في هذه المعلومات. <br />
+                      3.17.1. تؤكد أنك تفهم أن المعلومات
+                      التي يتم إدخالها عند التسجيل وأثناء استخدام الخدمة لا يمكن تغييرها بقرارك.
+                      لتغيير أي معلومات، يجب عليك الاتصال بفريق الدعم.
+                      لتغيير أي معلومات، قد تطلب Goldbet أي مستندات لإجراء التحقق KYC حسب تقديرها. <br />
+                      3.18. تضمن أنك لن تستخدم خدماتنا أثناء وجودك في أي ولاية قضائية
+                      تحظر وضع و/أو قبول الرهانات عبر الإنترنت و/أو لعب ألعاب الكازينو و/أو الألعاب المباشرة. <br />
+                      3.19. كما تضمن أيضاً أن: <br />
+                      - أنك تشارك في الخدمات نيابة عن نفسك وليس نيابة عن أي شخص آخر؛ <br />
+                      - أنك المسؤول الوحيد عن الإبلاغ ودفع أي ضرائب
+                      تنطبق عليك وفقاً للقوانين ذات الصلة لأي أرباح تتلقاها منا؛ <br />
+                      - أنك المسؤول الوحيد عن أي ضرائب قد تكون مستحقة
+                      على العملات الرقمية التي يتم منحها لك من خلال استخدامك للخدمة.`,
+  },
+  sw: {
+    pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
+    heroTitle: `Bonasi ya Crypto Highroller <br/> <b><span>200%</span></b> hadi <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> mizunguko ya bure kwenye amana yako ya kwanza`,
+    heroBtn: "pata bonasi",
+    paymentsTitle: `Inakubali <span>41</span> sarafu za kidijitali`,
+    advantege1Title: "Inaruhusu VPN",
+    advantege1Text: "Unaweza kutumia VPN kufikia jukwaa letu kwa urahisi.",
+    advantege2Title: "Hakuna KYC inahitajika",
+    advantege2Text:
+      "Hakuna uthibitisho wa KYC unaohitajika kwa amana na uondoaji wa crypto.",
+    advantege3Title: "Bonasi ya Rufaa 25%",
+    advantege3Text: "Alika wachezaji na upate 25% ya mapato ya kasino.",
+    footerText:
+      "Goldbet.io inamilikiwa na kuendeshwa na Goldkey Technologies Limitada. Nambari ya usajili: 3-102-892568, anwani iliyosajiliwa: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Wasiliana nasi kupitia hello@goldbet.io. Goldbet.io imepewa leseni na kudhibitiwa na Serikali ya Kisiwa Huru cha Anjouan, Muungano wa Komoro, na inafanya kazi chini ya Leseni Na. ALSI-012401005-F11. Goldbet.io imepita ukaguzi wote wa ufuataji wa kanuni na imeidhinishwa kisheria kuendesha shughuli zote za michezo ya kubahatisha na kuweka dau. Kumbuka kuwa kamari inaweza kuwa ya uraibu. Cheza kwa uwajibikaji. Goldbet.io inakubali tu wateja wenye umri wa miaka 18 au zaidi kulingana na mamlaka yako ya kisheria. Goldkey Technologies Limitada, nambari ya usajili 3-102-892568, kampuni iliyosajiliwa na kuendeshwa chini ya sheria za Costa Rica, ndiyo mwendeshaji wa malipo wa Goldkey Technologies Limitada, ikifanya kazi kama wakala wa malipo kwa niaba ya Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD imeanzishwa ipasavyo na kusajiliwa katika Jamhuri ya Cyprus chini ya Nambari ya Usajili wa Kampuni HE456057 ",
+    // | Form
+    signUpTitle: "Jisajili",
+    emailPlaceholder: "Barua pepe",
+    wrongEmail: "Barua pepe si sahihi",
+    wrongPassword: "Angalau herufi 6.",
+    passwordPlaceholder: "Nenosiri",
+    yourCurrency: "Sarafu yako",
+    startPlaying: "Anza kucheza",
+    terms: `Nakubali <span class="text-white underline underline-offset-4">Sheria na Masharti</span>`,
+    signUpWithGoogle: "Jisajili kwa Google",
+    signUpWithFacebook: "Jisajili kwa Facebook",
+    signUpWithTelegram: "Jisajili kwa Telegram",
+    // | Terms
+    termsTitle1: `Sheria na Masharti`,
+    termsParagraph1: `Sheria na masharti haya pamoja na nyaraka zilizorejelewa hapa chini
+                      ("Sheria") zinatumika kwa matumizi ya tovuti hii ya sasa ("Tovuti")
+                      na huduma zake zinazohusiana au zilizounganishwa
+                      (kwa pamoja, "Huduma"). Unapaswa kupitia Sheria hizi kwa makini
+                      kwani zina taarifa muhimu kuhusu haki na wajibu wako kuhusiana na matumizi ya Tovuti
+                      na zinaunda makubaliano ya kisheria yanayofunga kati yako - mteja wetu
+                      ("Mteja"), na sisi ("Tovuti"). Kwa kutumia Tovuti hii na/au kupata Huduma,
+                      iwe wewe ni mgeni au mtumiaji aliyesajiliwa mwenye akaunti ("Akaunti"),
+                      unakubali kufungwa na Sheria hizi, pamoja na marekebisho yoyote
+                      ambayo yanaweza kuchapishwa mara kwa mara. Ikiwa hukubali Sheria hizi,
+                      unapaswa kujizuia kutumia Huduma na Tovuti.`,
+    termsTitle2: `1. Sheria za Jumla`,
+    termsParagraph2: `Tunajihifadhi haki ya kurekebisha na kubadilisha Sheria (ikiwa ni pamoja na
+                      nyaraka zozote zilizorejelewa na kuunganishwa hapa chini) wakati wowote.
+                      Unapaswa kutembelea ukurasa huu mara kwa mara ili kupitia Sheria na Masharti.
+                      Marekebisho yatakuwa ya lazima na yataanza kutumika mara moja
+                      baada ya kuchapishwa kwenye Tovuti hii. Ikiwa unapinga mabadiliko hayo,
+                      lazima uache mara moja kutumia Huduma.
+                      Kuendelea kwako kutumia Tovuti baada ya kuchapishwa kwa mabadiliko
+                      kunamaanisha kukubali kwako kufungwa na Sheria zilizorekebishwa.
+                      Dau lolote ambalo halijatatuliwa kabla ya Sheria mpya kuanza kutumika
+                      litasimamiwa na Sheria za awali. Ikiwa
+                      Sheria na Masharti za Goldbet zitasasishwa, jukwaa litakujulisha
+                      na kukuomba uthibitishe ridhaa yako.`,
+    termsTitle3: `2. Wajibu Wako`,
+    termsParagraph3: `Unakubali kwamba wakati wote unapofikia Tovuti
+                      na kutumia Huduma: <br />
+                      3.1. Una umri wa zaidi ya miaka 18, au umefikia umri wa kisheria unaoruhusu kamari au shughuli za michezo
+                      kulingana na sheria au mamlaka inayokuhusu.
+                      Tunajihifadhi haki ya kuomba uthibitisho wa umri wako wakati wowote. <br />
+                      3.2. Una uwezo wa kisheria na unaweza kuingia katika makubaliano ya kisheria yanayofunga nasi.
+                      Haupaswi kufikia Tovuti au kutumia Huduma ikiwa huna uwezo huo. <br />
+                      3.3. Unafahamu kwamba haki ya kufikia na kutumia Tovuti na bidhaa zozote zinazotolewa humo
+                      inaweza kuchukuliwa kuwa haramu katika baadhi ya nchi.
+                      Hatuwezi kuthibitisha uhalali wa Huduma katika kila mamlaka,
+                      hivyo ni jukumu lako kuamua kama ufikiaji na matumizi yako ya tovuti yetu
+                      yanaendana na sheria zinazotumika katika nchi yako na unatuhakikishia kwamba
+                      kamari si haramu katika eneo unaloishi. Kwa sababu mbalimbali za kisheria au kibiashara,
+                      hatuwezi kuruhusu akaunti kufunguliwa au kutumiwa na wateja wanaoishi katika baadhi ya mamlaka,
+                      ikiwa ni pamoja na lakini sio tu: Afghanistan,
+                      Algeria, Antigua na Barbuda, Australia, Belarus, Bahrain,
+                      Ubelgiji, Bhutan, Brunei, Jamhuri ya Afrika ya Kati, Chad, Côte d'Ivoire, Croatia, Cuba,
+                      Jamhuri ya Czech, Jamhuri ya Watu wa Kidemokrasia ya Korea (Korea Kaskazini),
+                      Jamhuri ya Kidemokrasia ya Kongo, Denmark, Estonia, Ufaransa, Ugiriki, Guinea-Bissau,
+                      Hungary, Iran, Iraq, Iceland, Israel, Italia, Jordan, Kuwait,
+                      Latvia, Liberia, Lithuania, Malta, Myanmar, Uholanzi,
+                      Antilles za Uholanzi (Curacao, Sint Maarten, Bonaire, Sint
+                      Eustatius na Saba, Aruba), Norway, Oman, Palestina,
+                      Pakistan, Qatar, Urusi, Saba, Saint Martin, Saudi Arabia,
+                      Serbia, Slovenia, Somalia, Hispania, Uswisi, Jamhuri ya Kiarabu ya Syria,
+                      Sudan, Trinidad na Tobago, Uturuki, Ukraine, Uingereza,
+                      Ujerumani, Muungano wa Komoro, Falme za Kiarabu,
+                      Marekani (na maeneo yake tegemezi, vituo vya kijeshi na maeneo
+                      kama vile U.S. Minor Outlying Islands, U.S. Virgin Islands),
+                      Vanuatu, Yemen, Zimbabwe, au mamlaka nyingine zilizozuiwa ("Mamlaka Zilizozuiwa")
+                      ambazo tunaweza kutaja mara kwa mara. Kwa kutumia Tovuti hii unathibitisha kuwa wewe si mkazi wa Mamlaka Zilizozuiwa. <br />
+                      3.4. Unapojaribu kufungua akaunti au kutumia Tovuti,
+                      ni jukumu la mchezaji kuthibitisha kama kamari ni halali katika mamlaka husika. <br />
+                      3.5. Wewe ni mtumiaji aliyeidhinishwa wa njia ya malipo unayotumia na fedha zote
+                      zilizo kwenye akaunti yako na zinazotumiwa ndani ya Huduma ni halali. <br />
+                      3.6. Lazima ufanye malipo yote kwetu kwa nia njema na usijaribu kubatilisha malipo yoyote
+                      au kuchukua hatua yoyote itakayosababisha malipo hayo kubatilishwa na mtu wa tatu.
+                      <br />
+                      3.7. Unapoweka dau unaweza kupoteza baadhi au fedha zako zote ulizoweka
+                      kulingana na Sheria hizi na utawajibika kikamilifu kwa hasara hiyo. <br />
+                      3.8. Unapoweka dau hupaswi kutumia taarifa yoyote
+                      iliyopatikana kwa kukiuka sheria yoyote inayotumika katika nchi uliyokuwa wakati dau linawekwa. <br />
+                      3.9. Hufanyi kazi kwa niaba ya mtu mwingine au kwa madhumuni ya kibiashara,
+                      bali kwa niaba yako mwenyewe kama mtu binafsi. <br />
+                      3.10. Hupaswi kujaribu kudhibiti au kuathiri soko lolote au kipengele chochote ndani ya Huduma
+                      kwa nia mbaya au kwa namna inayodhuru uadilifu wa Huduma au sisi. <br />
+                      3.11. Lazima utende kwa nia njema wakati wote kuhusiana na matumizi ya Huduma
+                      na kwa dau zote zinazowekwa kupitia Huduma. <br />
+                      3.12. Wewe, au ikiwa inafaa, wafanyakazi wako, waajiri,
+                      mawakala au wanafamilia, hamjasajiliwa kama washirika katika programu yetu ya washirika. <br />
+                      3.13. Wakati wa kutumia Goldbet unakubali kutupatia tu data ya kweli, halisi na yenye uwazi
+                      kwa chaguo-msingi na tunapoiomba. <br />
+                      3.14. Unaelewa mabadiliko ya soko la crypto na unakubali uwezekano wa
+                      thamani ya sarafu zako kubadilika wakati unasubiri kutoa pesa au wakati ombi lako linashughulikiwa
+                      na Idara yetu ya Hatari. <br />
+                      3.15. Wewe ni mtu mwenye afya njema ya akili na huna uraibu wa kamari.
+                      Ikiwa mtu mwenye tatizo hilo anaingia kwenye Tovuti, jukumu ni lake pekee. <br />
+                      3.16. Unakubali kutotumia programu yoyote ya wahusika wengine
+                      katika sehemu yoyote ya Goldbet na pia kutotumia vibaya hitilafu au kasoro zozote kwenye jukwaa. <br />
+                      3.17. Unathibitisha kwamba taarifa zote unazotupatia tangu usajili
+                      na katika kipindi chote cha makubaliano haya ni za kweli, kamili na sahihi,
+                      na kwamba utatufahamisha mara moja kuhusu mabadiliko yoyote ya taarifa hizo. <br />
+                      3.17.1. Unathibitisha kwamba unaelewa kuwa taarifa
+                      zilizoingizwa wakati wa usajili na matumizi ya Huduma haziwezi kubadilishwa kwa hiari yako.
+                      Ili kubadilisha taarifa yoyote, unapaswa kuwasiliana na timu ya msaada.
+                      Kwa mabadiliko yoyote, Goldbet inaweza kuomba nyaraka kwa ajili ya KYC kwa uamuzi wake. <br />
+                      3.18. Unathibitisha kwamba hutatumia huduma zetu ukiwa katika mamlaka yoyote
+                      inayokataza kuweka na/au kupokea dau mtandaoni na/au kucheza michezo ya kasino na/au michezo ya moja kwa moja. <br />
+                      3.19. Pia unathibitisha kwamba: <br />
+                      - Unashiriki katika Huduma kwa niaba yako mwenyewe na si kwa niaba ya mtu mwingine; <br />
+                      - Wewe pekee unawajibika kuripoti na kulipa kodi zozote
+                      zinazokuhusu chini ya sheria husika kwa mapato yoyote unayopata kutoka kwetu; <br />
+                      - Wewe pekee unawajibika kwa kodi zozote zinazoweza kulipwa
+                      kwa sarafu za crypto unazopokea kupitia matumizi ya Huduma.`,
+  },
+  rw: {
+    pageTitle: "🎁 Bonus yawe iriteguye - Goldbet",
+    heroTitle: `Bonus ya Crypto Highroller <br/> <b><span>200%</span></b> kugeza kuri <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> spins z'ubuntu ku kubitsa kwa mbere`,
+    heroBtn: "fata bonus",
+    paymentsTitle: `Yemera <span>41</span> amakarensi ya crypto`,
+    advantege1Title: "Yemerera VPN",
+    advantege1Text:
+      "Ushobora gukoresha VPN kugirango winjire kuri platform yacu byoroshye.",
+    advantege2Title: "Nta KYC isabwa",
+    advantege2Text:
+      "Nta igenzura rya KYC risabwa ku kubitsa no kubikuza crypto.",
+    advantege3Title: "25% bonus y'ubutumire",
+    advantege3Text: "Tumira abakinyi maze ubone 25% by'inyungu za kazino.",
+    footerText:
+      "Goldbet.io ni iy'ikigo Goldkey Technologies Limitada kandi ikiyoborwa nacyo. Nimero y'iyandikwa: 3-102-892568, aderesi yanditswe: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Twandikire kuri hello@goldbet.io. Goldbet.io ifite uruhushya kandi igenzurwa na Leta y'Ikirwa cya Anjouan gifite ubwigenge, mu Muryango wa Comoros, kandi ikora munsi y'uruhushya No. ALSI-012401005-F11. Goldbet.io yujuje ibisabwa byose by'amategeko kandi yemerewe gukora ibikorwa byose by'imikino y'amahirwe n'ubugari bw'amafaranga. Ibuka ko gukina amafaranga bishobora guteza ubusinzi bwo kubikunda. Kina neza kandi wiyubahirize. Goldbet.io yakira gusa abakiriya bafite imyaka 18 cyangwa irenga hakurikijwe amategeko agenga aho utuye. Goldkey Technologies Limitada, nimero y'iyandikwa 3-102-892568, ni ikigo cyashinzwe kandi gikora hakurikijwe amategeko ya Costa Rica, kandi ni cyo gishinzwe kwishyura kuri Goldkey Technologies Limitada, gikora nk'umukozi w'ubwishyu mu izina ryacyo. GOLD SYNG INC.TECH LTD ni ikigo cyanditswe neza kandi gikorera muri Repubulika ya Cyprus, gifite nimero y'iyandikwa HE456057 ",
+    // | Form
+    signUpTitle: "Iyandikishe",
+    emailPlaceholder: "Imeyili",
+    wrongEmail: "Imeyili si yo",
+    wrongPassword: "Nibura inyuguti 6.",
+    passwordPlaceholder: "Ijambo ry'ibanga",
+    yourCurrency: "Ifaranga ryawe",
+    startPlaying: "Tangira gukina",
+    terms: `Nemeye <span class="text-white underline underline-offset-4">Amategeko n'Amabwiriza</span>`,
+    signUpWithGoogle: "Iyandikishe ukoresheje Google",
+    signUpWithFacebook: "Iyandikishe ukoresheje Facebook",
+    signUpWithTelegram: "Iyandikishe ukoresheje Telegram",
+    // | Terms
+    termsTitle1: `Amategeko n'Amabwiriza`,
+    termsParagraph1: `Aya mategeko n'amabwiriza hamwe n'inyandiko zivugwa hepfo
+                      (zitwa "Amategeko") zikoreshwa ku ikoreshwa ry'uru rubuga (rwitwa
+                      "Urubuga") n'ibikorwa bifitanye isano narwo cyangwa bihujwe narwo
+                      (byose hamwe, "Serivisi"). Ugomba gusoma neza aya Mategeko
+                      kuko arimo amakuru y'ingenzi yerekeye uburenganzira n'inshingano byawe mu gukoresha Urubuga
+                      kandi akora nk'amasezerano yemewe n'amategeko hagati yawe - umukiriya wacu
+                      (witwa "Umukiriya"), natwe (twitwa "Urubuga"). Ukoresheje uru Rubuga
+                      cyangwa winjira muri Serivisi, waba uri umushyitsi cyangwa umukoresha wiyandikishije ufite konti ("Konti"),
+                      wemera kubahiriza aya Mategeko hamwe n'ihinduka ryose
+                      rishobora gutangazwa rimwe na rimwe. Niba utabyemera,
+                      ugomba guhagarika gukoresha Serivisi n'Urubuga.`,
+    termsTitle2: `1. Amategeko Rusange`,
+    termsParagraph2: `Dufite uburenganzira bwo gusubiramo no guhindura Amategeko (harimo
+                      inyandiko zose zivugwa kandi zihujwe hepfo) igihe icyo ari cyo cyose.
+                      Ugomba gusura uru rupapuro kenshi kugirango urebe Amategeko n'Amabwiriza.
+                      Impinduka zizahita zishyirwa mu bikorwa kandi zibe itegeko
+                      ukimara gutangazwa kuri uru Rubuga. Niba utemeranya n'izo mpinduka,
+                      ugomba guhita uhagarika gukoresha Serivisi.
+                      Gukomeza gukoresha Urubuga nyuma yo gutangaza impinduka
+                      bizerekana ko wemeye kubahiriza Amategeko yahinduwe.
+                      Imikino yose itararangira mbere y'uko impinduka zitangira
+                      izakomeza gukurikizwa n'Amategeko ya mbere. Niba
+                      Amategeko n'Amabwiriza bya Goldbet bihinduwe, urubuga ruzakumenyesha
+                      kandi rusabe kwemeza ukwemera kwawe.`,
+    termsTitle3: `2. Inshingano zawe`,
+    termsParagraph3: `Uremeza ko igihe cyose winjira ku Rubuga
+                      kandi ukoresha Serivisi: <br />
+                      3.1. Ufite imyaka irenga 18 cyangwa ugeze ku myaka yemewe yo gukina
+                      hakurikijwe amategeko cyangwa ubutegetsi bugenga aho uri.
+                      Dufite uburenganzira bwo kugusaba ibyangombwa by'emyaka igihe icyo ari cyo cyose. <br />
+                      3.2. Ufite ubushobozi bwo gukora amasezerano yemewe n'amategeko natwe.
+                      Ntugomba gukoresha Urubuga cyangwa Serivisi niba udafite ubwo bushobozi. <br />
+                      3.3. Uzi ko uburenganzira bwo gukoresha Urubuga n'ibicuruzwa biruriho
+                      bushobora gufatwa nk'ibitemewe mu bihugu bimwe.
+                      Ntitubasha kugenzura amategeko ya buri gihugu,
+                      bityo ni inshingano yawe kumenya niba gukoresha urubuga rwacu
+                      bihuye n'amategeko y'igihugu cyawe kandi uremeza ko gukina amafaranga
+                      atari bitemewe aho utuye. Kubw'impamvu z'amategeko cyangwa ubucuruzi,
+                      ntitwemera konti z'abakiriya batuye mu bihugu bimwe,
+                      harimo ariko bitagarukira kuri: Afghanistan,
+                      Algeria, Antigua na Barbuda, Australia, Belarus, Bahrain,
+                      Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte d'Ivoire, Croatia, Cuba,
+                      Czech Republic, Democratic People’s Republic of Korea (North Korea),
+                      Democratic Republic of the Congo, Denmark, Estonia, France, Greece, Guinea-Bissau,
+                      Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait,
+                      Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands,
+                      Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint
+                      Eustatius, na Saba, Aruba), Norway, Oman, Palestine,
+                      Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia,
+                      Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab Republic,
+                      Sudan, Trinidad na Tobago, Turkey, Ukraine, United Kingdom,
+                      Germany, Union of Comoros, United Arab Emirates,
+                      United States (n'ibice byayo, ibigo bya gisirikare n'utundi duce
+                      nka U.S. Minor Outlying Islands, U.S. Virgin Islands),
+                      Vanuatu, Yemen, Zimbabwe, cyangwa ibindi bihugu byabujijwe ("Ahantu Habujijwe")
+                      bishobora gutangazwa natwe igihe icyo ari cyo cyose. Gukoresha Urubuga bivuze ko uremeza ko utari umuturage w'Ahantu Habujijwe. <br />
+                      3.4. Mu kugerageza gufungura konti cyangwa gukoresha Urubuga,
+                      ni inshingano y'umukinnyi kugenzura niba gukina amafaranga byemewe aho atuye. <br />
+                      3.5. Ni wowe wemerewe gukoresha uburyo bwo kwishyura ukoresha kandi amafaranga yose
+                      ari kuri konti yawe akoreshwa muri Serivisi ni ayemewe. <br />
+                      3.6. Ugomba kwishyura mu kuri kandi ntugerageze gusubiza inyuma ubwishyu
+                      cyangwa gukora igikorwa cyose gishobora gutuma ubwishyu busubizwa n'undi muntu.
+                      <br />
+                      3.7. Mu gushyira amafaranga ku mukino ushobora gutakaza amafaranga yawe yose cyangwa igice cyayo
+                      kandi uzabazwa ayo mahirwe yose. <br />
+                      3.8. Ntugomba gukoresha amakuru yabonetse mu buryo bunyuranyije n'amategeko
+                      mu gihugu wari urimo igihe washyiraga amafaranga ku mukino. <br />
+                      3.9. Ntukora mu izina ry'undi muntu cyangwa ku nyungu z'ubucuruzi,
+                      ahubwo wikorera ku giti cyawe nk'umuntu ku giti cye. <br />
+                      3.10. Ntugomba kugerageza guhindura cyangwa kugenzura isoko cyangwa igice cya Serivisi
+                      mu buryo bubi cyangwa bugira ingaruka mbi ku mikorere ya Serivisi cyangwa kuri twe. <br />
+                      3.11. Ugomba gukora mu kuri igihe cyose ukoresha Serivisi
+                      no mu mikino yose ukoresha Serivisi. <br />
+                      3.12. Wowe cyangwa abakozi bawe, abakoresha bawe,
+                      abakozi baguhagarariye cyangwa abo mu muryango wawe ntimwiyandikishije nk'abafatanyabikorwa muri gahunda yacu. <br />
+                      3.13. Mu gukoresha Goldbet wemera kuduha amakuru y'ukuri kandi yuzuye
+                      igihe cyose ndetse n'igihe tuyagusabye. <br />
+                      3.14. Urumva ihindagurika ry'isoko rya crypto kandi wemera ko agaciro k'ifaranga ryawe
+                      gashobora guhinduka mu gihe utegereje kubikuza cyangwa mu gihe bisuzumwa
+                      n'ishami rishinzwe ibyago. <br />
+                      3.15. Uri umuntu ufite ubuzima bwiza bwo mu mutwe kandi nta kibazo cyo kwizizirwa n'imikino ufite.
+                      Niba umuntu ufite icyo kibazo yinjiye ku Rubuga, inshingano ni ize wenyine. <br />
+                      3.16. Wemera kutazakoresha software y'undi muntu uwo ari we wese
+                      mu bice byose bya Goldbet kandi ntuzakoreshe nabi amakosa cyangwa ibibazo by'urubuga. <br />
+                      3.17. Uremeza ko amakuru yose uduha kuva igihe wiyandikishije
+                      kugeza igihe amasezerano akiriho ari ay'ukuri, yuzuye kandi atunganye,
+                      kandi uzahita utumenyesha impinduka zose. <br />
+                      3.17.1. Uremeza ko wumva ko amakuru
+                      yinjijwe igihe cyo kwiyandikisha no gukoresha Serivisi adashobora guhindurwa uko ubyifuza.
+                      Kugira ngo uhindure amakuru, ugomba kuvugana n'itsinda rishinzwe ubufasha.
+                      Mu guhindura amakuru, Goldbet ishobora gusaba inyandiko za KYC igihe ibona bikwiye. <br />
+                      3.18. Uremeza ko utazakoresha serivisi zacu uri mu gihugu
+                      kibujije gukina ku murongo cyangwa imikino ya kasino cyangwa imikino ya live. <br />
+                      3.19. Unemeza ko: <br />
+                      - Ukina mu izina ryawe bwite, atari mu izina ry'undi muntu; <br />
+                      - Ni wowe ufite inshingano zo gutangaza no kwishyura imisoro
+                      ijyanye n'inyungu zose ubona; <br />
+                      - Ni wowe ufite inshingano ku misoro ishobora gusabwa
+                      ku mafaranga ya crypto wahawe ukoresheje Serivisi.`,
+  },
+  ga: {
+    pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
+    heroTitle: `Bónas Crypto Highroller <br/> <b><span>200%</span></b> suas go dtí <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> casadh saor in aisce ar do chéad taisce`,
+    heroBtn: "faigh bónas",
+    paymentsTitle: `Glactar le <span>41</span> criptea-airgeadra`,
+    advantege1Title: "Oiriúnach do VPN",
+    advantege1Text:
+      "Is féidir leat VPN a úsáid chun rochtain éasca a fháil ar ár n-ardán.",
+    advantege2Title: "Gan KYC de dhíth",
+    advantege2Text:
+      "Ní theastaíonn fíorú KYC le haghaidh taiscí agus aistarraingtí crypto.",
+    advantege3Title: "Bónas Tagartha 25%",
+    advantege3Text:
+      "Tabhair cuireadh do imreoirí agus tuille 25% d’ioncam an cheasaíne.",
+    footerText:
+      "Tá Goldbet.io faoi úinéireacht agus á oibriú ag Goldkey Technologies Limitada. Uimhir chláraithe: 3-102-892568, seoladh cláraithe: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Déan teagmháil linn ag hello@goldbet.io. Tá Goldbet.io ceadúnaithe agus rialaithe ag Rialtas Oileán Uathrialach Anjouan, Aontas na gComoros, agus oibríonn sé faoi Cheadúnas Uimh. ALSI-012401005-F11. Tá gach ceanglas comhlíonta ag Goldbet.io agus tá sé údaraithe go dlíthiúil oibríochtaí cearrbhachais agus gealltóireachta a reáchtáil. Cuimhnigh gur féidir le cearrbhachas a bheith andúileach. Imir go freagrach. Ní ghlacann Goldbet.io ach le custaiméirí atá 18 mbliana d’aois nó níos sine de réir do dhlínse. Is í Goldkey Technologies Limitada, uimhir chláraithe 3-102-892568, cuideachta atá bunaithe agus á hoibriú faoi dhlí Costa Rica, an t-oibreoir íocaíochta do Goldkey Technologies Limitada agus feidhmíonn sí mar ghníomhaire íocaíochta thar a ceann. Tá GOLD SYNG INC.TECH LTD bunaithe agus cláraithe go dleathach i bPoblacht na Cipire faoi Uimhir Chláraithe na Cuideachta HE456057 ",
+    // | Form
+    signUpTitle: "Cláraigh",
+    emailPlaceholder: "Ríomhphost",
+    wrongEmail: "Ríomhphost mícheart",
+    wrongPassword: "Ar a laghad 6 charachtar.",
+    passwordPlaceholder: "Focal faire",
+    yourCurrency: "Do airgeadra",
+    startPlaying: "Tosaigh ag imirt",
+    terms: `Aontaím leis na <span class="text-white underline underline-offset-4">Téarmaí agus Coinníollacha</span>`,
+    signUpWithGoogle: "Cláraigh le Google",
+    signUpWithFacebook: "Cláraigh le Facebook",
+    signUpWithTelegram: "Cláraigh le Telegram",
+    // | Terms
+    termsTitle1: `Téarmaí agus Coinníollacha`,
+    termsParagraph1: `Baineann na téarmaí agus na coinníollacha seo agus na doiciméid dá dtagraítear thíos
+                      ("na Téarmaí") le húsáid an tsuímh ghréasáin reatha ("an Suíomh")
+                      agus a sheirbhísí gaolmhara nó nasctha
+                      (le chéile, "an tSeirbhís"). Ba cheart duit na Téarmaí seo a léamh go cúramach
+                      mar go bhfuil eolas tábhachtach iontu maidir le do chearta agus do chuid dualgas maidir le húsáid an tSuímh
+                      agus is comhaontú dlíthiúil ceangailteach iad idir tú - ár gcustaiméir
+                      ("an Custaiméir"), agus sinne ("an Suíomh"). Trí úsáid a bhaint as an
+                      Suíomh seo agus/nó trí rochtain a fháil ar an tSeirbhís, cibé acu mar
+                      aoi nó mar úsáideoir cláraithe le cuntas ("Cuntas"),
+                      aontaíonn tú a bheith faoi cheangal ag na Téarmaí seo, in éineacht le haon leasuithe
+                      a d’fhéadfadh a bheith foilsithe ó am go chéile. Mura n-aontaíonn tú leis na Téarmaí seo,
+                      ba cheart duit gan rochtain a fháil ar an tSeirbhís ná an Suíomh a úsáid.`,
+    termsTitle2: `1. Téarmaí Ginearálta`,
+    termsParagraph2: `Coimeádaimid an ceart na Téarmaí a athbhreithniú agus a leasú (lena n-áirítear
+                      aon doiciméid dá dtagraítear agus atá nasctha thíos) ag am ar bith.
+                      Ba cheart duit an leathanach seo a sheiceáil go tréimhsiúil chun na Téarmaí agus Coinníollacha a athbhreithniú.
+                      Beidh na leasuithe ceangailteach agus i bhfeidhm láithreach
+                      tar éis iad a fhoilsiú ar an Suíomh seo. Má dhéanann tú agóid
+                      in aghaidh aon athruithe den sórt sin, caithfidh tú stop a chur láithreach le húsáid na Seirbhíse.
+                      Léireoidh do úsáid leanúnach den Suíomh tar éis an fhoilsithe sin
+                      do thoiliú a bheith faoi cheangal ag na Téarmaí leasaithe.
+                      Beidh aon gheallta nach bhfuil socraithe roimh theacht i bhfeidhm na leasuithe
+                      faoi réir na dTéarmaí roimhe seo. Má
+                      dhéantar Téarmaí agus Coinníollacha Goldbet a nuashonrú, cuirfidh an
+                      t-ardán in iúl duit agus iarrfaidh sé ort do thoiliú a dhearbhú.`,
+    termsTitle3: `2. Do Dhualgais`,
+    termsParagraph3: `Aithníonn tú go bhfuil, ag gach am agus tú ag rochtain an tSuímh
+                      agus ag úsáid na Seirbhíse: <br />
+                      3.1. Go bhfuil tú os cionn 18 mbliana d’aois, nó go bhfuil an aois dhlíthiúil bainte amach agat
+                      a ligeann do ghníomhaíochtaí cearrbhachais de réir an dlí nó an dlínse a bhaineann leat.
+                      Coimeádaimid an ceart cruthúnas aoise a iarraidh ort ag am ar bith. <br />
+                      3.2. Go bhfuil an cumas dlíthiúil agat dul i mbun comhaontaithe dlíthiúil ceangailteach linn.
+                      Ní mór duit gan rochtain a fháil ar an Suíomh ná an tSeirbhís a úsáid mura bhfuil an cumas seo agat. <br />
+                      3.3. Tuigeann tú go bhféadfar an ceart chun rochtain a fháil ar an Suíomh agus é a úsáid
+                      agus aon táirgí a thairgtear ann a mheas mar mhídhleathach i roinnt tíortha.
+                      Ní féidir linn dlíthiúlacht na Seirbhíse a fhíorú i ngach dlínse,
+                      mar sin is ortsa atá an fhreagracht a chinneadh an bhfuil do rochtain agus úsáid ár suíomh
+                      ag comhlíonadh na ndlíthe ábhartha i do thír agus deimhníonn tú dúinn nach bhfuil
+                      cearrbhachas mídhleathach sa chríoch ina bhfuil tú i do chónaí. Ar chúiseanna dlíthiúla nó tráchtála éagsúla,
+                      ní cheadaímid cuntais a oscailt ná a úsáid ag custaiméirí i roinnt dlínsí,
+                      lena n-áirítear ach gan a bheith teoranta do: Afghanistan,
+                      Algeria, Antigua agus Barbuda, an Astráil, an Bhealarúis, Bairéin,
+                      an Bheilg, an Bhútáin, Brúiné, Poblacht na hAfraice Láir, Sead, Côte d'Ivoire, an Chróit, Cúba,
+                      Poblacht na Seice, Daon-Phoblacht Dhaonlathach na Cóiré (An Chóiré Thuaidh),
+                      Poblacht Dhaonlathach an Chongó, an Danmhairg, an Eastóin, an Fhrainc, an Ghréig, an Ghuine-Bhissau,
+                      an Ungáir, an Iaráin, an Iaráic, an Íoslainn, Iosrael, an Iodáil, an Iordáin, Cuáit,
+                      an Laitvia, an Libéir, an Liotuáin, Málta, Maenmar, an Ísiltír,
+                      Antillí na hÍsiltíre (Curacao, Sint Maarten, Bonaire, Sint
+                      Eustatius agus Saba, Aruba), an Iorua, Oman, an Phalaistín,
+                      an Phacastáin, Catar, an Rúis, Saba, Saint Martin, an Araib Shádach,
+                      an tSeirbia, an tSlóivéin, an tSomáil, an Spáinn, an Eilvéis, Poblacht Arabach na Siria,
+                      an tSúdáin, Oileáin na Tríonóide agus Tobága, an Tuirc, an Úcráin, an Ríocht Aontaithe,
+                      an Ghearmáin, Aontas na gComoros, Aontas na nÉimíríochtaí Arabacha,
+                      na Stáit Aontaithe (agus a gcuid spleáchas, bunáiteanna míleata agus críocha
+                      mar U.S. Minor Outlying Islands, U.S. Virgin Islands),
+                      Vanuatú, Éimin, an tSiombáib, nó dlínsí srianta eile ("Dlínse Srianta")
+                      a fhéadfaimid a shonrú ó am go chéile. Trí úsáid a bhaint as an Suíomh dearbhaíonn tú nach bhfuil tú i do chónaí i nDlínse Srianta. <br />
+                      3.4. Agus tú ag iarraidh cuntas a oscailt nó an Suíomh a úsáid,
+                      is ar an imreoir atá an fhreagracht a fhíorú an bhfuil cearrbhachas dleathach sa dlínse sin. <br />
+                      3.5. Is tusa an t-úsáideoir údaraithe den mhodh íocaíochta a úsáideann tú agus tá gach ciste
+                      ar do chuntas agus a úsáidtear laistigh den tSeirbhís dleathach. <br />
+                      3.6. Ní mór duit gach íocaíocht a dhéanamh linn de mheon macánta agus gan iarracht a dhéanamh íocaíocht a aisiompú
+                      ná aon ghníomh a dhéanamh a d’fhéadfadh a leithéid d’íocaíocht a aisiompú ag tríú páirtí.
+                      <br />
+                      3.7. Agus geallta á gcur agat d’fhéadfá cuid nó do chuid airgid ar fad a chailleadh
+                      agus beidh tú freagrach go hiomlán as an gcaillteanas sin. <br />
+                      3.8. Agus geallta á gcur agat níor chóir duit aon fhaisnéis a úsáid
+                      a fuarthas de shárú ar aon reachtaíocht sa tír ina raibh tú nuair a cuireadh an geall. <br />
+                      3.9. Níl tú ag gníomhú thar ceann páirtí eile ná chun críocha tráchtála,
+                      ach thar do cheann féin mar dhuine príobháideach. <br />
+                      3.10. Níor chóir duit iarracht a dhéanamh aon mhargadh nó eilimint laistigh den tSeirbhís
+                      a ionramháil go mímhacánta ná ar bhealach a dhéanann dochar d’ionracas na Seirbhíse nó dúinne. <br />
+                      3.11. Ní mór duit gníomhú go macánta i gcónaí maidir le húsáid na Seirbhíse
+                      agus maidir le gach geall a dhéantar tríd an tSeirbhís. <br />
+                      3.12. Ní tusa, ná más infheidhme, do chuid fostaithe, fostóirí,
+                      gníomhairí ná baill teaghlaigh cláraithe mar chleamhnaithe inár gclár cleamhnaithe. <br />
+                      3.13. Agus tú ag úsáid Goldbet aontaíonn tú sonraí fíor, cruinn agus oibiachtúla a sholáthar dúinn
+                      de réir réamhshocraithe agus nuair a iarraimid iad. <br />
+                      3.14. Tuigeann tú luaineacht mhargadh crypto agus glacann tú leis an bhféidearthacht
+                      go bhféadfadh luach do chuid airgeadraí athrú agus tú ag fanacht le haisíocaíocht
+                      nó le linn próiseála ag ár Roinn Riosca. <br />
+                      3.15. Is duine sláintiúil meabhrach tú agus ní fhulaingíonn tú ó andúil chearrbhachais.
+                      Má théann duine a bhfuil an fhadhb sin aige isteach ar an Suíomh, is orthu féin amháin atá an fhreagracht. <br />
+                      3.16. Aontaíonn tú gan aon bhogearraí tríú páirtí a úsáid
+                      in aon chuid de Goldbet agus gan leas a bhaint as aon lochtanna nó fabhtanna ar an ardán. <br />
+                      3.17. Deimhníonn tú go bhfuil gach faisnéis a sholáthraíonn tú dúinn ó chlárú
+                      agus le linn thréimhse an chomhaontaithe seo fíor, iomlán agus ceart,
+                      agus go gcuirfidh tú in iúl dúinn láithreach aon athrú ar an bhfaisnéis sin. <br />
+                      3.17.1. Deimhníonn tú go dtuigeann tú nach féidir an fhaisnéis
+                      a iontráladh le linn clárúcháin agus úsáid na Seirbhíse a athrú de réir do rogha féin.
+                      Chun aon fhaisnéis a athrú, ní mór duit teagmháil a dhéanamh leis an bhfoireann tacaíochta.
+                      D’fhéadfadh Goldbet doiciméid KYC a iarraidh dá rogha féin chun aon fhaisnéis a athrú. <br />
+                      3.18. Deimhníonn tú nach n-úsáidfidh tú ár seirbhísí agus tú i ndlínse
+                      a chuireann cosc ar ghealltóireacht ar líne agus/nó cluichí ceasaíne agus/nó cluichí beo. <br />
+                      3.19. Deimhníonn tú freisin: <br />
+                      - Go bhfuil tú ag glacadh páirte sa tSeirbhís thar do cheann féin agus ní thar ceann duine eile; <br />
+                      - Go bhfuil tú freagrach as tuairisciú agus íoc aon chánacha
+                      a bhaineann leat de réir dlí maidir le haon bhuanna a fhaigheann tú uainn; <br />
+                      - Go bhfuil tú freagrach as aon chánacha a d’fhéadfadh a bheith dlite
+                      ar airgeadra crypto a fhaigheann tú trí úsáid na Seirbhíse.`,
+  },
+  lb: {
+    pageTitle: "🎁 Äre Bonus ass prett - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> bis zu <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis Spins op Ären éischten Depot`,
+    heroBtn: "Bonus kréien",
+    paymentsTitle: `Akzeptéiert <span>41</span> Kryptowärungen`,
+    advantege1Title: "VPN-frëndlech",
+    advantege1Text:
+      "Dir kënnt e VPN benotzen fir einfach op eis Plattform zouzegräifen.",
+    advantege2Title: "Keng KYC erfuerderlech",
+    advantege2Text:
+      "Keng KYC-Verifizéierung néideg fir Krypto Dépôten an Austrëtter.",
+    advantege3Title: "25% Referral Bonus",
+    advantege3Text:
+      "Invitéiert Spiller a verdéngt 25% vum Casino sengem Akommes.",
+    footerText:
+      "Goldbet.io ass am Besëtz a gëtt bedriwwen vun Goldkey Technologies Limitada. Registréierungsnummer: 3-102-892568, registréiert Adress: Puntarenas - Pastor Diaz Ave. Puntarenas Province, Jaco, 61101, Costa Rica. Kontaktéiert eis: hello@goldbet.io. Goldbet.io ass lizenzéiert a reguléiert vun der Regierung vun der Autonomer Insel Anjouan, Union of Comoros, a funktionéiert ënner Lizenz Nr. ALSI-012401005-F11. Goldbet.io huet all regulatoresch Ufuerderungen erfëllt an ass legal autoriséiert fir Spilloperatiounen fir all Zorte vu Chance- a Wetten-Spiller ze bedreiwen. Denkt drun datt Spillen süchteg ka sinn. Spillt verantwortlech. Goldbet.io akzeptéiert nëmme Clienten déi 18 Joer oder méi al sinn, am Aklang mat Ärer Juridictioun. Goldkey Technologies Limitada, Registréierungsnummer 3-102-892568, eng Firma organiséiert a bedriwwen ënner de Gesetzer vu Costa Rica, ass de Bezuelungsoperateur vu Goldkey Technologies Limitada a handelt als Bezuelagent am Numm vu Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD ass richteg agebonnen an organiséiert an der Republik Zypern, ënner der Firmenregistréierungsnummer HE456057 ",
+    // | Form
+    signUpTitle: "Umellen",
+    emailPlaceholder: "E-Mail",
+    wrongEmail: "Falsch E-Mail",
+    wrongPassword: "Op d'mannst 6 Zeechen.",
+    passwordPlaceholder: "Passwuert",
+    yourCurrency: "Är Währung",
+    startPlaying: "Ufänken ze spillen",
+    terms: `Ech stëmmen den <span class="text-white underline underline-offset-4">Allgemenge Geschäftsbedéngungen</span> zou`,
+    signUpWithGoogle: "Mat Google umellen",
+    signUpWithFacebook: "Mat Facebook umellen",
+    signUpWithTelegram: "Mat Telegram umellen",
+    // | Terms
+    termsTitle1: `Allgemeng Geschäftsbedéngungen`,
+    termsParagraph1: `Dës Allgemeng Geschäftsbedéngungen an d'Dokumenter déi hei ënnen referenzéiert ginn
+                      (d'"Bedéngungen") gëllen fir d'Benotzung vun der aktueller Websäit (d'
+                      "Websäit") an hir verbonnen oder zougehéierend Servicer
+                      (zesummen, de "Service"). Dir sollt dës Bedéngungen suergfälteg iwwerpréiwen
+                      well se wichteg Informatioun iwwer Är Rechter an Obligatiounen enthalen
+                      betreffend d'Benotzung vun der Websäit a bilden en verbindleche juristesche Kontrakt
+                      tëscht Iech - eisem Client (dem "Client"), an eis (der "Websäit"). Duerch d'Benotzung vun dëser
+                      Websäit an/oder Zougang zum Service, egal ob Dir e
+                      Gaascht sidd oder e registréierte Benotzer mat engem Kont (“Kont”), stëmmt Dir zou
+                      un dës Bedéngungen gebonnen ze sinn, zesumme mat all Ännerungen,
+                      déi vun Zäit zu Zäit verëffentlecht kënne ginn. Wann Dir dës Bedéngungen net akzeptéiert,
+                      sollt Dir den Zougang zum Service an d'Benotzung vun der Websäit ënnerloossen.`,
+    termsTitle2: `1. Allgemeng Bedéngungen`,
+    termsParagraph2: `Mir behalen eis d'Recht vir d'Bedéngungen (inklusiv
+                      all Dokumenter déi hei ënnen referenzéiert a verlinkt sinn) zu all Moment ze änneren an ze aktualiséieren.
+                      Dir sollt dës Säit periodesch besichen fir d'Allgemeng Geschäftsbedéngungen ze iwwerpréiwen.
+                      Ännerunge si verbindlech a ginn direkt a Kraaft nodeems se op dëser Websäit publizéiert goufen.
+                      Wann Dir géint esou Ännerunge sidd, musst Dir direkt ophalen de Service ze benotzen.
+                      Är weider Benotzung vun der Websäit no esou enger Publikatioun bedeit Är Zoustëmmung
+                      un déi geännert Bedéngungen. All Wetten déi net ofgeschloss goufen ier d'Ännerungen a Kraaft trieden
+                      bleiwen ënner den ale Bedéngungen. Wann d'Allgemeng Geschäftsbedéngunge vu Goldbet aktualiséiert ginn,
+                      wäert d'Plattform Iech informéieren an Iech froen Är Zoustëmmung ze confirméieren.`,
+    termsTitle3: `2. Är Obligatiounen`,
+    termsParagraph3: `Dir erkennt un datt zu all Moment wann Dir op d'Websäit zougräift
+                      an de Service benotzt: <br />
+                      3.1. Dir sidd iwwer 18 Joer al, oder am legale Alter fir Spillen oder Gaming Aktivitéiten
+                      no de Gesetzer oder der Juridictioun déi op Iech uwendbar sinn. Mir behalen eis d'Recht vir
+                      Beweis vun Ärem Alter zu all Moment unzefroen. <br />
+                      3.2. Dir hutt déi legal Kapazitéit fir en verbindleche juristesche Kontrakt mat eis anzegoen.
+                      Dir däerft d'Websäit net benotzen wann Dir dës Kapazitéit net hutt. <br />
+                      3.3. Dir sidd Iech bewosst datt den Zougang an d'Benotzung vun der Websäit
+                      an hire Produkter an e puer Länner illegal kënne sinn. Mir kënnen net iwwerpréiwen
+                      ob de Service an all Juridictioun legal ass, dofir sidd Dir responsabel
+                      fir ze bestëmmen ob Är Benotzung konform mat de Gesetzer vun Ärem Land ass an Dir garantéiert eis
+                      datt Spillen net illegal ass wou Dir wunnt. Aus verschiddene juristeschen oder kommerziellen Grënn
+                      erlaabe mir keng Konten aus bestëmmte Juridictiounen (Restricted Jurisdiction). <br />
+                      3.4. Et ass Är Verantwortung ze kontrolléieren ob Spillen legal ass an Ärer Juridictioun. <br />
+                      3.5. Dir sidd den autoriséierte Benotzer vun Ärer Bezuelmethod an all Fongen sinn legal. <br />
+                      3.6. Dir musst all Bezuelungen a guddem Glawen maachen an net probéieren se zréckzedréinen. <br />
+                      3.7. Wann Dir wetten, kënnt Dir Suen verléieren an Dir sidd voll responsabel dofir. <br />
+                      3.8. Dir däerft keng illegal Informatioun benotzen fir Wetten. <br />
+                      3.9. Dir handelt nëmmen fir Iech selwer a net fir aner Parteien. <br />
+                      3.10. Dir däerft de Service net manipuléieren oder schueden. <br />
+                      3.11. Dir musst ëmmer a guddem Glawen handelen. <br />
+                      3.12. Dir sidd net en Affiliate vum Programm. <br />
+                      3.13. Dir gitt ëmmer korrekt Donnéeën un. <br />
+                      3.14. Dir akzeptéiert d'Volatilitéit vum Krypto-Maart. <br />
+                      3.15. Dir sidd mental kompetent a sidd net spielsüchteg. <br />
+                      3.16. Dir benotzt keng Drëtt-Partei Software oder exploitéiert Bugs. <br />
+                      3.17. All Informatioun déi Dir gitt ass richteg a komplett. <br />
+                      3.17.1. Ännerunge vun Donnéeën erfuerderen Support-Kontakt. <br />
+                      3.18. Dir benotzt de Service net an verbuedene Juridictiounen. <br />
+                      3.19. Dir garantéiert och datt: <br />
+                      - Dir handelt fir Iech selwer; <br />
+                      - Dir sidd responsabel fir Steieren; <br />
+                      - Dir sidd responsabel fir Steieren op Krypto-Gewënn.`,
+  },
+  mt: {
+    pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> sa <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins fuq l-ewwel depożitu tiegħek`,
+    heroBtn: "ikseb bonus",
+    paymentsTitle: `Aċċettati <span>41</span> Kriptomuniti`,
+    advantege1Title: "Favur VPN",
+    advantege1Text:
+      "Tista' tuża VPN biex taċċessa l-pjattaforma tagħna faċilment.",
+    advantege2Title: "Ebda KYC meħtieġ",
+    advantege2Text:
+      "Ma hemmx bżonn verifika KYC għal depożiti u rtirar tal-kripto.",
+    advantege3Title: "25% Bonus ta' Referral",
+    advantege3Text: "Stieden plejers u aqla' 25% mid-dħul tal-casino.",
+    footerText:
+      "Goldbet.io hija proprjetà u hija operata minn Goldkey Technologies Limitada. Numru ta’ reġistrazzjoni: 3-102-892568, indirizz reġistrat: Puntarenas - Pastor Diaz ave. Puntarenas Province, Jaco, 61101, Costa Rica. Ikkuntattjana fuq hello@goldbet.io. Goldbet.io hija liċenzjata u regolata mill-Gvern tal-Gżira Awtonoma ta’ Anjouan, Union of Comoros u topera taħt Liċenzja Nru ALSI-012401005-F11. Goldbet.io għaddiet minn kull konformità regolatorja u hija awtorizzata legalment biex twettaq operazzjonijiet ta’ gaming għal kull tip ta’ logħob tal-ażżard u mħatri. Ftakar li l-logħob tal-ażżard jista’ jkun vizzju. Ilgħab b’mod responsabbli. Goldbet.io taċċetta biss klijenti ta’ 18-il sena jew aktar skont il-ġurisdizzjoni tiegħek. Goldkey Technologies Limitada, numru ta’ reġistrazzjoni 3-102-892568, kumpanija organizzata u operata taħt il-liġi tal-Costa Rica, hija l-operatur tal-ħlasijiet ta’ Goldkey Technologies Limitada, li taġixxi bħala aġent ta’ ħlas f’isem Goldkey Technologies Limitada. GOLD SYNG INC.TECH LTD hija inkorporata u organizzata kif suppost fir-Repubblika ta’ Ċipru, taħt in-Numru ta’ Reġistrazzjoni tal-Kumpanija HE456057 ",
+    // | Form
+    signUpTitle: "Irreġistra",
+    emailPlaceholder: "E-mail",
+    wrongEmail: "E-mail ħażina",
+    wrongPassword: "Mill-inqas 6 karattri.",
+    passwordPlaceholder: "Password",
+    yourCurrency: "Il-munita tiegħek",
+    startPlaying: "Ibda tilgħab",
+    terms: `Naqbel mat-<span class="text-white underline underline-offset-4">Termini u Kundizzjonijiet</span>`,
+    signUpWithGoogle: "Irreġistra ma' Google",
+    signUpWithFacebook: "Irreġistra ma' Facebook",
+    signUpWithTelegram: "Irreġistra ma' Telegram",
+    // | Terms
+    termsTitle1: `Termini u Kundizzjonijiet`,
+    termsParagraph1: `Dawn it-termini u kundizzjonijiet u d-dokumenti msemmija hawn taħt
+                      (it-"Termini") japplikaw għall-użu tal-websajt attwali (il-
+                      "Websajt") u s-servizzi relatati jew konnessi magħha
+                      (kollettivament, is-"Servizz"). Għandek tirrevedi dawn it-Termini b'attenzjoni
+                      peress li fihom informazzjoni importanti dwar id-drittijiet u l-obbligi tiegħek
+                      fir-rigward tal-użu tal-Websajt u jiffurmaw ftehim legali vinkolanti bejn
+                      int - il-klijent tagħna (il-"Klijent"), u aħna (il-"Websajt"). Bl-użu ta’ din il-
+                      Websajt u/jew billi taċċessa s-Servizz, kemm jekk inti viżitatur jew utent reġistrat b’kont (“Kont”),
+                      taqbel li tkun marbut b’dawn it-Termini, flimkien ma’ kwalunkwe emendi
+                      li jistgħu jiġu ppubblikati minn żmien għal żmien. Jekk ma taċċettax dawn it-Termini,
+                      għandek toqgħod lura milli taċċessa s-Servizz u tuża l-Websajt.`,
+    termsTitle2: `1. Termini Ġenerali`,
+    termsParagraph2: `Aħna nirriżervaw id-dritt li nirrevedu u nimmodifikaw it-Termini (inklużi
+                      kwalunkwe dokumenti msemmija u marbuta hawn taħt) fi kwalunkwe ħin. Għandek iżżur din il-paġna
+                      perjodikament biex tirrevedi t-Termini u Kundizzjonijiet. L-emendi jkunu vinkolanti u effettivi
+                      immedjatament wara li jiġu ppubblikati fuq din il-Websajt. Jekk toġġezzjona għal tali bidliet,
+                      trid immedjatament tieqaf tuża s-Servizz. L-użu kontinwu tiegħek tal-Websajt wara tali pubblikazzjoni
+                      jindika l-qbil tiegħek li tkun marbut bit-Termini kif emendati. Kull imħatra li ma tkunx ġiet solvuta
+                      qabel ma jidħlu fis-seħħ it-Termini mibdula tibqa’ soġġetta għat-Termini preċedenti. Jekk it-Termini u Kundizzjonijiet ta’ Goldbet jiġu aġġornati,
+                      il-pjattaforma tinnotifikak u titlobek tikkonferma l-kunsens tiegħek.`,
+    termsTitle3: `2. L-Obbligi Tiegħek`,
+    termsParagraph3: `Inti tirrikonoxxi li f'kull ħin meta taċċessa l-Websajt
+                      u tuża s-Servizz: <br />
+                      3.1. Inti għandek aktar minn 18-il sena, jew l-età legali li fiha l-logħob tal-ażżard jew attivitajiet ta’ gaming huma permessi taħt il-liġi jew il-ġurisdizzjoni li tapplika għalik. Aħna nirriżervaw id-dritt li nitolbu prova tal-età tiegħek fi kwalunkwe ħin. <br />
+                      3.2. Inti għandek il-kapaċità legali u tista’ tidħol f’ftehim legali vinkolanti magħna. M'għandekx taċċessa l-Websajt jew tuża s-Servizz jekk m'għandekx din il-kapaċità. <br />
+                      3.3. Inti konxju li d-dritt li taċċessa u tuża l-Websajt u kwalunkwe prodotti offruti hemmhekk jista’ jitqies illegali f’ċerti pajjiżi. Aħna ma nistgħux nivverifikaw il-legalità tas-servizz f’kull ġurisdizzjoni, għalhekk inti responsabbli biex tiddetermina jekk l-aċċess u l-użu tiegħek humiex konformi mal-liġijiet applikabbli f’pajjiżek u inti tiggarantixxi lilna li l-logħob tal-ażżard mhuwiex illegali fit-territorju fejn tgħix. Għal diversi raġunijiet legali jew kummerċjali, ma nippermettux li jinfetħu jew jintużaw kontijiet minn klijenti residenti f’ċerti ġurisdizzjonijiet, inklużi iżda mhux limitati għal: Afghanistan, Algeria, Antigua & Barbuda, Australia, Belarus, Bahrain, Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte d'Ivoire, Croatia, Cuba, Czech Republic, Democratic People’s Republic of Korea (North Korea), Democratic Republic of the Congo, Denmark, Estonia, France, Greece, Guinea-Bissau, Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait, Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands, Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint Eustatius, and Saba, Aruba), Norway, Oman, Palestine, Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia, Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab Republic, Sudan, Trinidad and Tobago, Turkey, Ukraine, United Kingdom, Germany, Union of Comoros, United Arab Emirates, United States (and its dependencies, military bases and territories i.e. U.S. Minor Outlying Islands, U.S. Virgin Islands), Vanuatu, Yemen, Zimbabwe. jew ġurisdizzjonijiet oħra ristretti ("Restricted Jurisdiction") kif irrappurtati minna minn żmien għal żmien. Bl-użu tal-Websajt inti tikkonferma li m'intix residenti f’ġurisdizzjoni ristretta. <br />
+                      3.4. Meta tipprova tiftaħ kont jew tuża l-Websajt, hija r-responsabbiltà tal-plejer li jivverifika jekk il-logħob tal-ażżard huwiex legali f’dik il-ġurisdizzjoni partikolari. <br />
+                      3.5. Inti l-utent awtorizzat tal-metodu ta’ ħlas li tuża u l-fondi kollha fuq il-kont tiegħek użati fis-Servizzi huma legali. <br />
+                      3.6. Trid tagħmel il-ħlasijiet kollha lilna b’rieda tajba u ma tippruvax tirreverti ħlas jew tieħu xi azzjoni li twassal biex tali ħlas jiġi rrevertit minn parti terza. <br />
+                      3.7. Meta tagħmel imħatri tista’ titlef xi ftit jew il-flus kollha depożitati fis-Servizz skont dawn it-Termini u tkun kompletament responsabbli għal dak it-telf. <br />
+                      3.8. Meta tagħmel imħatri m’għandekx tuża informazzjoni miksuba bi ksur ta’ kwalunkwe liġi fis-seħħ fil-pajjiż fejn kont meta tqiegħdet l-imħatra. <br />
+                      3.9. Inti m’intix qed taġixxi f’isem parti oħra jew għal skopijiet kummerċjali, iżda biss f’ismek bħala individwu privat. <br />
+                      3.10. M’għandekx tipprova timmanipula xi suq jew element tas-Servizz b’mod ħażin jew b’mod li jaffettwa ħażin l-integrità tas-Servizz jew tagħna. <br />
+                      3.11. Għandek ġeneralment taġixxi b’rieda tajba fir-rigward tal-użu tas-Servizz f’kull ħin u għall-imħatri kollha. <br />
+                      3.12. Inti, jew jekk applikabbli, l-impjegati tiegħek, min iħaddmek, aġenti jew membri tal-familja tiegħek, mhumiex irreġistrati bħala Affiljat fil-programm tagħna. <br />
+                      3.13. Waqt li tuża Goldbet fi kwalunkwe ħin inti taqbel li tipprovdi lilna biss dejta vera, reali u oġġettiva bħala default u meta nitolbuha. <br />
+                      3.14. Inti tifhem il-volatilità tas-suq tal-kripto u taċċetta l-possibbiltà li l-prezz tal-munita/i tiegħek jinbidel waqt li qed tistenna l-irtirar jew waqt li l-irtirar qed jiġi pproċessat mid-Dipartiment tar-Riskju tagħna. <br />
+                      3.15. Inti persuna mentalment kompetenti u ma tbati minn ebda vizzju tal-logħob tal-ażżard. F’każ li persuna b’din il-problema tidħol fis-Sit - ir-responsabbiltà tkun fuq in-naħa tagħha biss. <br />
+                      3.16. Taqbel li ma tużax ebda softwer ta’ parti terza fi kwalunkwe subdiviżjoni ta’ Goldbet u lanqas ma tabbuża minn xi bugs jew funzjonijiet tal-pjattaforma. <br />
+                      3.17. Tiggarantixxi li l-informazzjoni kollha li tipprovdi lilna mill-mument tar-reġistrazzjoni u matul it-tul ta’ dan il-ftehim hija vera, kompluta u korretta u li għandek tinnotifikana immedjatament dwar kwalunkwe bidla. <br />
+                      3.17.1. Tikkonferma li tifhem li l-informazzjoni li tiddaħħal fir-reġistrazzjoni u waqt l-użu tas-Servizz ma tistax tinbidel minn deċiżjoni tiegħek. Biex tibdel kwalunkwe informazzjoni, għandek tikkuntattja t-tim ta’ appoġġ. Għall-bidla ta’ kwalunkwe informazzjoni, Goldbet tista’ titlob dokumenti għal KYC skont id-deċiżjoni tagħha. <br />
+                      3.18. Tiggarantixxi li ma tużax is-servizzi tagħna waqt li tkun f’ġurisdizzjoni li tipprojbixxi mħatri online u/jew logħob tal-casino u/jew logħob live. <br />
+                      3.19. Tiggarantixxi wkoll li: <br />
+                      - Inti tipparteċipa fis-Servizzi f’ismek u mhux f’isem xi ħadd ieħor; <br />
+                      - Inti responsabbli biss biex tirrapporta u tħallas kwalunkwe taxxa applikabbli fuq kwalunkwe rebħ li tirċievi minna; <br />
+                      - Inti responsabbli biss għal kwalunkwe taxxa li tista’ tkun dovuta fuq kriptomuniti mogħtija lilek permezz tal-użu tas-Servizz.`,
   },
 };

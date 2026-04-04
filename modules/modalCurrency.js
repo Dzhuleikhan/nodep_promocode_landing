@@ -113,60 +113,74 @@ export const settingBonusOnCurrencyChange = (
   });
 };
 
+const LI_CLASS =
+  "grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-white/20 bg-white p-3 text-base font-bold transition-all hover:bg-[#c2cefb] [&.active]:bg-[#c2cefb]";
+
+function buildCurrencyList(ul) {
+  ul.innerHTML = countryCurrencyData
+    .map(
+      ({ countryCurrency, countryCurrencyFullName, countryCurrencyIcon, countryCurrencySymbol }) => `
+        <li class="${LI_CLASS}">
+          <img class="currency-item-icon" width="24" height="24" src="${countryCurrencyIcon}" alt="${countryCurrency}" />
+          <span class="currency-item-name">${countryCurrencyFullName}</span>
+          <div>
+            <span class="currency-item-symbol">${countryCurrencySymbol}</span>
+            |
+            <span class="currency-item-abbr">${countryCurrency}</span>
+          </div>
+        </li>
+      `,
+    )
+    .join("");
+}
+
 const formCurrency = document.querySelectorAll(".form-currency");
 
 formCurrency.forEach((cur) => {
-  if (cur) {
-    const currencyDropdownBtn = cur.querySelector(".form-currency-btn");
-    const currencyDropdownList = cur.querySelector(".form-currency-dropdown");
+  if (!cur) return;
 
-    function hideDropdown() {
-      currencyDropdownBtn.classList.remove("active");
-      currencyDropdownList.classList.remove("active");
-    }
+  const currencyDropdownBtn = cur.querySelector(".form-currency-btn");
+  const currencyDropdownList = cur.querySelector(".form-currency-dropdown");
+  const ul = currencyDropdownList.querySelector("ul");
 
-    currencyDropdownBtn.addEventListener("click", () => {
-      currencyDropdownBtn.classList.toggle("active");
-      currencyDropdownList.classList.toggle("active");
-    });
+  buildCurrencyList(ul);
 
-    const currencyListItems = currencyDropdownList.querySelectorAll("li");
-
-    currencyListItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        currencyListItems.forEach((el) => {
-          el.classList.remove("active");
-        });
-        item.classList.add("active");
-        hideDropdown();
-
-        // Taking currency value from item
-        let curIcon = item.querySelector(".currency-item-icon").src;
-        let curName = item.querySelector(".currency-item-name").textContent;
-        let curAbbr = item.querySelector(".currency-item-abbr").textContent;
-
-        // Update all currency inputs on the page
-        setCurrency(curAbbr, curName, curIcon);
-
-        // Update local storage
-        const currencyData = {
-          abbr: curAbbr,
-          name: curName,
-          icon: curIcon,
-        };
-        localStorage.setItem("currencyData", JSON.stringify(currencyData));
-        formData.currency = curAbbr;
-
-        settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
-      });
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!cur.contains(event.target)) {
-        hideDropdown();
-      }
-    });
+  function hideDropdown() {
+    currencyDropdownBtn.classList.remove("active");
+    currencyDropdownList.classList.remove("active");
   }
+
+  currencyDropdownBtn.addEventListener("click", () => {
+    currencyDropdownBtn.classList.toggle("active");
+    currencyDropdownList.classList.toggle("active");
+  });
+
+  ul.addEventListener("click", (e) => {
+    const item = e.target.closest("li");
+    if (!item) return;
+
+    ul.querySelectorAll("li").forEach((el) => el.classList.remove("active"));
+    item.classList.add("active");
+    hideDropdown();
+
+    const curIcon = item.querySelector(".currency-item-icon").src;
+    const curName = item.querySelector(".currency-item-name").textContent;
+    const curAbbr = item.querySelector(".currency-item-abbr").textContent;
+
+    setCurrency(curAbbr, curName, curIcon);
+
+    const currencyData = { abbr: curAbbr, name: curName, icon: curIcon };
+    localStorage.setItem("currencyData", JSON.stringify(currencyData));
+    formData.currency = curAbbr;
+
+    settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!cur.contains(event.target)) {
+      hideDropdown();
+    }
+  });
 });
 
 export const checkTir1CurrencyMatch = (currency, bonus) => {

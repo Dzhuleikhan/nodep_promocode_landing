@@ -326,6 +326,11 @@ body {
   top: 3px;
 }
 
+[dir="rtl"] .checkbox-content::before {
+  left: auto;
+  right: 0;
+}
+
 .form-currency-dropdown {
   max-height: 225px;
   overflow-y: auto;
