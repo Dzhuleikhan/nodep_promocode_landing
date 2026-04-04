@@ -1447,7 +1447,7 @@ export const translations = {
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
-    heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>The Dog House</span>`,
+    heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим першим депозитом`,
     heroBtn: "отримати бонус",
 
@@ -1520,7 +1520,7 @@ export const translations = {
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>the dog house</span>`,
+    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer dig",
@@ -1582,7 +1582,7 @@ export const translations = {
   },
   sw: {
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
-    heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> spins za bure</span> <br/> kwenye <span>the dog house</span>`,
+    heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> spins za bure</span> <br/> kwenye <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins za Bure kwa amana yako ya kwanza`,
     heroBtn: "pata bonasi",
     slideStep1Title: "Jisajili",
@@ -1644,7 +1644,7 @@ export const translations = {
   },
   rw: {
     pageTitle: "🎁 Inyongera yawe iri ready - Goldbet",
-    heroTitle: `saba inyongera yawe <br/> <span><i class="actual-spin-amount">100</i> spins z'ubuntu</span> <br/> muri <span>the dog house</span>`,
+    heroTitle: `saba inyongera yawe <br/> <span><i class="actual-spin-amount">100</i> spins z'ubuntu</span> <br/> muri <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins z'Ubuntu kuri depositi yawe ya mbere`,
     heroBtn: "fata inyongera",
     slideStep1Title: "Iyandikishe",
@@ -1707,7 +1707,7 @@ export const translations = {
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
-    heroTitle: `اطلب مكافأتك <br/> <span><i class="actual-spin-amount">100</i> لفة مجانية</span> <br/> في <span>the dog house</span>`,
+    heroTitle: `اطلب مكافأتك <br/> <span><i class="actual-spin-amount">100</i> لفة مجانية</span> <br/> في <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> لفات مجانية مع إيداعك الأول`,
     heroBtn: "احصل على المكافأة",
     slideStep1Title: "سجّل",
@@ -1769,7 +1769,7 @@ export const translations = {
   },
   zh: {
     pageTitle: "🎁 您的奖励已准备好 - Goldbet",
-    heroTitle: `领取您的奖励 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>the dog house</span>`,
+    heroTitle: `领取您的奖励 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> 高达 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> 次免费旋转，首存即可获得`,
     heroBtn: "领取奖励",
     slideStep1Title: "注册",
@@ -1830,7 +1830,7 @@ export const translations = {
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
-    heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> casadh saor in aisce</span> <br/> i <span>the dog house</span>`,
+    heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> casadh saor in aisce</span> <br/> i <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> casadh saor in aisce le do chéad taisce`,
     heroBtn: "faigh bónas",
     slideStep1Title: "Cláraigh",
@@ -1894,7 +1894,7 @@ export const translations = {
   },
   lb: {
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
-    heroTitle: `fuer däi Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> am <span>the dog house</span>`,
+    heroTitle: `fuer däi Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> am <span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat denger éischter Depositioun`,
     heroBtn: "Bonus kréien",
     slideStep1Title: "Registréieren",
@@ -1956,7 +1956,7 @@ export const translations = {
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
-    heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f'<span>the dog house</span>`,
+    heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f'<span>bison storm</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> spins b'xejn mal-ewwel depożitu tiegħek`,
     heroBtn: "ikseb bonus",
     slideStep1Title: "Irreġistra",
