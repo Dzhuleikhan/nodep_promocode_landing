@@ -247,6 +247,12 @@
   overflow-y: auto;
 }
 
+.two-step-form .iti,
+.two-step-form .iti * {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 .two-step-form .iti {
   width: 100%;
   height: auto;
