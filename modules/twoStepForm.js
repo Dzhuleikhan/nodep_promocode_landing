@@ -819,11 +819,6 @@ if (twoStepFormFourthStep) {
     twoStepStateList.classList.toggle("hidden");
   });
 
-  // Phone input only numbers
-  twoStepPhoneInput.addEventListener("input", function (e) {
-    e.target.value = e.target.value.replace(/[^0-9]/g, "");
-  });
-
   submitBtn.disabled = true;
 
   const inputValidations1 = [
