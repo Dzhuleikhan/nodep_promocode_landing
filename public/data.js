@@ -748,6 +748,9 @@ export const SupportedLanguages = [
   "sv",
   "sk",
   "ar",
+  "ga",
+  "lb",
+  "mt",
 ];
 
 export const nodepBonuses = [
@@ -889,6 +892,10 @@ export const languageOptions = {
   sw: { name: "SW", flag: "ke" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
+  zh: { name: "ZH", flag: "cn" },
+  ga: { name: "GA", flag: "ie" },
+  lb: { name: "LB", flag: "lu" },
+  mt: { name: "MT", flag: "mt" },
 };
 
 export const bonusSumAndWager = [
