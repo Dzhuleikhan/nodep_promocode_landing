@@ -247,6 +247,12 @@
   overflow-y: auto;
 }
 
+.two-step-form .iti,
+.two-step-form .iti * {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 .two-step-form .iti {
   width: 100%;
   height: auto;
@@ -419,19 +425,17 @@
   left: auto;
 }
 
+[dir="rtl"] .two-step-general-input:focus+.two-step-email-label,
+[dir="rtl"] .two-step-general-input:focus+.two-step-password-label,
+[dir="rtl"] .two-step-email-label.active,
+[dir="rtl"] .two-step-password-label.active {
+  right: 45px;
+  left: auto;
+}
+
 [dir="rtl"] .two-step-required-label::before {
   right: auto;
   left: -10px;
-}
-
-[dir="rtl"] .iti__dropdown-content {
-  right: 0;
-  direction: rtl;
-}
-
-[dir="rtl"] .two-step-form .iti__tel-input {
-  padding-right: 100px !important;
-  text-align: right;
 }
 
 [dir="rtl"] .two-step-bonus-checkbox-circle::before,

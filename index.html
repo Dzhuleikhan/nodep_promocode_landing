@@ -704,7 +704,8 @@
                     />
                   </svg>
                   <input
-                    class="two-step-general-input two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
+                    dir="ltr"
+                    class="two-step-general-input rtl:text-right two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="email"
                   />
                   <label
@@ -730,7 +731,8 @@
                     />
                   </svg>
                   <input
-                    class="two-step-general-input two-step-password-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
+                    dir="ltr"
+                    class="two-step-general-input rtl:text-right two-step-password-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="password"
                   />
                   <label
@@ -879,7 +881,8 @@
                       >Select Birthday Date</label
                     >
                     <input
-                      class="two-step-birthday-input w-full bg-transparent font-bold tracking-[-0.02em] text-[#755eeb] outline-none placeholder:font-bold placeholder:text-[#858585]"
+                      dir="ltr"
+                      class="two-step-birthday-input rtl:text-right w-full bg-transparent font-bold tracking-[-0.02em] text-[#755eeb] outline-none placeholder:font-bold placeholder:text-[#858585]"
                       type="tel"
                       placeholder="dd.mm.yyyy"
                     />
@@ -1803,14 +1806,16 @@
                 </div>
                 <!-- Phone -->
                 <div
+                  dir="ltr"
                   class="two-step-group two-step-group-phone relative grid h-[52px] flex-col gap-[5px] rounded-2xl bg-white px-4 py-1"
                 >
                   <span
                     data-translate="phoneNumberPlaceholder"
-                    class="block text-xs font-bold leading-none rtl:ml-auto tracking-tight text-[#585858]"
+                    class="block text-xs font-bold leading-none tracking-tight text-[#585858] rtl:text-right"
                     >Phone Number</span
                   >
                   <input
+                    dir="ltr"
                     class="two-step-phone-input w-full bg-transparent text-lg font-bold tracking-tight text-[#755EEB] outline-none"
                     type="tel"
                     name="phone"
