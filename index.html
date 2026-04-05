@@ -118,7 +118,7 @@
               </div>
             </div>
             <img
-              class="absolute pointer-events-none z-[10] hero-main-img w-full max-w-[366px] right-[100px] bottom-[30px] max-[1100px]:right-[30px] max-[992px]:right-auto max-[992px]:bottom-0 max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[576px]:relative"
+              class="absolute pointer-events-none min-[992px]:rtl:left-[100px] min-[992px]:rtl:right-auto z-[10] hero-main-img w-full max-w-[366px] right-[100px] bottom-[30px] max-[1100px]:right-[30px] max-[992px]:right-auto max-[992px]:bottom-0 max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[576px]:relative"
               width="366"
               height="560"
               src="https://3344112-img.b-cdn.net/graphic/landings/icefishing/ice-girl.webp"
@@ -148,7 +148,7 @@
           <div
             class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12"
           >
-            <div class="step-slider">
+            <div dir="ltr" class="step-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
@@ -332,7 +332,7 @@
               class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-white/5 max-[576px]:h-10 max-[576px]:w-10"
             >
               <svg
-                class="pointer-events-none"
+                class="pointer-events-none rtl:rotate-180"
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
@@ -615,6 +615,7 @@
                   <span class="h-6 w-6"></span>
                   <p data-translate="continueBtn">Continue</p>
                   <svg
+                    class="rtl:rotate-180"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -702,12 +703,13 @@
                     />
                   </svg>
                   <input
-                    class="two-step-general-input two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
+                    dir="ltr"
+                    class="two-step-general-input rtl:text-right two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="email"
                   />
                   <label
                     data-translate="emailPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-email-label pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-email-label rtl:right-[45px] rtl:left-auto pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter E-mail</label
                   >
                 </div>
@@ -728,12 +730,13 @@
                     />
                   </svg>
                   <input
-                    class="two-step-general-input two-step-password-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
+                    dir="ltr"
+                    class="two-step-general-input rtl:text-right two-step-password-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="password"
                   />
                   <label
                     data-translate="passwordPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-password-label pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-password-label pointer-events-none absolute left-[45px] rtl:left-auto rtl:right-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter Password</label
                   >
                   <div class="two-step-password-show-btn cursor-pointer">
@@ -752,6 +755,7 @@
                   <span class="h-6 w-6"></span>
                   <p data-translate="continueBtn">Continue</p>
                   <svg
+                    class="rtl:rotate-180"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -832,7 +836,7 @@
                   />
                   <label
                     data-translate="namePlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-first-name-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-first-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter Name</label
                   >
                 </div>
@@ -846,7 +850,7 @@
                   />
                   <label
                     data-translate="lastNamePlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-last-name-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-last-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter Last Name</label
                   >
                 </div>
@@ -874,7 +878,8 @@
                       >Select Birthday Date</label
                     >
                     <input
-                      class="two-step-birthday-input w-full bg-transparent font-bold tracking-[-0.02em] text-[#755eeb] outline-none placeholder:font-bold placeholder:text-[#858585]"
+                      dir="ltr"
+                      class="two-step-birthday-input rtl:text-right w-full bg-transparent font-bold tracking-[-0.02em] text-[#755eeb] outline-none placeholder:font-bold placeholder:text-[#858585]"
                       type="tel"
                       placeholder="dd.mm.yyyy"
                     />
@@ -1019,6 +1024,7 @@
                   <span class="h-6 w-6"></span>
                   <p data-translate="finalStepBtn">Final Step</p>
                   <svg
+                    class="rtl:rotate-180"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -1253,7 +1259,7 @@
                   />
                   <label
                     data-translate="addressPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-address-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-address-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter Address</label
                   >
                 </div>
@@ -1267,7 +1273,7 @@
                   />
                   <label
                     data-translate="cityPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-city-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-city-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter City</label
                   >
                 </div>
@@ -1302,7 +1308,7 @@
                   </div>
                   <label
                     data-translate="statePlaceholder"
-                    class="two-step-state-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-state-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Choose Province</label
                   >
                   <ul
@@ -1318,7 +1324,7 @@
                     type="text"
                   />
                   <label
-                    class="two-step-general-label two-step-required-label two-step-zipcode-label pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-zipcode-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >ZIP Code</label
                   >
                 </div>

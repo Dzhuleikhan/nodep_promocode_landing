@@ -4,6 +4,7 @@ import { getSupportedLanguage } from "./geoLocation";
 import { twoStepFormData } from "./twoStepForm";
 // import { settingNodepBonus } from "./modalCurrency";
 import { settingInitialBonusValue } from "./twoStepForm";
+import { updateTelInputLanguage } from "./itiTelInput";
 
 export const languageOptions = [
   { code: "en", name: "EN", flag: "en" },
@@ -14,18 +15,27 @@ export const languageOptions = [
   { code: "ro", name: "RO", flag: "ro" },
   { code: "hu", name: "HU", flag: "hu" },
   { code: "pl", name: "PL", flag: "pl" },
-  { code: "cs", name: "CZ", flag: "cz" },
-  { code: "sl", name: "SI", flag: "si" },
+  { code: "cs", name: "CS", flag: "cz" },
+  { code: "sl", name: "SL", flag: "si" },
   { code: "nb", name: "NO", flag: "no" },
-  { code: "sv", name: "SE", flag: "se" },
+  { code: "sv", name: "SV", flag: "se" },
   { code: "sk", name: "SK", flag: "sk" },
-  { code: "el", name: "GR", flag: "gr" },
+  { code: "el", name: "EL", flag: "gr" },
   { code: "de", name: "DE", flag: "de" },
   { code: "it", name: "IT", flag: "it" },
-  { code: "et", name: "EE", flag: "ee" },
+  { code: "et", name: "ET", flag: "ee" },
   { code: "lv", name: "LV", flag: "lv" },
   { code: "lt", name: "LT", flag: "lt" },
   { code: "hr", name: "HR", flag: "hr" },
+  { code: "bg", name: "BG", flag: "bg" },
+  { code: "da", name: "DA", flag: "dk" },
+  { code: "nl", name: "NL", flag: "nl" },
+  { code: "fi", name: "FI", flag: "fi" },
+  { code: "uk", name: "UK", flag: "ua" },
+  { code: "zh", name: "ZH", flag: "cn" },
+  { code: "ga", name: "GA", flag: "ie" },
+  { code: "lb", name: "LB", flag: "lu" },
+  { code: "mt", name: "MT", flag: "mt" },
   { code: "sw", name: "SW", flag: "tz" },
   { code: "rw", name: "RW", flag: "rw" },
   { code: "ar", name: "AR", flag: "sa" },
@@ -33,6 +43,7 @@ export const languageOptions = [
 
 const countryLangMap = {
   EN: "en",
+  GB: "en",
   FR: "fr",
   RO: "ro",
   HU: "hu",
@@ -47,11 +58,22 @@ const countryLangMap = {
   ES: "es",
   PT: "pt",
   DE: "de",
+  AT: "de",
   IT: "it",
   EE: "et",
   LV: "lv",
   LT: "lt",
   HR: "hr",
+  BG: "bg",
+  DK: "da",
+  NL: "nl",
+  BE: "nl",
+  FI: "fi",
+  UA: "uk",
+  CN: "zh",
+  IE: "ga",
+  LU: "lb",
+  MT: "mt",
   TZ: "sw",
   KE: "sw",
   RW: "rw",
@@ -68,8 +90,11 @@ const countryLangMap = {
   BH: "ar",
 };
 
+const html = document.querySelector("html");
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
+
+const RTL_LANGUAGES = ["ar"];
 
 let lang;
 
@@ -125,6 +150,16 @@ function changeLanguage(lang) {
   updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
+
+  if (RTL_LANGUAGES.includes(lang)) {
+    html.setAttribute("dir", "rtl");
+    document.body.classList.add("is-rtl");
+  } else {
+    html.setAttribute("dir", "ltr");
+    document.body.classList.remove("is-rtl");
+  }
+
+  updateTelInputLanguage(lang);
 }
 
 function setActiveLanguageBtn(currentLang) {
@@ -148,7 +183,7 @@ function updateButtonText(lang) {
     `https://3344112-img.b-cdn.net/graphic/flags/flag-${flagCode}.svg`,
   );
   headerLangName.innerHTML = option ? option.name : lang;
-  document.querySelector("html").setAttribute("lang", lang);
+  html.setAttribute("lang", lang);
 }
 
 async function determineLanguage() {
