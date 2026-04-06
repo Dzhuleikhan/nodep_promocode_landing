@@ -3,7 +3,7 @@ name: Deploy to VPS Servers
 on:
   push:
     branches:
-      - 100fs_gates_of_olympus
+      - 100fs_gates_of_olympus_2_revshare
 
 jobs:
   deploy:
@@ -16,6 +16,11 @@ jobs:
           - goldbet.wiki
           - promogb.com
           - goldbet.website
+          - goldcvr88.xyz
+          - goldimh6b.xyz
+          - golds3s22.xyz
+          - goldv5s3w.xyz
+          - goldxe892.xyz
           - goldbet.click
           - goldbetio.com
           - goldbet.sbs
@@ -25,11 +30,6 @@ jobs:
           - goldbet.cfd
           - goldbet.cyou
           - goldbet.fun
-          - goldcvr88.xyz
-          - goldimh6b.xyz
-          - golds3s22.xyz
-          - goldv5s3w.xyz
-          - goldxe892.xyz
         vps:
           [
             PRIMA,
@@ -65,4 +65,4 @@ jobs:
           username: ${{ secrets[format('FTP_USER_{0}', matrix.vps)] }}
           password: ${{ secrets[format('FTP_PASSWORD_{0}', matrix.vps)] }}
           local-dir: ./dist/
-          server-dir: /www/${{ matrix.site }}/freespins/gatesofolympus/
+          server-dir: /www/${{ matrix.site }}/freespins/gatesofolympus/20-revshare/
