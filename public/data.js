@@ -477,7 +477,7 @@ export const countryCurrencyData = [
     spins: "200FS",
   },
   {
-    countries: ["CH"],
+    countries: ["CH", "LI"],
     countryCurrency: "CHF",
     countryCurrencySymbol: "CHF",
     countryCurrencyFullName: "Swiss Franc",
