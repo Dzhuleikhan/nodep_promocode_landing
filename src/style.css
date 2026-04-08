@@ -3,7 +3,7 @@
 [data-translate],
 .header-lang-btn,
 .header-country-flag {
-  filter: blur(20px);
+  filter: blur(10px);
   transition: filter 0.3s ease;
 }
 
