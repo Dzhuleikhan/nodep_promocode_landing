@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+[data-translate] {
+  filter: blur(6px);
+  transition: filter 0.3s ease;
+}
+body.geo-ready [data-translate] {
+  filter: none;
+}
+
 @font-face {
   font-family: 'Gilroy', sans-serif;
   src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
