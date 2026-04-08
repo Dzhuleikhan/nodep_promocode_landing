@@ -23,6 +23,7 @@ export async function getLocation() {
     return fallback;
   }
 }
+console.log("-");
 
 export let geoData = await getLocation();
 
