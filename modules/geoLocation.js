@@ -24,8 +24,7 @@ export async function getLocation() {
   }
 }
 
-const fallback = { countryCode: "PL", currency: { code: "PLN" } };
-export let geoData = fallback;
+export let geoData = await getLocation();
 
 export const getSupportedLanguage = (countryCode) => {
   if (countryCode in countryLanguagesMap) {
@@ -39,12 +38,10 @@ export const getSupportedLanguage = (countryCode) => {
   return "en";
 };
 
-if (!localStorage.getItem("preferredLanguage")) {
-  localStorage.setItem(
-    "preferredLanguage",
-    getSupportedLanguage(fallback.countryCode),
-  );
-}
+localStorage.setItem(
+  "preferredLanguage",
+  getSupportedLanguage(geoData.countryCode),
+);
 export const language = localStorage.getItem("preferredLanguage");
 
 function setHeaderFlag(countryCode) {
@@ -53,20 +50,6 @@ function setHeaderFlag(countryCode) {
   headerFlagImage.classList.remove("hidden");
 }
 setHeaderFlag(geoData.countryCode);
-
-getLocation()
-  .then((data) => {
-    geoData = data;
-    localStorage.setItem(
-      "preferredLanguage",
-      getSupportedLanguage(data.countryCode),
-    );
-    setHeaderFlag(data.countryCode);
-    window.dispatchEvent(new CustomEvent("geoReady", { detail: data }));
-  })
-  .catch(() => {
-    window.dispatchEvent(new CustomEvent("geoReady", { detail: fallback }));
-  });
 
 export const settingZipCodePlaceholder = (countryCode) => {
   const zipCodeLabel = document.querySelector(".two-step-zipcode-label");

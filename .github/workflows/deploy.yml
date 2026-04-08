@@ -13,25 +13,25 @@ jobs:
       fail-fast: false
       matrix:
         site:
-          # - goldbet.wiki
-          # - promogb.com
-          # - goldbet.website
-          # - goldz8t6.xyz
-          # - golds0h7.xyz
-          # - goldcvr88.xyz
-          # - goldimh6b.xyz
-          # - golds3s22.xyz
-          # - goldv5s3w.xyz
-          # - goldxe892.xyz
-          # - goldbet.click
-          # - goldbetio.com
-          # - goldbet.sbs
-          # - goldbet.monster
-          # - goldbet.lol
+          - goldbet.wiki
+          - promogb.com
+          - goldbet.website
+          - goldz8t6.xyz
+          - golds0h7.xyz
+          - goldcvr88.xyz
+          - goldimh6b.xyz
+          - golds3s22.xyz
+          - goldv5s3w.xyz
+          - goldxe892.xyz
+          - goldbet.click
+          - goldbetio.com
+          - goldbet.sbs
+          - goldbet.monster
+          - goldbet.lol
           - goldbet.cam
-          # - goldbet.cfd
-          # - goldbet.cyou
-          # - goldbet.fun
+          - goldbet.cfd
+          - goldbet.cyou
+          - goldbet.fun
         vps:
           [
             PRIMA,
