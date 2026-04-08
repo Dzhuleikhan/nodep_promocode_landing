@@ -57,4 +57,4 @@ export const settingZipCodePlaceholder = (countryCode) => {
   zipCodeLabel.textContent = placeholder;
 };
 
-console.log("*_*");
+console.log("**__**");
