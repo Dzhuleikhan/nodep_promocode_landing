@@ -147,6 +147,12 @@ async function initLanguage() {
 }
 initLanguage();
 
+window.addEventListener("geoReady", (e) => {
+  const lang = getInitialLanguage(e.detail.countryCode, getSupportedLanguage(e.detail.countryCode));
+  changeLanguage(lang);
+  document.body.classList.add("geo-ready");
+});
+
 headerLangList.addEventListener("click", (e) => {
   e.preventDefault();
   const link = e.target.closest("a[data-lang]");
