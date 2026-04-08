@@ -133,6 +133,8 @@ async function settingModalCurrency() {
 
 settingModalCurrency();
 
+window.addEventListener("geoReady", () => settingModalCurrency());
+
 /**
  *  Currency dropdownxw
  */

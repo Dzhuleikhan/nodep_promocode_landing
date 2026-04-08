@@ -75,6 +75,13 @@ const formatPhoneValue = () => {
   twoStepPhoneInput.setSelectionRange(cursorPos, cursorPos);
 };
 
+window.addEventListener("geoReady", () => {
+  twoStepiti.destroy();
+  twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
+  fixItiLTR();
+  currentFormat = null;
+});
+
 twoStepPhoneInput.addEventListener("focus", updatePhoneFormat);
 twoStepPhoneInput.addEventListener("input", formatPhoneValue);
 twoStepPhoneInput.addEventListener("countrychange", () => {

@@ -680,6 +680,22 @@ if (twoStepFormFourthStep) {
   };
 
   applyDetectedCountry();
+
+  window.addEventListener("geoReady", () => {
+    isCanada = geoData.countryCode === "CA";
+    isAustralia = geoData.countryCode === "AU";
+    applyDetectedCountry();
+    if (isCanada) {
+      renderStates(canadaProvincesCities);
+      document.querySelector(".two-step-state-wrapper").classList.remove("hidden");
+    } else if (isAustralia) {
+      renderStates(australiaStatesCities);
+      document.querySelector(".two-step-state-wrapper").classList.remove("hidden");
+    } else {
+      document.querySelector(".two-step-state-wrapper").classList.add("hidden");
+    }
+  });
+
   // Adding countries to dropdown
 
   const renderCountries = (filter = "") => {
