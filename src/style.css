@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
-[data-translate] {
-  filter: blur(6px);
+[data-translate],
+.header-lang-btn,
+.header-country-flag {
+  filter: blur(20px);
   transition: filter 0.3s ease;
 }
-body.geo-ready [data-translate] {
+
+body.geo-ready [data-translate],
+body.geo-ready .header-lang-btn,
+body.geo-ready .header-country-flag {
   filter: none;
 }
 
