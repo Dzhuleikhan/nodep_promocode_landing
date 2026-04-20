@@ -1,4 +1,4 @@
-import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
+import intlTelInput from "intl-tel-input";
 import { geoData } from "./geoLocation";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
@@ -16,6 +16,7 @@ const baseOptions = {
   separateDialCode: true,
   useFullscreenPopup: false,
   autoPlaceholder: "aggressive",
+  loadUtils: () => import("intl-tel-input/utils"),
   geoIpLookup,
   customPlaceholder: function (selectedCountryPlaceholder) {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");

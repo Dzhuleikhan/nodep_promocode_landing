@@ -13,37 +13,36 @@ jobs:
       fail-fast: false
       matrix:
         site:
-          - goldbet.wiki
-          - promogb.com
-          - goldv5s3w.xyz
-          - golds3s22.xyz
-          - golds0h7.xyz
-          - golds0h7.com
-          - goldm2n4.xyz
-          - goldm2n4.com
-          - goldimh6b.xyz
-          - golde5q1.xyz
-          - golde5q1.com
-          - goldbetio.com
-          - goldcvr88.xyz
-          - goldbet.website
-          - goldbet.sbs
-          - goldbet.monster
-          - goldbet.lol
-          - goldbet.fun
+          # - goldbet.wiki
+          # - promogb.com
+          # - goldv5s3w.xyz
+          # - golds3s22.xyz
+          # - golds0h7.xyz
+          # - golds0h7.com
+          # - goldm2n4.xyz
+          # - goldm2n4.com
+          # - goldimh6b.xyz
+          # - golde5q1.xyz
+          # - golde5q1.com
+          # - goldbetio.com
+          # - goldcvr88.xyz
+          # - goldbet.website
+          # - goldbet.sbs
+          # - goldbet.monster
+          # - goldbet.lol
+          # - goldbet.fun
           - goldbet.cyou
-          - goldbet.click
-          - goldbet.cfd
-          - goldbet.cam
-        vps:
-          [
+          # - goldbet.click
+          # - goldbet.cfd
+          # - goldbet.cam
+        vps: [
             NJAL,
-            FLOKINET_FI_ONE,
-            FLOKINET_NL,
-            FLOKINET_FI_TWO,
-            ISHOSTING_NL,
-            ISHOSTING_CH,
-            ISHOSTING_SR,
+            # FLOKINET_FI_ONE,
+            # FLOKINET_NL,
+            # FLOKINET_FI_TWO,
+            # ISHOSTING_NL,
+            # ISHOSTING_CH,
+            # ISHOSTING_SR,
           ]
 
     steps:

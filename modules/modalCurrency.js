@@ -1,5 +1,6 @@
 import { geoData } from "./geoLocation";
-import { countryCurrencyData, nodepBonuses } from "../public/data";
+import { nodepBonuses } from "../public/data";
+import { countryCurrencyData } from "./currencyData";
 import {
   checkTir1CurrencyMatch,
   twoStepFormData,
@@ -56,7 +57,7 @@ function setCurrency(abbr, name, icon) {
     currencyIcon.alt = abbr;
 
     const currencyListItem = cur.querySelectorAll(
-      ".form-currency-dropdown ul li"
+      ".form-currency-dropdown ul li",
     );
 
     currencyListItem.forEach((item) => {
@@ -83,7 +84,7 @@ const settingFooterPayments = (currencyAbbr) => {
     img.classList.add("hover:grayscale-0");
     img.setAttribute(
       "src",
-      CDN + `/graphic/landings/paymentMethods/nodep/${payment}.svg`
+      CDN + `/graphic/landings/paymentMethods/nodep/${payment}.svg`,
     );
     footerPaymentsList.appendChild(img);
   });
@@ -140,10 +141,10 @@ window.addEventListener("geoReady", () => settingModalCurrency());
  */
 export const settingBonusOnCurrencyChange = (
   currencyDataArray,
-  targetCurrency
+  targetCurrency,
 ) => {
   const matchedObject = currencyDataArray.find(
-    (item) => item.countryCurrency === targetCurrency.abbr
+    (item) => item.countryCurrency === targetCurrency.abbr,
   );
   const amount = matchedObject ? matchedObject.amount : null;
   const symbol = matchedObject ? matchedObject.countryCurrencySymbol : null;
@@ -159,6 +160,50 @@ export const settingBonusOnCurrencyChange = (
     el.innerHTML = spins;
   });
 };
+
+async function getCurrencies() {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 2500);
+    const response = await fetch("/api/currencies", {
+      signal: controller.signal,
+    });
+    clearTimeout(timer);
+    if (!response.ok) throw new Error("Bad API response");
+    const data = await response.json();
+    if (Array.isArray(data) && data.length > 0) return data;
+    throw new Error("Invalid format");
+  } catch (e) {
+    return [
+      { code: "EUR", name: "Euro", symbol: "€" },
+      { code: "USD", name: "US Dollar", symbol: "$" },
+    ];
+  }
+}
+
+const LI_CLASS =
+  "grid cursor-pointer grid-cols-[auto_1fr_auto] gap-2 border-b border-[#755EEB]/20 bg-white px-4 py-[10px] text-base font-bold text-[#1c1c1c] transition-all [&.active]:bg-[#b4aae7]";
+
+function renderCurrencyDropdown(currencies) {
+  document.querySelectorAll(".form-currency-dropdown ul").forEach((ul) => {
+    ul.innerHTML = currencies
+      .map(
+        ({ code, name, symbol }) => `
+      <li class="${LI_CLASS}">
+        <img class="currency-item-icon" width="24" height="24" src="${CDN}/currency_icons/${code}.svg" alt="${code}" />
+        <span class="currency-item-name">${name}</span>
+        <div>
+          <span class="currency-item-symbol">${symbol}</span>
+          |
+          <span class="currency-item-abbr">${code}</span>
+        </div>
+      </li>`,
+      )
+      .join("");
+  });
+}
+
+getCurrencies().then(renderCurrencyDropdown);
 
 const formCurrency = document.querySelectorAll(".form-currency");
 
@@ -177,46 +222,40 @@ formCurrency.forEach((cur) => {
       currencyDropdownList.classList.toggle("active");
     });
 
-    const currencyListItems = currencyDropdownList.querySelectorAll("li");
+    currencyDropdownList.addEventListener("click", (e) => {
+      const item = e.target.closest("li");
+      if (!item) return;
 
-    currencyListItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        currencyListItems.forEach((el) => {
-          el.classList.remove("active");
-        });
-        item.classList.add("active");
-        hideDropdown();
+      currencyDropdownList
+        .querySelectorAll("li")
+        .forEach((el) => el.classList.remove("active"));
+      item.classList.add("active");
+      hideDropdown();
 
-        // Taking currency value from item
-        let curIcon = item.querySelector(".currency-item-icon").src;
-        let curName = item.querySelector(".currency-item-name").textContent;
-        let curAbbr = item
-          .querySelector(".currency-item-abbr")
-          .textContent.toUpperCase();
-        let curAlt = item.querySelector(".currency-item-icon").alt;
+      const curIcon = item.querySelector(".currency-item-icon").src;
+      const curName = item.querySelector(".currency-item-name").textContent;
+      const curAbbr = item
+        .querySelector(".currency-item-abbr")
+        .textContent.toUpperCase();
+      const curAlt = item.querySelector(".currency-item-icon").alt;
 
-        // Update all currency inputs on the page
-        setCurrency(curAbbr, curName, curIcon);
+      setCurrency(curAbbr, curName, curIcon);
 
-        // Update local storage
-        const currencyData = {
-          abbr: curAbbr,
-          name: curName,
-          icon: curIcon,
-          alt: curAlt,
-        };
-        localStorage.setItem("currencyData", JSON.stringify(currencyData));
+      const currencyData = {
+        abbr: curAbbr,
+        name: curName,
+        icon: curIcon,
+        alt: curAlt,
+      };
+      localStorage.setItem("currencyData", JSON.stringify(currencyData));
 
-        // Two step currency update
-        settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
-        twoStepFormData.currency = currencyData.abbr;
-        settingInitialBonusValue(twoStepFormData.currency);
-
-        twoStepFormData.bonus = checkTir1CurrencyMatch(
-          twoStepFormData.currency,
-          twoStepFormData.bonus
-        );
-      });
+      settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
+      twoStepFormData.currency = currencyData.abbr;
+      settingInitialBonusValue(twoStepFormData.currency);
+      twoStepFormData.bonus = checkTir1CurrencyMatch(
+        twoStepFormData.currency,
+        twoStepFormData.bonus,
+      );
     });
 
     document.addEventListener("click", (event) => {

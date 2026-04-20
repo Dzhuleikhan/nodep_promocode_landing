@@ -1,9 +1,11 @@
-import { countryFlags, countryCurrencyData } from "../public/data";
+import { countryFlags } from "../public/data";
+import { countryCurrencyData } from "./currencyData";
 import { geoData, settingZipCodePlaceholder } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
+import { isValidPhoneNumber } from "libphonenumber-js";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
 import flatpickr from "flatpickr";
 import {
@@ -687,10 +689,14 @@ if (twoStepFormFourthStep) {
     applyDetectedCountry();
     if (isCanada) {
       renderStates(canadaProvincesCities);
-      document.querySelector(".two-step-state-wrapper").classList.remove("hidden");
+      document
+        .querySelector(".two-step-state-wrapper")
+        .classList.remove("hidden");
     } else if (isAustralia) {
       renderStates(australiaStatesCities);
-      document.querySelector(".two-step-state-wrapper").classList.remove("hidden");
+      document
+        .querySelector(".two-step-state-wrapper")
+        .classList.remove("hidden");
     } else {
       document.querySelector(".two-step-state-wrapper").classList.add("hidden");
     }
@@ -835,13 +841,20 @@ if (twoStepFormFourthStep) {
     twoStepStateList.classList.toggle("hidden");
   });
 
-
   submitBtn.disabled = true;
+
+  const isPhoneValid = () => {
+    const countryCode = twoStepiti.getSelectedCountryData().iso2?.toUpperCase();
+    const dialCode = twoStepiti.getSelectedCountryData().dialCode;
+    const digits = twoStepPhoneInput.value.trim().replace(/\D/g, "");
+    if (!digits || !countryCode) return false;
+    return isValidPhoneNumber(`+${dialCode}${digits}`, countryCode);
+  };
 
   const inputValidations1 = [
     {
       input: twoStepPhoneInput,
-      condition: () => twoStepiti.isValidNumber(),
+      condition: () => isPhoneValid(),
     },
     {
       input: twoStepCityInput,
@@ -861,11 +874,11 @@ if (twoStepFormFourthStep) {
     let validCount = 0;
     const totalInputs = inputValidations1.length;
 
-    let twoStepCode = twoStepiti.getSelectedCountryData().dialCode;
-    let twoStepPhoneNumber = twoStepPhoneInput.value.trim();
-
-    let sanitizedPhoneNumber = twoStepPhoneNumber.replace(/\D/g, "");
-    let fullPhoneNumber = `${twoStepCode}${sanitizedPhoneNumber}`;
+    const dialCode = twoStepiti.getSelectedCountryData().dialCode;
+    const sanitizedPhoneNumber = twoStepPhoneInput.value
+      .trim()
+      .replace(/\D/g, "");
+    const fullPhoneNumber = `${dialCode}${sanitizedPhoneNumber}`;
 
     // Validate each input
     inputValidations1.forEach(({ input, condition }) => {
@@ -885,7 +898,7 @@ if (twoStepFormFourthStep) {
       twoStepFormData.city = validateStringInput(twoStepCityInput.value);
       twoStepFormData.address = validateStringInput(twoStepAddressInput.value);
       twoStepFormData.zipCode = validateStringInput(twoStepZipcodeInput.value);
-      if (twoStepPhoneInput.value.trim() !== "" && twoStepiti.isValidNumber()) {
+      if (isPhoneValid()) {
         twoStepFormData.phone = fullPhoneNumber;
       }
     } else {

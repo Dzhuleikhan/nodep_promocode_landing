@@ -17,6 +17,7 @@
     "gsap": "^3.12.7",
     "inputmask": "^5.0.9",
     "intl-tel-input": "^25.3.0",
+    "libphonenumber-js": "^1.12.41",
     "postcss": "^8.5.2",
     "swiper": "^11.2.4",
     "tailwindcss": "^4.0.6"

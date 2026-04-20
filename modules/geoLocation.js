@@ -10,7 +10,7 @@ export async function getLocation() {
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 2500);
-    const url = `https://${window.location.host}/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c`;
+    const url = `/api/geo`;
     const response = await fetch(url, { signal: controller.signal });
     clearTimeout(timer);
 
@@ -73,5 +73,3 @@ getLocation()
   .catch(() => {
     window.dispatchEvent(new CustomEvent("geoReady", { detail: fallback }));
   });
-
-console.log("-");

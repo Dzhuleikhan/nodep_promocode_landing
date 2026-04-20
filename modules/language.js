@@ -3,7 +3,7 @@ import { geoData, language } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { settingInitialBonusValue } from "./twoStepForm";
 import { setSpinAmount } from "./promocodeCheck";
-import { languageOptions, SupportedLanguages } from "../public/data";
+import { SupportedLanguages } from "../public/data";
 import { updateTelInputLanguage } from "./itiTelInput";
 
 const CDN = "https://3344112-img.b-cdn.net";
@@ -12,44 +12,35 @@ const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
 const html = document.querySelector("html");
 
-if (headerLangList) {
-  headerLangList.innerHTML = "";
+let languageOptions = {};
 
-  headerLangList.innerHTML = Object.entries(languageOptions)
-    .map(([langCode, { name, flag }]) => {
-      return `
-        <li>
-          <a
-            href="#"
-            data-lang="${langCode}"
-            class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
-          >
-            <img
-              class="pointer-events-none shrink-0 overflow-hidden rounded-full"
-              width="20"
-              height="20"
-              src="https://3344112-img.b-cdn.net/graphic/flags/flag-${flag}.svg"
-              alt="${name} flag"
-            />
-            <span class="pointer-events-none">${name}</span>
-          </a>
-        </li>
-      `;
-    })
-    .join("");
-}
-
-if (headerLangBtn) {
-  headerLangBtn.addEventListener("click", () => {
-    headerLangList.classList.toggle("is-open");
-  });
+async function getLanguageOptions() {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 2500);
+    const response = await fetch("/api/language-options", {
+      signal: controller.signal,
+    });
+    clearTimeout(timer);
+    if (!response.ok) throw new Error("Bad API response");
+    const data = await response.json();
+    if (data && typeof data === "object" && !Array.isArray(data)) return data;
+    throw new Error("Invalid format");
+  } catch (e) {
+    return {
+      en: { name: "EN", flag: "gb" },
+      pl: { name: "PL", flag: "pl" },
+    };
+  }
 }
 
 function updateButtonText(lang) {
   const langBtnImg = headerLangBtn.querySelector("img");
   const headerLangName = document.querySelector(".header-lang-btn span");
 
-  const { name, flag } = languageOptions[lang] || languageOptions.en;
+  const option = languageOptions[lang] || languageOptions.en;
+  if (!option) return;
+  const { name, flag } = option;
 
   langBtnImg.setAttribute(
     "src",
@@ -137,6 +128,43 @@ function updateCurrentDomain() {
 }
 
 async function initLanguage() {
+  try {
+    languageOptions = await getLanguageOptions();
+
+    if (headerLangList) {
+      headerLangList.innerHTML = Object.entries(languageOptions)
+        .map(([langCode, { name, flag }]) => {
+          return `
+          <li>
+            <a
+              href="#"
+              data-lang="${langCode}"
+              class="language-link flex items-center gap-2 bg-[#ffffff] px-3 py-[9px] transition-all"
+            >
+              <img
+                class="pointer-events-none shrink-0 overflow-hidden rounded-full"
+                width="20"
+                height="20"
+                src="https://3344112-img.b-cdn.net/graphic/flags/flag-${flag}.svg"
+                alt="${name} flag"
+              />
+              <span class="pointer-events-none">${name}</span>
+            </a>
+          </li>
+        `;
+        })
+        .join("");
+    }
+
+    if (headerLangBtn) {
+      headerLangBtn.addEventListener("click", () => {
+        headerLangList.classList.toggle("is-open");
+      });
+    }
+  } catch (e) {
+    console.error("Language init failed, continuing with defaults");
+  }
+
   const initialLang = getInitialLanguage(geoData.countryCode, language);
   changeLanguage(initialLang);
 
