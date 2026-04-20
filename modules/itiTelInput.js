@@ -76,9 +76,10 @@ const formatPhoneValue = () => {
   twoStepPhoneInput.setSelectionRange(cursorPos, cursorPos);
 };
 
-window.addEventListener("geoReady", () => {
+window.addEventListener("geoReady", (e) => {
+  const countryCode = e.detail?.countryCode?.toLowerCase() || "pl";
   twoStepiti.destroy();
-  twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
+  twoStepiti = intlTelInput(twoStepPhoneInput, { ...baseOptions, initialCountry: countryCode });
   fixItiLTR();
   currentFormat = null;
 });
