@@ -60,6 +60,7 @@ function setCurrency(abbr, name, icon) {
       ".form-currency-dropdown ul li",
     );
 
+    currencyListItem.forEach((item) => item.classList.remove("active"));
     currencyListItem.forEach((item) => {
       const itemAbbr = item.querySelector(".currency-item-abbr").textContent;
       if (itemAbbr.includes(abbr)) {
@@ -203,7 +204,10 @@ function renderCurrencyDropdown(currencies) {
   });
 }
 
-getCurrencies().then(renderCurrencyDropdown);
+getCurrencies().then((currencies) => {
+  renderCurrencyDropdown(currencies);
+  settingModalCurrency();
+});
 
 const formCurrency = document.querySelectorAll(".form-currency");
 
