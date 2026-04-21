@@ -160,10 +160,12 @@ async function initLanguage() {
     console.error("Language init failed, continuing with defaults");
   }
 
-  const browserLang = navigator.language.split("-")[0];
-  const browserFallback = SupportedLanguages.includes(browserLang) ? browserLang : "en";
-  const initialLang = getInitialLanguage(geoData.countryCode, browserFallback);
-  changeLanguage(initialLang);
+  if (!geoHasFired) {
+    const browserLang = navigator.language.split("-")[0];
+    const browserFallback = SupportedLanguages.includes(browserLang) ? browserLang : "en";
+    const initialLang = getInitialLanguage(geoData.countryCode, browserFallback);
+    changeLanguage(initialLang);
+  }
 
   setTimeout(() => {
     updateCurrentDomain();
@@ -172,7 +174,10 @@ async function initLanguage() {
 }
 initLanguage();
 
+let geoHasFired = false;
+
 window.addEventListener("geoReady", (e) => {
+  geoHasFired = true;
   const lang = getInitialLanguage(
     e.detail.countryCode,
     getSupportedLanguage(e.detail.countryCode),
