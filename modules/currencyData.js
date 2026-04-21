@@ -34,6 +34,7 @@ fetch("/api/country-currencies")
   .then((data) => {
     if (Array.isArray(data) && data.length > 0) {
       countryCurrencyData = data;
+      window.dispatchEvent(new CustomEvent("currencyDataReady"));
     }
   })
   .catch(() => {});
