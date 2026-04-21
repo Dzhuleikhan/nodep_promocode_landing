@@ -164,12 +164,7 @@ export const settingBonusOnCurrencyChange = (
 
 async function getCurrencies() {
   try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 2500);
-    const response = await fetch("/api/currencies", {
-      signal: controller.signal,
-    });
-    clearTimeout(timer);
+    const response = await fetch("/api/currencies");
     if (!response.ok) throw new Error("Bad API response");
     const data = await response.json();
     if (Array.isArray(data) && data.length > 0) return data;

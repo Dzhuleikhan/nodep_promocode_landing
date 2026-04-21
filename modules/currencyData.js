@@ -26,14 +26,8 @@ const fallback = [
 
 export let countryCurrencyData = fallback;
 
-const controller = new AbortController();
-const timer = setTimeout(() => controller.abort(), 2500);
-
-fetch("/api/country-currencies", {
-  signal: controller.signal,
-})
+fetch("/api/country-currencies")
   .then((res) => {
-    clearTimeout(timer);
     if (!res.ok) throw new Error("Bad API response");
     return res.json();
   })

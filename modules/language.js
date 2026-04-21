@@ -16,12 +16,7 @@ let languageOptions = {};
 
 async function getLanguageOptions() {
   try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 2500);
-    const response = await fetch("/api/language-options", {
-      signal: controller.signal,
-    });
-    clearTimeout(timer);
+    const response = await fetch("/api/language-options");
     if (!response.ok) throw new Error("Bad API response");
     const data = await response.json();
     if (data && typeof data === "object" && !Array.isArray(data)) return data;
