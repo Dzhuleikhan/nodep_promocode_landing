@@ -28,6 +28,12 @@ fetchDomain(geoData.countryCode).then((domain) => {
   newDomain = domain;
 });
 
+window.addEventListener("geoReady", (e) => {
+  fetchDomain(e.detail.countryCode).then((domain) => {
+    newDomain = domain;
+  });
+});
+
 function updatingBonusValueNumbers() {
   const dropd = document.querySelectorAll(".form-bonus-dropdown");
   dropd.forEach((drop) => {
