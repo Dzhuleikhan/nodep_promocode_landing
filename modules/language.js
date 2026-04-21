@@ -1,4 +1,3 @@
-import { translations } from "/public/translations";
 import { geoData, language } from "./geoLocation";
 import { getSupportedLanguage } from "./geoLocation";
 import { settingInitialBonusValue } from "./twoStepForm";
@@ -46,11 +45,12 @@ function updateButtonText(lang) {
   html.setAttribute("lang", lang);
 }
 
-function updateContent(lang) {
+async function updateContent(lang) {
+  const { default: t } = await import(`/public/translations/${lang}.js`);
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach((element) => {
     const key = element.getAttribute("data-translate");
-    element.innerHTML = translations[lang][key];
+    element.innerHTML = t[key];
   });
 }
 
@@ -90,8 +90,8 @@ function getInitialLanguage(country, fallbackLang) {
 
 const RTL_LANGUAGES = ["ar"];
 
-function changeLanguage(lang) {
-  updateContent(lang);
+async function changeLanguage(lang) {
+  await updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
 

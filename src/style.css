@@ -22,14 +22,6 @@ body.geo-ready .header-country-flag {
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-Black.woff2') format('woff2');
   font-weight: 900;
@@ -54,14 +46,6 @@ body.geo-ready .header-country-flag {
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Raleway';
   src: url('../fonts/Raleway-Black.woff2') format('woff2');
   font-weight: 900;
@@ -69,26 +53,9 @@ body.geo-ready .header-country-flag {
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme {
-  --gilroy: "Girloy", "sans-serif";
+  --gilroy: "Gilroy", "sans-serif";
   --raleway: "Raleway", "sans-serif";
-  --montserrat: "Montserrat", "sans-serif";
   --saira: "Saira", "sans-serif";
 }
 
