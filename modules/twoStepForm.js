@@ -584,6 +584,15 @@ if (twoStepFormFourthStep) {
   twoStepCountryButton.addEventListener("click", () => {
     twoStepCountryDropdown.classList.toggle("hidden");
   });
+
+  // Pre-render countries when transitioning to step 4
+  let countriesRendered = false;
+  window.addEventListener("preRenderCountries", () => {
+    if (!countriesRendered) {
+      renderCountries();
+      countriesRendered = true;
+    }
+  }, { once: true });
   document.addEventListener("click", (event) => {
     if (!twoStepCountryWrapper.contains(event.target)) {
       // If the click is outside the dropdown and wrapper, hide the dropdown
@@ -751,8 +760,7 @@ if (twoStepFormFourthStep) {
     renderCountries(e.target.value);
   });
 
-  // Initial render
-  renderCountries();
+  // Countries render on first dropdown open (see twoStepCountryButton click handler)
 
   // ? VALIDATION
   const submitBtn = twoStepFormFourthStep.querySelector(".submit-btn");
@@ -954,6 +962,9 @@ const showStep = (step) => {
 nextStepBtn.forEach((btn) => {
   if (btn) {
     btn.addEventListener("click", () => {
+      if (initialStep === 3) {
+        window.dispatchEvent(new CustomEvent("preRenderCountries"));
+      }
       initialStep++;
       showStep(initialStep);
     });
