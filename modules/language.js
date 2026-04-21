@@ -160,7 +160,9 @@ async function initLanguage() {
     console.error("Language init failed, continuing with defaults");
   }
 
-  const initialLang = getInitialLanguage(geoData.countryCode, getSupportedLanguage(geoData.countryCode));
+  const browserLang = navigator.language.split("-")[0];
+  const browserFallback = SupportedLanguages.includes(browserLang) ? browserLang : "en";
+  const initialLang = getInitialLanguage(geoData.countryCode, browserFallback);
   changeLanguage(initialLang);
 
   setTimeout(() => {
