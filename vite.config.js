@@ -12,4 +12,17 @@ export default defineConfig({
     open: true,
     host: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          gsap: ["gsap"],
+          swiper: ["swiper"],
+          "intl-tel-input": ["intl-tel-input"],
+          "libphonenumber-js": ["libphonenumber-js"],
+          flatpickr: ["flatpickr"],
+        },
+      },
+    },
+  },
 });

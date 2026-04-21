@@ -46,7 +46,7 @@ function updateButtonText(lang) {
 }
 
 async function updateContent(lang) {
-  const { default: t } = await import(`/public/translations/${lang}.js`);
+  const { default: t } = await import(`../src/translations/${lang}.js`);
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach((element) => {
     const key = element.getAttribute("data-translate");
