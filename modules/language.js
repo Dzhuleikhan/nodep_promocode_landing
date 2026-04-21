@@ -162,9 +162,21 @@ async function initLanguage() {
 
   if (!geoHasFired) {
     const browserLang = navigator.language.split("-")[0];
-    const browserFallback = SupportedLanguages.includes(browserLang) ? browserLang : "en";
-    const initialLang = getInitialLanguage(geoData.countryCode, browserFallback);
+    const browserFallback = SupportedLanguages.includes(browserLang)
+      ? browserLang
+      : "en";
+    const initialLang = getInitialLanguage(
+      geoData.countryCode,
+      browserFallback,
+    );
     changeLanguage(initialLang);
+  } else {
+    const lang = getInitialLanguage(
+      geoData.countryCode,
+      getSupportedLanguage(geoData.countryCode),
+    );
+    updateButtonText(lang);
+    setActiveLanguageBtn(lang);
   }
 
   setTimeout(() => {
