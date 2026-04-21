@@ -24,10 +24,6 @@ export const fetchDomain = async (countryCode) => {
 
 export let newDomain = "g01d63t1.win";
 
-fetchDomain(geoData.countryCode).then((domain) => {
-  newDomain = domain;
-});
-
 window.addEventListener("geoReady", (e) => {
   fetchDomain(e.detail.countryCode).then((domain) => {
     newDomain = domain;
