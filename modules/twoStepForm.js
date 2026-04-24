@@ -376,10 +376,14 @@ if (twoStepFormThirdStep) {
   let isValidDate;
   let isValidAge;
 
+  const minBirthDate = new Date();
+  minBirthDate.setFullYear(minBirthDate.getFullYear() - 100);
+
   const calendar = flatpickr(twoStepBirthdayInput, {
     allowInput: true,
     dateFormat: "d.m.Y",
     maxDate: "today",
+    minDate: minBirthDate,
     disableMobile: true,
   });
 
@@ -434,6 +438,10 @@ if (twoStepFormThirdStep) {
       if (year > currentYear) {
         isValidDate = false;
         isValidAge = true; // ✅ Prevents the "must be 18+" error when year > current year
+      } else if (currentYear - year > 100) {
+        // Возраст > 100 лет трактуем как невалидную дату (например, год 0100)
+        isValidDate = false;
+        isValidAge = true;
       } else {
         isValidAge = validateAge(year, month, day); // ✅ Only validate age if date is valid and in the past
       }
