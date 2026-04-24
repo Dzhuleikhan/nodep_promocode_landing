@@ -4,6 +4,7 @@ import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
+import { isValidPhoneNumber } from "libphonenumber-js";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
 import flatpickr from "flatpickr";
 import {
@@ -822,10 +823,18 @@ if (twoStepFormFourthStep) {
 
   submitBtn.disabled = true;
 
+  const isPhoneValid = () => {
+    const countryCode = twoStepiti.getSelectedCountryData().iso2?.toUpperCase();
+    const dialCode = twoStepiti.getSelectedCountryData().dialCode;
+    const digits = twoStepPhoneInput.value.trim().replace(/\D/g, "");
+    if (!digits || !countryCode) return false;
+    return isValidPhoneNumber(`+${dialCode}${digits}`, countryCode);
+  };
+
   const inputValidations1 = [
     {
       input: twoStepPhoneInput,
-      condition: () => twoStepiti.isValidNumber(),
+      condition: () => isPhoneValid(),
     },
     {
       input: twoStepCityInput,
@@ -869,7 +878,7 @@ if (twoStepFormFourthStep) {
       twoStepFormData.city = validateStringInput(twoStepCityInput.value);
       twoStepFormData.address = validateStringInput(twoStepAddressInput.value);
       twoStepFormData.zipCode = validateStringInput(twoStepZipcodeInput.value);
-      if (twoStepPhoneInput.value.trim() !== "" && twoStepiti.isValidNumber()) {
+      if (isPhoneValid()) {
         twoStepFormData.phone = fullPhoneNumber;
       }
     } else {
