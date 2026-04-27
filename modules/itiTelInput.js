@@ -1,5 +1,17 @@
-import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
+import intlTelInput from "intl-tel-input";
+import { Metadata } from "libphonenumber-js/core";
+import minMetadata from "libphonenumber-js/metadata.min.json";
 import { geoData } from "./geoLocation";
+
+const getMaxDigitsForCountry = (countryCode) => {
+  try {
+    const meta = new Metadata(minMetadata);
+    meta.selectNumberingPlan(countryCode);
+    return Math.max(...meta.numberingPlan.possibleLengths());
+  } catch {
+    return 15;
+  }
+};
 
 const socialsPhoneInput = document.querySelector(".socials-phone-input");
 
@@ -16,6 +28,7 @@ const baseOptions = {
   separateDialCode: true,
   useFullscreenPopup: false,
   autoPlaceholder: "aggressive",
+  loadUtils: () => import("intl-tel-input/utils"),
   geoIpLookup,
   customPlaceholder: function (selectedCountryPlaceholder) {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");
@@ -44,15 +57,22 @@ const updatePhoneFormat = () => {
 };
 
 const formatPhoneValue = () => {
-  if (!currentFormat) return;
-
-  const maxDigits = (currentFormat.match(/X/g) || []).length;
+  const countryCode = socialsIti.getSelectedCountryData().iso2?.toUpperCase();
+  const maxDigits = getMaxDigitsForCountry(countryCode);
   const digits = socialsPhoneInput.value.replace(/\D/g, "").slice(0, maxDigits);
 
   if (digits.length === 0) {
     socialsPhoneInput.value = "";
     return;
   }
+
+  if (!currentFormat) {
+    socialsPhoneInput.value = digits;
+    socialsPhoneInput.setSelectionRange(digits.length, digits.length);
+    return;
+  }
+
+  const templateDigits = (currentFormat.match(/X/g) || []).length;
 
   let formatted = "";
   let digitIndex = 0;
@@ -71,9 +91,22 @@ const formatPhoneValue = () => {
     }
   }
 
+  if (digits.length > templateDigits) {
+    formatted += digits.slice(templateDigits);
+    cursorPos = formatted.length;
+  }
+
   socialsPhoneInput.value = formatted;
   socialsPhoneInput.setSelectionRange(cursorPos, cursorPos);
 };
+
+window.addEventListener("geoReady", (e) => {
+  const countryCode = e.detail?.countryCode?.toLowerCase() || "pl";
+  socialsIti.destroy();
+  socialsIti = intlTelInput(socialsPhoneInput, { ...baseOptions, initialCountry: countryCode });
+  fixItiLTR();
+  currentFormat = null;
+});
 
 socialsPhoneInput.addEventListener("focus", updatePhoneFormat);
 socialsPhoneInput.addEventListener("input", formatPhoneValue);
