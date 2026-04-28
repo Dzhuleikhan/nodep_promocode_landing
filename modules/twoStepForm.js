@@ -1,5 +1,6 @@
 import { countryFlags, countryCurrencyData } from "../public/data";
 import { geoData, settingZipCodePlaceholder } from "./geoLocation";
+import { isDisposableEmail } from "./disposableEmail";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
@@ -276,7 +277,7 @@ if (twoStepFormSecondStep) {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    const isEmailValid = regex.test(emailValue) && !isDisposableEmail(emailValue);
     const isPasswordValid = passwordValue.length >= 6;
 
     twoStepFormEmailInput.style.color = isEmailValid
