@@ -1,4 +1,5 @@
 import { socialsIti } from "./itiTelInput.js";
+import { isDisposableEmail } from "./disposableEmail.js";
 import { getUrlParameter } from "./params.js";
 import { newDomain } from "./fetchingDomain.js";
 import { checkTir1CurrencyMatch } from "./modalCurrency.js";
@@ -60,7 +61,10 @@ if (socialsForm) {
         formGroupEmail.querySelector(".not-valid-icon").classList.add("hidden");
         formGroupEmail.classList.remove("not-valid");
         formStepBtnNext.disabled = true;
-      } else if (emalInput.value.match(emailRegEx)) {
+      } else if (
+        emalInput.value.match(emailRegEx) &&
+        !isDisposableEmail(emalInput.value)
+      ) {
         formStepBtnNext.disabled = false;
         formGroupEmail.querySelector(".not-valid-icon").classList.add("hidden");
         formGroupEmail.classList.remove("not-valid");
@@ -138,7 +142,11 @@ if (socialsForm) {
           if (tab === "email") {
             formGroupPhone.classList.remove("not-valid");
             phoneInput.value = "";
-            if (emalInput.value != "" && emalInput.value.match(emailRegEx)) {
+            if (
+              emalInput.value != "" &&
+              emalInput.value.match(emailRegEx) &&
+              !isDisposableEmail(emalInput.value)
+            ) {
               formStepBtnNext.disabled = false;
             } else {
               formStepBtnNext.disabled = true;
