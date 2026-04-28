@@ -11,6 +11,7 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
+import { isDisposableEmail } from "./disposableEmail";
 import { countryCurrencyData } from "../public/data";
 
 document.querySelectorAll("input").forEach((input) => {
@@ -277,7 +278,8 @@ if (twoStepFormSecondStep) {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    const isEmailValid =
+      regex.test(emailValue) && !isDisposableEmail(emailValue);
     const isPasswordValid = passwordValue.length >= 6;
 
     twoStepFormEmailInput.style.color = isEmailValid
