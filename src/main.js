@@ -10,6 +10,7 @@ import "../modules/animations";
 import "../modules/marquee";
 import "../modules/particle";
 import "../modules/modalCurrency";
+import "../modules/disposableEmail";
 import "../modules/formAuth";
 import "../modules/termsModal";
 import "../modules/fb_pixel";

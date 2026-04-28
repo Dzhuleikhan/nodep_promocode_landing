@@ -1,6 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getSupportedLanguage } from "./geoLocation";
 import { getUrlParameter } from "./params";
+import { isDisposableEmail } from "./disposableEmail";
 
 // | AUTH FORM VALIDATION AND SUBMITTING
 
@@ -52,7 +53,7 @@ emailInput.addEventListener("input", (event) => {
     placeholder.classList.remove("hidden");
   }
 
-  if (emailPattern.test(emailValue)) {
+  if (emailPattern.test(emailValue) && !isDisposableEmail(emailValue)) {
     emailValid = true;
     formData.email = emailValue;
     document.querySelector(".auth-form-email").classList.remove("non-valid");
