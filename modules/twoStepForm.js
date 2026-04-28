@@ -5,6 +5,7 @@ import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
+import { isDisposableEmail } from "./disposableEmail";
 import flatpickr from "flatpickr";
 import {
   defaulPromocode,
@@ -276,7 +277,7 @@ if (twoStepFormSecondStep) {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    const isEmailValid = regex.test(emailValue) && !isDisposableEmail(emailValue);
     const isPasswordValid = passwordValue.length >= 6;
 
     twoStepFormEmailInput.style.color = isEmailValid
