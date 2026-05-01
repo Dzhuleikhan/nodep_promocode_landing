@@ -34,6 +34,7 @@ export const translations = {
     continueBtn: "Continue",
     // | Step 2
     step2Title: "Enter Your Email",
+    step2TitlePhone: "Enter Your Phone",
     emailPlaceholder: "Enter E-mail",
     passwordPlaceholder: "Enter Password",
     // | Step 3
@@ -97,6 +98,7 @@ export const translations = {
     continueBtn: "Continuer",
     // | Step 2
     step2Title: "Entrez votre e-mail",
+    step2TitlePhone: "Entrez votre numéro de téléphone",
     emailPlaceholder: "Entrez E-mail",
     passwordPlaceholder: "Entrez de passe",
     // | Step 3
@@ -160,6 +162,7 @@ export const translations = {
     continueBtn: "Continuă",
     // | Step 2
     step2Title: "Introdu E-mailul Tău",
+    step2TitlePhone: "Introduceți numărul dvs. de telefon",
     emailPlaceholder: "Introdu E-mail",
     passwordPlaceholder: "Introdu Parola",
     // | Step 3
@@ -223,6 +226,7 @@ export const translations = {
     continueBtn: "Folytatás",
     // | Step 2
     step2Title: "Add meg az e-mail címedet",
+    step2TitlePhone: "Adja meg a telefonszámát",
     emailPlaceholder: "E-mail megadása",
     passwordPlaceholder: "Jelszó megadása",
     // | Step 3
@@ -285,6 +289,7 @@ export const translations = {
     continueBtn: "Kontynuuj",
     // | Step 2
     step2Title: "Wpisz swój e-mail",
+    step2TitlePhone: "Wprowadź swój numer telefonu",
     emailPlaceholder: "Wpisz e-mail",
     passwordPlaceholder: "Wpisz hasło",
     // | Step 3
@@ -349,6 +354,7 @@ export const translations = {
     continueBtn: "Pokračovat",
     // | Step 2
     step2Title: "Zadejte svůj e-mail",
+    step2TitlePhone: "Zadejte své telefonní číslo",
     emailPlaceholder: "Zadejte e-mail",
     passwordPlaceholder: "Zadejte heslo",
     // | Step 3
@@ -412,6 +418,7 @@ export const translations = {
     continueBtn: "Nadaljuj",
     // | Step 2
     step2Title: "Vnesite svoj e-mail",
+    step2TitlePhone: "Vnesite svojo telefonsko številko",
     emailPlaceholder: "Vnesite e-mail",
     passwordPlaceholder: "Vnesite geslo",
     // | Step 3
@@ -476,6 +483,7 @@ export const translations = {
     continueBtn: "Συνέχεια",
     // | Step 2
     step2Title: "Εισάγετε το email σας",
+    step2TitlePhone: "Εισαγάγετε τον αριθμό τηλεφώνου σας",
     emailPlaceholder: "Εισάγετε email",
     passwordPlaceholder: "Εισάγετε κωδικό πρόσβασης",
     // | Step 3
@@ -538,6 +546,7 @@ export const translations = {
     continueBtn: "Fortsett",
     // | Step 2
     step2Title: "Skriv inn e-posten din",
+    step2TitlePhone: "Skriv inn telefonnummeret ditt",
     emailPlaceholder: "Skriv inn e-post",
     passwordPlaceholder: "Skriv inn passord",
     // | Step 3
@@ -601,6 +610,7 @@ export const translations = {
     continueBtn: "Fortsätt",
     // | Step 2
     step2Title: "Ange din e-postadress",
+    step2TitlePhone: "Ange ditt telefonnummer",
     emailPlaceholder: "Ange e-postadress",
     passwordPlaceholder: "Ange lösenord",
     // | Step 3
@@ -664,6 +674,7 @@ export const translations = {
     continueBtn: "Pokračovať",
     // | Step 2
     step2Title: "Zadajte svoj e-mail",
+    step2TitlePhone: "Zadajte svoje telefónne číslo",
     emailPlaceholder: "Zadajte e-mail",
     passwordPlaceholder: "Zadajte heslo",
     // | Step 3
@@ -727,6 +738,7 @@ export const translations = {
     continueBtn: "Продолжить",
     // | Step 2
     step2Title: "Введите ваш e-mail",
+    step2TitlePhone: "Введите ваш номер телефона",
     emailPlaceholder: "Введите e-mail",
     passwordPlaceholder: "Введите пароль",
     // | Step 3
@@ -790,6 +802,7 @@ export const translations = {
     continueBtn: "Continuar",
     // | Step 2
     step2Title: "Ingresa tu correo electrónico",
+    step2TitlePhone: "Introduce tu número de teléfono",
     emailPlaceholder: "Ingresa tu e-mail",
     passwordPlaceholder: "Ingresa tu contraseña",
     // | Step 3
@@ -852,6 +865,7 @@ export const translations = {
     continueBtn: "Continuar",
     // | Step 2
     step2Title: "Insira seu e-mail",
+    step2TitlePhone: "Digite o seu número de telefone",
     emailPlaceholder: "Digite seu e-mail",
     passwordPlaceholder: "Digite sua senha",
     // | Step 3
@@ -915,6 +929,7 @@ export const translations = {
     continueBtn: "Weiter",
     // | Step 2
     step2Title: "Gib deine E-Mail ein",
+    step2TitlePhone: "Geben Sie Ihre Telefonnummer ein",
     emailPlaceholder: "E-Mail eingeben",
     passwordPlaceholder: "Passwort eingeben",
     // | Step 3
@@ -978,6 +993,7 @@ export const translations = {
     continueBtn: "Continua",
     // | Step 2
     step2Title: "Inserisci la tua Email",
+    step2TitlePhone: "Inserisci il tuo numero di telefono",
     emailPlaceholder: "Inserisci E-mail",
     passwordPlaceholder: "Inserisci Password",
     // | Step 3
@@ -1041,6 +1057,7 @@ export const translations = {
     continueBtn: "Jätka",
     // | Step 2
     step2Title: "Sisestage oma e-post",
+    step2TitlePhone: "Sisesta oma telefoninumber",
     emailPlaceholder: "Sisesta e-post",
     passwordPlaceholder: "Sisesta parool",
     // | Step 3
@@ -1104,6 +1121,7 @@ export const translations = {
     continueBtn: "Turpināt",
     // | Step 2
     step2Title: "Ievadiet savu e-pastu",
+    step2TitlePhone: "Ievadiet savu tālruņa numuru",
     emailPlaceholder: "Ievadiet e-pastu",
     passwordPlaceholder: "Ievadiet paroli",
     // | Step 3
@@ -1167,6 +1185,7 @@ export const translations = {
     continueBtn: "Tęsti",
     // | Step 2
     step2Title: "Įveskite savo el. paštą",
+    step2TitlePhone: "Įveskite savo telefono numerį",
     emailPlaceholder: "Įveskite el. paštą",
     passwordPlaceholder: "Įveskite slaptažodį",
     // | Step 3
@@ -1230,6 +1249,7 @@ export const translations = {
     continueBtn: "Nastavi",
     // | Step 2
     step2Title: "Unesite svoj email",
+    step2TitlePhone: "Unesite svoj broj telefona",
     emailPlaceholder: "Unesite e-mail",
     passwordPlaceholder: "Unesite lozinku",
     // | Step 3
@@ -1292,6 +1312,7 @@ export const translations = {
     continueBtn: "Fortsæt",
     // | Step 2
     step2Title: "Indtast din e-mail",
+    step2TitlePhone: "Indtast dit telefonnummer",
     emailPlaceholder: "Indtast e-mail",
     passwordPlaceholder: "Indtast adgangskode",
     // | Step 3
@@ -1355,6 +1376,7 @@ export const translations = {
     continueBtn: "Jatka",
     // | Step 2
     step2Title: "Syötä sähköpostiosoitteesi",
+    step2TitlePhone: "Syötä puhelinnumerosi",
     emailPlaceholder: "Syötä sähköposti",
     passwordPlaceholder: "Syötä salasana",
     // | Step 3
@@ -1418,6 +1440,7 @@ export const translations = {
     continueBtn: "Продължи",
     // | Step 2
     step2Title: "Въведете своя имейл",
+    step2TitlePhone: "Въведете своя телефонен номер",
     emailPlaceholder: "Въведете имейл",
     passwordPlaceholder: "Въведете парола",
     // | Step 3
@@ -1480,6 +1503,7 @@ export const translations = {
     continueBtn: "Fortsæt",
     // | Step 2
     step2Title: "Indtast din e-mail",
+    step2TitlePhone: "Voer je telefoonnummer in",
     emailPlaceholder: "Indtast e-mail",
     passwordPlaceholder: "Indtast adgangskode",
     // | Step 3
@@ -1550,6 +1574,7 @@ export const translations = {
 
     // | Step 2
     step2Title: "Введіть свою електронну пошту",
+    step2TitlePhone: "Введіть свій номер телефону",
     emailPlaceholder: "Введіть E-mail",
     passwordPlaceholder: "Введіть пароль",
 
@@ -1615,6 +1640,7 @@ export const translations = {
     continueBtn: "Endelea",
     // | Step 2
     step2Title: "Weka Barua Pepe Yako",
+    step2TitlePhone: "Weka nambari yako ya simu",
     emailPlaceholder: "Weka E-mail",
     passwordPlaceholder: "Weka Nenosiri",
     // | Step 3
@@ -1678,6 +1704,7 @@ export const translations = {
     continueBtn: "Komeza",
     // | Step 2
     step2Title: "Andika Email yawe",
+    step2TitlePhone: "Andika nimero ya telefone yawe",
     emailPlaceholder: "Andika Email",
     passwordPlaceholder: "Andika Password",
     // | Step 3
@@ -1739,6 +1766,7 @@ export const translations = {
     continueBtn: "متابعة",
     // | Step 2
     step2Title: "أدخل بريدك الإلكتروني",
+    step2TitlePhone: "أدخل رقم هاتفك",
     emailPlaceholder: "أدخل البريد الإلكتروني",
     passwordPlaceholder: "أدخل كلمة المرور",
     // | Step 3
@@ -1800,6 +1828,7 @@ export const translations = {
     continueBtn: "继续",
     // | Step 2
     step2Title: "输入您的邮箱",
+    step2TitlePhone: "请输入您的电话号码",
     emailPlaceholder: "输入邮箱",
     passwordPlaceholder: "输入密码",
     // | Step 3
@@ -1864,6 +1893,7 @@ export const translations = {
     continueBtn: "Lean ar aghaidh",
     // | Step 2
     step2Title: "Iontráil do ríomhphost",
+    step2TitlePhone: "Cuir isteach d'uimhir theileafóin",
     emailPlaceholder: "Iontráil ríomhphost",
     passwordPlaceholder: "Iontráil pasfhocal",
     // | Step 3
@@ -1926,6 +1956,7 @@ export const translations = {
     continueBtn: "Weider",
     // | Step 2
     step2Title: "Gëff deng E-Mail un",
+    step2TitlePhone: "Gitt Är Telefonsnummer an",
     emailPlaceholder: "E-Mail aginn",
     passwordPlaceholder: "Passwuert aginn",
     // | Step 3
@@ -1989,6 +2020,7 @@ export const translations = {
     continueBtn: "Kompli",
     // | Step 2
     step2Title: "Daħħal l-email tiegħek",
+    step2TitlePhone: "Daħħal in-numru tat-telefon tiegħek",
     emailPlaceholder: "Daħħal email",
     passwordPlaceholder: "Daħħal password",
     // | Step 3
