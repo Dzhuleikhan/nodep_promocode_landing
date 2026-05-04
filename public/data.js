@@ -773,8 +773,9 @@ export const countryLanguagesMap = {
   MT: ["mt"],
   KE: ["sw"],
   TZ: ["sw"],
-  UG: ["sw"],
+  UG: ["lm"],
   RW: ["rw"],
+  ET: ["am"],
 };
 
 export const languageOptions = {
@@ -810,6 +811,8 @@ export const languageOptions = {
   zh: { name: "ZH", flag: "cn" },
   sw: { name: "SW", flag: "ke" },
   rw: { name: "RW", flag: "rw" },
+  am: { name: "AM", flag: "et" },
+  lm: { name: "LM", flag: "ug" },
 };
 
 export const SupportedLanguages = [
@@ -847,6 +850,8 @@ export const SupportedLanguages = [
   "mt",
   "sw",
   "rw",
+  "am",
+  "lm",
 ];
 
 export const nodepBonuses = [
