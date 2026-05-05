@@ -765,6 +765,9 @@ export const countryLanguagesMap = {
   TN: ["ar"],
   LY: ["ar"],
   KE: ["sw"],
+  TZ: ["sw"],
+  ET: ["am"],
+  UG: ["lm"],
   RW: ["rw"],
 };
 
@@ -795,6 +798,8 @@ export const languageOptions = {
   nl: { name: "NL", flag: "nl" },
   uk: { name: "UK", flag: "ua" },
   sw: { name: "SW", flag: "ke" },
+  am: { name: "AM", flag: "et" },
+  lm: { name: "LM", flag: "ug" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
   ga: { name: "GA", flag: "ie" },
@@ -833,6 +838,8 @@ export const SupportedLanguages = [
   "bg",
   "nl",
   "sw",
+  "am",
+  "lm",
   "rw",
   "ar",
   "ga",
