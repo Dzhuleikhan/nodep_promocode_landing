@@ -720,6 +720,10 @@ export const countryLanguagesMap = {
   BG: ["bg"],
   NL: ["nl"],
   IT: ["it"],
+  KE: ["sw"],
+  TZ: ["sw"],
+  ET: ["am"],
+  UG: ["lm"],
 };
 
 export const SupportedLanguages = [
@@ -751,6 +755,9 @@ export const SupportedLanguages = [
   "ga",
   "lb",
   "mt",
+  "sw",
+  "am",
+  "lm",
 ];
 
 export const nodepBonuses = [
@@ -890,6 +897,8 @@ export const languageOptions = {
   nl: { name: "NL", flag: "nl" },
   uk: { name: "UK", flag: "ua" },
   sw: { name: "SW", flag: "ke" },
+  am: { name: "AM", flag: "et" },
+  lm: { name: "LM", flag: "ug" },
   rw: { name: "RW", flag: "rw" },
   ar: { name: "AR", flag: "sa" },
   zh: { name: "ZH", flag: "cn" },

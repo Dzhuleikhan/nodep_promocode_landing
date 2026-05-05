@@ -2765,4 +2765,140 @@ export const translations = {
                       - Inti responsabbli għat-taxxi; <br />
                       - Inti responsabbli għat-taxxi tal-kripto.`,
   },
+  am: {
+    pageTitle: "🎁 ጉርሻዎ ዝግጁ ነው - Goldbet",
+
+    heroTitle: `ጉርሻዎን ይውሰዱ <span><i class="actual-spin-amount">100</i> ነፃ ዙሮች</span> መለያ ከተረጋገጠ በኋላ`,
+
+    heroTitleCash: `ጉርሻዎን ይውሰዱ <span class="bonus-value"></span> <span class="bonus-currency"></span> መለያ ከተረጋገጠ በኋላ`,
+
+    heroSubtitle: `ይመዝገቡ እና <span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> እና <span class="two-step-bonus-spins"></span> ነፃ ዙሮች ከመጀመሪያ ተቀማጭ ጋር ያግኙ`,
+
+    heroBtn: "ጉርሻ ይውሰዱ",
+
+    slideStep1Title: "ይመዝገቡ",
+    slideStep1Text: "«ጉርሻ ይውሰዱ» ይጫኑ እና ኢሜይል እና የይለፍ ቃል ያስገቡ።",
+
+    slideStep2Title: "ተቀማጭ ያድርጉ",
+    slideStep2Text: "የሚፈልጉትን የክፍያ መንገድ ይምረጡ እና ተቀማጭ ያድርጉ።",
+
+    slideStep3Title: "ጉርሻ ይቀበሉ",
+    slideStep3Text: "የእንኳን ደህና መጡ ጉርሻዎ በጉርሻ ማዕከል ዝግጁ ነው።",
+
+    footerText:
+      "ይህ ድርጣቢያ ያለው ሁሉ ለገበያ እና መረጃ ብቻ ነው። ሙያዊ ወይም ሕጋዊ ምክር አይደለም። ትክክለኛነት አይደለም የተረጋገጠ።",
+
+    choosePassword: "የይለፍ ቃል ይምረጡ",
+    gameCurrency: "የጨዋታ ገንዘብ",
+
+    signUpWithGoogle: "በGoogle ይመዝገቡ",
+    signUpWithFacebook: "በFacebook ይመዝገቡ",
+
+    phone: "ስልክ",
+    wrongEmail: "የተሳሳተ ኢሜይል",
+    wrongNumber: "የተሳሳተ ቁጥር",
+
+    signUpBtn: "ጉርሻ ይውሰዱ",
+    promoApplied: "ፕሮሞኮድ ተጠቅሟል",
+
+    bonusName: `<span class="actual-spin-amount">100</span> ነፃ ዙሮች`,
+    bonusNameCash: `ያለ ተቀማጭ ጉርሻ <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+
+    depositBonus: `<span class='applied-nodep-bonus'>in gates of olympus</span> <br/> እስከ <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25 ነፃ ዙሮች`,
+
+    depositBonus2: "በተቀማጭ ላይ 400% እስከ 6000",
+
+    phoneNumber: "የስልክ ቁጥር",
+    password: "የይለፍ ቃል",
+
+    minSymbols: "ቢያንስ 6 ፊደላት",
+    atLeast6Chars: "ቢያንስ 6 ፊደላት",
+
+    currency: "ገንዘብ አይነት",
+
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4">ውሎቹን እቀበላለሁ</a>`,
+
+    startPlaying: "ጉርሻ ይውሰዱ",
+    passwordPlaceholder: "የይለፍ ቃል",
+
+    termsTitle1: "ውሎች እና ሁኔታዎች",
+
+    termsParagraph1: `እነዚህ ውሎች እና ሰነዶች በዚህ ድርጣቢያ እና አገልግሎቶች ላይ ይተገበራሉ ("ውሎች")። ይህ ሕጋዊ ውል ነው።`,
+
+    termsTitle2: "1. አጠቃላይ ውሎች",
+
+    termsParagraph2: `ውሎቹን ለማሻሻል መብት አለን። ማሻሻያዎች በተለጠፉ ጊዜ ወዲያውኑ ይሰራሉ። ከቀጠሉ ተስማምተዋል ማለት ነው።`,
+
+    termsTitle3: "2. የእርስዎ ግዴታዎች",
+
+    termsParagraph3: `ወደ ድርጣቢያው ሲገቡ በሁሉም ጊዜ እንዲከተሉ ተስማምተዋል። 18 ዓመት በላይ መሆን አለበት። ሕጋዊ አቅም አለብዎት። በአካባቢዎ ሕግ መሰረት መጫወት ሕጋዊ መሆኑን መረጋገጥ እርስዎ ኃላፊነት ነው። ትክክለኛ መረጃ መስጠት አለብዎት። ሕግ መጣስ የለብዎትም። በማንኛውም ሁኔታ ተግባራችሁ ላይ እርስዎ ሙሉ ኃላፊነት አለብዎት።`,
+  },
+  lm: {
+    pageTitle: "🎁 Ebiwendo byo byetegekeddwa - Goldbet",
+
+    heroTitle: `Funa ekibonerezo kyo <span><i class="actual-spin-amount">100</i> Free Spins</span> oluvannyuma lw’okukakasa akawunti`,
+
+    heroTitleCash: `Funa ekibonerezo kyo <span class="bonus-value"></span> <span class="bonus-currency"></span> oluvannyuma lw’okukakasa akawunti`,
+
+    heroSubtitle: `Weewandiise ofune <span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> ne <span class="two-step-bonus-spins"></span> Free Spins ku deposit esooka`,
+
+    heroBtn: "Funa ekibonerezo",
+
+    slideStep1Title: "Weewandiise",
+    slideStep1Text: "Nyiga 'Funa ekibonerezo' oyingize email ne password.",
+
+    slideStep2Title: "Teeka ssente",
+    slideStep2Text: "Londa enkola y’okusasula oteeke ssente.",
+
+    slideStep3Title: "Funa ekibonerezo",
+    slideStep3Text: "Ekibonerezo kiri mu Bonus Center.",
+
+    footerText:
+      "Ebiri ku mukutu guno bya kumanyisa bintu byokka. Tebiri mu magezi ga musawo oba ebyensimbi. Tewali bukakafu ku butuufu.",
+
+    choosePassword: "Londa password",
+    gameCurrency: "Ensimbi z’omuzannyo",
+
+    signUpWithGoogle: "Weewandiise ne Google",
+    signUpWithFacebook: "Weewandiise ne Facebook",
+
+    phone: "Essimu",
+    wrongEmail: "Email enkyamu",
+    wrongNumber: "Namba enkyamu",
+
+    signUpBtn: "Funa ekibonerezo",
+    promoApplied: "Promocode ekozeseddwa",
+
+    bonusName: `<span class="actual-spin-amount">100</span> Free Spins`,
+    bonusNameCash: `No Deposit Bonus <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+
+    depositBonus: `<span class='applied-nodep-bonus'>in gates of olympus</span> <br/> bonus okutuuka ku <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+
+    depositBonus2: "400% ku deposit okutuuka ku 6000",
+
+    phoneNumber: "Namba y’essimu",
+    password: "Password",
+
+    minSymbols: "Wekitono ennukuta 6",
+    atLeast6Chars: "Wekitono ennukuta 6",
+
+    currency: "Currency",
+
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4">Nzikiriza amateeka</a>`,
+
+    startPlaying: "Funa ekibonerezo",
+    passwordPlaceholder: "Password",
+
+    termsTitle1: "Amateeka n’obukwakkulizo",
+
+    termsParagraph1: `Amateeka gano gakola ku mukutu guno ne services ("Terms"). Kye kintu kya mateeka ekikugatta.`,
+
+    termsTitle2: "1. Amateeka agawamu",
+
+    termsParagraph2: `Tulina eddembe okukyusa amateeka. Enkyukakyuka zikola amangu ddala. Okukozesa omukutu kiraga okukkiriza.`,
+
+    termsTitle3: "2. Obuvunaanyizibwa bwo",
+
+    termsParagraph3: `Bw’oyingira ku mukutu okkirizza ebiragiro byonna. Olina okuba nga oli wa myaka 18 n’okusingawo. Olina obusobozi bw’amateeka okuteeka endagaano. Kikwata ku mateeka g’ensi gy’oli okukakasa nti okukozesa omukutu kuno kikkirizibwa. Olina okuba nga owa data entuufu. Tolina kukola bya kubiina mateeka oba okukozesa enkola ez’obulimba. Ebikolwa byo byonna bivunaanyizibwa ku ggwe.`,
+  },
 };
