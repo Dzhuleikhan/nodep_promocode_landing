@@ -38,6 +38,8 @@ export const languageOptions = [
   { code: "mt", name: "MT", flag: "mt" },
   { code: "sw", name: "SW", flag: "tz" },
   { code: "rw", name: "RW", flag: "rw" },
+  { code: "am", name: "AM", flag: "et" },
+  { code: "lm", name: "LM", flag: "ug" },
   { code: "ar", name: "AR", flag: "sa" },
 ];
 
@@ -77,6 +79,8 @@ const countryLangMap = {
   TZ: "sw",
   KE: "sw",
   RW: "rw",
+  ET: "am",
+  UG: "lm",
   SA: "ar",
   AE: "ar",
   EG: "ar",
