@@ -3035,4 +3035,119 @@ export const translations = {
                       - Inti responsabbli biss biex tirrapporta u tħallas kwalunkwe taxxa applikabbli fuq kwalunkwe rebħ li tirċievi minna; <br />
                       - Inti responsabbli biss għal kwalunkwe taxxa li tista’ tkun dovuta fuq kriptomuniti mogħtija lilek permezz tal-użu tas-Servizz.`,
   },
+  am: {
+    pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
+    heroTitle: `Crypto Highroller ቦነስ <br/> <b><span>200%</span></b> እስከ <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> ነፃ ስፒኖች በመጀመሪያ የተቀመጠ ገንዘብዎ`,
+    heroBtn: "ቦነስ ይውሰዱ",
+    paymentsTitle: `<span>41</span> የተቀበሉ ክሪፕቶከረንሲዎች`,
+    advantege1Title: "VPN ተስማሚ",
+    advantege1Text: "መድረካችንን በቀላሉ ለመጠቀም VPN መጠቀም ይችላሉ።",
+    advantege2Title: "KYC አያስፈልግም",
+    advantege2Text: "ለክሪፕቶ ተቀማጭ እና ማውጫ KYC ማረጋገጫ አያስፈልግም።",
+    advantege3Title: "25% ሪፈራል ቦነስ",
+    advantege3Text: "ተጫዋቾችን ይጋብዙ እና 25% የካሲኖ ገቢ ያግኙ።",
+    footerText:
+      "በዚህ ድህረገጽ ላይ ያለው ሁሉም ይዘት ለገበያ እና ለመረጃ ብቻ የቀረበ ነው። ይህ የሙያዊ፣ የህጋዊ፣ የፋይናንስ፣ የሕክምና ወይም ሌላ ምንም ዓይነት ምክር አይደለም። ስለ መረጃው ትክክለኛነት፣ ሙሉነት ወይም ተገቢነት ምንም ዓይነት ዋስትና አንሰጥም። በዚህ ድህረገጽ ወይም በይዘቱ ላይ የሚያደርጉት ማንኛውም መተማመን በሙሉ በእርስዎ ራስ ኃላፊነት ነው።",
+
+    // | Form
+    signUpTitle: "መመዝገብ",
+    emailPlaceholder: "ኢሜይል",
+    wrongEmail: "የተሳሳተ ኢሜይል",
+    wrongPassword: "ቢያንስ 6 ቁምፊዎች።",
+    passwordPlaceholder: "የይለፍ ቃል",
+    yourCurrency: "ገንዘብዎ",
+    startPlaying: "መጫወት ይጀምሩ",
+    terms: `እኔ ከ <span class="text-white underline underline-offset-4">መመሪያዎች እና ሁኔታዎች</span> ጋር እስማማለሁ`,
+    signUpWithGoogle: "በGoogle መመዝገብ",
+    signUpWithFacebook: "በFacebook መመዝገብ",
+    signUpWithTelegram: "በTelegram መመዝገብ",
+
+    // | Terms
+    termsTitle1: `መመሪያዎች እና ሁኔታዎች`,
+    termsParagraph1: `እነዚህ መመሪያዎች እና ከታች የተጠቀሱ ሰነዶች (\"መመሪያዎች\") ለዚህ ድህረገጽ (\"ድህረገጽ\") እና ከእሱ ጋር የተያያዙ አገልግሎቶች (በአንድነት \"አገልግሎት\") ይተገበራሉ። እነዚህን መመሪያዎች በጥንቃቄ ማንበብ አለብዎት ምክንያቱም የድህረገጹን እና አገልግሎቱን ስለመጠቀም መብቶችዎን እና ግዴታዎችዎን የሚመለከት አስፈላጊ መረጃ ይዟሉ። እነዚህ መመሪያዎች በእርስዎ (\"ደንበኛ\") እና በእኛ (\"ድህረገጽ\") መካከል የሚገኝ የህጋዊ ውል ናቸው። ድህረገጹን በመጠቀም ወይም አገልግሎቱን በመድረስ እርስዎ እነዚህን መመሪያዎች በሙሉ እንደሚቀበሉ ትስማማላችሁ። ካልተስማማችሁ አገልግሎቱን መጠቀም መቆም አለባችሁ።`,
+
+    termsTitle2: `1. አጠቃላይ ሁኔታዎች`,
+    termsParagraph2: `እኛ መመሪያዎቹን እና ከታች የተጠቀሱ ሰነዶችን በማንኛውም ጊዜ ለመከለስ እና ለመቀየር መብት አለን። ይህን ገጽ በየጊዜው መመርመር አለብዎት። ለውጦች በዚህ ድህረገጽ ላይ እንደተለጠፉ ወዲያውኑ ተፈጻሚ ይሆናሉ። ካልተስማማችሁ አገልግሎቱን በፍጥነት መቆም አለባችሁ። ድህረገጹን ከቀጠላችሁ መጠቀም በለውጦቹ እንደምትስማሙ ይገልጻል።`,
+
+    termsTitle3: `2. የእርስዎ ግዴታዎች`,
+    termsParagraph3: `ድህረገጹን ሲጠቀሙ እና አገልግሎቱን ሲያጠቀሙ ሁልጊዜ እንዲከተሉ ትስማማላችሁ: <br />
+    3.1. እርስዎ 18 ዓመት በላይ ነዎት ወይም በእርስዎ ሕጋዊ ክልል መሰረት ጨዋታ ለመጫወት የተፈቀደ ዕድሜ ላይ ነዎት። እኛ በማንኛውም ጊዜ የዕድሜ ማረጋገጫ ሊጠይቅ እንችላለን። <br />
+    3.2. ህጋዊ ችሎታ አለዎት እና ከእኛ ጋር ህጋዊ ውል ለመግባት ይችላሉ። <br />
+    3.3. የድህረገጹን መጠቀም በአንዳንድ አገሮች ህጋዊ እንዳልሆነ ያውቃሉ። እኛ በሁሉም ክልሎች ህጋዊነትን ማረጋገጥ አንችልም። ስለዚህ እርስዎ በአገርዎ ህግ መሰረት መጠቀም ህጋዊ መሆኑን ትስማማላችሁ። ከተከለከሉ ክልሎች: Afghanistan, Algeria, Antigua & Barbuda, Australia, Belarus, Bahrain, Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte d'Ivoire, Croatia, Cuba, Czech Republic, Democratic People’s Republic of Korea (North Korea), Democratic Republic of the Congo, Denmark, Estonia, France, Greece, Guinea-Bissau, Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait, Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands, Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint Eustatius, and Saba, Aruba), Norway, Oman, Palestine, Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia, Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab Republic, Sudan, Trinidad and Tobago, Turkey, Ukraine, United Kingdom, Germany, Union of Comoros, United Arab Emirates, United States (and its dependencies, military bases and territories i.e. U.S. Minor Outlying Islands, U.S. Virgin Islands), Vanuatu, Yemen, Zimbabwe, እና ሌሎች በጊዜ በጊዜ የሚገለጹ ክልሎች ("Restricted Jurisdiction"). <br />
+    3.4. መረጃ ሲገቡ የጨዋታ ህጋዊነት በክልልዎ ላይ ማረጋገጥ የእርስዎ ኃላፊነት ነው። <br />
+    3.5. የሚጠቀሙት የክፍያ መንገድ ባለቤት እርስዎ ነዎት። <br />
+    3.6. ክፍያዎችን በቅን ልብ መፈጸም አለብዎት። <br />
+    3.7. በጨዋታ ጊዜ ገንዘብ ሊያጡ ይችላሉ እና ኃላፊነቱ የእርስዎ ነው። <br />
+    3.8. በህግ የተከለከለ መረጃ መጠቀም አይችሉም። <br />
+    3.9. ለራስዎ ብቻ እንጂ ለሌላ ሰው አይደለም። <br />
+    3.10. ስርዓቱን ማታለል አይችሉም። <br />
+    3.11. ሁልጊዜ በቅን ልብ መጠቀም አለብዎት። <br />
+    3.12. ከAffiliate ፕሮግራም አባል አይደሉም። <br />
+    3.13. ትክክለኛ መረጃ መስጠት አለብዎት። <br />
+    3.14. የcrypto ገበያ ተለዋዋጭ መሆኑን ትቀበላላችሁ። <br />
+    3.15. እርስዎ የስነ-ልቦና ብቃት ያላቸው ሰው ነዎት እና የጨዋታ ሱስ የለብዎትም። <br />
+    3.16. የ3ኛ ወገን software መጠቀም አይችሉም። <br />
+    3.17. የሚሰጡት መረጃ ሁሉ ትክክል መሆኑን ትስማማላችሁ። <br />
+    3.17.1. መረጃ አይቀየርም ካልን በስተቀር። <br />
+    3.18. በተከለከሉ ክልሎች ሲሆኑ አይጠቀሙ። <br />
+    3.19. ተጨማሪ: ለራስዎ ብቻ ነው የሚሳተፉት፣ ግብር እርስዎ ኃላፊነት ነው፣ እና crypto ሽልማቶች ግብር ሊያጠቃልሉ ይችላሉ።`,
+  },
+  lm: {
+    pageTitle: "🎁 Bonus yo etegekeddwa - Goldbet",
+    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> okutuuka ku <b><span>100.000 USD</span></b>`,
+    heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins ku deposit yo esooka`,
+    heroBtn: "funa bonus",
+    paymentsTitle: `<span>41</span> Crypto ezikkirizibwa`,
+    advantege1Title: "VPN ekola bulungi",
+    advantege1Text:
+      "Osobola okukozesa VPN okuyingira ku platform yaffe mu ngeri ennyangu.",
+    advantege2Title: "Tewali KYC",
+    advantege2Text:
+      "Tewetaagisa KYC okukakasa ku crypto deposits n’okuggyayo ssente.",
+    advantege3Title: "25% Referral Bonus",
+    advantege3Text: "Yita abazannyi ofune 25% ku ssente za casino.",
+    footerText:
+      "Ebiri ku mukutu guno biweebwa lwa marketing n’okumanyisa byokka. Tebiri ku mutindo gwa buwabuzi bwa bya ssemateeka, bya ssente, bya ddagala oba byonna ebirala. Tetuwa garanti ku butuufu, okumaliriza oba okutuukana kw’ebiri mu muko. Okukozesa ebiri ku mukutu guno kubeera ku bulabe bwo.",
+
+    signUpTitle: "Wewandiise",
+    emailPlaceholder: "E-mail",
+    wrongEmail: "E-mail etali ntuufu",
+    wrongPassword: "Wetaaga okuba n’obusukuzi obusoba mu 6.",
+    passwordPlaceholder: "Password",
+    yourCurrency: "Ssente zo",
+    startPlaying: "Tandika okuzannya",
+    terms: `Ndiikirizza <span class="text-white underline underline-offset-4">Terms and Conditions</span>`,
+
+    signUpWithGoogle: "Wewandiise ne Google",
+    signUpWithFacebook: "Wewandiise ne Facebook",
+    signUpWithTelegram: "Wewandiise ne Telegram",
+
+    termsTitle1: `Terms And Conditions`,
+    termsParagraph1: `Ebiwandiiko bino n’ebirala ebiragiddwa wansi ("Terms") bikola ku mukutu guno ("Website") n’empeereza ezikwatagana nazo ("Service"). Osaanidde okusoma Terms zino n’obwegendereza kubanga zirimu obukulu ku ddembe lyo n’obuvunaanyizibwa bwo. Bw’okozesa mukutu guno oba empeereza, okkiriza Terms zino.`,
+    termsTitle2: `1. Ebiragiro eby’awamu`,
+    termsParagraph2: `Tulina eddembe okukyusa Terms buli kiseera. Okukozesa mukutu guno ng’emyuka kitegeeza okukkiriza enkyukakyuka.`,
+    termsTitle3: `2. Obuvunaanyizibwa bwo`,
+    termsParagraph3: `Bw’oba okozesa mukutu guno okkiriza bino: <br />
+    3.1 Oli waggulu w’emyaka 18 oba okusinziira ku mateeka g’ensi yo. <br />
+    3.2 Oli wa mateeka okukola endagaano. <br />
+    3.3 Oyinza okuba nga mukutu guno tegukkirizibwa mu nsi ezimu: Afghanistan, Algeria, Antigua & Barbuda, Australia, Belarus, Bahrain, Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte d'Ivoire, Croatia, Cuba, Czech Republic, Democratic People’s Republic of Korea (North Korea), Democratic Republic of the Congo, Denmark, Estonia, France, Greece, Guinea-Bissau, Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait, Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands, Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint Eustatius, and Saba, Aruba), Norway, Oman, Palestine, Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia, Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab Republic, Sudan, Trinidad and Tobago, Turkey, Ukraine, United Kingdom, Germany, Union of Comoros, United Arab Emirates, United States (and its dependencies, military bases and territories i.e. U.S. Minor Outlying Islands, U.S. Virgin Islands), Vanuatu, Yemen, Zimbabwe. <br />
+    3.4 Olina okwekakasa oba gambling ekkirizibwa mu nsi yo. <br />
+    3.5 Oli mwini wa payment method yo. <br />
+    3.6 Osasula mu bwesimbu. <br />
+    3.7 Oyinza okufiirwa ssente. <br />
+    3.8 Tokozesa bimanyiddwa mu bukyamu mu mateeka. <br />
+    3.9 Okola ku lulwo wekka. <br />
+    3.10 Totabula sisitimu. <br />
+    3.11 Okola mu bwesimbu bulijjo. <br />
+    3.12 Toli mu affiliate program. <br />
+    3.13 Osaba okuba ow’amazima mu byonna. <br />
+    3.14 Otegeera crypto volatility. <br />
+    3.15 Oli wa magezi ag’omunda era tolina problem ya gambling addiction. <br />
+    3.16 Tokozesa software ya 3rd party. <br />
+    3.17 Ebikwata ku ggwe birina okuba bituufu. <br />
+    3.17.1 Ebikwata ku registration tebisobola kukyusibwa nga tolina support. <br />
+    3.18 Tokozesa mu nsi ezikugiddwa. <br />
+    3.19 Oli muvunaanyizibwa ku taxes n’okukozesa empeera za crypto.`,
+  },
 };

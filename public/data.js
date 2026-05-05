@@ -747,7 +747,8 @@ export const countryLanguagesMap = {
   LU: ["lb"],
   KE: ["sw"],
   TZ: ["sw"],
-  UG: ["sw"],
+  UG: ["lm"],
+  ET: ["am"],
   RW: ["rw"],
   SA: ["ar"],
   EG: ["ar"],
@@ -800,6 +801,8 @@ export const SupportedLanguages = [
   "ga",
   "lb",
   "mt",
+  "am",
+  "lm",
 ];
 
 export const languageOptions = {
@@ -835,6 +838,8 @@ export const languageOptions = {
   ga: { name: "GA", flag: "ie" },
   lb: { name: "LB", flag: "lu" },
   mt: { name: "MT", flag: "mt" },
+  am: { name: "AM", flag: "et" },
+  lm: { name: "LM", flag: "ug" },
 };
 
 export const nodepBonuses = [
