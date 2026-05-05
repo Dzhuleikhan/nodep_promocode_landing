@@ -2765,4 +2765,138 @@ export const translations = {
                       - Inti responsabbli għat-taxxi; <br />
                       - Inti responsabbli għat-taxxi tal-kripto.`,
   },
+  am: {
+    pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
+    heroTitle: `ቦነስዎን ይቀበሉ <span><i class="actual-spin-amount">100</i> FS</span> መለያዎ ከተረጋገጠ በኋላ`,
+    heroTitleCash: `ቦነስዎን ይቀበሉ <span class="bonus-value"></span> <span class="bonus-currency"></span> መለያዎ ከተረጋገጠ በኋላ`,
+    heroSubtitle: `ይፈርሙ እና ያግኙ <span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> እና <span class="two-step-bonus-spins"></span> Free Spins በመጀመሪያ ተቀማጭ ገንዘብዎ`,
+    heroBtn: "ቦነስ ያግኙ",
+    slideStep1Title: "ይመዝገቡ",
+    slideStep1Text: '"ቦነስ ያግኙ" ን ጠቅ ያድርጉ እና ኢሜይልዎን እና የይለፍ ቃልዎን ያስገቡ።',
+    slideStep2Title: "ተቀማጭ ያድርጉ",
+    slideStep2Text: "የሚፈልጉትን የክፍያ ዘዴ ይምረጡ እና ተቀማጭ ያድርጉ።",
+    slideStep3Title: "ቦነሱን ያግኙ",
+    slideStep3Text: "የእንኳን ደህና መጡ ቦነስዎ በቦነስ ማዕከሉ ውስጥ ዝግጁ ነው።",
+    footerText:
+      "በዚህ ድረ-ገጽ ላይ ያለ ሁሉም ይዘት ለግብይት እና ለመረጃ አገልግሎት ብቻ የቀረበ ነው። ሙያዊ፣ ህጋዊ፣ ፋይናንሺያል፣ ህክምና ወይም ሌላ ምክር አይደለም። ስለ መረጃው ትክክለኛነት፣ ሙሉነት ወይም ተስማሚነት ምንም ዓይነት ውክልና ወይም ዋስትና አንሰጥም። በዚህ ይዘት ላይ ያለዎት ማንኛውም ጥገኝነት በሙሉ በራስዎ አደጋ ላይ ነው። ድረ-ገጹ ይህን ድረ-ገጽ ወይም ቁሳቁሶቹን በመጠቀም ምክንያት ለሚደርሰው ማንኛውም ኪሳራ ወይም ጉዳት ምንም ዓይነት ኃላፊነት አይወስድም።",
+    // ? SOCIALS
+    choosePassword: "የይለፍ ቃል ይምረጡ",
+    gameCurrency: "እና የጨዋታ ምንዛሬ",
+    signUpWithGoogle: "በGoogle ይመዝገቡ",
+    signUpWithFacebook: "በFacebook ይመዝገቡ",
+    phone: "ስልክ",
+    wrongEmail: "ልክ ያልሆነ ኢሜይል",
+    wrongNumber: "ልክ ያልሆነ ቁጥር",
+    signUpBtn: "ቦነስ ያግኙ",
+    promoApplied: "Promocode ተተግብሯል",
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
+    bonusNameCash: `ያለ ተቀማጭ ቦነስ <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>በ gates of olympus ውስጥ</span> <br/> ቦነስ እስከ <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% በተቀማጭ ላይ እስከ 6000",
+    phoneNumber: "የስልክ ቁጥር",
+    password: "የይለፍ ቃል",
+    minSymbols: "ቢያንስ 6 ቁምፊዎች",
+    atLeast6Chars: "ቢያንስ 6 ቁምፊዎች",
+    currency: "ምንዛሬ",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >ከውሎቹ ጋር እስማማለሁ</a></span>`,
+    startPlaying: "ቦነስ ያግኙ",
+    passwordPlaceholder: "የይለፍ ቃል",
+    // | Terms
+    termsTitle1: `ውሎች እና ሁኔታዎች`,
+    termsParagraph1: `እነዚህ ውሎች እና ሁኔታዎች እና ከዚህ በታች የሚጠቀሱ ሰነዶች ("ውሎቹ") በአሁኑ ድረ-ገጽ ("ድረ-ገጽ") እና ተዛማጅ ወይም የተያያዙ አገልግሎቶቹ (በጋራ "አገልግሎቱ") አጠቃቀም ላይ ተፈጻሚ ናቸው። እነዚህን ውሎች በጥንቃቄ ያንብቡ ምክንያቱም ድረ-ገጹን አጠቃቀምዎ ላይ ስለ መብቶችዎ እና ግዴታዎችዎ አስፈላጊ መረጃ ይዘዋል እናም እርስዎ - ደንበኛው ("ደንበኛ") እና እኛ ("ድረ-ገጽ") መካከል አስገዳጅ ህጋዊ ስምምነት ይፈጥራሉ። ይህን ድረ-ገጽ በመጠቀም እና/ወይም አገልግሎቱን በማግኘት፣ እርስዎ እንደ እንግዳ ወይም መለያ ያለዎት ተመዝጋቢ ተጠቃሚ ("መለያ") ቢሆኑም፣ ከጊዜ ወደ ጊዜ ሊታተሙ ከሚችሉ ማሻሻያዎች ጋር ለእነዚህ ውሎች ተገዥ ለመሆን ይስማማሉ። እነዚህን ውሎች ካልተቀበሉ አገልግሎቱን ከማግኘት እና ድረ-ገጹን ከመጠቀም መቆጠብ አለቦት።`,
+    termsTitle2: `1. አጠቃላይ ውሎች`,
+    termsParagraph2: `ውሎቹን (ከዚህ በታች የሚጠቀሱ እና የተያያዙ ሰነዶችን ጨምሮ) በማንኛውም ጊዜ ለማሻሻል እና ለመቀየር መብቱን እናስጠብቃለን። ውሎቹን እና ሁኔታዎቹን ለማጤን ይህን ገጽ ወቅታዊ በሆነ መልኩ መጎብኘት አለቦት። ማሻሻያዎች በዚህ ድረ-ገጽ ላይ ከታተሙ ጊዜ ጀምሮ አስገዳጅ እና ወዲያውኑ ተፈጻሚ ይሆናሉ። ለማንኛውም እንደዚህ ዓይነት ለውጦች ተቃውሞ ካለዎ አገልግሎቱን ወዲያውኑ ማቆም አለቦት። ከታተሙ በኋላ ድረ-ገጹን ማያያዝዎ ማቀጣጠልዎ ከተሻሻሉ ውሎቹ ጋር ለመስማማትዎ ማሳያ ይሆናል። ለውጦቹ ሥራ ላይ ከመዋላቸው በፊት ያልተወሰኑ ሁሉም ውርርዶች ቀደም ሲሉ ለነበሩ ውሎቹ ተገዥ ይሆናሉ። የ Goldbet ውሎች እና ሁኔታዎች ከተዘምኑ መድረኩ ያሳውቅዎታል እና ፈቃድዎን ለማረጋገጥ ይጠይቅዎታል።`,
+    termsTitle3: `2. ግዴታዎችዎ`,
+    termsParagraph3: `ድረ-ገጹን ሲጎበኙ እና አገልግሎቱን ሲጠቀሙ በሁሉ ጊዜ የሚከተሉትን እንደሚቀበሉ ያምናሉ፦ <br />
+                      3.1. ዕድሜዎ 18 ወይም ከዚያ በላይ ነው፣ ወይም ድርጅቱ ወይም የጨዋታ እንቅስቃሴዎች ሕጋዊ ሆነው በሚፈቀዱበት ዕድሜ ላይ ነዎት። ለዕድሜ ማረጋገጫ ሰነዶች በማንኛውም ጊዜ የመጠየቅ መብቱን እናስጠብቃለን። <br />
+                      3.2. ሕጋዊ አቅም ያለዎት ሲሆን ከኛ ጋር አስገዳጅ ህጋዊ ስምምነት ለመፈጸም ይችላሉ። ሕጋዊ አቅም ከሌለዎት ድረ-ገጹን ማግኘት ወይም አገልግሎቱን መጠቀም የለቦትም። <br />
+                      3.3. ድረ-ገጹን የማግኘት እና የመጠቀም እና እዚያ የሚቀርቡ ማንኛውም ምርቶችን የማግኘት መብት በተወሰኑ ሀገሮች ሕገ-ወጥ ሊሆን እንደሚችል ያውቃሉ። አገልግሎቱ ህጋዊነቱን በእያንዳንዱ የዳኝነት ሥልጣን ክልል ማረጋገጥ አንችልም፤ ስለዚህ ድረ-ገጻችንን ማግኘትዎ እና መጠቀምዎ በሀገርዎ ተፈጻሚ ከሆኑ ሕጎች ጋር ተስማሚ መሆኑን እና ውርርድ በሚኖሩበት ግዛት ሕጋዊ ለመሆኑ ኃላፊነቱ ያለቦት እርስዎ ነዎት። ለተለያዩ ህጋዊ ወይም ንግዳዊ ምክንያቶች፣ ከሚከተሉት ሀገሮች ጨምሮ ግን ብቻ ሳይሆን በተወሰኑ የዳኝነት ሥልጣን ክልሎች ነዋሪ በሆኑ ደንበኞች መለያዎቻቸው እንዲከፈቱ ወይም ጥቅም ላይ እንዲውሉ አንፈቅድም፦ አፍጋኒስታን፣ አልጄሪያ፣ አንቲጉዋ እና ባርቡዳ፣ አውስትራሊያ፣ ቤላሩስ፣ ባህሬን፣ ቤልጂየም፣ ቡታን፣ ብሩናይ፣ ማዕከላዊ አፍሪካ ሪፐብሊክ፣ ቻድ፣ ኮት ዲቩዋር፣ ክሮኤሺያ፣ ኩባ፣ ቼክ ሪፐብሊክ፣ የኮሪያ ዲሞክራሲያዊ ህዝቦች ሪፐብሊክ (ሰሜን ኮሪያ)፣ የኮንጎ ዲሞክራሲያዊ ሪፐብሊክ፣ ዴንማርክ፣ ኢስቶኒያ፣ ፈረንሳይ፣ ግሪክ፣ ጊኒ-ቢሳው፣ ሃንጋሪ፣ ኢራን፣ ኢራቅ፣ አይስላንድ፣ እስራኤል፣ ጣሊያን፣ ጆርዳን፣ ኩዌት፣ ላትቪያ፣ ላይቤሪያ፣ ሊቱዌኒያ፣ ማልታ፣ ምያንማር፣ ኔዘርላንድ፣ የኔዘርላንድ አንቲሊዎች (ኩራሳኦ፣ ሲንት ማርተን፣ ቦኔር፣ ሲንት ኤውስታቲዩስ እና ሳባ፣ አሩባ)፣ ኖርዌይ፣ ኦማን፣ ፍልስጤም፣ ፓኪስታን፣ ቃጣር፣ ሩሲያ፣ ሳባ፣ ሴንት ማርቲን፣ ሳዑዲ አረቢያ፣ ሰርቢያ፣ ስሎቬኒያ፣ ሶማሊያ፣ ስፔን፣ ስዊዘርላንድ፣ የሶሪያ አረብ ሪፐብሊክ፣ ሱዳን፣ ትሪኒዳድ እና ቶባጎ፣ ቱርኪ፣ ዩክሬን፣ ዩናይትድ ኪንደም፣ ጀርመን፣ የኮሞሮስ ህብረት፣ የተባበሩት አረብ ኢሚሬቶች፣ አሜሪካ (እና ጥገኞቿ፣ ወታደራዊ ቦታዎቿ እና ግዛቶቿ ማለትም የዩ.ኤስ. ጥቃቅን ውጫዊ ደሴቶች፣ የዩ.ኤስ. ቨርጂን ደሴቶች)፣ ቫኑዋቱ፣ የመን፣ ዚምባቡዌ ወይም ሌሎች ከጊዜ ወደ ጊዜ እኛ የምናሳውቃቸው የተገደቡ የዳኝነት ሥልጣን ክልሎች ("የተከለከሉ የዳኝነት ሥልጣን ክልሎች")። ድረ-ገጹን በመጠቀም በተከለከለ የዳኝነት ሥልጣን ክልል ውስጥ ነዋሪ አለመሆንዎን ያረጋግጣሉ። <br />
+                      3.4. መለያ ለመክፈት ወይም ድረ-ገጹን ለመጠቀም ሲሞክሩ ውርርድ በዚያ የዳኝነት ሥልጣን ክልል ህጋዊ መሆን አለመሆኑን ማረጋገጥ የተጫዋቹ ኃላፊነት ነው። <br />
+                      3.5. በሚጠቀሙበት የክፍያ ዘዴ ሕጋዊ ተጠቃሚ ሲሆኑ በመለያዎ ላይ ያሉ እና በአገልግሎቱ ውስጥ ጥቅም ላይ የሚውሉ ሁሉም ሀብቶች ህጋዊ ናቸው። <br />
+                      3.6. ለኛ ሁሉንም ክፍያዎች በቅን ልቦና ማድረግ እና የተደረገ ክፍያን ለመቀልበስ ወይም እንደዚህ ዓይነት ክፍያ በሶስተኛ ወገን እንዲቀለበስ የሚያደርግ ምንም ዓይነት እርምጃ ለመውሰድ አለመሞከር አለቦት። <br />
+                      3.7. ውርርዶችን ሲያዝዙ ወደ አገልግሎቱ ያስቀመጡትን ገንዘብ ከዚህ ውሎቹ ጋር በሚስማማ መልኩ ከፊሉን ወይም ሙሉውን ሊያጡ ይችላሉ፤ ለዚያ ኪሳራ ሙሉ ኃላፊነቱ ያለቦት እርስዎ ይሆናሉ። <br />
+                      3.8. ውርርዶችን ሲያዝዙ ውርርዱ ሲደረግ በነበሩበት ሀገር ሥራ ላይ ካለ ማንኛውም ሕግ ጋር ተቃርኖ ባለው አኳኋን የተገኘ መረጃን መጠቀም የለቦትም። <br />
+                      3.9. ለሌላ ወገን ወይም ለምንም ንግዳዊ ዓላማ ሳይሆን ለግል አቅም ባለው ግለሰብ ሆነው በራስዎ ስም ብቻ እርምጃ እየወሰዱ ነው። <br />
+                      3.10. ምንም ዓይነት ገበያ ወይም አገልግሎቱ ውስጥ ያለ ምንም ዓይነት ንጥረ-ነገር በመጥፎ ልቦና ወይም የአገልግሎቱን ወይም የኛን ሙሉነት በሚጎዳ ሁኔታ ለማቀናበር ሞክሮ ወይም ሲሞክሩ ሊሆኑ የለቦትም። <br />
+                      3.11. አገልግሎቱን ሁሉ ጊዜ እና ሁሉም ውርርዶች ላይ አገልግሎቱን በቅን ልቦና ለመጠቀም ጥረት ማድረግ አለቦት። <br />
+                      3.12. እርስዎ፣ ወይም ተፈጻሚ ከሆነ ሠራተኞችዎ፣ ቀጣሪዎችዎ፣ ወኪሎችዎ ወይም የቤተሰብ አባሎትዎ በ Affiliate ፕሮግራማቸን ተባባሪ ሆነው አልተመዘገቡም። <br />
+                      3.13. Goldbet ን ሲጠቀሙ በማንኛውም ጊዜ ዲፎልት ሆኖ እና እኛ ስንጠይቅ እውነተኛ፣ ትክክለኛ እና ትክክለኛ ውሂብ ብቻ ለመስጠት ይስማማሉ። <br />
+                      3.14. የ crypto ገበያ ተለዋዋጭነትን ይረዱ እና ለወጣ ከፍያ ሲጠብቁ ወይም ወጪዎ በ Risk ዲፓርትመንታችን ሲካሄድ የምንዛሬዎ/ምንዛሬዎቹ ዋጋ ሊለዋወጥ እንደሚችል ዕድሉን ይቀበላሉ። <br />
+                      3.15. አእምሯዊ ብቃት ያለዎት ሰው ሲሆኑ ከውርርድ ሱሰኝነት አትሠቃዩም። እንደዚህ ዓይነት ችግር ያለው ሰው ድረ-ገጹን ቢያይ፤ ኃላፊነቱ ያለቦት በራሳቸው ነው። <br />
+                      3.16. ማንኛውም የሶስተኛ ወገን ሶፍትዌርን በ Goldbet ንዑሳን ዘርፎች ከመጠቀም እና በመድረኩ ላይ የሚገኙ ማንኛውም የጨዋታ/ስርዓት ድክመቶችን ከማወቅ ለማስቀረት ይስማማሉ። <br />
+                      3.17. ከምዝገባ ጊዜ ጀምሮ እና ይህ ስምምነት ሥራ ላይ ባለው ጊዜ ሁሉ ለኛ የሚሰጡት ሁሉም መረጃ እውነተኛ፣ ሙሉ፣ ትክክለኛ እና ማንኛውም ለውጥ ወዲያውኑ እንደሚያሳውቁን ዋስትና ይሰጣሉ። <br />
+                      3.17.1. ምዝገባ ወቅት እና አገልግሎቱን ሲጠቀሙ የገቡት መረጃ በእርስዎ ዉሳኔ ሊቀይሩ እንደማይችሉ ያረጋግጣሉ። ማንኛውም መረጃ ለመቀየር የድጋፍ ቡድኑን ማነጋገር ያስፈልጋል። ማንኛውም መረጃ ለመቀየር Goldbet በራሱ ዉሳኔ KYC ለማለፍ ሰነዶችን ሊጠይቅ ይችላል። <br />
+                      3.18. ኦንላይን ውርርዶችን ማስቀመጥ እና/ወይም ማቀናበር እና/ወይም ካሲኖ እና/ወይም የቀጥታ ጨዋታዎችን ማጫወት የሚከለከሉ የዳኝነት ሥልጣን ክልሎች ውስጥ ሆነው አገልግሎቶቻችንን ላለመጠቀም ዋስትና ይሰጣሉ። <br />
+                      3.19. እንዲሁም ዋስትና ይሰጣሉ፦ <br />
+                      - በአገልግሎቶቹ ላይ ለሌላ ሰው ሳይሆን ለራስዎ ብቻ ይሳተፋሉ፤ <br />
+                      - ከኛ ለሚቀበሉት ማንኛውም ውጤቶች ተፈጻሚ ሕጎች ስር ለሚፈለጉ ማንኛውም ግብሮች ሪፖርት ማድረጊያ እና ሂሳብ ኃላፊነቱ ያለቦት ሙሉ ለሙሉ እርስዎ ናቸዎ፤ <br />
+                      - አገልግሎቱን በመጠቀምዎ ሊሰጥዎ ለሚችለው ምን ዓይነት ክሪፕቶ ምንዛሬም ሆነ ሊፈለጉ ለሚችሉ ግብሮች ሙሉ ኃላፊነቱ ያለቦት እርስዎ ናቸዎ።`,
+  },
+  lm: {
+    pageTitle: "🎁 Bonasi yo etegekeddwa - Goldbet",
+    heroTitle: `Funa Bonasi Yo <span><i class="actual-spin-amount">100</i> FS</span> Akawunti Yo Bw'eripokezebwa`,
+    heroTitleCash: `Funa Bonasi Yo <span class="bonus-value"></span> <span class="bonus-currency"></span> Akawunti Yo Bw'eripokezebwa`,
+    heroSubtitle: `Signing ne ofuna <span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> ne <span class="two-step-bonus-spins"></span> Free Spins n'enteeka yo eya 1`,
+    heroBtn: "funa bonasi",
+    slideStep1Title: "Wandiika",
+    slideStep1Text: 'Nyiga "Funa Bonasi" oyingize emeyili yo ne pawudi yo.',
+    slideStep2Title: "Teeka Ensimbi",
+    slideStep2Text:
+      "Londa enkola ey'okufuula ensimbi gy'oyagala oyingize ensimbi.",
+    slideStep3Title: "Funa Bonasi",
+    slideStep3Text: "Bonasi yo y'okunyweza etegekeddwa mu Bonasi Center.",
+    footerText:
+      "Ebintu byonna ebiri ku mukutu guno biweebwa okuyamba okulanga n'okumanya byokka. Tekibala kubuulirira kw'omuntu, ky'amateeka, eky'ensimbi, eky'obulamu, oba ekindi kyonna eky'okutegeka. Tetuwa kuwa butegeezi bwonna ku butuufu, okujjukirira, oba okukkirizibwa kw'ebinamiziibwa. Okwesiga kwonna kw'okukozesa ebintu ebi kukola ku kabi kwo wekka. Ekifo tekikkiriza buyinza bwonna oba butali bwobwa bwonna okwa bbula oba okonooneka kwonna ekubaako olw'okukozesa mukutu guno oba ebintu bye.",
+    // ? SOCIALS
+    choosePassword: "Londa pawudi",
+    gameCurrency: "Ne ensimbi y'omuzannyo",
+    signUpWithGoogle: "Wandiika ne Google",
+    signUpWithFacebook: "Wandiika ne Facebook",
+    phone: "Simu",
+    wrongEmail: "Emeyili etali ya butuufu",
+    wrongNumber: "Namba etali ya butuufu",
+    signUpBtn: "Funa Bonasi",
+    promoApplied: "Promocode ekozeseddwa",
+    bonusName: `<span class="actual-spin-amount">100</span> FS`,
+    bonusNameCash: `Bonasi Awatali Nteeka <span class="bonus-value"></span><span class="bonus-currency"></span>`,
+    depositBonus: `<span class='applied-nodep-bonus'>mu gates of olympus</span> <br/> bonasi okutuuka ku <span class="bonus-value">340.000</span> <span class="bonus-currency">₺</span> + 25FS`,
+    depositBonus2: "400% ku nteeka okutuuka ku 6000",
+    phoneNumber: "Namba ya simu",
+    password: "Pawudi",
+    minSymbols: "Obunnyike 6 by'ebiwandiiko",
+    atLeast6Chars: "Obunnyike 6 eby'ebiwandiiko",
+    currency: "Ensimbi",
+    terms: `<a href="https://dev1.goldbet.io/terms-and-conditions" class="text-[#000000] underline underline-offset-4" >Nkiriza amateeka</a></span>`,
+    startPlaying: "Funa Bonasi",
+    passwordPlaceholder: "Pawudi",
+    // | Terms
+    termsTitle1: `Ebisaanyizo n'obukwakkulizo`,
+    termsParagraph1: `Ebisaanyizo bino n'ebiwandiiko ebiragiddwa wansi ("Ebisaanyizo") bikola ku mukutu guno ("Omukutu") n'obuweereza obukwatagana nabwo ("Obuweereza"). Osaanidde okusoma ebisaanyizo bino n'obwegendereza kubanga birimu ebikwata ku ddembe lyo n'obuvunaanyizibwa bwo mu kukozesa omukutu guno. Ebisaanyizo bino bikola ng'endagaano ey'obuwandiike wakati wo (omukozesa "Client") naffe (omukutu). Bw'okozesa omukutu guno oba obuweereza, okkiriza okugoberera ebisaanyizo bino nga mwotadde n'ebikyusiddwa ebiyinza okuteekebwawo. Bw'otokiriza, tosemeza kukozesa mukutu guno.`,
+
+    termsTitle2: `1. Ebisaanyizo eby'awamu`,
+    termsParagraph2: `Tulina eddembe okukyusa ebisaanyizo bino mu buli kaseera. Olina okulambula omuko guno buli kaseera. Enkyukakyuka zijja kutandika okukola amangu ddala nga zifulumye ku mukutu. Bw'otakkaanya, leka okukozesa obuweereza. Okukozesa omukutu guno oluvannyuma lw'enkyukakyuka kitegeeza okukkiriza ebisaanyizo ebipya. Emizeezo egitali gimaliddwa gigoberera ebisaanyizo ebyasooka. Bw'ebisaanyizo bya Goldbet bikyusiddwa, omukutu gujja kukutegeeza era gukusabe okukakasa okukkiriza.`,
+
+    termsTitle3: `2. Obuvunaanyizibwa bwo`,
+    termsParagraph3: `Okiriza nti bw'oyingira ku mukutu era okozesa obuweereza, buli kiseera: <br />
+                      3.1. Oli waggulu w'emyaka 18 oba mu myaka egikkirizibwa mu mateeka agakwata ku gambling mu kitundu kyo. Tusobola okukusaba okuwa obujulizi bw'emyaka. <br />
+                      3.2. Olina obusobozi bw'amateeka okuyingira mu ndagaano. <br />
+                      3.3. Okimanyi nti okukozesa omukutu kuno mu nsi ezimu kiyinza okuba ekimenya amateeka. Afganistan, Algeria, Antigua & Barbuda, Australia, Belarus, Bahrain, Belgium, Bhutan, Brunei, Central African Republic, Chad, Côte d'Ivoire, Croatia, Cuba, Czech Republic, Democratic People’s Republic of Korea (North Korea), Democratic Republic of the Congo, Denmark, Estonia, France, Greece, Guinea-Bissau, Hungary, Iran, Iraq, Iceland, Israel, Italy, Jordan, Kuwait, Latvia, Liberia, Lithuania, Malta, Myanmar, Netherlands, Netherlands Antilles (Curacao, Sint Maarten, Bonaire, Sint Eustatius, and Saba, Aruba), Norway, Oman, Palestine, Pakistan, Qatar, Russia, Saba, Saint Martin, Saudi Arabia, Serbia, Slovenia, Somalia, Spain, Switzerland, Syrian Arab Republic, Sudan, Trinidad and Tobago, Turkey, Ukraine, United Kingdom, Germany, Union of Comoros, United Arab Emirates, United States (and its dependencies, military bases and territories i.e. U.S. Minor Outlying Islands, U.S. Virgin Islands), Vanuatu, Yemen, Zimbabwe n'ebirala ebiyinza okukugirwa ("Restricted Jurisdiction"). <br />
+                      3.4. Olina okukebera oba gambling ekkirizibwa mu kitundu kyo. <br />
+                      3.5. Oli nannyini ku nkola y'okusasula gy'okozesa. <br />
+                      3.6. Osasula mu bwesigwa. <br />
+                      3.7. Oyinza okulwawo oba okufiirwa ssente zo. <br />
+                      3.8. Tokozesa bumanyi bumenyese amateeka. <br />
+                      3.9. Tokolera ku lwa muntu omulala. <br />
+                      3.10. Totayiza mukutu. <br />
+                      3.11. Kola mu bwesigwa. <br />
+                      3.12. Totali mu Affiliate program yaffe. <br />
+                      3.13. Owa data entuufu. <br />
+                      3.14. Okimanyi volatile ya crypto. <br />
+                      3.15. Oli mulamu mu mutwe ku gambling. <br />
+                      3.16. Tokozesa software ya 3rd party. <br />
+                      3.17. Data yonna gye owa ntuufu. <br />
+                      3.17.1. Data teyakyuka nga weggulawo account, webaako contact support. <br />
+                      3.18. Tokozesa mukutu mu bifo ebigaaniddwa. <br />
+                      3.19. Olina obuvunaanyizibwa ku tax.`,
+  },
 };
