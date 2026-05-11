@@ -130,11 +130,18 @@ const countryLangMap = {
   IE: "ga",
   LU: "lb",
   MT: "mt",
+  GH: "tw",
 };
 
 async function determineLanguage() {
   const location = geoData;
-  lang = countryLangMap[location.countryCode] || "en";
+  if (location.countryCode === "NG") {
+    const browserLang = (navigator.language || "").toLowerCase().split("-")[0];
+    const nigeriaLangs = ["ha", "yo", "ig"];
+    lang = nigeriaLangs.includes(browserLang) ? browserLang : "ha";
+  } else {
+    lang = countryLangMap[location.countryCode] || "en";
+  }
   return lang;
 }
 
