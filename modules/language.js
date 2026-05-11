@@ -74,6 +74,12 @@ function getInitialLanguage(country, fallbackLang) {
     ? browserLang
     : fallbackLang;
 
+  if (country === "NG") {
+    return ["ha", "yo", "ig"].includes(browserLang) ? browserLang : "ha";
+  }
+  if (country === "GH") {
+    return "tw";
+  }
   if (country === "BE") {
     if (supportedLang && browserLang !== "nl") {
       return browserLang;
