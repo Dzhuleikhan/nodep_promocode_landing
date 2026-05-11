@@ -188,7 +188,7 @@ export const countryFlags = [
   { name: "Ukraine", slug: "ua" },
   { name: "United Arab Emirates", slug: "ae" },
   { name: "United Kingdom", slug: "gb" },
-  { name: "United States of America", slug: "us" },
+  // { name: "United States of America", slug: "us" },
   { name: "Uruguay", slug: "uy" },
   { name: "Uzbekistan", slug: "uz" },
   { name: "Vanuatu", slug: "vu" },
