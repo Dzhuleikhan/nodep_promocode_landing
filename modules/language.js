@@ -109,6 +109,10 @@ function getInitialLanguage(country, fallbackLang) {
   if (country === "EE") {
     return supportedLang ?? "et";
   }
+  if (country === "NG") {
+    const ngLangs = ["ha", "yo", "ig"];
+    return ngLangs.includes(browserLang) ? browserLang : "ha";
+  }
 
   return fallbackLang;
 }
