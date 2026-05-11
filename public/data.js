@@ -188,7 +188,7 @@ export const countryFlags = [
   { name: "Ukraine", slug: "ua" },
   { name: "United Arab Emirates", slug: "ae" },
   { name: "United Kingdom", slug: "gb" },
-  { name: "United States of America", slug: "us" },
+  // { name: "United States of America", slug: "us" },
   { name: "Uruguay", slug: "uy" },
   { name: "Uzbekistan", slug: "uz" },
   { name: "Vanuatu", slug: "vu" },
@@ -776,6 +776,8 @@ export const countryLanguagesMap = {
   UG: ["lm"],
   RW: ["rw"],
   ET: ["am"],
+  NG: ["ha", "yo", "ig"],
+  GH: ["tw"],
 };
 
 export const languageOptions = {
@@ -813,6 +815,10 @@ export const languageOptions = {
   rw: { name: "RW", flag: "rw" },
   am: { name: "AM", flag: "et" },
   lm: { name: "LM", flag: "ug" },
+  ha: { name: "HA", flag: "ng" },
+  yo: { name: "YO", flag: "ng" },
+  ig: { name: "IG", flag: "ng" },
+  tw: { name: "TW", flag: "gh" },
 };
 
 export const SupportedLanguages = [
@@ -852,6 +858,10 @@ export const SupportedLanguages = [
   "rw",
   "am",
   "lm",
+  "ha",
+  "yo",
+  "ig",
+  "tw",
 ];
 
 export const nodepBonuses = [

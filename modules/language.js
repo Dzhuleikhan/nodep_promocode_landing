@@ -95,6 +95,10 @@ function getInitialLanguage(country, fallbackLang) {
   if (country === "EE") {
     return supportedLang ?? "et";
   }
+  if (country === "NG") {
+    const nigeriaLangs = ["ha", "yo", "ig"];
+    return nigeriaLangs.includes(browserLang) ? browserLang : "ha";
+  }
 
   return fallbackLang;
 }
