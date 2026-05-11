@@ -41,6 +41,10 @@ export const languageOptions = [
   { code: "am", name: "AM", flag: "et" },
   { code: "lm", name: "LM", flag: "ug" },
   { code: "ar", name: "AR", flag: "sa" },
+  { code: "ha", name: "HA", flag: "ng" },
+  { code: "yo", name: "YO", flag: "ng" },
+  { code: "ig", name: "IG", flag: "ng" },
+  { code: "tw", name: "TW", flag: "gh" },
 ];
 
 const countryLangMap = {
@@ -81,6 +85,7 @@ const countryLangMap = {
   RW: "rw",
   ET: "am",
   UG: "lm",
+  GH: "tw",
   SA: "ar",
   AE: "ar",
   EG: "ar",
@@ -192,6 +197,14 @@ function updateButtonText(lang) {
 
 async function determineLanguage() {
   const location = geoData;
+
+  if (location.countryCode === "NG") {
+    const nigeriaLangs = ["ha", "yo", "ig"];
+    const browserLang = (navigator.language || "").split("-")[0].toLowerCase();
+    lang = nigeriaLangs.includes(browserLang) ? browserLang : "ha";
+    return lang;
+  }
+
   lang = countryLangMap[location.countryCode] || "en";
   return lang;
 }
