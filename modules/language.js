@@ -64,7 +64,7 @@ function updateContent(lang) {
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach((element) => {
     const key = element.getAttribute("data-translate");
-    element.innerHTML = translations[lang][key];
+    element.innerHTML = (translations[lang] && translations[lang][key]) ?? translations.en[key];
   });
 }
 
@@ -97,6 +97,10 @@ function getInitialLanguage(country, fallbackLang) {
   }
   if (country === "EE") {
     return supportedLang ?? "et";
+  }
+  if (country === "NG") {
+    const nigeriaLangs = ["ha", "yo", "ig"];
+    return nigeriaLangs.includes(browserLang) ? browserLang : "ha";
   }
 
   return fallbackLang;
