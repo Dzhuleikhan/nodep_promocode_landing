@@ -20,12 +20,18 @@ document.querySelectorAll("input").forEach((input) => {
 });
 
 const PHONE_ONLY_COUNTRIES = ["DE", "AT"];
-const isPhoneOnlyMode = PHONE_ONLY_COUNTRIES.includes(geoData.countryCode);
+const hideEmail = true;
+const isPhoneOnlyMode =
+  PHONE_ONLY_COUNTRIES.includes(geoData.countryCode) || hideEmail;
 
 if (isPhoneOnlyMode) {
   document.querySelector(".two-step-email-wrapper")?.classList.add("hidden");
-  document.querySelector(".two-step-step2-title-default")?.classList.add("hidden");
-  document.querySelector(".two-step-step2-title-phone")?.classList.remove("hidden");
+  document
+    .querySelector(".two-step-step2-title-default")
+    ?.classList.add("hidden");
+  document
+    .querySelector(".two-step-step2-title-phone")
+    ?.classList.remove("hidden");
 }
 
 // ? SOCIALS TWO STEP FORM
@@ -277,7 +283,9 @@ if (twoStepFormSecondStep) {
   const twoStepFormPasswordInput = twoStepFormSecondStep.querySelector(
     ".two-step-password-input",
   );
-  const twoStepFormPhoneInput = twoStepFormSecondStep.querySelector(".two-step-phone-input");
+  const twoStepFormPhoneInput = twoStepFormSecondStep.querySelector(
+    ".two-step-phone-input",
+  );
   const btnOverlap = twoStepFormSecondStepBtn.querySelector(".disable-overlap");
 
   const regex =
@@ -294,12 +302,12 @@ if (twoStepFormSecondStep) {
   const validateInputs = (validColor, invalidColor) => {
     const fields = isPhoneOnlyMode
       ? [
-          { input: twoStepFormPhoneInput,    isValid: isPhoneFieldValid() },
+          { input: twoStepFormPhoneInput, isValid: isPhoneFieldValid() },
           { input: twoStepFormPasswordInput, isValid: isPasswordFieldValid() },
         ]
       : [
-          { input: twoStepFormPhoneInput,    isValid: isPhoneFieldValid() },
-          { input: twoStepFormEmailInput,    isValid: isEmailFieldValid() },
+          { input: twoStepFormPhoneInput, isValid: isPhoneFieldValid() },
+          { input: twoStepFormEmailInput, isValid: isEmailFieldValid() },
           { input: twoStepFormPasswordInput, isValid: isPasswordFieldValid() },
         ];
 
@@ -315,7 +323,9 @@ if (twoStepFormSecondStep) {
       const digits = twoStepFormPhoneInput.value.replace(/\D/g, "");
       twoStepFormData.phone = `${dialCode}${digits}`;
       twoStepFormData.password = twoStepFormPasswordInput.value;
-      twoStepFormData.email = isPhoneOnlyMode ? "" : twoStepFormEmailInput.value;
+      twoStepFormData.email = isPhoneOnlyMode
+        ? ""
+        : twoStepFormEmailInput.value;
       twoStepFormSecondStepBtn.disabled = false;
     } else {
       twoStepFormSecondStepBtn.disabled = true;
@@ -325,7 +335,9 @@ if (twoStepFormSecondStep) {
   twoStepFormSecondStepBtn.disabled = true;
 
   const attachListeners = (input) => {
-    input.addEventListener("focusout", () => validateInputs("#4ED937", "#ff5530"));
+    input.addEventListener("focusout", () =>
+      validateInputs("#4ED937", "#ff5530"),
+    );
     input.addEventListener("input", () => {
       input.style.color = "#8726FF";
       validateInputs("#4ED937", "#8726FF");
@@ -982,7 +994,9 @@ twoStepFormMain.addEventListener("submit", (e) => {
   console.log(twoStepFormData);
 
   const type = isPhoneOnlyMode ? "phone" : "email";
-  const emailParam = isPhoneOnlyMode ? "" : `&email=${encodeURIComponent(email)}`;
+  const emailParam = isPhoneOnlyMode
+    ? ""
+    : `&email=${encodeURIComponent(email)}`;
 
   window.location.href = `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
