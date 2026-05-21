@@ -19,7 +19,9 @@ document.querySelectorAll("input").forEach((input) => {
 });
 
 const PHONE_ONLY_COUNTRIES = ["DE", "AT"];
-const isPhoneOnlyMode = PHONE_ONLY_COUNTRIES.includes(geoData.countryCode);
+const hideEmail = true;
+const isPhoneOnlyMode =
+  PHONE_ONLY_COUNTRIES.includes(geoData.countryCode) || hideEmail;
 
 if (isPhoneOnlyMode) {
   document.querySelector(".two-step-email-wrapper")?.classList.add("hidden");
@@ -328,7 +330,9 @@ if (twoStepFormSecondStep) {
       const digits = twoStepFormPhoneInput.value.replace(/\D/g, "");
       twoStepFormData.phone = `${dialCode}${digits}`;
       twoStepFormData.password = twoStepFormPasswordInput.value;
-      twoStepFormData.email = isPhoneOnlyMode ? "" : twoStepFormEmailInput.value;
+      twoStepFormData.email = isPhoneOnlyMode
+        ? ""
+        : twoStepFormEmailInput.value;
       twoStepFormSecondStepBtn.disabled = false;
     } else {
       twoStepFormSecondStepBtn.disabled = true;
