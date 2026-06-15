@@ -269,7 +269,11 @@ if (twoStepFormSecondStep) {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    const isEmailValid =
+      regex.test(emailValue) &&
+      (window.EmailGuard && window.EmailGuard.isValid
+        ? window.EmailGuard.isValid(twoStepFormEmailInput)
+        : true);
     const isPasswordValid = passwordValue.length >= 6;
 
     twoStepFormEmailInput.style.color = isEmailValid
@@ -297,6 +301,11 @@ if (twoStepFormSecondStep) {
     validateInputs("#4ED937", "#ff5530"),
   );
   twoStepFormPasswordInput.addEventListener("focusout", () =>
+    validateInputs("#4ED937", "#ff5530"),
+  );
+
+  // Пересчёт кнопки, когда приходит асинхронный вердикт Zeruh (email-guard)
+  twoStepFormEmailInput.addEventListener("emailguard:result", () =>
     validateInputs("#4ED937", "#ff5530"),
   );
 
@@ -986,7 +995,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard && window.EmailGuard.tags ? window.EmailGuard.tags() : ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,

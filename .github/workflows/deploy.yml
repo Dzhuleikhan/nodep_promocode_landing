@@ -3,7 +3,7 @@ name: Deploy to VPS Servers
 on:
   push:
     branches:
-      - 100fs_sweet_bonanza
+      - 100fs_sweet_bonanza_zeruh
 
 jobs:
   deploy:
@@ -15,34 +15,31 @@ jobs:
         site:
           - goldbet.wiki
           - promogb.com
-          - goldbet.website
-          - goldbet.click
-          - goldbetio.com
-          - goldbet.sbs
-          - goldbet.monster
-          - goldbet.lol
-          - goldbet.cam
-          - goldbet.cfd
-          - goldbet.cyou
-          - goldbet.fun
-          - goldcvr88.xyz
-          - goldimh6b.xyz
-          - golds3s22.xyz
-          - goldv5s3w.xyz
-          - goldxe892.xyz
-          - goldm5r2.com
-          - goldq8n1.com
-          - goldv3k7.com
-          - goldc9t4.com
-          - goldy6p8.com
-          - golda2w5.com
-          - goldu7h3.com
-          - goldl4x9.com
+          # - goldbet.website
+          # - goldbet.click
+          # - goldbetio.com
+          # - goldbet.sbs
+          # - goldbet.monster
+          # - goldbet.lol
+          # - goldbet.cam
+          # - goldbet.cfd
+          # - goldbet.cyou
+          # - goldbet.fun
+          # - goldcvr88.xyz
+          # - goldimh6b.xyz
+          # - golds3s22.xyz
+          # - goldv5s3w.xyz
+          # - goldxe892.xyz
+          # - goldm5r2.com
+          # - goldq8n1.com
+          # - goldv3k7.com
+          # - goldc9t4.com
+          # - goldy6p8.com
+          # - golda2w5.com
+          # - goldu7h3.com
+          # - goldl4x9.com
         vps:
           [
-            PRIMA,
-            ORANGE,
-            NJAL,
             FLOKINET_FI_ONE,
             FLOKINET_NL,
             FLOKINET_FI_TWO,
@@ -73,4 +70,4 @@ jobs:
           username: ${{ secrets[format('FTP_USER_{0}', matrix.vps)] }}
           password: ${{ secrets[format('FTP_PASSWORD_{0}', matrix.vps)] }}
           local-dir: ./dist/
-          server-dir: /www/${{ matrix.site }}/freespins/sweetbonanza/
+          server-dir: /www/${{ matrix.site }}/freespins/sweetbonanza/zeruh/

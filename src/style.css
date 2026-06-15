@@ -411,3 +411,13 @@
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
 }
+
+[data-eg="hint"] {
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+[data-eg-state="error"] {
+  color: #FF5530;
+}
