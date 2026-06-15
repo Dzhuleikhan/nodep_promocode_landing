@@ -276,10 +276,17 @@ if (twoStepFormSecondStep) {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    const isEmailSyntaxValid = regex.test(emailValue);
+    // Email-Guard: кнопка ждёт вердикта Zeruh (проверена и не плохая).
+    // Если сниппет не загрузился — fail-open (валидно по синтаксису).
+    const isEmailValid =
+      isEmailSyntaxValid &&
+      (window.EmailGuard && window.EmailGuard.isValid
+        ? window.EmailGuard.isValid(twoStepFormEmailInput)
+        : true);
     const isPasswordValid = passwordValue.length >= 6;
 
-    twoStepFormEmailInput.style.color = isEmailValid
+    twoStepFormEmailInput.style.color = isEmailSyntaxValid
       ? validColor
       : invalidColor;
     twoStepFormPasswordInput.style.color = isPasswordValid
@@ -304,6 +311,10 @@ if (twoStepFormSecondStep) {
     validateInputs("#4ED937", "#ff5530"),
   );
   twoStepFormPasswordInput.addEventListener("focusout", () =>
+    validateInputs("#4ED937", "#ff5530"),
+  );
+  // Пересчёт кнопки, когда приходит асинхронный вердикт Email-Guard (Zeruh)
+  twoStepFormEmailInput.addEventListener("emailguard:result", () =>
     validateInputs("#4ED937", "#ff5530"),
   );
 
@@ -1001,7 +1012,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,

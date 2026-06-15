@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script defer src="/email-guard.js?v=1.0.7" data-eg-debug="false"></script>
   </head>
   <body class="bg-[#000000] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
@@ -1073,6 +1074,7 @@
                   <input
                     class="two-step-general-input two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="email"
+                    data-eg="email"
                   />
                   <label
                     data-translate="emailPlaceholder"
@@ -1115,6 +1117,7 @@
                 </div>
                 <button
                   type="button"
+                  data-eg="gate"
                   class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>

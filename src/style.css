@@ -454,3 +454,9 @@
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
 }
+
+.eg-hint {
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
