@@ -6,7 +6,6 @@ import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
-import { isDisposableEmail } from "./disposableEmail";
 import flatpickr from "flatpickr";
 import {
   defaulPromocode,
@@ -294,7 +293,12 @@ if (twoStepFormSecondStep) {
 
   const isEmailFieldValid = () => {
     const emailValue = twoStepFormEmailInput.value.trim();
-    return regex.test(emailValue) && !isDisposableEmail(emailValue);
+    if (!regex.test(emailValue)) return false;
+    // Zeruh: живость + disposable. fail-open, если сниппет не загрузился.
+    if (window.EmailGuard && window.EmailGuard.isValid) {
+      return window.EmailGuard.isValid(twoStepFormEmailInput);
+    }
+    return true;
   };
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
@@ -361,6 +365,26 @@ if (twoStepFormSecondStep) {
   attachListeners(twoStepFormPasswordInput);
   if (!isPhoneOnlyMode) {
     attachListeners(twoStepFormEmailInput);
+
+    // ? EMAIL-GUARD (Zeruh): пересчёт кнопки по async-вердикту + спиннер проверки
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    const hideSpinner = () => emailSpinner?.classList.add("hidden");
+
+    // вердикт Zeruh прилетел асинхронно → пересчитать кнопку и убрать спиннер
+    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+      validateInputs("#4ED937", "#8726FF");
+      if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
+    });
+    // почта ушла в Zeruh (синтаксис ок, вердикта ещё нет) → показать спиннер
+    twoStepFormEmailInput.addEventListener("focusout", () => {
+      if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) {
+        emailSpinner?.classList.remove("hidden");
+      }
+    });
+    // правка поля → активной проверки нет, перезапустится на blur
+    twoStepFormEmailInput.addEventListener("input", hideSpinner);
   }
 
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
@@ -1031,7 +1055,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(
       password,

@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script defer src="/email-guard.js?v=1.0.7" data-eg-debug="false"></script>
   </head>
   <body class="bg-[#091025] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
@@ -745,6 +746,7 @@
                   </svg>
                   <input
                     dir="ltr"
+                    data-eg="email"
                     class="two-step-general-input rtl:text-right two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="email"
                   />
@@ -753,6 +755,7 @@
                     class="two-step-general-label two-step-required-label two-step-email-label rtl:right-[45px] rtl:left-auto pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
                     >Enter E-mail</label
                   >
+                  <span class="two-step-email-spinner hidden"></span>
                 </div>
                 <!-- password input -->
                 <div
