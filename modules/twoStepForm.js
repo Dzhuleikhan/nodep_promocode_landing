@@ -5,7 +5,6 @@ import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
-import { isDisposableEmail } from "./disposableEmail";
 import flatpickr from "flatpickr";
 import {
   defaulPromocode,
@@ -293,7 +292,12 @@ if (twoStepFormSecondStep) {
 
   const isEmailFieldValid = () => {
     const v = twoStepFormEmailInput.value.trim();
-    return regex.test(v) && !isDisposableEmail(v);
+    if (!regex.test(v)) return false;
+    // Zeruh / email-guard: держим кнопку выключенной, пока почта не подтверждена.
+    if (window.EmailGuard && window.EmailGuard.isValid) {
+      return window.EmailGuard.isValid(twoStepFormEmailInput);
+    }
+    return true; // сниппет не загрузился → fail-open
   };
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
@@ -345,7 +349,33 @@ if (twoStepFormSecondStep) {
   };
   attachListeners(twoStepFormPhoneInput);
   attachListeners(twoStepFormPasswordInput);
-  if (!isPhoneOnlyMode) attachListeners(twoStepFormEmailInput);
+  if (!isPhoneOnlyMode) {
+    attachListeners(twoStepFormEmailInput);
+    // Пересчитываем кнопку, когда приходит асинхронный вердикт Zeruh.
+    twoStepFormEmailInput.addEventListener("emailguard:result", () =>
+      validateInputs("#4ED937", "#ff5530"),
+    );
+
+    // Спиннер проверки в инпуте, пока почта проверяется в Zeruh (без правки сниппета).
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    if (emailSpinner) {
+      const showSpinner = () => emailSpinner.classList.remove("hidden");
+      const hideSpinner = () => emailSpinner.classList.add("hidden");
+
+      twoStepFormEmailInput.addEventListener("focusout", () => {
+        // почта ушла в Zeruh → крутим
+        if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) showSpinner();
+      });
+      twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+        // !isPending — чтобы не гасить на промежуточном синхронном setState до ответа Zeruh
+        if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
+      });
+      // правка поля → активной проверки нет (перезапустится на blur)
+      twoStepFormEmailInput.addEventListener("input", hideSpinner);
+    }
+  }
 
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
     validateInputs("#4ED937", "#8726FF");
@@ -998,19 +1028,25 @@ twoStepFormMain.addEventListener("submit", (e) => {
     ? ""
     : `&email=${encodeURIComponent(email)}`;
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
-    promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
-  }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
-    lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
-  }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
-    country ? "&country=" + country : ""
-  }${state ? "&state=" + encodeURIComponent(state) : ""}${
-    city ? "&city=" + encodeURIComponent(city) : ""
-  }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
-    address ? "&address=" + encodeURIComponent(address) : ""
-  }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
-    offer ? "&offer=" + offer : ""
-  }`;
+  // Теги качества почты (Zeruh): email_status / reason / score / flags.
+  const emailGuardTags = isPhoneOnlyMode
+    ? ""
+    : window.EmailGuard?.tags?.() || "";
+
+  window.location.href =
+    `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
+      promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
+    }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
+      lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
+    }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
+      country ? "&country=" + country : ""
+    }${state ? "&state=" + encodeURIComponent(state) : ""}${
+      city ? "&city=" + encodeURIComponent(city) : ""
+    }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
+      address ? "&address=" + encodeURIComponent(address) : ""
+    }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+      offer ? "&offer=" + offer : ""
+    }` + emailGuardTags;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
