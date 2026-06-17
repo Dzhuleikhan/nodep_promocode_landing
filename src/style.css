@@ -440,3 +440,7 @@ body {
 .actual-spin-amount {
   font-style: normal;
 }
+
+.hero-subtitle {
+  display: none;
+}

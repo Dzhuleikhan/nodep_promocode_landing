@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> up to <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sweet Deposit Bonus <br/> <b><span>200%</span></b> up to <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins on your first deposit`,
     heroBtn: "get bonus",
     paymentsTitle: `Accepted <span>41</span> Cryptocurrencies`,
@@ -164,7 +164,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> jusqu'à <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bonus de dépôt sucré <br/> <b><span>200%</span></b> jusqu'à <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> tours gratuits sur votre premier dépôt`,
     heroBtn: "obtenir le bonus",
     paymentsTitle: `<span>41</span> Cryptomonnaies Acceptées`,
@@ -223,7 +223,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este pregătit - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> până la <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bonus de depunere dulce <br/> <b><span>200%</span></b> până la <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> rotiri gratuite la prima depunere`,
     heroBtn: "obține bonusul",
     paymentsTitle: `Acceptăm <span>41</span> criptomonede`,
@@ -360,7 +360,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `Crypto Highroller bónusz <br/> <b><span>200%</span></b> akár <b><span>100.000 USD</span></b> értékig`,
+    heroTitle: `Édes befizetési bónusz <br/> <b><span>200%</span></b> akár <b><span class='hero-title-bonus-amount'>100.000 USD</span></b> értékig`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> ingyen pörgetés az első befizetésedre`,
     heroBtn: "bónusz igénylése",
     paymentsTitle: `<span>41</span> kriptovalutát elfogadunk`,
@@ -419,7 +419,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> do <b><span>100.000 USD</span></b>`,
+    heroTitle: `Słodki bonus od depozytu <br/> <b><span>200%</span></b> do <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> darmowych spinów przy pierwszym depozycie`,
     heroBtn: "odbierz bonus",
     paymentsTitle: `Akceptujemy <span>41</span> kryptowalut`,
@@ -479,7 +479,7 @@ export const translations = {
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> až do <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sladký vkladový bonus <br/> <b><span>200%</span></b> až do <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> volných otočení při prvním vkladu`,
     heroBtn: "získat bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptoměn`,
@@ -538,7 +538,7 @@ export const translations = {
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> do <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sladki bonus za polog <br/> <b><span>200%</span></b> do <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> brezplačnih vrtljajev ob prvem pologu`,
     heroBtn: "prevzemi bonus",
     paymentsTitle: `Sprejemamo <span>41</span> kriptovalut`,
@@ -598,7 +598,7 @@ export const translations = {
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> έως <b><span>100.000 USD</span></b>`,
+    heroTitle: `Γλυκό μπόνους κατάθεσης <br/> <b><span>200%</span></b> έως <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> δωρεάν περιστροφές με την πρώτη κατάθεση`,
     heroBtn: "λάβετε το μπόνους",
     paymentsTitle: `Δεχόμαστε <span>41</span> κρυπτονομίσματα`,
@@ -658,7 +658,7 @@ export const translations = {
   },
   nb: {
     pageTitle: "🎁 Din bonus er klar – Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> opptil <b><span>100.000 USD</span></b>`,
+    heroTitle: `Søt innskuddsbonus <br/> <b><span>200%</span></b> opptil <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratisspinn på ditt første innskudd`,
     heroBtn: "hent bonusen",
     paymentsTitle: `Vi godtar <span>41</span> kryptovalutaer`,
@@ -717,7 +717,7 @@ export const translations = {
   },
   sv: {
     pageTitle: "🎁 Din bonus är klar – Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> upp till <b><span>100.000 USD</span></b>`,
+    heroTitle: `Söt insättningsbonus <br/> <b><span>200%</span></b> upp till <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> gratissnurr vid din första insättning`,
     heroBtn: "hämta bonusen",
     paymentsTitle: `Vi accepterar <span>41</span> kryptovalutor`,
@@ -776,7 +776,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Váš bonus je pripravený – Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> až do <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sladký vkladový bonus <br/> <b><span>200%</span></b> až do <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> voľných točení pri prvom vklade`,
     heroBtn: "získať bonus",
     paymentsTitle: `Akceptujeme <span>41</span> kryptomien`,
@@ -834,7 +834,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `Бонус Crypto Highroller <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
+    heroTitle: `Сладкий бонус на депозит <br/> <b><span>200%</span></b> до <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> бесплатных вращений при первом депозите`,
     heroBtn: "получить бонус",
     paymentsTitle: `Мы принимаем <span>41</span> криптовалюту`,
@@ -892,7 +892,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> hasta <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bono de depósito dulce <br/> <b><span>200%</span></b> hasta <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> giros gratis en tu primer depósito`,
     heroBtn: "obtener bono",
     paymentsTitle: `Aceptamos <span>41</span> Criptomonedas`,
@@ -952,7 +952,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 O seu bônus está pronto - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> até <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bónus de depósito doce <br/> <b><span>200%</span></b> até <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span></span> giros grátis no seu primeiro depósito`,
     heroBtn: "obter bônus",
     paymentsTitle: `Aceitamos <span>41</span> Criptomoedas`,
@@ -1011,7 +1011,7 @@ export const translations = {
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> bis zu <b><span>100.000 USD</span></b>`,
+    heroTitle: `Süßer Einzahlungsbonus <br/> <b><span>200%</span></b> bis zu <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> Freispiele bei deiner ersten Einzahlung`,
     heroBtn: "Bonus erhalten",
     paymentsTitle: `Akzeptiert <span>41</span> Kryptowährungen`,
@@ -1072,7 +1072,7 @@ export const translations = {
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
-    heroTitle: `Bonus Crypto Highroller <br/> <b><span>200%</span></b> fino a <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bonus deposito dolce <br/> <b><span>200%</span></b> fino a <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> giri gratuiti sul tuo primo deposito`,
     heroBtn: "ottieni bonus",
     paymentsTitle: `Accettate <span>41</span> criptovalute`,
@@ -1131,7 +1131,7 @@ export const translations = {
   },
   et: {
     pageTitle: "🎁 Sinu boonus on valmis – Goldbet",
-    heroTitle: `Krüpto Highrolleri boonus <br/> <b><span>200%</span></b> kuni <b><span>100 000 USD</span></b>`,
+    heroTitle: `Magus sissemakseboonus <br/> <b><span>200%</span></b> kuni <b><span class='hero-title-bonus-amount'>100 000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> tasuta spinni sinu esimesel sissemaksel`,
     heroBtn: "võta boonus",
     paymentsTitle: `Aktsepteeritud <span>41</span> krüptovaluutat`,
@@ -1299,7 +1299,7 @@ export const translations = {
   },
   lv: {
     pageTitle: "🎁 Tavs bonuss ir gatavs – Goldbet",
-    heroTitle: `Kripto Highroller bonuss <br/> <b><span>200%</span></b> līdz <b><span>100 000 USD</span></b>`,
+    heroTitle: `Salds depozīta bonuss <br/> <b><span>200%</span></b> līdz <b><span class='hero-title-bonus-amount'>100 000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> bezmaksas griezieni par pirmo depozītu`,
     heroBtn: "saņemt bonusu",
     paymentsTitle: `Pieņemtas <span>41</span> kriptovalūtas`,
@@ -1481,7 +1481,7 @@ export const translations = {
   },
   lt: {
     pageTitle: "🎁 Tavo premija paruošta – Goldbet",
-    heroTitle: `Kripto Highroller premija <br/> <b><span>200%</span></b> iki <b><span>100 000 USD</span></b>`,
+    heroTitle: `Saldus depozito bonusas <br/> <b><span>200%</span></b> iki <b><span class='hero-title-bonus-amount'>100 000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> nemokami sukimai už pirmąjį įnašą`,
     heroBtn: "gauti premiją",
     paymentsTitle: `Priimamos <span>41</span> kriptovaliutos`,
@@ -1663,7 +1663,7 @@ export const translations = {
   },
   hr: {
     pageTitle: "🎁 Tvoj bonus je spreman – Goldbet",
-    heroTitle: `Kripto Highroller bonus <br/> <b><span>200%</span></b> do <b><span>100 000 USD</span></b>`,
+    heroTitle: `Slatki bonus na polog <br/> <b><span>200%</span></b> do <b><span class='hero-title-bonus-amount'>100 000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> besplatnih okretaja na tvoj prvi depozit`,
     heroBtn: "preuzmi bonus",
     paymentsTitle: `Prihvaćene <span>41</span> kriptovalute`,
@@ -1838,7 +1838,7 @@ export const translations = {
   },
   da: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> op til <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sød indbetalingsbonus <br/> <b><span>200%</span></b> op til <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis spins ved din første indbetaling`,
     heroBtn: "få bonus",
     paymentsTitle: `Accepterede <span>41</span> kryptovalutaer`,
@@ -1898,7 +1898,7 @@ export const translations = {
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> jopa <b><span>100.000 USD</span></b>`,
+    heroTitle: `Makea talletusbonus <br/> <b><span>200%</span></b> jopa <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> ilmaiskierrosta ensimmäisellä talletuksellasi`,
     heroBtn: "hae bonus",
     paymentsTitle: `Hyväksytään <span>41</span> kryptovaluuttaa`,
@@ -1947,7 +1947,7 @@ export const translations = {
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
-    heroTitle: `Crypto Highroller Бонус <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
+    heroTitle: `Сладък бонус за депозит <br/> <b><span>200%</span></b> до <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> безплатни завъртания при първия ви депозит`,
     heroBtn: "вземи бонус",
     paymentsTitle: `Приети <span>41</span> криптовалути`,
@@ -1993,7 +1993,7 @@ export const translations = {
   },
   nl: {
     pageTitle: "🎁 Uw bonus is klaar - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> tot <b><span>100.000 USD</span></b>`,
+    heroTitle: `Zoete stortingsbonus <br/> <b><span>200%</span></b> tot <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis spins bij uw eerste storting`,
     heroBtn: "bonus ontvangen",
     paymentsTitle: `Geaccepteerd <span>41</span> Cryptocurrencies`,
@@ -2127,7 +2127,7 @@ export const translations = {
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> до <b><span>100.000 USD</span></b>`,
+    heroTitle: `Солодкий бонус на депозит <br/> <b><span>200%</span></b> до <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> безкоштовних обертань при першому депозиті`,
     heroBtn: "отримати бонус",
     paymentsTitle: `Підтримується <span>41</span> криптовалюта`,
@@ -2258,7 +2258,7 @@ export const translations = {
   },
   zh: {
     pageTitle: "🎁 您的 бонус 已准备好 - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> 最高可达 <b><span>100.000 USD</span></b>`,
+    heroTitle: `甜蜜存款奖金 <br/> <b><span>200%</span></b> 最高可达 <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> 首次存款赠送免费旋转`,
     heroBtn: "领取 бонус",
     paymentsTitle: `支持 <span>41</span> 种加密货币`,
@@ -2351,7 +2351,7 @@ export const translations = {
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
-    heroTitle: `مكافأة كبار اللاعبين بالعملات الرقمية <br/> <b><span>200%</span></b> حتى <b><span>100.000 USD</span></b>`,
+    heroTitle: `مكافأة إيداع حلوة <br/> <b><span>200%</span></b> حتى <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> لفة مجانية عند أول إيداع`,
     heroBtn: "احصل على المكافأة",
     paymentsTitle: `مدعوم <span>41</span> عملة رقمية`,
@@ -2481,7 +2481,7 @@ export const translations = {
   },
   sw: {
     pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
-    heroTitle: `Bonasi ya Crypto Highroller <br/> <b><span>200%</span></b> hadi <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bonasi tamu ya amana <br/> <b><span>200%</span></b> hadi <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> mizunguko ya bure kwenye amana yako ya kwanza`,
     heroBtn: "pata bonasi",
     paymentsTitle: `Inakubali <span>41</span> sarafu za kidijitali`,
@@ -2610,7 +2610,7 @@ export const translations = {
   },
   rw: {
     pageTitle: "🎁 Bonus yawe iriteguye - Goldbet",
-    heroTitle: `Bonus ya Crypto Highroller <br/> <b><span>200%</span></b> kugeza kuri <b><span>100.000 USD</span></b>`,
+    heroTitle: `Inyongera nziza yo kubitsa <br/> <b><span>200%</span></b> kugeza kuri <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> spins z'ubuntu ku kubitsa kwa mbere`,
     heroBtn: "fata bonus",
     paymentsTitle: `Yemera <span>41</span> amakarensi ya crypto`,
@@ -2740,7 +2740,7 @@ export const translations = {
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
-    heroTitle: `Bónas Crypto Highroller <br/> <b><span>200%</span></b> suas go dtí <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bónas taisce milis <br/> <b><span>200%</span></b> suas go dtí <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> casadh saor in aisce ar do chéad taisce`,
     heroBtn: "faigh bónas",
     paymentsTitle: `Glactar le <span>41</span> criptea-airgeadra`,
@@ -2872,7 +2872,7 @@ export const translations = {
   },
   lb: {
     pageTitle: "🎁 Äre Bonus ass prett - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> bis zu <b><span>100.000 USD</span></b>`,
+    heroTitle: `Séissen Despositiounsbonus <br/> <b><span>200%</span></b> bis zu <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> gratis Spins op Ären éischten Depot`,
     heroBtn: "Bonus kréien",
     paymentsTitle: `Akzeptéiert <span>41</span> Kryptowärungen`,
@@ -2960,7 +2960,7 @@ export const translations = {
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> sa <b><span>100.000 USD</span></b>`,
+    heroTitle: `Bonus ħelu tad-depożitu <br/> <b><span>200%</span></b> sa <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins fuq l-ewwel depożitu tiegħek`,
     heroBtn: "ikseb bonus",
     paymentsTitle: `Aċċettati <span>41</span> Kriptomuniti`,
@@ -3037,7 +3037,7 @@ export const translations = {
   },
   am: {
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
-    heroTitle: `Crypto Highroller ቦነስ <br/> <b><span>200%</span></b> እስከ <b><span>100.000 USD</span></b>`,
+    heroTitle: `ጣፋጭ የተቀማጭ ገንዘብ ጉርሻ <br/> <b><span>200%</span></b> እስከ <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> ነፃ ስፒኖች በመጀመሪያ የተቀመጠ ገንዘብዎ`,
     heroBtn: "ቦነስ ይውሰዱ",
     paymentsTitle: `<span>41</span> የተቀበሉ ክሪፕቶከረንሲዎች`,
@@ -3095,7 +3095,7 @@ export const translations = {
   },
   lm: {
     pageTitle: "🎁 Bonus yo etegekeddwa - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> okutuuka ku <b><span>100.000 USD</span></b>`,
+    heroTitle: `Ekirabo ekiwoomerera eky'okuteeka ssente <br/> <b><span>200%</span></b> okutuuka ku <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> free spins ku deposit yo esooka`,
     heroBtn: "funa bonus",
     paymentsTitle: `<span>41</span> Crypto ezikkirizibwa`,
@@ -3152,7 +3152,7 @@ export const translations = {
   },
   ha: {
     pageTitle: "🎁 Kyautar ka tana shirye - Goldbet",
-    heroTitle: `Babban Kyautar Crypto <br/> <b><span>200%</span></b> har zuwa <b><span>100.000 USD</span></b>`,
+    heroTitle: `Kyautar ajiya mai daɗi <br/> <b><span>200%</span></b> har zuwa <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> juyi kyauta akan ajiyar ka ta farko`,
     heroBtn: "sami kyauta",
     paymentsTitle: `An yarda da <span>41</span> Cryptocurrency`,
@@ -3300,7 +3300,7 @@ export const translations = {
   },
   yo: {
     pageTitle: "🎁 Ẹbun rẹ ti ṣetan - Goldbet",
-    heroTitle: `Ẹbun Crypto Highroller <br/> <b><span>200%</span></b> to <b><span>100.000 USD</span></b>`,
+    heroTitle: `Ẹ̀bùn ìdúró dídùn <br/> <b><span>200%</span></b> to <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> yiyan ọfẹ lori ifipamọ akọkọ rẹ`,
     heroBtn: "gba ẹbun",
     paymentsTitle: `Gba <span>41</span> Cryptocurrency`,
@@ -3443,7 +3443,7 @@ export const translations = {
   },
   ig: {
     pageTitle: "🎁 Ụgwọ gị dị njikere - Goldbet",
-    heroTitle: `Ụgwọ Crypto Highroller <br/> <b><span>200%</span></b> ruo <b><span>100.000 USD</span></b>`,
+    heroTitle: `Onyinye nkwakọba ụtọ <br/> <b><span>200%</span></b> ruo <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> igwe mgbanwe n'efu na ntinye gị nke mbụ`,
     heroBtn: "nweta ụgwọ",
     paymentsTitle: `Anabata <span>41</span> Cryptocurrency`,
@@ -3591,7 +3591,7 @@ export const translations = {
   },
   tw: {
     pageTitle: "🎁 Wo bonus da ho - Goldbet",
-    heroTitle: `Crypto Highroller Bonus <br/> <b><span>200%</span></b> kosi <b><span>100.000 USD</span></b>`,
+    heroTitle: `Sika a wɔde gu mu akyɛde a ɛyɛ dɛ <br/> <b><span>200%</span></b> kosi <b><span class='hero-title-bonus-amount'>100.000 USD</span></b>`,
     heroSubtitle: `<span>🎰 +<i class='actual-spin-amount'>777</i></span> spin free wɔ wo deposit a edi kan no so`,
     heroBtn: "nya bonus",
     paymentsTitle: `Wɔgye <span>41</span> Cryptocurrency`,

@@ -3,6 +3,7 @@ import { geoData, language, getSupportedLanguage } from "./geoLocation";
 import { formData } from "./formAuth";
 import { setSpinAmount } from "./promocodeCheck";
 import { languageOptions, SupportedLanguages } from "../public/data";
+import { updateHeroBonusAmount } from "./modalCurrency";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -95,6 +96,7 @@ function changeLanguage(lang) {
   updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
+  updateHeroBonusAmount(formData.currency);
 
   if (RTL_LANGUAGES.includes(lang)) {
     html.setAttribute("dir", "rtl");

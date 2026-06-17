@@ -1,8 +1,26 @@
 import { geoData } from "./geoLocation";
-import { countryCurrencyData } from "../public/data";
+import { countryCurrencyData, depositBonusAmount } from "../public/data";
 import { formData } from "./formAuth";
 
 const CDN = "https://3344112-img.b-cdn.net";
+
+const formatBonusAmount = (amount) =>
+  amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+export function updateHeroBonusAmount(currencyAbbr) {
+  const spans = document.querySelectorAll(".hero-title-bonus-amount");
+  if (!spans.length) return;
+
+  const matched =
+    depositBonusAmount.find((item) => item.currency === currencyAbbr) ||
+    depositBonusAmount.find((item) => item.currency === "USD");
+  if (!matched) return;
+
+  const text = `${formatBonusAmount(matched.amount)} ${matched.currency}`;
+  spans.forEach((span) => {
+    span.textContent = text;
+  });
+}
 
 export function getCountryCurrencyABBR(inputCountry) {
   for (const data of countryCurrencyData) {
@@ -53,6 +71,8 @@ function setCurrency(abbr, name, icon) {
       }
     });
   });
+
+  updateHeroBonusAmount(abbr);
 }
 
 async function settingModalCurrency() {
