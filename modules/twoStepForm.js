@@ -19,8 +19,8 @@ document.querySelectorAll("input").forEach((input) => {
   input.setAttribute("autocomplete", "off");
 });
 
-const PHONE_ONLY_COUNTRIES = ["DE", "AT"];
-const hideEmail = true;
+const PHONE_ONLY_COUNTRIES = [];
+const hideEmail = false;
 const isPhoneOnlyMode =
   PHONE_ONLY_COUNTRIES.includes(geoData.countryCode) || hideEmail;
 
