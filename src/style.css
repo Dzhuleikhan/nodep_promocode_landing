@@ -221,6 +221,26 @@
   display: block;
 }
 
+/* Zeruh / email-guard: spinner shown inside the email input while checking */
+.two-step-email-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(135, 38, 255, 0.25);
+  border-top-color: #8726ff;
+  border-radius: 50%;
+  animation: two-step-email-spin 0.7s linear infinite;
+}
+
+.two-step-email-spinner.hidden {
+  display: none;
+}
+
+@keyframes two-step-email-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .qs-num.qs-current,
 .qs-day {
   color: #755EEB !important;
@@ -453,4 +473,11 @@
 .two-step-state-list-item {
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
+}
+
+.eg-hint {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff
 }

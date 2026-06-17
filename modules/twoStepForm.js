@@ -12,7 +12,6 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
-import { isDisposableEmail } from "./disposableEmail";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -294,7 +293,13 @@ if (twoStepFormSecondStep) {
 
   const isEmailFieldValid = () => {
     const v = twoStepFormEmailInput.value.trim();
-    return regex.test(v) && !isDisposableEmail(v);
+    if (!regex.test(v)) return false;
+    // Zeruh / email-guard: keep the button disabled until the address is
+    // confirmed deliverable. Fail-open if the snippet isn't loaded.
+    if (window.EmailGuard && window.EmailGuard.isValid) {
+      return window.EmailGuard.isValid(twoStepFormEmailInput);
+    }
+    return true;
   };
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
@@ -357,6 +362,25 @@ if (twoStepFormSecondStep) {
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
     validateInputs("#4ED937", "#8726FF");
   });
+
+  // Zeruh / email-guard: recalc the button when the async verdict arrives,
+  // and show a spinner inside the email input while the check is in flight.
+  if (!isPhoneOnlyMode) {
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    const showSpinner = () => emailSpinner?.classList.remove("hidden");
+    const hideSpinner = () => emailSpinner?.classList.add("hidden");
+
+    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+      validateInputs("#4ED937", "#ff5530");
+      if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
+    });
+    twoStepFormEmailInput.addEventListener("focusout", () => {
+      if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) showSpinner();
+    });
+    twoStepFormEmailInput.addEventListener("input", hideSpinner);
+  }
 
   // Show password
   const passwordShowBtn = twoStepFormSecondStep.querySelector(
@@ -1019,7 +1043,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
