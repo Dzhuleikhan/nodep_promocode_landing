@@ -221,6 +221,41 @@
   display: block;
 }
 
+/* Email-guard (Zeruh) hint */
+.eg-hint {
+  font-size: 14px;
+  text-align: center;
+}
+
+.eg-hint[data-eg-state="suggest"] {
+  color: #ffffff;
+}
+
+.eg-hint[data-eg-state="error"] {
+  color: #ff3b3b;
+}
+
+.eg-suggest-link {
+  color: #8726ff;
+  font-weight: 700;
+}
+
+/* Email-guard check spinner (inside email input) */
+.two-step-email-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(135, 38, 255, 0.25);
+  border-top-color: #8726ff;
+  border-radius: 50%;
+  animation: two-step-email-spin 0.7s linear infinite;
+}
+
+@keyframes two-step-email-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .qs-num.qs-current,
 .qs-day {
   color: #755EEB !important;
