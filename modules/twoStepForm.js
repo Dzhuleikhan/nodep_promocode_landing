@@ -11,7 +11,6 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
-import { isDisposableEmail } from "./disposableEmail";
 import { isValidPhoneNumber } from "libphonenumber-js";
 
 const CDN = "https://3344112-img.b-cdn.net";
@@ -294,7 +293,13 @@ if (twoStepFormSecondStep) {
 
   const isEmailFieldValid = () => {
     const v = twoStepFormEmailInput.value.trim();
-    return regex.test(v) && !isDisposableEmail(v);
+    if (!regex.test(v)) return false;
+    // Zeruh-проверка (email-guard): почта проверена и не плохая.
+    // Если сниппет не загрузился — fail-open (валидируем по regex как раньше).
+    if (window.EmailGuard && window.EmailGuard.isValid) {
+      return window.EmailGuard.isValid(twoStepFormEmailInput);
+    }
+    return true;
   };
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
@@ -357,6 +362,29 @@ if (twoStepFormSecondStep) {
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
     validateInputs("#4ED937", "#8726FF");
   });
+
+  // | EMAIL-GUARD (Zeruh) — пересчёт кнопки по асинхронному вердикту + спиннер
+  if (!isPhoneOnlyMode) {
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    const showSpinner = () => emailSpinner?.classList.remove("hidden");
+    const hideSpinner = () => emailSpinner?.classList.add("hidden");
+    const isPending = () =>
+      !!window.EmailGuard?.isPending?.(twoStepFormEmailInput);
+
+    // вердикт Zeruh пришёл асинхронно → пересчитать кнопку + снять спиннер
+    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+      if (!isPending()) hideSpinner();
+      validateInputs("#4ED937", "#ff5530");
+    });
+    // почта ушла в проверку Zeruh → показать спиннер
+    twoStepFormEmailInput.addEventListener("focusout", () => {
+      if (isPending()) showSpinner();
+    });
+    // правка поля → активной проверки нет (перезапустится на blur)
+    twoStepFormEmailInput.addEventListener("input", hideSpinner);
+  }
 
   // Show password
   const passwordShowBtn = twoStepFormSecondStep.querySelector(
@@ -1017,7 +1045,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
