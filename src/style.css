@@ -454,3 +454,42 @@
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
 }
+
+/* Zeruh email-guard */
+.eg-hint {
+  font-size: 14px;
+  text-align: center;
+}
+
+.eg-hint[data-eg-state="suggest"] {
+  color: #ffffff;
+}
+
+.eg-hint[data-eg-state="error"] {
+  color: #ff3b3b;
+}
+
+.eg-suggest-link {
+  color: #8726ff;
+  font-weight: 700;
+}
+
+/* Спиннер проверки внутри email-инпута (3-я колонка грида email-wrapper) */
+.two-step-email-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #8726ff33;
+  border-top-color: #8726ff;
+  border-radius: 50%;
+  animation: two-step-email-spin 0.7s linear infinite;
+}
+
+.two-step-email-spinner.hidden {
+  display: none;
+}
+
+@keyframes two-step-email-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

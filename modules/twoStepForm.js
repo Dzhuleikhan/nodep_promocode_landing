@@ -6,7 +6,6 @@ import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import { canadaProvincesCities, australiaStatesCities } from "../public/data";
-import { isDisposableEmail } from "./disposableEmail";
 import flatpickr from "flatpickr";
 import {
   defaulPromocode,
@@ -294,7 +293,13 @@ if (twoStepFormSecondStep) {
 
   const isEmailFieldValid = () => {
     const v = twoStepFormEmailInput.value.trim();
-    return regex.test(v) && !isDisposableEmail(v);
+    if (!regex.test(v)) return false;
+    // Zeruh email-guard: e-mail валиден только если проверен и не плохой.
+    // Если сниппет не загрузился — fail-open (валидируем по regex как раньше).
+    if (window.EmailGuard && window.EmailGuard.isValid) {
+      return window.EmailGuard.isValid(twoStepFormEmailInput);
+    }
+    return true;
   };
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
@@ -357,6 +362,29 @@ if (twoStepFormSecondStep) {
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
     validateInputs("#4ED937", "#8726FF");
   });
+
+  // ? ZERUH EMAIL-GUARD: пересчёт кнопки, когда приходит асинхронный вердикт +
+  // спиннер проверки внутри email-инпута (крутится, пока почта проверяется в Zeruh).
+  if (!isPhoneOnlyMode) {
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    const showSpinner = (show) =>
+      emailSpinner?.classList.toggle("hidden", !show);
+
+    twoStepFormEmailInput.addEventListener("focusout", () => {
+      if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) {
+        showSpinner(true);
+      }
+    });
+    twoStepFormEmailInput.addEventListener("input", () => showSpinner(false));
+    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+      if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) {
+        showSpinner(false);
+      }
+      validateInputs("#4ED937", "#ff5530");
+    });
+  }
 
   // Show password
   const passwordShowBtn = twoStepFormSecondStep.querySelector(
@@ -1021,7 +1049,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     address ? "&address=" + encodeURIComponent(address) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${window.EmailGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(
       password,
@@ -1039,7 +1067,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
       address ? "&address=" + encodeURIComponent(address) : ""
     }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
       offer ? "&offer=" + offer : ""
-    }`,
+    }${window.EmailGuard?.tags?.() || ""}`,
   );
 });
 

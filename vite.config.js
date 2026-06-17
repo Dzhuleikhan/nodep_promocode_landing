@@ -11,5 +11,20 @@ export default defineConfig({
   server: {
     open: true,
     host: true,
+    // DEV-ONLY: проксируем сниппет email-guard и эндпоинт Zeruh на боевой nginx,
+    // чтобы на localhost работали опечатки + проверка живости. В сборку не попадает.
+    // Запуск: npm run dev -- --base=/
+    proxy: {
+      "/email-guard.js": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/email/verify": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
 });

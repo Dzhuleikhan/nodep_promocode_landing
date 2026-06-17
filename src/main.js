@@ -6,7 +6,6 @@ import "../modules/animations";
 import "../modules/fetchingDomain";
 import "../modules/geoLocation";
 import "../modules/itiTelInput";
-import "../modules/disposableEmail";
 import "../modules/twoStepForm";
 import "../modules/params";
 import "../modules/modalCurrency";
