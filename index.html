@@ -700,7 +700,17 @@
                     type="tel"
                     name="phone"
                   />
+                  <span
+                    class="two-step-phone-spinner absolute right-4 top-1/2 hidden -translate-y-1/2 rtl:left-4 rtl:right-auto"
+                  >
+                    <span
+                      class="block size-[18px] animate-spin rounded-full border-[3px] border-[#755EEB]/30 border-t-[#755EEB]"
+                    ></span>
+                  </span>
                 </div>
+                <p
+                  class="two-step-phone-alert hidden text-center text-xs text-[#FF5530]"
+                ></p>
                 <!-- email input -->
                 <div
                   class="two-step-input-wrapper two-step-email-wrapper relative grid grid-cols-[auto_1fr_auto] items-center gap-[6px] rounded-2xl bg-white p-4"
@@ -730,6 +740,9 @@
                   >
                   <div class="two-step-email-spinner hidden"></div>
                 </div>
+                <p
+                  class="two-step-email-alert hidden text-center text-xs text-[#FF5530]"
+                ></p>
                 <!-- password input -->
                 <div
                   class="two-step-input-wrapper two-step-password-wrapper relative grid grid-cols-[auto_1fr_auto] items-center gap-[6px] rounded-2xl bg-white p-4"
