@@ -11,6 +11,17 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
+import {
+  checkPhoneAvailability,
+  getPhoneStatus,
+  phoneTakenMessage,
+} from "./phoneAvailability";
+import {
+  checkEmailAvailability,
+  getEmailStatus,
+  normalizeEmail,
+  emailTakenMessage,
+} from "./emailAvailability";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -272,6 +283,82 @@ if (twoStepFormSecondStep) {
   const regex =
     /^(?!.*\.\.)[a-zA-Z0-9][a-zA-Z0-9!#$%&'*+/=?^_`{|}~.-]{0,62}[a-zA-Z0-9]@(?:\[(?:\d{1,3}\.){3}\d{1,3}\]|[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z]{2,})+)$/;
 
+  const currentEmail = () => normalizeEmail(twoStepFormEmailInput.value);
+
+  // Zeruh (email-guard) подтвердил доставляемость? Если сниппета нет — fail-open (true).
+  const emailDeliverableOk = () =>
+    !(window.EmailGuard && window.EmailGuard.isValid) ||
+    window.EmailGuard.isValid(twoStepFormEmailInput);
+
+  // Гейт занятости почты: нет записи/pending → false (ждём); errored → fail-open;
+  // available===true → свободна; false → занята.
+  const isEmailOccupancyOk = () => {
+    const st = getEmailStatus(currentEmail());
+    if (!st || st.pending) return false;
+    if (st.errored) return true;
+    return st.available === true;
+  };
+
+  // Проверка занятости почты ещё идёт (формат ок + Zeruh ок, но вердикта занятости нет).
+  const isEmailAvailPending = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v) || !emailDeliverableOk()) return false;
+    const st = getEmailStatus(currentEmail());
+    return !st || st.pending;
+  };
+
+  // Запустить проверку занятости почты — только если формат ок и Zeruh не против.
+  const maybeCheckEmailAvailability = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v) || !emailDeliverableOk()) return;
+    checkEmailAvailability(currentEmail()).then(() =>
+      validateInputs("#4ED937", "#ff5530"),
+    );
+  };
+
+  // Сообщение «этот e-mail нельзя использовать» — только при однозначном «занята».
+  const emailAlertEl = document.querySelector(".two-step-email-alert");
+  const updateEmailAlert = () => {
+    if (!emailAlertEl) return;
+    const v = twoStepFormEmailInput.value.trim();
+    const st = getEmailStatus(currentEmail());
+    const taken =
+      regex.test(v) &&
+      emailDeliverableOk() &&
+      st &&
+      !st.pending &&
+      !st.errored &&
+      st.available === false;
+    if (taken) {
+      const lang =
+        document.documentElement.getAttribute("lang") ||
+        localStorage.getItem("preferredLanguage") ||
+        "en";
+      emailAlertEl.textContent = emailTakenMessage(lang);
+      emailAlertEl.classList.remove("hidden");
+    } else {
+      emailAlertEl.classList.add("hidden");
+    }
+  };
+
+  // Спиннер в поле почты: крутится пока идёт проверка — сначала Zeruh (доставляемость),
+  // затем наш API (занятость). Гаснет, когда оба вердикта получены.
+  const emailSpinnerEl = twoStepFormSecondStep.querySelector(
+    ".two-step-email-spinner",
+  );
+  const isEmailChecking = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v)) return false;
+    if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) return true;
+    if (!emailDeliverableOk()) return false;
+    const st = getEmailStatus(currentEmail());
+    return !!st && st.pending;
+  };
+  const updateEmailSpinner = () => {
+    if (!emailSpinnerEl) return;
+    emailSpinnerEl.classList.toggle("hidden", !isEmailChecking());
+  };
+
   const validateInputs = (validColor, invalidColor) => {
     const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
@@ -279,19 +366,23 @@ if (twoStepFormSecondStep) {
     const isEmailSyntaxValid = regex.test(emailValue);
     // Email-Guard: кнопка ждёт вердикта Zeruh (проверена и не плохая).
     // Если сниппет не загрузился — fail-open (валидно по синтаксису).
+    // Плюс проверка занятости (наш API): пока вердикта нет — false; ошибка → fail-open.
     const isEmailValid =
-      isEmailSyntaxValid &&
-      (window.EmailGuard && window.EmailGuard.isValid
-        ? window.EmailGuard.isValid(twoStepFormEmailInput)
-        : true);
+      isEmailSyntaxValid && emailDeliverableOk() && isEmailOccupancyOk();
     const isPasswordValid = passwordValue.length >= 6;
 
-    twoStepFormEmailInput.style.color = isEmailSyntaxValid
-      ? validColor
-      : invalidColor;
+    // Во время проверки занятости — нейтральный цвет, не красный.
+    twoStepFormEmailInput.style.color = isEmailAvailPending()
+      ? "#8726FF"
+      : isEmailSyntaxValid
+        ? validColor
+        : invalidColor;
     twoStepFormPasswordInput.style.color = isPasswordValid
       ? validColor
       : invalidColor;
+
+    updateEmailAlert();
+    updateEmailSpinner();
 
     if (isEmailValid && isPasswordValid) {
       btnOverlap.style.left = "100%";
@@ -313,10 +404,14 @@ if (twoStepFormSecondStep) {
   twoStepFormPasswordInput.addEventListener("focusout", () =>
     validateInputs("#4ED937", "#ff5530"),
   );
-  // Пересчёт кнопки, когда приходит асинхронный вердикт Email-Guard (Zeruh)
-  twoStepFormEmailInput.addEventListener("emailguard:result", () =>
-    validateInputs("#4ED937", "#ff5530"),
-  );
+  // Пересчёт кнопки, когда приходит асинхронный вердикт Email-Guard (Zeruh),
+  // и сразу запускаем проверку занятости (Zeruh подтвердил доставляемость).
+  twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+    maybeCheckEmailAvailability();
+    validateInputs("#4ED937", "#ff5530");
+  });
+  // Фолбэк, если email-guard не загрузился: запустить занятость на blur.
+  twoStepFormEmailInput.addEventListener("focusout", maybeCheckEmailAvailability);
 
   if (
     twoStepFormEmailInput.value === "" ||
@@ -332,6 +427,42 @@ if (twoStepFormSecondStep) {
   twoStepFormPasswordInput.addEventListener("input", () => {
     twoStepFormPasswordInput.style.color = "#8726FF";
     validateInputs("#4ED937", "#8726FF");
+  });
+
+  // Перевести уже показанное сообщение «занято» при смене языка сайта
+  // (язык меняется через <html lang>, у алерта нет data-translate).
+  new MutationObserver(updateEmailAlert).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
+  });
+
+  // Фейловер: если на blur API не ответил за таймаут (fail-open пустил дальше),
+  // добиваем проверку занятости почты на клике «Далее» (уход со шага 2).
+  // Регистрируется РАНЬШЕ глобального advance-хендлера → при блоке перебивает его.
+  const isEmailDefinitive = (st) =>
+    !!st && !st.pending && !st.errored && typeof st.available === "boolean";
+
+  twoStepFormSecondStepBtn.addEventListener("click", async (e) => {
+    const v = twoStepFormEmailInput.value.trim();
+    const needEmail =
+      regex.test(v) &&
+      emailDeliverableOk() &&
+      !isEmailDefinitive(getEmailStatus(currentEmail()));
+
+    if (!needEmail) return; // вердикт есть → глобальный хендлер пускает дальше
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    await checkEmailAvailability(currentEmail());
+    validateInputs("#4ED937", "#ff5530");
+
+    const emailTaken = getEmailStatus(currentEmail())?.available === false;
+    if (!emailTaken) {
+      // свободна или снова не дозвонились (fail-open) → переходим
+      initialStep++;
+      showStep(initialStep);
+    }
+    // занято → остаёмся на шаге: алерт показан, кнопка станет disabled
   });
 
   // Show password
@@ -835,12 +966,72 @@ if (twoStepFormFourthStep) {
     e.target.value = e.target.value.replace(/[^0-9]/g, "");
   });
 
+  // Телефон в E.164 для API занятости: +<dialCode><digits>.
+  const phoneE164 = () => {
+    const dialCode = twoStepiti.getSelectedCountryData().dialCode;
+    const digits = twoStepPhoneInput.value.trim().replace(/\D/g, "");
+    return `+${dialCode}${digits}`;
+  };
+
+  // Гейт занятости номера: нет записи/pending → false (ждём); errored → fail-open;
+  // available===true → свободен; false → занят.
+  const phoneAvailOk = () => {
+    const st = getPhoneStatus(phoneE164());
+    if (!st || st.pending) return false;
+    if (st.errored) return true;
+    return st.available === true;
+  };
+
+  // Проверка занятости ещё идёт (формат ок, но вердикта нет) — нейтральный цвет.
+  const isPhonePending = () => {
+    if (!twoStepiti.isValidNumber()) return false;
+    const st = getPhoneStatus(phoneE164());
+    return !st || st.pending;
+  };
+
+  // Реально летит запрос (есть запись со статусом pending) — для спиннера.
+  const isPhoneChecking = () => {
+    if (!twoStepiti.isValidNumber()) return false;
+    const st = getPhoneStatus(phoneE164());
+    return !!st && st.pending;
+  };
+
+  const phoneSpinnerEl = document.querySelector(".two-step-phone-spinner");
+  const updatePhoneSpinner = () => {
+    if (!phoneSpinnerEl) return;
+    phoneSpinnerEl.classList.toggle("hidden", !isPhoneChecking());
+  };
+
+  // Сообщение «номер нельзя использовать» — только при однозначном «занят».
+  const phoneAlertEl = document.querySelector(".two-step-phone-alert");
+  const updatePhoneAlert = () => {
+    if (!phoneAlertEl) return;
+    const st = getPhoneStatus(phoneE164());
+    const taken =
+      twoStepiti.isValidNumber() &&
+      st &&
+      !st.pending &&
+      !st.errored &&
+      st.available === false;
+    if (taken) {
+      const lang =
+        document.documentElement.getAttribute("lang") ||
+        localStorage.getItem("preferredLanguage") ||
+        "en";
+      phoneAlertEl.textContent = phoneTakenMessage(lang);
+      phoneAlertEl.classList.remove("hidden");
+    } else {
+      phoneAlertEl.classList.add("hidden");
+    }
+  };
+
   submitBtn.disabled = true;
 
   const inputValidations1 = [
     {
       input: twoStepPhoneInput,
-      condition: () => twoStepiti.isValidNumber(),
+      // Формат ок И номер НЕ занят (pending/нет данных → не валиден; errored → fail-open).
+      condition: () => twoStepiti.isValidNumber() && phoneAvailOk(),
     },
     {
       input: twoStepCityInput,
@@ -869,9 +1060,17 @@ if (twoStepFormFourthStep) {
     // Validate each input
     inputValidations1.forEach(({ input, condition }) => {
       const isValid = condition(input.value.trim()); // Check validity
-      input.style.color = isValid ? validColor : invalidColor; // Apply text color
+      // Во время проверки занятости телефона — нейтральный цвет, не красный.
+      if (input === twoStepPhoneInput && isPhonePending()) {
+        input.style.color = "#8726FF";
+      } else {
+        input.style.color = isValid ? validColor : invalidColor; // Apply text color
+      }
       if (isValid) validCount++;
     });
+
+    updatePhoneAlert();
+    updatePhoneSpinner();
 
     // Calculate and update button overlap position
     const percentage = (validCount / totalInputs) * 100;
@@ -904,6 +1103,24 @@ if (twoStepFormFourthStep) {
   twoStepPhoneInput.addEventListener("countrychange", () => {
     twoStepPhoneInput.value = "";
     validateInputs1("#4ED937", "#8726FF");
+  });
+
+  // Телефон: на blur запускаем проверку занятости, на вердикт — пересчёт кнопки/алерта.
+  const triggerPhoneCheck = () => {
+    if (twoStepiti.isValidNumber()) {
+      checkPhoneAvailability(phoneE164()).then(() =>
+        validateInputs1("#4ED937", "#ff5530"),
+      );
+    }
+    validateInputs1("#4ED937", "#ff5530"); // мгновенно отразить pending/формат
+  };
+  twoStepPhoneInput.addEventListener("focusout", triggerPhoneCheck);
+
+  // Перевести показанное сообщение «занято» (телефон) при смене языка сайта
+  // (язык меняется через <html lang>, у алерта нет data-translate).
+  new MutationObserver(updatePhoneAlert).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
   });
 }
 
@@ -961,10 +1178,36 @@ let cid = getUrlParameter("cid");
 let partner = getUrlParameter("partner");
 let offer = getUrlParameter("offer");
 
-twoStepFormMain.addEventListener("submit", (e) => {
+twoStepFormMain.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   twoStepFormData.lang = localStorage.getItem("preferredLanguage");
+
+  // Фейловер-гейт занятости телефона перед редиректом: если на blur вердикта не было
+  // (fail-open пустил дальше), добиваем здесь. Занят → не регистрируем, показываем
+  // алерт. Любая ошибка/таймаут → fail-open (backstop — бэкенд register отбивает дубли).
+  // twoStepFormData.phone тут = `${dialCode}${digits}` без `+` → для API добавляем `+`.
+  if (twoStepFormData.phone) {
+    const e164 = `+${twoStepFormData.phone}`;
+    const st = getPhoneStatus(e164);
+    const definitive =
+      !!st && !st.pending && !st.errored && typeof st.available === "boolean";
+    const verdict = definitive ? st : await checkPhoneAvailability(e164);
+    if (verdict && verdict.available === false) {
+      const phoneAlertEl = document.querySelector(".two-step-phone-alert");
+      if (phoneAlertEl) {
+        const lang =
+          localStorage.getItem("preferredLanguage") ||
+          document.documentElement.getAttribute("lang") ||
+          "en";
+        phoneAlertEl.textContent = phoneTakenMessage(lang);
+        phoneAlertEl.classList.remove("hidden");
+      }
+      const blockedBtn = twoStepFormMain.querySelector(".submit-btn");
+      if (blockedBtn) blockedBtn.disabled = true;
+      return; // занят — не редиректим
+    }
+  }
 
   const twoStepSubmitBtn = twoStepFormMain.querySelector(".submit-btn");
   const btnLoader = twoStepSubmitBtn.querySelector(
