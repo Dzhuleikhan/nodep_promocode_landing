@@ -256,15 +256,16 @@
   }
 }
 
-/* Email-Guard (Zeruh) — хинт опечаток / ошибки под полем */
+/* Email-Guard (Zeruh) — хинт опечаток / ошибки под полем (на тёмном фоне формы) */
 .eg-hint {
   font-size: 14px;
   line-height: 1.3;
-  margin-top: 4px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .eg-hint[data-eg-state="suggest"] {
-  color: #585858;
+  color: #ffffff;
 }
 
 .eg-hint[data-eg-state="error"] {
@@ -528,15 +529,4 @@
     inset-inline-start: auto;
     margin-inline-start: calc(50% - 300px);
   }
-}
-
-.eg-hint {
-  font-size: 14px;
-  margin-top: 20px;
-  text-align: center;
-
-}
-
-[data-eg-state="suggest"] {
-  color: #ffffff !important;
 }
