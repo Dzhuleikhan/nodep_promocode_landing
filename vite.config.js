@@ -24,6 +24,17 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
+      // Проверка занятости телефона/почты (same-origin прокси на nginx ленда).
+      "/api/phone/check-available": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/email/check-available": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 });
