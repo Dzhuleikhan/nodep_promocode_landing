@@ -24,6 +24,16 @@ export default defineConfig({
         changeOrigin: true,
         secure: true,
       },
+      "/api/phone/check-available": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: true,
+      },
+      "/api/email/check-available": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: true,
+      },
     },
   },
 });
