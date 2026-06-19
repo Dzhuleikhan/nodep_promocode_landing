@@ -338,6 +338,24 @@ if (twoStepFormSecondStep) {
     }
   };
 
+  // Спиннер почты: крутится, пока идёт проверка — сначала Zeruh (доставляемость),
+  // затем наш запрос занятости. EmailGuard грузится раньше модуля, поэтому к моменту
+  // нашего focusout его isPending уже выставлен.
+  const emailSpinnerEl = twoStepFormSecondStep.querySelector(
+    ".two-step-email-spinner",
+  );
+  const isEmailChecking = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v)) return false;
+    if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) return true;
+    const st = getEmailStatus(currentEmail());
+    return emailDeliverableOk() && !!st && st.pending;
+  };
+  const updateEmailSpinner = () => {
+    if (!emailSpinnerEl) return;
+    emailSpinnerEl.classList.toggle("hidden", !isEmailChecking());
+  };
+
   const validateInputs = (validColor, invalidColor) => {
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
@@ -355,6 +373,7 @@ if (twoStepFormSecondStep) {
       : invalidColor;
 
     updateEmailAlert();
+    updateEmailSpinner();
 
     if (isEmailValid && isPasswordValid) {
       btnOverlap.style.left = "100%";
