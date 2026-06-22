@@ -411,3 +411,45 @@
   border-bottom: 1px solid #755EEB30;
   padding: 16px 12px;
 }
+
+/* email-guard: хинт под полем (форма на тёмном фоне → suggest белый/по центру) */
+.eg-hint {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.eg-hint[data-eg-state="suggest"] {
+  color: #ffffff;
+}
+
+.eg-hint[data-eg-state="error"] {
+  color: #ff5530;
+}
+
+.eg-suggest-link {
+  color: #f4fd2b;
+  font-weight: 700;
+}
+
+/* email-guard: спиннер проверки почты (Zeruh) внутри инпута справа */
+.two-step-email-spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid rgba(135, 38, 255, 0.3);
+  border-top-color: #8726ff;
+  animation: two-step-email-spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+
+.two-step-email-spinner.hidden {
+  display: none;
+}
+
+@keyframes two-step-email-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

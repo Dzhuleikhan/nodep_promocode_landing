@@ -11,6 +11,17 @@ import {
   receivedPromocode,
   togglePromocodeWrapper,
 } from "./promocodeCheck";
+import {
+  checkPhoneAvailability,
+  getPhoneStatus,
+  phoneTakenMessage,
+} from "./phoneAvailability";
+import {
+  checkEmailAvailability,
+  getEmailStatus,
+  normalizeEmail,
+  emailTakenMessage,
+} from "./emailAvailability";
 
 document.querySelectorAll("input").forEach((input) => {
   input.setAttribute("autocomplete", "off");
@@ -265,19 +276,85 @@ if (twoStepFormSecondStep) {
   const regex =
     /^(?!.*\.\.)[a-zA-Z0-9][a-zA-Z0-9!#$%&'*+/=?^_`{|}~.-]{0,62}[a-zA-Z0-9]@(?:\[(?:\d{1,3}\.){3}\d{1,3}\]|[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z]{2,})+)$/;
 
+  const currentEmail = () => normalizeEmail(twoStepFormEmailInput.value);
+
+  // email-guard: Zeruh подтвердил доставляемость? Если сниппета нет — fail-open (true).
+  const emailDeliverableOk = () =>
+    !(window.EmailGuard && window.EmailGuard.isValid) ||
+    window.EmailGuard.isValid(twoStepFormEmailInput);
+
+  // Полная валидность почты для гейта: формат + Zeruh + НЕ занята.
+  // Нет записи/pending → false (ждём вердикт); errored → fail-open; занята → false.
+  const isEmailFieldValid = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v)) return false;
+    if (!emailDeliverableOk()) return false;
+    const st = getEmailStatus(currentEmail());
+    if (!st || st.pending) return false;
+    if (st.errored) return true;
+    return st.available === true;
+  };
+
+  // Проверка занятости почты ещё идёт (формат ок + Zeruh ок, но вердикта нет).
+  const isEmailAvailPending = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v) || !emailDeliverableOk()) return false;
+    const st = getEmailStatus(currentEmail());
+    return !st || st.pending;
+  };
+
+  // Запустить проверку занятости почты — только если формат ок и Zeruh не против.
+  const maybeCheckEmailAvailability = () => {
+    const v = twoStepFormEmailInput.value.trim();
+    if (!regex.test(v) || !emailDeliverableOk()) return;
+    checkEmailAvailability(currentEmail()).then(() =>
+      validateInputs("#4ED937", "#ff5530"),
+    );
+  };
+
+  // Сообщение «этот e-mail нельзя использовать» — только при однозначном «занята».
+  const emailAlertEl = document.querySelector(".two-step-email-alert");
+  const updateEmailAlert = () => {
+    if (!emailAlertEl) return;
+    const v = twoStepFormEmailInput.value.trim();
+    const st = getEmailStatus(currentEmail());
+    const taken =
+      regex.test(v) &&
+      emailDeliverableOk() &&
+      st &&
+      !st.pending &&
+      !st.errored &&
+      st.available === false;
+    if (taken) {
+      const lang =
+        document.documentElement.getAttribute("lang") ||
+        localStorage.getItem("preferredLanguage") ||
+        "en";
+      emailAlertEl.textContent = emailTakenMessage(lang);
+      emailAlertEl.classList.remove("hidden");
+    } else {
+      emailAlertEl.classList.add("hidden");
+    }
+  };
+
   const validateInputs = (validColor, invalidColor) => {
-    const emailValue = twoStepFormEmailInput.value.trim();
     const passwordValue = twoStepFormPasswordInput.value.trim();
 
-    const isEmailValid = regex.test(emailValue);
+    // Кнопка держится выключенной, пока Zeruh + проверка занятости не подтвердят почту.
+    const isEmailValid = isEmailFieldValid();
     const isPasswordValid = passwordValue.length >= 6;
 
-    twoStepFormEmailInput.style.color = isEmailValid
-      ? validColor
-      : invalidColor;
+    // Во время проверки занятости — нейтральный цвет, не красный.
+    twoStepFormEmailInput.style.color = isEmailAvailPending()
+      ? "#8726FF"
+      : isEmailValid
+        ? validColor
+        : invalidColor;
     twoStepFormPasswordInput.style.color = isPasswordValid
       ? validColor
       : invalidColor;
+
+    updateEmailAlert();
 
     if (isEmailValid && isPasswordValid) {
       btnOverlap.style.left = "100%";
@@ -314,6 +391,68 @@ if (twoStepFormSecondStep) {
   twoStepFormPasswordInput.addEventListener("input", () => {
     twoStepFormPasswordInput.style.color = "#8726FF";
     validateInputs("#4ED937", "#8726FF");
+  });
+
+  // email-guard: вердикт Zeruh приходит асинхронно (после blur) — пересчитываем
+  // заливку и блок кнопки; плюс крутим спиннер в инпуте, пока идёт проверка.
+  const emailSpinner = twoStepFormSecondStep.querySelector(
+    ".two-step-email-spinner",
+  );
+  const showSpinner = () => emailSpinner?.classList.remove("hidden");
+  const hideSpinner = () => emailSpinner?.classList.add("hidden");
+
+  twoStepFormEmailInput.addEventListener("focusout", () => {
+    if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) showSpinner();
+  });
+  twoStepFormEmailInput.addEventListener("input", hideSpinner);
+  twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+    if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
+    maybeCheckEmailAvailability(); // Zeruh подтвердил → запускаем проверку занятости
+    validateInputs("#4ED937", "#ff5530");
+  });
+  // Фолбэк, если email-guard не загрузился: запустить занятость на blur.
+  twoStepFormEmailInput.addEventListener(
+    "focusout",
+    maybeCheckEmailAvailability,
+  );
+
+  // Перевести уже показанное сообщение «занято» при смене языка сайта
+  // (язык меняется через атрибут <html lang>, у алерта нет data-translate).
+  new MutationObserver(() => {
+    updateEmailAlert();
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
+  });
+
+  // Фейловер: если на blur API не ответил за таймаут (fail-open включил кнопку),
+  // добиваем проверку занятости почты на клике «Далее». Регистрируется раньше
+  // глобального advance-хендлера → при блоке его перебивает.
+  const isDefinitive = (st) =>
+    !!st && !st.pending && !st.errored && typeof st.available === "boolean";
+
+  twoStepFormSecondStepBtn.addEventListener("click", async (e) => {
+    const needEmail =
+      regex.test(twoStepFormEmailInput.value.trim()) &&
+      emailDeliverableOk() &&
+      !isDefinitive(getEmailStatus(currentEmail()));
+
+    if (!needEmail) return; // вердикт есть → глобальный хендлер пускает дальше
+
+    // Однозначного ответа нет → придержать переход и перечекнуть.
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    validateInputs("#4ED937", "#ff5530"); // показать pending
+    await checkEmailAvailability(currentEmail());
+    validateInputs("#4ED937", "#ff5530"); // обновить алерт/кнопку по вердикту
+
+    const emailTaken = getEmailStatus(currentEmail())?.available === false;
+    if (!emailTaken) {
+      // свободно или снова не дозвонились (fail-open) → переходим
+      initialStep++;
+      showStep(initialStep);
+    }
+    // занято → остаёмся на шаге: алерт показан, кнопка станет disabled
   });
 
   // Show password
@@ -811,10 +950,85 @@ if (twoStepFormFourthStep) {
 
   submitBtn.disabled = true;
 
+  // ── Проверка занятости телефона (same-origin API, fail-open) ──
+  const currentPhoneE164 = () => {
+    const dialCode = twoStepiti.getSelectedCountryData().dialCode;
+    const digits = twoStepPhoneInput.value.trim().replace(/\D/g, "");
+    return `+${dialCode}${digits}`;
+  };
+  const isPhoneFormatValid = () => twoStepiti.isValidNumber();
+
+  // Проверка занятости ещё идёт (формат ок, но вердикта нет).
+  const isPhonePending = () => {
+    if (!isPhoneFormatValid()) return false;
+    const st = getPhoneStatus(currentPhoneE164());
+    return !st || st.pending;
+  };
+
+  // Реально летит запрос (запись pending) — для спиннера.
+  const isPhoneChecking = () => {
+    if (!isPhoneFormatValid()) return false;
+    const st = getPhoneStatus(currentPhoneE164());
+    return !!st && st.pending;
+  };
+
+  // Полная валидность для гейта: формат ок И номер НЕ занят.
+  // Нет записи/pending → false (ждём); errored → fail-open; занят → false.
+  const isPhoneFieldValid = () => {
+    if (!isPhoneFormatValid()) return false;
+    const st = getPhoneStatus(currentPhoneE164());
+    if (!st || st.pending) return false;
+    if (st.errored) return true;
+    return st.available === true;
+  };
+
+  const phoneSpinnerEl = twoStepFormFourthStep.querySelector(
+    ".two-step-phone-spinner",
+  );
+  const updatePhoneSpinner = () => {
+    if (!phoneSpinnerEl) return;
+    phoneSpinnerEl.classList.toggle("hidden", !isPhoneChecking());
+  };
+
+  // Сообщение «номер нельзя использовать» — только при однозначном «занят».
+  const phoneAlertEl = twoStepFormFourthStep.querySelector(
+    ".two-step-phone-alert",
+  );
+  const updatePhoneAlert = () => {
+    if (!phoneAlertEl) return;
+    const st = getPhoneStatus(currentPhoneE164());
+    const taken =
+      isPhoneFormatValid() &&
+      st &&
+      !st.pending &&
+      !st.errored &&
+      st.available === false;
+    if (taken) {
+      const lang =
+        document.documentElement.getAttribute("lang") ||
+        localStorage.getItem("preferredLanguage") ||
+        "en";
+      phoneAlertEl.textContent = phoneTakenMessage(lang);
+      phoneAlertEl.classList.remove("hidden");
+    } else {
+      phoneAlertEl.classList.add("hidden");
+    }
+  };
+  const isPhoneDefinitive = (st) =>
+    !!st && !st.pending && !st.errored && typeof st.available === "boolean";
+
+  // Перевести показанное сообщение «занято» при смене языка сайта.
+  new MutationObserver(() => {
+    updatePhoneAlert();
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
+  });
+
   const inputValidations1 = [
     {
       input: twoStepPhoneInput,
-      condition: () => twoStepiti.isValidNumber(),
+      condition: () => isPhoneFieldValid(),
     },
     {
       input: twoStepCityInput,
@@ -843,9 +1057,17 @@ if (twoStepFormFourthStep) {
     // Validate each input
     inputValidations1.forEach(({ input, condition }) => {
       const isValid = condition(input.value.trim()); // Check validity
-      input.style.color = isValid ? validColor : invalidColor; // Apply text color
+      // Телефон во время проверки занятости — нейтральный цвет, не красный.
+      if (input === twoStepPhoneInput && isPhonePending()) {
+        input.style.color = "#8726FF";
+      } else {
+        input.style.color = isValid ? validColor : invalidColor; // Apply text color
+      }
       if (isValid) validCount++;
     });
+
+    updatePhoneAlert();
+    updatePhoneSpinner();
 
     // Calculate and update button overlap position
     const percentage = (validCount / totalInputs) * 100;
@@ -879,6 +1101,28 @@ if (twoStepFormFourthStep) {
     twoStepPhoneInput.value = "";
     validateInputs1("#4ED937", "#8726FF");
   });
+
+  // Телефон: на blur запускаем проверку занятости, на вердикт — пересчёт кнопки.
+  twoStepPhoneInput.addEventListener("focusout", () => {
+    if (isPhoneFormatValid()) {
+      checkPhoneAvailability(currentPhoneE164()).then(() =>
+        validateInputs1("#4ED937", "#ff5530"),
+      );
+    }
+    validateInputs1("#4ED937", "#ff5530"); // мгновенно отразить pending/спиннер
+  });
+  // Значение сменилось → запись null → спиннер гаснет.
+  twoStepPhoneInput.addEventListener("input", updatePhoneSpinner);
+
+  // Фейловер: если на blur API не ответил за таймаут (fail-open включил кнопку),
+  // добиваем проверку занятости телефона на сабмите формы — ниже в обработчике submit.
+  twoStepFormFourthStep._phoneAvail = {
+    currentPhoneE164,
+    isPhoneFormatValid,
+    isPhoneDefinitive,
+    updatePhoneAlert,
+    updatePhoneSpinner,
+  };
 }
 
 // | CHANGING STEPS
@@ -935,7 +1179,7 @@ let cid = getUrlParameter("cid");
 let partner = getUrlParameter("partner");
 let offer = getUrlParameter("offer");
 
-twoStepFormMain.addEventListener("submit", (e) => {
+twoStepFormMain.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   twoStepFormData.lang = localStorage.getItem("preferredLanguage");
@@ -972,21 +1216,46 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   console.log(twoStepFormData);
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
-    email,
-  )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
-    promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
-  }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
-    lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
-  }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
-    country ? "&country=" + country : ""
-  }${state ? "&state=" + encodeURIComponent(state) : ""}${
-    city ? "&city=" + encodeURIComponent(city) : ""
-  }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
-    address ? "&address=" + encodeURIComponent(address) : ""
-  }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
-    offer ? "&offer=" + offer : ""
-  }`;
+  // Фейловер занятости телефона: добиваем проверку перед редиректом.
+  // await мгновенен, если вердикт уже в кэше (blur); иначе ждёт ≤1.5с. fail-open:
+  // блокируем ТОЛЬКО при однозначном available:false; ошибка/таймаут → пускаем.
+  // (phone = `${dialCode}${digits}` без "+" → для API добавляем "+".)
+  if (phone) {
+    const verdict = await checkPhoneAvailability(`+${phone}`);
+    if (verdict && verdict.available === false) {
+      btnLoader.classList.add("hidden");
+      btnIcon.classList.remove("hidden");
+      btnText.classList.remove("hidden");
+      twoStepSubmitBtn.disabled = false;
+      const phoneAvail =
+        document.querySelector(".two-step-form-step-4")?._phoneAvail;
+      phoneAvail?.updatePhoneAlert?.();
+      phoneAvail?.updatePhoneSpinner?.();
+      return; // занято — не регистрируем
+    }
+  }
+
+  // email-guard: теги качества почты (status/score/flags) в payload; "" если нет.
+  const egTags =
+    (window.EmailGuard && window.EmailGuard.tags && window.EmailGuard.tags()) ||
+    "";
+
+  window.location.href =
+    `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
+      email,
+    )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
+      promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
+    }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
+      lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
+    }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
+      country ? "&country=" + country : ""
+    }${state ? "&state=" + encodeURIComponent(state) : ""}${
+      city ? "&city=" + encodeURIComponent(city) : ""
+    }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
+      address ? "&address=" + encodeURIComponent(address) : ""
+    }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+      offer ? "&offer=" + offer : ""
+    }` + egTags;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
