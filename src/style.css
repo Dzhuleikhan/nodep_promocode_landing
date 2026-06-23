@@ -256,6 +256,25 @@
   }
 }
 
+/* Спиннер проверки телефона (занятость + IPQS) — в правой части инпута */
+.two-step-phone-spinner {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  border: 3px solid rgba(135, 38, 255, 0.25);
+  border-top-color: #8726ff;
+  border-radius: 50%;
+  animation: two-step-email-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.two-step-phone-spinner.hidden {
+  display: none;
+}
+
 /* Email-Guard (Zeruh) — хинт опечаток / ошибки под полем (на тёмном фоне формы) */
 .eg-hint {
   font-size: 14px;
@@ -276,6 +295,16 @@
   color: #8726ff;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* Phone-Guard (IPQS) — хинт ошибки под телефоном (рисует сам сниппет). */
+.pg-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #ff5530;
 }
 
 .qs-num.qs-current,
@@ -529,4 +558,85 @@
     inset-inline-start: auto;
     margin-inline-start: calc(50% - 300px);
   }
+}
+
+
+/* Postal Code hint tooltip */
+.two-step-zipcode-info {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* display:flex только когда кнопка не скрыта — чтобы не перебивать Tailwind .hidden */
+.two-step-zipcode-info:not(.hidden) {
+  display: flex;
+}
+
+.two-step-zipcode-info:hover {
+  color: #4f3bcf;
+}
+
+.two-step-zipcode-wrapper.has-info .two-step-zipcode-input {
+  padding-right: 28px;
+}
+
+[dir='rtl'] .two-step-zipcode-wrapper.has-info .two-step-zipcode-input {
+  padding-right: 0;
+  padding-left: 28px;
+}
+
+.two-step-zipcode-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  width: 240px;
+  max-width: 78vw;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff;
+  color: #755eeb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.two-step-zipcode-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 14px;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+}
+
+[dir='rtl'] .two-step-zipcode-tooltip {
+  right: auto;
+  left: 0;
+  text-align: right;
+}
+
+[dir='rtl'] .two-step-zipcode-tooltip::after {
+  right: auto;
+  left: 14px;
+}
+
+.two-step-zipcode-info:hover .two-step-zipcode-tooltip,
+.two-step-zipcode-tooltip.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }

@@ -24,6 +24,17 @@ export default defineConfig({
         changeOrigin: true,
         secure: true,
       },
+      // Dev-only: phone-guard (IPQS) — сниппет + эндпоинт реальности номера.
+      "/phone-guard.js": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/phone/verify": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
       // Dev-only: проверка занятости телефона/почты (same-origin прокси на боевом nginx).
       "/api/phone/check-available": {
         target: "https://goldbet.fun",
