@@ -24,6 +24,17 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
+      // Phone-Guard (IPQS) — сниппет проверки телефона + эндпоинт verify.
+      "/phone-guard.js": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/phone/verify": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
       // Проверка занятости телефона/почты (same-origin прокси на nginx ленда).
       "/api/phone/check-available": {
         target: "https://goldbet.fun",
