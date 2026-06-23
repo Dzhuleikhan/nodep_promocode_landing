@@ -1,10 +1,15 @@
-import { countryFlags } from "../public/data";
+import {
+  countryFlags,
+  getPostalCodeMode,
+  hasStateField,
+  formatPostalCode,
+  validatePostalCodeFormat,
+} from "../public/data";
 import { geoData, settingZipCodePlaceholder } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
-import { canadaProvincesCities, australiaStatesCities } from "../public/data";
 import flatpickr from "flatpickr";
 import {
   defaulPromocode,
@@ -43,7 +48,9 @@ export let twoStepFormData = {
   phone: "",
   state: "",
   city: "",
-  address: "",
+  street: "",
+  houseNumber: "",
+  apartment: "",
   zipCode: "",
   lang: "",
 };
@@ -670,6 +677,63 @@ if (twoStepFormThirdStep) {
   });
 }
 
+// | POSTAL CODE / STATE — режим поля по стране (см. GB_DOCS/postal) ───────────
+// Текущий режим поля Postal Code: "hidden" | "optional" | "required".
+export let postalCodeMode = "required";
+
+// Применяет режим поля Postal Code к DOM в зависимости от страны.
+// Через querySelector — чтобы безопасно вызываться до const-объявлений элементов.
+export const applyPostalCodeMode = (countryCode) => {
+  postalCodeMode = getPostalCodeMode(countryCode);
+
+  const wrapper = document.querySelector(".two-step-zipcode-wrapper");
+  const input = document.querySelector(".two-step-zipcode-input");
+  const label = document.querySelector(".two-step-zipcode-label");
+  const info = document.querySelector(".two-step-zipcode-info");
+  const tooltip = document.querySelector(".two-step-zipcode-tooltip");
+  if (!wrapper || !input || !label) return;
+
+  tooltip?.classList.remove("is-visible");
+  info?.setAttribute("aria-expanded", "false");
+
+  if (postalCodeMode === "hidden") {
+    wrapper.classList.add("hidden");
+    wrapper.classList.remove("has-info");
+    info?.classList.add("hidden");
+    label.classList.remove("two-step-required-label");
+    input.value = "";
+    twoStepFormData.zipCode = "";
+  } else if (postalCodeMode === "optional") {
+    wrapper.classList.remove("hidden");
+    wrapper.classList.add("has-info");
+    info?.classList.remove("hidden");
+    label.classList.remove("two-step-required-label");
+  } else {
+    wrapper.classList.remove("hidden");
+    wrapper.classList.remove("has-info");
+    info?.classList.add("hidden");
+    label.classList.add("two-step-required-label");
+  }
+};
+
+// Показывает поле State/Province только для стран из stateProvinceCountries.
+// Поле необязательное — сабмит не блокирует.
+export const applyStateField = (countryCode) => {
+  const wrapper = document.querySelector(".two-step-state-wrapper");
+  const input = document.querySelector(".two-step-state-input");
+  const label = document.querySelector(".two-step-state-label");
+  if (!wrapper || !input) return;
+
+  if (hasStateField(countryCode)) {
+    wrapper.classList.remove("hidden");
+  } else {
+    wrapper.classList.add("hidden");
+    input.value = "";
+    label?.classList.remove("active");
+    twoStepFormData.state = "";
+  }
+};
+
 // | STEP 4 -- FIRST NAME, LAST NAME, DATE, GENDER
 const twoStepFormFourthStep = document.querySelector(".two-step-form-step-4");
 if (twoStepFormFourthStep) {
@@ -701,9 +765,6 @@ if (twoStepFormFourthStep) {
 
   const headerlogoFlag = document.querySelector(".header-logo-flag");
 
-  let isCanada = geoData.countryCode === "CA";
-  let isAustralia = geoData.countryCode === "AU";
-
   // Dropdown visibility toggle
   twoStepCountryButton.addEventListener("click", () => {
     twoStepCountryDropdown.classList.toggle("hidden");
@@ -714,40 +775,6 @@ if (twoStepFormFourthStep) {
       twoStepCountryDropdown.classList.add("hidden");
     }
   });
-
-  if (isCanada || isAustralia) {
-    renderStates(canadaProvincesCities);
-    document
-      .querySelector(".two-step-state-wrapper")
-      .classList.remove("hidden");
-  } else if (isAustralia) {
-    renderStates(australiaStatesCities);
-    document
-      .querySelector(".two-step-state-wrapper")
-      .classList.remove("hidden");
-  } else {
-    document.querySelector(".two-step-state-wrapper").classList.add("hidden");
-  }
-
-  // Render states
-  function renderStates(data) {
-    const ul = document.querySelector(".two-step-state-list");
-    ul.innerHTML = "";
-
-    Object.keys(data).forEach((state) => {
-      const li = document.createElement("li");
-      li.textContent = state;
-
-      li.addEventListener("click", () => {
-        twoStepStateInput.value = li.textContent.trim();
-        twoStepStateInputLabel.classList.add("hidden");
-        twoStepFormData.state = twoStepStateInput.value;
-      });
-
-      li.classList.add("two-step-state-list-item");
-      ul.appendChild(li);
-    });
-  }
 
   // Choosing country from dropdown
   twoStepCountryList.addEventListener("click", (event) => {
@@ -761,24 +788,11 @@ if (twoStepFormFourthStep) {
       twoStepAppliedCountryImage.alt = name;
       twoStepCountryDropdown.classList.add("hidden");
       twoStepFormData.country = countryCode;
+      // Postal/State: лейбл с примером, режим индекса и видимость State по стране.
       settingZipCodePlaceholder(countryCode);
-
-      if (countryCode === "CA") {
-        renderStates(canadaProvincesCities);
-        document
-          .querySelector(".two-step-state-wrapper")
-          .classList.remove("hidden");
-      } else if (countryCode === "AU") {
-        renderStates(australiaStatesCities);
-        document
-          .querySelector(".two-step-state-wrapper")
-          .classList.remove("hidden");
-      } else {
-        document
-          .querySelector(".two-step-state-wrapper")
-          .classList.add("hidden");
-        twoStepFormData.state = "";
-      }
+      applyPostalCodeMode(countryCode);
+      applyStateField(countryCode);
+      validateInputs1("#4ED937", "#8726FF");
     }
   });
 
@@ -786,6 +800,8 @@ if (twoStepFormFourthStep) {
   const applyDetectedCountry = async () => {
     const locationData = geoData;
     settingZipCodePlaceholder(locationData.countryCode);
+    applyPostalCodeMode(locationData.countryCode);
+    applyStateField(locationData.countryCode);
 
     const mathedCountry = countryFlags.find((country) => {
       return (
@@ -865,82 +881,38 @@ if (twoStepFormFourthStep) {
   const twoStepCityInput = twoStepFormFourthStep.querySelector(
     ".two-step-city-input",
   );
-  const twoStepAddressInput = twoStepFormFourthStep.querySelector(
-    ".two-step-address-input",
+  const twoStepStreetInput = twoStepFormFourthStep.querySelector(
+    ".two-step-street-input",
+  );
+  const twoStepHouseInput = twoStepFormFourthStep.querySelector(
+    ".two-step-house-input",
+  );
+  const twoStepApartmentInput = twoStepFormFourthStep.querySelector(
+    ".two-step-apartment-input",
   );
   const twoStepZipcodeInput = twoStepFormFourthStep.querySelector(
     ".two-step-zipcode-input",
   );
 
-  const twoStepStateBtn = twoStepFormFourthStep.querySelector(
-    ".two-step-state-wrapper",
-  );
-  const twoStepStateInput = twoStepStateBtn.querySelector(
+  // State/Province — обычный текстовый инпут (необязательный). Видимость по стране
+  // управляет applyStateField(); сюда только сохраняем значение.
+  const twoStepStateInput = twoStepFormFourthStep.querySelector(
     ".two-step-state-input",
   );
-  const twoStepStateInputLabel = twoStepStateBtn.querySelector(
-    ".two-step-state-label",
-  );
-  const twoStepStateList = twoStepFormFourthStep.querySelector(
-    ".two-step-state-list",
-  );
-  const twoStepStateListItem = twoStepStateList.querySelectorAll(
-    ".two-step-state-list-item",
-  );
-
-  if (!isCanada || !isAustralia) {
-    twoStepStateBtn.classList.add("hidden");
-    twoStepStateInput.value = "";
-  } else {
-    twoStepStateBtn.classList.remove("hidden");
-  }
-
-  twoStepCityInput.addEventListener("input", () => {
-    const cityInput = twoStepCityInput.value.trim().toLowerCase();
-    let foundProvince = "";
-
-    if (cityInput.length > 0 && twoStepFormData.country === "CA") {
-      // Only search if there's input
-      for (const [province, cities] of Object.entries(canadaProvincesCities)) {
-        if (
-          cities.some((city) => city.toLowerCase().trim().includes(cityInput))
-        ) {
-          // Check partial match
-          foundProvince = province;
-          break;
-        }
-      }
-    } else if (cityInput.length > 0 && twoStepFormData.country === "AU") {
-      for (const [province, cities] of Object.entries(australiaStatesCities)) {
-        if (
-          cities.some((city) => city.toLowerCase().trim().includes(cityInput))
-        ) {
-          // Check partial match
-          foundProvince = province;
-          break;
-        }
-      }
-    }
-
-    if (foundProvince) {
-      twoStepStateInput.value = foundProvince;
-      twoStepStateInputLabel.classList.add("hidden");
-      twoStepFormData.state = twoStepStateInput.value;
-    } else {
-      twoStepStateInput.value = "";
-      twoStepStateInputLabel.classList.remove("hidden");
-      twoStepFormData.state = "";
-    }
+  twoStepStateInput.addEventListener("input", () => {
+    twoStepFormData.state = validateStringInput(twoStepStateInput.value);
   });
 
-  twoStepStateInput.addEventListener("change", () => {
-    if (twoStepStateInput.value !== "") {
-      twoStepStateInputLabel.classList.add("hidden");
+  // Авто-формат индекса по стране (вставка разделителей, верхний регистр).
+  twoStepZipcodeInput.addEventListener("input", () => {
+    const formatted = formatPostalCode(
+      twoStepFormData.country,
+      twoStepZipcodeInput.value,
+    );
+    if (formatted !== twoStepZipcodeInput.value) {
+      twoStepZipcodeInput.value = formatted;
+      twoStepZipcodeInput.setSelectionRange(formatted.length, formatted.length);
     }
-  });
-
-  twoStepStateBtn.addEventListener("click", () => {
-    twoStepStateList.classList.toggle("hidden");
   });
 
   // Phone input only numbers
@@ -958,6 +930,32 @@ if (twoStepFormFourthStep) {
   };
   const isPhoneFormatValid = () => twoStepiti.isValidNumber();
 
+  // ── phone-guard (IPQS): реальность/живость номера, fail-open ──
+  // Сниппет читает номер из data-атрибутов поля. Кормим ТОЛЬКО при валидном
+  // формате (separateDialCode → код страны вне инпута, сниппет сам e164 не соберёт).
+  const syncPhoneGuardData = () => {
+    if (isPhoneFormatValid()) {
+      const { dialCode, iso2 } = twoStepiti.getSelectedCountryData();
+      const digits = twoStepPhoneInput.value.trim().replace(/\D/g, "");
+      twoStepPhoneInput.dataset.pgE164 = `${dialCode}${digits}`; // цифры без "+"
+      twoStepPhoneInput.dataset.pgCountry = (iso2 || "").toUpperCase();
+    } else {
+      delete twoStepPhoneInput.dataset.pgE164;
+      delete twoStepPhoneInput.dataset.pgCountry;
+    }
+  };
+
+  // IPQS подтвердил реальность? Нет сниппета → fail-open (true).
+  const isPhoneGuardValid = () =>
+    !window.PhoneGuard || window.PhoneGuard.isValid(twoStepPhoneInput);
+  // Формат ок, но вердикта IPQS ещё нет (ждём).
+  const isPhoneGuardPending = () =>
+    !!window.PhoneGuard && window.PhoneGuard.isPending(twoStepPhoneInput);
+
+  // Спиннер IPQS вешаем на явный флаг (set на blur, clear на phoneguard:result),
+  // НЕ на isPending — он true уже во время ввода (см. LANDING_INTEGRATION §5).
+  let isIpqsChecking = false;
+
   // Проверка занятости ещё идёт (формат ок, но вердикта нет).
   const isPhonePending = () => {
     if (!isPhoneFormatValid()) return false;
@@ -965,17 +963,21 @@ if (twoStepFormFourthStep) {
     return !st || st.pending;
   };
 
-  // Реально летит запрос (запись pending) — для спиннера.
+  // Реально летит запрос (IPQS или занятость) — для спиннера.
   const isPhoneChecking = () => {
     if (!isPhoneFormatValid()) return false;
+    if (isIpqsChecking) return true;
     const st = getPhoneStatus(currentPhoneE164());
     return !!st && st.pending;
   };
 
-  // Полная валидность для гейта: формат ок И номер НЕ занят.
-  // Нет записи/pending → false (ждём); errored → fail-open; занят → false.
+  // Полная валидность для гейта: формат → IPQS → занятость (все три должны пройти).
+  // IPQS: pending → false (ждём вердикт); valid:false/active:false → false (блок).
+  // Занятость: нет записи/pending → false (ждём); errored → fail-open; занят → false.
   const isPhoneFieldValid = () => {
     if (!isPhoneFormatValid()) return false;
+    if (isPhoneGuardPending()) return false; // ждём вердикт IPQS
+    if (!isPhoneGuardValid()) return false; // valid:false/active:false → блок
     const st = getPhoneStatus(currentPhoneE164());
     if (!st || st.pending) return false;
     if (st.errored) return true;
@@ -1018,8 +1020,16 @@ if (twoStepFormFourthStep) {
     !!st && !st.pending && !st.errored && typeof st.available === "boolean";
 
   // Перевести показанное сообщение «занято» при смене языка сайта.
+  // Плюс: если IPQS-хинт показан (blocked) — перепрогнать verify, чтобы сниппет
+  // перерисовал свой .pg-hint на новом языке.
   new MutationObserver(() => {
     updatePhoneAlert();
+    if (
+      window.PhoneGuard &&
+      twoStepPhoneInput.getAttribute("data-pg-state") === "blocked"
+    ) {
+      window.PhoneGuard.verify(twoStepPhoneInput);
+    }
   }).observe(document.documentElement, {
     attributes: true,
     attributeFilter: ["lang"],
@@ -1032,15 +1042,22 @@ if (twoStepFormFourthStep) {
     },
     {
       input: twoStepCityInput,
-      condition: (value) => value !== "", // Last name must not be empty
+      condition: (value) => value !== "",
     },
     {
-      input: twoStepAddressInput,
-      condition: (value) => value !== "", // Valid date (YYYY-MM-DD)
+      input: twoStepStreetInput,
+      condition: (value) => value !== "",
     },
     {
+      input: twoStepHouseInput,
+      condition: (value) => value !== "",
+    },
+    {
+      // REQUIRED — должно совпадать с форматом страны; OPTIONAL/HIDDEN — не блокирует.
       input: twoStepZipcodeInput,
-      condition: (value) => value.length >= 2, // Valid date (YYYY-MM-DD)
+      condition: (value) =>
+        postalCodeMode !== "required" ||
+        validatePostalCodeFormat(twoStepFormData.country, value),
     },
   ];
 
@@ -1057,8 +1074,8 @@ if (twoStepFormFourthStep) {
     // Validate each input
     inputValidations1.forEach(({ input, condition }) => {
       const isValid = condition(input.value.trim()); // Check validity
-      // Телефон во время проверки занятости — нейтральный цвет, не красный.
-      if (input === twoStepPhoneInput && isPhonePending()) {
+      // Телефон во время проверки (IPQS или занятость) — нейтральный цвет, не красный.
+      if (input === twoStepPhoneInput && (isPhonePending() || isIpqsChecking)) {
         input.style.color = "#8726FF";
       } else {
         input.style.color = isValid ? validColor : invalidColor; // Apply text color
@@ -1078,7 +1095,9 @@ if (twoStepFormFourthStep) {
     if (percentage === 100) {
       submitBtn.disabled = false;
       twoStepFormData.city = validateStringInput(twoStepCityInput.value);
-      twoStepFormData.address = validateStringInput(twoStepAddressInput.value);
+      twoStepFormData.street = validateStringInput(twoStepStreetInput.value);
+      twoStepFormData.houseNumber = validateStringInput(twoStepHouseInput.value);
+      twoStepFormData.apartment = validateStringInput(twoStepApartmentInput.value);
       twoStepFormData.zipCode = validateStringInput(twoStepZipcodeInput.value);
       if (twoStepPhoneInput.value.trim() !== "" && twoStepiti.isValidNumber()) {
         twoStepFormData.phone = fullPhoneNumber;
@@ -1099,12 +1118,15 @@ if (twoStepFormFourthStep) {
   });
   twoStepPhoneInput.addEventListener("countrychange", () => {
     twoStepPhoneInput.value = "";
+    syncPhoneGuardData(); // номер очищен → снять data-атрибуты IPQS
     validateInputs1("#4ED937", "#8726FF");
   });
 
-  // Телефон: на blur запускаем проверку занятости, на вердикт — пересчёт кнопки.
+  // Телефон: на blur запускаем IPQS + проверку занятости, на вердикт — пересчёт кнопки.
   twoStepPhoneInput.addEventListener("focusout", () => {
+    syncPhoneGuardData(); // до того как сниппет прочтёт номер на blur
     if (isPhoneFormatValid()) {
+      if (isPhoneGuardPending()) isIpqsChecking = true; // спиннер на время IPQS
       checkPhoneAvailability(currentPhoneE164()).then(() =>
         validateInputs1("#4ED937", "#ff5530"),
       );
@@ -1112,7 +1134,37 @@ if (twoStepFormFourthStep) {
     validateInputs1("#4ED937", "#ff5530"); // мгновенно отразить pending/спиннер
   });
   // Значение сменилось → запись null → спиннер гаснет.
-  twoStepPhoneInput.addEventListener("input", updatePhoneSpinner);
+  twoStepPhoneInput.addEventListener("input", () => {
+    syncPhoneGuardData();
+    updatePhoneSpinner();
+  });
+
+  // IPQS вердикт приходит асинхронно — гасим флаг спиннера и пересчитываем гейт/цвет.
+  twoStepPhoneInput.addEventListener("phoneguard:result", () => {
+    isIpqsChecking = false;
+    validateInputs1("#4ED937", "#ff5530");
+  });
+
+  // Postal Code hint — тап на мобилке (на десктопе тултип по hover из CSS).
+  const zipcodeInfoBtn = twoStepFormFourthStep.querySelector(
+    ".two-step-zipcode-info",
+  );
+  const zipcodeTooltip = twoStepFormFourthStep.querySelector(
+    ".two-step-zipcode-tooltip",
+  );
+  if (zipcodeInfoBtn && zipcodeTooltip) {
+    zipcodeInfoBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = zipcodeTooltip.classList.toggle("is-visible");
+      zipcodeInfoBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+    document.addEventListener("click", (e) => {
+      if (!zipcodeInfoBtn.contains(e.target)) {
+        zipcodeTooltip.classList.remove("is-visible");
+        zipcodeInfoBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   // Фейловер: если на blur API не ответил за таймаут (fail-open включил кнопку),
   // добиваем проверку занятости телефона на сабмите формы — ниже в обработчике submit.
@@ -1196,7 +1248,9 @@ twoStepFormMain.addEventListener("submit", async (e) => {
   twoStepSubmitBtn.disabled = true;
 
   let {
-    address,
+    street,
+    houseNumber,
+    apartment,
     birthday,
     bonus,
     city,
@@ -1240,6 +1294,11 @@ twoStepFormMain.addEventListener("submit", async (e) => {
     (window.EmailGuard && window.EmailGuard.tags && window.EmailGuard.tags()) ||
     "";
 
+  // phone-guard: теги качества телефона (valid/active/fraud_score/line_type/flags); "" если нет.
+  const pgTags =
+    (window.PhoneGuard && window.PhoneGuard.tags && window.PhoneGuard.tags()) ||
+    "";
+
   window.location.href =
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
@@ -1252,10 +1311,14 @@ twoStepFormMain.addEventListener("submit", async (e) => {
     }${state ? "&state=" + encodeURIComponent(state) : ""}${
       city ? "&city=" + encodeURIComponent(city) : ""
     }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
-      address ? "&address=" + encodeURIComponent(address) : ""
+      street ? "&street=" + encodeURIComponent(street) : ""
+    }${houseNumber ? "&house_number=" + encodeURIComponent(houseNumber) : ""}${
+      apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
     }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
       offer ? "&offer=" + offer : ""
-    }` + egTags;
+    }` +
+    egTags +
+    pgTags;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
@@ -1270,7 +1333,9 @@ twoStepFormMain.addEventListener("submit", async (e) => {
     }${state ? "&state=" + encodeURIComponent(state) : ""}${
       city ? "&city=" + encodeURIComponent(city) : ""
     }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
-      address ? "&address=" + encodeURIComponent(address) : ""
+      street ? "&street=" + encodeURIComponent(street) : ""
+    }${houseNumber ? "&house_number=" + encodeURIComponent(houseNumber) : ""}${
+      apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
     }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
       offer ? "&offer=" + offer : ""
     }`,

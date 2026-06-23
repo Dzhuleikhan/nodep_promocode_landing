@@ -24,6 +24,17 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
+      // phone-guard: сниппет IPQS + эндпоинт проверки реальности телефона
+      "/phone-guard.js": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/phone/verify": {
+        target: "https://goldbet.fun",
+        changeOrigin: true,
+        secure: false,
+      },
       // проверка занятости (НЕ путать с Zeruh /verify выше)
       "/api/phone/check-available": {
         target: "https://goldbet.fun",
