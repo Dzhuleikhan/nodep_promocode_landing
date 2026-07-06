@@ -8,6 +8,7 @@ import "../modules/geoLocation";
 import "../modules/itiTelInput";
 import "../modules/twoStepForm";
 import "../modules/params";
+import "../modules/withoutWelcome";
 import "../modules/modalCurrency";
 import "../modules/modalOpen";
 import "../modules/language";
