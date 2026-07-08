@@ -6,7 +6,12 @@ import {
   validatePostalCodeFormat,
 } from "../public/data";
 import { geoData, settingZipCodePlaceholder } from "./geoLocation";
-import { twoStepiti } from "./itiTelInput";
+import {
+  twoStepiti,
+  getMaxDigitsForCountry,
+  stripDuplicatedDialCode,
+  formatByPlaceholder,
+} from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
@@ -915,9 +920,22 @@ if (twoStepFormFourthStep) {
     }
   });
 
-  // Phone input only numbers
   twoStepPhoneInput.addEventListener("input", function (e) {
-    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+    const countryData = twoStepiti.getSelectedCountryData();
+    const countryCode = countryData.iso2 ? countryData.iso2.toUpperCase() : "";
+    const dialCode = countryData.dialCode;
+    const maxDigits = getMaxDigitsForCountry(countryCode);
+    const raw = stripDuplicatedDialCode(
+      e.target.value.replace(/\D/g, ""),
+      countryCode,
+      dialCode,
+    );
+    const digits = raw.slice(0, maxDigits);
+    e.target.value = formatByPlaceholder(
+      digits,
+      e.target.getAttribute("placeholder"),
+    );
+    e.target.setSelectionRange(e.target.value.length, e.target.value.length);
   });
 
   submitBtn.disabled = true;

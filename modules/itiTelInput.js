@@ -1,6 +1,8 @@
 import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 import { geoData } from "./geoLocation";
-import Inputmask from "inputmask";
+import { Metadata } from "libphonenumber-js/core";
+import minMetadata from "libphonenumber-js/metadata.min.json";
+import { isValidPhoneNumber } from "libphonenumber-js";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
@@ -23,20 +25,44 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
   },
 });
 
-const applyMask = () => {
-  const placeholder = twoStepPhoneInput.getAttribute("placeholder");
-
-  if (!placeholder) return;
-
-  const maskPattern = placeholder.replace(/X/g, "9");
-
-  Inputmask({
-    mask: maskPattern,
-    placeholder: "X",
-    clearMaskOnLostFocus: true,
-  }).mask(twoStepPhoneInput);
+const getPossibleLengths = (countryCode) => {
+  try {
+    const meta = new Metadata(minMetadata);
+    meta.selectNumberingPlan(countryCode);
+    return meta.numberingPlan.possibleLengths();
+  } catch {
+    return null;
+  }
 };
 
-twoStepPhoneInput.addEventListener("focus", applyMask);
-twoStepPhoneInput.addEventListener("click", applyMask);
-twoStepPhoneInput.addEventListener("countrychange", applyMask);
+export const getMaxDigitsForCountry = (countryCode) => {
+  const lengths = getPossibleLengths(countryCode);
+  return lengths ? Math.max(...lengths) : 15;
+};
+
+export const stripDuplicatedDialCode = (digits, countryCode, dialCode) => {
+  if (!dialCode || !digits.startsWith(dialCode)) return digits;
+  const rest = digits.slice(dialCode.length);
+  const lengths = getPossibleLengths(countryCode);
+  if (!rest || !lengths) return digits;
+  const maxLen = Math.max(...lengths);
+  if (digits.length > maxLen && rest.length <= maxLen) return rest;
+  if (isValidPhoneNumber("+" + dialCode + digits)) return digits;
+  if (isValidPhoneNumber("+" + digits)) return rest;
+  if (lengths.includes(rest.length) && !lengths.includes(digits.length)) {
+    return rest;
+  }
+  return digits;
+};
+
+export const formatByPlaceholder = (digits, placeholder) => {
+  if (!placeholder) return digits;
+  let out = "";
+  let di = 0;
+  for (const ch of placeholder) {
+    if (di >= digits.length) break;
+    out += ch === "X" ? digits[di++] : ch;
+  }
+  if (di < digits.length) out += digits.slice(di);
+  return out;
+};
