@@ -642,4 +642,8 @@
   .wager-badge-text {
     font-size: 20px;
   }
+
+  .wager-badge-inner {
+    flex-wrap: wrap;
+  }
 }
