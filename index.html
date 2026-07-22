@@ -10,11 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script
-      defer
-      src="/email-guard.js?v=1.0.7"
-      data-eg-debug="false"
-    ></script>
+    <script defer src="/email-guard.js?v=1.0.7" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open.
          Селектор сужен — на ленде есть второе input[type=tel] (дата рождения). -->
     <script
@@ -76,8 +72,7 @@
               </button>
               <ul
                 class="header-lang-list max-h-[180px] absolute overflow-y-auto right-0 top-[110%] w-full overflow-hidden rounded-lg font-bold text-black duration-300 max-[350px]:min-w-max"
-              >
-              </ul>
+              ></ul>
             </div>
           </div>
         </div>
@@ -140,8 +135,14 @@
             <!-- inner -->
             <div class="relative z-20">
               <div
-                class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
+                class="hero-info-inner max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
               >
+                <div class="wager-badge">
+                  <div class="wager-badge-inner">
+                    <p class="wager-badge-amount" data-text="20X">20X</p>
+                    <p class="wager-badge-text">Low wager!</p>
+                  </div>
+                </div>
                 <h1
                   data-translate="heroTitle"
                   class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
@@ -1320,7 +1321,9 @@
                           src="./img/currencies/kzt.svg"
                           alt="KZT"
                         />
-                        <span class="currency-item-name">Kazakhstani Tenge</span>
+                        <span class="currency-item-name"
+                          >Kazakhstani Tenge</span
+                        >
                         <div>
                           <span class="currency-item-symbol">₸</span>
                           |
@@ -1354,7 +1357,9 @@
                           src="./img/currencies/azn.svg"
                           alt="AZN"
                         />
-                        <span class="currency-item-name">Azerbaijani Manat</span>
+                        <span class="currency-item-name"
+                          >Azerbaijani Manat</span
+                        >
                         <div>
                           <span class="currency-item-symbol">₼</span>
                           |
@@ -1388,7 +1393,9 @@
                           src="./img/currencies/uah.svg"
                           alt="UAH"
                         />
-                        <span class="currency-item-name">Ukrainian Hryvnia</span>
+                        <span class="currency-item-name"
+                          >Ukrainian Hryvnia</span
+                        >
                         <div>
                           <span class="currency-item-symbol">₴</span>
                           |
@@ -1456,7 +1463,9 @@
                           src="./img/currencies/aud.svg"
                           alt="AUD"
                         />
-                        <span class="currency-item-name">Australian Dollar</span>
+                        <span class="currency-item-name"
+                          >Australian Dollar</span
+                        >
                         <div>
                           <span class="currency-item-symbol">AU$</span>
                           |
@@ -1524,7 +1533,9 @@
                           src="./img/currencies/nzd.svg"
                           alt="NZD"
                         />
-                        <span class="currency-item-name">New Zealand Dollar</span>
+                        <span class="currency-item-name"
+                          >New Zealand Dollar</span
+                        >
                         <div>
                           <span class="currency-item-symbol">NZ$</span>
                           |
@@ -1660,7 +1671,9 @@
                           src="./img/currencies/zar.svg"
                           alt="ZAR"
                         />
-                        <span class="currency-item-name">South African Rand</span>
+                        <span class="currency-item-name"
+                          >South African Rand</span
+                        >
                         <div>
                           <span class="currency-item-symbol">R</span>
                           |
@@ -1745,7 +1758,9 @@
                           src="./img/currencies/tzs.svg"
                           alt="TZS"
                         />
-                        <span class="currency-item-name">Tanzanian Shilling</span>
+                        <span class="currency-item-name"
+                          >Tanzanian Shilling</span
+                        >
                         <div>
                           <span class="currency-item-symbol">TSh</span>
                           |
@@ -1779,7 +1794,9 @@
                           src="./img/currencies/sll.svg"
                           alt="SLL"
                         />
-                        <span class="currency-item-name">Sierra Leonean Leone</span>
+                        <span class="currency-item-name"
+                          >Sierra Leonean Leone</span
+                        >
                         <div>
                           <span class="currency-item-symbol">Le</span>
                           |
@@ -1796,7 +1813,9 @@
                           src="./img/currencies/xof.svg"
                           alt="XOF"
                         />
-                        <span class="currency-item-name">West African CFA Franc</span>
+                        <span class="currency-item-name"
+                          >West African CFA Franc</span
+                        >
                         <div>
                           <span class="currency-item-symbol">Fr</span>
                           |
@@ -1813,7 +1832,9 @@
                           src="./img/currencies/xaf.svg"
                           alt="XAF"
                         />
-                        <span class="currency-item-name">Central African CFA Franc</span>
+                        <span class="currency-item-name"
+                          >Central African CFA Franc</span
+                        >
                         <div>
                           <span class="currency-item-symbol">Fr</span>
                           |
@@ -1945,8 +1966,19 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5" />
-                      <path d="M10 8.75V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                      <circle
+                        cx="10"
+                        cy="10"
+                        r="9"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M10 8.75V14"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
                       <circle cx="10" cy="6" r="1" fill="currentColor" />
                     </svg>
                     <span

@@ -512,3 +512,134 @@
 [data-eg-state="error"] {
   color: #FF5530;
 }
+
+/* WAGER BADGE */
+
+.hero-info-inner {
+  position: relative;
+}
+
+/* Угол градиента рамки — регистрируем как <angle>, иначе он не анимируется */
+@property --wager-badge-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.wager-badge {
+  position: absolute;
+  left: 360px;
+  top: -89px;
+  background: linear-gradient(to bottom, #FF8AA3, #A11505);
+  background: linear-gradient(var(--wager-badge-angle), #FF8AA3, #A11505);
+  transform: rotate(5deg);
+  border-radius: 22px;
+  padding: 5px;
+  animation: wager-badge-spin 4s linear infinite;
+  /* Свой слой, иначе scale перерисовывает текст каждый кадр и он дрожит */
+  will-change: transform;
+}
+
+@keyframes wager-badge-spin {
+  to {
+    --wager-badge-angle: 360deg;
+  }
+}
+
+.wager-badge-inner {
+  position: relative;
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+  background: #BF0E34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+/* Блик: полоса едет слева направо поверх содержимого, затем пауза до следующего цикла */
+.wager-badge-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: linear-gradient(105deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 58%);
+  background-repeat: no-repeat;
+  background-size: 250% 100%;
+  animation: wager-badge-shine 4.5s ease-in-out infinite;
+}
+
+@keyframes wager-badge-shine {
+  0% {
+    background-position: 100% 0;
+  }
+
+  45%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Слой обводки: белые буквы с обводкой, поверх них ::after кладёт градиентную заливку */
+.wager-badge-amount {
+  position: relative;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-text-stroke: 4px #ffffff;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 4px 5px #2A0707);
+}
+
+.wager-badge-amount::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-text-stroke-width: 0;
+  background-image: linear-gradient(to bottom, #E6B103, #FF6200);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.wager-badge-text {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  filter: drop-shadow(0 4px 5px #2A0707);
+}
+
+@media (max-width: 992px) {
+  .wager-badge {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: rotate(0);
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wager-badge {
+    margin-bottom: 10px;
+  }
+
+  .wager-badge-amount {
+    font-size: 36px;
+  }
+
+  .wager-badge-text {
+    font-size: 20px;
+  }
+}
