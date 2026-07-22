@@ -65,6 +65,7 @@ export const translations = {
     areYouSure: `Are You Sure? <br /> Your Progress Will Be Lost`,
     keepRegistering: "Keep Registering",
     returnToWebsite: "Return to Website",
+    lowWager: "Low wager!",
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
@@ -133,6 +134,7 @@ export const translations = {
     areYouSure: `Êtes-vous sûr ? <br /> Votre progression sera perdue.`,
     keepRegistering: "Continuer l'inscription",
     returnToWebsite: "Retourner au site web",
+    lowWager: "Mise faible !",
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
@@ -201,6 +203,7 @@ export const translations = {
     areYouSure: `Ești sigur? <br /> Progresul tău va fi pierdut`,
     keepRegistering: "Continuă Înregistrarea",
     returnToWebsite: "Întoarce-te la Website",
+    lowWager: "Rulaj redus!",
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
@@ -269,6 +272,7 @@ export const translations = {
     areYouSure: `Biztos vagy benne? <br /> A haladásod elvész`,
     keepRegistering: "Folytatás a regisztrációval",
     returnToWebsite: "Vissza a weboldalra",
+    lowWager: "Alacsony megforgatás!",
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
@@ -337,6 +341,7 @@ export const translations = {
     areYouSure: `Czy na pewno chcesz to zrobić? <br /> Twój postęp zostanie utracony`,
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
+    lowWager: "Niski obrót!",
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
@@ -407,6 +412,7 @@ export const translations = {
     areYouSure: `Jste si jistí? <br /> Váš pokrok bude ztracen`,
     keepRegistering: "Pokračujte v registraci",
     returnToWebsite: "Vrátit se na web",
+    lowWager: "Nízký wager!",
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
@@ -476,6 +482,7 @@ export const translations = {
     areYouSure: `Ste prepričani? <br /> Vaš napredek bo izgubljen`,
     keepRegistering: "Nadaljujte z registracijo",
     returnToWebsite: "Vrni se na spletno stran",
+    lowWager: "Nizke stave!",
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
@@ -545,6 +552,7 @@ export const translations = {
     areYouSure: `Είστε σίγουροι? <br /> Η πρόοδός σας θα χαθεί`,
     keepRegistering: "Συνεχίστε την εγγραφή",
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
+    lowWager: "Χαμηλός τζίρος!",
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
@@ -612,6 +620,7 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Fremgangen din vil gå tapt`,
     keepRegistering: "Fortsett registreringen",
     returnToWebsite: "Tilbake til nettsiden",
+    lowWager: "Lav omsetning!",
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
@@ -680,6 +689,7 @@ export const translations = {
     areYouSure: `Är du säker? <br /> Din framsteg kommer att gå förlorad`,
     keepRegistering: "Fortsätt registreringen",
     returnToWebsite: "Återgå till webbplatsen",
+    lowWager: "Lågt omsättningskrav!",
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
@@ -748,6 +758,7 @@ export const translations = {
     areYouSure: `Ste si istí? <br /> Váš pokrok bude stratený`,
     keepRegistering: "Pokračovať v registrácii",
     returnToWebsite: "Vrátiť sa na webovú stránku",
+    lowWager: "Nízky wager!",
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
@@ -816,6 +827,7 @@ export const translations = {
     areYouSure: `Вы уверены? <br /> Ваш прогресс будет утерян`,
     keepRegistering: "Продолжить регистрацию",
     returnToWebsite: "Вернуться на сайт",
+    lowWager: "Низкий вейджер!",
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
@@ -884,6 +896,7 @@ export const translations = {
     areYouSure: `¿Estás seguro? <br /> Tu progreso se perderá`,
     keepRegistering: "Seguir registrándome",
     returnToWebsite: "Volver al sitio web",
+    lowWager: "¡Rollover bajo!",
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
@@ -951,6 +964,7 @@ export const translations = {
     areYouSure: `Tem certeza? <br /> Seu progresso será perdido`,
     keepRegistering: "Continuar cadastro",
     returnToWebsite: "Voltar ao site",
+    lowWager: "Rollover baixo!",
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
@@ -1019,6 +1033,7 @@ export const translations = {
     areYouSure: `Bist du sicher? <br /> Dein Fortschritt geht verloren`,
     keepRegistering: "Mit Registrierung fortfahren",
     returnToWebsite: "Zurück zur Website",
+    lowWager: "Niedriger Umsatz!",
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
@@ -1087,6 +1102,7 @@ export const translations = {
     areYouSure: `Ви впевнені? <br /> Ваш прогрес буде втрачено`,
     keepRegistering: "Продовжити реєстрацію",
     returnToWebsite: "Повернутися на сайт",
+    lowWager: "Низький вейджер!",
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
@@ -1155,6 +1171,7 @@ export const translations = {
     areYouSure: `Sei Sicuro? <br /> I tuoi progressi andranno persi`,
     keepRegistering: "Continua la Registrazione",
     returnToWebsite: "Ritorna al Sito Web",
+    lowWager: "Rollover basso!",
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
@@ -1223,6 +1240,7 @@ export const translations = {
     areYouSure: `Oled kindel? <br /> Teie edenemine kaob`,
     keepRegistering: "Jätka registreerimist",
     returnToWebsite: "Tagasi veebisaidile",
+    lowWager: "Madal panus!",
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
@@ -1291,6 +1309,7 @@ export const translations = {
     areYouSure: `Vai esat pārliecināts? <br /> Jūsu progress tiks zaudēts`,
     keepRegistering: "Turpināt reģistrēšanos",
     returnToWebsite: "Atgriezties vietnē",
+    lowWager: "Zema likme!",
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
@@ -1359,6 +1378,7 @@ export const translations = {
     areYouSure: `Ar tikrai? <br /> Jūsų pažanga bus prarasta`,
     keepRegistering: "Tęsti registraciją",
     returnToWebsite: "Grįžti į svetainę",
+    lowWager: "Mažas statymas!",
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
@@ -1427,6 +1447,7 @@ export const translations = {
     areYouSure: `Jeste li sigurni? <br /> Vaš napredak će biti izgubljen`,
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
+    lowWager: "Niski rollover!",
   },
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1494,6 +1515,7 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
+    lowWager: "Lavt omsætningskrav!",
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
@@ -1562,6 +1584,7 @@ export const translations = {
     areYouSure: `Oletko varma? <br /> Edistymisesi menetetään`,
     keepRegistering: "Jatka rekisteröintiä",
     returnToWebsite: "Palaa verkkosivulle",
+    lowWager: "Matala kierrätys!",
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
@@ -1630,6 +1653,7 @@ export const translations = {
     areYouSure: `Сигурни ли сте? <br /> Напредъкът ви ще бъде загубен`,
     keepRegistering: "Продължи регистрацията",
     returnToWebsite: "Върни се към сайта",
+    lowWager: "Нисък уейджър!",
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1697,6 +1721,7 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
+    lowWager: "Lage inzet!",
   },
   sw: {
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
@@ -1764,6 +1789,7 @@ export const translations = {
     areYouSure: `Una Hakika? <br /> Maendeleo Yako Yataharibika`,
     keepRegistering: "Endelea Kujisajili",
     returnToWebsite: "Rudi Tovuti",
+    lowWager: "Dau dogo!",
   },
   rw: {
     pageTitle: "🎁 Inyongera yawe iri ready - Goldbet",
@@ -1832,6 +1858,7 @@ export const translations = {
     areYouSure: `Wizeye? <br /> Intambwe yawe izasibangana`,
     keepRegistering: "Komeza Kwiyandikisha",
     returnToWebsite: "Subira ku Rubuga",
+    lowWager: "Umukino muto!",
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
@@ -1899,6 +1926,7 @@ export const translations = {
     areYouSure: `هل أنت متأكد؟ <br /> سيتم فقدان تقدمك`,
     keepRegistering: "تابع التسجيل",
     returnToWebsite: "العودة إلى الموقع",
+    lowWager: "رهان منخفض!",
   },
   zh: {
     pageTitle: "🎁 您的奖励已准备好 - Goldbet",
@@ -1965,6 +1993,7 @@ export const translations = {
     areYouSure: `您确定吗？<br />您的进度将丢失`,
     keepRegistering: "继续注册",
     returnToWebsite: "返回网站",
+    lowWager: "低流水！",
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
@@ -2034,6 +2063,7 @@ export const translations = {
     areYouSure: `An bhfuil tú cinnte? <br /> Caillfear do dhul chun cinn`,
     keepRegistering: "Lean ar aghaidh ag clárú",
     returnToWebsite: "Fill ar an suíomh",
+    lowWager: "Geall íseal!",
   },
   lb: {
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
@@ -2101,6 +2131,7 @@ export const translations = {
     areYouSure: `Bass du sécher? <br /> Däi Fortschrëtt geet verluer`,
     keepRegistering: "Weider registréieren",
     returnToWebsite: "Zréck op Websäit",
+    lowWager: "Niddregen Asaz!",
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
@@ -2169,6 +2200,7 @@ export const translations = {
     areYouSure: `Żgur? <br /> Il-progress tiegħek jintilef`,
     keepRegistering: "Kompli tirreġistra",
     returnToWebsite: "Mur lura fis-sit",
+    lowWager: "Imħatra baxxa!",
   },
   am: {
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
@@ -2235,6 +2267,7 @@ export const translations = {
     areYouSure: `እርግጠኛ ነዎት? <br /> እድገትዎ ይጠፋል`,
     keepRegistering: "መመዝገብ ቀጥል",
     returnToWebsite: "ወደ ድህረ ገጽ ተመለስ",
+    lowWager: "ዝቅተኛ ውርርድ!",
   },
   lm: {
     pageTitle: "🎁 Bonus yo yetegefu - Goldbet",
@@ -2302,6 +2335,7 @@ export const translations = {
     areYouSure: `Okakasa? <br /> Enkola yo egenda kufa`,
     keepRegistering: "Weeyongere okuwandiika",
     returnToWebsite: "Dda ku mukutu",
+    lowWager: "Mbongo moke!",
   },
   ha: {
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
@@ -2369,6 +2403,7 @@ export const translations = {
     areYouSure: `Ka tabbata? <br /> Za a rasa ci gabanka`,
     keepRegistering: "Ci gaba da rajista",
     returnToWebsite: "Komawa shafin",
+    lowWager: "Karamin caca!",
   },
   yo: {
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetan - Goldbet",
@@ -2436,6 +2471,7 @@ export const translations = {
     areYouSure: `Ṣe o da ọ loju? <br /> Ilọsiwaju rẹ yoo sọnu`,
     keepRegistering: "Tẹsiwaju ìforúkọsílẹ",
     returnToWebsite: "Pada si oju opo wẹẹbu",
+    lowWager: "Tẹ́tẹ́ kékeré!",
   },
   ig: {
     pageTitle: "🎁 Onyinye gị dị njikere - Goldbet",
@@ -2503,6 +2539,7 @@ export const translations = {
     areYouSure: `Ị ji n'aka? <br /> Ọganihu gị ga-efu`,
     keepRegistering: "Gaa n'ihu ndebanye aha",
     returnToWebsite: "Laghachi na weebụsaịtị",
+    lowWager: "Nzọ ntà!",
   },
   tw: {
     pageTitle: "🎁 Wo akyɛde no ayɛ krado - Goldbet",
@@ -2570,5 +2607,6 @@ export const translations = {
     areYouSure: `Wo gye di? <br /> Wo nkɔso bɛyera`,
     keepRegistering: "Kɔ so kyerɛw wo din",
     returnToWebsite: "San kɔ website no so",
+    lowWager: "Wager kakraa bi!",
   },
 };
