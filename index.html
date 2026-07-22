@@ -107,8 +107,14 @@
             <!-- inner -->
             <div class="relative z-20">
               <div
-                class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
+                class="hero-info-inner max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
               >
+                <div class="wager-badge">
+                  <div class="wager-badge-inner">
+                    <p class="wager-badge-amount" data-text="20X">20X</p>
+                    <p class="wager-badge-text">Low wager!</p>
+                  </div>
+                </div>
                 <h1
                   data-translate="heroTitle"
                   class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
@@ -1932,13 +1938,35 @@
                     aria-label="Postal code info"
                     aria-expanded="false"
                   >
-                    <svg class="pointer-events-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5" />
-                      <path d="M10 8.75V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <svg
+                      class="pointer-events-none"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="10"
+                        cy="10"
+                        r="9"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M10 8.75V14"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
                       <circle cx="10" cy="6" r="1" fill="currentColor" />
                     </svg>
-                    <span class="two-step-zipcode-tooltip" role="tooltip" data-translate="postalCodeHint"
-                      >If you know it, enter it — it speeds up verification, but it's optional.</span
+                    <span
+                      class="two-step-zipcode-tooltip"
+                      role="tooltip"
+                      data-translate="postalCodeHint"
+                      >If you know it, enter it — it speeds up verification, but
+                      it's optional.</span
                     >
                   </button>
                 </div>
