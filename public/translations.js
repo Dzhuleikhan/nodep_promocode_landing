@@ -4,6 +4,7 @@ export const translations = {
     heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
+    lowWager: "Low wager!",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
     slideStep2Title: "Activate bonus",
@@ -71,6 +72,7 @@ export const translations = {
     heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>big bass splash</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
+    lowWager: "Faible mise !",
     slideStep1Title: "Registre",
     slideStep1Text:
       'Cliquez sur "Obtenir un bonus" et terminez l\'inscription gratuite.',
@@ -139,6 +141,7 @@ export const translations = {
     heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
+    lowWager: "Rulaj redus!",
     slideStep1Title: "Înregistrează-te",
     slideStep1Text:
       'Clic pe "Obține Bonus" și completează înregistrarea gratuită.',
@@ -207,6 +210,7 @@ export const translations = {
     heroTitle: `igényeld a bónuszod <br/> <span><i class="actual-spin-amount">100</i> ingyenes pörgetés</span> <br/> a <span>big bass splash</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
+    lowWager: "Alacsony megforgatás!",
     slideStep1Title: "Regisztrálj",
     slideStep1Text:
       'Kattints a "Bónusz igénylése" gombra és töltsd ki az ingyenes regisztrációt.',
@@ -275,6 +279,7 @@ export const translations = {
     heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
+    lowWager: "Niski obrót!",
     slideStep1Title: "Zarejestruj się",
     slideStep1Text: 'Kliknij "Odbierz Bonus" i zakończ darmową rejestrację.',
     slideStep2Title: "Aktywuj bonus",
@@ -342,6 +347,7 @@ export const translations = {
     heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
+    lowWager: "Nízké sázení!",
     slideStep1Title: "Registrovat se",
     slideStep1Text:
       'Klikněte na "Získat bonus" a dokončete bezplatnou registraci.',
@@ -411,6 +417,7 @@ export const translations = {
     heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
+    lowWager: "Nizke stavne zahteve!",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
       'Kliknite "Prevzemite bonus" in dokončajte brezplačno registracijo.',
@@ -479,6 +486,7 @@ export const translations = {
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
+    lowWager: "Χαμηλές απαιτήσεις τζίρου!",
     slideStep1Title: "Εγγραφή",
     slideStep1Text:
       'Κάντε κλικ στο "Πάρε το μπόνους" και ολοκληρώστε την δωρεάν εγγραφή.',
@@ -548,6 +556,7 @@ export const translations = {
     heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
+    lowWager: "Lavt omsetningskrav!",
     slideStep1Title: "Registrer deg",
     slideStep1Text: 'Klikk på "Få bonus" og fullfør den gratis registreringen.',
     slideStep2Title: "Aktiver bonus",
@@ -615,6 +624,7 @@ export const translations = {
     heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
+    lowWager: "Lågt omsättningskrav!",
     slideStep1Title: "Registrera dig",
     slideStep1Text:
       'Klicka på "Hämta bonus" och slutför den kostnadsfria registreringen.',
@@ -683,6 +693,7 @@ export const translations = {
     heroTitle: `získajte svoj bonus <br/> <span><i class="actual-spin-amount">100</i> voľných spinov</span> <br/> v <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
+    lowWager: "Nízke pretáčanie!",
     slideStep1Title: "Registrovať sa",
     slideStep1Text:
       'Kliknite na "Získať bonus" a dokončite bezplatnú registráciu.',
@@ -751,6 +762,7 @@ export const translations = {
     heroTitle: `заберите свой бонус <br/> <span><i class="actual-spin-amount">100</i> фриспинов</span> <br/> в <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
+    lowWager: "Низкий вейджер!",
     slideStep1Title: "Зарегистрируйтесь",
     slideStep1Text:
       'Нажмите "Получить бонус" и пройдите бесплатную регистрацию.',
@@ -819,6 +831,7 @@ export const translations = {
     heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
+    lowWager: "¡Rollover bajo!",
     slideStep1Title: "Regístrate",
     slideStep1Text:
       'Haz clic en "Obtener bono" y completa el registro gratuito.',
@@ -887,6 +900,7 @@ export const translations = {
     heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
+    lowWager: "Rollover baixo!",
     slideStep1Title: "Cadastre-se",
     slideStep1Text: 'Clique em "Obter Bônus" e complete o cadastro gratuito.',
     slideStep2Title: "Ative o bônus",
@@ -954,6 +968,7 @@ export const translations = {
     heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Freispiele mit deiner 1. Einzahlung`,
     heroBtn: "bonus holen",
+    lowWager: "Niedrige Umsatzbedingung!",
     slideStep1Title: "Registrieren",
     slideStep1Text:
       'Klicke auf "Bonus holen" und schließe die kostenlose Registrierung ab.',
@@ -1022,6 +1037,7 @@ export const translations = {
     heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
     heroBtn: "ottieni bonus",
+    lowWager: "Requisiti di puntata bassi!",
     slideStep1Title: "Registrati",
     slideStep1Text:
       'Clicca "Ottieni Bonus" e completa la registrazione gratuita.',
@@ -1090,6 +1106,7 @@ export const translations = {
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
     heroBtn: "saada boonus",
+    lowWager: "Madal läbimängunõue!",
     slideStep1Title: "Registreeru",
     slideStep1Text:
       'Klõpsake nuppu "Saada Boonus" ja täitke tasuta registreerimine.',
@@ -1158,6 +1175,7 @@ export const translations = {
     heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
     heroBtn: "saņemt bonusu",
+    lowWager: "Zemas likmju prasības!",
     slideStep1Title: "Reģistrējieties",
     slideStep1Text:
       'Noklikšķiniet uz "Saņemt Bonusu" un pabeidziet bezmaksas reģistrāciju.',
@@ -1226,6 +1244,7 @@ export const translations = {
     heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
     heroBtn: "gauti premiją",
+    lowWager: "Mažas sukimo reikalavimas!",
     slideStep1Title: "Užsiregistruokite",
     slideStep1Text:
       'Spustelėkite "Gauti premiją" ir užbaikite nemokamą registraciją.',
@@ -1294,6 +1313,7 @@ export const translations = {
     heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
     heroBtn: "preuzmi bonus",
+    lowWager: "Niski uvjeti klađenja!",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
       'Kliknite "Preuzmi Bonus" i dovršite besplatnu registraciju.',
@@ -1362,6 +1382,7 @@ export const translations = {
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
     heroBtn: "få bonus",
+    lowWager: "Lavt omsætningskrav!",
     slideStep1Title: "Registrer",
     slideStep1Text: 'Klik på "Få bonus" og gennemfør den gratis registrering.',
     slideStep2Title: "Aktivér bonus",
@@ -1429,6 +1450,7 @@ export const translations = {
     heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Ilmaiskierrosta ensimmäisellä talletuksellasi`,
     heroBtn: "hae bonus",
+    lowWager: "Matala kierrätysvaatimus!",
     slideStep1Title: "Rekisteröidy",
     slideStep1Text: 'Klikkaa "Hae bonus" ja suorita ilmainen rekisteröinti.',
     slideStep2Title: "Aktivoi bonus",
@@ -1497,6 +1519,7 @@ export const translations = {
     heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Безплатни завъртания с първия ви депозит`,
     heroBtn: "вземи бонус",
+    lowWager: "Нисък оборот!",
     slideStep1Title: "Регистрация",
     slideStep1Text:
       'Кликнете върху "Вземи бонус" и завършете безплатната регистрация.',
@@ -1565,6 +1588,7 @@ export const translations = {
     heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>Big Bass Splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
     heroBtn: "få bonus",
+    lowWager: "Lage inzetvereisten!",
     slideStep1Title: "Registrer dig",
     slideStep1Text: 'Klik på "Få Bonus" og gennemfør den gratis registrering.',
     slideStep2Title: "Aktivér bonus",
@@ -1632,6 +1656,7 @@ export const translations = {
     heroTitle: `заберіть свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних обертань</span> <br/> у <span>Big Bass Splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим першим депозитом`,
     heroBtn: "отримати бонус",
+    lowWager: "Низький вейджер!",
 
     slideStep1Title: "Реєстрація",
     slideStep1Text:
@@ -1710,6 +1735,7 @@ export const translations = {
     heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> mizunguko ya bure</span> <br/> kwenye <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Mizunguko ya Bure kwa amana yako ya kwanza`,
     heroBtn: "pata bonasi",
+    lowWager: "Masharti ya chini ya kucheza!",
     slideStep1Title: "Jisajili",
     slideStep1Text: 'Bonyeza "Pata Bonasi" na ukamilishe usajili wa bure.',
     slideStep2Title: "Washa bonasi",
@@ -1777,6 +1803,7 @@ export const translations = {
     heroTitle: `fata bonus yawe <br/> <span><i class="actual-spin-amount">100</i> spins z'ubuntu</span> <br/> muri <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins z'Ubuntu kuri depositi yawe ya mbere`,
     heroBtn: "fata bonus",
+    lowWager: "Ibisabwa bike byo gukina!",
     slideStep1Title: "Iyandikishe",
     slideStep1Text:
       'Kanda kuri "Fata Bonus" hanyuma wuzuze kwiyandikisha ku buntu.',
@@ -1845,6 +1872,7 @@ export const translations = {
     heroTitle: `اطلب مكافأتك <br/> <span><i class="actual-spin-amount">100</i> دورات مجانية</span> <br/> في <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> دورات مجانية مع إيداعك الأول`,
     heroBtn: "احصل على المكافأة",
+    lowWager: "شروط رهان منخفضة!",
     slideStep1Title: "سجل",
     slideStep1Text: 'اضغط على "احصل على المكافأة" وأكمل التسجيل المجاني.',
     slideStep2Title: "تفعيل المكافأة",
@@ -1911,6 +1939,7 @@ export const translations = {
     heroTitle: `领取您的奖励 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>Big Bass Splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> 高达 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> 次免费旋转，首存即可获得`,
     heroBtn: "领取奖励",
+    lowWager: "低流水要求！",
     slideStep1Title: "注册",
     slideStep1Text: "点击“领取奖励”并完成免费注册。",
     slideStep2Title: "激活奖励",
@@ -1977,6 +2006,7 @@ export const translations = {
     heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> casadh saor in aisce</span> <br/> i <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> casadh saor in aisce le do chéad taisce`,
     heroBtn: "faigh bónas",
+    lowWager: "Riachtanas íseal geallta!",
     slideStep1Title: "Cláraigh",
     slideStep1Text:
       'Cliceáil "Faigh Bónas" agus comhlánaigh an clárú saor in aisce.',
@@ -2046,6 +2076,7 @@ export const translations = {
     heroTitle: `fuer däi Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> am <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat denger éischter Depositioun`,
     heroBtn: "Bonus kréien",
+    lowWager: "Niddreg Ëmsazbedingung!",
     slideStep1Title: "Registréieren",
     slideStep1Text: 'Klick op "Bonus kréien" a registréier dech gratis.',
     slideStep2Title: "Bonus aktivéieren",
@@ -2113,6 +2144,7 @@ export const translations = {
     heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f'<span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> spins b'xejn mal-ewwel depożitu tiegħek`,
     heroBtn: "ikseb bonus",
+    lowWager: "Rekwiżiti baxxi tal-imħatra!",
     slideStep1Title: "Irreġistra",
     slideStep1Text:
       'Ikklikkja "Ikseb Bonus" u temm ir-reġistrazzjoni bla ħlas.',
@@ -2181,6 +2213,7 @@ export const translations = {
     heroTitle: `funa bonasi yo <br/> <span><i class="actual-spin-amount">100</i> okuzungula okw’obwereere</span> <br/> mu <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Okuzungula okw’obwereere n’ensimbi zo ezisooka okuteekebwamu`,
     heroBtn: "funa bonasi",
+    lowWager: "Ebisaanyizibwa ebitono!",
     slideStep1Title: "Wandiika",
     slideStep1Text:
       'Nyiga "Funa Bonasi" era omalirize okuwandiika okw’obwereere.',
@@ -2249,6 +2282,7 @@ export const translations = {
     heroTitle: `ቦነስዎን ይውሰዱ <br/> <span><i class="actual-spin-amount">100</i> ነፃ ስፒኖች</span> <br/> በ <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ነፃ ስፒኖች ከመጀመሪያ ተቀማጭዎ ጋር`,
     heroBtn: "ቦነስ ይውሰዱ",
+    lowWager: "ዝቅተኛ የውርርድ መስፈርት!",
     slideStep1Title: "ይመዝገቡ",
     slideStep1Text: "“ቦነስ ይውሰዱ” ይጫኑ እና ነፃ ምዝገባውን ያጠናቅቁ።",
     slideStep2Title: "ቦነስን ያንቁ",
@@ -2315,6 +2349,7 @@ export const translations = {
     heroTitle: `karɓi kyautarka <br/> <span><i class="actual-spin-amount">100</i> spins kyauta</span> <br/> a cikin <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Kyauta tare da ajiyarka ta farko`,
     heroBtn: "karɓi kyauta",
+    lowWager: "Ƙananan sharuɗɗan caca!",
     slideStep1Title: "Yi Rijista",
     slideStep1Text: 'Danna "Karɓi Kyauta" sannan ka kammala rajista kyauta.',
     slideStep2Title: "Kunna kyauta",
@@ -2382,6 +2417,7 @@ export const translations = {
     heroTitle: `gba ẹbun rẹ <br/> <span><i class="actual-spin-amount">100</i> spins ọfẹ</span> <br/> ninu <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> tó dé <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Ọfẹ pẹlu idogo akọkọ rẹ`,
     heroBtn: "gba ẹbun",
+    lowWager: "Ibeere tẹtẹ kékeré!",
     slideStep1Title: "Forúkọsílẹ",
     slideStep1Text: 'Tẹ "Gba Ẹbun" ki o pari iforúkọsílẹ ọfẹ.',
     slideStep2Title: "Mu ẹbun ṣiṣẹ",
@@ -2449,6 +2485,7 @@ export const translations = {
     heroTitle: `nata ego gị <br/> <span><i class="actual-spin-amount">100</i> spins efu</span> <br/> na <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Efu na nkwụnye ego mbụ gị`,
     heroBtn: "nata ego",
+    lowWager: "Ihe achọrọ nzọ obere!",
     slideStep1Title: "Debanye aha",
     slideStep1Text: 'Pịa "Nata Ego" ma mezue ndebanye aha efu.',
     slideStep2Title: "Mee ka ego rụọ ọrụ",
@@ -2516,6 +2553,7 @@ export const translations = {
     heroTitle: `gye wo akyɛde <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> wɔ <span>big bass splash</span> mu`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kosi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins wɔ wo deposit a edi kan no mu`,
     heroBtn: "gye akyɛde",
+    lowWager: "Agodie ho ahwehwɛde ketewa!",
     slideStep1Title: "Kyerɛw Wo Din",
     slideStep1Text: 'Klik "Gye Akyɛde" na wie wo free registration no.',
     slideStep2Title: "Fa bonus no yɛ adwuma",
