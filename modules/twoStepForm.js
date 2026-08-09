@@ -11,7 +11,9 @@ import {
   twoStepiti,
   getMaxDigitsForCountry,
   stripDuplicatedDialCode,
+  stripTrunkPrefix,
   formatByPlaceholder,
+  caretAfterDigits,
 } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
@@ -941,21 +943,39 @@ if (twoStepFormFourthStep) {
 
   // Phone input only numbers
   twoStepPhoneInput.addEventListener("input", function (e) {
+    // Курсор считаем В ЦИФРАХ, а не в символах: разделители при переформатировании
+    // сдвигаются, а количество цифр слева от курсора - нет. Без этого курсор
+    // улетал в конец номера при любой правке в середине.
+    const selStart = e.target.selectionStart ?? e.target.value.length;
+    const digitsBeforeCaret = (
+      e.target.value.slice(0, selStart).match(/\d/g) || []
+    ).length;
+
     const countryData = twoStepiti.getSelectedCountryData();
     const countryCode = countryData.iso2?.toUpperCase();
     const dialCode = countryData.dialCode;
     const maxDigits = getMaxDigitsForCountry(countryCode);
-    const raw = stripDuplicatedDialCode(
-      e.target.value.replace(/\D/g, ""),
-      countryCode,
-      dialCode,
+    // Внешний вызов нужен для вставки вида "0048 501 234 567": сначала снимается
+    // префикс выхода на межгород, потом дублирующий код страны, потом остаток.
+    const raw = stripTrunkPrefix(
+      stripDuplicatedDialCode(
+        stripTrunkPrefix(e.target.value.replace(/\D/g, "")),
+        countryCode,
+        dialCode,
+      ),
     );
     const digits = raw.slice(0, maxDigits);
-    e.target.value = formatByPlaceholder(
+    // Цифр могло стать меньше, чем было слева от курсора (обрезка по maxDigits,
+    // снятие ведущего нуля или дубля кода страны) - прижимаем к последней цифре.
+    const caretDigits = Math.min(digitsBeforeCaret, digits.length);
+
+    const formatted = formatByPlaceholder(
       digits,
       e.target.getAttribute("placeholder"),
     );
-    e.target.setSelectionRange(e.target.value.length, e.target.value.length);
+    e.target.value = formatted;
+    const caret = caretAfterDigits(formatted, caretDigits);
+    e.target.setSelectionRange(caret, caret);
   });
 
   // Телефон в E.164 для API занятости: +<dialCode><digits>.
