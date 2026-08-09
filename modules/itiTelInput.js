@@ -13,6 +13,10 @@ const getMaxDigitsForCountry = (countryCode) => {
   }
 };
 
+// Национальный номер с нуля не начинается - это trunk prefix для набора внутри
+// страны, в E.164 ему места нет.
+const stripTrunkPrefix = (digits) => digits.replace(/^0+/, "");
+
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
 const geoIpLookup = (success, failure) => {
@@ -56,19 +60,44 @@ const updatePhoneFormat = () => {
   currentFormat = placeholder;
 };
 
+// Позиция сразу за n-й цифрой отформатированной строки (n=0 - самое начало).
+// Нужна, чтобы вернуть курсор туда же, где он стоял до переформатирования.
+const caretAfterDigits = (text, n) => {
+  if (n <= 0) return 0;
+  let seen = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] >= "0" && text[i] <= "9" && ++seen === n) return i + 1;
+  }
+  return text.length;
+};
+
 const formatPhoneValue = () => {
+  // Курсор считаем В ЦИФРАХ, а не в символах: разделители при переформатировании
+  // сдвигаются, а количество цифр слева от курсора - нет. Без этого курсор
+  // улетал в конец номера при любой правке в середине.
+  const selStart =
+    twoStepPhoneInput.selectionStart ?? twoStepPhoneInput.value.length;
+  const digitsBeforeCaret = (
+    twoStepPhoneInput.value.slice(0, selStart).match(/\d/g) || []
+  ).length;
+
   const countryCode = twoStepiti.getSelectedCountryData().iso2?.toUpperCase();
   const maxDigits = getMaxDigitsForCountry(countryCode);
-  const digits = twoStepPhoneInput.value.replace(/\D/g, "").slice(0, maxDigits);
+  const raw = stripTrunkPrefix(twoStepPhoneInput.value.replace(/\D/g, ""));
+  const digits = raw.slice(0, maxDigits);
 
   if (digits.length === 0) {
     twoStepPhoneInput.value = "";
     return;
   }
 
+  // Цифр могло стать меньше, чем было слева от курсора (обрезка по maxDigits
+  // или снятие ведущего нуля) - прижимаем к последней цифре.
+  const caretDigits = Math.min(digitsBeforeCaret, digits.length);
+
   if (!currentFormat) {
     twoStepPhoneInput.value = digits;
-    twoStepPhoneInput.setSelectionRange(digits.length, digits.length);
+    twoStepPhoneInput.setSelectionRange(caretDigits, caretDigits);
     return;
   }
 
@@ -76,13 +105,11 @@ const formatPhoneValue = () => {
 
   let formatted = "";
   let digitIndex = 0;
-  let cursorPos = 0;
 
   for (let i = 0; i < currentFormat.length; i++) {
     if (currentFormat[i] === "X") {
       if (digitIndex < digits.length) {
         formatted += digits[digitIndex++];
-        cursorPos = formatted.length;
       } else {
         formatted += "X";
       }
@@ -93,11 +120,11 @@ const formatPhoneValue = () => {
 
   if (digits.length > templateDigits) {
     formatted += digits.slice(templateDigits);
-    cursorPos = formatted.length;
   }
 
   twoStepPhoneInput.value = formatted;
-  twoStepPhoneInput.setSelectionRange(cursorPos, cursorPos);
+  const caret = caretAfterDigits(formatted, caretDigits);
+  twoStepPhoneInput.setSelectionRange(caret, caret);
 };
 
 window.addEventListener("geoReady", (e) => {
