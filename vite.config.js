@@ -1,6 +1,8 @@
 // vite.config.js
 import { defineConfig } from "vite";
 
+const DEV_PROXY_TARGET = "https://goldbet.fun";
+
 export default defineConfig({
   base: "https://landing-res.b-cdn.net/freespins/gatesofolympus/",
   esbuild: {
@@ -15,34 +17,39 @@ export default defineConfig({
     // В сборку не попадает. Запуск: npm run dev -- --base=/
     proxy: {
       "/email-guard.js": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: true,
       },
       "/api/email/verify": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: true,
       },
       // Dev-only: phone-guard (IPQS) — сниппет + эндпоинт реальности номера.
       "/phone-guard.js": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       "/api/phone/verify": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       // Dev-only: проверка занятости телефона/почты (same-origin прокси на боевом nginx).
       "/api/phone/check-available": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       "/api/email/check-available": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
+        changeOrigin: true,
+        secure: false,
+      },
+      "/api/domain/available": {
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
