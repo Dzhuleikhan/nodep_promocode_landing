@@ -21,6 +21,10 @@ export const getMaxDigitsForCountry = (countryCode) => {
   return lengths ? Math.max(...lengths) : 15;
 };
 
+// Национальный номер с нуля не начинается - это trunk prefix для набора внутри
+// страны, в E.164 ему места нет.
+export const stripTrunkPrefix = (digits) => digits.replace(/^0+/, "");
+
 export const stripDuplicatedDialCode = (digits, countryCode, dialCode) => {
   if (!dialCode || !digits.startsWith(dialCode)) return digits;
   const rest = digits.slice(dialCode.length);
@@ -54,6 +58,17 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");
   },
 });
+
+// Позиция сразу за n-й цифрой отформатированной строки (n=0 - самое начало).
+// Нужна, чтобы вернуть курсор туда же, где он стоял до переформатирования.
+export const caretAfterDigits = (text, n) => {
+  if (n <= 0) return 0;
+  let seen = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] >= "0" && text[i] <= "9" && ++seen === n) return i + 1;
+  }
+  return text.length;
+};
 
 export const formatByPlaceholder = (digits, placeholder) => {
   if (!placeholder) return digits;
