@@ -1,6 +1,8 @@
 // vite.config.js
 import { defineConfig } from "vite";
 
+const DEV_PROXY_TARGET = "https://goldbet.fun";
+
 export default defineConfig({
   base: "https://landing-res.b-cdn.net/freespins/buffalossun/",
   esbuild: {
@@ -15,34 +17,40 @@ export default defineConfig({
     // чтобы фичу можно было тестировать локально (`npm run dev -- --base=/`).
     proxy: {
       "/email-guard.js": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       "/api/email/verify": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       // Phone-Guard (IPQS) — сниппет проверки телефона + эндпоинт verify.
       "/phone-guard.js": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       "/api/phone/verify": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       // Проверка занятости телефона/почты (same-origin прокси на nginx ленда).
       "/api/phone/check-available": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
       "/api/email/check-available": {
-        target: "https://goldbet.fun",
+        target: DEV_PROXY_TARGET,
+        changeOrigin: true,
+        secure: false,
+      },
+      // Ротатор домена — стабильный алиас в nginx-include.
+      "/api/domain/available": {
+        target: DEV_PROXY_TARGET,
         changeOrigin: true,
         secure: false,
       },
