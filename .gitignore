@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Референс-ленд, положенный в корень для сверки. Tailwind v4 сканирует корень
+# проекта и уважает .gitignore - без этой строки классы референса попадают в бандл.
+100FS_promocode_GatesOfOlympus
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
