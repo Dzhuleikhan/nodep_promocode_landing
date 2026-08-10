@@ -442,6 +442,12 @@
   .step-slider .swiper-wrapper {
     align-items: center;
   }
+
+  /* slidesPerView: 1 — Swiper сдвигает ленту на полную ширину контейнера,
+     а слайд с max-width: 320px оставлял справа край следующего слайда. */
+  .step-slider .swiper-slide {
+    max-width: none;
+  }
 }
 
 .actual-spin-amount {
