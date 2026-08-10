@@ -5,6 +5,7 @@ import "../modules/slider";
 import "../modules/animations";
 import "../modules/fetchingDomain";
 import "../modules/geoLocation";
+import "../modules/geoRestrict";
 import "../modules/itiTelInput";
 import "../modules/twoStepForm";
 import "../modules/params";

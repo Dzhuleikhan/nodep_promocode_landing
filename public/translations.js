@@ -1,5 +1,6 @@
 export const translations = {
   en: {
+    geoRestrictTitle: `{host} is not available in {country}`,
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
@@ -66,6 +67,7 @@ export const translations = {
     returnToWebsite: "Return to Website",
   },
   fr: {
+    geoRestrictTitle: `{host} n’est pas disponible en {country}`,
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>royal joker</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
@@ -133,6 +135,7 @@ export const translations = {
     returnToWebsite: "Retourner au site web",
   },
   ro: {
+    geoRestrictTitle: `{host} nu este disponibil în {country}`,
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
@@ -200,6 +203,7 @@ export const translations = {
     returnToWebsite: "Întoarce-te la Website",
   },
   hu: {
+    geoRestrictTitle: `A(z) {host} nem érhető el itt: {country}`,
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>royal joker</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
@@ -267,6 +271,7 @@ export const translations = {
     returnToWebsite: "Vissza a weboldalra",
   },
   pl: {
+    geoRestrictTitle: `{host} nie jest dostępny w kraju {country}`,
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
       "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>royal joker</span>",
@@ -334,6 +339,7 @@ export const translations = {
     returnToWebsite: "Wróć na stronę",
   },
   cs: {
+    geoRestrictTitle: `{host} není dostupný v zemi {country}`,
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>royal joker</span>",
@@ -403,6 +409,7 @@ export const translations = {
     returnToWebsite: "Vrátit se na web",
   },
   sl: {
+    geoRestrictTitle: `{host} ni na voljo v državi {country}`,
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>royal joker</span>",
@@ -471,6 +478,7 @@ export const translations = {
     returnToWebsite: "Vrni se na spletno stran",
   },
   el: {
+    geoRestrictTitle: `Το {host} δεν είναι διαθέσιμο στη χώρα {country}`,
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
@@ -539,6 +547,7 @@ export const translations = {
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
   },
   nb: {
+    geoRestrictTitle: `{host} er ikke tilgjengelig i {country}`,
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
@@ -605,6 +614,7 @@ export const translations = {
     returnToWebsite: "Tilbake til nettsiden",
   },
   sv: {
+    geoRestrictTitle: `{host} är inte tillgängligt i {country}`,
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
@@ -672,6 +682,7 @@ export const translations = {
     returnToWebsite: "Återgå till webbplatsen",
   },
   sk: {
+    geoRestrictTitle: `{host} nie je dostupný v krajine {country}`,
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
@@ -739,6 +750,7 @@ export const translations = {
     returnToWebsite: "Vrátiť sa na webovú stránku",
   },
   ru: {
+    geoRestrictTitle: `{host} недоступен в стране {country}`,
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
@@ -806,6 +818,7 @@ export const translations = {
     returnToWebsite: "Вернуться на сайт",
   },
   es: {
+    geoRestrictTitle: `{host} no está disponible en {country}`,
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
@@ -873,6 +886,7 @@ export const translations = {
     returnToWebsite: "Volver al sitio web",
   },
   pt: {
+    geoRestrictTitle: `{host} não está disponível em {country}`,
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
@@ -939,6 +953,7 @@ export const translations = {
     returnToWebsite: "Voltar ao site",
   },
   de: {
+    geoRestrictTitle: `{host} ist in {country} nicht verfügbar`,
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
     heroTitle: `sichere dir deinen bonus <br/> <span>100 Freispiele</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
@@ -1006,6 +1021,7 @@ export const translations = {
     returnToWebsite: "Zurück zur Website",
   },
   it: {
+    geoRestrictTitle: `{host} non è disponibile in {country}`,
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
     heroTitle: `richiedi il tuo bonus <br/> <span>100 giri gratuiti</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
@@ -1073,6 +1089,7 @@ export const translations = {
     returnToWebsite: "Ritorna al Sito Web",
   },
   et: {
+    geoRestrictTitle: `{host} ei ole saadaval riigis {country}`,
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
@@ -1140,6 +1157,7 @@ export const translations = {
     returnToWebsite: "Tagasi veebisaidile",
   },
   lv: {
+    geoRestrictTitle: `{host} nav pieejams valstī {country}`,
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
     heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
@@ -1207,6 +1225,7 @@ export const translations = {
     returnToWebsite: "Atgriezties vietnē",
   },
   lt: {
+    geoRestrictTitle: `{host} nepasiekiamas šalyje {country}`,
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
     heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
@@ -1274,6 +1293,7 @@ export const translations = {
     returnToWebsite: "Grįžti į svetainę",
   },
   hr: {
+    geoRestrictTitle: `{host} nije dostupan u državi {country}`,
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
     heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
@@ -1341,6 +1361,7 @@ export const translations = {
     returnToWebsite: "Vrati se na web stranicu",
   },
   fi: {
+    geoRestrictTitle: `{host} ei ole käytettävissä maassa {country}`,
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
     heroTitle: `lunasta bonuksesi <br/> <span>100 ilmaiskierrosta</span> <br/> pelissä <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ilmaiskierrosta ensimmäisellä talletuksellasi`,
@@ -1407,6 +1428,7 @@ export const translations = {
     returnToWebsite: "Palaa verkkosivustolle",
   },
   dk: {
+    geoRestrictTitle: `{host} er ikke tilgængelig i {country}`,
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span>100 gratis spins</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med dit 1. indskud`,
@@ -1473,6 +1495,7 @@ export const translations = {
     returnToWebsite: "Vend tilbage til webstedet",
   },
   bg: {
+    geoRestrictTitle: `{host} не е достъпен в {country}`,
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
     heroTitle: `вземете своя бонус <br/> <span>100 безплатни завъртания</span> <br/> в <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> безплатни завъртания с вашия 1-ви депозит`,
@@ -1540,6 +1563,7 @@ export const translations = {
     returnToWebsite: "Върни се към уебсайта",
   },
   nl: {
+    geoRestrictTitle: `{host} is niet beschikbaar in {country}`,
     pageTitle: "🎁 Je bonus staat klaar - Goldbet",
     heroTitle: `claim je bonus <br/> <span>100 gratis spins</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> tot <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins bij je 1e storting`,
@@ -1607,6 +1631,7 @@ export const translations = {
     returnToWebsite: "Terug naar website",
   },
   uk: {
+    geoRestrictTitle: `{host} недоступний у країні {country}`,
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
     heroTitle: `отримайте свій бонус <br/> <span>100 безкоштовних обертань</span> <br/> у <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> безкоштовних обертань за ваш 1-й депозит`,
@@ -1674,6 +1699,7 @@ export const translations = {
     returnToWebsite: "Повернутися на сайт",
   },
   sw: {
+    geoRestrictTitle: `{host} haipatikani nchini {country}`,
     pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
     heroTitle: `dai bonasi yako <br/> <span>mizunguko 100 ya bure</span> <br/> katika <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Mizunguko ya Bure kwa amana yako ya 1`,
@@ -1740,6 +1766,7 @@ export const translations = {
     returnToWebsite: "Rudi kwenye Tovuti",
   },
   am: {
+    geoRestrictTitle: `{host} በ{country} አይገኝም`,
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
     heroTitle: `ቦነስዎን ይውሰዱ <br/> <span>100 ነፃ ሽክርክሪቶች</span> <br/> በ <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ነፃ ሽክርክሪቶች በመጀመሪያ ተቀማጭዎ`,
@@ -1805,6 +1832,7 @@ export const translations = {
     returnToWebsite: "ወደ ድር ጣቢያ ተመለስ",
   },
   lm: {
+    geoRestrictTitle: `{host} tekozesebwa mu {country}`,
     pageTitle: "🎁 Bboonasi yo ​​etegese - Goldbet",
     heroTitle: `funa bboonasi yo <br/> <span>100 free spins</span> <br/> mu <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins ku ssente zo ez'olubereberye z'oteeka`,
@@ -1871,6 +1899,7 @@ export const translations = {
     returnToWebsite: "Ddayo ku Mukutu",
   },
   rw: {
+    geoRestrictTitle: `{host} ntiboneka muri {country}`,
     pageTitle: "🎁 Bonus yawe yiteguye - Goldbet",
     heroTitle: `saba bonus yawe <br/> <span>100 free spins</span> <br/> muri <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins ku idepozite yawe ya 1`,
@@ -1937,6 +1966,7 @@ export const translations = {
     returnToWebsite: "Subira ku Rubuga",
   },
   ar: {
+    geoRestrictTitle: `{host} غير متاح في {country}`,
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
     heroTitle: `احصل على مكافأتك <br/> <span>100 لفة مجانية</span> <br/> في <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> و <span class="two-step-bonus-spins"></span> لفة مجانية مع إيداعك الأول`,
@@ -2002,6 +2032,7 @@ export const translations = {
     returnToWebsite: "العودة إلى الموقع",
   },
   mt: {
+    geoRestrictTitle: `{host} mhuwiex disponibbli fi {country}`,
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
     heroTitle: `iġbor il-bonus tiegħek <br/> <span>100 free spins</span> <br/> fi <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins mal-ewwel depożitu tiegħek`,
@@ -2069,6 +2100,7 @@ export const translations = {
     returnToWebsite: "Erġa' Lura għall-Websajt",
   },
   lb: {
+    geoRestrictTitle: `{host} ass net verfügbar an {country}`,
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
     heroTitle: `hël däi Bonus <br/> <span>100 free spins</span> <br/> am <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins mat denger 1. Awunzlung`,
@@ -2136,6 +2168,7 @@ export const translations = {
     returnToWebsite: "Zréck op d'Websäit",
   },
   zh: {
+    geoRestrictTitle: `{host} 在{country}不可用`,
     pageTitle: "🎁 您的奖金已就绪 - Goldbet",
     heroTitle: `领取您的奖金 <br/> <span>100 次免费旋转</span> <br/> 在 <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> 最高可达 <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> 次免费旋转，首次存款即可获得`,
@@ -2201,6 +2234,7 @@ export const translations = {
     returnToWebsite: "返回网站",
   },
   ga: {
+    geoRestrictTitle: `Níl {host} ar fáil i {country}`,
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
     heroTitle: `faigh do bhónas <br/> <span>100 sciord saor in aisce</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Sciorta Saor in Aisce le do chéad taisce`,
@@ -2269,6 +2303,7 @@ export const translations = {
     returnToWebsite: "Fill ar an Suíomh",
   },
   ha: {
+    geoRestrictTitle: `{host} ba ya samuwa a {country}`,
     pageTitle: "🎁 Bonus ɗinka yana shirye - Goldbet",
     heroTitle: `karɓi bonus ɗinka <br/> <span>100 free spins</span> <br/> a <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins tare da ajiyarka ta 1`,
@@ -2335,6 +2370,7 @@ export const translations = {
     returnToWebsite: "Koma zuwa Gidan Yanar Gizo",
   },
   yo: {
+    geoRestrictTitle: `{host} kò sí ní {country}`,
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetán - Goldbet",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span>100 free spins</span> <br/> ní <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> tó dé <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins pẹ̀lú ìfowópamọ́ àkọ́kọ́ rẹ`,
@@ -2401,6 +2437,7 @@ export const translations = {
     returnToWebsite: "Padà sí Ojú-òpó",
   },
   ig: {
+    geoRestrictTitle: `{host} adịghị arụ ọrụ na {country}`,
     pageTitle: "🎁 Onyinye gị adịla njikere - Goldbet",
     heroTitle: `nara onyinye gị <br/> <span>100 free spins</span> <br/> na <span>royal joker</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins site na nkwụnye mbụ gị`,
@@ -2467,6 +2504,7 @@ export const translations = {
     returnToWebsite: "Laghachi na Webụsaịtị",
   },
   tw: {
+    geoRestrictTitle: `{host} nni hɔ wɔ {country}`,
     pageTitle: "🎁 Wo bonus no ayɛ krado - Goldbet",
     heroTitle: `gye wo bonus <br/> <span>100 free spins</span> <br/> wɔ <span>royal joker</span> mu`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kɔsi <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins wɔ wo sika a wode siei nea edi kan no`,

@@ -684,3 +684,12 @@
     flex-wrap: wrap;
   }
 }
+/* | GEO RESTRICTION MODAL */
+
+.geo-restrict-modal.is-open {
+  display: grid;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
