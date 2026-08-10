@@ -101,6 +101,14 @@
   max-width: 320px;
 }
 
+/* На мобилке slidesPerView: 1 — Swiper двигает ленту на полную ширину контейнера,
+   поэтому слайд шириной 320px оставлял справа «хвост» соседнего */
+@media (max-width: 576px) {
+  .step-slider .swiper-slide {
+    max-width: none;
+  }
+}
+
 .swiper-button-disabled {
   opacity: 0.4;
 }
