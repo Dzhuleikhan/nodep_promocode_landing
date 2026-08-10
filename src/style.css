@@ -101,6 +101,12 @@
   max-width: 320px;
 }
 
+@media (max-width: 576px) {
+  .step-slider .swiper-slide {
+    max-width: none;
+  }
+}
+
 .swiper-button-disabled {
   opacity: 0.4;
 }
