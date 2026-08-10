@@ -494,6 +494,12 @@
   .step-slider .swiper-wrapper {
     align-items: center;
   }
+
+  /* слайд занимает всю ширину контейнера, иначе при слайде в 320px
+     на широких мобилках справа выглядывает следующий слайд */
+  .step-slider .swiper-slide {
+    max-width: none;
+  }
 }
 
 .actual-spin-amount {
