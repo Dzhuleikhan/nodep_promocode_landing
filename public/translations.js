@@ -59,7 +59,8 @@ export const translations = {
     apartmentPlaceholder: "Apartment / Suite",
     statePlaceholder: "State / Province",
     zipCodePlaceholder: "Enter ZIP Code",
-    postalCodeHint: "If you know it, enter it — it speeds up verification, but it's optional.",
+    postalCodeHint:
+      "If you know it, enter it — it speeds up verification, but it's optional.",
     createAccountBtn: "Create Account",
     // | Decline
     areYouSure: `Are You Sure? <br /> Your Progress Will Be Lost`,
@@ -128,7 +129,8 @@ export const translations = {
     apartmentPlaceholder: "Appartement / Suite",
     statePlaceholder: "État / Région",
     zipCodePlaceholder: "Entrez le code postal",
-    postalCodeHint: "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
+    postalCodeHint:
+      "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
     createAccountBtn: "Créer un compte",
     // | Decline
     areYouSure: `Êtes-vous sûr ? <br /> Votre progression sera perdue.`,
@@ -197,7 +199,8 @@ export const translations = {
     apartmentPlaceholder: "Apartament",
     statePlaceholder: "Județ / Provincie",
     zipCodePlaceholder: "Introdu Codul Poștal",
-    postalCodeHint: "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
+    postalCodeHint:
+      "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
     createAccountBtn: "Creează Cont",
     // | Decline
     areYouSure: `Ești sigur? <br /> Progresul tău va fi pierdut`,
@@ -266,7 +269,8 @@ export const translations = {
     apartmentPlaceholder: "Lakás / ajtó",
     statePlaceholder: "Megye / Régió",
     zipCodePlaceholder: "Irányítószám megadása",
-    postalCodeHint: "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
+    postalCodeHint:
+      "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
     createAccountBtn: "Fiók létrehozása",
     // | Decline
     areYouSure: `Biztos vagy benne? <br /> A haladásod elvész`,
@@ -276,7 +280,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>the dog house</span>`,
+    heroTitle: `ODBIERZ SWÓJ BONUS <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>the dog house</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
@@ -334,7 +338,8 @@ export const translations = {
     apartmentPlaceholder: "Mieszkanie / lokal",
     statePlaceholder: "Województwo / Region",
     zipCodePlaceholder: "Wpisz kod pocztowy",
-    postalCodeHint: "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
+    postalCodeHint:
+      "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
     createAccountBtn: "Utwórz konto",
     // | Decline
     areYouSure: `Czy na pewno chcesz to zrobić? <br /> Twój postęp zostanie utracony`,
@@ -404,7 +409,8 @@ export const translations = {
     apartmentPlaceholder: "Byt",
     statePlaceholder: "Region / Kraj",
     zipCodePlaceholder: "Zadejte PSČ",
-    postalCodeHint: "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
+    postalCodeHint:
+      "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
     createAccountBtn: "Vytvořit účet",
     // | Decline
     areYouSure: `Jste si jistí? <br /> Váš pokrok bude ztracen`,
@@ -473,7 +479,8 @@ export const translations = {
     apartmentPlaceholder: "Stanovanje",
     statePlaceholder: "Pokrajina / Regija",
     zipCodePlaceholder: "Vnesite poštno številko",
-    postalCodeHint: "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
+    postalCodeHint:
+      "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
     createAccountBtn: "Ustvari račun",
     // | Decline
     areYouSure: `Ste prepričani? <br /> Vaš napredek bo izgubljen`,
@@ -543,7 +550,8 @@ export const translations = {
     apartmentPlaceholder: "Διαμέρισμα",
     statePlaceholder: "Περιφέρεια",
     zipCodePlaceholder: "Εισάγετε ταχυδρομικό κώδικα",
-    postalCodeHint: "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
+    postalCodeHint:
+      "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
     createAccountBtn: "Δημιουργία λογαριασμού",
     // | Decline
     areYouSure: `Είστε σίγουροι? <br /> Η πρόοδός σας θα χαθεί`,
@@ -611,7 +619,8 @@ export const translations = {
     apartmentPlaceholder: "Leilighet",
     statePlaceholder: "Fylke / Region",
     zipCodePlaceholder: "Skriv inn postnummer",
-    postalCodeHint: "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
+    postalCodeHint:
+      "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
     createAccountBtn: "Opprett konto",
     // | Decline
     areYouSure: `Er du sikker? <br /> Fremgangen din vil gå tapt`,
@@ -680,7 +689,8 @@ export const translations = {
     apartmentPlaceholder: "Lägenhet",
     statePlaceholder: "Region / Län",
     zipCodePlaceholder: "Ange postnummer",
-    postalCodeHint: "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
+    postalCodeHint:
+      "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
     createAccountBtn: "Skapa konto",
     // | Decline
     areYouSure: `Är du säker? <br /> Din framsteg kommer att gå förlorad`,
@@ -749,7 +759,8 @@ export const translations = {
     apartmentPlaceholder: "Byt",
     statePlaceholder: "Kraj / Región",
     zipCodePlaceholder: "Zadajte PSČ",
-    postalCodeHint: "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
+    postalCodeHint:
+      "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
     createAccountBtn: "Vytvoriť účet",
     // | Decline
     areYouSure: `Ste si istí? <br /> Váš pokrok bude stratený`,
@@ -818,7 +829,8 @@ export const translations = {
     apartmentPlaceholder: "Квартира",
     statePlaceholder: "Регион / Область",
     zipCodePlaceholder: "Введите ZIP-код",
-    postalCodeHint: "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
+    postalCodeHint:
+      "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
     createAccountBtn: "Создать аккаунт",
     // | Decline
     areYouSure: `Вы уверены? <br /> Ваш прогресс будет утерян`,
@@ -887,7 +899,8 @@ export const translations = {
     apartmentPlaceholder: "Apartamento",
     statePlaceholder: "Estado / Provincia",
     zipCodePlaceholder: "Ingresa tu código postal",
-    postalCodeHint: "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
+    postalCodeHint:
+      "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
     createAccountBtn: "Crear cuenta",
     // | Decline
     areYouSure: `¿Estás seguro? <br /> Tu progreso se perderá`,
@@ -955,7 +968,8 @@ export const translations = {
     apartmentPlaceholder: "Apartamento",
     statePlaceholder: "Estado / Província",
     zipCodePlaceholder: "Digite seu CEP",
-    postalCodeHint: "Se souber, insira — acelera a verificação, mas não é obrigatório.",
+    postalCodeHint:
+      "Se souber, insira — acelera a verificação, mas não é obrigatório.",
     createAccountBtn: "Criar conta",
     // | Decline
     areYouSure: `Tem certeza? <br /> Seu progresso será perdido`,
@@ -1024,7 +1038,8 @@ export const translations = {
     apartmentPlaceholder: "Wohnung / Suite",
     statePlaceholder: "Bundesland / Region",
     zipCodePlaceholder: "PLZ eingeben",
-    postalCodeHint: "Wenn Sie ihn kennen, geben Sie ihn ein — das beschleunigt die Verifizierung, ist aber optional.",
+    postalCodeHint:
+      "Wenn Sie ihn kennen, geben Sie ihn ein — das beschleunigt die Verifizierung, ist aber optional.",
     createAccountBtn: "Konto erstellen",
     // | Decline
     areYouSure: `Bist du sicher? <br /> Dein Fortschritt geht verloren`,
@@ -1093,7 +1108,8 @@ export const translations = {
     apartmentPlaceholder: "Appartamento / Interno",
     statePlaceholder: "Provincia / Regione",
     zipCodePlaceholder: "Inserisci CAP",
-    postalCodeHint: "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
+    postalCodeHint:
+      "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
     createAccountBtn: "Crea Account",
     // | Decline
     areYouSure: `Sei Sicuro? <br /> I tuoi progressi andranno persi`,
@@ -1162,7 +1178,8 @@ export const translations = {
     apartmentPlaceholder: "Korter",
     statePlaceholder: "Maakond",
     zipCodePlaceholder: "Sisesta postiindeks",
-    postalCodeHint: "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
+    postalCodeHint:
+      "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
     createAccountBtn: "Loo konto",
     // | Decline
     areYouSure: `Oled kindel? <br /> Teie edenemine kaob`,
@@ -1231,7 +1248,8 @@ export const translations = {
     apartmentPlaceholder: "Dzīvoklis",
     statePlaceholder: "Novads / Reģions",
     zipCodePlaceholder: "Ievadiet pasta indeksu",
-    postalCodeHint: "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
+    postalCodeHint:
+      "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
     createAccountBtn: "Izveidot kontu",
     // | Decline
     areYouSure: `Vai esat pārliecināts? <br /> Jūsu progress tiks zaudēts`,
@@ -1300,7 +1318,8 @@ export const translations = {
     apartmentPlaceholder: "Butas",
     statePlaceholder: "Apskritis / Regionas",
     zipCodePlaceholder: "Įveskite pašto kodą",
-    postalCodeHint: "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
+    postalCodeHint:
+      "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
     createAccountBtn: "Sukurti paskyrą",
     // | Decline
     areYouSure: `Ar tikrai? <br /> Jūsų pažanga bus prarasta`,
@@ -1369,7 +1388,8 @@ export const translations = {
     apartmentPlaceholder: "Stan",
     statePlaceholder: "Pokrajina / Regija",
     zipCodePlaceholder: "Unesite poštanski broj",
-    postalCodeHint: "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
+    postalCodeHint:
+      "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
     createAccountBtn: "Kreiraj račun",
     // | Decline
     areYouSure: `Jeste li sigurni? <br /> Vaš napredak će biti izgubljen`,
@@ -1447,7 +1467,8 @@ export const translations = {
     apartmentPlaceholder: "Квартира",
     statePlaceholder: "Область / Регіон",
     zipCodePlaceholder: "Введіть поштовий індекс",
-    postalCodeHint: "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
+    postalCodeHint:
+      "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
     createAccountBtn: "Створити акаунт",
 
     // | Decline
@@ -1516,7 +1537,8 @@ export const translations = {
     apartmentPlaceholder: "Lejlighed",
     statePlaceholder: "Region",
     zipCodePlaceholder: "Indtast postnummer",
-    postalCodeHint: "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
+    postalCodeHint:
+      "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
     createAccountBtn: "Opret konto",
     // | Decline
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
@@ -1585,7 +1607,8 @@ export const translations = {
     apartmentPlaceholder: "Asunto",
     statePlaceholder: "Maakunta / Alue",
     zipCodePlaceholder: "Syötä postinumero",
-    postalCodeHint: "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
+    postalCodeHint:
+      "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
     createAccountBtn: "Luo tili",
     // | Decline
     areYouSure: `Oletko varma? <br /> Edistymisesi menetetään`,
@@ -1654,7 +1677,8 @@ export const translations = {
     apartmentPlaceholder: "Апартамент",
     statePlaceholder: "Област / Регион",
     zipCodePlaceholder: "Въведете пощенски код",
-    postalCodeHint: "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
+    postalCodeHint:
+      "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
     createAccountBtn: "Създай акаунт",
     // | Decline
     areYouSure: `Сигурни ли сте? <br /> Напредъкът ви ще бъде загубен`,
@@ -1722,7 +1746,8 @@ export const translations = {
     apartmentPlaceholder: "Appartement",
     statePlaceholder: "Provincie / Regio",
     zipCodePlaceholder: "Indtast postnummer",
-    postalCodeHint: "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
+    postalCodeHint:
+      "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
     createAccountBtn: "Opret konto",
     // | Decline
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
@@ -1790,7 +1815,8 @@ export const translations = {
     apartmentPlaceholder: "Ghorofa / chumba",
     statePlaceholder: "Jimbo / Mkoa",
     zipCodePlaceholder: "Ingiza ZIP Code",
-    postalCodeHint: "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
+    postalCodeHint:
+      "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
     createAccountBtn: "Tengeneza Akaunti",
     // | Decline
     areYouSure: `Una Hakika? <br /> Maendeleo Yako Yataharibika`,
@@ -1859,7 +1885,8 @@ export const translations = {
     apartmentPlaceholder: "Apartema",
     statePlaceholder: "Intara",
     zipCodePlaceholder: "Andika ZIP Code",
-    postalCodeHint: "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
+    postalCodeHint:
+      "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
     createAccountBtn: "Tegura Konti",
     // | Decline
     areYouSure: `Wizeye? <br /> Intambwe yawe izasibangana`,
@@ -1927,7 +1954,8 @@ export const translations = {
     apartmentPlaceholder: "شقة / جناح",
     statePlaceholder: "الولاية / المنطقة",
     zipCodePlaceholder: "أدخل الرمز البريدي",
-    postalCodeHint: "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
+    postalCodeHint:
+      "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
     createAccountBtn: "إنشاء حساب",
     // | Decline
     areYouSure: `هل أنت متأكد؟ <br /> سيتم فقدان تقدمك`,
@@ -2064,7 +2092,8 @@ export const translations = {
     apartmentPlaceholder: "Árasán",
     statePlaceholder: "Cúige / Réigiún",
     zipCodePlaceholder: "Iontráil cód poist",
-    postalCodeHint: "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
+    postalCodeHint:
+      "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
     createAccountBtn: "Cruthaigh Cuntas",
     // | Decline
     areYouSure: `An bhfuil tú cinnte? <br /> Caillfear do dhul chun cinn`,
@@ -2132,7 +2161,8 @@ export const translations = {
     apartmentPlaceholder: "Wunneng",
     statePlaceholder: "Provënz / Regioun",
     zipCodePlaceholder: "Postcode aginn",
-    postalCodeHint: "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
+    postalCodeHint:
+      "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
     createAccountBtn: "Kont erstellen",
     // | Decline
     areYouSure: `Bass du sécher? <br /> Däi Fortschrëtt geet verluer`,
@@ -2201,7 +2231,8 @@ export const translations = {
     apartmentPlaceholder: "Appartament",
     statePlaceholder: "Provinċja / Reġjun",
     zipCodePlaceholder: "Daħħal ZIP code",
-    postalCodeHint: "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
+    postalCodeHint:
+      "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
     createAccountBtn: "Oħloq Kont",
     // | Decline
     areYouSure: `Żgur? <br /> Il-progress tiegħek jintilef`,
@@ -2270,7 +2301,8 @@ export const translations = {
     apartmentPlaceholder: "Apaatimenti",
     statePlaceholder: "Ekitundu / Disitulikiti",
     zipCodePlaceholder: "Yingiza ZIP Code",
-    postalCodeHint: "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
+    postalCodeHint:
+      "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
     createAccountBtn: "Tonda Akaawunti",
     // | Decline
     areYouSure: `Okakasa? <br /> Enkulaakulana yo egenda kubula`,
@@ -2411,7 +2443,8 @@ export const translations = {
     apartmentPlaceholder: "Gida / ɗaki",
     statePlaceholder: "Jiha / Lardi",
     zipCodePlaceholder: "Shigar da ZIP Code",
-    postalCodeHint: "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
+    postalCodeHint:
+      "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
     createAccountBtn: "Ƙirƙiri Account",
     // | Decline
     areYouSure: `Ka Tabbata? <br /> Za a rasa ci gaban da ka yi`,
@@ -2479,7 +2512,8 @@ export const translations = {
     apartmentPlaceholder: "Iyàrá / fíláàtì",
     statePlaceholder: "Ìpínlẹ̀ / Agbègbè",
     zipCodePlaceholder: "Tẹ ZIP Code sii",
-    postalCodeHint: "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
+    postalCodeHint:
+      "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
     createAccountBtn: "Ṣẹda Account",
     // | Decline
     areYouSure: `Ṣe O Daju? <br /> Ilọsiwaju rẹ yoo sọnu`,
@@ -2547,7 +2581,8 @@ export const translations = {
     apartmentPlaceholder: "Ụlọ obibi / akụkụ",
     statePlaceholder: "Steeti / Mpaghara",
     zipCodePlaceholder: "Tinye ZIP Code",
-    postalCodeHint: "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
+    postalCodeHint:
+      "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
     createAccountBtn: "Mepụta Account",
     // | Decline
     areYouSure: `Ị Ji N'aka? <br /> A ga-efunahụ ọganihu gị`,
@@ -2615,7 +2650,8 @@ export const translations = {
     apartmentPlaceholder: "Dan mu",
     statePlaceholder: "Ɔman / Mantam",
     zipCodePlaceholder: "Hyɛ ZIP Code",
-    postalCodeHint: "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
+    postalCodeHint:
+      "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
     createAccountBtn: "Yɛ Account",
     // | Decline
     areYouSure: `Wugye Di? <br /> Wo nkɔso bɛyera`,
