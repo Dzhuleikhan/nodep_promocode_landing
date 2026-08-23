@@ -56,7 +56,8 @@ export const translations = {
     addressPlaceholder: "Enter Address",
     cityPlaceholder: "Enter City",
     statePlaceholder: "State / Province",
-    postalCodeHint: "If you know it, enter it — it speeds up verification, but it's optional.",
+    postalCodeHint:
+      "If you know it, enter it — it speeds up verification, but it's optional.",
     streetPlaceholder: "Enter Street",
     houseNumberPlaceholder: "House / Building No.",
     apartmentPlaceholder: "Apartment / Suite",
@@ -125,7 +126,8 @@ export const translations = {
     addressPlaceholder: "Entrez l'adresse",
     cityPlaceholder: "Entrez la ville",
     statePlaceholder: "État / Région",
-    postalCodeHint: "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
+    postalCodeHint:
+      "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
     streetPlaceholder: "Rue",
     houseNumberPlaceholder: "N° / Bâtiment",
     apartmentPlaceholder: "Appartement / Suite",
@@ -194,7 +196,8 @@ export const translations = {
     addressPlaceholder: "Introdu Adresa",
     cityPlaceholder: "Introdu Orașul",
     statePlaceholder: "Județ / Provincie",
-    postalCodeHint: "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
+    postalCodeHint:
+      "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
     streetPlaceholder: "Stradă",
     houseNumberPlaceholder: "Nr. / Clădire",
     apartmentPlaceholder: "Apartament",
@@ -263,7 +266,8 @@ export const translations = {
     addressPlaceholder: "Cím megadása",
     cityPlaceholder: "Város megadása",
     statePlaceholder: "Megye / Régió",
-    postalCodeHint: "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
+    postalCodeHint:
+      "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
     streetPlaceholder: "Utca",
     houseNumberPlaceholder: "Házszám / épület",
     apartmentPlaceholder: "Lakás / ajtó",
@@ -276,7 +280,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>buffalo's sun 3</span>`,
+    heroTitle: `ODBIERZ SWÓJ BONUS <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>buffalo's sun 3</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     lowWager: "Niski obrót!",
@@ -331,7 +335,8 @@ export const translations = {
     addressPlaceholder: "Wpisz adres",
     cityPlaceholder: "Wpisz miasto",
     statePlaceholder: "Województwo / Region",
-    postalCodeHint: "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
+    postalCodeHint:
+      "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
     streetPlaceholder: "Wpisz ulicę",
     houseNumberPlaceholder: "Nr domu / budynku",
     apartmentPlaceholder: "Mieszkanie / lokal",
@@ -401,7 +406,8 @@ export const translations = {
     addressPlaceholder: "Zadejte adresu",
     cityPlaceholder: "Zadejte město",
     statePlaceholder: "Region / Kraj",
-    postalCodeHint: "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
+    postalCodeHint:
+      "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
     streetPlaceholder: "Ulice",
     houseNumberPlaceholder: "Č. domu / budovy",
     apartmentPlaceholder: "Byt",
@@ -470,7 +476,8 @@ export const translations = {
     addressPlaceholder: "Vnesite naslov",
     cityPlaceholder: "Vnesite mesto",
     statePlaceholder: "Pokrajina / Regija",
-    postalCodeHint: "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
+    postalCodeHint:
+      "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
     streetPlaceholder: "Ulica",
     houseNumberPlaceholder: "Hišna št. / stavba",
     apartmentPlaceholder: "Stanovanje",
@@ -540,7 +547,8 @@ export const translations = {
     addressPlaceholder: "Εισάγετε διεύθυνση",
     cityPlaceholder: "Εισάγετε πόλη",
     statePlaceholder: "Περιφέρεια",
-    postalCodeHint: "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
+    postalCodeHint:
+      "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
     streetPlaceholder: "Οδός",
     houseNumberPlaceholder: "Αριθμός / Κτίριο",
     apartmentPlaceholder: "Διαμέρισμα",
@@ -608,7 +616,8 @@ export const translations = {
     addressPlaceholder: "Skriv inn adresse",
     cityPlaceholder: "Skriv inn by",
     statePlaceholder: "Fylke / Region",
-    postalCodeHint: "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
+    postalCodeHint:
+      "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
     streetPlaceholder: "Gate",
     houseNumberPlaceholder: "Husnr. / bygning",
     apartmentPlaceholder: "Leilighet",
@@ -677,7 +686,8 @@ export const translations = {
     addressPlaceholder: "Ange adress",
     cityPlaceholder: "Ange stad",
     statePlaceholder: "Region / Län",
-    postalCodeHint: "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
+    postalCodeHint:
+      "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
     streetPlaceholder: "Gata",
     houseNumberPlaceholder: "Husnr. / byggnad",
     apartmentPlaceholder: "Lägenhet",
@@ -746,7 +756,8 @@ export const translations = {
     addressPlaceholder: "Zadajte adresu",
     cityPlaceholder: "Zadajte mesto",
     statePlaceholder: "Kraj / Región",
-    postalCodeHint: "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
+    postalCodeHint:
+      "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
     streetPlaceholder: "Ulica",
     houseNumberPlaceholder: "Č. domu / budovy",
     apartmentPlaceholder: "Byt",
@@ -815,7 +826,8 @@ export const translations = {
     addressPlaceholder: "Введите адрес",
     cityPlaceholder: "Введите город",
     statePlaceholder: "Регион / Область",
-    postalCodeHint: "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
+    postalCodeHint:
+      "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
     streetPlaceholder: "Улица",
     houseNumberPlaceholder: "Дом / строение",
     apartmentPlaceholder: "Квартира",
@@ -884,7 +896,8 @@ export const translations = {
     addressPlaceholder: "Ingresa tu dirección",
     cityPlaceholder: "Ingresa tu ciudad",
     statePlaceholder: "Estado / Provincia",
-    postalCodeHint: "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
+    postalCodeHint:
+      "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
     streetPlaceholder: "Calle",
     houseNumberPlaceholder: "Número / Edificio",
     apartmentPlaceholder: "Apartamento",
@@ -952,7 +965,8 @@ export const translations = {
     addressPlaceholder: "Digite seu endereço",
     cityPlaceholder: "Digite sua cidade",
     statePlaceholder: "Estado / Província",
-    postalCodeHint: "Se souber, insira — acelera a verificação, mas não é obrigatório.",
+    postalCodeHint:
+      "Se souber, insira — acelera a verificação, mas não é obrigatório.",
     streetPlaceholder: "Rua",
     houseNumberPlaceholder: "Número / Edifício",
     apartmentPlaceholder: "Apartamento",
@@ -1021,7 +1035,8 @@ export const translations = {
     addressPlaceholder: "Adresse eingeben",
     cityPlaceholder: "Stadt eingeben",
     statePlaceholder: "Bundesland / Region",
-    postalCodeHint: "Wenn Sie ihn kennen, geben Sie ihn ein — das beschleunigt die Verifizierung, ist aber optional.",
+    postalCodeHint:
+      "Wenn Sie ihn kennen, geben Sie ihn ein — das beschleunigt die Verifizierung, ist aber optional.",
     streetPlaceholder: "Straße",
     houseNumberPlaceholder: "Haus-/Gebäudenr.",
     apartmentPlaceholder: "Wohnung / Suite",
@@ -1090,7 +1105,8 @@ export const translations = {
     addressPlaceholder: "Inserisci Indirizzo",
     cityPlaceholder: "Inserisci Città",
     statePlaceholder: "Provincia / Regione",
-    postalCodeHint: "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
+    postalCodeHint:
+      "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
     streetPlaceholder: "Via",
     houseNumberPlaceholder: "Numero / Edificio",
     apartmentPlaceholder: "Appartamento / Interno",
@@ -1159,7 +1175,8 @@ export const translations = {
     addressPlaceholder: "Sisesta aadress",
     cityPlaceholder: "Sisesta linn",
     statePlaceholder: "Maakond",
-    postalCodeHint: "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
+    postalCodeHint:
+      "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
     streetPlaceholder: "Tänav",
     houseNumberPlaceholder: "Maja nr / hoone",
     apartmentPlaceholder: "Korter",
@@ -1228,7 +1245,8 @@ export const translations = {
     addressPlaceholder: "Ievadiet adresi",
     cityPlaceholder: "Ievadiet pilsētu",
     statePlaceholder: "Novads / Reģions",
-    postalCodeHint: "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
+    postalCodeHint:
+      "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
     streetPlaceholder: "Iela",
     houseNumberPlaceholder: "Mājas / ēkas nr.",
     apartmentPlaceholder: "Dzīvoklis",
@@ -1297,7 +1315,8 @@ export const translations = {
     addressPlaceholder: "Įveskite adresą",
     cityPlaceholder: "Įveskite miestą",
     statePlaceholder: "Apskritis / Regionas",
-    postalCodeHint: "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
+    postalCodeHint:
+      "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
     streetPlaceholder: "Gatvė",
     houseNumberPlaceholder: "Namo / pastato nr.",
     apartmentPlaceholder: "Butas",
@@ -1366,7 +1385,8 @@ export const translations = {
     addressPlaceholder: "Unesite adresu",
     cityPlaceholder: "Unesite grad",
     statePlaceholder: "Pokrajina / Regija",
-    postalCodeHint: "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
+    postalCodeHint:
+      "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
     streetPlaceholder: "Ulica",
     houseNumberPlaceholder: "Kućni br. / zgrada",
     apartmentPlaceholder: "Stan",
@@ -1434,7 +1454,8 @@ export const translations = {
     addressPlaceholder: "Indtast adresse",
     cityPlaceholder: "Indtast by",
     statePlaceholder: "Region",
-    postalCodeHint: "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
+    postalCodeHint:
+      "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
     streetPlaceholder: "Gade",
     houseNumberPlaceholder: "Husnr. / bygning",
     apartmentPlaceholder: "Lejlighed",
@@ -1503,7 +1524,8 @@ export const translations = {
     addressPlaceholder: "Syötä osoite",
     cityPlaceholder: "Syötä kaupunki",
     statePlaceholder: "Maakunta / Alue",
-    postalCodeHint: "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
+    postalCodeHint:
+      "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
     streetPlaceholder: "Katu",
     houseNumberPlaceholder: "Talon nro / rakennus",
     apartmentPlaceholder: "Asunto",
@@ -1572,7 +1594,8 @@ export const translations = {
     addressPlaceholder: "Въведете адрес",
     cityPlaceholder: "Въведете град",
     statePlaceholder: "Област / Регион",
-    postalCodeHint: "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
+    postalCodeHint:
+      "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
     streetPlaceholder: "Улица",
     houseNumberPlaceholder: "Номер / сграда",
     apartmentPlaceholder: "Апартамент",
@@ -1650,7 +1673,8 @@ export const translations = {
     addressPlaceholder: "Введіть адресу",
     cityPlaceholder: "Введіть місто",
     statePlaceholder: "Область / Регіон",
-    postalCodeHint: "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
+    postalCodeHint:
+      "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
     streetPlaceholder: "Вулиця",
     houseNumberPlaceholder: "Будинок / корпус",
     apartmentPlaceholder: "Квартира",
@@ -1719,7 +1743,8 @@ export const translations = {
     addressPlaceholder: "Indtast adresse",
     cityPlaceholder: "Indtast by",
     statePlaceholder: "Provincie / Regio",
-    postalCodeHint: "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
+    postalCodeHint:
+      "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
     streetPlaceholder: "Straat",
     houseNumberPlaceholder: "Huisnr. / gebouw",
     apartmentPlaceholder: "Appartement",
@@ -1787,7 +1812,8 @@ export const translations = {
     addressPlaceholder: "Ingiza Anuani",
     cityPlaceholder: "Ingiza Jiji",
     statePlaceholder: "Jimbo / Mkoa",
-    postalCodeHint: "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
+    postalCodeHint:
+      "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
     streetPlaceholder: "Mtaa",
     houseNumberPlaceholder: "Nambari ya nyumba / jengo",
     apartmentPlaceholder: "Ghorofa / chumba",
@@ -1856,7 +1882,8 @@ export const translations = {
     addressPlaceholder: "Andika Aderesi",
     cityPlaceholder: "Andika Umujyi",
     statePlaceholder: "Intara",
-    postalCodeHint: "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
+    postalCodeHint:
+      "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
     streetPlaceholder: "Umuhanda",
     houseNumberPlaceholder: "Nimero y'inzu / inyubako",
     apartmentPlaceholder: "Apartema",
@@ -1924,7 +1951,8 @@ export const translations = {
     addressPlaceholder: "أدخل العنوان",
     cityPlaceholder: "أدخل المدينة",
     statePlaceholder: "الولاية / المنطقة",
-    postalCodeHint: "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
+    postalCodeHint:
+      "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
     streetPlaceholder: "الشارع",
     houseNumberPlaceholder: "رقم المنزل / المبنى",
     apartmentPlaceholder: "شقة / جناح",
@@ -2061,7 +2089,8 @@ export const translations = {
     addressPlaceholder: "Iontráil seoladh",
     cityPlaceholder: "Iontráil cathair",
     statePlaceholder: "Cúige / Réigiún",
-    postalCodeHint: "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
+    postalCodeHint:
+      "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
     streetPlaceholder: "Sráid",
     houseNumberPlaceholder: "Uimhir tí / foirgneamh",
     apartmentPlaceholder: "Árasán",
@@ -2129,7 +2158,8 @@ export const translations = {
     addressPlaceholder: "Adress aginn",
     cityPlaceholder: "Stad aginn",
     statePlaceholder: "Provënz / Regioun",
-    postalCodeHint: "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
+    postalCodeHint:
+      "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
     streetPlaceholder: "Strooss",
     houseNumberPlaceholder: "Haus-/Gebaaisnummer",
     apartmentPlaceholder: "Wunneng",
@@ -2198,7 +2228,8 @@ export const translations = {
     addressPlaceholder: "Daħħal indirizz",
     cityPlaceholder: "Daħħal belt",
     statePlaceholder: "Provinċja / Reġjun",
-    postalCodeHint: "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
+    postalCodeHint:
+      "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
     streetPlaceholder: "Triq",
     houseNumberPlaceholder: "Nru tad-dar / bini",
     apartmentPlaceholder: "Appartament",
@@ -2345,7 +2376,8 @@ export const translations = {
     addressPlaceholder: "Yingiza Endagiriro",
     cityPlaceholder: "Yingiza Ekibuga",
     statePlaceholder: "Ekitundu / Disitulikiti",
-    postalCodeHint: "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
+    postalCodeHint:
+      "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
     streetPlaceholder: "Luguudo",
     houseNumberPlaceholder: "Namba y'ennyumba",
     apartmentPlaceholder: "Apaatimenti",
@@ -2414,7 +2446,8 @@ export const translations = {
     addressPlaceholder: "Shigar da Adireshi",
     cityPlaceholder: "Shigar da Birni",
     statePlaceholder: "Jiha / Lardi",
-    postalCodeHint: "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
+    postalCodeHint:
+      "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
     streetPlaceholder: "Titi",
     houseNumberPlaceholder: "Lambar gida / gini",
     apartmentPlaceholder: "Gida / ɗaki",
@@ -2482,7 +2515,8 @@ export const translations = {
     addressPlaceholder: "Tẹ Adirẹsi sii",
     cityPlaceholder: "Tẹ Ìlú sii",
     statePlaceholder: "Ìpínlẹ̀ / Agbègbè",
-    postalCodeHint: "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
+    postalCodeHint:
+      "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
     streetPlaceholder: "Òpópónà",
     houseNumberPlaceholder: "Nọ́mbà ilé / ọ̀tẹ́",
     apartmentPlaceholder: "Iyàrá / fíláàtì",
@@ -2550,7 +2584,8 @@ export const translations = {
     addressPlaceholder: "Tinye Adreesị",
     cityPlaceholder: "Tinye Obodo",
     statePlaceholder: "Steeti / Mpaghara",
-    postalCodeHint: "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
+    postalCodeHint:
+      "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
     streetPlaceholder: "Okporo ụzọ",
     houseNumberPlaceholder: "Nọmba ụlọ",
     apartmentPlaceholder: "Ụlọ obibi / akụkụ",
@@ -2618,7 +2653,8 @@ export const translations = {
     addressPlaceholder: "Hyɛ Address",
     cityPlaceholder: "Hyɛ Kurow",
     statePlaceholder: "Ɔman / Mantam",
-    postalCodeHint: "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
+    postalCodeHint:
+      "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
     streetPlaceholder: "Abɔntene",
     houseNumberPlaceholder: "Efie nɔma",
     apartmentPlaceholder: "Dan mu",
