@@ -252,7 +252,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `odebrój swój bonus <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>big bass splash</span>`,
+    heroTitle: `ODBIERZ SWÓJ BONUS <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>big bass splash</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
