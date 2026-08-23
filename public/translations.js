@@ -1,6 +1,8 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
+    postalCodeHint:
+      "If you know it, enter it — it speeds up verification, but it's optional.",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `Activate the <span>welcome bonus</span> and get <span>100% + 200 FS</span> on your first deposit.`,
     heroBtn: "get bonus",
@@ -63,6 +65,8 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
+    postalCodeHint:
+      "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>royal joker</span>.`,
     heroSubtitle: `Activez le <span>bonus de bienvenue</span> et recevez <span>100 % + 200 FS</span> sur votre premier dépôt.`,
     heroBtn: "obtenir un bonus",
@@ -126,6 +130,8 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
+    postalCodeHint:
+      "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>royal joker</span>`,
     heroSubtitle: `Activează <span>bonusul de bun venit</span> și primește <span>100% + 200 FS</span> la prima ta depunere.`,
     heroBtn: "obține bonus",
@@ -189,6 +195,8 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
+    postalCodeHint:
+      "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>royal joker</span> játékban`,
     heroSubtitle: `Aktiváld a <span>üdvözlő bónuszt</span>, és szerezz <span>100% + 200 ingyenes pörgetést</span> az első befizetésedre.`,
     heroBtn: "bónusz igénylése",
@@ -252,6 +260,8 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
+    postalCodeHint:
+      "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
     heroTitle:
       "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>royal joker</span>",
     heroSubtitle: `Aktywuj <span>bonus powitalny</span> i odbierz <span>100% + 200 darmowych spinów</span> przy pierwszym depozycie.`,
@@ -315,6 +325,8 @@ export const translations = {
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
+    postalCodeHint:
+      "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>royal joker</span>",
     heroSubtitle: `Aktivujte <span>uvítací bonus</span> a získejte <span>100 % + 200 FS</span> na svůj první vklad.`,
@@ -380,6 +392,8 @@ export const translations = {
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
+    postalCodeHint:
+      "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>royal joker</span>",
     heroSubtitle: `Aktiviraj <span>vstopni bonus</span> in prejmi <span>100 % + 200 FS</span> ob svojem prvem pologu.`,
@@ -444,6 +458,8 @@ export const translations = {
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
+    postalCodeHint:
+      "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>royal joker</span>`,
     heroSubtitle: `Ενεργοποίησε το <span>μπόνους καλωσορίσματος</span> και πάρε <span>100% + 200 FS</span> στην πρώτη σου κατάθεση.`,
     heroBtn: "πάρε το μπόνους",
@@ -508,6 +524,8 @@ export const translations = {
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
+    postalCodeHint:
+      "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `Aktiver <span>velkomstbonusen</span> og få <span>100 % + 200 FS</span> på ditt første innskudd.`,
     heroBtn: "få bonus",
@@ -570,6 +588,8 @@ export const translations = {
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
+    postalCodeHint:
+      "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `Aktivera <span>välkomstbonusen</span> och få <span>100 % + 200 FS</span> på din första insättning.`,
     heroBtn: "hämta bonus",
@@ -633,6 +653,8 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
+    postalCodeHint:
+      "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>royal joker</span>`,
     heroSubtitle: `Aktivuj <span>uvítací bonus</span> a získaj <span>100 % + 200 FS</span> pri svojom prvom vklade.`,
     heroBtn: "získať bonus",
@@ -696,6 +718,8 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
+    postalCodeHint:
+      "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>royal joker</span>`,
     heroSubtitle: `Активируйте <span>приветственный бонус</span> и получите <span>100% + 200 FS</span> на первый депозит.`,
     heroBtn: "получить бонус",
@@ -759,6 +783,8 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
+    postalCodeHint:
+      "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>royal joker</span>`,
     heroSubtitle: `Activa el <span>bono de bienvenida</span> y recibe <span>100 % + 200 giros gratis</span> en tu primer depósito.`,
     heroBtn: "obtener bono",
@@ -822,6 +848,8 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
+    postalCodeHint:
+      "Se souber, insira — acelera a verificação, mas não é obrigatório.",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>royal joker</span>`,
     heroSubtitle: `Ativa o <span>bónus de boas-vindas</span> e recebe <span>100% + 200 FS</span> no teu primeiro depósito.`,
     heroBtn: "obter bônus",
@@ -884,6 +912,8 @@ export const translations = {
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
+    postalCodeHint:
+      "Wenn Sie ihn kennen, geben Sie ihn ein — das beschleunigt die Verifizierung, ist aber optional.",
     heroTitle: `Beanspruche deinen Bonus <br/> <span>100 Freispiele</span> <br/> in <span>Royal Joker</span>`,
     heroSubtitle: `Aktiviere den <span>Willkommensbonus</span> und erhalte <span>100% + 200 FS</span> auf deine erste Einzahlung.`,
     heroBtn: "Bonus erhalten",
@@ -947,6 +977,8 @@ export const translations = {
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
+    postalCodeHint:
+      "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
     heroTitle: `Richiedi il tuo bonus <br/> <span>100 giri gratuiti</span> <br/> su <span>Royal Joker</span>`,
     heroSubtitle: `Attiva il <span>bonus di benvenuto</span> e ottieni <span>100% + 200 FS</span> sul tuo primo deposito.`,
     heroBtn: "ottieni bonus",
@@ -1010,6 +1042,8 @@ export const translations = {
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
+    postalCodeHint:
+      "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
     heroTitle: `nõua oma boonus <br/> <span>100 tasuta keerutust</span> <br/> mängus <span>royal joker</span>`,
     heroSubtitle: `Aktiveeri <span>tervitamisboonus</span> ja saa oma esimesel sissemaksel <span>100% + 200 FS</span>.`,
     heroBtn: "saada boonus",
@@ -1073,6 +1107,8 @@ export const translations = {
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
+    postalCodeHint:
+      "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
     heroTitle: `saņemiet savu bonusu <br/> <span>100 bezmaksas griezieni</span> <br/> spēlē <span>royal joker</span>`,
     heroSubtitle: `Aktivizējiet <span>laipni lūdzam bonusu</span> un saņemiet pirmā depozīta gadījumā <span>100% + 200 FS</span>.`,
     heroBtn: "saņemt bonusu",
@@ -1136,6 +1172,8 @@ export const translations = {
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
+    postalCodeHint:
+      "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
     heroTitle: `atsiimkite savo premiją <br/> <span>100 nemokamų sukimų</span> <br/> žaidime <span>royal joker</span>`,
     heroSubtitle: `Aktyvuokite <span>pasveikinimo premiją</span> ir gaukite pirmojo įnašo metu <span>100% + 200 FS</span>.`,
     heroBtn: "gauti premiją",
@@ -1199,6 +1237,8 @@ export const translations = {
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
+    postalCodeHint:
+      "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
     heroTitle: `preuzmite svoj bonus <br/> <span>100 besplatnih okretaja</span> <br/> u igri <span>royal joker</span>`,
     heroSubtitle: `Aktivirajte <span>bonus dobrodošlice</span> i osvojite <span>100% + 200 FS</span> na vaš prvi depozit.`,
     heroBtn: "preuzmi bonus",
@@ -1262,6 +1302,8 @@ export const translations = {
   },
   sw: {
     pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
+    postalCodeHint:
+      "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
     heroTitle: `dai bonasi yako <br/> <span>mizunguko 100 bure</span> <br/> katika <span>royal joker</span>`,
     heroSubtitle: `Washa <span>bonasi ya kukaribisha</span> na upate <span>100% + 200 FS</span> kwenye amana yako ya kwanza.`,
     heroBtn: "pata bonasi",
@@ -1324,6 +1366,8 @@ export const translations = {
   },
   rw: {
     pageTitle: "🎁 Bonus yawe irateguwe - Goldbet",
+    postalCodeHint:
+      "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
     heroTitle: `akira bonus yawe <br/> <span>100 free spins</span> <br/> muri <span>royal joker</span>`,
     heroSubtitle: `Koresha <span>welcome bonus</span> ubone <span>100% + 200 FS</span> ku ishyiramo rya mbere.`,
     heroBtn: "akira bonus",
@@ -1386,6 +1430,8 @@ export const translations = {
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
+    postalCodeHint:
+      "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
     heroTitle: `احصل على مكافأتك <br/> <span>100 دورة مجانية</span> <br/> في <span>royal joker</span>`,
     heroSubtitle: `قم بتفعيل <span>مكافأة الترحيب</span> واحصل على <span>100% + 200 FS</span> على أول إيداع.`,
     heroBtn: "احصل على المكافأة",
@@ -1448,6 +1494,8 @@ export const translations = {
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
+    postalCodeHint:
+      "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
     heroTitle: `вземете своя бонус <br/> <span>100 безплатни завъртания</span> <br/> в <span>royal joker</span>`,
     heroSubtitle: `Активирайте <span>бонуса за добре дошли</span> и получете <span>100% + 200 безплатни завъртания</span> при първия си депозит.`,
     heroBtn: "вземи бонус",
@@ -1511,6 +1559,8 @@ export const translations = {
   },
   da: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
+    postalCodeHint:
+      "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
     heroTitle: `få din bonus <br/> <span>100 gratis spins</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `Aktivér <span>velkomstbonussen</span> og få <span>100% + 200 gratis spins</span> på din første indbetaling.`,
     heroBtn: "få bonus",
@@ -1573,6 +1623,8 @@ export const translations = {
   },
   nl: {
     pageTitle: "🎁 Je bonus is klaar - Goldbet",
+    postalCodeHint:
+      "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
     heroTitle: `claim je bonus <br/> <span>100 gratis spins</span> <br/> in <span>royal joker</span>`,
     heroSubtitle: `Activeer de <span>welkomstbonus</span> en krijg <span>100% + 200 gratis spins</span> bij je eerste storting.`,
     heroBtn: "pak bonus",
@@ -1636,6 +1688,8 @@ export const translations = {
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
+    postalCodeHint:
+      "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
     heroTitle: `lunasta bonuksesi <br/> <span>100 ilmaiskierrosta</span> <br/> pelissä <span>royal joker</span>`,
     heroSubtitle: `Aktivoi <span>tervetuliaisbonus</span> ja saat <span>100% + 200 ilmaiskierrosta</span> ensimmäiselle talletuksellesi.`,
     heroBtn: "lunasta bonus",
@@ -1699,6 +1753,8 @@ export const translations = {
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
+    postalCodeHint:
+      "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
     heroTitle: `отримайте свій бонус <br/> <span>100 безкоштовних обертань</span> <br/> у <span>royal joker</span>`,
     heroSubtitle: `Активуйте <span>вітальний бонус</span> та отримайте <span>100% + 200 безкоштовних обертань</span> на свій перший депозит.`,
     heroBtn: "отримати бонус",
@@ -1762,6 +1818,7 @@ export const translations = {
   },
   zh: {
     pageTitle: "🎁 您的奖金已准备好 - Goldbet",
+    postalCodeHint: "如果知道，请填写——这会加快验证速度，但不是必填项。",
     heroTitle: `领取您的奖金 <br/> <span>100 次免费旋转</span> <br/> 在 <span>royal joker</span>`,
     heroSubtitle: `激活<span>欢迎奖金</span>并在首次存款时获得<span>100% + 200 次免费旋转</span>。`,
     heroBtn: "领取奖金",
@@ -1823,6 +1880,8 @@ export const translations = {
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
+    postalCodeHint:
+      "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
     heroTitle: `faigh do bhónas <br/> <span>100 rothlú saor in aisce</span> <br/> i <span>royal joker</span>`,
     heroSubtitle: `Gníomhachtaigh an <span>bónas fáilte</span> agus faigh <span>100% + 200 rothlú saor in aisce</span> ar do chéad taisce.`,
     heroBtn: "faigh bónas",
@@ -1887,6 +1946,8 @@ export const translations = {
   },
   lb: {
     pageTitle: "🎁 Äre Bonus ass prett - Goldbet",
+    postalCodeHint:
+      "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
     heroTitle: `huel däi Bonus <br/> <span>100 gratis Dréihungen</span> <br/> am <span>royal joker</span>`,
     heroSubtitle: `Aktivéier de <span>Wëllkomm-Bonus</span> a kréien <span>100% + 200 gratis Dréihungen</span> op deng éischt Abezuelung.`,
     heroBtn: "Bonus kréien",
@@ -1949,6 +2010,8 @@ export const translations = {
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
+    postalCodeHint:
+      "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
     heroTitle: `ikseb il-bonus tiegħek <br/> <span>100 spins b'xejn</span> <br/> fi <span>royal joker</span>`,
     heroSubtitle: `Attiva l-<span>bonus ta' merħba</span> u ikseb <span>100% + 200 spins b'xejn</span> fuq l-ewwel depożitu tiegħek.`,
     heroBtn: "ikseb bonus",
@@ -2011,6 +2074,7 @@ export const translations = {
   },
   am: {
     pageTitle: "🎁 የእርስዎ ቦነስ ዝግጁ ነው - Goldbet",
+    postalCodeHint: "የሚያውቁት ከሆነ ያስገቡት — ማረጋገጡን ያፋጥናል፣ ግን አስገዳጅ አይደለም።",
     heroTitle: `ቦነስዎን ይጠይቁ <br/> <span>100 ነፃ ሽክርክሮች</span> <br/> በ <span>royal joker</span>`,
     heroSubtitle: `የ<span>እንኳን ደህና መጡ</span> ቦነስን ያንቁ እና <span>100% + 200 FS</span> በመጀመሪያ ተቀማጭዎ ይቀበሉ።`,
     heroBtn: "ቦነስ ይውሰዱ",
@@ -2066,6 +2130,8 @@ export const translations = {
   },
   lm: {
     pageTitle: "🎁 Bonus yo gyetegeka - Goldbet",
+    postalCodeHint:
+      "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
     heroTitle: `Saba bonus yo <br/> <span>100 free spins</span> <br/> mu <span>royal joker</span>`,
     heroSubtitle: `Tandika <span>welcome bonus</span> ofune <span>100% + 200 FS</span> ku deposit yo esooka.`,
     heroBtn: "funa bonus",
@@ -2122,6 +2188,8 @@ export const translations = {
   },
   ha: {
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
+    postalCodeHint:
+      "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
     heroTitle: `karɓi bonus ɗinka <br/> <span>100 free spins</span> <br/> a cikin <span>royal joker</span>`,
     heroSubtitle: `Kunna <span>bonus na maraba</span> ka samu <span>100% + 200 FS</span> a ajiya na farko.`,
     heroBtn: "karɓi bonus",
@@ -2184,6 +2252,8 @@ export const translations = {
   },
   yo: {
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetan - Goldbet",
+    postalCodeHint:
+      "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span>100 free spins</span> <br/> ní <span>royal joker</span>`,
     heroSubtitle: `Mu <span>bonus ìbẹ̀rẹ̀</span> ṣiṣẹ́ ki o gba <span>100% + 200 FS</span> lori idogo akọkọ rẹ.`,
     heroBtn: "gba ẹ̀bùn",
@@ -2246,6 +2316,8 @@ export const translations = {
   },
   ig: {
     pageTitle: "🎁 Onyinye gị dị njikere - Goldbet",
+    postalCodeHint:
+      "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
     heroTitle: `nata onyinye gị <br/> <span>100 free spins</span> <br/> na <span>royal joker</span>`,
     heroSubtitle: `Mee ka <span>bonus nnabata</span> rụọ ọrụ ma nweta <span>100% + 200 FS</span> na nkwụnye ego mbụ gị.`,
     heroBtn: "nata onyinye",
@@ -2308,6 +2380,8 @@ export const translations = {
   },
   tw: {
     pageTitle: "🎁 Wo boni a asiesie - Goldbet",
+    postalCodeHint:
+      "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
     heroTitle: `gye wo boni <br/> <span>100 free spins</span> <br/> wɔ <span>royal joker</span> mu`,
     heroSubtitle: `Ma <span>akyɛde a wɔde ma foforo</span> no nyɛ adwuma na nya <span>100% + 200 FS</span> wɔ wo nsɛm a wode bɛto mu mprenu no so.`,
     heroBtn: "gye boni",
