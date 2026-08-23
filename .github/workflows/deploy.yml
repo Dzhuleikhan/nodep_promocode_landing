@@ -13,8 +13,8 @@ jobs:
       fail-fast: false
       matrix:
         site:
-          - goldbet.wiki
           - promogb.com
+          - goldbet.wiki
           - goldbet.website
           - goldbet.click
           - goldbetio.com
@@ -40,8 +40,6 @@ jobs:
           - goldl4x9.com
         vps:
           [
-            ORANGE,
-            NJAL,
             FLOKINET_FI_ONE,
             FLOKINET_NL,
             FLOKINET_FI_TWO,

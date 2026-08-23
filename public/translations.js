@@ -11,8 +11,7 @@ export const translations = {
       'Find your bonus in the "Bonus Center" and activate it to start playing.',
     slideStep3Title: "Play",
     slideStep3Text: "The money is now available for gameplay. Enjoy!",
-    footerText:
-      `All content on this website is provided for marketing and informational purposes only. It does not constitute professional, legal, financial, medical, or any other type of advice. We make no representations or warranties of any kind regarding the accuracy, completeness, or suitability of the information. Any reliance you place on this content is strictly at your own risk. Site assumes no responsibility or liability for any loss or damage incurred as a result of using this website or its materials.`,
+    footerText: `All content on this website is provided for marketing and informational purposes only. It does not constitute professional, legal, financial, medical, or any other type of advice. We make no representations or warranties of any kind regarding the accuracy, completeness, or suitability of the information. Any reliance you place on this content is strictly at your own risk. Site assumes no responsibility or liability for any loss or damage incurred as a result of using this website or its materials.`,
     // | FORM TRANSLATIONS
     backBtn: "Back",
     closeBtn: "Close",
@@ -74,8 +73,7 @@ export const translations = {
       'Trouvez votre bonus dans le "Bonus Center" et activez-le pour commencer à jouer.',
     slideStep3Title: "Jouer",
     slideStep3Text: "L'argent est désormais disponible pour le jeu. Apprécier!",
-    footerText:
-      `Tout le contenu de ce site web est fourni à des fins de marketing et d'information uniquement. Il ne constitue pas un conseil professionnel, juridique, financier, médical ou tout autre type de conseil. Nous ne faisons aucune déclaration ni ne donnons aucune garantie d'aucune sorte concernant l'exactitude, l'exhaustivité ou l'adéquation des informations. Toute confiance que vous accordez à ce contenu est strictement à vos propres risques. Le site décline toute responsabilité pour toute perte ou tout dommage encouru à la suite de l'utilisation de ce site web ou de ses contenus.`,
+    footerText: `Tout le contenu de ce site web est fourni à des fins de marketing et d'information uniquement. Il ne constitue pas un conseil professionnel, juridique, financier, médical ou tout autre type de conseil. Nous ne faisons aucune déclaration ni ne donnons aucune garantie d'aucune sorte concernant l'exactitude, l'exhaustivité ou l'adéquation des informations. Toute confiance que vous accordez à ce contenu est strictement à vos propres risques. Le site décline toute responsabilité pour toute perte ou tout dommage encouru à la suite de l'utilisation de ce site web ou de ses contenus.`,
     // | FORM TRANSLATIONS
     backBtn: "Retour",
     closeBtn: "Fermer",
@@ -137,8 +135,7 @@ export const translations = {
       'Găsește-ți bonusul în "Centrul de Bonusuri" și activează-l pentru a începe să joci.',
     slideStep3Title: "Joacă",
     slideStep3Text: "Banii sunt acum disponibili pentru joc. Bucură-te!",
-    footerText:
-      `Întregul conținut al acestui site web este furnizat exclusiv în scopuri de marketing și informare. Acesta nu constituie consultanță profesională, juridică, financiară, medicală sau de orice alt tip. Nu oferim nicio declarație sau garanție de niciun fel cu privire la acuratețea, completitudinea sau adecvarea informațiilor. Orice încredere acordată acestui conținut este strict pe propriul risc. Site-ul nu își asumă nicio responsabilitate pentru nicio pierdere sau daună suferită ca urmare a utilizării acestui site web sau a materialelor sale.`,
+    footerText: `Întregul conținut al acestui site web este furnizat exclusiv în scopuri de marketing și informare. Acesta nu constituie consultanță profesională, juridică, financiară, medicală sau de orice alt tip. Nu oferim nicio declarație sau garanție de niciun fel cu privire la acuratețea, completitudinea sau adecvarea informațiilor. Orice încredere acordată acestui conținut este strict pe propriul risc. Site-ul nu își asumă nicio responsabilitate pentru nicio pierdere sau daună suferită ca urmare a utilizării acestui site web sau a materialelor sale.`,
     // | FORM TRANSLATIONS
     backBtn: "Înapoi",
     closeBtn: "Închide",
@@ -200,8 +197,7 @@ export const translations = {
       'Keresd meg a bónuszodat a "Bónuszközpontban" és aktiváld, hogy játszhass.',
     slideStep3Title: "Játssz",
     slideStep3Text: "A pénz most már elérhető a játékhoz. Élvezd!",
-    footerText:
-      `A weboldal teljes tartalma kizárólag marketing és tájékoztatási célokat szolgál. Nem minősül szakmai, jogi, pénzügyi, orvosi vagy bármilyen egyéb tanácsnak. Nem vállalunk semmilyen nyilatkozatot vagy garanciát az információk pontosságára, teljességére vagy alkalmasságára vonatkozóan. Az ebben a tartalomban való bármilyen bizalom kizárólag saját kockázatra történik. Az oldal nem vállal felelősséget semmilyen veszteségért vagy kárért, amely a weboldal vagy annak anyagainak használatából ered.`,
+    footerText: `A weboldal teljes tartalma kizárólag marketing és tájékoztatási célokat szolgál. Nem minősül szakmai, jogi, pénzügyi, orvosi vagy bármilyen egyéb tanácsnak. Nem vállalunk semmilyen nyilatkozatot vagy garanciát az információk pontosságára, teljességére vagy alkalmasságára vonatkozóan. Az ebben a tartalomban való bármilyen bizalom kizárólag saját kockázatra történik. Az oldal nem vállal felelősséget semmilyen veszteségért vagy kárért, amely a weboldal vagy annak anyagainak használatából ered.`,
     // | FORM TRANSLATIONS
     backBtn: "Vissza",
     closeBtn: "Bezárás",
@@ -253,7 +249,7 @@ export const translations = {
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
-      "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>hounds of hell</span>",
+      "ODBIERZ SWÓJ BONUS <br/> <span>100 darmowych spinów</span> <br/> w <span>hounds of hell</span>",
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
@@ -263,8 +259,7 @@ export const translations = {
       'Znajdź swój bonus w "Centrum Bonusów" i aktywuj go, aby zacząć grać.',
     slideStep3Title: "Graj",
     slideStep3Text: "Pieniądze są teraz dostępne do gry. Miłej zabawy!",
-    footerText:
-      `Cała zawartość tej strony internetowej jest udostępniana wyłącznie w celach marketingowych i informacyjnych. Nie stanowi ona żadnej porady zawodowej, prawnej, finansowej, medycznej ani żadnego innego rodzaju porady. Nie składamy żadnych oświadczeń ani gwarancji jakiegokolwiek rodzaju dotyczących dokładności, kompletności lub przydatności informacji. Wszelkie poleganie na tych treściach odbywa się wyłącznie na własne ryzyko. Strona nie ponosi żadnej odpowiedzialności za jakiekolwiek straty lub szkody wynikające z korzystania z tej strony internetowej lub jej materiałów.`,
+    footerText: `Cała zawartość tej strony internetowej jest udostępniana wyłącznie w celach marketingowych i informacyjnych. Nie stanowi ona żadnej porady zawodowej, prawnej, finansowej, medycznej ani żadnego innego rodzaju porady. Nie składamy żadnych oświadczeń ani gwarancji jakiegokolwiek rodzaju dotyczących dokładności, kompletności lub przydatności informacji. Wszelkie poleganie na tych treściach odbywa się wyłącznie na własne ryzyko. Strona nie ponosi żadnej odpowiedzialności za jakiekolwiek straty lub szkody wynikające z korzystania z tej strony internetowej lub jej materiałów.`,
     // | FORM TRANSLATIONS
     backBtn: "Wstecz",
     closeBtn: "Zamknij",
@@ -328,8 +323,7 @@ export const translations = {
     slideStep3Title: "Hrajte",
     slideStep3Text:
       "Peněžní prostředky jsou nyní k dispozici pro hru. Užijte si to!",
-    footerText:
-      `Veškerý obsah těchto webových stránek je poskytován výhradně pro marketingové a informační účely. Nepředstavuje odborné, právní, finanční, lékařské ani jakékoli jiné poradenství. Neposkytujeme žádná prohlášení ani záruky jakéhokoli druhu ohledně přesnosti, úplnosti nebo vhodnosti informací. Jakékoli spoléhání se na tento obsah je výhradně na vaše vlastní riziko. Stránka nenese žádnou odpovědnost za jakoukoli ztrátu nebo škodu vzniklou v důsledku používání těchto webových stránek nebo jejich materiálů.`,
+    footerText: `Veškerý obsah těchto webových stránek je poskytován výhradně pro marketingové a informační účely. Nepředstavuje odborné, právní, finanční, lékařské ani jakékoli jiné poradenství. Neposkytujeme žádná prohlášení ani záruky jakéhokoli druhu ohledně přesnosti, úplnosti nebo vhodnosti informací. Jakékoli spoléhání se na tento obsah je výhradně na vaše vlastní riziko. Stránka nenese žádnou odpovědnost za jakoukoli ztrátu nebo škodu vzniklou v důsledku používání těchto webových stránek nebo jejich materiálů.`,
     // | FORM TRANSLATIONS
     backBtn: "Zpět",
     closeBtn: "Zavřít",
@@ -392,8 +386,7 @@ export const translations = {
       'Poiščite svoj bonus v "Centru bonusov" in ga aktivirajte, da začnete igrati.',
     slideStep3Title: "Igrajte",
     slideStep3Text: "Denar je zdaj na voljo za igro. Uživajte!",
-    footerText:
-      `Vsa vsebina tega spletnega mesta je na voljo izključno za tržne in informativne namene. Ne predstavlja strokovnega, pravnega, finančnega, zdravstvenega ali kakršnega koli drugega nasveta. Ne dajemo nobenih izjav ali jamstev kakršne koli vrste glede točnosti, popolnosti ali ustreznosti informacij. Vsako zanašanje na to vsebino je izključno na lastno odgovornost. Spletno mesto ne prevzema nobene odgovornosti za kakršno koli izgubo ali škodo, ki nastane zaradi uporabe tega spletnega mesta ali njegovih gradiv.`,
+    footerText: `Vsa vsebina tega spletnega mesta je na voljo izključno za tržne in informativne namene. Ne predstavlja strokovnega, pravnega, finančnega, zdravstvenega ali kakršnega koli drugega nasveta. Ne dajemo nobenih izjav ali jamstev kakršne koli vrste glede točnosti, popolnosti ali ustreznosti informacij. Vsako zanašanje na to vsebino je izključno na lastno odgovornost. Spletno mesto ne prevzema nobene odgovornosti za kakršno koli izgubo ali škodo, ki nastane zaradi uporabe tega spletnega mesta ali njegovih gradiv.`,
     // | FORM TRANSLATIONS
     backBtn: "Nazaj",
     closeBtn: "Zapri",
@@ -456,8 +449,7 @@ export const translations = {
     slideStep3Title: "Παίξτε",
     slideStep3Text:
       "Τα χρήματα είναι πλέον διαθέσιμα για παιχνίδι. Καλή διασκέδαση!",
-    footerText:
-      `Όλο το περιεχόμενο αυτού του ιστότοπου παρέχεται αποκλειστικά για σκοπούς μάρκετινγκ και ενημέρωσης. Δεν αποτελεί επαγγελματική, νομική, οικονομική, ιατρική ή οποιουδήποτε άλλου είδους συμβουλή. Δεν παρέχουμε καμία δήλωση ή εγγύηση οποιουδήποτε είδους σχετικά με την ακρίβεια, την πληρότητα ή την καταλληλότητα των πληροφοριών. Οποιαδήποτε εμπιστοσύνη στο παρόν περιεχόμενο γίνεται αποκλειστικά με δική σας ευθύνη. Ο ιστότοπος δεν φέρει καμία ευθύνη για οποιαδήποτε απώλεια ή ζημία που προκύπτει από τη χρήση αυτού του ιστότοπου ή των υλικών του.`,
+    footerText: `Όλο το περιεχόμενο αυτού του ιστότοπου παρέχεται αποκλειστικά για σκοπούς μάρκετινγκ και ενημέρωσης. Δεν αποτελεί επαγγελματική, νομική, οικονομική, ιατρική ή οποιουδήποτε άλλου είδους συμβουλή. Δεν παρέχουμε καμία δήλωση ή εγγύηση οποιουδήποτε είδους σχετικά με την ακρίβεια, την πληρότητα ή την καταλληλότητα των πληροφοριών. Οποιαδήποτε εμπιστοσύνη στο παρόν περιεχόμενο γίνεται αποκλειστικά με δική σας ευθύνη. Ο ιστότοπος δεν φέρει καμία ευθύνη για οποιαδήποτε απώλεια ή ζημία που προκύπτει από τη χρήση αυτού του ιστότοπου ή των υλικών του.`,
     // | FORM TRANSLATIONS
     backBtn: "Πίσω",
     closeBtn: "Κλείσιμο",
@@ -518,8 +510,7 @@ export const translations = {
       'Finn bonusen din i "Bonus-senteret" og aktiver den for å begynne å spille.',
     slideStep3Title: "Spill",
     slideStep3Text: "Pengene er nå tilgjengelige for spill. Kos deg!",
-    footerText:
-      `Alt innhold på dette nettstedet leveres kun for markedsførings- og informasjonsformål. Det utgjør ikke profesjonell, juridisk, økonomisk, medisinsk eller annen type rådgivning. Vi gir ingen erklæringer eller garantier av noe slag når det gjelder nøyaktighet, fullstendighet eller egnethet av informasjonen. All tillit til dette innholdet skjer utelukkende på egen risiko. Nettstedet påtar seg ikke ansvar for tap eller skade som oppstår som følge av bruk av dette nettstedet eller dets materiale.`,
+    footerText: `Alt innhold på dette nettstedet leveres kun for markedsførings- og informasjonsformål. Det utgjør ikke profesjonell, juridisk, økonomisk, medisinsk eller annen type rådgivning. Vi gir ingen erklæringer eller garantier av noe slag når det gjelder nøyaktighet, fullstendighet eller egnethet av informasjonen. All tillit til dette innholdet skjer utelukkende på egen risiko. Nettstedet påtar seg ikke ansvar for tap eller skade som oppstår som følge av bruk av dette nettstedet eller dets materiale.`,
     // | FORM TRANSLATIONS
     backBtn: "Tilbake",
     closeBtn: "Lukk",
@@ -581,8 +572,7 @@ export const translations = {
       'Hitta din bonus i "Bonussidan" och aktivera den för att börja spela.',
     slideStep3Title: "Spela",
     slideStep3Text: "Pengarna är nu tillgängliga för spel. Ha kul!",
-    footerText:
-      `Allt innehåll på denna webbplats tillhandahålls endast för marknadsförings- och informationsändamål. Det utgör inte professionell, juridisk, finansiell, medicinsk eller någon annan typ av rådgivning. Vi lämnar inga garantier eller utfästelser av något slag beträffande informationens riktighet, fullständighet eller lämplighet. Allt förlitande på detta innehåll sker helt på egen risk. Webbplatsen ansvarar inte för någon förlust eller skada som uppstår till följd av användning av denna webbplats eller dess material.`,
+    footerText: `Allt innehåll på denna webbplats tillhandahålls endast för marknadsförings- och informationsändamål. Det utgör inte professionell, juridisk, finansiell, medicinsk eller någon annan typ av rådgivning. Vi lämnar inga garantier eller utfästelser av något slag beträffande informationens riktighet, fullständighet eller lämplighet. Allt förlitande på detta innehåll sker helt på egen risk. Webbplatsen ansvarar inte för någon förlust eller skada som uppstår till följd av användning av denna webbplats eller dess material.`,
     // | FORM TRANSLATIONS
     backBtn: "Tillbaka",
     closeBtn: "Stäng",
@@ -644,8 +634,7 @@ export const translations = {
       'Nájdite svoj bonus v "Bonusovom centre" a aktivujte ho, aby ste začali hrať.',
     slideStep3Title: "Hrať",
     slideStep3Text: "Peniaze sú teraz dostupné na hranie. Užite si to!",
-    footerText:
-      `Celý obsah tejto webovej stránky sa poskytuje výhradne na marketingové a informačné účely. Nepredstavuje odborné, právne, finančné, lekárske ani akékoľvek iné poradenstvo. Neposkytujeme žiadne vyhlásenia ani záruky akéhokoľvek druhu týkajúce sa presnosti, úplnosti alebo vhodnosti informácií. Akékoľvek spoliehanie sa na tento obsah je výlučne na vaše vlastné riziko. Stránka nenesie žiadnu zodpovednosť za akúkoľvek stratu alebo škodu vzniknutú v dôsledku používania tejto webovej stránky alebo jej materiálov.`,
+    footerText: `Celý obsah tejto webovej stránky sa poskytuje výhradne na marketingové a informačné účely. Nepredstavuje odborné, právne, finančné, lekárske ani akékoľvek iné poradenstvo. Neposkytujeme žiadne vyhlásenia ani záruky akéhokoľvek druhu týkajúce sa presnosti, úplnosti alebo vhodnosti informácií. Akékoľvek spoliehanie sa na tento obsah je výlučne na vaše vlastné riziko. Stránka nenesie žiadnu zodpovednosť za akúkoľvek stratu alebo škodu vzniknutú v dôsledku používania tejto webovej stránky alebo jej materiálov.`,
     // | FORM TRANSLATIONS
     backBtn: "Späť",
     closeBtn: "Zatvoriť",
@@ -707,8 +696,7 @@ export const translations = {
       'Найдите свой бонус в "Бонус-центре" и активируйте его, чтобы начать играть.',
     slideStep3Title: "Играйте",
     slideStep3Text: "Деньги теперь доступны для игры. Наслаждайтесь!",
-    footerText:
-      `Весь контент этого веб-сайта предоставляется исключительно в маркетинговых и информационных целях. Он не является профессиональной, юридической, финансовой, медицинской или любой иной консультацией. Мы не даём никаких заявлений или гарантий любого рода относительно точности, полноты или пригодности информации. Любое использование данного контента осуществляется исключительно на ваш собственный риск. Сайт не несёт ответственности за любые убытки или ущерб, возникшие в результате использования этого веб-сайта или его материалов.`,
+    footerText: `Весь контент этого веб-сайта предоставляется исключительно в маркетинговых и информационных целях. Он не является профессиональной, юридической, финансовой, медицинской или любой иной консультацией. Мы не даём никаких заявлений или гарантий любого рода относительно точности, полноты или пригодности информации. Любое использование данного контента осуществляется исключительно на ваш собственный риск. Сайт не несёт ответственности за любые убытки или ущерб, возникшие в результате использования этого веб-сайта или его материалов.`,
     // | FORM TRANSLATIONS
     backBtn: "Назад",
     closeBtn: "Закрыть",
@@ -770,8 +758,7 @@ export const translations = {
       'Encuentra tu bono en el "Centro de Bonos" y actívalo para comenzar a jugar.',
     slideStep3Title: "Juega",
     slideStep3Text: "El dinero ahora está disponible para jugar. ¡Disfrútalo!",
-    footerText:
-      `Todo el contenido de este sitio web se proporciona únicamente con fines de marketing e informativos. No constituye asesoramiento profesional, legal, financiero, médico ni de ningún otro tipo. No realizamos ninguna declaración ni ofrecemos ninguna garantía de ningún tipo en cuanto a la exactitud, integridad o idoneidad de la información. Cualquier confianza depositada en este contenido es estrictamente bajo su propio riesgo. El sitio no asume ninguna responsabilidad por cualquier pérdida o daño derivado del uso de este sitio web o de sus materiales.`,
+    footerText: `Todo el contenido de este sitio web se proporciona únicamente con fines de marketing e informativos. No constituye asesoramiento profesional, legal, financiero, médico ni de ningún otro tipo. No realizamos ninguna declaración ni ofrecemos ninguna garantía de ningún tipo en cuanto a la exactitud, integridad o idoneidad de la información. Cualquier confianza depositada en este contenido es estrictamente bajo su propio riesgo. El sitio no asume ninguna responsabilidad por cualquier pérdida o daño derivado del uso de este sitio web o de sus materiales.`,
     // | FORM TRANSLATIONS
     backBtn: "Atrás",
     closeBtn: "Cerrar",
@@ -832,8 +819,7 @@ export const translations = {
       'Encontre seu bônus no "Centro de Bônus" e ative-o para começar a jogar.',
     slideStep3Title: "Jogue",
     slideStep3Text: "O dinheiro agora está disponível para jogar. Aproveite!",
-    footerText:
-      `Todo o conteúdo deste website é fornecido exclusivamente para fins de marketing e informação. Não constitui aconselhamento profissional, jurídico, financeiro, médico ou qualquer outro tipo de aconselhamento. Não fazemos quaisquer declarações ou garantias de qualquer tipo quanto à precisão, integridade ou adequação das informações. Qualquer confiança depositada neste conteúdo é estritamente por sua conta e risco. O site não assume qualquer responsabilidade por qualquer perda ou dano decorrente da utilização deste website ou dos seus materiais.`,
+    footerText: `Todo o conteúdo deste website é fornecido exclusivamente para fins de marketing e informação. Não constitui aconselhamento profissional, jurídico, financeiro, médico ou qualquer outro tipo de aconselhamento. Não fazemos quaisquer declarações ou garantias de qualquer tipo quanto à precisão, integridade ou adequação das informações. Qualquer confiança depositada neste conteúdo é estritamente por sua conta e risco. O site não assume qualquer responsabilidade por qualquer perda ou dano decorrente da utilização deste website ou dos seus materiais.`,
     // | FORM TRANSLATIONS
     backBtn: "Voltar",
     closeBtn: "Fechar",
@@ -895,8 +881,7 @@ export const translations = {
       'Finde deinen Bonus im "Bonuscenter" und aktiviere ihn, um zu spielen.',
     slideStep3Title: "Spielen",
     slideStep3Text: "Das Geld steht nun zum Spielen bereit. Viel Spaß!",
-    footerText:
-      `Der gesamte Inhalt dieser Website wird ausschließlich zu Marketing- und Informationszwecken bereitgestellt. Er stellt keine professionelle, rechtliche, finanzielle, medizinische oder sonstige Beratung dar. Wir geben keinerlei Zusicherungen oder Garantien hinsichtlich der Richtigkeit, Vollständigkeit oder Eignung der Informationen. Jegliches Vertrauen in diese Inhalte erfolgt ausschließlich auf Ihr eigenes Risiko. Die Website übernimmt keine Verantwortung für Verluste oder Schäden, die aus der Nutzung dieser Website oder ihrer Materialien entstehen.`,
+    footerText: `Der gesamte Inhalt dieser Website wird ausschließlich zu Marketing- und Informationszwecken bereitgestellt. Er stellt keine professionelle, rechtliche, finanzielle, medizinische oder sonstige Beratung dar. Wir geben keinerlei Zusicherungen oder Garantien hinsichtlich der Richtigkeit, Vollständigkeit oder Eignung der Informationen. Jegliches Vertrauen in diese Inhalte erfolgt ausschließlich auf Ihr eigenes Risiko. Die Website übernimmt keine Verantwortung für Verluste oder Schäden, die aus der Nutzung dieser Website oder ihrer Materialien entstehen.`,
     // | FORM TRANSLATIONS
     backBtn: "Zurück",
     closeBtn: "Schließen",
@@ -958,8 +943,7 @@ export const translations = {
       'Trova il tuo bonus nel "Centro Bonus" e attivalo per iniziare a giocare.',
     slideStep3Title: "Gioca",
     slideStep3Text: "Il denaro è ora disponibile per giocare. Divertiti!",
-    footerText:
-      `L’intero contenuto di questo sito web è fornito esclusivamente a scopo di marketing e informazione. Non costituisce consulenza professionale, legale, finanziaria, medica o di qualsiasi altro tipo. Non forniamo alcuna dichiarazione o garanzia di alcun tipo riguardo all’accuratezza, completezza o idoneità delle informazioni. Qualsiasi affidamento su tali contenuti è esclusivamente a proprio rischio. Il sito non si assume alcuna responsabilità per eventuali perdite o danni derivanti dall’uso di questo sito web o dei suoi materiali.`,
+    footerText: `L’intero contenuto di questo sito web è fornito esclusivamente a scopo di marketing e informazione. Non costituisce consulenza professionale, legale, finanziaria, medica o di qualsiasi altro tipo. Non forniamo alcuna dichiarazione o garanzia di alcun tipo riguardo all’accuratezza, completezza o idoneità delle informazioni. Qualsiasi affidamento su tali contenuti è esclusivamente a proprio rischio. Il sito non si assume alcuna responsabilità per eventuali perdite o danni derivanti dall’uso di questo sito web o dei suoi materiali.`,
     // | FORM TRANSLATIONS
     backBtn: "Indietro",
     closeBtn: "Chiudi",
@@ -1083,8 +1067,7 @@ export const translations = {
       'Leidke oma boonus "Boonuse Keskusest" ja aktiveerige see, et alustada mängimist.',
     slideStep3Title: "Mängi",
     slideStep3Text: "Raha on nüüd mängimiseks saadaval. Naudi mängu!",
-    footerText:
-      `Kogu selle veebisaidi sisu on esitatud üksnes turunduslikel ja informatiivsetel eesmärkidel. See ei kujuta endast professionaalset, juriidilist, finants-, meditsiinilist ega muud liiki nõuannet. Me ei anna mingeid kinnitusi ega garantiisid teabe täpsuse, täielikkuse või sobivuse kohta. Igasugune sellele sisule tuginemine toimub täielikult teie enda vastutusel. Veebisait ei vastuta ühegi kahju või kaotuse eest, mis tuleneb selle veebisaidi või selle materjalide kasutamisest.`,
+    footerText: `Kogu selle veebisaidi sisu on esitatud üksnes turunduslikel ja informatiivsetel eesmärkidel. See ei kujuta endast professionaalset, juriidilist, finants-, meditsiinilist ega muud liiki nõuannet. Me ei anna mingeid kinnitusi ega garantiisid teabe täpsuse, täielikkuse või sobivuse kohta. Igasugune sellele sisule tuginemine toimub täielikult teie enda vastutusel. Veebisait ei vastuta ühegi kahju või kaotuse eest, mis tuleneb selle veebisaidi või selle materjalide kasutamisest.`,
     // | FORM TRANSLATIONS
     backBtn: "Tagasi",
     closeBtn: "Sulge",
@@ -1146,8 +1129,7 @@ export const translations = {
       'Atrodiet savu bonusu "Bonusu centrā" un aktivizējiet to, lai sāktu spēli.',
     slideStep3Title: "Spēlējiet",
     slideStep3Text: "Nauda tagad ir pieejama spēlēšanai. Izbaudiet spēli!",
-    footerText:
-      `Visa šīs tīmekļa vietnes saturs tiek sniegts tikai mārketinga un informatīviem nolūkiem. Tas nav profesionāls, juridisks, finanšu, medicīnisks vai jebkāda cita veida padoms. Mēs nesniedzam nekādus paziņojumus vai garantijas par informācijas precizitāti, pilnīgumu vai piemērotību. Jebkāda paļaušanās uz šo saturu ir tikai uz jūsu pašu risku. Vietne neuzņemas nekādu atbildību par jebkādiem zaudējumiem vai kaitējumu, kas rodas šīs tīmekļa vietnes vai tās materiālu izmantošanas rezultātā.`,
+    footerText: `Visa šīs tīmekļa vietnes saturs tiek sniegts tikai mārketinga un informatīviem nolūkiem. Tas nav profesionāls, juridisks, finanšu, medicīnisks vai jebkāda cita veida padoms. Mēs nesniedzam nekādus paziņojumus vai garantijas par informācijas precizitāti, pilnīgumu vai piemērotību. Jebkāda paļaušanās uz šo saturu ir tikai uz jūsu pašu risku. Vietne neuzņemas nekādu atbildību par jebkādiem zaudējumiem vai kaitējumu, kas rodas šīs tīmekļa vietnes vai tās materiālu izmantošanas rezultātā.`,
     // | FORM TRANSLATIONS
     backBtn: "Atpakaļ",
     closeBtn: "Aizvērt",
@@ -1209,8 +1191,7 @@ export const translations = {
       'Raskite savo premiją "Premijų centre" ir aktyvuokite ją, kad pradėtumėte žaisti.',
     slideStep3Title: "Žaiskite",
     slideStep3Text: "Pinigai dabar prieinami žaidimui. Mėgaukitės žaidimu!",
-    footerText:
-      `Visas šios svetainės turinys pateikiamas tik rinkodaros ir informaciniais tikslais. Tai nėra profesinė, teisinė, finansinė, medicininė ar bet kokia kita konsultacija. Mes neteikiame jokių pareiškimų ar garantijų dėl informacijos tikslumo, išsamumo ar tinkamumo. Bet koks pasitikėjimas šiuo turiniu yra tik jūsų pačių rizika. Svetainė neprisiima jokios atsakomybės už bet kokius nuostolius ar žalą, patirtą naudojantis šia svetaine ar jos medžiaga.`,
+    footerText: `Visas šios svetainės turinys pateikiamas tik rinkodaros ir informaciniais tikslais. Tai nėra profesinė, teisinė, finansinė, medicininė ar bet kokia kita konsultacija. Mes neteikiame jokių pareiškimų ar garantijų dėl informacijos tikslumo, išsamumo ar tinkamumo. Bet koks pasitikėjimas šiuo turiniu yra tik jūsų pačių rizika. Svetainė neprisiima jokios atsakomybės už bet kokius nuostolius ar žalą, patirtą naudojantis šia svetaine ar jos medžiaga.`,
     // | FORM TRANSLATIONS
     backBtn: "Atgal",
     closeBtn: "Uždaryti",
@@ -1272,8 +1253,7 @@ export const translations = {
       'Pronađite svoj bonus u "Centru Bonusa" i aktivirajte ga kako biste počeli igrati.',
     slideStep3Title: "Igrajte",
     slideStep3Text: "Novac je sada dostupan za igru. Uživajte!",
-    footerText:
-      `Cjelokupan sadržaj ove web stranice pruža se isključivo u marketinške i informativne svrhe. Ne predstavlja profesionalni, pravni, financijski, medicinski niti bilo kakav drugi oblik savjeta. Ne dajemo nikakva jamstva niti izjave bilo koje vrste u pogledu točnosti, potpunosti ili prikladnosti informacija. Svako oslanjanje na ovaj sadržaj isključivo je na vlastitu odgovornost. Web stranica ne preuzima nikakvu odgovornost za bilo kakav gubitak ili štetu nastalu korištenjem ove web stranice ili njezinih materijala.`,
+    footerText: `Cjelokupan sadržaj ove web stranice pruža se isključivo u marketinške i informativne svrhe. Ne predstavlja profesionalni, pravni, financijski, medicinski niti bilo kakav drugi oblik savjeta. Ne dajemo nikakva jamstva niti izjave bilo koje vrste u pogledu točnosti, potpunosti ili prikladnosti informacija. Svako oslanjanje na ovaj sadržaj isključivo je na vlastitu odgovornost. Web stranica ne preuzima nikakvu odgovornost za bilo kakav gubitak ili štetu nastalu korištenjem ove web stranice ili njezinih materijala.`,
     // | FORM TRANSLATIONS
     backBtn: "Natrag",
     closeBtn: "Zatvori",
