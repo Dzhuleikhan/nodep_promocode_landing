@@ -314,14 +314,6 @@ if (twoStepFormSecondStep) {
     return st.available === true;
   };
 
-  // Проверка занятости почты ещё идёт (формат ок + Zeruh ок, но вердикта занятости нет).
-  const isEmailAvailPending = () => {
-    const v = twoStepFormEmailInput.value.trim();
-    if (!regex.test(v) || !emailDeliverableOk()) return false;
-    const st = getEmailStatus(currentEmail());
-    return !st || st.pending;
-  };
-
   // Запустить проверку занятости почты — только если формат ок и Zeruh не против.
   const maybeCheckEmailAvailability = () => {
     const v = twoStepFormEmailInput.value.trim();
@@ -386,10 +378,11 @@ if (twoStepFormSecondStep) {
       isEmailSyntaxValid && emailDeliverableOk() && isEmailOccupancyOk();
     const isPasswordValid = passwordValue.length >= 6;
 
-    // Во время проверки занятости — нейтральный цвет, не красный.
-    twoStepFormEmailInput.style.color = isEmailAvailPending()
+    // Во время проверки (Zeruh + занятость) — нейтральный цвет, не красный.
+    // Зелёный — только когда почта валидна ПОЛНОСТЬЮ: синтаксис + доставляемость + свободна.
+    twoStepFormEmailInput.style.color = isEmailChecking()
       ? "#8726FF"
-      : isEmailSyntaxValid
+      : isEmailValid
         ? validColor
         : invalidColor;
     twoStepFormPasswordInput.style.color = isPasswordValid
