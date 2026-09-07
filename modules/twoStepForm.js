@@ -170,12 +170,12 @@ const initiallyCheckedBonus = document.querySelector(
 if (initiallyCheckedBonus) syncAppliedBonus(initiallyCheckedBonus);
 
 // Пока гео не подтвердило страну, суммы показываются заглушкой и размываются
-// — так подмена значения не читается как дёрганье вёрстки
+// — так подмена значения не читается как дёрганье вёрстки.
+// Взводится классом в разметке: поставь его отсюда — и до выполнения модуля
+// успел бы отрисоваться чёткий дефолт.
 export const setCurrencyPending = (isPending) => {
   document.body.classList.toggle("is-currency-pending", isPending);
 };
-
-setCurrencyPending(true);
 
 export const settingInitialBonusValue = (currency) => {
   const currencyEntry = countryCurrencyData.find(

@@ -83,7 +83,7 @@
 #hero {
   /* Фоновая картинка поверх градиента-базы, монеты вынесены в ::before */
   background:
-    url('../img/backround-image.webp') center / cover no-repeat,
+    url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/backround-image.webp') center / cover no-repeat,
     radial-gradient(49.93% 49.93% at 50% 50.07%, #BE3737 0%, #120803 100%);
 }
 
@@ -95,7 +95,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url('../img/backround-coins.webp') center / cover no-repeat;
+  background: url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/backround-coins.webp') center / cover no-repeat;
   transform: scale(1);
   will-change: transform;
   animation: hero-coins-breathe 7s ease-in-out infinite alternate;
@@ -671,13 +671,13 @@
 }
 
 .gold-bricks-left .gold-bricks-shine {
-  -webkit-mask-image: url('../img/gold-bricks-left.webp');
-  mask-image: url('../img/gold-bricks-left.webp');
+  -webkit-mask-image: url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/gold-bricks-left.webp');
+  mask-image: url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/gold-bricks-left.webp');
 }
 
 .gold-bricks-right .gold-bricks-shine {
-  -webkit-mask-image: url('../img/gold-bricks-right.webp');
-  mask-image: url('../img/gold-bricks-right.webp');
+  -webkit-mask-image: url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/gold-bricks-right.webp');
+  mask-image: url('https://3344112-img.b-cdn.net/graphic/landings/cash_joker/gold-bricks-right.webp');
 }
 
 .gold-bricks-shine::after {
@@ -690,10 +690,15 @@
       transparent 58%);
   transform: translate3d(-75%, 0, 0);
   will-change: transform;
+}
+
+/* Анимация ждёт загрузки картинки: маска берётся из неё, и до этого момента
+   блик бежал бы по пустому месту. Класс вешает modules/heroShine.js */
+.gold-bricks.is-ready .gold-bricks-shine::after {
   animation: gold-bricks-shine 4.5s ease-in-out infinite;
 }
 
-.gold-bricks-right .gold-bricks-shine::after {
+.gold-bricks-right.is-ready .gold-bricks-shine::after {
   animation-delay: 1.2s;
 }
 
@@ -746,6 +751,8 @@
   ) {
   filter: blur(0.16em);
   opacity: 0.75;
+  /* переход нужен только на снятие размытия: появляться оно должно мгновенно */
+  transition: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -760,6 +767,12 @@
   ) {
     transition: none;
   }
+}
+
+/* Пока сумма — размытая заглушка, блик по ней бегать не должен:
+   он читается сквозь блюр и выдаёт, что данных ещё нет */
+.is-currency-pending .hero-amount-shine {
+  opacity: 0;
 }
 
 /* HERO AMOUNT */
@@ -813,6 +826,7 @@
   left: 0;
   top: 0;
   white-space: nowrap;
+  transition: opacity 0.3s ease;
   -webkit-text-stroke: 0;
   background: linear-gradient(105deg,
       transparent 42%,

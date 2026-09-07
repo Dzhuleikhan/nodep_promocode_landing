@@ -2,6 +2,7 @@ import "./style.css";
 import "intl-tel-input/build/css/intlTelInput.css";
 
 import "../modules/preloader";
+import "../modules/heroShine";
 import "../modules/slider";
 import "../modules/fetchingDomain";
 import "../modules/geoLocation";
