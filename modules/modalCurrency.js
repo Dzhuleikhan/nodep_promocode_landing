@@ -1,48 +1,28 @@
-import { geoData } from "./geoLocation";
+import { geoData, geoReady, geoConfirmed, isGeoFallback } from "./geoLocation";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
+import {
+  getCountryCurrencyABBR,
+  getCountryCurrencyFullName,
+  getCountryCurrencyIcon,
+  getCountryCurrencySymbol,
+  getCurrencyCountry,
+  getCurrencyForCountry,
+} from "./currency";
 import {
   checkTir1CurrencyMatch,
   twoStepFormData,
   settingInitialBonusValue,
+  setCurrencyPending,
 } from "./twoStepForm";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
-export function getCountryCurrencyABBR(inputCountry) {
-  for (const data of countryCurrencyData) {
-    if (data.countries.includes(inputCountry)) {
-      return data.countryCurrency;
-    }
-  }
-  return "USD"; // or some default value if country is not found
-}
-
-function getCountryCurrencyFullName(inputCountry) {
-  for (const data of countryCurrencyData) {
-    if (data.countries.includes(inputCountry)) {
-      return data.countryCurrencyFullName;
-    }
-  }
-  return "US Dollar"; // or some default value if country is not found
-}
-
-function getCountryCurrencyIcon(inputCountry) {
-  for (const data of countryCurrencyData) {
-    if (data.countries.includes(inputCountry)) {
-      return data.countryCurrencyIcon;
-    }
-  }
-  return CDN + "/currency_icons/USD.svg"; // or some default value if country is not found
-}
-
-function getCountryCurrencySymbol(inputCountry) {
-  for (const data of countryCurrencyData) {
-    if (data.countries.includes(inputCountry)) {
-      return data.countryCurrencySymbol;
-    }
-  }
-  return "$"; // or some default value if country is not found
-}
+// маппинг живёт в currency.js — реэкспорт, чтобы не править импорты по модулям
+export {
+  getCountryCurrencyABBR,
+  getCountryCurrencyIcon,
+  getCurrencyCountry,
+} from "./currency";
 
 function setCurrency(abbr, name, icon) {
   const formCurrency = document.querySelectorAll(".form-currency");
@@ -89,20 +69,9 @@ const settingFooterPayments = (currencyAbbr) => {
   });
 };
 
-async function settingModalCurrency() {
+function settingModalCurrency(detectedCountry) {
   try {
-    let locationData = geoData;
-    let countryInput = locationData.countryCode;
-
-    const excludedCountries = ["RU", "MX", "CL", "CO", "TH", "ID"];
-
-    if (excludedCountries.includes(countryInput)) {
-      countryInput = "US";
-    }
-
-    if (countryInput === "GB") {
-      countryInput = "FR";
-    }
+    const countryInput = getCurrencyCountry(detectedCountry);
 
     const currencyAbbr = getCountryCurrencyABBR(countryInput);
     const currencyFullName = getCountryCurrencyFullName(countryInput);
@@ -123,15 +92,41 @@ async function settingModalCurrency() {
     settingFooterPayments(currencyAbbr);
 
     twoStepFormData.currency = currencyData.abbr;
-    setTimeout(() => {
-      settingInitialBonusValue(twoStepFormData.currency);
-    }, 300);
+    settingInitialBonusValue(twoStepFormData.currency);
+    setCurrencyPending(false);
   } catch (error) {
     console.error("Error fetching location data:", error);
   }
 }
 
-settingModalCurrency();
+// Валюту игрок мог выбрать сам — тогда поздний ответ гео её не трогает.
+let isCurrencyPickedByUser = false;
+
+// Что уже проставлено: гео резолвится дважды (первый ответ и доливка), и на
+// успешном гео оба раза дают одну валюту — второй проход тогда не нужен.
+let appliedCurrency = null;
+
+// гео не определилось — дефолт в geoData польский, но навязывать игроку
+// злотый нельзя: берём нейтральный доллар
+const applyCurrencyForGeo = () => {
+  if (isCurrencyPickedByUser) return;
+
+  const detectedCountry = isGeoFallback ? "US" : geoData.countryCode;
+  const currencyAbbr = getCurrencyForCountry(detectedCountry);
+
+  if (currencyAbbr === appliedCurrency) return;
+  appliedCurrency = currencyAbbr;
+
+  settingModalCurrency(detectedCountry);
+};
+
+// По geoReady — чтобы суммы бонуса в заголовке и на номинале не пустовали те
+// секунды, пока идёт доливка: на провальном гео это нейтральный доллар.
+geoReady.then(applyCurrencyForGeo);
+
+// По geoConfirmed — когда страна подтверждена; если доливка принесла другую,
+// валюта переставится, иначе проход отсечётся по appliedCurrency.
+geoConfirmed.then(applyCurrencyForGeo);
 
 /**
  *  Currency dropdownxw
@@ -179,6 +174,7 @@ formCurrency.forEach((cur) => {
 
     currencyListItems.forEach((item) => {
       item.addEventListener("click", () => {
+        isCurrencyPickedByUser = true;
         currencyListItems.forEach((el) => {
           el.classList.remove("active");
         });
@@ -209,6 +205,7 @@ formCurrency.forEach((cur) => {
         settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
         twoStepFormData.currency = currencyData.abbr;
         settingInitialBonusValue(twoStepFormData.currency);
+        setCurrencyPending(false);
 
         twoStepFormData.bonus = checkTir1CurrencyMatch(
           twoStepFormData.currency,

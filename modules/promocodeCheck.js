@@ -1,20 +1,38 @@
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
+import { twoStepFormData } from "./twoStepForm";
 
-export const defaulPromocode = "GATES81";
-const headerLogoLink = document.querySelector(".header-logo-link");
+// Промокоды под тип бонуса. Дефолт переопределяется параметром ссылки
+// ?cashPromocode=...
+const BONUS_PROMOCODE_DEFAULTS = {
+  cash: "DJ30SO30",
+};
 
+export const bonusPromocodes = {
+  cash: (
+    getUrlParameter("cashPromocode") || BONUS_PROMOCODE_DEFAULTS.cash
+  ).toLocaleUpperCase(),
+};
+
+// Промокод по умолчанию для ссылок ленда — бонус, выбранный в форме изначально
+export const defaulPromocode = bonusPromocodes.cash;
+
+// Прямой ?promocode= имеет приоритет над промокодами бонусов
 export const receivedPromocode = (
   getUrlParameter("promocode") || ""
 ).toLocaleUpperCase();
 
-headerLogoLink.setAttribute(
-  "href",
-  `https://${newDomain}?promocode=${
-    receivedPromocode ? receivedPromocode : defaulPromocode
-  }`
-);
+const linkPromocode = receivedPromocode || defaulPromocode;
 
+document
+  .querySelector(".header-logo-link")
+  ?.setAttribute("href", `https://${newDomain}?promocode=${linkPromocode}`);
+
+document
+  .querySelector(".hero-modal-open-btn")
+  ?.setAttribute("data-promocode", linkPromocode);
+
+// | SPIN AMOUNT
 export const defaulSpinAmount = "100";
 
 export const receivedSpinAmount =
@@ -26,37 +44,47 @@ export function setSpinAmount() {
   });
 }
 
-document
-  .querySelector(".hero-modal-open-btn")
-  .setAttribute(
-    "data-promocode",
-    receivedPromocode ? receivedPromocode : defaulPromocode
-  );
+// | PROMOCODE PER BONUS
+// Промокод выбранного чекбокса бонуса.
+// У «Without Bonus» нет data-promocode-type — промокод не передаём.
+const getPromocodeForCheckedBonus = () => {
+  if (receivedPromocode) return receivedPromocode;
 
+  const checkedBonus = document.querySelector('input[name="bonus"]:checked');
+  const bonusType = checkedBonus?.dataset.promocodeType;
+
+  return bonusPromocodes[bonusType] || "";
+};
+
+// | PROMOCODE FIELD
+// Поле промокода на ленде показывается только когда код пришёл из URL
 export const togglePromocodeWrapper = (state) => {
   const formWrapper = document.querySelector(".form-promocode-wrapper");
   const promoWrapper = document.querySelector(".two-step-promocode-wrapper");
   const promoInput = document.querySelector(".two-step-promocode-input");
+  if (!formWrapper || !promoWrapper || !promoInput) return;
 
   if (state === "show") {
     formWrapper.classList.remove("hidden");
     promoWrapper.classList.add("is-visible", "is-valid");
-    promoInput.value =
-      typeof receivedPromocode !== "undefined" ? receivedPromocode : "";
-  } else if (state === "hide") {
+    promoInput.value = receivedPromocode;
+  } else {
     formWrapper.classList.add("hidden");
     promoWrapper.classList.remove("is-visible", "is-valid");
     promoInput.value = "";
-  } else {
-    console.warn(
-      "Invalid state passed to togglePromocodeWrapper. Use 'show' or 'hide'."
-    );
   }
 };
 
-if (receivedPromocode) {
-  togglePromocodeWrapper("show");
-} else {
-  console.log("There is no promocode received");
-  togglePromocodeWrapper("hide");
-}
+const applyPromocodeFromBonus = () => {
+  const promocode = getPromocodeForCheckedBonus();
+  twoStepFormData.promocode = promocode;
+
+  // Код из URL показываем пользователю, промокод бонуса подставляем молча
+  togglePromocodeWrapper(receivedPromocode && promocode ? "show" : "hide");
+};
+
+document.querySelectorAll('input[name="bonus"]').forEach((input) => {
+  input.addEventListener("change", applyPromocodeFromBonus);
+});
+
+applyPromocodeFromBonus();

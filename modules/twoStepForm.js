@@ -6,19 +6,15 @@ import {
   hasStateField,
   formatPostalCode,
   validatePostalCodeFormat,
+  getCashBonusAmount,
 } from "../public/data";
-import { geoData, settingZipCodePlaceholder } from "./geoLocation";
+import { geoData, geoReady, settingZipCodePlaceholder } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import flatpickr from "flatpickr";
-import {
-  defaulPromocode,
-  receivedPromocode,
-  togglePromocodeWrapper,
-} from "./promocodeCheck";
 import {
   checkPhoneAvailability,
   getPhoneStatus,
@@ -39,10 +35,17 @@ document.querySelectorAll("input").forEach((input) => {
 
 const PHONE_ONLY_COUNTRIES = [];
 const hideEmail = false;
-const isPhoneOnlyMode =
+// Режим читают обработчики по всему модулю, поэтому это переменная модуля,
+// а не локальная: на старте считаем по дефолтной стране, по приходу гео уточняем.
+let isPhoneOnlyMode =
   PHONE_ONLY_COUNTRIES.includes(geoData.countryCode) || hideEmail;
 
-if (isPhoneOnlyMode) {
+const applyPhoneOnlyMode = () => {
+  isPhoneOnlyMode =
+    PHONE_ONLY_COUNTRIES.includes(geoData.countryCode) || hideEmail;
+
+  if (!isPhoneOnlyMode) return;
+
   document.querySelector(".two-step-email-wrapper")?.classList.add("hidden");
   document
     .querySelector(".two-step-step2-title-default")
@@ -50,7 +53,10 @@ if (isPhoneOnlyMode) {
   document
     .querySelector(".two-step-step2-title-phone")
     ?.classList.remove("hidden");
-}
+};
+
+applyPhoneOnlyMode();
+geoReady.then(applyPhoneOnlyMode);
 
 // ? SOCIALS TWO STEP FORM
 
@@ -64,7 +70,7 @@ export let twoStepFormData = {
   birthday: "",
   gender: "",
   country: "",
-  currency: geoData.currency.code === "RUB" ? "USD" : geoData.currency.code,
+  currency: geoData.currency?.code === "RUB" ? "USD" : geoData.currency?.code,
   phone: "",
   state: "",
   city: "",
@@ -113,50 +119,63 @@ const twoStepBonusCheckbox = document.querySelectorAll(
 );
 const appliedBonusWrapper = document.querySelectorAll(".applied-bonus-wrapper");
 
+// Переносим содержимое строки бонуса вместе с ключом перевода, иначе при смене
+// языка блок «выбранный бонус» вернётся к тексту, зашитому в разметке
+const copyBonusLine = (source, target) => {
+  if (!target) return;
+
+  target.innerHTML = source?.innerHTML ?? "";
+
+  const translateKey = source?.getAttribute("data-translate");
+  if (translateKey) {
+    target.setAttribute("data-translate", translateKey);
+  } else {
+    target.removeAttribute("data-translate");
+  }
+};
+
+// Показываем выбранный бонус в шапке 2-го и следующих шагов
+const syncAppliedBonus = (input) => {
+  const checkbox = input.closest(".two-step-bonus-checkbox");
+  const bonusImg = input.getAttribute("data-img");
+  const bonusName = checkbox.querySelector(".two-step-bonus-checkbox-name");
+  // у Cash-карточки второй строки нет — подпись может отсутствовать
+  const bonusText = checkbox.querySelector(".two-step-bonus-checkbox-text");
+
+  appliedBonusWrapper.forEach((appliedBonus) => {
+    const img = appliedBonus.querySelector(".applied-bonus-img");
+
+    img.setAttribute("src", bonusImg);
+    copyBonusLine(bonusName, appliedBonus.querySelector(".applied-bonus-name"));
+    copyBonusLine(bonusText, appliedBonus.querySelector(".applied-bonus-text"));
+  });
+};
+
 twoStepBonusCheckbox.forEach((checkbox) => {
   const input = checkbox.querySelector("input");
   input.addEventListener("change", () => {
-    const bonusValue = input.value;
-
-    const bonusImg = input.getAttribute("data-img");
-    const bonusName = checkbox.querySelector(
-      ".two-step-bonus-checkbox-name",
-    ).innerHTML;
-    const bonusText = checkbox.querySelector(
-      ".two-step-bonus-checkbox-text",
-    ).innerHTML;
-
-    if (bonusValue === "welcome-bonus-1" || bonusValue === "0") {
-      twoStepFormData.promocode = "";
-      if (receivedPromocode) {
-        togglePromocodeWrapper("hide");
-      }
-    } else {
-      twoStepFormData.promocode = receivedPromocode
-        ? receivedPromocode
-        : defaulPromocode;
-      if (receivedPromocode) {
-        togglePromocodeWrapper("show");
-      }
-    }
-    twoStepFormData.bonus = bonusValue;
-
     twoStepFormData.bonus = checkTir1CurrencyMatch(
       twoStepFormData.currency,
-      twoStepFormData.bonus,
+      input.value,
     );
 
-    appliedBonusWrapper.forEach((appliedBonus) => {
-      const img = appliedBonus.querySelector(".applied-bonus-img");
-      const name = appliedBonus.querySelector(".applied-bonus-name");
-      const text = appliedBonus.querySelector(".applied-bonus-text");
-
-      img.setAttribute("src", bonusImg);
-      name.innerHTML = bonusName;
-      text.innerHTML = bonusText;
-    });
+    syncAppliedBonus(input);
   });
 });
+
+// Стартовая синхронизация — бонус выбран по умолчанию, change не сработает
+const initiallyCheckedBonus = document.querySelector(
+  'input[name="bonus"]:checked',
+);
+if (initiallyCheckedBonus) syncAppliedBonus(initiallyCheckedBonus);
+
+// Пока гео не подтвердило страну, суммы показываются заглушкой и размываются
+// — так подмена значения не читается как дёрганье вёрстки
+export const setCurrencyPending = (isPending) => {
+  document.body.classList.toggle("is-currency-pending", isPending);
+};
+
+setCurrencyPending(true);
 
 export const settingInitialBonusValue = (currency) => {
   const currencyEntry = countryCurrencyData.find(
@@ -183,6 +202,9 @@ export const settingInitialBonusValue = (currency) => {
     document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
       el.innerHTML = currencyEntry.spins;
     });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = currencyEntry.countryCurrencySymbol;
+    });
     document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
       el.innerHTML = currencyEntry.countryCurrency;
     });
@@ -196,7 +218,16 @@ export const settingInitialBonusValue = (currency) => {
     document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
       el.innerHTML = "200FS";
     });
+    document.querySelectorAll(".two-step-welcome-symbol").forEach((el) => {
+      el.innerHTML = "€";
+    });
   }
+
+  // Cash bonus: сумма из cashBonusAmount (свой список валют, фолбэк на EUR)
+  const cashBonusEntry = getCashBonusAmount(currency);
+  document.querySelectorAll(".cash-bonus-amount").forEach((el) => {
+    el.innerHTML = cashBonusEntry.amount;
+  });
 };
 
 // | INPUTS
@@ -986,9 +1017,13 @@ if (twoStepFormFourthStep) {
   });
 
   // Choosing country from dropdown
+  // страну игрок мог выбрать сам — поздний ответ гео её тогда не трогает
+  let isCountryPickedByUser = false;
+
   twoStepCountryList.addEventListener("click", (event) => {
     const item = event.target.closest(".two-step-country-list-item"); // Replace with your item class or selector
     if (item) {
+      isCountryPickedByUser = true;
       const countryCode = item.getAttribute("countryCode");
       const name = item.querySelector("span")?.textContent || "No name found";
       const imageUrl = item.querySelector("img")?.src || "No image found";
@@ -1029,7 +1064,15 @@ if (twoStepFormFourthStep) {
     }
   };
 
-  applyDetectedCountry();
+  // страна проставляется, когда доедет гео — форма к этому моменту скрыта
+  geoReady.then(applyDetectedCountry);
+
+  // первый запрос гео отвалился по таймауту и ленд встал на дефолт PL — ответ
+  // приехал позже, переставляем страну, пока игрок не выбрал её сам
+  window.addEventListener("geo:refined", () => {
+    if (isCountryPickedByUser) return;
+    applyDetectedCountry();
+  });
   // Adding countries to dropdown
 
   const renderCountries = (filter = "") => {
@@ -1355,8 +1398,6 @@ twoStepFormMain.addEventListener("submit", (e) => {
     }`,
   );
 });
-
-gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
 
 // Closing modal
 

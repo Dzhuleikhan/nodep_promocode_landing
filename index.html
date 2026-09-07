@@ -5,6 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-translate="pageTitle">🎁 Your bonus is ready - Goldbet</title>
+    <!-- Гео стартуем до бандла. В модулях этот запрос начинался только после
+         загрузки и разбора JS. Здесь он идёт параллельно с CSS и бандлом. -->
+    <script>
+      (function () {
+        var controller = new AbortController();
+        // 2.5 с не хватало мобильной сети: запрос абортился, и ленд уходил на
+        // фолбэк PL/PLN. Держим тот же таймаут, что и в modules/geoLocation.js.
+        setTimeout(function () {
+          controller.abort();
+        }, 6000);
+
+        window.__geoRequest = fetch(
+          "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
+          { signal: controller.signal }
+        ).catch(function () {
+          return null;
+        });
+      })();
+    </script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -20,7 +39,7 @@
       data-pg-phone-selector="[data-pg='phone']"
     ></script>
   </head>
-  <body class="bg-[#091025] overscroll-none">
+  <body class="bg-[#251309] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
       <header
         class="py-[29px] max-[1200px]:py-[13px] absolute leading-0 top-0 w-full z-[500]"
@@ -79,93 +98,84 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/seven.webp"
-            alt="Seven"
-          />
-          <img
-            class="absolute orange-img left-[50%] z-[11] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/orange.webp"
-            alt="Orange"
-          />
-          <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/watermelon.webp"
-            alt="watermelon"
-          />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star.webp"
-            alt="star"
-          />
-          <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/plum.webp"
-            alt="plum"
-          />
+          <div
+            class="gold-bricks gold-bricks-left pointer-events-none absolute bottom-0 left-0 z-[16] w-[452px] max-[1200px]:w-[320px] max-[992px]:w-[260px] max-[576px]:w-[150px]"
+          >
+            <img
+              class="w-full"
+              width="452"
+              height="325"
+              src="./img/gold-bricks-left.webp"
+              alt="Gold bricks"
+            />
+            <span class="gold-bricks-shine"></span>
+          </div>
+          <div
+            class="gold-bricks gold-bricks-right pointer-events-none absolute bottom-0 right-0 z-[16] w-[479px] max-[1200px]:w-[340px] max-[992px]:w-[275px] max-[576px]:w-[160px]"
+          >
+            <img
+              class="w-full"
+              width="479"
+              height="341"
+              src="./img/gold-bricks-right.webp"
+              alt="Gold bricks"
+            />
+            <span class="gold-bricks-shine"></span>
+          </div>
           <!-- container -->
           <div
-            class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
+            class="hero-container max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
           >
+            <!-- Девушка выше слитков (z-10), но ниже контента (z-20): номинал
+                 должен перекрывать её руку, как в макете.
+                 Размер задан от высоты hero, а не в пикселях: высота секции
+                 зависит от длины перевода (на русском заголовок в 4 строки,
+                 на английском в 3), и фиксированная картинка на высокой секции
+                 смотрелась мелкой. max-w-none обязателен — иначе preflight
+                 обрежет ширину по контейнеру и сломает пропорции. -->
+            <img
+              class="joker-girl pointer-events-none absolute bottom-0 right-0 z-[15] h-[80%] max-h-[640px] w-auto max-w-none max-[992px]:h-[68%] max-[576px]:h-[58%] max-[576px]:-right-[10%]"
+              width="592"
+              height="565"
+              src="./img/joker-girl.webp"
+              alt="Joker"
+            />
             <!-- inner -->
             <div class="relative z-20">
               <div
                 class="hero-info-inner max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
               >
-                <div class="wager-badge">
-                  <div class="wager-badge-inner">
-                    <p class="wager-badge-amount" data-text="20X">20X</p>
-                    <p class="wager-badge-text" data-translate="lowWager">
-                      Low wager!
-                    </p>
-                  </div>
-                </div>
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
+                  class="hero-title max-w-[600px] text-balance text-[48px] uppercase max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black leading-[112%] text-white"
                 ></h1>
                 <p
                   data-translate="heroSubtitle"
                   class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
                 ></p>
-                <button
-                  data-translate="heroBtn"
-                  data-promocode=""
-                  class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[350px]:px-4 max-[350px]:w-full"
+                <div
+                  class="hero-cta relative inline-flex max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center"
                 >
-                  GET BONUS
-                </button>
+                  <button
+                    data-translate="heroBtn"
+                    data-promocode=""
+                    class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 text-white mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[576px]:w-full max-[576px]:px-6 max-[576px]:text-xl max-[350px]:px-4"
+                  >
+                    GET BONUS
+                  </button>
+                  <p
+                    class="hero-amount pointer-events-none z-20 font-black leading-none max-[1200px]:text-[150px] max-[992px]:text-[110px] max-[576px]:text-[100px] text-[200px]"
+                  >
+                    <span class="cash-bonus-amount"></span
+                    ><span class="two-step-welcome-symbol"></span>
+                    <span class="hero-amount-shine" aria-hidden="true"
+                      ><span class="cash-bonus-amount"></span
+                      ><span class="two-step-welcome-symbol"></span
+                    ></span>
+                  </p>
+                </div>
               </div>
             </div>
-            <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] z-[3] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
-              alt="Zeus"
-            />
           </div>
         </section>
         <!-- container -->
@@ -173,7 +183,7 @@
           class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
         >
           <div
-            class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12 max-[576px]:px-[40px] max-[350px]:px-[46px]"
+            class="bg-[#6C0B0B] relative border-2 border-[#CE7237] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12 max-[576px]:px-[40px] max-[350px]:px-[46px]"
           >
             <div class="step-slider" dir="ltr">
               <div class="swiper-wrapper">
@@ -446,12 +456,13 @@
                 >
                   <label class="two-step-bonus-checkbox relative block">
                     <input
-                      class="welcome-bonus-input absolute appearance-none"
+                      class="absolute appearance-none"
                       checked
                       type="radio"
                       name="bonus"
                       value=""
-                      data-img="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                      data-promocode-type="cash"
+                      data-img="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                     />
                     <div
                       class="two-step-bonus-checkbox-div flex cursor-pointer items-center justify-between gap-5 rounded-2xl border-4 border-transparent bg-[#3d1b68] p-[10px] xs:gap-[10px]"
@@ -463,69 +474,18 @@
                           <img
                             width="52"
                             height="52"
-                            src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                            src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                             alt="Image"
                           />
                         </div>
                         <div class="space-y-[5px]">
                           <p
-                            data-translate="depToBalance"
+                            data-translate="cashBonus"
                             class="two-step-bonus-checkbox-name text-lg font-bold leading-[117%] tracking-[0.02em] xs:text-sm"
                           >
-                            <span class="nodep-bonus-amount"></span>
-                            <span class="nodep-bonus-currency"></span> to the
-                            balance
-                          </p>
-                          <p
-                            data-translate="withoutDeposit"
-                            class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
-                          >
-                            Without deposit
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        class="two-step-bonus-checkbox-circle relative h-9 w-9 shrink-0 rounded-full bg-[#22072B] xs:h-7 xs:w-7"
-                      ></div>
-                    </div>
-                  </label>
-                  <label class="two-step-bonus-checkbox relative block">
-                    <input
-                      class="welcome-bonus-input absolute appearance-none"
-                      type="radio"
-                      name="bonus"
-                      value="welcome-bonus-1"
-                      data-img="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/welcome-bonus-icon.webp"
-                    />
-                    <div
-                      class="two-step-bonus-checkbox-div flex cursor-pointer items-center justify-between gap-5 rounded-2xl border-4 border-transparent bg-[#3d1b68] p-[10px] xs:gap-[10px]"
-                    >
-                      <div class="flex items-center gap-[10px]">
-                        <div
-                          class="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-xl xs:h-10 xs:w-10"
-                        >
-                          <img
-                            width="52"
-                            height="52"
-                            src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/welcome-bonus-icon.webp"
-                            alt="Image"
-                          />
-                        </div>
-                        <div class="space-y-[5px]">
-                          <p
-                            data-translate="welcomeBonus"
-                            class="two-step-bonus-checkbox-name text-lg font-bold leading-[117%] tracking-[0.02em] xs:text-sm"
-                          >
-                            Welcome Bonus
-                          </p>
-                          <p
-                            class="two-step-bonus-checkbox-text text-[15px] leading-[160%] xs:text-xs"
-                          >
-                            <span class="two-step-bonus-percent"></span> +
-                            <span class="two-step-bonus-spins"></span>
-                            <span data-translate="welcomeBonusText"
-                              >on your first deposit</span
-                            >
+                            Cash Bonus
+                            <span class="cash-bonus-amount"></span>
+                            <span class="two-step-welcome-symbol"></span>
                           </p>
                         </div>
                       </div>
@@ -695,23 +655,22 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
+                        data-translate="cashBonus"
                         class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
-                        10 EUR to the balance
+                        Cash Bonus
+                        <span class="cash-bonus-amount"></span>
+                        <span class="two-step-welcome-symbol"></span>
                       </p>
                       <p
-                        data-translate="withoutDeposit"
                         class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -864,23 +823,22 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
+                        data-translate="cashBonus"
                         class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
-                        10 EUR to the balance
+                        Cash Bonus
+                        <span class="cash-bonus-amount"></span>
+                        <span class="two-step-welcome-symbol"></span>
                       </p>
                       <p
-                        data-translate="withoutDeposit"
                         class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -1135,23 +1093,22 @@
                         class="applied-bonus-img"
                         width="52"
                         height="52"
-                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                        src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                         alt="Image"
                       />
                     </div>
                     <div class="space-y-[5px]">
                       <p
-                        data-translate="depToBalance"
+                        data-translate="cashBonus"
                         class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                       >
-                        10 EUR to the balance
+                        Cash Bonus
+                        <span class="cash-bonus-amount"></span>
+                        <span class="two-step-welcome-symbol"></span>
                       </p>
                       <p
-                        data-translate="withoutDeposit"
                         class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                      >
-                        Without deposit
-                      </p>
+                      ></p>
                     </div>
                   </div>
                   <svg
@@ -2117,23 +2074,22 @@
                   class="applied-bonus-img"
                   width="52"
                   height="52"
-                  src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/crypto-bonus-icon.webp"
+                  src="https://3344112-img.b-cdn.net/graphic/landings/twoStepFormImages/highroller-bonus-icon.webp"
                   alt="Image"
                 />
               </div>
               <div class="space-y-[5px]">
                 <p
-                  data-translate="depToBalance"
+                  data-translate="cashBonus"
                   class="applied-bonus-name text-lg font-bold leading-[117%] tracking-[0.02em] max-[576px]:text-sm"
                 >
-                  Welcome Bonus
+                  Cash Bonus
+                  <span class="cash-bonus-amount"></span>
+                  <span class="two-step-welcome-symbol"></span>
                 </p>
                 <p
-                  data-translate="withoutDeposit"
                   class="applied-bonus-text text-[15px] leading-[160%] max-[576px]:text-xs"
-                >
-                  Without deposit
-                </p>
+                ></p>
               </div>
             </div>
             <svg

@@ -81,7 +81,41 @@
 
 
 #hero {
-  background: radial-gradient(49.93% 49.93% at 50% 50.07%, #377bbe 0%, #120803 100%);
+  /* Фоновая картинка поверх градиента-базы, монеты вынесены в ::before */
+  background:
+    url('../img/backround-image.webp') center / cover no-repeat,
+    radial-gradient(49.93% 49.93% at 50% 50.07%, #BE3737 0%, #120803 100%);
+}
+
+/* Монеты отдельным слоем, а не фоном секции: background-size анимируется
+   перерисовкой, а transform на псевдоэлементе уходит на композитор */
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url('../img/backround-coins.webp') center / cover no-repeat;
+  transform: scale(1);
+  will-change: transform;
+  animation: hero-coins-breathe 7s ease-in-out infinite alternate;
+}
+
+/* Только вверх от 1: уменьшение оголило бы края слоя */
+@keyframes hero-coins-breathe {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero::before {
+    animation: none;
+  }
 }
 
 .hero-title {
@@ -94,7 +128,7 @@
 
 .hero-btn {
   box-shadow: inset 0 6px 6px 0 #fff, 0 8px 12px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(180deg, #ffc814 53.2%, #ff8d01 100%);
+  background: linear-gradient(180deg, #EB48EB 53.2%, #9A03E6 100%);
 }
 
 .step-slider .swiper-slide {
@@ -537,35 +571,6 @@
   transform: translate(-50%, -50%);
 }
 
-.hero-main-img {
-  left: auto;
-  right: auto;
-  inset-inline-start: 280px;
-}
-
-[dir="rtl"] .hero-main-img {
-  inset-inline-start: 380px;
-}
-
-@media (max-width: 992px) {
-  .hero-main-img {
-    inset-inline-start: 50%;
-    margin-inline-start: -450px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-main-img {
-    inset-inline-start: auto;
-    margin-inline-start: calc(50% - 300px);
-  }
-
-  [dir="rtl"] .hero-main-img {
-    inset-inline-start: auto;
-    margin-inline-start: calc(50% - 300px);
-  }
-}
-
 
 /* Postal Code hint tooltip */
 .two-step-zipcode-info {
@@ -647,137 +652,330 @@
   transform: translateY(0);
 }
 
-/* WAGER BADGE */
+/* GOLD BRICKS SHINE */
 
-.hero-info-inner {
-  position: relative;
+.gold-bricks {
+  line-height: 0;
 }
 
-/* Угол градиента рамки — регистрируем как <angle>, иначе он не анимируется */
-@property --wager-badge-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.wager-badge {
-  position: absolute;
-  left: 360px;
-  top: -89px;
-  background: linear-gradient(to bottom, #FF8AA3, #A11505);
-  background: linear-gradient(var(--wager-badge-angle), #FF8AA3, #A11505);
-  transform: rotate(5deg);
-  border-radius: 22px;
-  padding: 5px;
-  animation: wager-badge-spin 4s linear infinite;
-  /* Свой слой, иначе scale перерисовывает текст каждый кадр и он дрожит */
-  will-change: transform;
-}
-
-@keyframes wager-badge-spin {
-  to {
-    --wager-badge-angle: 360deg;
-  }
-}
-
-.wager-badge-inner {
-  position: relative;
-  border-radius: 18px;
-  width: 100%;
-  height: 100%;
-  background: #BF0E34;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  gap: 8px;
-  text-transform: uppercase;
-}
-
-/* Блик: полоса едет слева направо поверх содержимого, затем пауза до следующего цикла */
-.wager-badge-inner::after {
-  content: "";
+/* Блик обрезаем маской по силуэту слитков — иначе светлая полоса
+   поедет и по прозрачным углам картинки */
+.gold-bricks-shine {
   position: absolute;
   inset: 0;
-  z-index: 2;
-  border-radius: inherit;
-  pointer-events: none;
-  background-image: linear-gradient(105deg,
+  overflow: hidden;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.gold-bricks-left .gold-bricks-shine {
+  -webkit-mask-image: url('../img/gold-bricks-left.webp');
+  mask-image: url('../img/gold-bricks-left.webp');
+}
+
+.gold-bricks-right .gold-bricks-shine {
+  -webkit-mask-image: url('../img/gold-bricks-right.webp');
+  mask-image: url('../img/gold-bricks-right.webp');
+}
+
+.gold-bricks-shine::after {
+  content: '';
+  position: absolute;
+  inset: 0 -60%;
+  background: linear-gradient(105deg,
       transparent 42%,
-      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.55) 50%,
       transparent 58%);
-  background-repeat: no-repeat;
-  background-size: 250% 100%;
-  animation: wager-badge-shine 4.5s ease-in-out infinite;
+  transform: translate3d(-75%, 0, 0);
+  will-change: transform;
+  animation: gold-bricks-shine 4.5s ease-in-out infinite;
 }
 
-@keyframes wager-badge-shine {
-  0% {
-    background-position: 100% 0;
+.gold-bricks-right .gold-bricks-shine::after {
+  animation-delay: 1.2s;
+}
+
+@keyframes gold-bricks-shine {
+
+  0%,
+  20% {
+    transform: translate3d(-75%, 0, 0);
   }
 
-  45%,
+  65%,
   100% {
-    background-position: 0 0;
+    transform: translate3d(75%, 0, 0);
   }
 }
 
-/* Слой обводки: белые буквы с обводкой, поверх них ::after кладёт градиентную заливку */
-.wager-badge-amount {
-  position: relative;
-  font-size: 52px;
-  font-weight: 900;
-  line-height: 1;
-  color: #ffffff;
-  -webkit-text-stroke: 4px #ffffff;
-  paint-order: stroke fill;
-  filter: drop-shadow(0 4px 5px #2A0707);
+@media (prefers-reduced-motion: reduce) {
+  .gold-bricks-shine::after {
+    animation: none;
+  }
 }
 
-.wager-badge-amount::after {
-  content: attr(data-text);
+/* CURRENCY PLACEHOLDER */
+
+/* Суммы приезжают после гео. Пустые спаны дёргали вёрстку, поэтому до ответа
+   стоят дефолты, размытые до неразборчивости: подмена значения читается как
+   «данные подгрузились», а не как скачок. Блюр в em — те же спаны стоят и в
+   заголовке 48px, и на номинале 200px. */
+:where(
+  .cash-bonus-amount,
+  .two-step-welcome-symbol,
+  .bonus-total-amount,
+  .bonus-currency-symbol,
+  .two-step-bonus-percent,
+  .two-step-bonus-spins,
+  .actual-spin-amount
+) {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.is-currency-pending
+  :where(
+    .cash-bonus-amount,
+    .two-step-welcome-symbol,
+    .bonus-total-amount,
+    .bonus-currency-symbol,
+    .two-step-bonus-percent,
+    .two-step-bonus-spins,
+    .actual-spin-amount
+  ) {
+  filter: blur(0.16em);
+  opacity: 0.75;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(
+    .cash-bonus-amount,
+    .two-step-welcome-symbol,
+    .bonus-total-amount,
+    .bonus-currency-symbol,
+    .two-step-bonus-percent,
+    .two-step-bonus-spins,
+    .actual-spin-amount
+  ) {
+    transition: none;
+  }
+}
+
+/* HERO AMOUNT */
+
+/* Номинал висит на правом краю кнопки: left: 100% отсчитывается от обёртки,
+   а она по ширине равна кнопке. Длинный перевод внутри кнопки просто отодвинет
+   номинал, наезда не будет */
+.hero-amount {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 24px;
+  color: #BE5CF0;
+  transform: translateY(-50%) rotate(-6deg);
+  /* Контур в em — чтобы толщина ехала вместе с кеглем на брейкпоинтах */
+  -webkit-text-stroke: 0.05em #fff;
+  /* Обводка уходит под заливку, иначе она съедает половину толщины глифа */
+  paint-order: stroke fill;
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.45));
+  /* Пульс задан отдельным свойством scale, а не через transform: там уже лежат
+     поворот и центровка, причём разные на десктопе и на мобиле */
+  animation: hero-amount-pulse 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes hero-amount-pulse {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.05;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-amount {
+    animation: none;
+  }
+}
+
+/* Тёплое свечение под номиналом — чтобы текст не сливался с фоном.
+   z-index -1 держит его под глифами: filter на родителе уже создал
+   контекст наложения, наружу слой не вылезет */
+/* Блик — точная копия текста поверх оригинала, но без обводки.
+   Вешать background-clip: text на сам номинал нельзя: фон клиппится по тому же
+   контуру, по которому идёт обводка, и на стыках вылезают белые швы.
+   У копии обводки нет, поэтому клип чистый. Позиции, кегль и поворот
+   наследуются от родителя — слои совпадают на любом брейкпоинте. */
+.hero-amount-shine {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-text-stroke-width: 0;
-  background-image: linear-gradient(to bottom, #E6B103, #FF6200);
+  white-space: nowrap;
+  -webkit-text-stroke: 0;
+  background: linear-gradient(105deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.85) 50%,
+      transparent 58%);
+  background-size: 300% 100%;
+  background-repeat: no-repeat;
+  background-position: 80% 0;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  animation: hero-amount-shine 4.5s ease-in-out infinite;
 }
 
-.wager-badge-text {
-  font-size: 28px;
-  font-weight: 800;
-  color: #ffffff;
-  filter: drop-shadow(0 4px 5px #2A0707);
+/* background-position в процентах при фоне шире блока двигает его влево,
+   поэтому убывающие значения гонят блик слева направо */
+@keyframes hero-amount-shine {
+
+  0%,
+  20% {
+    background-position: 80% 0;
+  }
+
+  65%,
+  100% {
+    background-position: -5% 0;
+  }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero-amount-shine {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+.hero-amount::before {
+  content: '';
+  position: absolute;
+  inset: 18% 6%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #FFAE00;
+  opacity: 0.75;
+  filter: blur(71.85px);
+}
+
+/* На планшете и телефоне колонка центрируется, а кнопка уезжает вниз —
+   номинал перестаёт быть спутником кнопки справа и встаёт над её левым краем.
+   Обёртка при этом обязана ужиматься по кнопке: растянутая во всю ширину, она
+   увела бы номинал к краю экрана. Отступ под джокера переносим с кнопки на
+   обёртку — иначе он попадёт в её бокс, и bottom: 100% отсчитается от верха
+   отступа, а не от кнопки. */
 @media (max-width: 992px) {
-  .wager-badge {
-    position: relative;
-    left: auto;
+  .hero-cta {
+    width: auto;
+    margin-top: 300px;
+  }
+
+  .hero-cta>.hero-modal-open-btn {
+    margin-top: 0;
+  }
+
+  /* Сдвиг и зазор в em — чтобы на всех кеглях (110px планшет, 56px телефон)
+     номинал одинаково садился в верхний левый угол кнопки */
+  .hero-amount {
+    position: absolute;
+    left: -0.45em;
+    right: auto;
     top: auto;
-    transform: rotate(0);
-    margin-bottom: 16px;
+    bottom: 130%;
+    margin: 0 0 -0.04em;
+    transform: rotate(-6deg);
   }
 }
 
 @media (max-width: 576px) {
-  .wager-badge {
-    margin-bottom: 10px;
+
+  /* кнопка тут во всю ширину — обёртке тоже нужна полная, иначе они
+     ссылаются на ширину друг друга */
+  .hero-cta {
+    width: 100%;
+    margin-top: 210px;
   }
 
-  .wager-badge-amount {
-    font-size: 36px;
+  .hero-amount {
+    left: 0;
+    -webkit-text-stroke-width: 0.075em;
   }
 
-  .wager-badge-text {
-    font-size: 20px;
+  /* блик под кегль 100px */
+  .hero-amount::before {
+    inset: 14% 4%;
+    filter: blur(52px);
+  }
+}
+
+/* Горизонтальный телефон: по высоте места нет, по ширине есть — возвращаем
+   десктопную раскладку в уменьшенном виде вместо центрированной колонки.
+   Ловим по высоте, а не по ширине: 844x390 иначе попадает в мобильную ветку
+   и получает 300px отступа под кнопкой, которых на экране просто нет. */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-container {
+    padding-top: 76px;
+    /* блок шагов ниже сдвинут вверх на 40px (-top-[40px]) — этот отступ
+       должен его перекрывать, иначе под кнопкой зазора не остаётся */
+    padding-bottom: 90px;
   }
 
-  .wager-badge-inner {
-    flex-wrap: wrap;
+  .hero-info-inner {
+    display: block;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    max-width: 420px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 340px;
+    margin-top: 8px;
+  }
+
+  /* inline-flex обязателен: max-[992px]:flex делает обёртку блочной, она
+     растягивается во всю ширину контейнера, и номинал с left: 100% уезжает
+     за правый край — секция его обрезает по overflow-hidden.
+     margin-top обнуляем: отступ под джокера по высоте тут не влезает. */
+  .hero-cta {
+    display: inline-flex;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .hero-cta>.hero-modal-open-btn {
+    margin-top: 20px;
+    width: auto;
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+
+  .hero-amount {
+    position: absolute;
+    left: 100%;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    margin-left: 16px;
+    font-size: 76px;
+    transform: translateY(-50%) rotate(-6deg);
+  }
+
+  .joker-girl {
+    height: 88%;
+    right: -4%;
+  }
+
+  .gold-bricks-left {
+    width: 190px;
+  }
+
+  .gold-bricks-right {
+    width: 200px;
   }
 }

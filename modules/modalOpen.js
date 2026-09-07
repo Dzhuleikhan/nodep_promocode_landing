@@ -1,15 +1,10 @@
-import { twoStepFormData } from "./twoStepForm";
-
 const modalOpenBtns = document.querySelectorAll(".hero-modal-open-btn");
 const formOverlay = document.querySelector(".two-step-overlay");
 
+// Промокод формы задаёт promocodeCheck по выбранному бонусу — здесь только открытие модалки
 modalOpenBtns.forEach((btn) => {
-  let currentPromocode = btn.getAttribute("data-promocode");
-  twoStepFormData.promocode = currentPromocode;
-  if (btn) {
-    btn.addEventListener("click", () => {
-      formOverlay.classList.add("is-open");
-      document.body.style.overflow = "hidden";
-    });
-  }
+  btn.addEventListener("click", () => {
+    formOverlay.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  });
 });

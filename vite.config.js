@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 const DEV_PROXY_TARGET = "https://goldbet.fun";
 
 export default defineConfig({
-  base: "https://landing-res.b-cdn.net/freespins/gatesofolympus/",
+  base: "https://landing-res.b-cdn.net/ndb/multigeo/long-reg/30/",
   esbuild: {
     supported: {
       "top-level-await": true,

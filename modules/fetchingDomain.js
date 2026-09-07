@@ -1,4 +1,4 @@
-import { geoData } from "./geoLocation";
+import { geoReady } from "./geoLocation";
 
 // Fetching domain from API
 export const fetchDomain = async (countryCode) => {
@@ -25,9 +25,17 @@ export const fetchDomain = async (countryCode) => {
 
 export let newDomain = "g01d63t1.win";
 
-fetchDomain(geoData.countryCode).then((domain) => {
-  newDomain = domain;
-});
+const applyDomainFor = (countryCode) =>
+  fetchDomain(countryCode).then((domain) => {
+    newDomain = domain;
+  });
+
+geoReady.then((geo) => applyDomainFor(geo.countryCode));
+
+// гео доехало позже таймаута — домен был подобран под дефолтную страну
+window.addEventListener("geo:refined", (event) =>
+  applyDomainFor(event.detail.countryCode),
+);
 
 function updatingBonusValueNumbers() {
   const dropd = document.querySelectorAll(".form-bonus-dropdown");
