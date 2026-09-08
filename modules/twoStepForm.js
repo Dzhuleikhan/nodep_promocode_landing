@@ -747,13 +747,29 @@ if (twoStepFormThirdStep) {
   const minBirthDate = new Date();
   minBirthDate.setFullYear(minBirthDate.getFullYear() - 100);
 
+  // По умолчанию flatpickr цепляется к инпуту, а инпут здесь — средняя колонка
+  // грида: он обрывается левее иконки календаря, и всплывашка со стрелкой
+  // уезжала от неё. Якорим на всю строку поля — тогда край календаря совпадает
+  // с краем поля, а стрелку доводим до центра иконки в CSS
+  // (.flatpickr-calendar.arrowRight::before).
   const calendar = flatpickr(twoStepBirthdayInput, {
     allowInput: true,
     dateFormat: "d.m.Y",
     maxDate: "today",
     minDate: minBirthDate,
     disableMobile: true,
+    positionElement: twoStepBirthdayInput.closest(".two-step-birthday-wrapper"),
   });
+
+  // В RTL иконка переезжает в левый край поля — вместе с ней и точка привязки.
+  const syncCalendarPosition = () => {
+    calendar.set(
+      "position",
+      document.documentElement.dir === "rtl" ? "auto left" : "auto right",
+    );
+  };
+  syncCalendarPosition();
+  window.addEventListener("lang:changed", syncCalendarPosition);
 
   document
     .querySelector(".two-step-birthday-btn")
@@ -1278,15 +1294,19 @@ const twoStepFormSteps = document.querySelectorAll(".two-step-form-step");
 
 let initialStep = 1;
 
-// Курсор ставим в первое поле открытого шага, иначе игрок сначала целится в
-// инпут и только потом печатает.
+// Курсор ставим в первое НЕзаполненное поле открытого шага, иначе игрок
+// сначала целится в инпут и только потом печатает.
 // Что пропускаем:
 //   readonly — так помечены поля-селекты (страна), у них своё выпадающее меню;
 //   radio/checkbox — выбор бонуса и пола, печатать там нечего;
 //   .iti__search-input — поиск стран у телефона, в DOM он идёт раньше самого
 //   телефона, но полем формы не является;
 //   невидимые (offsetParent === null) — скрытые промокод, штат, свёрнутые
-//   выпадающие списки.
+//   выпадающие списки;
+//   заполненные — по «Назад» и повторным переходам фокус вставал в уже
+//   введённые данные и без нужды поднимал клавиатуру. Телефон читается как
+//   пустой корректно: при separateDialCode код страны живёт вне value.
+// Все поля шага заполнены — не фокусируем ничего.
 const focusFirstField = (step) => {
   const stepEl = document.querySelector(`.two-step-form-step-${step}`);
 
@@ -1294,7 +1314,7 @@ const focusFirstField = (step) => {
     ...(stepEl?.querySelectorAll(
       "input:not([type='hidden']):not([type='radio']):not([type='checkbox']):not([disabled]):not([readonly]):not(.iti__search-input)",
     ) || []),
-  ].find((el) => el.offsetParent !== null);
+  ].find((el) => el.offsetParent !== null && el.value.trim() === "");
 
   // без rAF намеренно: showStep зовётся из обработчика клика, и на iOS Safari
   // клавиатура поднимается только внутри пользовательского жеста

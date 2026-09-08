@@ -538,6 +538,12 @@
                   </label>
                 </div>
                 <!-- promocode -->
+                <!-- Промокод показывается только когда код пришёл из URL, править его
+                     игроку нельзя. pointer-events-none закрывает мышь и тап, но не
+                     клавиатуру: табом можно было встать в поле и переписать код, а
+                     на «Apply» — нажать Enter и обнулить промокод (promoIsValid
+                     не задан → ветка «неверный»). Поэтому readonly + tabindex="-1"
+                     на поле и на кнопке. -->
                 <div
                   class="form-promocode-wrapper pointer-events-none mt-[15px] hidden xs:mt-[10px]"
                 >
@@ -565,6 +571,8 @@
                     </svg>
                     <input
                       id="promocode"
+                      readonly
+                      tabindex="-1"
                       class="two-step-promocode-input two-step-general-input relative w-full bg-transparent text-base font-bold uppercase tracking-[-0.02em] text-[#755eeb] outline-none"
                       type="text"
                     />
@@ -577,6 +585,7 @@
                       <button
                         data-translate="promoCodeApplyBtn"
                         type="button"
+                        tabindex="-1"
                         class="two-step-promocode-apply-btn rounded-md bg-[#755eeb] px-3 py-1 font-semibold text-white"
                       >
                         Apply
@@ -902,7 +911,7 @@
                   <div class="grid">
                     <label
                       data-translate="birthdayPlaceholder"
-                      class="text-[12px] font-bold text-[#585858]"
+                      class="two-step-required-label text-[12px] font-bold text-[#585858]"
                       >Select Birthday Date</label
                     >
                     <input
@@ -1134,7 +1143,7 @@
                     <div class="">
                       <p
                         data-translate="countryPlaceholder"
-                        class="pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
+                        class="two-step-required-label pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
                       >
                         Select Country
                       </p>
@@ -1221,7 +1230,7 @@
                     <div>
                       <p
                         data-translate="currencyPlaceholder"
-                        class="text-xs font-bold text-[#585858]"
+                        class="two-step-required-label text-xs font-bold text-[#585858]"
                       >
                         Choose Currency
                       </p>
