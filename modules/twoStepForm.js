@@ -716,13 +716,29 @@ if (twoStepFormThirdStep) {
   const minBirthDate = new Date();
   minBirthDate.setFullYear(minBirthDate.getFullYear() - 100);
 
+  // flatpickr по умолчанию цепляется к самому инпуту, а инпут даты — средняя
+  // колонка грида: он обрывается левее иконки календаря, и всплывашка со
+  // стрелкой уезжала от неё (заметно на Android). Якорим на всю строку поля —
+  // тогда край календаря совпадает с краем поля, а стрелку доводим до центра
+  // иконки в CSS (.flatpickr-calendar.arrowRight::before).
   const calendar = flatpickr(twoStepBirthdayInput, {
     allowInput: true,
     dateFormat: "d.m.Y",
     maxDate: "today",
     minDate: minBirthDate,
     disableMobile: true,
+    positionElement: twoStepBirthdayInput.closest(".two-step-birthday-wrapper"),
   });
+
+  // В RTL иконка переезжает в левый край поля — вместе с ней и точка привязки.
+  const syncCalendarPosition = () => {
+    calendar.set(
+      "position",
+      document.documentElement.dir === "rtl" ? "auto left" : "auto right",
+    );
+  };
+  syncCalendarPosition();
+  window.addEventListener("lang:changed", syncCalendarPosition);
 
   document
     .querySelector(".two-step-birthday-btn")
@@ -1236,22 +1252,29 @@ const twoStepFormSteps = document.querySelectorAll(".two-step-form-step");
 
 let initialStep = 1;
 
-// Курсор ставим в первое поле открытого шага, иначе игрок сначала целится в
-// инпут и только потом печатает.
+// Курсор ставим в первое НЕзаполненное поле открытого шага, иначе игрок
+// сначала целится в инпут и только потом печатает.
 // Что пропускаем:
 //   readonly — так помечены поля-селекты (страна), у них своё выпадающее меню,
 //   фокус уходит на следующее текстовое;
 //   radio/checkbox — выбор бонуса и пола, печатать там нечего;
 //   .iti__search-input — поиск стран у телефона, в DOM он идёт раньше самого
 //   телефона, но полем формы не является;
+//   .two-step-promocode-input — промокод на первом шаге пустой чаще всего
+//   (его вводят вручную), и одной проверки на пустоту мало: фокус вставал бы
+//   в него, хотя шаг про выбор бонуса;
 //   невидимые (offsetParent === null) — скрытый промокод, «State» для стран
-//   без штатов, свёрнутые выпадающие списки.
+//   без штатов, свёрнутые выпадающие списки;
+//   заполненные — по «Назад» и повторным переходам фокус вставал в уже
+//   введённые данные и без нужды поднимал клавиатуру. Телефон читается как
+//   пустой корректно: при separateDialCode код страны живёт вне value.
+// Все поля шага заполнены — не фокусируем ничего.
 const focusFirstFieldIn = (stepEl) => {
   const field = [
     ...(stepEl?.querySelectorAll(
-      "input:not([type='hidden']):not([type='radio']):not([type='checkbox']):not([disabled]):not([readonly]):not(.iti__search-input)",
+      "input:not([type='hidden']):not([type='radio']):not([type='checkbox']):not([disabled]):not([readonly]):not(.iti__search-input):not(.two-step-promocode-input)",
     ) || []),
-  ].find((el) => el.offsetParent !== null);
+  ].find((el) => el.offsetParent !== null && el.value.trim() === "");
 
   // без rAF намеренно: showStep зовётся из обработчика клика, а на iOS Safari
   // клавиатура поднимается только внутри пользовательского жеста

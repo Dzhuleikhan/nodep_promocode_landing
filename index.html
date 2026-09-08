@@ -578,8 +578,12 @@
                   </label>
                 </div>
                 <!-- promocode -->
+                <!-- pointer-events-none тут статически стоять не должен: код можно
+                     вводить вручную. Замок на поле ставит и снимает
+                     lockPromocodeField в modules/promocodeCheck.js — только для
+                     кода, пришедшего из URL. -->
                 <div
-                  class="form-promocode-wrapper pointer-events-none mt-[15px] hidden xs:mt-[10px]"
+                  class="form-promocode-wrapper mt-[15px] hidden xs:mt-[10px]"
                 >
                   <!-- <p
                     data-translate="iHavePromoCode"
@@ -944,7 +948,7 @@
                   <div class="grid">
                     <label
                       data-translate="birthdayPlaceholder"
-                      class="text-[12px] font-bold text-[#585858]"
+                      class="two-step-required-label text-[12px] font-bold text-[#585858]"
                       >Select Birthday Date</label
                     >
                     <input
@@ -1177,7 +1181,7 @@
                     <div class="">
                       <p
                         data-translate="countryPlaceholder"
-                        class="pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
+                        class="two-step-required-label pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
                       >
                         Select Country
                       </p>
@@ -1264,7 +1268,7 @@
                     <div>
                       <p
                         data-translate="currencyPlaceholder"
-                        class="text-xs font-bold text-[#585858]"
+                        class="two-step-required-label text-xs font-bold text-[#585858]"
                       >
                         Choose Currency
                       </p>

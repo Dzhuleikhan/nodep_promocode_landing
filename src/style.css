@@ -531,13 +531,19 @@
   text-align: center;
 }
 
-.two-step-required-label::before {
+/* Звезда идёт в потоке сразу за текстом лейбла, а не позиционируется по его
+   правому краю: у плавающих лейблов коробка тянется до края поля, и на длинных
+   переводах (напр. швейцарский индекс сразу в три языка переносится на вторую
+   строку) абсолютная звезда вылезала за белый блок.
+   position: relative + top сдвигают её вверх, не влияя на высоту строки,
+   margin-inline-start сам переезжает на другую сторону в RTL. */
+.two-step-required-label::after {
   content: '*';
   color: #ff0000;
   font-size: 12px;
-  position: absolute;
-  right: -10px;
+  position: relative;
   top: -3px;
+  margin-inline-start: 2px;
 }
 
 .form-promocode-wrapper.is-applied {
@@ -560,6 +566,27 @@
   font-style: normal;
 }
 
+/* Календарь даты рождения.
+   Всплывашка привязана к строке поля (positionElement в twoStepForm.js), так
+   что её край совпадает с краем поля. Стрелку flatpickr ставит в 22px от края —
+   доводим до центра иконки: 16px внутреннего отступа поля (p-4) + половина
+   иконки 32px. margin у псевдоэлементов отрицательный на половину ширины,
+   поэтому 32px — это ровно остриё стрелки. rightMost обязателен: этот класс
+   срабатывает на узких экранах и несёт своё right: 22px. */
+.flatpickr-calendar.arrowRight:before,
+.flatpickr-calendar.arrowRight:after,
+.flatpickr-calendar.rightMost:before,
+.flatpickr-calendar.rightMost:after {
+  left: auto;
+  right: 32px;
+}
+
+[dir="rtl"] .flatpickr-calendar.arrowLeft:before,
+[dir="rtl"] .flatpickr-calendar.arrowLeft:after {
+  right: auto;
+  left: 32px;
+}
+
 /* States dropdown */
 
 .two-step-state-list-item {
@@ -578,11 +605,6 @@
   right: auto;
   left: 0;
   transform-origin: top right;
-}
-
-[dir="rtl"] .two-step-required-label::before {
-  right: auto;
-  left: -10px;
 }
 
 [dir="rtl"] .two-step-bonus-checkbox-circle::before,
