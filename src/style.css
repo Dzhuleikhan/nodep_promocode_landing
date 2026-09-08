@@ -159,6 +159,17 @@
   border-color: #57179b;
 }
 
+/* Экран «Вы уверены?»: шапка не должна предлагать ни «назад», ни крестик —
+   единственный выход отсюда через кнопки внутри самого экрана. Прячем через
+   класс на оверлее, а не снимая is-visible с кнопки: видимость «назад» уже
+   управляется по шагам формы, состояния разъедутся.
+   visibility, а не только opacity: прозрачный крестик ловил бы клики. */
+.two-step-overlay.is-declining .two-step-header-back-btn,
+.two-step-overlay.is-declining .two-step-modal-close-btn {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .two-step-header-back-btn.is-visible {
   opacity: 1;
   visibility: visible;
@@ -475,6 +486,49 @@
 
 .air-datepicker-global-container {
   z-index: 500;
+}
+
+/* Звёздочка не влезала в 52px после того, как лейбл получил её через ::after;
+   align-content держит содержимое по центру, иначе строки грида липнут к низу */
+.two-step-form .two-step-group-phone {
+  height: 56px;
+  align-content: center;
+}
+
+/* Лейбл телефона — статичный блок, поэтому звёздочка приклеивается через
+   ::after со сдвигом вверх, а не абсолютом, как у остальных лейблов:
+   у тех сам лейбл спозиционирован, и там абсолют встаёт по месту. */
+.two-step-phone-label::after {
+  content: '*';
+  color: #ff0000;
+  font-size: 12px;
+  vertical-align: super;
+  margin-inline-start: 2px;
+}
+
+/* Библиотека сообщает о пустом поиске только скринридеру (.iti__a11y-text), а
+   визуально список просто схлопывается — игрок не понимает, нашлось что-то или
+   нет. Рисуем видимую заглушку; текст подставляет modules/itiTelInput.js. */
+.iti__country-list:empty::after {
+  content: var(--iti-zero-results, 'Country not found');
+  display: block;
+  padding: 14px 16px;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Та же заглушка для селекта страны на последнем шаге — те же паддинги, что у
+   телефонного дропдауна; текст рисует renderCountries в modules/twoStepForm.js */
+.two-step-country-empty {
+  padding: 14px 16px;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .two-step-required-label::before {

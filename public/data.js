@@ -822,8 +822,6 @@ export const SupportedLanguages = [
   "fr",
   "uk",
   "ru",
-  "bn",
-  "id",
   "pt",
   "de",
   "zh",

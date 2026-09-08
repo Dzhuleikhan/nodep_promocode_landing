@@ -1,9 +1,8 @@
 import { translations } from "/public/translations";
-import { geoData, language } from "./geoLocation";
-import { getSupportedLanguage } from "./geoLocation";
+import { language } from "./geoLocation";
 import { settingInitialBonusValue } from "./twoStepForm";
 import { setSpinAmount } from "./promocodeCheck";
-import { languageOptions, SupportedLanguages } from "../public/data";
+import { languageOptions } from "../public/data";
 import { updateTelInputLanguage } from "./itiTelInput";
 
 const CDN = "https://3344112-img.b-cdn.net";
@@ -68,44 +67,6 @@ function updateContent(lang) {
   });
 }
 
-function getInitialLanguage(country, fallbackLang) {
-  const browserLang = navigator.language.split("-")[0];
-  const supportedLang = SupportedLanguages.includes(browserLang)
-    ? browserLang
-    : fallbackLang;
-
-  if (country === "BE") {
-    if (supportedLang && browserLang !== "nl") {
-      return browserLang;
-    }
-    return "en";
-  }
-  if (country === "CH") {
-    return supportedLang ?? "de";
-  }
-  if (country === "CA") {
-    return supportedLang ?? "en";
-  }
-  if (country === "CA") {
-    return supportedLang ?? "en";
-  }
-  if (country === "CY") {
-    return supportedLang ?? "el";
-  }
-  if (country === "LU") {
-    return supportedLang ?? "fr";
-  }
-  if (country === "EE") {
-    return supportedLang ?? "et";
-  }
-  if (country === "NG") {
-    const nigerianLangs = ["ha", "yo", "ig"];
-    return nigerianLangs.includes(browserLang) ? browserLang : "ha";
-  }
-
-  return fallbackLang;
-}
-
 const RTL_LANGUAGES = ["ar"];
 
 function changeLanguage(lang) {
@@ -122,6 +83,10 @@ function changeLanguage(lang) {
   }
 
   updateTelInputLanguage(lang);
+
+  // Заглушки, которые рисуются из JS, а не через data-translate:
+  // «страна не найдена» у телефона и у селекта страны. updateContent их не видит.
+  window.dispatchEvent(new CustomEvent("lang:changed", { detail: lang }));
 }
 
 function setActiveLanguageBtn(currentLang) {
@@ -141,8 +106,8 @@ function updateCurrentDomain() {
 }
 
 async function initLanguage() {
-  const initialLang = getInitialLanguage(geoData.countryCode, language);
-  changeLanguage(initialLang);
+  // язык уже выбран в geoLocation.js по браузеру
+  changeLanguage(language);
 
   setTimeout(() => {
     updateCurrentDomain();
@@ -156,7 +121,9 @@ headerLangList.addEventListener("click", (e) => {
   const link = e.target.closest("a[data-lang]");
   const targetLang = link.getAttribute("data-lang");
   changeLanguage(targetLang);
-  localStorage.setItem("preferredLanguage", getSupportedLanguage(targetLang));
+  // targetLang — уже код языка, а не страны: getSupportedLanguage() ждёт
+  // countryCode и на "de"/"pl" всегда возвращала "en", затирая выбор игрока
+  localStorage.setItem("preferredLanguage", targetLang);
 
   const currencyData = JSON.parse(localStorage.getItem("currencyData"));
   settingInitialBonusValue(currencyData.abbr);

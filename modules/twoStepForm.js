@@ -8,6 +8,7 @@ import {
   validatePostalCodeFormat,
 } from "../public/data";
 import { geoData, settingZipCodePlaceholder } from "./geoLocation";
+import { translations } from "/public/translations";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
@@ -32,6 +33,9 @@ import {
 } from "./emailAvailability";
 
 const CDN = "https://3344112-img.b-cdn.net";
+
+const translate = (lang, key) =>
+  translations[lang]?.[key] ?? translations.en[key];
 
 document.querySelectorAll("input").forEach((input) => {
   input.setAttribute("autocomplete", "off");
@@ -1032,7 +1036,12 @@ if (twoStepFormFourthStep) {
   applyDetectedCountry();
   // Adding countries to dropdown
 
+  // последний поисковый запрос: нужен, чтобы перерисовать список после смены
+  // языка — заглушка «страна не найдена» переводится вместе со страницей
+  let countryFilter = "";
+
   const renderCountries = (filter = "") => {
+    countryFilter = filter;
     twoStepCountryList.innerHTML = ""; // Clear existing list
 
     // Filter countries based on the search input
@@ -1068,11 +1077,15 @@ if (twoStepFormFourthStep) {
     // If no countries match the search, show a message
     if (filteredCountries.length === 0) {
       const noResult = document.createElement("li");
-      noResult.className = "text-gray-500 py-2";
-      noResult.textContent = "No countries found.";
+      noResult.className = "two-step-country-empty";
+      const lang = document.documentElement.getAttribute("lang") || "en";
+      noResult.textContent = translate(lang, "countryNotFound");
       twoStepCountryList.appendChild(noResult);
     }
   };
+
+  // список рисуется из JS, updateContent() его не трогает — перерисовываем сами
+  window.addEventListener("lang:changed", () => renderCountries(countryFilter));
 
   // Event listener for the search input
   twoStepCountrySearchInput.addEventListener("input", (e) => {
@@ -1223,6 +1236,36 @@ const twoStepFormSteps = document.querySelectorAll(".two-step-form-step");
 
 let initialStep = 1;
 
+// Курсор ставим в первое поле открытого шага, иначе игрок сначала целится в
+// инпут и только потом печатает.
+// Что пропускаем:
+//   readonly — так помечены поля-селекты (страна), у них своё выпадающее меню,
+//   фокус уходит на следующее текстовое;
+//   radio/checkbox — выбор бонуса и пола, печатать там нечего;
+//   .iti__search-input — поиск стран у телефона, в DOM он идёт раньше самого
+//   телефона, но полем формы не является;
+//   невидимые (offsetParent === null) — скрытый промокод, «State» для стран
+//   без штатов, свёрнутые выпадающие списки.
+const focusFirstFieldIn = (stepEl) => {
+  const field = [
+    ...(stepEl?.querySelectorAll(
+      "input:not([type='hidden']):not([type='radio']):not([type='checkbox']):not([disabled]):not([readonly]):not(.iti__search-input)",
+    ) || []),
+  ].find((el) => el.offsetParent !== null);
+
+  // без rAF намеренно: showStep зовётся из обработчика клика, а на iOS Safari
+  // клавиатура поднимается только внутри пользовательского жеста
+  field?.focus({ preventScroll: true });
+};
+
+const focusFirstField = (step) =>
+  focusFirstFieldIn(document.querySelector(`.two-step-form-step-${step}`));
+
+// Для открытия модалки: шаг не обязательно первый — игрок мог закрыть форму
+// на третьем и вернуться, is-active к этому моменту уже проставлен.
+export const focusActiveStep = () =>
+  focusFirstFieldIn(document.querySelector(".two-step-form-step.is-active"));
+
 const showStep = (step) => {
   twoStepFormSteps.forEach((stepWrapper) => {
     stepWrapper.classList.remove("is-active");
@@ -1243,6 +1286,8 @@ const showStep = (step) => {
   } else {
     headerbackBtn.classList.remove("is-visible");
   }
+
+  focusFirstField(step);
 };
 // showStep(3);
 
@@ -1363,6 +1408,7 @@ gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
 const twoStepModalCloseBtn = document.querySelector(
   ".two-step-modal-close-btn",
 );
+const twoStepOverlay = document.querySelector(".two-step-overlay");
 const twoStepFormInner = document.querySelector(".two-step-modal");
 const twoStepDeclineInner = document.querySelector(".two-step-decline");
 const twoStepKeepBtn = document.querySelector(".two-step-keep-btn");
@@ -1372,6 +1418,8 @@ if (twoStepModalCloseBtn) {
   twoStepModalCloseBtn.addEventListener("click", () => {
     twoStepFormInner.classList.add("hidden");
     twoStepDeclineInner.classList.remove("hidden");
+    // на этом экране выход только через его собственные кнопки — шапку прячем
+    twoStepOverlay?.classList.add("is-declining");
   });
 }
 
@@ -1379,12 +1427,13 @@ if (twoStepKeepBtn) {
   twoStepKeepBtn.addEventListener("click", () => {
     twoStepFormInner.classList.remove("hidden");
     twoStepDeclineInner.classList.add("hidden");
+    twoStepOverlay?.classList.remove("is-declining");
   });
 }
 
 if (twoStepReturnBtn) {
   twoStepReturnBtn.addEventListener("click", () => {
-    document.querySelector(".two-step-overlay").classList.remove("is-open");
+    twoStepOverlay.classList.remove("is-open", "is-declining");
     twoStepFormInner.classList.remove("hidden");
     twoStepDeclineInner.classList.add("hidden");
     document.body.style.overflow = "visible";
