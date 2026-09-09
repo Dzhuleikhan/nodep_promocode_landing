@@ -18,7 +18,7 @@
 
         window.__geoRequest = fetch(
           "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
-          { signal: controller.signal }
+          { signal: controller.signal },
         ).catch(function () {
           return null;
         });
@@ -29,12 +29,12 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script defer src="/email-guard.js?v=1.0.8" data-eg-debug="false"></script>
+    <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open. Скоуп-селектор -->
     <!-- т.к. на ленде есть второй input[type=tel] (дата рождения). -->
     <script
       defer
-      src="/phone-guard.js?v=1.0.2"
+      src="/phone-guard.js?v=1.0.3"
       data-pg-debug="false"
       data-pg-phone-selector="[data-pg='phone']"
     ></script>
@@ -717,7 +717,7 @@
                   <span class="two-step-phone-spinner hidden"></span>
                 </div>
                 <p
-                  class="two-step-phone-alert hidden text-center text-xs text-[#FF5530]"
+                  class="two-step-phone-alert hidden text-center text-xs font-bold text-[#FF5530]"
                 ></p>
                 <!-- email input -->
                 <div
@@ -750,7 +750,7 @@
                   <span class="two-step-email-spinner hidden"></span>
                 </div>
                 <p
-                  class="two-step-email-alert hidden text-center text-xs text-[#FF5530]"
+                  class="two-step-email-alert hidden text-center text-xs font-bold text-[#FF5530]"
                 ></p>
                 <!-- password input -->
                 <div

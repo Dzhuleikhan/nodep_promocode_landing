@@ -660,9 +660,12 @@ if (twoStepFormSecondStep) {
     );
     const hideSpinner = () => emailSpinner?.classList.add("hidden");
 
-    // вердикт Zeruh прилетел асинхронно → пересчитать кнопку и убрать спиннер
+    // вердикт Zeruh прилетел асинхронно → убрать спиннер. Пересчёт делает
+    // обработчик того же события выше, и делает его красным цветом ошибки.
+    // Второго пересчёта тут быть не должно: он шёл нейтральным #8726FF и, как
+    // более поздний слушатель, перекрашивал обратно уже покрасневшее поле —
+    // некорректная почта после blur оставалась фиолетовой.
     twoStepFormEmailInput.addEventListener("emailguard:result", () => {
-      validateInputs("#4ED937", "#8726FF");
       if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
     });
     // почта ушла в Zeruh (синтаксис ок, вердикта ещё нет) → показать спиннер

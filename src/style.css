@@ -324,29 +324,12 @@
   display: none;
 }
 
-/* Email-Guard (Zeruh) — хинт опечаток / ошибки под полем (на тёмном фоне формы) */
-.eg-hint {
-  font-size: 14px;
-  line-height: 1.3;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.eg-hint[data-eg-state="suggest"] {
-  color: #ffffff;
-}
-
-.eg-hint[data-eg-state="error"] {
-  color: #ff3b3b;
-}
-
-.eg-suggest-link {
-  color: #8726ff;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-/* Phone-Guard (IPQS) — хинт ошибки под телефоном (рисует сам сниппет). */
+/* Хинты внешних сниппетов под полями: email-guard (Zeruh) у почты и
+   phone-guard (IPQS) у телефона. Элемент каждый сниппет рисует сам, поэтому
+   типографику задаём здесь — и общим правилом. Порознь они разъехались: у почты
+   было 14px обычным начертанием и свой оттенок красного, у телефона 12px жирным,
+   и две ошибки под соседними полями читались как из разных форм. */
+.eg-hint,
 .pg-hint {
   margin-top: 6px;
   font-size: 12px;
@@ -354,6 +337,17 @@
   line-height: 1.2;
   text-align: center;
   color: #ff5530;
+}
+
+/* Подсказка «вы имели в виду ...?» — не ошибка, поэтому белым. */
+.eg-hint[data-eg-state="suggest"] {
+  color: #ffffff;
+}
+
+.eg-suggest-link {
+  color: #8726ff;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .qs-num.qs-current,
