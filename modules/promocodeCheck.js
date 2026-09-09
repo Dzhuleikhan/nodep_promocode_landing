@@ -62,12 +62,19 @@ export const togglePromocodeWrapper = (state) => {
   if (state === "show") {
     formWrapper.classList.remove("hidden");
     promoWrapper.classList.add("is-visible", "is-valid");
-    promoInput.value =
-      typeof receivedPromocode !== "undefined" ? receivedPromocode : "";
+    // Пишем и свойство, и атрибут. Атрибут value — это значение поля ПО
+    // УМОЛЧАНИЮ, и именно к нему браузер откатывает контрол, состояние
+    // которого не запоминал (а мы сами это и запретили через
+    // autocomplete="off"). На мобильном Safari такой откат прилетает уже после
+    // pageshow и затирал записанное свойство; с атрибутом откатывать теперь
+    // некуда — по умолчанию там тот же код.
+    promoInput.setAttribute("value", receivedPromocode);
+    promoInput.value = receivedPromocode;
     lockPromocodeField(true);
   } else if (state === "hide") {
     formWrapper.classList.add("hidden");
     promoWrapper.classList.remove("is-visible", "is-valid");
+    promoInput.removeAttribute("value");
     promoInput.value = "";
     lockPromocodeField(false);
   } else {
@@ -99,12 +106,13 @@ export const applyPromocodeFromBonus = () => {
 
 applyPromocodeFromBonus();
 
-// Возврат «Назад» с прода после регистрации: поле промокода оказывалось
-// пустым, хотя обёртка была показана. Значение в него пишет скрипт, а браузеру
-// мы сами запретили его помнить — autocomplete="off" по спецификации означает
-// «не запоминать значение», и при восстановлении по истории поверх записанного
-// скриптом накатывалось пустое значение по умолчанию.
-// pageshow срабатывает и на обычной загрузке, и на подъёме из bfcache, поэтому
-// ставим код заново на каждый показ страницы. Вызов идемпотентный: считает то
-// же самое из ссылки и выбранного бонуса.
-window.addEventListener("pageshow", applyPromocodeFromBonus);
+// Возврат «Назад» с прода после регистрации: поле промокода оказывалось пустым,
+// хотя обёртка была показана. pageshow срабатывает и на обычной загрузке, и на
+// подъёме из bfcache. Второй проход на следующем кадре — потому что мобильный
+// Safari восстанавливает состояние формы асинхронно и успевает вклиниться уже
+// после pageshow. Вызов идемпотентный: считает то же самое из ссылки и
+// выбранного бонуса.
+window.addEventListener("pageshow", () => {
+  applyPromocodeFromBonus();
+  requestAnimationFrame(applyPromocodeFromBonus);
+});
