@@ -33,9 +33,52 @@ const CDN = "https://3344112-img.b-cdn.net";
 const translate = (lang, key) =>
   translations[lang]?.[key] ?? translations.en[key];
 
+// Страховка к атрибутам в разметке: добиваем поля, которым autocomplete не
+// проставлен (в том числе созданные скриптом — поиск стран у телефона).
+// Уже заданное значение не трогаем: у пароля стоит new-password, и только этот
+// токен отучает Chrome подставлять сохранённую пару логин+пароль — "off" он на
+// паролях игнорирует.
 document.querySelectorAll("input").forEach((input) => {
-  input.setAttribute("autocomplete", "off");
+  if (!input.hasAttribute("autocomplete")) {
+    input.setAttribute("autocomplete", "off");
+  }
 });
+
+// | ЧИСТКА ПОЛЕЙ
+// Браузер восстанавливает введённые значения при перезагрузке, а менеджер
+// паролей сам подставляет сохранённую пару почта+пароль. В компьютерном клубе
+// это значит, что следующий игрок докручивает до модалки и видит чужие данные.
+// Атрибуты autocomplete в разметке закрывают подстановку, а здесь снимаем то,
+// что браузер успел восстановить сам.
+// readonly помечены поля, которые заполняет не игрок: страна (её ставит гео или
+// выбор из списка) и промокод (код из ссылки). Они попадали под чистку, и если
+// гео отвечало быстрее события load, имя страны стирало вторым проходом — флаг
+// оставался на месте (это <img>), а строка рядом пустела. Браузеру там
+// восстанавливать нечего, значение всегда ставит скрипт.
+const RESTORABLE_FIELDS = [
+  ".two-step-form input[type='text']:not([readonly])",
+  ".two-step-form input[type='email']:not([readonly])",
+  ".two-step-form input[type='password']:not([readonly])",
+  ".two-step-form input[type='tel']:not([readonly])",
+].join(", ");
+
+// keepPromocode держим на случай, если с поля промокода когда-нибудь снимут
+// readonly: на load код из ссылки уже подставлен, и чистка стёрла бы его.
+const clearFormFields = (keepPromocode = false) => {
+  document.querySelectorAll(RESTORABLE_FIELDS).forEach((input) => {
+    if (keepPromocode && input.classList.contains("two-step-promocode-input")) {
+      return;
+    }
+
+    input.value = "";
+  });
+};
+
+clearFormFields();
+
+// Восстановление может случиться и после разбора модулей, поэтому повторяем на
+// load. Промокод к этому моменту уже подставлен из ссылки (promocodeCheck).
+window.addEventListener("load", () => clearFormFields(true), { once: true });
 
 const PHONE_ONLY_COUNTRIES = [];
 const hideEmail = false;
