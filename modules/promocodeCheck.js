@@ -67,10 +67,18 @@ export const togglePromocodeWrapper = (state) => {
   if (state === "show") {
     formWrapper.classList.remove("hidden");
     promoWrapper.classList.add("is-visible", "is-valid");
+    // Пишем и свойство, и атрибут. Атрибут value — это значение поля ПО
+    // УМОЛЧАНИЮ, и именно к нему браузер откатывает контрол, состояние которого
+    // не запоминал (а мы сами это и запретили через autocomplete="off").
+    // На мобильном Safari такой откат прилетает уже после pageshow и затирал
+    // записанное свойство; с атрибутом откатывать теперь некуда — по умолчанию
+    // там тот же код.
+    promoInput.setAttribute("value", receivedPromocode);
     promoInput.value = receivedPromocode;
   } else {
     formWrapper.classList.add("hidden");
     promoWrapper.classList.remove("is-visible", "is-valid");
+    promoInput.removeAttribute("value");
     promoInput.value = "";
   }
 };
@@ -97,4 +105,9 @@ applyPromocodeFromBonus();
 // pageshow срабатывает и на обычной загрузке, и на подъёме из bfcache, поэтому
 // ставим код заново на каждый показ страницы. Вызов идемпотентный: считает то же
 // самое из ссылки и выбранного бонуса.
-window.addEventListener("pageshow", applyPromocodeFromBonus);
+// Второй проход на следующем кадре — потому что мобильный Safari восстанавливает
+// состояние формы асинхронно и успевает вклиниться уже после pageshow.
+window.addEventListener("pageshow", () => {
+  applyPromocodeFromBonus();
+  requestAnimationFrame(applyPromocodeFromBonus);
+});
