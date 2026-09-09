@@ -77,9 +77,34 @@ export const togglePromocodeWrapper = (state) => {
   }
 };
 
-if (receivedPromocode) {
-  togglePromocodeWrapper("show");
-} else {
-  console.log("There is no promocode received");
-  togglePromocodeWrapper("hide");
-}
+// Показ промокода привязан к выбранному бонусу: welcome-bonus-1 и «без бонуса»
+// идут без кода, остальные — с кодом из ссылки. Ту же развилку держит
+// обработчик смены бонуса в twoStepForm.js, здесь она нужна, чтобы состояние
+// можно было пересобрать в любой момент, не дожидаясь клика по бонусу.
+export const applyPromocodeFromBonus = () => {
+  if (!receivedPromocode) {
+    console.log("There is no promocode received");
+    togglePromocodeWrapper("hide");
+    return;
+  }
+
+  const bonusValue = document.querySelector(
+    'input[name="bonus"]:checked'
+  )?.value;
+
+  togglePromocodeWrapper(
+    bonusValue === "welcome-bonus-1" || bonusValue === "0" ? "hide" : "show"
+  );
+};
+
+applyPromocodeFromBonus();
+
+// Возврат «Назад» с прода после регистрации: поле промокода оказывалось
+// пустым, хотя обёртка была показана. Значение в него пишет скрипт, а браузеру
+// мы сами запретили его помнить — autocomplete="off" по спецификации означает
+// «не запоминать значение», и при восстановлении по истории поверх записанного
+// скриптом накатывалось пустое значение по умолчанию.
+// pageshow срабатывает и на обычной загрузке, и на подъёме из bfcache, поэтому
+// ставим код заново на каждый показ страницы. Вызов идемпотентный: считает то
+// же самое из ссылки и выбранного бонуса.
+window.addEventListener("pageshow", applyPromocodeFromBonus);
