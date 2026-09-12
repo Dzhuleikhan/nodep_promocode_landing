@@ -1022,7 +1022,7 @@ export const postalCodeHiddenCountries = [
 
 // Страны, где индекс существует, но не критичен — поле необязательное (с hint).
 export const postalCodeOptionalCountries = [
-  "AL", "AM", "AU", "AZ", "BA", "BB", "BD", "BH", "BT", "DO", "EG", "ET", "GB",
+  "AL", "AM", "AZ", "BA", "BB", "BD", "BH", "BT", "DO", "EG", "ET", "GB",
   "GE", "GH", "HT", "IE", "IN", "IQ", "JO", "KE", "KH", "KN", "KW", "LA", "LB",
   "LC", "LK", "LR", "LS", "MD", "ME", "MG", "MK", "MM", "MN", "MU", "MV", "MZ",
   "NE", "NG", "NI", "NP", "NZ", "OM", "PG", "PH", "PS", "PY", "RS", "SN", "SV",
@@ -1040,16 +1040,367 @@ export const getPostalCodeMode = (countryCode) => {
 };
 
 // | STATE / PROVINCE FIELD -----------------------------------------------------
-// Страны, где штат/провинция/регион реально входят в почтовый адрес (KYC).
-// Только для них показываем поле State/Province.
+// Страны, где штат/провинция/регион реально входят в почтовый адрес (KYC), и мы
+// принимаем его свободным вводом. AU, IT и IE отсюда убраны: у них регион
+// выбирается из списка, а ES — вычисляется по индексу (см. getRegionMode).
 export const stateProvinceCountries = [
-  "US", "CA", "AU", "BR", "IN", "MX", "AR", "CN", "JP", "ID", "MY", "PH", "TH",
-  "RU", "IT", "ES", "ZA", "AE", "SA", "EG", "NG", "PK", "BD", "VN", "KR", "MM",
+  "US", "CA", "BR", "IN", "MX", "AR", "CN", "JP", "ID", "MY", "PH", "TH",
+  "RU", "ZA", "AE", "SA", "EG", "NG", "PK", "BD", "VN", "KR", "MM",
   "NP", "LK",
 ];
 
-export const hasStateField = (countryCode) =>
-  stateProvinceCountries.includes((countryCode || "").toUpperCase());
+// Видимость поля региона определяет getRegionMode ниже: свободный ввод — это
+// теперь лишь один из режимов, поэтому отдельного hasStateField больше нет.
+
+// | ADDRESS FIELD ORDER --------------------------------------------------------
+// Порядок адресных полей 4-го шага задаётся страной: игрок вводит адрес в том
+// же порядке, в каком пишет его от руки. Ключи — поля формы, селекторы к ним
+// лежат в modules/twoStepForm.js (ADDRESS_FIELD_SELECTORS).
+// Скрытые для страны поля (индекс, регион) в списке остаются: порядок им не
+// мешает, а при смене страны на ту, где поле есть, оно встаёт на своё место.
+
+// A — «Улица 12, 1234 Город»: континентальная Европа. Сюда же IT и ES, у них
+// регион идёт хвостом после города.
+const ADDRESS_ORDER_STREET_FIRST = [
+  "street",
+  "house",
+  "apartment",
+  "zip",
+  "city",
+  "state",
+];
+
+// B — «12 rue de la Paix»: номер дома перед улицей.
+const ADDRESS_ORDER_HOUSE_FIRST = [
+  "house",
+  "street",
+  "apartment",
+  "zip",
+  "city",
+  "state",
+];
+
+// IE — группа B, но графство после города, а Eircode последним: его до сих пор
+// знают не все, и адрес опознают по графству.
+const ADDRESS_ORDER_IE = [
+  "house",
+  "street",
+  "apartment",
+  "city",
+  "state",
+  "zip",
+];
+
+// NL — индекс и номер дома первыми, по ним подставляются улица и город.
+const ADDRESS_ORDER_NL = [
+  "zip",
+  "house",
+  "street",
+  "apartment",
+  "city",
+  "state",
+];
+
+// HU — «от большого к малому»: 1052 Budapest, Váci utca 12.
+const ADDRESS_ORDER_HU = [
+  "zip",
+  "city",
+  "street",
+  "house",
+  "apartment",
+  "state",
+];
+
+// AU — индекс после штата, иначе адрес выглядит чужеродно.
+const ADDRESS_ORDER_AU = [
+  "apartment",
+  "house",
+  "street",
+  "city",
+  "state",
+  "zip",
+];
+
+// Порядок полей, который ленд показывал всем странам до появления конфига.
+const ADDRESS_ORDER_DEFAULT = [
+  "street",
+  "house",
+  "apartment",
+  "city",
+  "state",
+  "zip",
+];
+
+export const addressFieldOrders = {
+  // A
+  DE: ADDRESS_ORDER_STREET_FIRST,
+  AT: ADDRESS_ORDER_STREET_FIRST,
+  CH: ADDRESS_ORDER_STREET_FIRST,
+  LI: ADDRESS_ORDER_STREET_FIRST,
+  BE: ADDRESS_ORDER_STREET_FIRST,
+  DK: ADDRESS_ORDER_STREET_FIRST,
+  NO: ADDRESS_ORDER_STREET_FIRST,
+  SE: ADDRESS_ORDER_STREET_FIRST,
+  FI: ADDRESS_ORDER_STREET_FIRST,
+  IS: ADDRESS_ORDER_STREET_FIRST,
+  EE: ADDRESS_ORDER_STREET_FIRST,
+  LV: ADDRESS_ORDER_STREET_FIRST,
+  LT: ADDRESS_ORDER_STREET_FIRST,
+  CZ: ADDRESS_ORDER_STREET_FIRST,
+  SK: ADDRESS_ORDER_STREET_FIRST,
+  SI: ADDRESS_ORDER_STREET_FIRST,
+  HR: ADDRESS_ORDER_STREET_FIRST,
+  BG: ADDRESS_ORDER_STREET_FIRST,
+  GR: ADDRESS_ORDER_STREET_FIRST,
+  SM: ADDRESS_ORDER_STREET_FIRST,
+  AD: ADDRESS_ORDER_STREET_FIRST,
+  PT: ADDRESS_ORDER_STREET_FIRST,
+  IT: ADDRESS_ORDER_STREET_FIRST,
+  ES: ADDRESS_ORDER_STREET_FIRST,
+
+  // B
+  FR: ADDRESS_ORDER_HOUSE_FIRST,
+  LU: ADDRESS_ORDER_HOUSE_FIRST,
+  MC: ADDRESS_ORDER_HOUSE_FIRST,
+  IE: ADDRESS_ORDER_IE,
+
+  // C
+  NL: ADDRESS_ORDER_NL,
+  HU: ADDRESS_ORDER_HU,
+
+  // D
+  AU: ADDRESS_ORDER_AU,
+};
+
+export const getAddressFieldOrder = (countryCode) =>
+  addressFieldOrders[(countryCode || "").toUpperCase()] ||
+  ADDRESS_ORDER_DEFAULT;
+
+// | НОМЕР ДОМА -----------------------------------------------------------------
+// В IE и IS дом часто без номера: сельские адреса и дома с именами вместо
+// номера. Требовать номер там — значит заставлять выдумывать его.
+export const houseNumberOptionalCountries = ["IE", "IS"];
+
+export const isHouseNumberRequired = (countryCode) =>
+  !houseNumberOptionalCountries.includes((countryCode || "").toUpperCase());
+
+// | КВАРТИРА -------------------------------------------------------------------
+// В DE квартиру в адресе не пишут — адресуют по фамилии на звонке, поле только
+// мешает. Везде остальное поле необязательное, скрываем только тут.
+export const apartmentHiddenCountries = ["DE"];
+
+export const hasApartmentField = (countryCode) =>
+  !apartmentHiddenCountries.includes((countryCode || "").toUpperCase());
+
+// | РЕГИОН / ПРОВИНЦИЯ ---------------------------------------------------------
+// Режимы поля:
+//   "select" — выбор из списка (AU, IT, IE), поле обязательное;
+//   "auto"   — не спрашиваем, вычисляем по индексу (ES);
+//   "text"   — свободный ввод, как было раньше (US, CA, BR и прочие вне ТЗ);
+//   "none"   — региона в адресе нет, поле скрыто.
+// На бэк уходит полное название региона, а не код.
+
+// Австралия: штат обязателен, но однозначно выводится из индекса.
+export const australiaStates = [
+  {
+    name: "Australian Capital Territory",
+    ranges: [
+      [200, 299],
+      [2600, 2618],
+      [2900, 2920],
+    ],
+  },
+  {
+    name: "New South Wales",
+    ranges: [
+      [1000, 2599],
+      [2619, 2899],
+      [2921, 2999],
+    ],
+  },
+  {
+    name: "Northern Territory",
+    ranges: [
+      [800, 899],
+      [900, 999],
+    ],
+  },
+  {
+    name: "Queensland",
+    ranges: [
+      [4000, 4999],
+      [9000, 9999],
+    ],
+  },
+  { name: "South Australia", ranges: [[5000, 5999]] },
+  { name: "Tasmania", ranges: [[7000, 7999]] },
+  {
+    name: "Victoria",
+    ranges: [
+      [3000, 3999],
+      [8000, 8999],
+    ],
+  },
+  {
+    name: "Western Australia",
+    ranges: [
+      [6000, 6797],
+      [6800, 6999],
+    ],
+  },
+];
+
+// Италия: 107 провинций. В адресе пишут двухбуквенный код (MI, RM), но на бэк
+// уходит полное название — так же, как приходило из свободного ввода раньше.
+export const italyProvinces = [
+  "Agrigento", "Alessandria", "Ancona", "Aosta", "Arezzo", "Ascoli Piceno",
+  "Asti", "Avellino", "Bari", "Barletta-Andria-Trani", "Belluno", "Benevento",
+  "Bergamo", "Biella", "Bologna", "Bolzano", "Brescia", "Brindisi", "Cagliari",
+  "Caltanissetta", "Campobasso", "Caserta", "Catania", "Catanzaro", "Chieti",
+  "Como", "Cosenza", "Cremona", "Crotone", "Cuneo", "Enna", "Fermo", "Ferrara",
+  "Firenze", "Foggia", "Forlì-Cesena", "Frosinone", "Genova", "Gorizia",
+  "Grosseto", "Imperia", "Isernia", "La Spezia", "L'Aquila", "Latina", "Lecce",
+  "Lecco", "Livorno", "Lodi", "Lucca", "Macerata", "Mantova", "Massa-Carrara",
+  "Matera", "Messina", "Milano", "Modena", "Monza e della Brianza", "Napoli",
+  "Novara", "Nuoro", "Oristano", "Padova", "Palermo", "Parma", "Pavia",
+  "Perugia", "Pesaro e Urbino", "Pescara", "Piacenza", "Pisa", "Pistoia",
+  "Pordenone", "Potenza", "Prato", "Ragusa", "Ravenna", "Reggio Calabria",
+  "Reggio Emilia", "Rieti", "Rimini", "Roma", "Rovigo", "Salerno", "Sassari",
+  "Savona", "Siena", "Siracusa", "Sondrio", "Sud Sardegna", "Taranto",
+  "Teramo", "Terni", "Torino", "Trapani", "Trento", "Treviso", "Trieste",
+  "Udine", "Varese", "Venezia", "Verbano-Cusio-Ossola", "Vercelli", "Verona",
+  "Vibo Valentia", "Vicenza", "Viterbo",
+];
+
+// CAP → провинция только там, где соответствие однозначное: городские индексы
+// крупных городов. Провинциальные CAP одного диапазона делят несколько
+// провинций (20800 — это уже Monza, а не Milano), поэтому их не берём.
+const ITALY_CAP_PROVINCES = [
+  [[100, 199], "Roma"],
+  [[10121, 10156], "Torino"],
+  [[16121, 16167], "Genova"],
+  [[20121, 20162], "Milano"],
+  [[40121, 40141], "Bologna"],
+  [[50121, 50145], "Firenze"],
+  [[70121, 70132], "Bari"],
+  [[80121, 80147], "Napoli"],
+  [[90121, 90151], "Palermo"],
+  [[95121, 95131], "Catania"],
+];
+
+// Ирландия: 26 графств. Eircode знают не все, и без него адрес опознают по
+// графству, а в столице — по почтовому району Dublin 1–24.
+const DUBLIN_POSTAL_DISTRICTS = Array.from(
+  { length: 24 },
+  (_, i) => `Dublin ${i + 1}`,
+);
+
+export const irelandCounties = [
+  "Carlow", "Cavan", "Clare", "Cork", "Donegal", "Dublin",
+  ...DUBLIN_POSTAL_DISTRICTS,
+  "Galway", "Kerry", "Kildare", "Kilkenny", "Laois", "Leitrim", "Limerick",
+  "Longford", "Louth", "Mayo", "Meath", "Monaghan", "Offaly", "Roscommon",
+  "Sligo", "Tipperary", "Waterford", "Westmeath", "Wexford", "Wicklow",
+];
+
+// Испания: провинция однозначно определяется первыми двумя цифрами индекса,
+// поэтому поле не показываем вовсе, а значение подставляем сами.
+export const spainProvincesByCp = {
+  "01": "Álava", "02": "Albacete", "03": "Alicante", "04": "Almería",
+  "05": "Ávila", "06": "Badajoz", "07": "Islas Baleares", "08": "Barcelona",
+  "09": "Burgos", 10: "Cáceres", 11: "Cádiz", 12: "Castellón",
+  13: "Ciudad Real", 14: "Córdoba", 15: "A Coruña", 16: "Cuenca",
+  17: "Girona", 18: "Granada", 19: "Guadalajara", 20: "Gipuzkoa",
+  21: "Huelva", 22: "Huesca", 23: "Jaén", 24: "León", 25: "Lleida",
+  26: "La Rioja", 27: "Lugo", 28: "Madrid", 29: "Málaga", 30: "Murcia",
+  31: "Navarra", 32: "Ourense", 33: "Asturias", 34: "Palencia",
+  35: "Las Palmas", 36: "Pontevedra", 37: "Salamanca",
+  38: "Santa Cruz de Tenerife", 39: "Cantabria", 40: "Segovia", 41: "Sevilla",
+  42: "Soria", 43: "Tarragona", 44: "Teruel", 45: "Toledo", 46: "Valencia",
+  47: "Valladolid", 48: "Bizkaia", 49: "Zamora", 50: "Zaragoza", 51: "Ceuta",
+  52: "Melilla",
+};
+
+export const regionOptionsByCountry = {
+  AU: australiaStates.map((state) => state.name),
+  IT: italyProvinces,
+  IE: irelandCounties,
+};
+
+export const getRegionMode = (countryCode) => {
+  const code = (countryCode || "").toUpperCase();
+  if (regionOptionsByCountry[code]) return "select";
+  if (code === "ES") return "auto";
+  if (stateProvinceCountries.includes(code)) return "text";
+  return "none";
+};
+
+export const getRegionOptions = (countryCode) =>
+  regionOptionsByCountry[(countryCode || "").toUpperCase()] || [];
+
+const inRange = (value, [from, to]) => value >= from && value <= to;
+
+// Регион по индексу. Null — значит однозначно не определяется, спрашиваем.
+export const getRegionByPostalCode = (countryCode, postal) => {
+  const code = (countryCode || "").toUpperCase();
+  const digits = (postal || "").replace(/\D/g, "");
+
+  if (code === "AU") {
+    if (digits.length !== 4) return null;
+    const value = Number(digits);
+    return (
+      australiaStates.find((state) =>
+        state.ranges.some((range) => inRange(value, range)),
+      )?.name || null
+    );
+  }
+
+  if (code === "ES") {
+    if (digits.length < 2) return null;
+    return spainProvincesByCp[digits.slice(0, 2)] || null;
+  }
+
+  if (code === "IT") {
+    if (digits.length !== 5) return null;
+    const value = Number(digits);
+    return (
+      ITALY_CAP_PROVINCES.find(([range]) => inRange(value, range))?.[1] || null
+    );
+  }
+
+  return null;
+};
+
+// | ПОДПИСИ ПОЛЕЙ ПО СТРАНЕ ----------------------------------------------------
+// Ключи переводов для стран, где поле называется иначе. Остальные страны берут
+// значения из DEFAULT_FIELD_LABELS.
+export const countryFieldLabels = {
+  AU: {
+    apartment: "apartmentUnitPlaceholder",
+    city: "suburbPlaceholder",
+    state: "stateTerritoryPlaceholder",
+  },
+  // Скандинавы уточняют квартиру этажом и стороной площадки: «3. tv».
+  DK: { apartment: "apartmentFloorSidePlaceholder" },
+  NO: { apartment: "apartmentFloorSidePlaceholder" },
+  SE: { apartment: "apartmentFloorSidePlaceholder" },
+  // Бельгия — «bus», номер ящика в доме.
+  BE: { apartment: "apartmentBusPlaceholder" },
+  // Португалия — «andar», этаж: «3º Esq».
+  PT: { apartment: "apartmentFloorPlaceholder" },
+  IT: { state: "provincePlaceholder" },
+  IE: { state: "countyPlaceholder" },
+};
+
+export const DEFAULT_FIELD_LABELS = {
+  apartment: "apartmentPlaceholder",
+  city: "cityPlaceholder",
+  state: "statePlaceholder",
+};
+
+export const getFieldLabelKey = (countryCode, field) =>
+  countryFieldLabels[(countryCode || "").toUpperCase()]?.[field] ||
+  DEFAULT_FIELD_LABELS[field];
 
 // | POSTAL CODE FORMAT (маска ввода + валидация + пример) ----------------------
 // mask: "#" — слот для символа, остальные символы — литералы-разделители.
@@ -1072,6 +1423,20 @@ const formatUK = (value) => {
   const s = cleanPostal(value).slice(0, 7);
   return s.length > 3 ? `${s.slice(0, -3)} ${s.slice(-3)}` : s;
 };
+
+// Индексы с буквенным префиксом страны: LT-12345, LV-1234, L-1234, AD100.
+// Игрок обычно набирает одни цифры, поэтому префикс дописываем сами. Если он
+// всё же ввёл его руками, цифры берём после префикса — иначе вышло бы LV-LV1234.
+const formatPrefixed =
+  (prefix, digits, separator = "-") =>
+  (value) => {
+    const cleaned = cleanPostal(value);
+    const rest = cleaned.startsWith(prefix)
+      ? cleaned.slice(prefix.length)
+      : cleaned;
+    const nums = rest.replace(/\D/g, "").slice(0, digits);
+    return nums ? `${prefix}${separator}${nums}` : "";
+  };
 
 const DIGIT4 = /^\d{4}$/;
 const DIGIT5 = /^\d{5}$/;
@@ -1105,7 +1470,6 @@ export const postalCodeFormats = {
   TR: { example: "34000", mask: "#####", regex: DIGIT5 },
   UA: { example: "01001", mask: "#####", regex: DIGIT5 },
   EE: { example: "10111", mask: "#####", regex: DIGIT5 },
-  LT: { example: "01100", mask: "#####", regex: DIGIT5 },
   KR: { example: "06236", mask: "#####", regex: DIGIT5 },
   FI: { example: "00100", mask: "#####", regex: DIGIT5 },
   HR: { example: "10000", mask: "#####", regex: DIGIT5 },
@@ -1135,6 +1499,25 @@ export const postalCodeFormats = {
   NZ: { example: "6011", mask: "####", regex: DIGIT4 },
   PH: { example: "1000", mask: "####", regex: DIGIT4 },
   ZA: { example: "0001", mask: "####", regex: DIGIT4 },
+  LI: { example: "9490", mask: "####", regex: DIGIT4 },
+
+  // 3 цифры
+  IS: { example: "101", mask: "###", regex: /^\d{3}$/ },
+
+  // Буквенный префикс страны
+  LT: {
+    example: "LT-12345",
+    format: formatPrefixed("LT", 5),
+    regex: /^LT-\d{5}$/,
+  },
+  LV: { example: "LV-1234", format: formatPrefixed("LV", 4), regex: /^LV-\d{4}$/ },
+  LU: { example: "L-1234", format: formatPrefixed("L", 4), regex: /^L-\d{4}$/ },
+  // Андорра: семь приходов, AD100…AD700.
+  AD: { example: "AD500", format: formatPrefixed("AD", 3, ""), regex: /^AD[1-7]00$/ },
+
+  // Микрогосударства: индекс всегда из одного диапазона.
+  MC: { example: "98000", mask: "#####", regex: /^980\d{2}$/ },
+  SM: { example: "47890", mask: "#####", regex: /^4789\d$/ },
 };
 
 export const getPostalCodeFormat = (countryCode) =>
