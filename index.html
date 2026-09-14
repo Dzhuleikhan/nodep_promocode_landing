@@ -20,7 +20,7 @@
       data-pg-phone-selector="[data-pg='phone']"
     ></script>
   </head>
-  <body class="bg-[#091025] overscroll-none">
+  <body class="bg-[#000000] overscroll-none">
     <div class="wrapper w-full h-full min-w-[320px] overflow-hidden">
       <header
         class="py-[29px] max-[1200px]:py-[13px] absolute leading-0 top-0 w-full z-[500]"
@@ -79,55 +79,24 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
+          <!-- декор по краям экрана, низ уходит под край hero -->
           <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left.webp"
-            alt="Thunder"
+            class="hero-star pointer-events-none absolute left-[calc(50%_-_869px)] -bottom-[142px] z-[2] w-[361px] max-[1200px]:hidden max-[992px]:block max-[992px]:-left-[30px] max-[992px]:-bottom-[20px] max-[992px]:w-[180px] max-[576px]:left-auto max-[576px]:-right-[93px] max-[576px]:bottom-[53px] max-[576px]:w-[180px] max-[576px]:blur-[2px]"
+            width="361"
+            height="343"
+            src="https://3344112-img.b-cdn.net/graphic/landings/hitslot/star.webp"
+            alt="Star"
           />
           <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/seven.webp"
+            class="hero-seven pointer-events-none absolute left-[calc(50%_+_530px)] -bottom-[156px] z-[2] w-[429px] max-[1200px]:hidden max-[992px]:block max-[992px]:left-auto max-[992px]:-right-[40px] max-[992px]:-bottom-[20px] max-[992px]:w-[220px] max-[576px]:hidden"
+            width="429"
+            height="420"
+            src="https://3344112-img.b-cdn.net/graphic/landings/hitslot/seven.webp"
             alt="Seven"
-          />
-          <img
-            class="absolute orange-img left-[50%] z-[11] max-[576px]:right-auto max-[576px]:z-[1] max-[576px]:max-w-[270px] max-[576px]:-left-[150px] max-[992px]:left-auto max-[992px]:-right-[100px] max-[992px]:-translate-x-0 max-[992px]:max-w-[450px] max-[1200px]:max-w-[200px] -translate-x-[38%] -bottom-12"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/orange.webp"
-            alt="Orange"
-          />
-          <img
-            class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/watermelon.webp"
-            alt="watermelon"
-          />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star.webp"
-            alt="star"
-          />
-          <img
-            class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/plum.webp"
-            alt="plum"
           />
           <!-- container -->
           <div
-            class="max-w-[1140px] max-[576px]:pb-[30px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
+            class="max-w-[1140px] max-[576px]:pb-[30px] max-[576px]:px-6 max-[992px]:pb-[70px] max-[992px]:pt-[90px] px-[14px] mx-auto pb-[155px] relative pt-[170px]"
           >
             <!-- inner -->
             <div class="relative z-20">
@@ -148,23 +117,45 @@
                 ></h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[20px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
                 ></p>
+                <!-- game art: джокер уходит шеей под название игры.
+                     Лежит между подзаголовком и кнопкой: на ≤992 так и идёт в потоке,
+                     на десктопе вынесен абсолютом вправо к низу hero
+                     (-bottom = pb контейнера, -right = выход за контент + px контейнера) -->
+                <div
+                  class="hero-game pointer-events-none absolute -bottom-[155px] -right-[70px] z-[3] flex w-[740px] flex-col items-center rtl:right-auto rtl:-left-[70px] max-[1200px]:w-[560px] max-[1200px]:-right-[54px] max-[1200px]:rtl:-left-[54px] max-[992px]:relative max-[992px]:bottom-auto max-[992px]:right-auto max-[992px]:rtl:left-auto max-[992px]:mt-8 max-[992px]:max-w-full max-[576px]:mt-9 max-[576px]:w-[400px] max-[576px]:max-w-none"
+                >
+                  <img
+                    class="w-[54.6%] max-[576px]:absolute max-[576px]:-left-[105px] max-[576px]:top-[98px] max-[576px]:w-[300px] max-[576px]:max-w-none max-[576px]:rotate-[25deg] max-[576px]:blur-[2px]"
+                    width="404"
+                    height="341"
+                    src="https://3344112-img.b-cdn.net/graphic/landings/hitslot/joker.webp"
+                    alt="Joker"
+                  />
+                  <img
+                    class="relative -mt-[13.2%] w-full max-[576px]:mt-0"
+                    width="740"
+                    height="330"
+                    src="https://3344112-img.b-cdn.net/graphic/landings/hitslot/game-name.webp"
+                    alt="2024 Hit Slot"
+                  />
+                </div>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
-                  class="hero-modal-open-btn cursor-pointer hero-btn rounded-[36px] max-[576px]:py-5 max-[992px]:mt-[300px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-4 max-[350px]:px-4 max-[350px]:w-full"
+                  class="hero-modal-open-btn relative z-[4] cursor-pointer hero-btn rounded-[36px] text-[#0f0f0f] mt-10 text-2xl font-black uppercase leading-none py-6 px-16 max-[576px]:mt-0 max-[576px]:w-full max-[576px]:px-6 max-[576px]:text-[26px] max-[350px]:px-4"
                 >
                   GET BONUS
                 </button>
               </div>
             </div>
             <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] z-[3] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
-              alt="Zeus"
+              class="hero-orange pointer-events-none absolute left-[142px] -bottom-[97px] z-[2] w-[296px] rtl:left-auto rtl:right-[142px] max-[1200px]:-bottom-[72px] max-[1200px]:w-[220px] max-[992px]:hidden max-[576px]:block max-[576px]:left-[calc(50%_-_48px)] max-[576px]:rtl:right-auto max-[576px]:rtl:left-[calc(50%_-_48px)] max-[576px]:-bottom-[74px] max-[576px]:w-[280px] max-[576px]:blur-[2px]"
+              width="296"
+              height="275"
+              src="https://3344112-img.b-cdn.net/graphic/landings/hitslot/orange.webp"
+              alt="Orange"
             />
           </div>
         </section>
@@ -173,7 +164,7 @@
           class="max-w-[1110px] mx-auto relative max-[576px]:top-0 -top-[40px] z-[20]"
         >
           <div
-            class="bg-[#0E5993] relative border-2 border-[#A3B1FF] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12 max-[576px]:px-[40px] max-[350px]:px-[46px]"
+            class="bg-[#68411D] relative border-2 border-[#CE7237] max-[576px]:border-r-0 max-[576px]:border-l-0 max-[576px]:rounded-none rounded-3xl py-6 px-12 max-[576px]:px-[40px] max-[350px]:px-[46px]"
           >
             <div class="step-slider" dir="ltr">
               <div class="swiper-wrapper">
@@ -2226,7 +2217,7 @@
         </div>
       </div>
       <div
-        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#091025]"
+        class="preloader pointer-events-none fixed left-0 top-0 z-[1000] grid h-screen w-full place-items-center bg-[#000000]"
       >
         <svg
           width="106"

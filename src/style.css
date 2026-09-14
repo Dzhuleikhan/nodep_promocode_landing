@@ -81,7 +81,8 @@
 
 
 #hero {
-  background: radial-gradient(49.93% 49.93% at 50% 50.07%, #377bbe 0%, #120803 100%);
+  background: url("https://3344112-img.b-cdn.net/graphic/landings/hitslot/hero-bg.webp") center / cover no-repeat,
+    #420109;
 }
 
 .hero-title {
@@ -614,36 +615,6 @@
   transform: translate(-50%, -50%);
 }
 
-.hero-main-img {
-  left: auto;
-  right: auto;
-  inset-inline-start: 280px;
-}
-
-[dir="rtl"] .hero-main-img {
-  inset-inline-start: 380px;
-}
-
-@media (max-width: 992px) {
-  .hero-main-img {
-    inset-inline-start: 50%;
-    margin-inline-start: -450px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-main-img {
-    inset-inline-start: auto;
-    margin-inline-start: calc(50% - 300px);
-  }
-
-  [dir="rtl"] .hero-main-img {
-    inset-inline-start: auto;
-    margin-inline-start: calc(50% - 300px);
-  }
-}
-
-
 /* Postal Code hint tooltip */
 .two-step-zipcode-info {
   align-items: center;
@@ -741,11 +712,13 @@
   position: absolute;
   left: 360px;
   top: -89px;
-  background: linear-gradient(to bottom, #FF8AA3, #A11505);
-  background: linear-gradient(var(--wager-badge-angle), #FF8AA3, #A11505);
+  background: linear-gradient(to bottom, #FFBB00, #A53B00);
+  background: linear-gradient(var(--wager-badge-angle), #FFBB00, #A53B00);
   transform: rotate(5deg);
   border-radius: 22px;
   padding: 5px;
+  /* поверх джокера: .hero-game лежит в том же контексте с z-index 3 */
+  z-index: 5;
   animation: wager-badge-spin 4s linear infinite;
   /* Свой слой, иначе scale перерисовывает текст каждый кадр и он дрожит */
   will-change: transform;
@@ -762,7 +735,7 @@
   border-radius: 18px;
   width: 100%;
   height: 100%;
-  background: #BF0E34;
+  background: #FFBB00;
   display: flex;
   align-items: center;
   justify-content: center;

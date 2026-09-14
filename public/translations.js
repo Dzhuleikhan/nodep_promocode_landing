@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
-    heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>gates of olympus</span>`,
+    heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     lowWager: "Low wager!",
@@ -72,7 +72,7 @@ export const translations = {
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
-    heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>gates of olympus</span>.`,
+    heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>hit slot</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     lowWager: "Faible mise !",
@@ -144,7 +144,7 @@ export const translations = {
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
-    heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>gates of olympus</span>`,
+    heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     lowWager: "Rulaj redus!",
@@ -216,7 +216,7 @@ export const translations = {
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
-    heroTitle: `igényeld a bónuszod <br/> <span><i class="actual-spin-amount">100</i> ingyenes pörgetés</span> <br/> a <span>gates of olympus</span> játékban`,
+    heroTitle: `igényeld a bónuszod <br/> <span><i class="actual-spin-amount">100</i> ingyenes pörgetés</span> <br/> a <span>hit slot</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
     lowWager: "Alacsony megforgatás!",
@@ -288,7 +288,7 @@ export const translations = {
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
-    heroTitle: `ODBIERZ SWÓJ BONUS <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>gates of olympus</span>`,
+    heroTitle: `ODBIERZ SWÓJ BONUS <br/> <span><i class="actual-spin-amount">100</i> darmowych spinów</span> <br/> w <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     lowWager: "Niski obrót!",
@@ -359,7 +359,7 @@ export const translations = {
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
-    heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>gates of olympus</span>`,
+    heroTitle: `získejte svůj bonus <br/> <span><i class="actual-spin-amount">100</i> volných točení</span> <br/> ve hře <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
     lowWager: "Nízké protočení!",
@@ -432,7 +432,7 @@ export const translations = {
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
-    heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>gates of olympus</span>`,
+    heroTitle: `prevzemite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> brezplačnih vrtljajev</span> <br/> v <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
     lowWager: "Nizke stavne zahteve!",
@@ -504,7 +504,7 @@ export const translations = {
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
-    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>gates of olympus</span>`,
+    heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class="actual-spin-amount">100</i> δωρεάν περιστροφές</span> <br/> στο <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
     lowWager: "Χαμηλός τζίρος!",
@@ -577,7 +577,7 @@ export const translations = {
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
-    heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>gates of olympus</span>`,
+    heroTitle: `kreve din bonus <br/> <span><i class="actual-spin-amount">100</i> gratisspinn</span> <br/> i <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
     lowWager: "Lavt omsetningskrav!",
@@ -648,7 +648,7 @@ export const translations = {
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
-    heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>gates of olympus</span>`,
+    heroTitle: `hämta din bonus <br/> <span><i class="actual-spin-amount">100</i> gratissnurr</span> <br/> i <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
     lowWager: "Lågt omsättningskrav!",
@@ -720,7 +720,7 @@ export const translations = {
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
-    heroTitle: `získajte svoj bonus <br/> <span><i class="actual-spin-amount">100</i> voľných spinov</span> <br/> v <span>gates of olympus</span>`,
+    heroTitle: `získajte svoj bonus <br/> <span><i class="actual-spin-amount">100</i> voľných spinov</span> <br/> v <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
     lowWager: "Nízke pretočenie!",
@@ -792,7 +792,7 @@ export const translations = {
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
-    heroTitle: `заберите свой бонус <br/> <span><i class="actual-spin-amount">100</i> фриспинов</span> <br/> в <span>gates of olympus</span>`,
+    heroTitle: `заберите свой бонус <br/> <span><i class="actual-spin-amount">100</i> фриспинов</span> <br/> в <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
     lowWager: "Низкий вейджер!",
@@ -864,7 +864,7 @@ export const translations = {
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
-    heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>gates of olympus</span>`,
+    heroTitle: `reclama tu bono <br/> <span><i class="actual-spin-amount">100</i> giros gratis</span> <br/> en <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     lowWager: "¡Rollover bajo!",
@@ -936,7 +936,7 @@ export const translations = {
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
-    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>gates of olympus</span>`,
+    heroTitle: `resgate seu bônus <br/> <span><i class="actual-spin-amount">100</i> rodadas grátis</span> <br/> em <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     lowWager: "Rollover baixo!",
@@ -1007,7 +1007,7 @@ export const translations = {
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
-    heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>gates of olympus</span>`,
+    heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
     heroBtn: "bonus holen",
     lowWager: "Niedrige Umsatzbedingung!",
@@ -1079,7 +1079,7 @@ export const translations = {
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
-    heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>gates of olympus</span>`,
+    heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
     heroBtn: "ottieni bonus",
     lowWager: "Requisito di puntata basso!",
@@ -1151,7 +1151,7 @@ export const translations = {
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
-    heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>gates of olympus</span>`,
+    heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
     heroBtn: "saada boonus",
     lowWager: "Madal läbimängu nõue!",
@@ -1223,7 +1223,7 @@ export const translations = {
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
-    heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>gates of olympus</span>`,
+    heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
     heroBtn: "saņemt bonusu",
     lowWager: "Zems likmju pieprasījums!",
@@ -1295,7 +1295,7 @@ export const translations = {
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
-    heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>gates of olympus</span>`,
+    heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
     heroBtn: "gauti premiją",
     lowWager: "Mažas sukimo reikalavimas!",
@@ -1367,7 +1367,7 @@ export const translations = {
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
-    heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>gates of olympus</span>`,
+    heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
     heroBtn: "preuzmi bonus",
     lowWager: "Niski uvjeti klađenja!",
@@ -1439,7 +1439,7 @@ export const translations = {
   },
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>gates of olympus</span>`,
+    heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     lowWager: "Lavt omsætningskrav!",
@@ -1510,7 +1510,7 @@ export const translations = {
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
-    heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>gates of olympus</span>`,
+    heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Ilmaiskierrosta ensimmäisellä talletuksellasi`,
     heroBtn: "hae bonus",
     lowWager: "Matala kierrätysvaatimus!",
@@ -1582,7 +1582,7 @@ export const translations = {
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
-    heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>gates of olympus</span>`,
+    heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Безплатни завъртания с първия ви депозит`,
     heroBtn: "вземи бонус",
     lowWager: "Нисък оборот!",
@@ -1654,7 +1654,7 @@ export const translations = {
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
-    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>gates of olympus</span>`,
+    heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     lowWager: "Lage inzetvereiste!",
@@ -1806,7 +1806,7 @@ export const translations = {
   },
   sw: {
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
-    heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> katika <span>gates of olympus</span>`,
+    heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> katika <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins Kwa amana yako ya kwanza`,
     heroBtn: "pata bonasi",
     lowWager: "Masharti madogo ya kucheza!",
@@ -1877,7 +1877,7 @@ export const translations = {
   },
   rw: {
     pageTitle: "🎁 Bonus yawe iri tayari - Goldbet",
-    heroTitle: `saba bonus yawe <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> muri <span>gates of olympus</span>`,
+    heroTitle: `saba bonus yawe <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> muri <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins Ku itangwa ryawe rya mbere`,
     heroBtn: "fata bonus",
     lowWager: "Ibisabwa bike byo gukina!",
@@ -2019,7 +2019,7 @@ export const translations = {
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
-    heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f’<span>gates of olympus</span>`,
+    heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f’<span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins B’Xejn bl-ewwel depożitu tiegħek`,
     heroBtn: "ikseb il-bonus",
     lowWager: "Rekwiżit baxx ta' mħatra!",
@@ -2091,7 +2091,7 @@ export const translations = {
   },
   lb: {
     pageTitle: "🎁 Äre Bonus ass prett - Goldbet",
-    heroTitle: `fuerdert Äre Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> an <span>gates of olympus</span>`,
+    heroTitle: `fuerdert Äre Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> an <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat Ärer éischter Depôt`,
     heroBtn: "Bonus kréien",
     lowWager: "Niddreg Ëmsazbedingung!",
@@ -2163,7 +2163,7 @@ export const translations = {
   },
   zh: {
     pageTitle: "🎁 您的奖金已准备好 - Goldbet",
-    heroTitle: `领取您的奖金 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>gates of olympus</span>`,
+    heroTitle: `领取您的奖金 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> 最高可达 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> 次免费旋转，适用于您的首次存款`,
     heroBtn: "领取奖金",
     lowWager: "低流水要求！",
@@ -2232,7 +2232,7 @@ export const translations = {
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
-    heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> spins saor in aisce</span> <br/> i <span>gates of olympus</span>`,
+    heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> spins saor in aisce</span> <br/> i <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> spins saor in aisce le do chéad taisce`,
     heroBtn: "faigh an bónas",
     lowWager: "Riachtanas íseal geallta!",
@@ -2305,7 +2305,7 @@ export const translations = {
   },
   am: {
     pageTitle: "🎁 ጉርሻዎ ዝግጁ ነው - Goldbet",
-    heroTitle: `ጉርሻዎን ይውሰዱ <br/> <span><i class="actual-spin-amount">100</i> ነጻ ስፒኖች</span> <br/> በ <span>gates of olympus</span>`,
+    heroTitle: `ጉርሻዎን ይውሰዱ <br/> <span><i class="actual-spin-amount">100</i> ነጻ ስፒኖች</span> <br/> በ <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> እና <span class="two-step-bonus-spins"></span> ነጻ ስፒኖች ከመጀመሪያዎ ተቀማጭ`,
     heroBtn: "ጉርሻ ይውሰዱ",
     lowWager: "ዝቅተኛ የውርርድ መስፈርት!",
@@ -2374,7 +2374,7 @@ export const translations = {
   },
   lm: {
     pageTitle: "🎁 Bboonasi yo etegekeddwa - Goldbet",
-    heroTitle: `weebaze bboonasi yo <br/> <span><i class="actual-spin-amount">100</i> spins ez'eddembe</span> <br/> mu <span>gates of olympus</span>`,
+    heroTitle: `weebaze bboonasi yo <br/> <span><i class="actual-spin-amount">100</i> spins ez'eddembe</span> <br/> mu <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> ne <span class="two-step-bonus-spins"></span> spins ez'eddembe n’okusooka okuteeka ssente`,
     heroBtn: "funa bboonasi",
     lowWager: "Ebisabwa ebitono eby'okuzannya!",
@@ -2446,7 +2446,7 @@ export const translations = {
   },
   ha: {
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
-    heroTitle: `karɓi kyautarka <br/> <span><i class="actual-spin-amount">100</i> spins kyauta</span> <br/> a cikin <span>gates of olympus</span>`,
+    heroTitle: `karɓi kyautarka <br/> <span><i class="actual-spin-amount">100</i> spins kyauta</span> <br/> a cikin <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Kyauta tare da ajiyarka ta farko`,
     heroBtn: "karɓi kyauta",
     lowWager: "Ƙananan buƙatun caca!",
@@ -2517,7 +2517,7 @@ export const translations = {
   },
   yo: {
     pageTitle: "🎁 Ẹbun rẹ ti ṣetan - Goldbet",
-    heroTitle: `gba ẹbun rẹ <br/> <span><i class="actual-spin-amount">100</i> spins ọfẹ</span> <br/> ninu <span>gates of olympus</span>`,
+    heroTitle: `gba ẹbun rẹ <br/> <span><i class="actual-spin-amount">100</i> spins ọfẹ</span> <br/> ninu <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> tó dé <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Ọfẹ pẹlu idogo akọkọ rẹ`,
     heroBtn: "gba ẹbun",
     lowWager: "Ibeere tẹtẹ kékeré!",
@@ -2588,7 +2588,7 @@ export const translations = {
   },
   ig: {
     pageTitle: "🎁 Ego gị dị njikere - Goldbet",
-    heroTitle: `nata ego gị <br/> <span><i class="actual-spin-amount">100</i> spins efu</span> <br/> na <span>gates of olympus</span>`,
+    heroTitle: `nata ego gị <br/> <span><i class="actual-spin-amount">100</i> spins efu</span> <br/> na <span>hit slot</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins Efu na nkwụnye ego mbụ gị`,
     heroBtn: "nata ego",
     lowWager: "Obere ihe achọrọ ịgba!",
@@ -2659,7 +2659,7 @@ export const translations = {
   },
   tw: {
     pageTitle: "🎁 Wo akyɛde no asiesie - Goldbet",
-    heroTitle: `gye wo akyɛde <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> wɔ <span>gates of olympus</span> mu`,
+    heroTitle: `gye wo akyɛde <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> wɔ <span>hit slot</span> mu`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kosi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins wɔ wo deposit a edi kan no mu`,
     heroBtn: "gye akyɛde",
     lowWager: "Agodie ho ahwehwɛde ketewa!",
