@@ -67,6 +67,12 @@ export const translations = {
     keepRegistering: "Keep Registering",
     returnToWebsite: "Return to Website",
     lowWager: "Low wager!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unit",
+    suburbPlaceholder: "Suburb",
+    stateTerritoryPlaceholder: "State / Territory",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "County",
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
@@ -137,6 +143,12 @@ export const translations = {
     keepRegistering: "Continuer l'inscription",
     returnToWebsite: "Retourner au site web",
     lowWager: "Faible mise !",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unité",
+    suburbPlaceholder: "Quartier",
+    stateTerritoryPlaceholder: "État / Territoire",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "Comté",
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
@@ -207,6 +219,12 @@ export const translations = {
     keepRegistering: "Continuă Înregistrarea",
     returnToWebsite: "Întoarce-te la Website",
     lowWager: "Rulaj redus!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unitate",
+    suburbPlaceholder: "Cartier",
+    stateTerritoryPlaceholder: "Stat / Teritoriu",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Comitat",
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
@@ -277,6 +295,12 @@ export const translations = {
     keepRegistering: "Folytatás a regisztrációval",
     returnToWebsite: "Vissza a weboldalra",
     lowWager: "Alacsony megforgatás!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Lakóegység",
+    suburbPlaceholder: "Városrész",
+    stateTerritoryPlaceholder: "Állam / terület",
+    provincePlaceholder: "Tartomány",
+    countyPlaceholder: "Megye",
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
@@ -346,6 +370,12 @@ export const translations = {
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
     lowWager: "Niski obrót!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Lokal",
+    suburbPlaceholder: "Dzielnica",
+    stateTerritoryPlaceholder: "Stan / terytorium",
+    provincePlaceholder: "Prowincja",
+    countyPlaceholder: "Hrabstwo",
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
@@ -417,6 +447,12 @@ export const translations = {
     keepRegistering: "Pokračujte v registraci",
     returnToWebsite: "Vrátit se na web",
     lowWager: "Nízké protočení!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jednotka",
+    suburbPlaceholder: "Čtvrť",
+    stateTerritoryPlaceholder: "Stát / teritorium",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Hrabství",
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
@@ -487,6 +523,12 @@ export const translations = {
     keepRegistering: "Nadaljujte z registracijo",
     returnToWebsite: "Vrni se na spletno stran",
     lowWager: "Nizko igranje!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enota",
+    suburbPlaceholder: "Predmestje",
+    stateTerritoryPlaceholder: "Zvezna država / ozemlje",
+    provincePlaceholder: "Provinca",
+    countyPlaceholder: "Grofija",
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
@@ -558,6 +600,12 @@ export const translations = {
     keepRegistering: "Συνεχίστε την εγγραφή",
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
     lowWager: "Χαμηλός τζίρος!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Μονάδα",
+    suburbPlaceholder: "Προάστιο",
+    stateTerritoryPlaceholder: "Πολιτεία / Επικράτεια",
+    provincePlaceholder: "Επαρχία",
+    countyPlaceholder: "Κομητεία",
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
@@ -627,6 +675,12 @@ export const translations = {
     keepRegistering: "Fortsett registreringen",
     returnToWebsite: "Tilbake til nettsiden",
     lowWager: "Lavt omsetningskrav!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhet",
+    suburbPlaceholder: "Forstad",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskap",
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
@@ -697,6 +751,12 @@ export const translations = {
     keepRegistering: "Fortsätt registreringen",
     returnToWebsite: "Återgå till webbplatsen",
     lowWager: "Lågt omsättningskrav!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhet",
+    suburbPlaceholder: "Förort",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskap",
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
@@ -767,6 +827,12 @@ export const translations = {
     keepRegistering: "Pokračovať v registrácii",
     returnToWebsite: "Vrátiť sa na webovú stránku",
     lowWager: "Nízke pretočenie!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jednotka",
+    suburbPlaceholder: "Mestská časť",
+    stateTerritoryPlaceholder: "Štát / teritórium",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Grófstvo",
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
@@ -837,6 +903,12 @@ export const translations = {
     keepRegistering: "Продолжить регистрацию",
     returnToWebsite: "Вернуться на сайт",
     lowWager: "Низкий вейджер!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Квартира",
+    suburbPlaceholder: "Пригород",
+    stateTerritoryPlaceholder: "Штат / территория",
+    provincePlaceholder: "Провинция",
+    countyPlaceholder: "Графство",
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
@@ -907,6 +979,12 @@ export const translations = {
     keepRegistering: "Seguir registrándome",
     returnToWebsite: "Volver al sitio web",
     lowWager: "¡Apuesta baja!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unidad",
+    suburbPlaceholder: "Localidad",
+    stateTerritoryPlaceholder: "Estado / Territorio",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Condado",
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
@@ -976,6 +1054,12 @@ export const translations = {
     keepRegistering: "Continuar cadastro",
     returnToWebsite: "Voltar ao site",
     lowWager: "Rollover baixo!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unidade",
+    suburbPlaceholder: "Bairro",
+    stateTerritoryPlaceholder: "Estado / Território",
+    provincePlaceholder: "Província",
+    countyPlaceholder: "Condado",
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
@@ -1046,6 +1130,12 @@ export const translations = {
     keepRegistering: "Mit Registrierung fortfahren",
     returnToWebsite: "Zurück zur Website",
     lowWager: "Niedrige Umsatzbedingung!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Einheit",
+    suburbPlaceholder: "Stadtteil",
+    stateTerritoryPlaceholder: "Bundesstaat / Territorium",
+    provincePlaceholder: "Provinz",
+    countyPlaceholder: "Grafschaft",
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
@@ -1116,6 +1206,12 @@ export const translations = {
     keepRegistering: "Continua la Registrazione",
     returnToWebsite: "Ritorna al Sito Web",
     lowWager: "Puntata bassa!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unità",
+    suburbPlaceholder: "Quartiere",
+    stateTerritoryPlaceholder: "Stato / Territorio",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Contea",
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
@@ -1186,6 +1282,12 @@ export const translations = {
     keepRegistering: "Jätka registreerimist",
     returnToWebsite: "Tagasi veebisaidile",
     lowWager: "Madal läbimängimine!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Üksus",
+    suburbPlaceholder: "Linnaosa",
+    stateTerritoryPlaceholder: "Osariik / territoorium",
+    provincePlaceholder: "Provints",
+    countyPlaceholder: "Krahvkond",
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
@@ -1256,6 +1358,12 @@ export const translations = {
     keepRegistering: "Turpināt reģistrēšanos",
     returnToWebsite: "Atgriezties vietnē",
     lowWager: "Zems apgrozījums!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Vienība",
+    suburbPlaceholder: "Priekšpilsēta",
+    stateTerritoryPlaceholder: "Štats / teritorija",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "Grāfiste",
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
@@ -1326,6 +1434,12 @@ export const translations = {
     keepRegistering: "Tęsti registraciją",
     returnToWebsite: "Grįžti į svetainę",
     lowWager: "Mažas apyvartos reikalavimas!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Vienetas",
+    suburbPlaceholder: "Priemiestis",
+    stateTerritoryPlaceholder: "Valstija / teritorija",
+    provincePlaceholder: "Provincija",
+    countyPlaceholder: "Grafystė",
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
@@ -1396,6 +1510,12 @@ export const translations = {
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
     lowWager: "Nizak uvjet igranja!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jedinica",
+    suburbPlaceholder: "Četvrt",
+    stateTerritoryPlaceholder: "Savezna država / teritorij",
+    provincePlaceholder: "Pokrajina",
+    countyPlaceholder: "Grofovija",
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
@@ -1476,6 +1596,12 @@ export const translations = {
     keepRegistering: "Продовжити реєстрацію",
     returnToWebsite: "Повернутися на сайт",
     lowWager: "Низький вейджер!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Квартира",
+    suburbPlaceholder: "Передмістя",
+    stateTerritoryPlaceholder: "Штат / територія",
+    provincePlaceholder: "Провінція",
+    countyPlaceholder: "Графство",
   },
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1545,6 +1671,12 @@ export const translations = {
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
     lowWager: "Lavt omsætningskrav!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhed",
+    suburbPlaceholder: "Forstad",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskab",
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
@@ -1615,6 +1747,12 @@ export const translations = {
     keepRegistering: "Jatka rekisteröintiä",
     returnToWebsite: "Palaa verkkosivulle",
     lowWager: "Matala kierrätysvaatimus!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Huoneisto",
+    suburbPlaceholder: "Kaupunginosa",
+    stateTerritoryPlaceholder: "Osavaltio / territorio",
+    provincePlaceholder: "Provinssi",
+    countyPlaceholder: "Kreivikunta",
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
@@ -1685,6 +1823,12 @@ export const translations = {
     keepRegistering: "Продължи регистрацията",
     returnToWebsite: "Върни се към сайта",
     lowWager: "Нисък оборот!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Единица",
+    suburbPlaceholder: "Квартал",
+    stateTerritoryPlaceholder: "Щат / територия",
+    provincePlaceholder: "Провинция",
+    countyPlaceholder: "Графство",
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1754,6 +1898,12 @@ export const translations = {
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
     lowWager: "Lage inzetvereiste!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unit",
+    suburbPlaceholder: "Wijk",
+    stateTerritoryPlaceholder: "Staat / territorium",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Graafschap",
   },
   sw: {
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
@@ -1823,6 +1973,12 @@ export const translations = {
     keepRegistering: "Endelea Kujisajili",
     returnToWebsite: "Rudi Tovuti",
     lowWager: "Wager ndogo!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Kitengo",
+    suburbPlaceholder: "Kitongoji",
+    stateTerritoryPlaceholder: "Jimbo / eneo",
+    provincePlaceholder: "Mkoa",
+    countyPlaceholder: "Kaunti",
   },
   rw: {
     pageTitle: "🎁 Inyongera yawe iri ready - Goldbet",
@@ -1893,6 +2049,12 @@ export const translations = {
     keepRegistering: "Komeza Kwiyandikisha",
     returnToWebsite: "Subira ku Rubuga",
     lowWager: "Wager nkeya!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Igice cy'inzu",
+    suburbPlaceholder: "Agace k'umujyi",
+    stateTerritoryPlaceholder: "Leta / Ifasi",
+    provincePlaceholder: "Intara",
+    countyPlaceholder: "Akarere",
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
@@ -1962,6 +2124,12 @@ export const translations = {
     keepRegistering: "تابع التسجيل",
     returnToWebsite: "العودة إلى الموقع",
     lowWager: "رهان منخفض!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "وحدة",
+    suburbPlaceholder: "الضاحية",
+    stateTerritoryPlaceholder: "الولاية / الإقليم",
+    provincePlaceholder: "المحافظة",
+    countyPlaceholder: "المقاطعة",
   },
   zh: {
     pageTitle: "🎁 您的奖励已准备好 - Goldbet",
@@ -2029,6 +2197,12 @@ export const translations = {
     keepRegistering: "继续注册",
     returnToWebsite: "返回网站",
     lowWager: "低流水要求！",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "单元",
+    suburbPlaceholder: "城区",
+    stateTerritoryPlaceholder: "州 / 领地",
+    provincePlaceholder: "省",
+    countyPlaceholder: "郡",
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
@@ -2100,6 +2274,12 @@ export const translations = {
     keepRegistering: "Lean ar aghaidh ag clárú",
     returnToWebsite: "Fill ar an suíomh",
     lowWager: "Wager íseal!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Aonad",
+    suburbPlaceholder: "Bruachbhaile",
+    stateTerritoryPlaceholder: "Stát / Críoch",
+    provincePlaceholder: "Cúige",
+    countyPlaceholder: "Contae",
   },
   lb: {
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
@@ -2169,6 +2349,12 @@ export const translations = {
     keepRegistering: "Weider registréieren",
     returnToWebsite: "Zréck op Websäit",
     lowWager: "Niddreg Ëmsatz!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Eenheet",
+    suburbPlaceholder: "Virstad",
+    stateTerritoryPlaceholder: "Bundesstaat / Territoire",
+    provincePlaceholder: "Provënz",
+    countyPlaceholder: "Grofschaft",
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
@@ -2239,6 +2425,12 @@ export const translations = {
     keepRegistering: "Kompli tirreġistra",
     returnToWebsite: "Mur lura fis-sit",
     lowWager: "Wager baxx!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unità",
+    suburbPlaceholder: "Subborg",
+    stateTerritoryPlaceholder: "Stat / Territorju",
+    provincePlaceholder: "Provinċja",
+    countyPlaceholder: "Kontea",
   },
   lm: {
     pageTitle: "🎁 Bonasi yo yetegekeddwa - Goldbet",
@@ -2309,6 +2501,12 @@ export const translations = {
     keepRegistering: "Genda mu maaso n’okuwandiika",
     returnToWebsite: "Dda ku Mukutu",
     lowWager: "Wager ntono!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ekitundu ky'ennyumba",
+    suburbPlaceholder: "Ekyalo ky'ekibuga",
+    stateTerritoryPlaceholder: "Sitaati / Ekitundu",
+    provincePlaceholder: "Purovinsi",
+    countyPlaceholder: "Essaza",
   },
   am: {
     pageTitle: "🎁 የቦነስዎ ዝግጁ ነው - Goldbet",
@@ -2382,6 +2580,12 @@ export const translations = {
     keepRegistering: "መመዝገብን ቀጥል",
     returnToWebsite: "ወደ ድህረ ገጽ ተመለስ",
     lowWager: "ዝቅተኛ ውርርድ!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "ክፍል",
+    suburbPlaceholder: "የከተማ ዳርቻ",
+    stateTerritoryPlaceholder: "ግዛት / መስተዳድር",
+    provincePlaceholder: "አውራጃ",
+    countyPlaceholder: "ካውንቲ",
   },
   ha: {
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
@@ -2451,6 +2655,12 @@ export const translations = {
     keepRegistering: "Ci gaba da Rijista",
     returnToWebsite: "Koma zuwa Shafin",
     lowWager: "Ƙaramin wager!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Sashen gida",
+    suburbPlaceholder: "Unguwa",
+    stateTerritoryPlaceholder: "Jiha / Yanki",
+    provincePlaceholder: "Lardi",
+    countyPlaceholder: "Gunduma",
   },
   yo: {
     pageTitle: "🎁 Ẹbun rẹ ti ṣetan - Goldbet",
@@ -2520,6 +2730,12 @@ export const translations = {
     keepRegistering: "Tẹsiwaju Iforúkọsílẹ",
     returnToWebsite: "Pada si Oju opo wẹẹbu",
     lowWager: "Wager kekere!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ẹ̀ka ilé",
+    suburbPlaceholder: "Agbègbè ìlú",
+    stateTerritoryPlaceholder: "Ìpínlẹ̀ / Ìjọba agbègbè",
+    provincePlaceholder: "Ẹkùn",
+    countyPlaceholder: "Kóńtì",
   },
   ig: {
     pageTitle: "🎁 Ego gị dị njikere - Goldbet",
@@ -2589,6 +2805,12 @@ export const translations = {
     keepRegistering: "Gaa n’ihu na ndebanye aha",
     returnToWebsite: "Laghachi na Weebụsaịtị",
     lowWager: "Wager dị ala!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Akụkụ ụlọ",
+    suburbPlaceholder: "Akụkụ obodo",
+    stateTerritoryPlaceholder: "Steeti / Ala ọchịchị",
+    provincePlaceholder: "Mpaghara",
+    countyPlaceholder: "Kaụnti",
   },
   tw: {
     pageTitle: "🎁 Wo akyɛde no asiesie - Goldbet",
@@ -2658,5 +2880,11 @@ export const translations = {
     keepRegistering: "Kɔ So Kyerɛw Din",
     returnToWebsite: "San Kɔ Website No So",
     lowWager: "Wager a ɛsua!",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ɔdan sin",
+    suburbPlaceholder: "Kurow mu fa",
+    stateTerritoryPlaceholder: "Ɔman / Asase",
+    provincePlaceholder: "Mantam",
+    countyPlaceholder: "Kaunti",
   },
 };
