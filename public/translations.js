@@ -67,6 +67,12 @@ export const translations = {
     areYouSure: `Are You Sure? <br /> Your Progress Will Be Lost`,
     keepRegistering: "Keep Registering",
     returnToWebsite: "Return to Website",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unit",
+    suburbPlaceholder: "Suburb",
+    stateTerritoryPlaceholder: "State / Territory",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "County",
   },
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
@@ -137,6 +143,12 @@ export const translations = {
     areYouSure: `Êtes-vous sûr ? <br /> Votre progression sera perdue.`,
     keepRegistering: "Continuer l'inscription",
     returnToWebsite: "Retourner au site web",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unité",
+    suburbPlaceholder: "Quartier",
+    stateTerritoryPlaceholder: "État / Territoire",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "Comté",
   },
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
@@ -207,6 +219,12 @@ export const translations = {
     areYouSure: `Ești sigur? <br /> Progresul tău va fi pierdut`,
     keepRegistering: "Continuă Înregistrarea",
     returnToWebsite: "Întoarce-te la Website",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unitate",
+    suburbPlaceholder: "Cartier",
+    stateTerritoryPlaceholder: "Stat / Teritoriu",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Comitat",
   },
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
@@ -277,6 +295,12 @@ export const translations = {
     areYouSure: `Biztos vagy benne? <br /> A haladásod elvész`,
     keepRegistering: "Folytatás a regisztrációval",
     returnToWebsite: "Vissza a weboldalra",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Lakóegység",
+    suburbPlaceholder: "Városrész",
+    stateTerritoryPlaceholder: "Állam / terület",
+    provincePlaceholder: "Tartomány",
+    countyPlaceholder: "Megye",
   },
   pl: {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
@@ -346,6 +370,12 @@ export const translations = {
     areYouSure: `Czy na pewno chcesz to zrobić? <br /> Twój postęp zostanie utracony`,
     keepRegistering: "Kontynuuj rejestrację",
     returnToWebsite: "Wróć na stronę",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Lokal",
+    suburbPlaceholder: "Dzielnica",
+    stateTerritoryPlaceholder: "Stan / terytorium",
+    provincePlaceholder: "Prowincja",
+    countyPlaceholder: "Hrabstwo",
   },
   cs: {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
@@ -417,6 +447,12 @@ export const translations = {
     areYouSure: `Jste si jistí? <br /> Váš pokrok bude ztracen`,
     keepRegistering: "Pokračujte v registraci",
     returnToWebsite: "Vrátit se na web",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jednotka",
+    suburbPlaceholder: "Čtvrť",
+    stateTerritoryPlaceholder: "Stát / teritorium",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Hrabství",
   },
   sl: {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
@@ -487,6 +523,12 @@ export const translations = {
     areYouSure: `Ste prepričani? <br /> Vaš napredek bo izgubljen`,
     keepRegistering: "Nadaljujte z registracijo",
     returnToWebsite: "Vrni se na spletno stran",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enota",
+    suburbPlaceholder: "Predmestje",
+    stateTerritoryPlaceholder: "Zvezna država / ozemlje",
+    provincePlaceholder: "Provinca",
+    countyPlaceholder: "Grofija",
   },
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
@@ -558,6 +600,12 @@ export const translations = {
     areYouSure: `Είστε σίγουροι? <br /> Η πρόοδός σας θα χαθεί`,
     keepRegistering: "Συνεχίστε την εγγραφή",
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Μονάδα",
+    suburbPlaceholder: "Προάστιο",
+    stateTerritoryPlaceholder: "Πολιτεία / Επικράτεια",
+    provincePlaceholder: "Επαρχία",
+    countyPlaceholder: "Κομητεία",
   },
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
@@ -627,6 +675,12 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Fremgangen din vil gå tapt`,
     keepRegistering: "Fortsett registreringen",
     returnToWebsite: "Tilbake til nettsiden",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhet",
+    suburbPlaceholder: "Forstad",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskap",
   },
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
@@ -697,6 +751,12 @@ export const translations = {
     areYouSure: `Är du säker? <br /> Din framsteg kommer att gå förlorad`,
     keepRegistering: "Fortsätt registreringen",
     returnToWebsite: "Återgå till webbplatsen",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhet",
+    suburbPlaceholder: "Förort",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskap",
   },
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
@@ -767,6 +827,12 @@ export const translations = {
     areYouSure: `Ste si istí? <br /> Váš pokrok bude stratený`,
     keepRegistering: "Pokračovať v registrácii",
     returnToWebsite: "Vrátiť sa na webovú stránku",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jednotka",
+    suburbPlaceholder: "Mestská časť",
+    stateTerritoryPlaceholder: "Štát / teritórium",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Grófstvo",
   },
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
@@ -837,6 +903,12 @@ export const translations = {
     areYouSure: `Вы уверены? <br /> Ваш прогресс будет утерян`,
     keepRegistering: "Продолжить регистрацию",
     returnToWebsite: "Вернуться на сайт",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Квартира",
+    suburbPlaceholder: "Пригород",
+    stateTerritoryPlaceholder: "Штат / территория",
+    provincePlaceholder: "Провинция",
+    countyPlaceholder: "Графство",
   },
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
@@ -907,6 +979,12 @@ export const translations = {
     areYouSure: `¿Estás seguro? <br /> Tu progreso se perderá`,
     keepRegistering: "Seguir registrándome",
     returnToWebsite: "Volver al sitio web",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unidad",
+    suburbPlaceholder: "Localidad",
+    stateTerritoryPlaceholder: "Estado / Territorio",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Condado",
   },
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
@@ -976,6 +1054,12 @@ export const translations = {
     areYouSure: `Tem certeza? <br /> Seu progresso será perdido`,
     keepRegistering: "Continuar cadastro",
     returnToWebsite: "Voltar ao site",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unidade",
+    suburbPlaceholder: "Bairro",
+    stateTerritoryPlaceholder: "Estado / Território",
+    provincePlaceholder: "Província",
+    countyPlaceholder: "Condado",
   },
   de: {
     pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
@@ -1046,6 +1130,12 @@ export const translations = {
     areYouSure: `Bist du sicher? <br /> Dein Fortschritt geht verloren`,
     keepRegistering: "Mit Registrierung fortfahren",
     returnToWebsite: "Zurück zur Website",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Einheit",
+    suburbPlaceholder: "Stadtteil",
+    stateTerritoryPlaceholder: "Bundesstaat / Territorium",
+    provincePlaceholder: "Provinz",
+    countyPlaceholder: "Grafschaft",
   },
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
@@ -1116,6 +1206,12 @@ export const translations = {
     areYouSure: `Sei Sicuro? <br /> I tuoi progressi andranno persi`,
     keepRegistering: "Continua la Registrazione",
     returnToWebsite: "Ritorna al Sito Web",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unità",
+    suburbPlaceholder: "Quartiere",
+    stateTerritoryPlaceholder: "Stato / Territorio",
+    provincePlaceholder: "Provincia",
+    countyPlaceholder: "Contea",
   },
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
@@ -1186,6 +1282,12 @@ export const translations = {
     areYouSure: `Oled kindel? <br /> Teie edenemine kaob`,
     keepRegistering: "Jätka registreerimist",
     returnToWebsite: "Tagasi veebisaidile",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Üksus",
+    suburbPlaceholder: "Linnaosa",
+    stateTerritoryPlaceholder: "Osariik / territoorium",
+    provincePlaceholder: "Provints",
+    countyPlaceholder: "Krahvkond",
   },
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
@@ -1256,6 +1358,12 @@ export const translations = {
     areYouSure: `Vai esat pārliecināts? <br /> Jūsu progress tiks zaudēts`,
     keepRegistering: "Turpināt reģistrēšanos",
     returnToWebsite: "Atgriezties vietnē",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Vienība",
+    suburbPlaceholder: "Priekšpilsēta",
+    stateTerritoryPlaceholder: "Štats / teritorija",
+    provincePlaceholder: "Province",
+    countyPlaceholder: "Grāfiste",
   },
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
@@ -1326,6 +1434,12 @@ export const translations = {
     areYouSure: `Ar tikrai? <br /> Jūsų pažanga bus prarasta`,
     keepRegistering: "Tęsti registraciją",
     returnToWebsite: "Grįžti į svetainę",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Vienetas",
+    suburbPlaceholder: "Priemiestis",
+    stateTerritoryPlaceholder: "Valstija / teritorija",
+    provincePlaceholder: "Provincija",
+    countyPlaceholder: "Grafystė",
   },
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
@@ -1396,6 +1510,12 @@ export const translations = {
     areYouSure: `Jeste li sigurni? <br /> Vaš napredak će biti izgubljen`,
     keepRegistering: "Nastavi s registracijom",
     returnToWebsite: "Vrati se na web stranicu",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Jedinica",
+    suburbPlaceholder: "Četvrt",
+    stateTerritoryPlaceholder: "Savezna država / teritorij",
+    provincePlaceholder: "Pokrajina",
+    countyPlaceholder: "Grofovija",
   },
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1465,6 +1585,12 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Enhed",
+    suburbPlaceholder: "Forstad",
+    stateTerritoryPlaceholder: "Delstat / territorium",
+    provincePlaceholder: "Provins",
+    countyPlaceholder: "Grevskab",
   },
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
@@ -1535,6 +1661,12 @@ export const translations = {
     areYouSure: `Oletko varma? <br /> Edistymisesi menetetään`,
     keepRegistering: "Jatka rekisteröintiä",
     returnToWebsite: "Palaa verkkosivulle",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Huoneisto",
+    suburbPlaceholder: "Kaupunginosa",
+    stateTerritoryPlaceholder: "Osavaltio / territorio",
+    provincePlaceholder: "Provinssi",
+    countyPlaceholder: "Kreivikunta",
   },
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
@@ -1605,6 +1737,12 @@ export const translations = {
     areYouSure: `Сигурни ли сте? <br /> Напредъкът ви ще бъде загубен`,
     keepRegistering: "Продължи регистрацията",
     returnToWebsite: "Върни се към сайта",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Единица",
+    suburbPlaceholder: "Квартал",
+    stateTerritoryPlaceholder: "Щат / територия",
+    provincePlaceholder: "Провинция",
+    countyPlaceholder: "Графство",
   },
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
@@ -1685,6 +1823,12 @@ export const translations = {
     areYouSure: `Ви впевнені? <br /> Ваш прогрес буде втрачено`,
     keepRegistering: "Продовжити реєстрацію",
     returnToWebsite: "Повернутися на сайт",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Квартира",
+    suburbPlaceholder: "Передмістя",
+    stateTerritoryPlaceholder: "Штат / територія",
+    provincePlaceholder: "Провінція",
+    countyPlaceholder: "Графство",
   },
   nl: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
@@ -1754,6 +1898,12 @@ export const translations = {
     areYouSure: `Er du sikker? <br /> Din fremgang vil gå tabt`,
     keepRegistering: "Fortsæt registrering",
     returnToWebsite: "Tilbage til hjemmesiden",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unit",
+    suburbPlaceholder: "Wijk",
+    stateTerritoryPlaceholder: "Staat / territorium",
+    provincePlaceholder: "Provincie",
+    countyPlaceholder: "Graafschap",
   },
   sw: {
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
@@ -1823,6 +1973,12 @@ export const translations = {
     areYouSure: `Una Hakika? <br /> Maendeleo Yako Yataharibika`,
     keepRegistering: "Endelea Kujisajili",
     returnToWebsite: "Rudi Tovuti",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Kitengo",
+    suburbPlaceholder: "Kitongoji",
+    stateTerritoryPlaceholder: "Jimbo / eneo",
+    provincePlaceholder: "Mkoa",
+    countyPlaceholder: "Kaunti",
   },
   rw: {
     pageTitle: "🎁 Inyongera yawe iri ready - Goldbet",
@@ -1893,6 +2049,12 @@ export const translations = {
     areYouSure: `Wizeye? <br /> Intambwe yawe izasibangana`,
     keepRegistering: "Komeza Kwiyandikisha",
     returnToWebsite: "Subira ku Rubuga",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Igice cy'inzu",
+    suburbPlaceholder: "Agace k'umujyi",
+    stateTerritoryPlaceholder: "Leta / Ifasi",
+    provincePlaceholder: "Intara",
+    countyPlaceholder: "Akarere",
   },
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
@@ -1962,6 +2124,12 @@ export const translations = {
     areYouSure: `هل أنت متأكد؟ <br /> سيتم فقدان تقدمك`,
     keepRegistering: "تابع التسجيل",
     returnToWebsite: "العودة إلى الموقع",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "وحدة",
+    suburbPlaceholder: "الضاحية",
+    stateTerritoryPlaceholder: "الولاية / الإقليم",
+    provincePlaceholder: "المحافظة",
+    countyPlaceholder: "المقاطعة",
   },
   zh: {
     pageTitle: "🎁 您的奖励已准备好 - Goldbet",
@@ -2029,6 +2197,12 @@ export const translations = {
     areYouSure: `您确定吗？<br />您的进度将丢失`,
     keepRegistering: "继续注册",
     returnToWebsite: "返回网站",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "单元",
+    suburbPlaceholder: "城区",
+    stateTerritoryPlaceholder: "州 / 领地",
+    provincePlaceholder: "省",
+    countyPlaceholder: "郡",
   },
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
@@ -2100,6 +2274,12 @@ export const translations = {
     areYouSure: `An bhfuil tú cinnte? <br /> Caillfear do dhul chun cinn`,
     keepRegistering: "Lean ar aghaidh ag clárú",
     returnToWebsite: "Fill ar an suíomh",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Aonad",
+    suburbPlaceholder: "Bruachbhaile",
+    stateTerritoryPlaceholder: "Stát / Críoch",
+    provincePlaceholder: "Cúige",
+    countyPlaceholder: "Contae",
   },
   lb: {
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
@@ -2169,6 +2349,12 @@ export const translations = {
     areYouSure: `Bass du sécher? <br /> Däi Fortschrëtt geet verluer`,
     keepRegistering: "Weider registréieren",
     returnToWebsite: "Zréck op Websäit",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Eenheet",
+    suburbPlaceholder: "Virstad",
+    stateTerritoryPlaceholder: "Bundesstaat / Territoire",
+    provincePlaceholder: "Provënz",
+    countyPlaceholder: "Grofschaft",
   },
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
@@ -2239,6 +2425,12 @@ export const translations = {
     areYouSure: `Żgur? <br /> Il-progress tiegħek jintilef`,
     keepRegistering: "Kompli tirreġistra",
     returnToWebsite: "Mur lura fis-sit",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Unità",
+    suburbPlaceholder: "Subborg",
+    stateTerritoryPlaceholder: "Stat / Territorju",
+    provincePlaceholder: "Provinċja",
+    countyPlaceholder: "Kontea",
   },
   am: {
     pageTitle: "🎁 የቦነስዎ ዝግጁ ነው - Goldbet",
@@ -2312,6 +2504,12 @@ export const translations = {
     areYouSure: `እርግጠኛ ነዎት? <br /> ሂደትዎ ይጠፋል`,
     keepRegistering: "መመዝገብን ቀጥል",
     returnToWebsite: "ወደ ድህረ ገጽ ተመለስ",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "ክፍል",
+    suburbPlaceholder: "የከተማ ዳርቻ",
+    stateTerritoryPlaceholder: "ግዛት / መስተዳድር",
+    provincePlaceholder: "አውራጃ",
+    countyPlaceholder: "ካውንቲ",
   },
   lm: {
     pageTitle: "🎁 Bonasi yo yetegekeddwa - Goldbet",
@@ -2388,6 +2586,12 @@ export const translations = {
     areYouSure: `Okakasa? <br /> Enkulaakulana yo egenda kubula`,
     keepRegistering: "Genda mu maaso n’okuwandiika",
     returnToWebsite: "Dda ku Mukutu",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ekitundu ky'ennyumba",
+    suburbPlaceholder: "Ekyalo ky'ekibuga",
+    stateTerritoryPlaceholder: "Sitaati / Ekitundu",
+    provincePlaceholder: "Purovinsi",
+    countyPlaceholder: "Essaza",
   },
   ha: {
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
@@ -2457,6 +2661,12 @@ export const translations = {
     areYouSure: `Ka Tabbata? <br /> Za a rasa ci gaban da ka yi`,
     keepRegistering: "Ci gaba da Rijista",
     returnToWebsite: "Koma zuwa Shafin",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Sashen gida",
+    suburbPlaceholder: "Unguwa",
+    stateTerritoryPlaceholder: "Jiha / Yanki",
+    provincePlaceholder: "Lardi",
+    countyPlaceholder: "Gunduma",
   },
   yo: {
     pageTitle: "🎁 Ẹbun rẹ ti ṣetan - Goldbet",
@@ -2526,6 +2736,12 @@ export const translations = {
     areYouSure: `Ṣe O Daju? <br /> Ilọsiwaju rẹ yoo sọnu`,
     keepRegistering: "Tẹsiwaju Iforúkọsílẹ",
     returnToWebsite: "Pada si Oju opo wẹẹbu",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ẹ̀ka ilé",
+    suburbPlaceholder: "Agbègbè ìlú",
+    stateTerritoryPlaceholder: "Ìpínlẹ̀ / Ìjọba agbègbè",
+    provincePlaceholder: "Ẹkùn",
+    countyPlaceholder: "Kóńtì",
   },
   ig: {
     pageTitle: "🎁 Ego gị dị njikere - Goldbet",
@@ -2595,6 +2811,12 @@ export const translations = {
     areYouSure: `Ị Ji N'aka? <br /> A ga-efunahụ ọganihu gị`,
     keepRegistering: "Gaa n’ihu na ndebanye aha",
     returnToWebsite: "Laghachi na Weebụsaịtị",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Akụkụ ụlọ",
+    suburbPlaceholder: "Akụkụ obodo",
+    stateTerritoryPlaceholder: "Steeti / Ala ọchịchị",
+    provincePlaceholder: "Mpaghara",
+    countyPlaceholder: "Kaụnti",
   },
   tw: {
     pageTitle: "🎁 Wo akyɛde no asiesie - Goldbet",
@@ -2664,5 +2886,11 @@ export const translations = {
     areYouSure: `Wugye Di? <br /> Wo nkɔso bɛyera`,
     keepRegistering: "Kɔ So Kyerɛw Din",
     returnToWebsite: "San Kɔ Website No So",
+    // | Названия полей, которые в части стран называются иначе
+    apartmentUnitPlaceholder: "Ɔdan sin",
+    suburbPlaceholder: "Kurow mu fa",
+    stateTerritoryPlaceholder: "Ɔman / Asase",
+    provincePlaceholder: "Mantam",
+    countyPlaceholder: "Kaunti",
   },
 };
