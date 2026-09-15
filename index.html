@@ -1272,6 +1272,9 @@
                     value="USD"
                   />
                   <div
+                    tabindex="0"
+                    role="button"
+                    aria-haspopup="listbox"
                     class="form-currency-btn grid cursor-pointer grid-cols-[1fr_auto] items-center rounded-2xl bg-white px-4 py-[4px]"
                   >
                     <div>
@@ -2006,9 +2009,10 @@
                       </svg>
                     </div>
                     <div
-                      class="two-step-region-drowpdown absolute left-0 top-[120%] z-10 grid hidden h-[260px] w-full grid-rows-[1fr] rounded-2xl bg-white px-4 py-3"
+                      class="two-step-region-drowpdown absolute left-0 top-[120%] z-10 grid hidden w-full rounded-2xl bg-white px-4 py-3"
                     >
-                      <ul class="two-step-region-list overflow-y-auto"></ul>
+                      <!-- max-height пересчитывает positionRegionDropdown под место на экране -->
+                      <ul class="two-step-region-list max-h-[236px] overflow-y-auto"></ul>
                     </div>
                   </div>
                   <!-- ZIP Code (+ иконка-i с тултипом hint, видна только в OPTIONAL) -->

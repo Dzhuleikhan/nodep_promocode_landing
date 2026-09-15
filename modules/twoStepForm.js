@@ -8,6 +8,7 @@ import {
   getRegionOptions,
   getRegionByPostalCode,
   getFieldLabelKey,
+  getLocalFieldLabel,
   isHouseNumberRequired,
   hasApartmentField,
   formatPostalCode,
@@ -19,6 +20,7 @@ import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
 import { getUrlParameter } from "./params";
 import gsap from "gsap";
+import { enableKeyboardSelect } from "./keyboardSelect";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import flatpickr from "flatpickr";
 import {
@@ -1048,13 +1050,14 @@ export const applyRegionField = (countryCode) => {
 
 // Подстановка региона по индексу: AU — штат по диапазону, ES — провинция по
 // первым двум цифрам (поля нет, значение только уходит на бэк), IT — провинция
-// по центральным CAP крупных городов.
+// по справочнику CAP, IE — графство по routing key Eircode.
 const applyRegionFromPostalCode = (postal) => {
   if (regionMode !== "select" && regionMode !== "auto") return;
   if (regionChosenManually) return;
 
-  const region = getRegionByPostalCode(twoStepFormData.country, postal);
-  if (!region) return;
+  // Если новый индекс провинцию не даёт, подставленное по прежнему индексу
+  // значение уже неверно — сбрасываем, а не оставляем чужой регион.
+  const region = getRegionByPostalCode(twoStepFormData.country, postal) || "";
 
   twoStepFormData.state = region;
   if (regionMode === "select") {
@@ -1093,6 +1096,8 @@ export const applyApartmentField = (countryCode) => {
 // | ПОДПИСИ ПОЛЕЙ — в части стран поле называется иначе: в AU квартира это
 // Unit, город — Suburb, регион — State / Territory. Подменяем и текст, и ключ
 // data-translate, чтобы смена языка сайта подставила уже страновой вариант.
+// Местный термин (DK «Etage / side») не переводится: data-translate снимаем,
+// иначе смена языка затрёт подпись.
 const FIELD_LABEL_SELECTORS = {
   apartment: [".two-step-apartment-label"],
   city: [".two-step-city-label"],
@@ -1106,10 +1111,16 @@ export const applyFieldLabels = (countryCode) => {
     "en";
 
   Object.entries(FIELD_LABEL_SELECTORS).forEach(([field, selectors]) => {
+    const localLabel = getLocalFieldLabel(countryCode, field);
     const key = getFieldLabelKey(countryCode, field);
     selectors.forEach((selector) => {
       const label = document.querySelector(selector);
       if (!label) return;
+      if (localLabel) {
+        label.removeAttribute("data-translate");
+        label.textContent = localLabel;
+        return;
+      }
       label.setAttribute("data-translate", key);
       label.innerHTML = translate(lang, key);
     });
@@ -1128,23 +1139,29 @@ export const applyCountryAddressRules = (countryCode) => {
 };
 
 // | ПОРЯДОК АДРЕСНЫХ ПОЛЕЙ — страна решает, в каком порядке игрок вводит адрес.
-// Поля лежат в flex-колонке .two-step-address-fields, поэтому переставляем их
-// через CSS order, не трогая разметку. Порядок для страны даёт data.js.
+// Переставляем сами узлы внутри .two-step-address-fields, а не CSS order: Tab
+// ходит по порядку DOM, и с order фокус прыгал между полями не так, как они
+// стоят на экране. Порядок для страны даёт data.js.
+// state — сразу два блока: свободный ввод и выпадающий список региона.
 const ADDRESS_FIELD_SELECTORS = {
   street: ".two-step-street-wrapper",
   house: ".two-step-house-wrapper",
   apartment: ".two-step-apartment-wrapper",
   city: ".two-step-city-wrapper",
-  state: ".two-step-state-wrapper",
+  state: ".two-step-state-wrapper, .two-step-region-wrapper",
   zip: ".two-step-zipcode-wrapper",
 };
 
 export const applyAddressFieldOrder = (countryCode) => {
-  getAddressFieldOrder(countryCode).forEach((field, index) => {
-    const wrapper = document.querySelector(ADDRESS_FIELD_SELECTORS[field]);
-    // order начинаем с 1: 0 — значение по умолчанию у всего, что в конфиг не
-    // попало, и такое поле уехало бы в начало колонки.
-    if (wrapper) wrapper.style.order = String(index + 1);
+  const container = document.querySelector(".two-step-address-fields");
+  if (!container) return;
+
+  // appendChild переносит узел в конец вместе с обработчиками: проходим поля по
+  // порядку страны, и каждое встаёт за предыдущим.
+  getAddressFieldOrder(countryCode).forEach((field) => {
+    container
+      .querySelectorAll(ADDRESS_FIELD_SELECTORS[field])
+      .forEach((wrapper) => container.appendChild(wrapper));
   });
 };
 
@@ -1199,6 +1216,24 @@ if (twoStepFormFourthStep) {
       // If the click is outside the dropdown and wrapper, hide the dropdown
       twoStepCountryDropdown.classList.add("hidden");
     }
+  });
+
+  // Клавиатура: список открывается, и фокус сразу уходит в поиск — можно
+  // печатать название страны, стрелками выбрать, Enter применить.
+  const countryKeyboard = enableKeyboardSelect({
+    root: twoStepCountryWrapper,
+    trigger: twoStepAppliedCountryInput,
+    getItems: () => [
+      ...twoStepCountryList.querySelectorAll(".two-step-country-list-item"),
+    ],
+    getSelected: (items) =>
+      items.find(
+        (item) => item.getAttribute("countryCode") === twoStepFormData.country,
+      ),
+    isOpen: () => !twoStepCountryDropdown.classList.contains("hidden"),
+    open: () => twoStepCountryDropdown.classList.remove("hidden"),
+    close: () => twoStepCountryDropdown.classList.add("hidden"),
+    onOpen: () => twoStepCountrySearchInput.focus({ preventScroll: true }),
   });
 
   // Choosing country from dropdown
@@ -1298,6 +1333,9 @@ if (twoStepFormFourthStep) {
   // Event listener for the search input
   twoStepCountrySearchInput.addEventListener("input", (e) => {
     renderCountries(e.target.value);
+    // Список перерисован: подсветка встаёт на первую найденную страну, и Enter
+    // сразу её выбирает.
+    countryKeyboard.highlightFirst();
   });
 
   // Initial render
@@ -1319,8 +1357,60 @@ if (twoStepFormFourthStep) {
   );
 
   if (twoStepRegionButton && twoStepRegionDropdown && twoStepRegionList) {
+    // Регион часто стоит внизу формы (AU, IE). Открытый вниз список вылезал за
+    // видимую часть оверлея: появлялся лишний скролл, а низ списка обрезался.
+    // Поэтому при открытии меряем место под полем и над ним и выбираем сторону,
+    // а высоту списка ужимаем под доступное место.
+    const REGION_LIST_MAX_HEIGHT = 236;
+    const REGION_LIST_MIN_HEIGHT = 150;
+    const REGION_DROPDOWN_EDGE_GAP = 12;
+    // top-[120%] у выпадающего блока: отступ от поля — 20% его высоты.
+    const REGION_DROPDOWN_OFFSET = 0.2;
+
+    const positionRegionDropdown = () => {
+      const overlay = twoStepRegionWrapper.closest(".two-step-overlay");
+      const bounds = overlay?.getBoundingClientRect();
+      const visibleTop = Math.max(bounds?.top ?? 0, 0);
+      const visibleBottom = Math.min(
+        bounds?.bottom ?? window.innerHeight,
+        window.innerHeight,
+      );
+
+      const field = twoStepRegionWrapper.getBoundingClientRect();
+      const offset = field.height * REGION_DROPDOWN_OFFSET;
+      const spaceBelow =
+        visibleBottom - field.bottom - offset - REGION_DROPDOWN_EDGE_GAP;
+      const spaceAbove =
+        field.top - visibleTop - offset - REGION_DROPDOWN_EDGE_GAP;
+
+      twoStepRegionList.style.maxHeight = "";
+      const padding =
+        twoStepRegionDropdown.offsetHeight - twoStepRegionList.offsetHeight;
+      const needed =
+        Math.min(twoStepRegionList.scrollHeight, REGION_LIST_MAX_HEIGHT) +
+        padding;
+
+      const openUp = spaceBelow < needed && spaceAbove > spaceBelow;
+      const space = openUp ? spaceAbove : spaceBelow;
+
+      twoStepRegionDropdown.style.top = openUp ? "auto" : "";
+      twoStepRegionDropdown.style.bottom = openUp ? "120%" : "";
+      twoStepRegionList.style.maxHeight = `${Math.max(
+        Math.min(REGION_LIST_MAX_HEIGHT, space - padding),
+        REGION_LIST_MIN_HEIGHT,
+      )}px`;
+    };
+
+    const isRegionDropdownOpen = () =>
+      !twoStepRegionDropdown.classList.contains("hidden");
+
     twoStepRegionButton.addEventListener("click", () => {
       twoStepRegionDropdown.classList.toggle("hidden");
+      if (isRegionDropdownOpen()) positionRegionDropdown();
+    });
+
+    window.addEventListener("resize", () => {
+      if (isRegionDropdownOpen()) positionRegionDropdown();
     });
 
     document.addEventListener("click", (event) => {
@@ -1340,6 +1430,22 @@ if (twoStepFormFourthStep) {
       regionChosenManually = true;
       twoStepRegionDropdown.classList.add("hidden");
       validateInputs1("#4ED937", "#8726FF");
+    });
+
+    enableKeyboardSelect({
+      root: twoStepRegionWrapper,
+      trigger: twoStepRegionWrapper.querySelector(".two-step-region-input"),
+      getItems: () => [
+        ...twoStepRegionList.querySelectorAll(".two-step-state-list-item"),
+      ],
+      getSelected: (items) =>
+        items.find((item) => item.textContent === twoStepFormData.state),
+      isOpen: isRegionDropdownOpen,
+      open: () => {
+        twoStepRegionDropdown.classList.remove("hidden");
+        positionRegionDropdown();
+      },
+      close: () => twoStepRegionDropdown.classList.add("hidden"),
     });
   }
 

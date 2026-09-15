@@ -71,9 +71,6 @@ export const translations = {
     returnToWebsite: "Return to Website",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unit",
-    apartmentFloorSidePlaceholder: "Floor / Side",
-    apartmentBusPlaceholder: "Box",
-    apartmentFloorPlaceholder: "Floor",
     suburbPlaceholder: "Suburb",
     stateTerritoryPlaceholder: "State / Territory",
     provincePlaceholder: "Province",
@@ -152,9 +149,6 @@ export const translations = {
     returnToWebsite: "Retourner au site web",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unité",
-    apartmentFloorSidePlaceholder: "Étage / côté",
-    apartmentBusPlaceholder: "Boîte",
-    apartmentFloorPlaceholder: "Étage",
     suburbPlaceholder: "Quartier",
     stateTerritoryPlaceholder: "État / Territoire",
     provincePlaceholder: "Province",
@@ -233,9 +227,6 @@ export const translations = {
     returnToWebsite: "Întoarce-te la Website",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unitate",
-    apartmentFloorSidePlaceholder: "Etaj / parte",
-    apartmentBusPlaceholder: "Cutie poștală",
-    apartmentFloorPlaceholder: "Etaj",
     suburbPlaceholder: "Cartier",
     stateTerritoryPlaceholder: "Stat / Teritoriu",
     provincePlaceholder: "Provincie",
@@ -314,9 +305,6 @@ export const translations = {
     returnToWebsite: "Vissza a weboldalra",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Lakóegység",
-    apartmentFloorSidePlaceholder: "Emelet / oldal",
-    apartmentBusPlaceholder: "Postaláda",
-    apartmentFloorPlaceholder: "Emelet",
     suburbPlaceholder: "Városrész",
     stateTerritoryPlaceholder: "Állam / terület",
     provincePlaceholder: "Tartomány",
@@ -394,9 +382,6 @@ export const translations = {
     returnToWebsite: "Wróć na stronę",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Lokal",
-    apartmentFloorSidePlaceholder: "Piętro / strona",
-    apartmentBusPlaceholder: "Skrzynka",
-    apartmentFloorPlaceholder: "Piętro",
     suburbPlaceholder: "Dzielnica",
     stateTerritoryPlaceholder: "Stan / terytorium",
     provincePlaceholder: "Prowincja",
@@ -476,9 +461,6 @@ export const translations = {
     returnToWebsite: "Vrátit se na web",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Jednotka",
-    apartmentFloorSidePlaceholder: "Patro / strana",
-    apartmentBusPlaceholder: "Schránka",
-    apartmentFloorPlaceholder: "Patro",
     suburbPlaceholder: "Čtvrť",
     stateTerritoryPlaceholder: "Stát / teritorium",
     provincePlaceholder: "Provincie",
@@ -557,9 +539,6 @@ export const translations = {
     returnToWebsite: "Vrni se na spletno stran",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Enota",
-    apartmentFloorSidePlaceholder: "Nadstropje / stran",
-    apartmentBusPlaceholder: "Nabiralnik",
-    apartmentFloorPlaceholder: "Nadstropje",
     suburbPlaceholder: "Predmestje",
     stateTerritoryPlaceholder: "Zvezna država / ozemlje",
     provincePlaceholder: "Provinca",
@@ -639,9 +618,6 @@ export const translations = {
     returnToWebsite: "Επιστροφή στην ιστοσελίδα",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Μονάδα",
-    apartmentFloorSidePlaceholder: "Όροφος / πλευρά",
-    apartmentBusPlaceholder: "Θυρίδα",
-    apartmentFloorPlaceholder: "Όροφος",
     suburbPlaceholder: "Προάστιο",
     stateTerritoryPlaceholder: "Πολιτεία / Επικράτεια",
     provincePlaceholder: "Επαρχία",
@@ -719,9 +695,6 @@ export const translations = {
     returnToWebsite: "Tilbake til nettsiden",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Enhet",
-    apartmentFloorSidePlaceholder: "Etasje / side",
-    apartmentBusPlaceholder: "Postboks",
-    apartmentFloorPlaceholder: "Etasje",
     suburbPlaceholder: "Forstad",
     stateTerritoryPlaceholder: "Delstat / territorium",
     provincePlaceholder: "Provins",
@@ -800,9 +773,6 @@ export const translations = {
     returnToWebsite: "Återgå till webbplatsen",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Enhet",
-    apartmentFloorSidePlaceholder: "Våning / sida",
-    apartmentBusPlaceholder: "Box",
-    apartmentFloorPlaceholder: "Våning",
     suburbPlaceholder: "Förort",
     stateTerritoryPlaceholder: "Delstat / territorium",
     provincePlaceholder: "Provins",
@@ -881,9 +851,6 @@ export const translations = {
     returnToWebsite: "Vrátiť sa na webovú stránku",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Jednotka",
-    apartmentFloorSidePlaceholder: "Poschodie / strana",
-    apartmentBusPlaceholder: "Schránka",
-    apartmentFloorPlaceholder: "Poschodie",
     suburbPlaceholder: "Mestská časť",
     stateTerritoryPlaceholder: "Štát / teritórium",
     provincePlaceholder: "Provincia",
@@ -962,9 +929,6 @@ export const translations = {
     returnToWebsite: "Вернуться на сайт",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Квартира",
-    apartmentFloorSidePlaceholder: "Этаж / сторона",
-    apartmentBusPlaceholder: "Почтовый ящик",
-    apartmentFloorPlaceholder: "Этаж",
     suburbPlaceholder: "Пригород",
     stateTerritoryPlaceholder: "Штат / территория",
     provincePlaceholder: "Провинция",
@@ -1043,9 +1007,6 @@ export const translations = {
     returnToWebsite: "Volver al sitio web",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unidad",
-    apartmentFloorSidePlaceholder: "Piso / lado",
-    apartmentBusPlaceholder: "Buzón",
-    apartmentFloorPlaceholder: "Piso",
     suburbPlaceholder: "Localidad",
     stateTerritoryPlaceholder: "Estado / Territorio",
     provincePlaceholder: "Provincia",
@@ -1123,9 +1084,6 @@ export const translations = {
     returnToWebsite: "Voltar ao site",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unidade",
-    apartmentFloorSidePlaceholder: "Andar / lado",
-    apartmentBusPlaceholder: "Caixa postal",
-    apartmentFloorPlaceholder: "Andar",
     suburbPlaceholder: "Bairro",
     stateTerritoryPlaceholder: "Estado / Território",
     provincePlaceholder: "Província",
@@ -1204,9 +1162,6 @@ export const translations = {
     returnToWebsite: "Zurück zur Website",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Einheit",
-    apartmentFloorSidePlaceholder: "Etage / Seite",
-    apartmentBusPlaceholder: "Briefkasten",
-    apartmentFloorPlaceholder: "Etage",
     suburbPlaceholder: "Stadtteil",
     stateTerritoryPlaceholder: "Bundesstaat / Territorium",
     provincePlaceholder: "Provinz",
@@ -1285,9 +1240,6 @@ export const translations = {
     returnToWebsite: "Ritorna al Sito Web",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unità",
-    apartmentFloorSidePlaceholder: "Piano / lato",
-    apartmentBusPlaceholder: "Casella",
-    apartmentFloorPlaceholder: "Piano",
     suburbPlaceholder: "Quartiere",
     stateTerritoryPlaceholder: "Stato / Territorio",
     provincePlaceholder: "Provincia",
@@ -1366,9 +1318,6 @@ export const translations = {
     returnToWebsite: "Tagasi veebisaidile",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Üksus",
-    apartmentFloorSidePlaceholder: "Korrus / pool",
-    apartmentBusPlaceholder: "Postkast",
-    apartmentFloorPlaceholder: "Korrus",
     suburbPlaceholder: "Linnaosa",
     stateTerritoryPlaceholder: "Osariik / territoorium",
     provincePlaceholder: "Provints",
@@ -1447,9 +1396,6 @@ export const translations = {
     returnToWebsite: "Atgriezties vietnē",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Vienība",
-    apartmentFloorSidePlaceholder: "Stāvs / puse",
-    apartmentBusPlaceholder: "Pastkastīte",
-    apartmentFloorPlaceholder: "Stāvs",
     suburbPlaceholder: "Priekšpilsēta",
     stateTerritoryPlaceholder: "Štats / teritorija",
     provincePlaceholder: "Province",
@@ -1528,9 +1474,6 @@ export const translations = {
     returnToWebsite: "Grįžti į svetainę",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Vienetas",
-    apartmentFloorSidePlaceholder: "Aukštas / pusė",
-    apartmentBusPlaceholder: "Pašto dėžutė",
-    apartmentFloorPlaceholder: "Aukštas",
     suburbPlaceholder: "Priemiestis",
     stateTerritoryPlaceholder: "Valstija / teritorija",
     provincePlaceholder: "Provincija",
@@ -1609,9 +1552,6 @@ export const translations = {
     returnToWebsite: "Vrati se na web stranicu",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Jedinica",
-    apartmentFloorSidePlaceholder: "Kat / strana",
-    apartmentBusPlaceholder: "Poštanski pretinac",
-    apartmentFloorPlaceholder: "Kat",
     suburbPlaceholder: "Četvrt",
     stateTerritoryPlaceholder: "Savezna država / teritorij",
     provincePlaceholder: "Pokrajina",
@@ -1689,9 +1629,6 @@ export const translations = {
     returnToWebsite: "Tilbage til hjemmesiden",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Enhed",
-    apartmentFloorSidePlaceholder: "Etage / side",
-    apartmentBusPlaceholder: "Postboks",
-    apartmentFloorPlaceholder: "Etage",
     suburbPlaceholder: "Forstad",
     stateTerritoryPlaceholder: "Delstat / territorium",
     provincePlaceholder: "Provins",
@@ -1770,9 +1707,6 @@ export const translations = {
     returnToWebsite: "Palaa verkkosivulle",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Huoneisto",
-    apartmentFloorSidePlaceholder: "Kerros / puoli",
-    apartmentBusPlaceholder: "Postilokero",
-    apartmentFloorPlaceholder: "Kerros",
     suburbPlaceholder: "Kaupunginosa",
     stateTerritoryPlaceholder: "Osavaltio / territorio",
     provincePlaceholder: "Provinssi",
@@ -1851,9 +1785,6 @@ export const translations = {
     returnToWebsite: "Върни се към сайта",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Единица",
-    apartmentFloorSidePlaceholder: "Етаж / страна",
-    apartmentBusPlaceholder: "Пощенска кутия",
-    apartmentFloorPlaceholder: "Етаж",
     suburbPlaceholder: "Квартал",
     stateTerritoryPlaceholder: "Щат / територия",
     provincePlaceholder: "Провинция",
@@ -1931,9 +1862,6 @@ export const translations = {
     returnToWebsite: "Tilbage til hjemmesiden",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unit",
-    apartmentFloorSidePlaceholder: "Verdieping / zijde",
-    apartmentBusPlaceholder: "Bus",
-    apartmentFloorPlaceholder: "Verdieping",
     suburbPlaceholder: "Wijk",
     stateTerritoryPlaceholder: "Staat / territorium",
     provincePlaceholder: "Provincie",
@@ -2021,9 +1949,6 @@ export const translations = {
     returnToWebsite: "Повернутися на сайт",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Квартира",
-    apartmentFloorSidePlaceholder: "Поверх / сторона",
-    apartmentBusPlaceholder: "Поштова скринька",
-    apartmentFloorPlaceholder: "Поверх",
     suburbPlaceholder: "Передмістя",
     stateTerritoryPlaceholder: "Штат / територія",
     provincePlaceholder: "Провінція",
@@ -2101,9 +2026,6 @@ export const translations = {
     returnToWebsite: "Rudi Tovuti",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Kitengo",
-    apartmentFloorSidePlaceholder: "Ghorofa / upande",
-    apartmentBusPlaceholder: "Sanduku la posta",
-    apartmentFloorPlaceholder: "Ghorofa",
     suburbPlaceholder: "Kitongoji",
     stateTerritoryPlaceholder: "Jimbo / eneo",
     provincePlaceholder: "Mkoa",
@@ -2181,9 +2103,6 @@ export const translations = {
     returnToWebsite: "Subira ku rubuga",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Igice cy'inzu",
-    apartmentFloorSidePlaceholder: "Igorofa / uruhande",
-    apartmentBusPlaceholder: "Agasanduku k'iposita",
-    apartmentFloorPlaceholder: "Igorofa",
     suburbPlaceholder: "Agace k'umujyi",
     stateTerritoryPlaceholder: "Leta / Ifasi",
     provincePlaceholder: "Intara",
@@ -2261,9 +2180,6 @@ export const translations = {
     returnToWebsite: "العودة إلى الموقع",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "وحدة",
-    apartmentFloorSidePlaceholder: "الطابق / الجهة",
-    apartmentBusPlaceholder: "صندوق البريد",
-    apartmentFloorPlaceholder: "الطابق",
     suburbPlaceholder: "الضاحية",
     stateTerritoryPlaceholder: "الولاية / الإقليم",
     provincePlaceholder: "المحافظة",
@@ -2342,9 +2258,6 @@ export const translations = {
     returnToWebsite: "Erġa’ lura għall-Websajt",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Unità",
-    apartmentFloorSidePlaceholder: "Sular / naħa",
-    apartmentBusPlaceholder: "Kaxxa postali",
-    apartmentFloorPlaceholder: "Sular",
     suburbPlaceholder: "Subborg",
     stateTerritoryPlaceholder: "Stat / Territorju",
     provincePlaceholder: "Provinċja",
@@ -2423,9 +2336,6 @@ export const translations = {
     returnToWebsite: "Zréck op d'Websäit",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Eenheet",
-    apartmentFloorSidePlaceholder: "Stack / Säit",
-    apartmentBusPlaceholder: "Bréifkëscht",
-    apartmentFloorPlaceholder: "Stack",
     suburbPlaceholder: "Virstad",
     stateTerritoryPlaceholder: "Bundesstaat / Territoire",
     provincePlaceholder: "Provënz",
@@ -2501,9 +2411,6 @@ export const translations = {
     returnToWebsite: "返回网站",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "单元",
-    apartmentFloorSidePlaceholder: "楼层 / 朝向",
-    apartmentBusPlaceholder: "信箱号",
-    apartmentFloorPlaceholder: "楼层",
     suburbPlaceholder: "城区",
     stateTerritoryPlaceholder: "州 / 领地",
     provincePlaceholder: "省",
@@ -2583,9 +2490,6 @@ export const translations = {
     returnToWebsite: "Fill ar an suíomh gréasáin",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Aonad",
-    apartmentFloorSidePlaceholder: "Urlár / taobh",
-    apartmentBusPlaceholder: "Bosca",
-    apartmentFloorPlaceholder: "Urlár",
     suburbPlaceholder: "Bruachbhaile",
     stateTerritoryPlaceholder: "Stát / Críoch",
     provincePlaceholder: "Cúige",
@@ -2661,9 +2565,6 @@ export const translations = {
     returnToWebsite: "ወደ ድረ-ገጽ ተመለስ",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "ክፍል",
-    apartmentFloorSidePlaceholder: "ፎቅ / ጎን",
-    apartmentBusPlaceholder: "የፖስታ ሳጥን",
-    apartmentFloorPlaceholder: "ፎቅ",
     suburbPlaceholder: "የከተማ ዳርቻ",
     stateTerritoryPlaceholder: "ግዛት / መስተዳድር",
     provincePlaceholder: "አውራጃ",
@@ -2742,9 +2643,6 @@ export const translations = {
     returnToWebsite: "Ddayo ku mukutu",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Ekitundu ky'ennyumba",
-    apartmentFloorSidePlaceholder: "Ddaala / ludda",
-    apartmentBusPlaceholder: "Sanduuka y'eposita",
-    apartmentFloorPlaceholder: "Ddaala",
     suburbPlaceholder: "Ekyalo ky'ekibuga",
     stateTerritoryPlaceholder: "Sitaati / Ekitundu",
     provincePlaceholder: "Purovinsi",
@@ -2822,9 +2720,6 @@ export const translations = {
     returnToWebsite: "Koma zuwa Shafin",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Sashen gida",
-    apartmentFloorSidePlaceholder: "Bene / gefe",
-    apartmentBusPlaceholder: "Akwatin gidan waya",
-    apartmentFloorPlaceholder: "Bene",
     suburbPlaceholder: "Unguwa",
     stateTerritoryPlaceholder: "Jiha / Yanki",
     provincePlaceholder: "Lardi",
@@ -2902,9 +2797,6 @@ export const translations = {
     returnToWebsite: "Pada si Oju opo wẹẹbu",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Ẹ̀ka ilé",
-    apartmentFloorSidePlaceholder: "Àjà / ìhà",
-    apartmentBusPlaceholder: "Àpótí ìfìwéránṣẹ́",
-    apartmentFloorPlaceholder: "Àjà",
     suburbPlaceholder: "Agbègbè ìlú",
     stateTerritoryPlaceholder: "Ìpínlẹ̀ / Ìjọba agbègbè",
     provincePlaceholder: "Ẹkùn",
@@ -2982,9 +2874,6 @@ export const translations = {
     returnToWebsite: "Laghachi na Weebụsaịtị",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Akụkụ ụlọ",
-    apartmentFloorSidePlaceholder: "Ọkwa / akụkụ",
-    apartmentBusPlaceholder: "Igbe ozi",
-    apartmentFloorPlaceholder: "Ọkwa",
     suburbPlaceholder: "Akụkụ obodo",
     stateTerritoryPlaceholder: "Steeti / Ala ọchịchị",
     provincePlaceholder: "Mpaghara",
@@ -3062,9 +2951,6 @@ export const translations = {
     returnToWebsite: "San Kɔ Website No So",
     // | Названия полей, которые в части стран называются иначе
     apartmentUnitPlaceholder: "Ɔdan sin",
-    apartmentFloorSidePlaceholder: "Ɔsoro dan / afa",
-    apartmentBusPlaceholder: "Nkrataa adaka",
-    apartmentFloorPlaceholder: "Ɔsoro dan",
     suburbPlaceholder: "Kurow mu fa",
     stateTerritoryPlaceholder: "Ɔman / Asase",
     provincePlaceholder: "Mantam",

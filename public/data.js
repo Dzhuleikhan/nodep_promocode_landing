@@ -1080,23 +1080,13 @@ const ADDRESS_ORDER_HOUSE_FIRST = [
   "state",
 ];
 
-// IE — группа B, но графство после города, а Eircode последним: его до сих пор
-// знают не все, и адрес опознают по графству.
-const ADDRESS_ORDER_IE = [
-  "house",
-  "street",
-  "apartment",
-  "city",
-  "state",
-  "zip",
-];
-
 // NL — индекс и номер дома первыми, по ним подставляются улица и город.
+// Квартира сразу за домом: это toevoeging, дополнение к номеру («12 A»).
 const ADDRESS_ORDER_NL = [
   "zip",
   "house",
-  "street",
   "apartment",
+  "street",
   "city",
   "state",
 ];
@@ -1162,7 +1152,7 @@ export const addressFieldOrders = {
   FR: ADDRESS_ORDER_HOUSE_FIRST,
   LU: ADDRESS_ORDER_HOUSE_FIRST,
   MC: ADDRESS_ORDER_HOUSE_FIRST,
-  IE: ADDRESS_ORDER_IE,
+  IE: ADDRESS_ORDER_HOUSE_FIRST,
 
   // C
   NL: ADDRESS_ORDER_NL,
@@ -1272,28 +1262,198 @@ export const italyProvinces = [
   "Vibo Valentia", "Vicenza", "Viterbo",
 ];
 
-// CAP → провинция только там, где соответствие однозначное: городские индексы
-// крупных городов. Провинциальные CAP одного диапазона делят несколько
-// провинций (20800 — это уже Monza, а не Milano), поэтому их не берём.
-const ITALY_CAP_PROVINCES = [
-  [[100, 199], "Roma"],
-  [[10121, 10156], "Torino"],
-  [[16121, 16167], "Genova"],
-  [[20121, 20162], "Milano"],
-  [[40121, 40141], "Bologna"],
-  [[50121, 50145], "Firenze"],
-  [[70121, 70132], "Bari"],
-  [[80121, 80147], "Napoli"],
-  [[90121, 90151], "Palermo"],
-  [[95121, 95131], "Catania"],
+// CAP → провинция. Таблицы сгенерированы из справочника коммун comuni-json
+// (7904 коммуны) и проверены на всех его CAP, включая общегородские (56100 Pisa).
+// Первые три цифры CAP почти везде однозначно дают провинцию. Для 11 спорных
+// префиксов на границах провинций — точные диапазоны. CAP 12071 (CN/SV) и
+// 18025 (CN/IM) общие для двух провинций, их не определяем: игрок выберет сам.
+const ITALY_PROVINCE_BY_SIGLA = {
+  AG: "Agrigento", AL: "Alessandria", AN: "Ancona", AO: "Aosta",
+  AP: "Ascoli Piceno", AQ: "L'Aquila", AR: "Arezzo", AT: "Asti",
+  AV: "Avellino", BA: "Bari", BG: "Bergamo", BI: "Biella",
+  BL: "Belluno", BN: "Benevento", BO: "Bologna", BR: "Brindisi",
+  BS: "Brescia", BT: "Barletta-Andria-Trani", BZ: "Bolzano", CA: "Cagliari",
+  CB: "Campobasso", CE: "Caserta", CH: "Chieti", CL: "Caltanissetta",
+  CN: "Cuneo", CO: "Como", CR: "Cremona", CS: "Cosenza",
+  CT: "Catania", CZ: "Catanzaro", EN: "Enna", FC: "Forlì-Cesena",
+  FE: "Ferrara", FG: "Foggia", FI: "Firenze", FM: "Fermo",
+  FR: "Frosinone", GE: "Genova", GO: "Gorizia", GR: "Grosseto",
+  IM: "Imperia", IS: "Isernia", KR: "Crotone", LC: "Lecco",
+  LE: "Lecce", LI: "Livorno", LO: "Lodi", LT: "Latina",
+  LU: "Lucca", MB: "Monza e della Brianza", MC: "Macerata", ME: "Messina",
+  MI: "Milano", MN: "Mantova", MO: "Modena", MS: "Massa-Carrara",
+  MT: "Matera", NA: "Napoli", NO: "Novara", NU: "Nuoro",
+  OR: "Oristano", PA: "Palermo", PC: "Piacenza", PD: "Padova",
+  PE: "Pescara", PG: "Perugia", PI: "Pisa", PN: "Pordenone",
+  PO: "Prato", PR: "Parma", PT: "Pistoia", PU: "Pesaro e Urbino",
+  PV: "Pavia", PZ: "Potenza", RA: "Ravenna", RC: "Reggio Calabria",
+  RE: "Reggio Emilia", RG: "Ragusa", RI: "Rieti", RM: "Roma",
+  RN: "Rimini", RO: "Rovigo", SA: "Salerno", SI: "Siena",
+  SO: "Sondrio", SP: "La Spezia", SR: "Siracusa", SS: "Sassari",
+  SU: "Sud Sardegna", SV: "Savona", TA: "Taranto", TE: "Teramo",
+  TN: "Trento", TO: "Torino", TP: "Trapani", TR: "Terni",
+  TS: "Trieste", TV: "Treviso", UD: "Udine", VA: "Varese",
+  VB: "Verbano-Cusio-Ossola", VC: "Vercelli", VE: "Venezia", VI: "Vicenza",
+  VR: "Verona", VT: "Viterbo", VV: "Vibo Valentia",
+};
+
+const ITALY_CAP_PREFIXES = {
+  AG: "920 921",
+  AL: "150 151",
+  AN: "600 601",
+  AO: "110 111",
+  AP: "630 631",
+  AQ: "670 671",
+  AR: "520 521",
+  AT: "140 141",
+  AV: "830 831",
+  BA: "700 701",
+  BG: "240 241",
+  BI: "138 139",
+  BL: "320 321",
+  BN: "820 821",
+  BO: "400 401",
+  BR: "720 721",
+  BS: "250 251",
+  BT: "760 761",
+  BZ: "390 391",
+  CE: "810 811",
+  CH: "660 661",
+  CL: "930 931",
+  CN: "121",
+  CO: "220 221",
+  CR: "260 261",
+  CS: "870 871",
+  CT: "950 951",
+  CZ: "880 881",
+  EN: "940 941",
+  FC: "470 471 475",
+  FE: "440 441",
+  FG: "710 711",
+  FI: "500 501",
+  FM: "638 639",
+  FR: "030 031",
+  GE: "160 161",
+  GR: "580 581",
+  IM: "181",
+  KR: "888 889",
+  LC: "239",
+  LE: "730 731",
+  LI: "570 571",
+  LO: "268 269",
+  LT: "040 041",
+  LU: "550 551",
+  MB: "208 209",
+  MC: "620 621",
+  ME: "980 981",
+  MI: "200 201",
+  MN: "460 461",
+  MO: "410 411",
+  MS: "540 541",
+  MT: "750 751",
+  NA: "800 801",
+  NO: "280 281",
+  NU: "080 081",
+  PA: "900 901",
+  PC: "290 291",
+  PD: "350 351",
+  PE: "650 651",
+  PG: "060 061",
+  PI: "560 561",
+  PO: "590 591",
+  PR: "430 431",
+  PT: "510 511",
+  PU: "610 611",
+  PV: "270 271",
+  PZ: "850 851",
+  RA: "480 481",
+  RC: "890 891",
+  RE: "420 421",
+  RG: "970 971",
+  RI: "020 021",
+  RM: "000 001",
+  RN: "478 479",
+  RO: "450 451",
+  SA: "840 841",
+  SI: "530 531",
+  SO: "230 231",
+  SP: "190 191",
+  SR: "960 961",
+  SS: "070 071",
+  SV: "170 171",
+  TA: "740 741",
+  TE: "640 641",
+  TN: "380 381",
+  TO: "100 101",
+  TP: "910 911",
+  TR: "050 051",
+  TV: "310 311",
+  VA: "210 211",
+  VB: "288 289",
+  VC: "130 131",
+  VE: "300 301",
+  VI: "360 361",
+  VR: "370 371",
+  VT: "010 011",
+  VV: "898 899",
+};
+
+// Спорные префиксы 090 091 120 180 238 330 331 340 341 860 861: [от, до, провинция].
+const ITALY_CAP_RANGES = [
+  ["09010", "09011", "SU"],
+  ["09012", "09012", "CA"],
+  ["09013", "09017", "SU"],
+  ["09018", "09018", "CA"],
+  ["09019", "09027", "SU"],
+  ["09028", "09028", "CA"],
+  ["09029", "09031", "SU"],
+  ["09032", "09033", "CA"],
+  ["09034", "09041", "SU"],
+  ["09042", "09042", "CA"],
+  ["09043", "09043", "SU"],
+  ["09044", "09048", "CA"],
+  ["09049", "09049", "SU"],
+  ["09050", "09050", "CA"],
+  ["09051", "09059", "SU"],
+  ["09060", "09060", "CA"],
+  ["09061", "09066", "SU"],
+  ["09067", "09069", "CA"],
+  ["09070", "09099", "OR"],
+  ["09100", "09134", "CA"],
+  ["09170", "09170", "OR"],
+  ["12010", "12070", "CN"],
+  ["12072", "12089", "CN"],
+  ["18010", "18024", "IM"],
+  ["18026", "18039", "IM"],
+  ["23801", "23805", "LC"],
+  ["23806", "23806", "BG"],
+  ["23807", "23899", "LC"],
+  ["33010", "33061", "UD"],
+  ["33070", "33099", "PN"],
+  ["33100", "33100", "UD"],
+  ["33170", "33170", "PN"],
+  ["34010", "34018", "TS"],
+  ["34070", "34079", "GO"],
+  ["34100", "34151", "TS"],
+  ["34170", "34170", "GO"],
+  ["86010", "86049", "CB"],
+  ["86070", "86097", "IS"],
+  ["86100", "86100", "CB"],
+  ["86170", "86170", "IS"],
 ];
 
-// Ирландия: 26 графств. Eircode знают не все, и без него адрес опознают по
-// графству, а в столице — по почтовому району Dublin 1–24.
-const DUBLIN_POSTAL_DISTRICTS = Array.from(
-  { length: 24 },
-  (_, i) => `Dublin ${i + 1}`,
+const ITALY_CAP_PREFIX_INDEX = Object.fromEntries(
+  Object.entries(ITALY_CAP_PREFIXES).flatMap(([sigla, prefixes]) =>
+    prefixes.split(" ").map((prefix) => [prefix, sigla]),
+  ),
 );
+
+// Ирландия: 26 графств. Eircode знают не все, и без него адрес опознают по
+// графству, а в столице — по почтовому району. Районы Dublin 19, 21 и 23 не
+// существуют, зато есть Dublin 6W.
+const DUBLIN_POSTAL_DISTRICTS = [
+  1, 2, 3, 4, 5, 6, "6W", 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 22, 24,
+].map((district) => `Dublin ${district}`);
 
 export const irelandCounties = [
   "Carlow", "Cavan", "Clare", "Cork", "Donegal", "Dublin",
@@ -1302,6 +1462,59 @@ export const irelandCounties = [
   "Longford", "Louth", "Mayo", "Meath", "Monaghan", "Offaly", "Roscommon",
   "Sligo", "Tipperary", "Waterford", "Westmeath", "Wexford", "Wicklow",
 ];
+
+// Eircode routing key (первые три символа) → почтовое графство, по списку
+// 139 routing areas An Post. D01–D24 и D6W — почтовые районы Дублина, их
+// разбираем отдельно. A82 (Kells / Virginia: Meath и Cavan) и A92 (Ardee /
+// Drogheda: Louth и Meath) покрывают два графства — их не определяем.
+const IRELAND_ROUTING_KEYS = {
+  Carlow: "R21 R93",
+  Cavan: "H12 H14 H16",
+  Clare: "V14 V15 V95",
+  Cork: "P12 P14 P17 P24 P25 P31 P32 P36 P43 P47 P51 P56 P61 P67 P72 P75 P81 P85 T12 T23 T34 T45 T56",
+  Donegal: "F92 F93 F94",
+  Dublin: "A41 A42 A45 A94 A96 K32 K34 K36 K45 K56 K67 K78",
+  Galway: "H53 H54 H62 H65 H71 H91",
+  Kerry: "V23 V31 V92 V93",
+  Kildare: "R14 R51 R56 W12 W23 W34 W91",
+  Kilkenny: "R95",
+  Laois: "R32",
+  Leitrim: "N41",
+  Limerick: "V35 V42 V94",
+  Longford: "N39",
+  Louth: "A91",
+  Mayo: "F12 F23 F26 F28 F31 F35",
+  Meath: "A83 A84 A85 A86 C15",
+  Monaghan: "A75 A81 H18 H23",
+  Offaly: "R35 R42 R45",
+  Roscommon: "F42 F45 F52",
+  Sligo: "F56 F91",
+  Tipperary: "E21 E25 E32 E34 E41 E45 E53 E91",
+  Waterford: "X35 X42 X91",
+  Westmeath: "N37 N91",
+  Wexford: "Y21 Y25 Y34 Y35",
+  Wicklow: "A63 A67 A98 Y14",
+};
+
+const IRELAND_ROUTING_KEY_INDEX = Object.fromEntries(
+  Object.entries(IRELAND_ROUTING_KEYS).flatMap(([county, keys]) =>
+    keys.split(" ").map((key) => [key, county]),
+  ),
+);
+
+const getIrelandCountyByEircode = (postal) => {
+  const key = (postal || "").replace(/[^a-z0-9]/gi, "").toUpperCase().slice(0, 3);
+  if (key.length !== 3) return null;
+
+  // D02 → Dublin 2, D6W → Dublin 6W. Несуществующий район (D19) не подставляем.
+  const district = key.match(/^D(\d{2}|6W)$/);
+  if (district) {
+    const name = `Dublin ${district[1].replace(/^0/, "")}`;
+    return DUBLIN_POSTAL_DISTRICTS.includes(name) ? name : null;
+  }
+
+  return IRELAND_ROUTING_KEY_INDEX[key] || null;
+};
 
 // Испания: провинция однозначно определяется первыми двумя цифрами индекса,
 // поэтому поле не показываем вовсе, а значение подставляем сами.
@@ -1362,11 +1575,15 @@ export const getRegionByPostalCode = (countryCode, postal) => {
 
   if (code === "IT") {
     if (digits.length !== 5) return null;
-    const value = Number(digits);
-    return (
-      ITALY_CAP_PROVINCES.find(([range]) => inRange(value, range))?.[1] || null
-    );
+    // CAP одной длины, поэтому диапазоны сравниваем как строки.
+    const sigla =
+      ITALY_CAP_PREFIX_INDEX[digits.slice(0, 3)] ||
+      ITALY_CAP_RANGES.find(([from, to]) => digits >= from && digits <= to)?.[2];
+    return ITALY_PROVINCE_BY_SIGLA[sigla] || null;
   }
+
+  // Графство известно уже по первым трём символам Eircode.
+  if (code === "IE") return getIrelandCountyByEircode(postal);
 
   return null;
 };
@@ -1380,14 +1597,6 @@ export const countryFieldLabels = {
     city: "suburbPlaceholder",
     state: "stateTerritoryPlaceholder",
   },
-  // Скандинавы уточняют квартиру этажом и стороной площадки: «3. tv».
-  DK: { apartment: "apartmentFloorSidePlaceholder" },
-  NO: { apartment: "apartmentFloorSidePlaceholder" },
-  SE: { apartment: "apartmentFloorSidePlaceholder" },
-  // Бельгия — «bus», номер ящика в доме.
-  BE: { apartment: "apartmentBusPlaceholder" },
-  // Португалия — «andar», этаж: «3º Esq».
-  PT: { apartment: "apartmentFloorPlaceholder" },
   IT: { state: "provincePlaceholder" },
   IE: { state: "countyPlaceholder" },
 };
@@ -1401,6 +1610,23 @@ export const DEFAULT_FIELD_LABELS = {
 export const getFieldLabelKey = (countryCode, field) =>
   countryFieldLabels[(countryCode || "").toUpperCase()]?.[field] ||
   DEFAULT_FIELD_LABELS[field];
+
+// Местные термины с примером, как в countryZipCodeTranslates: игрок пишет адрес
+// так, как он принят в стране, поэтому от языка сайта подпись не зависит.
+export const countryLocalFieldLabels = {
+  // Скандинавы уточняют квартиру этажом и стороной площадки: «3. tv».
+  DK: { apartment: "Etage / side (3. tv)" },
+  // Норвежский номер квартиры — bruksenhetsnummer: этаж + номер, «H0301».
+  NO: { apartment: "Bruksenhet (H0301)" },
+  SE: { apartment: "Våning / sida" },
+  // Бельгия — «bus», номер ящика в доме.
+  BE: { apartment: "Bus" },
+  // Португалия — «andar», этаж и сторона: «3º Esq».
+  PT: { apartment: "Andar (3º Esq)" },
+};
+
+export const getLocalFieldLabel = (countryCode, field) =>
+  countryLocalFieldLabels[(countryCode || "").toUpperCase()]?.[field] || null;
 
 // | POSTAL CODE FORMAT (маска ввода + валидация + пример) ----------------------
 // mask: "#" — слот для символа, остальные символы — литералы-разделители.
