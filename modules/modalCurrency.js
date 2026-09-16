@@ -1,4 +1,5 @@
 import { geoData } from "./geoLocation";
+import { enableKeyboardSelect } from "./keyboardSelect";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
 import { twoStepFormData, checkTir1CurrencyMatch } from "./twoStepForm";
 import { settingInitialBonusValue } from "./twoStepForm";
@@ -264,6 +265,22 @@ formCurrency.forEach((cur) => {
       if (!cur.contains(event.target)) {
         hideDropdown();
       }
+    });
+
+    // Кнопка валюты — div с tabindex="0": без него Tab её пропускал.
+    // Пункты списка рисуются скриптом, поэтому берём их на каждый вызов.
+    enableKeyboardSelect({
+      root: cur,
+      trigger: currencyDropdownBtn,
+      getItems: () => [...currencyDropdownList.querySelectorAll("li")],
+      getSelected: (items) =>
+        items.find((item) => item.classList.contains("active")),
+      isOpen: () => currencyDropdownList.classList.contains("active"),
+      open: () => {
+        currencyDropdownBtn.classList.add("active");
+        currencyDropdownList.classList.add("active");
+      },
+      close: hideDropdown,
     });
   }
 });
