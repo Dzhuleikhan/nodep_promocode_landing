@@ -7,11 +7,12 @@ import {
 
 export async function getLocation() {
   const fallback = { countryCode: "PL", currency: { code: "PLN" } };
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 2500);
 
   try {
     const url = `https://${window.location.host}/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c`;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 2500);
+
     const response = await fetch(url, { signal: controller.signal });
     clearTimeout(timer);
 
@@ -20,7 +21,6 @@ export async function getLocation() {
     const data = await response.json();
     return data;
   } catch (err) {
-    clearTimeout(timer);
     console.log("API failed, applying fallback GEO");
     return fallback;
   }
@@ -40,10 +40,28 @@ export const getSupportedLanguage = (countryCode) => {
   return "en";
 };
 
-localStorage.setItem(
-  "preferredLanguage",
-  getSupportedLanguage(geoData.countryCode),
-);
+// Коды браузера, расходящиеся с кодами словарей ленда
+const BROWSER_LANG_ALIASES = {
+  da: "dk", // датский: браузер шлёт ISO-код da, словарь лежит под dk
+  no: "nb", // норвежский: браузер шлёт макро-код
+  nn: "nb", // нюнорск отдаём на букмоле
+  lg: "lm", // луганда: ISO-код lg, словарь лежит под lm
+  ak: "tw", // акан: словарь лежит под tw (чви)
+};
+
+// Ленд открывается на языке браузера; не поддерживаем его — показываем en.
+// Гео на выбор языка не влияет.
+// Считаем здесь, а не в language.js: значение уходит в /register как lang,
+// а twoStepForm читает localStorage раньше, чем language.js успевает отработать.
+export const getInitialLanguage = () => {
+  // navigator.language даёт локали вида pt-BR / az-Latn-AZ — берём первый сегмент
+  const browserLang = navigator.language.split("-")[0];
+  const lang = BROWSER_LANG_ALIASES[browserLang] ?? browserLang;
+
+  return SupportedLanguages.includes(lang) ? lang : "en";
+};
+
+localStorage.setItem("preferredLanguage", getInitialLanguage());
 export const language = localStorage.getItem("preferredLanguage");
 
 function setHeaderFlag(countryCode) {
@@ -58,7 +76,5 @@ export const settingZipCodePlaceholder = (countryCode) => {
   const base = countryZipCodeTranslates[countryCode] || "ZIP Code";
   const format = getPostalCodeFormat(countryCode);
   // Подсказываем юзеру ожидаемый формат прямо в лейбле, напр. "Kod pocztowy (00-001)"
-  zipCodeLabel.textContent = format?.example
-    ? `${base} (${format.example})`
-    : base;
+  zipCodeLabel.textContent = format?.example ? `${base} (${format.example})` : base;
 };
