@@ -6,19 +6,19 @@ export const translations = {
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
-    slideStep2Title: "Activate bonus",
+    slideStep2Title: "Activate the Bonus",
     slideStep2Text:
       'Find your bonus in the "Bonus Center" and activate it to start playing.',
     slideStep3Title: "Play",
-    slideStep3Text: "The money is now available for gameplay. Enjoy!",
+    slideStep3Text: "Your free spins are now ready to use. Enjoy!",
     footerText:
-      "All content on this website is provided for marketing and informational purposes only. It does not constitute professional, legal, financial, medical, or any other type of advice. We make no representations or warranties of any kind regarding the accuracy, completeness, or suitability of the information. Any reliance you place on this content is strictly at your own risk. Site assumes no responsibility or liability for any loss or damage incurred as a result of using this website or its materials.",
+      "All content on this website is provided for marketing and informational purposes only. It does not constitute professional, legal, financial, medical, or any other type of advice. We make no representations or warranties of any kind regarding the accuracy, completeness, or suitability of the information. Any reliance you place on this content is strictly at your own risk. The website assumes no responsibility or liability for any loss or damage arising from your use of this website or its materials.",
     // | FORM TRANSLATIONS
     backBtn: "Back",
     closeBtn: "Close",
     // | Step 1
     depToBalance: `<span><i class="actual-spin-amount">100</i> FREE SPINS</span>`,
-    withoutDeposit: "Without deposit",
+    withoutDeposit: "Without Deposit",
     step1Title: "Choose Your Bonus",
     welcomeBonus: "Welcome Bonus",
     welcomeBonusText: "on your first deposit",
@@ -28,20 +28,20 @@ export const translations = {
     highRollerBonusText: "250% on Deposits Over $500",
     withoutBonus: "Without Bonus",
     withoutBonusText: "You will not get any bonus",
-    iHavePromoCode: "I Have a Promo-Code",
+    iHavePromoCode: "I have a promo code",
     promoCodePlaceHolder: "Promo Code",
     promoCodeApplyBtn: "Apply",
     continueBtn: "Continue",
     // | Step 2
     step2Title: "Enter Your Email",
-    emailPlaceholder: "Enter E-mail",
+    emailPlaceholder: "Enter Email",
     passwordPlaceholder: "Enter Password",
     // | Step 3
     step3Title: "What’s Your Name?",
     namePlaceholder: "Enter Name",
     lastNamePlaceholder: "Enter Last Name",
-    birthdayPlaceholder: "Select Birthday Date",
-    age18Alert: "Age must be 18+",
+    birthdayPlaceholder: "Select Your Date of Birth",
+    age18Alert: "You must be 18 or older.",
     invalidDate: "Invalid date",
     male: "Male",
     female: "Female",
@@ -58,7 +58,7 @@ export const translations = {
     createAccountBtn: "Create Account",
     // | Decline
     areYouSure: `Are You Sure? <br /> Your Progress Will Be Lost`,
-    keepRegistering: "Keep Registering",
+    keepRegistering: "Continue Registration",
     returnToWebsite: "Return to Website",
   },
   fr: {
@@ -97,7 +97,7 @@ export const translations = {
     continueBtn: "Continuer",
     // | Step 2
     step2Title: "Entrez votre e-mail",
-    emailPlaceholder: "Entrez E-mail",
+    emailPlaceholder: "Entrez Email",
     passwordPlaceholder: "Entrez de passe",
     // | Step 3
     step3Title: "Quel est ton nom?",
@@ -160,7 +160,7 @@ export const translations = {
     continueBtn: "Continuă",
     // | Step 2
     step2Title: "Introdu E-mailul Tău",
-    emailPlaceholder: "Introdu E-mail",
+    emailPlaceholder: "Introdu Email",
     passwordPlaceholder: "Introdu Parola",
     // | Step 3
     step3Title: "Care este numele tău?",
@@ -223,7 +223,7 @@ export const translations = {
     continueBtn: "Folytatás",
     // | Step 2
     step2Title: "Add meg az e-mail címedet",
-    emailPlaceholder: "E-mail megadása",
+    emailPlaceholder: "Email megadása",
     passwordPlaceholder: "Jelszó megadása",
     // | Step 3
     step3Title: "Mi a neved?",
@@ -880,35 +880,35 @@ export const translations = {
     returnToWebsite: "Voltar ao site",
   },
   de: {
-    pageTitle: "🎁 Dein Bonus ist bereit - Goldbet",
+    pageTitle: "🎁 Ihr Bonus wartet auf Sie - Goldbet",
     heroTitle: `sichere dir deinen bonus <br/> <span><i class="actual-spin-amount">100</i> Freispiele</span> <br/> in <span>gates of olympus</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
     heroBtn: "bonus holen",
     slideStep1Title: "Registrieren",
     slideStep1Text:
-      'Klicke auf "Bonus holen" und schließe die kostenlose Registrierung ab.',
+      'Klicken Sie auf „Bonus sichern“ und schließen Sie die kostenlose Registrierung ab.',
     slideStep2Title: "Bonus aktivieren",
     slideStep2Text:
-      'Finde deinen Bonus im "Bonuscenter" und aktiviere ihn, um zu spielen.',
+      'Finden Sie Ihren Bonus im „Bonuscenter“ und aktivieren Sie ihn, um mit dem Spielen zu beginnen.',
     slideStep3Title: "Spielen",
-    slideStep3Text: "Das Geld steht nun zum Spielen bereit. Viel Spaß!",
+    slideStep3Text: "Ihre Freispiele sind jetzt bereit. Viel Spaß!",
     footerText:
-      "Der gesamte Inhalt dieser Website wird ausschließlich zu Marketing- und Informationszwecken bereitgestellt. Er stellt keine professionelle, rechtliche, finanzielle, medizinische oder sonstige Beratung dar. Wir geben keinerlei Zusicherungen oder Garantien hinsichtlich der Richtigkeit, Vollständigkeit oder Eignung der Informationen. Jegliches Vertrauen in diese Inhalte erfolgt ausschließlich auf Ihr eigenes Risiko. Die Website übernimmt keine Verantwortung für Verluste oder Schäden, die aus der Nutzung dieser Website oder ihrer Materialien entstehen.",
+      "Der gesamte Inhalt dieser Website wird ausschließlich zu Marketing- und Informationszwecken bereitgestellt. Er stellt keine professionelle, rechtliche, finanzielle, medizinische oder sonstige Beratung dar. Wir geben keinerlei Zusicherungen oder Garantien hinsichtlich der Richtigkeit, Vollständigkeit oder Eignung der Informationen. Jegliches Vertrauen in diese Inhalte erfolgt ausschließlich auf Ihr eigenes Risiko. Die Website übernimmt keinerlei Verantwortung oder Haftung für Verluste oder Schäden, die aus der Nutzung dieser Website oder ihrer Materialien entstehen.",
     // | FORM TRANSLATIONS
     backBtn: "Zurück",
     closeBtn: "Schließen",
     // | Step 1
     depToBalance: `<span><i class="actual-spin-amount">100</i> FREISPIELE</span>`,
     withoutDeposit: "Ohne Einzahlung",
-    step1Title: "Wähle deinen Bonus",
+    step1Title: "Wählen Sie Ihren Bonus",
     welcomeBonus: "Willkommensbonus",
-    welcomeBonusText: "auf deine erste Einzahlung",
+    welcomeBonusText: "auf Ihre erste Einzahlung",
     cryptoBonus: "Satoshi-Bonus",
-    cryptoBonusText: "150% auf Krypto-Einzahlungen",
+    cryptoBonusText: "150 % auf Krypto-Einzahlungen",
     highRollerBonus: "High Roller Bonus",
     highRollerBonusText: "250% auf Einzahlungen über 500$",
     withoutBonus: "Ohne Bonus",
-    withoutBonusText: "Du erhältst keinen Bonus",
+    withoutBonusText: "Sie erhalten keinen Bonus",
     iHavePromoCode: "Ich habe einen Promo-Code",
     promoCodePlaceHolder: "Promo-Code",
     promoCodeApplyBtn: "Einlösen",
@@ -918,7 +918,7 @@ export const translations = {
     emailPlaceholder: "E-Mail eingeben",
     passwordPlaceholder: "Passwort eingeben",
     // | Step 3
-    step3Title: "Wie heißt du?",
+    step3Title: "Wie heißen Sie?",
     namePlaceholder: "Vorname eingeben",
     lastNamePlaceholder: "Nachname eingeben",
     birthdayPlaceholder: "Geburtsdatum auswählen",
@@ -926,7 +926,7 @@ export const translations = {
     invalidDate: "Ungültiges Datum",
     male: "Männlich",
     female: "Weiblich",
-    finalStepBtn: "Letzter Schritt",
+    finalStepBtn: "Zum letzten Schritt",
     // | Step 4
     step4Title: "Wähle deine Währung",
     countryPlaceholder: "Land auswählen",
@@ -939,7 +939,7 @@ export const translations = {
     createAccountBtn: "Konto erstellen",
     // | Decline
     areYouSure: `Bist du sicher? <br /> Dein Fortschritt geht verloren`,
-    keepRegistering: "Mit Registrierung fortfahren",
+    keepRegistering: "Registrierung fortsetzen",
     returnToWebsite: "Zurück zur Website",
   },
   it: {
@@ -978,7 +978,7 @@ export const translations = {
     continueBtn: "Continua",
     // | Step 2
     step2Title: "Inserisci la tua Email",
-    emailPlaceholder: "Inserisci E-mail",
+    emailPlaceholder: "Inserisci Email",
     passwordPlaceholder: "Inserisci Password",
     // | Step 3
     step3Title: "Come ti chiami?",
@@ -1550,7 +1550,7 @@ export const translations = {
 
     // | Step 2
     step2Title: "Введіть свою електронну пошту",
-    emailPlaceholder: "Введіть E-mail",
+    emailPlaceholder: "Введіть Email",
     passwordPlaceholder: "Введіть пароль",
 
     // | Step 3
@@ -1802,7 +1802,7 @@ export const translations = {
     continueBtn: "Kompli",
     // | Step 2
     step2Title: "Daħħal l-Email Tiegħek",
-    emailPlaceholder: "Daħħal E-mail",
+    emailPlaceholder: "Daħħal Email",
     passwordPlaceholder: "Daħħal Password",
     // | Step 3
     step3Title: "X’jismek?",
@@ -2175,7 +2175,7 @@ export const translations = {
     continueBtn: "Ci gaba",
     // | Step 2
     step2Title: "Shigar da Imel ɗinka",
-    emailPlaceholder: "Shigar da E-mail",
+    emailPlaceholder: "Shigar da Email",
     passwordPlaceholder: "Shigar da Kalmar Sirri",
     // | Step 3
     step3Title: "Menene Sunanka?",
@@ -2237,7 +2237,7 @@ export const translations = {
     continueBtn: "Tẹsiwaju",
     // | Step 2
     step2Title: "Tẹ imeeli rẹ sii",
-    emailPlaceholder: "Tẹ E-mail sii",
+    emailPlaceholder: "Tẹ Email sii",
     passwordPlaceholder: "Tẹ ọrọ aṣínà sii",
     // | Step 3
     step3Title: "Kini Orukọ Rẹ?",
@@ -2299,7 +2299,7 @@ export const translations = {
     continueBtn: "Gaa n’ihu",
     // | Step 2
     step2Title: "Tinye Email gị",
-    emailPlaceholder: "Tinye E-mail",
+    emailPlaceholder: "Tinye Email",
     passwordPlaceholder: "Tinye Paswọọdụ",
     // | Step 3
     step3Title: "Kedu Aha Gị?",
@@ -2361,7 +2361,7 @@ export const translations = {
     continueBtn: "Kɔ So",
     // | Step 2
     step2Title: "Hyɛ Wo Email",
-    emailPlaceholder: "Hyɛ E-mail",
+    emailPlaceholder: "Hyɛ Email",
     passwordPlaceholder: "Hyɛ Password",
     // | Step 3
     step3Title: "Wo Din De Sɛn?",
