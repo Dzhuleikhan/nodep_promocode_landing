@@ -53,6 +53,8 @@ export const translations = {
     countryPlaceholder: "Select Country",
     currencyPlaceholder: "Choose Currency",
     phoneNumberPlaceholder: "Phone Number",
+    countryNotFound: "Country not found",
+    searchPlaceholder: "Search",
     addressPlaceholder: "Enter Address",
     cityPlaceholder: "Enter City",
     postalCodeHint:
@@ -129,6 +131,8 @@ export const translations = {
     countryPlaceholder: "Sélectionnez un pays",
     currencyPlaceholder: "Choisissez la devise",
     phoneNumberPlaceholder: "Numéro de téléphone",
+    countryNotFound: "Pays introuvable",
+    searchPlaceholder: "Rechercher",
     addressPlaceholder: "Entrez l'adresse",
     cityPlaceholder: "Entrez la ville",
     postalCodeHint:
@@ -205,6 +209,8 @@ export const translations = {
     countryPlaceholder: "Selectează Țara",
     currencyPlaceholder: "Alege Moneda",
     phoneNumberPlaceholder: "Număr de Telefon",
+    countryNotFound: "Țara nu a fost găsită",
+    searchPlaceholder: "Caută",
     addressPlaceholder: "Introdu Adresa",
     cityPlaceholder: "Introdu Orașul",
     postalCodeHint:
@@ -281,6 +287,8 @@ export const translations = {
     countryPlaceholder: "Ország kiválasztása",
     currencyPlaceholder: "Pénznem kiválasztása",
     phoneNumberPlaceholder: "Telefonszám",
+    countryNotFound: "Az ország nem található",
+    searchPlaceholder: "Keresés",
     addressPlaceholder: "Cím megadása",
     cityPlaceholder: "Város megadása",
     postalCodeHint:
@@ -356,6 +364,8 @@ export const translations = {
     countryPlaceholder: "Wybierz kraj",
     currencyPlaceholder: "Wybierz walutę",
     phoneNumberPlaceholder: "Numer telefonu",
+    countryNotFound: "Nie znaleziono kraju",
+    searchPlaceholder: "Szukaj",
     addressPlaceholder: "Wpisz adres",
     cityPlaceholder: "Wpisz miasto",
     postalCodeHint:
@@ -433,6 +443,8 @@ export const translations = {
     countryPlaceholder: "Vyberte zemi",
     currencyPlaceholder: "Vyberte měnu",
     phoneNumberPlaceholder: "Telefonní číslo",
+    countryNotFound: "Země nenalezena",
+    searchPlaceholder: "Hledat",
     addressPlaceholder: "Zadejte adresu",
     cityPlaceholder: "Zadejte město",
     postalCodeHint:
@@ -509,6 +521,8 @@ export const translations = {
     countryPlaceholder: "Izberite državo",
     currencyPlaceholder: "Izberite valuto",
     phoneNumberPlaceholder: "Telefonska številka",
+    countryNotFound: "Država ni najdena",
+    searchPlaceholder: "Iskanje",
     addressPlaceholder: "Vnesite naslov",
     cityPlaceholder: "Vnesite mesto",
     postalCodeHint:
@@ -586,6 +600,8 @@ export const translations = {
     countryPlaceholder: "Επιλέξτε χώρα",
     currencyPlaceholder: "Επιλέξτε νόμισμα",
     phoneNumberPlaceholder: "Αριθμός τηλεφώνου",
+    countryNotFound: "Δεν βρέθηκε χώρα",
+    searchPlaceholder: "Αναζήτηση",
     addressPlaceholder: "Εισάγετε διεύθυνση",
     cityPlaceholder: "Εισάγετε πόλη",
     postalCodeHint:
@@ -661,6 +677,8 @@ export const translations = {
     countryPlaceholder: "Velg land",
     currencyPlaceholder: "Velg valuta",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Landet ble ikke funnet",
+    searchPlaceholder: "Søk",
     addressPlaceholder: "Skriv inn adresse",
     cityPlaceholder: "Skriv inn by",
     postalCodeHint:
@@ -737,6 +755,8 @@ export const translations = {
     countryPlaceholder: "Välj land",
     currencyPlaceholder: "Välj valuta",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Landet hittades inte",
+    searchPlaceholder: "Sök",
     addressPlaceholder: "Ange adress",
     cityPlaceholder: "Ange stad",
     postalCodeHint:
@@ -813,6 +833,8 @@ export const translations = {
     countryPlaceholder: "Vyberte krajinu",
     currencyPlaceholder: "Vyberte menu",
     phoneNumberPlaceholder: "Telefónne číslo",
+    countryNotFound: "Krajina sa nenašla",
+    searchPlaceholder: "Hľadať",
     addressPlaceholder: "Zadajte adresu",
     cityPlaceholder: "Zadajte mesto",
     postalCodeHint:
@@ -889,6 +911,8 @@ export const translations = {
     countryPlaceholder: "Выберите страну",
     currencyPlaceholder: "Выберите валюту",
     phoneNumberPlaceholder: "Номер телефона",
+    countryNotFound: "Страна не найдена",
+    searchPlaceholder: "Поиск",
     addressPlaceholder: "Введите адрес",
     cityPlaceholder: "Введите город",
     postalCodeHint:
@@ -965,6 +989,8 @@ export const translations = {
     countryPlaceholder: "Selecciona tu país",
     currencyPlaceholder: "Elige tu moneda",
     phoneNumberPlaceholder: "Número de teléfono",
+    countryNotFound: "País no encontrado",
+    searchPlaceholder: "Buscar",
     addressPlaceholder: "Ingresa tu dirección",
     cityPlaceholder: "Ingresa tu ciudad",
     postalCodeHint:
@@ -1040,6 +1066,8 @@ export const translations = {
     countryPlaceholder: "Selecione seu país",
     currencyPlaceholder: "Escolha sua moeda",
     phoneNumberPlaceholder: "Número de telefone",
+    countryNotFound: "País não encontrado",
+    searchPlaceholder: "Pesquisar",
     addressPlaceholder: "Digite seu endereço",
     cityPlaceholder: "Digite sua cidade",
     postalCodeHint:
@@ -1116,6 +1144,8 @@ export const translations = {
     countryPlaceholder: "Land auswählen",
     currencyPlaceholder: "Währung wählen",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Land nicht gefunden",
+    searchPlaceholder: "Suche",
     addressPlaceholder: "Adresse eingeben",
     cityPlaceholder: "Stadt eingeben",
     postalCodeHint:
@@ -1192,6 +1222,8 @@ export const translations = {
     countryPlaceholder: "Seleziona Paese",
     currencyPlaceholder: "Scegli Valuta",
     phoneNumberPlaceholder: "Numero di Telefono",
+    countryNotFound: "Paese non trovato",
+    searchPlaceholder: "Cerca",
     addressPlaceholder: "Inserisci Indirizzo",
     cityPlaceholder: "Inserisci Città",
     postalCodeHint:
@@ -1268,6 +1300,8 @@ export const translations = {
     countryPlaceholder: "Vali riik",
     currencyPlaceholder: "Vali valuuta",
     phoneNumberPlaceholder: "Telefoninumber",
+    countryNotFound: "Riiki ei leitud",
+    searchPlaceholder: "Otsi",
     addressPlaceholder: "Sisesta aadress",
     cityPlaceholder: "Sisesta linn",
     postalCodeHint:
@@ -1344,6 +1378,8 @@ export const translations = {
     countryPlaceholder: "Izvēlieties valsti",
     currencyPlaceholder: "Izvēlieties valūtu",
     phoneNumberPlaceholder: "Tālruņa numurs",
+    countryNotFound: "Valsts nav atrasta",
+    searchPlaceholder: "Meklēt",
     addressPlaceholder: "Ievadiet adresi",
     cityPlaceholder: "Ievadiet pilsētu",
     postalCodeHint:
@@ -1420,6 +1456,8 @@ export const translations = {
     countryPlaceholder: "Pasirinkite šalį",
     currencyPlaceholder: "Pasirinkite valiutą",
     phoneNumberPlaceholder: "Telefono numeris",
+    countryNotFound: "Šalis nerasta",
+    searchPlaceholder: "Ieškoti",
     addressPlaceholder: "Įveskite adresą",
     cityPlaceholder: "Įveskite miestą",
     postalCodeHint:
@@ -1496,6 +1534,8 @@ export const translations = {
     countryPlaceholder: "Odaberite državu",
     currencyPlaceholder: "Odaberite valutu",
     phoneNumberPlaceholder: "Broj telefona",
+    countryNotFound: "Država nije pronađena",
+    searchPlaceholder: "Pretraži",
     addressPlaceholder: "Unesite adresu",
     cityPlaceholder: "Unesite grad",
     postalCodeHint:
@@ -1571,6 +1611,8 @@ export const translations = {
     countryPlaceholder: "Vælg land",
     currencyPlaceholder: "Vælg valuta",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Landet blev ikke fundet",
+    searchPlaceholder: "Søg",
     addressPlaceholder: "Indtast adresse",
     cityPlaceholder: "Indtast by",
     postalCodeHint:
@@ -1647,6 +1689,8 @@ export const translations = {
     countryPlaceholder: "Valitse maa",
     currencyPlaceholder: "Valitse valuutta",
     phoneNumberPlaceholder: "Puhelinnumero",
+    countryNotFound: "Maata ei löytynyt",
+    searchPlaceholder: "Haku",
     addressPlaceholder: "Syötä osoite",
     cityPlaceholder: "Syötä kaupunki",
     postalCodeHint:
@@ -1723,6 +1767,8 @@ export const translations = {
     countryPlaceholder: "Изберете държава",
     currencyPlaceholder: "Изберете валута",
     phoneNumberPlaceholder: "Телефонен номер",
+    countryNotFound: "Държавата не е намерена",
+    searchPlaceholder: "Търсене",
     addressPlaceholder: "Въведете адрес",
     cityPlaceholder: "Въведете град",
     postalCodeHint:
@@ -1798,6 +1844,8 @@ export const translations = {
     countryPlaceholder: "Vælg land",
     currencyPlaceholder: "Vælg valuta",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Land niet gevonden",
+    searchPlaceholder: "Zoeken",
     addressPlaceholder: "Indtast adresse",
     cityPlaceholder: "Indtast by",
     postalCodeHint:
@@ -1883,6 +1931,8 @@ export const translations = {
     countryPlaceholder: "Оберіть країну",
     currencyPlaceholder: "Оберіть валюту",
     phoneNumberPlaceholder: "Номер телефону",
+    countryNotFound: "Країну не знайдено",
+    searchPlaceholder: "Пошук",
     addressPlaceholder: "Введіть адресу",
     cityPlaceholder: "Введіть місто",
     postalCodeHint:
@@ -1959,6 +2009,8 @@ export const translations = {
     countryPlaceholder: "Chagua Nchi",
     currencyPlaceholder: "Chagua Sarafu",
     phoneNumberPlaceholder: "Nambari ya Simu",
+    countryNotFound: "Nchi haijapatikana",
+    searchPlaceholder: "Tafuta",
     addressPlaceholder: "Weka Anwani",
     cityPlaceholder: "Weka Jiji",
     postalCodeHint:
@@ -2035,6 +2087,8 @@ export const translations = {
     countryPlaceholder: "Hitamo Igihugu",
     currencyPlaceholder: "Hitamo Ifaranga",
     phoneNumberPlaceholder: "Nimero ya Telefone",
+    countryNotFound: "Igihugu ntikibonetse",
+    searchPlaceholder: "Shakisha",
     addressPlaceholder: "Andika Aderesi",
     cityPlaceholder: "Andika Umujyi",
     postalCodeHint:
@@ -2109,6 +2163,8 @@ export const translations = {
     countryPlaceholder: "اختر الدولة",
     currencyPlaceholder: "اختر العملة",
     phoneNumberPlaceholder: "رقم الهاتف",
+    countryNotFound: "لم يتم العثور على الدولة",
+    searchPlaceholder: "بحث",
     addressPlaceholder: "أدخل العنوان",
     cityPlaceholder: "أدخل المدينة",
     postalCodeHint:
@@ -2183,6 +2239,8 @@ export const translations = {
     countryPlaceholder: "选择国家",
     currencyPlaceholder: "选择货币",
     phoneNumberPlaceholder: "电话号码",
+    countryNotFound: "未找到国家/地区",
+    searchPlaceholder: "搜索",
     addressPlaceholder: "输入地址",
     cityPlaceholder: "输入城市",
     postalCodeHint: "如果知道，请填写——这会加快验证速度，但不是必填项。",
@@ -2259,6 +2317,8 @@ export const translations = {
     countryPlaceholder: "Roghnaigh tír",
     currencyPlaceholder: "Roghnaigh airgeadra",
     phoneNumberPlaceholder: "Uimhir fóin",
+    countryNotFound: "Níor aimsíodh an tír",
+    searchPlaceholder: "Cuardaigh",
     addressPlaceholder: "Iontráil seoladh",
     cityPlaceholder: "Iontráil cathair",
     postalCodeHint:
@@ -2334,6 +2394,8 @@ export const translations = {
     countryPlaceholder: "Land auswielen",
     currencyPlaceholder: "Währung auswielen",
     phoneNumberPlaceholder: "Telefonnummer",
+    countryNotFound: "Land net fonnt",
+    searchPlaceholder: "Sichen",
     addressPlaceholder: "Adress aginn",
     cityPlaceholder: "Stad aginn",
     postalCodeHint:
@@ -2410,6 +2472,8 @@ export const translations = {
     countryPlaceholder: "Agħżel pajjiż",
     currencyPlaceholder: "Agħżel munita",
     phoneNumberPlaceholder: "Numru tat-telefon",
+    countryNotFound: "Il-pajjiż ma nstabx",
+    searchPlaceholder: "Fittex",
     addressPlaceholder: "Daħħal indirizz",
     cityPlaceholder: "Daħħal belt",
     postalCodeHint:
@@ -2486,6 +2550,8 @@ export const translations = {
     countryPlaceholder: "Londa Ensi",
     currencyPlaceholder: "Londa Ssente",
     phoneNumberPlaceholder: "Ennamba y’Essimu",
+    countryNotFound: "Ensi tezuuliddwa",
+    searchPlaceholder: "Noonya",
     addressPlaceholder: "Yingiza Endagiriro",
     cityPlaceholder: "Yingiza Ekibuga",
     postalCodeHint:
@@ -2560,6 +2626,8 @@ export const translations = {
     countryPlaceholder: "አገር ይምረጡ",
     currencyPlaceholder: "ምንዛሬ ይምረጡ",
     phoneNumberPlaceholder: "የስልክ ቁጥር",
+    countryNotFound: "አገር አልተገኘም",
+    searchPlaceholder: "ፈልግ",
     addressPlaceholder: "አድራሻ ያስገቡ",
     cityPlaceholder: "ከተማ ያስገቡ",
     postalCodeHint: "የሚያውቁት ከሆነ ያስገቡት — ማረጋገጡን ያፋጥናል፣ ግን አስገዳጅ አይደለም።",
@@ -2634,6 +2702,8 @@ export const translations = {
     countryPlaceholder: "Zaɓi Ƙasa",
     currencyPlaceholder: "Zaɓi Kuɗi",
     phoneNumberPlaceholder: "Lambar Waya",
+    countryNotFound: "Ba a sami ƙasar ba",
+    searchPlaceholder: "Nema",
     addressPlaceholder: "Shigar da Adireshi",
     cityPlaceholder: "Shigar da Birni",
     postalCodeHint:
@@ -2709,6 +2779,8 @@ export const translations = {
     countryPlaceholder: "Yan Orilẹ-ede",
     currencyPlaceholder: "Yan Owo",
     phoneNumberPlaceholder: "Nọmba Foonu",
+    countryNotFound: "A ko ri orilẹ-ede naa",
+    searchPlaceholder: "Wa",
     addressPlaceholder: "Tẹ Adirẹsi sii",
     cityPlaceholder: "Tẹ Ìlú sii",
     postalCodeHint:
@@ -2784,6 +2856,8 @@ export const translations = {
     countryPlaceholder: "Họrọ Mba",
     currencyPlaceholder: "Họrọ Ego",
     phoneNumberPlaceholder: "Nọmba Ekwentị",
+    countryNotFound: "Ahụghị obodo ahụ",
+    searchPlaceholder: "Chọọ",
     addressPlaceholder: "Tinye Adreesị",
     cityPlaceholder: "Tinye Obodo",
     postalCodeHint:
@@ -2859,6 +2933,8 @@ export const translations = {
     countryPlaceholder: "Paw Ɔman",
     currencyPlaceholder: "Paw Currency",
     phoneNumberPlaceholder: "Phone Number",
+    countryNotFound: "Wɔanhu ɔman no",
+    searchPlaceholder: "Hwehwɛ",
     addressPlaceholder: "Hyɛ Address",
     cityPlaceholder: "Hyɛ Kurow",
     postalCodeHint:

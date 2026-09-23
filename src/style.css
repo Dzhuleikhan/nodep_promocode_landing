@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Брейкпоинт xs, как в playable (Tailwind v3: xs = max 360px). В v4 своего xs
+   нет, а в разметке десятки xs:-классов (xs:mt-[7px], xs:text-sm, xs:w-7 …) —
+   без объявления они не генерировались вовсе. */
+@custom-variant xs (@media (max-width: 360px));
+
 @font-face {
   font-family: 'Gilroy', sans-serif;
   src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
@@ -78,7 +83,6 @@
   --montserrat: "Montserrat", "sans-serif";
   --saira: "Saira", "sans-serif";
 }
-
 
 #hero {
   background: radial-gradient(49.93% 49.93% at 50% 50.07%, #be6d37 0%, #120803 100%);
@@ -161,10 +165,76 @@
   opacity: 1;
 }
 
+/* Кнопки пола: на длинных переводах («Mężczyzna», «Masculino», «Männlich»)
+   текст вплотную упирался в кружок справа — между ними не было зазора
+   (justify-between без gap), а на мобилке текст оставался 16px: xs:text-sm в
+   разметке мёртвый, брейкпоинта xs в @theme нет. Даём гарантированный зазор,
+   запрещаем кружку и иконке сжиматься, а на узких экранах ужимаем шрифт,
+   иконку и кружок, чтобы длинное слово влезало. */
+.gender-checkbox-div {
+  gap: 8px;
+}
+
+.gender-checkbox-div > p {
+  min-width: 0;
+}
+
+.gender-checkbox-div > p > svg {
+  flex-shrink: 0;
+}
+
+.gender-checkbox-div > p > span {
+  min-width: 0;
+  hyphens: auto; /* крайний случай — перенос по слогам, а не наезд на кружок */
+}
+
+@media (max-width: 576px) {
+  .gender-checkbox-div {
+    padding-inline: 10px;
+  }
+
+  .gender-checkbox-div > p {
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  .gender-checkbox-div > p > svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gender-checkbox-circle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .gender-checkbox-circle::before {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 .two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div,
 .gender-checkbox input:checked+.gender-checkbox-div {
   background-color: #8726ff;
   border-color: #57179b;
+}
+
+/* Выбранный бонус: обводка белая. Фиолетовая на фиолетовой заливке карточки
+   не читалась — выбор был виден только по кружку справа. */
+.two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div {
+  border-color: #ffffff;
+}
+
+/* Экран «Вы уверены?»: шапка не должна предлагать ни «назад», ни крестик —
+   единственный выход отсюда через кнопки внутри самого экрана. Прячем через
+   класс на оверлее, а не снимая is-visible с кнопки: видимость «назад» уже
+   управляется по шагам формы, состояния разъедутся.
+   visibility, а не только opacity: прозрачный крестик ловил бы клики. */
+.two-step-overlay.is-declining .two-step-header-back-btn,
+.two-step-overlay.is-declining .two-step-modal-close-btn {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .two-step-header-back-btn.is-visible {
@@ -182,6 +252,42 @@
   font-size: 12px;
 }
 
+/* Длинные лейблы полей (напр. швейцарский индекс сразу в три языка:
+   «Postleitzahl / Numéro postal / Numero postale (8001)») вылезали за правый
+   край поля: лейбл — absolute left-4 без ограничения справа, и коробка
+   тянулась до самой рамки. Ограничиваем ширину отступом слева + справа.
+   В RTL left/right меняются местами, max-width от этого не зависит. */
+.two-step-general-label {
+  max-width: calc(100% - 32px); /* left 16px + right 16px */
+}
+
+/* у почты, пароля и промокода слева иконка — лейбл начинается с 45px */
+.two-step-email-label,
+.two-step-promocode-label {
+  max-width: calc(100% - 61px); /* 45px + 16px */
+}
+
+/* у пароля ещё и «глаз» справа */
+.two-step-password-label {
+  max-width: calc(100% - 95px); /* 45px + иконка 24px + gap 6px + 16px + запас */
+}
+
+/* у индекса справа может быть иконка-подсказка (i) */
+.two-step-zipcode-wrapper.has-info .two-step-zipcode-label {
+  max-width: calc(100% - 60px); /* 16px + иконка 20px + 8px + 16px */
+}
+
+/* Поднятый лейбл (фокус / есть значение) стоит над текстом: вторая строка
+   налезла бы на ввод — держим в одну строку и обрезаем многоточием.
+   padding-top — чтобы overflow не срезал приподнятую звёздочку. */
+.two-step-general-input:focus+.two-step-general-label,
+.two-step-general-label.active {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 3px;
+}
+
 .two-step-promocode-wrapper.is-valid .two-step-promocode-valid-icon {
   fill: #4ED937;
 }
@@ -193,7 +299,6 @@
 .two-step-promocode-wrapper.is-visible {
   display: grid;
 }
-
 
 .two-step-form-step {
   display: none;
@@ -249,7 +354,13 @@
   }
 }
 
-/* phone-guard (IPQS): хинт ошибки телефона, вставляется сниппетом под полем */
+/* Хинты внешних сниппетов под полями: email-guard (Zeruh) у почты и
+   phone-guard (IPQS) у телефона. Элемент каждый сниппет рисует сам, поэтому
+   типографику задаём здесь — и общим правилом. Порознь они разъехались: у
+   почты было 14px обычным начертанием и свой оттенок красного, у телефона
+   12px жирным, и две ошибки под соседними полями читались как из разных
+   форм. */
+.eg-hint,
 .pg-hint {
   margin-top: 6px;
   font-size: 12px;
@@ -257,6 +368,17 @@
   line-height: 1.2;
   text-align: center;
   color: #ff5530;
+}
+
+/* Подсказка «вы имели в виду ...?» — не ошибка, поэтому белым. */
+.eg-hint[data-eg-state="suggest"] {
+  color: #ffffff;
+}
+
+.eg-suggest-link {
+  color: #8726ff;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .qs-num.qs-current,
@@ -428,13 +550,30 @@
   z-index: 500;
 }
 
-.two-step-required-label::before {
+/* Та же заглушка для селекта страны на последнем шаге — те же паддинги, что у
+   телефонного дропдауна; текст рисует renderCountries в modules/twoStepForm.js */
+.two-step-country-empty {
+  padding: 14px 16px;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Звезда идёт в потоке сразу за текстом лейбла, а не позиционируется по его
+   правому краю: у плавающих лейблов коробка тянется до края поля, и на длинных
+   переводах (напр. швейцарский индекс сразу в три языка переносится на вторую
+   строку) абсолютная звезда вылезала за белый блок.
+   position: relative + top сдвигают её вверх, не влияя на высоту строки,
+   margin-inline-start сам переезжает на другую сторону в RTL. */
+.two-step-required-label::after {
   content: '*';
   color: #ff0000;
   font-size: 12px;
-  position: absolute;
-  right: -10px;
+  position: relative;
   top: -3px;
+  margin-inline-start: 2px;
 }
 
 .form-promocode-wrapper.is-applied {
@@ -475,15 +614,31 @@
   left: auto;
 }
 
-[dir="rtl"] .two-step-required-label::before {
-  right: auto;
-  left: -10px;
-}
-
 [dir="rtl"] .two-step-bonus-checkbox-circle::before,
 [dir="rtl"] .gender-checkbox-circle::before {
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Календарь даты рождения.
+   Всплывашка привязана к строке поля (positionElement в twoStepForm.js), так
+   что её край совпадает с краем поля. Стрелку flatpickr ставит в 22px от края —
+   доводим до центра иконки: 16px внутреннего отступа поля (p-4) + половина
+   иконки 32px. margin у псевдоэлементов отрицательный на половину ширины,
+   поэтому 32px — это ровно остриё стрелки. rightMost обязателен: этот класс
+   срабатывает на узких экранах и несёт своё right: 22px. */
+.flatpickr-calendar.arrowRight:before,
+.flatpickr-calendar.arrowRight:after,
+.flatpickr-calendar.rightMost:before,
+.flatpickr-calendar.rightMost:after {
+  left: auto;
+  right: 32px;
+}
+
+[dir="rtl"] .flatpickr-calendar.arrowLeft:before,
+[dir="rtl"] .flatpickr-calendar.arrowLeft:after {
+  right: auto;
+  left: 32px;
 }
 
 /* States dropdown */
@@ -507,13 +662,6 @@
 .two-step-state-list-item.is-highlighted,
 .form-currency-dropdown li.is-highlighted {
   background-color: #755EEB26;
-}
-
-.eg-hint {
-  font-size: 14px;
-  margin-top: 20px;
-  text-align: center;
-  color: #ffffff
 }
 
 /* Postal Code hint tooltip (иконка-i, показывается только для OPTIONAL стран) */
@@ -729,4 +877,36 @@
   .wager-badge-inner {
     flex-wrap: wrap;
   }
+}
+
+/* Библиотека сообщает о пустом поиске только скринридеру (.iti__a11y-text), а
+   визуально список просто схлопывается — игрок не понимает, нашлось что-то или
+   нет. Рисуем видимую заглушку; текст подставляет modules/itiTelInput.js. */
+.iti__country-list:empty::after {
+  content: var(--iti-zero-results, 'Country not found');
+  display: block;
+  padding: 14px 16px;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Звёздочка не влезала в 52px после того, как лейбл получил её через ::after;
+   align-content держит содержимое по центру, иначе строки грида липнут к низу */
+.two-step-form .two-step-group-phone {
+  height: 56px;
+  align-content: center;
+}
+
+/* Лейбл телефона — статичный блок, поэтому звёздочка приклеивается через
+   ::after со сдвигом вверх, а не абсолютом, как у остальных лейблов:
+   у тех сам лейбл спозиционирован, и там абсолют встаёт по месту. */
+.two-step-phone-label::after {
+  content: '*';
+  color: #ff0000;
+  font-size: 12px;
+  vertical-align: super;
+  margin-inline-start: 2px;
 }
