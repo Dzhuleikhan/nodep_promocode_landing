@@ -14,7 +14,7 @@ import {
   formatPostalCode,
   validatePostalCodeFormat,
 } from "../public/data";
-import { geoData, settingZipCodePlaceholder } from "./geoLocation";
+import { geoData, getLocation, settingZipCodePlaceholder } from "./geoLocation";
 import { translations } from "/public/translations";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
@@ -45,9 +45,54 @@ const CDN = "https://3344112-img.b-cdn.net";
 const translate = (lang, key) =>
   translations[lang]?.[key] ?? translations.en[key];
 
+// Страховка к атрибутам в разметке: добиваем поля, которым autocomplete не
+// проставлен (в том числе созданные скриптом — поиск стран у телефона).
+// Уже заданное значение не трогаем: у пароля стоит new-password, и только этот
+// токен отучает Chrome подставлять сохранённую пару логин+пароль — "off" он на
+// паролях игнорирует.
 document.querySelectorAll("input").forEach((input) => {
-  input.setAttribute("autocomplete", "off");
+  if (!input.hasAttribute("autocomplete")) {
+    input.setAttribute("autocomplete", "off");
+  }
 });
+
+// | ЧИСТКА ПОЛЕЙ
+// Браузер восстанавливает введённые значения при перезагрузке, а менеджер
+// паролей сам подставляет сохранённую пару почта+пароль. В компьютерном клубе
+// это значит, что следующий игрок докручивает до модалки и видит чужие данные.
+// Атрибуты autocomplete в разметке закрывают подстановку, а здесь снимаем то,
+// что браузер успел восстановить сам.
+// :not([readonly]) выводит из-под чистки поля, которые заполняет не игрок:
+// страну (её ставит гео или выбор из списка) и промокод из ссылки — ему
+// readOnly проставляет promocodeCheck. Без этого, если гео отвечало быстрее
+// события load, имя страны стирало вторым проходом: флаг оставался на месте
+// (это <img>), а строка рядом пустела. Браузеру там восстанавливать нечего,
+// значение всегда ставит скрипт.
+const RESTORABLE_FIELDS = [
+  ".two-step-form input[type='text']:not([readonly])",
+  ".two-step-form input[type='email']:not([readonly])",
+  ".two-step-form input[type='password']:not([readonly])",
+  ".two-step-form input[type='tel']:not([readonly])",
+].join(", ");
+
+// Без промокода в ссылке поле остаётся редактируемым, под чистку попадает
+// и оно. На load код из ссылки уже подставлен (promocodeCheck отработал на
+// импорте), поэтому второй проход его пропускает — иначе стёрли бы своё же.
+const clearFormFields = (keepPromocode = false) => {
+  document.querySelectorAll(RESTORABLE_FIELDS).forEach((input) => {
+    if (keepPromocode && input.classList.contains("two-step-promocode-input")) {
+      return;
+    }
+
+    input.value = "";
+  });
+};
+
+clearFormFields();
+
+// Восстановление может случиться и после разбора модулей, поэтому повторяем на
+// load.
+window.addEventListener("load", () => clearFormFields(true), { once: true });
 
 const PHONE_ONLY_COUNTRIES = [];
 const hideEmail = false;
@@ -385,8 +430,10 @@ if (twoStepFormSecondStep) {
       emailAlertEl.classList.add("hidden");
     }
   };
+
   const isPasswordFieldValid = () =>
     twoStepFormPasswordInput.value.trim().length >= 6;
+
   const currentPhoneE164 = () => {
     const dialCode = twoStepiti.getSelectedCountryData().dialCode;
     const digits = twoStepFormPhoneInput.value.trim().replace(/\D/g, "");
@@ -401,9 +448,9 @@ if (twoStepFormSecondStep) {
     return isValidPhoneNumber(`+${dialCode}${digits}`, countryCode);
   };
 
-  // IPQS (phone-guard): кормим сниппет номером (E.164 без "+") + страной, но
-  // ТОЛЬКО при валидном формате — чтобы не бить IPQS по неполному вводу.
-  // separateDialCode → код страны вне инпута, поэтому собираем e164 сами.
+  // IPQS (phone-guard): кормим сниппет готовым E.164 (цифры без "+") + страной.
+  // Пишем data-атрибуты ТОЛЬКО при валидном формате, иначе чистим — чтобы не бить
+  // IPQS по неполному вводу (separateDialCode: код страны лежит вне инпута).
   const syncPhoneGuardData = () => {
     if (isPhoneFormatValid()) {
       const { dialCode, iso2 } = twoStepiti.getSelectedCountryData();
@@ -416,17 +463,25 @@ if (twoStepFormSecondStep) {
     }
   };
 
-  // IPQS подтвердил реальность номера? Нет сниппета → fail-open (true).
+  // IPQS ок? Нет сниппета → fail-open (true). valid:false/active:false → false.
   const isPhoneGuardValid = () =>
     !window.PhoneGuard || window.PhoneGuard.isValid(twoStepFormPhoneInput);
-  // Номер готов (формат ок), но вердикта IPQS ещё нет — ждём, кнопка выключена.
+  // Формат ок, но вердикта IPQS ещё нет → ждём (кнопка выключена).
   const isPhoneGuardPending = () =>
     !!window.PhoneGuard && window.PhoneGuard.isPending(twoStepFormPhoneInput);
 
-  // Спиннер IPQS вешаем на явный флаг (ставим на blur, снимаем на вердикте),
-  // а НЕ на isPending — он true уже во время ввода и крутился бы постоянно.
+  // Флаг «летит IPQS-запрос» — ставится на blur, снимается на phoneguard:result.
+  // НЕ завязывать спиннер на isPending (он true уже во время ввода) — см. §5 доки.
   let isIpqsChecking = false;
-  // Реально идёт проверка (IPQS или занятость) — для спиннера/нейтрального цвета.
+
+  // Проверка занятости ещё идёт (формат ок, но вердикта нет).
+  const isPhonePending = () => {
+    if (!isPhoneFormatValid()) return false;
+    const st = getPhoneStatus(currentPhoneE164());
+    return !st || st.pending;
+  };
+
+  // Реально летит запрос (IPQS или занятость) — для спиннера.
   const isPhoneChecking = () => {
     if (!isPhoneFormatValid()) return false;
     if (isIpqsChecking) return true;
@@ -443,9 +498,9 @@ if (twoStepFormSecondStep) {
   // Полная валидность для гейтинга кнопки: формат ок И номер НЕ занят.
   // Пока проверка идёт / нет данных → false (кнопка выключена, проскочить нельзя).
   // Ошибка проверки (сеть/таймаут/4xx/5xx) → fail-open (не блокируем лид).
+  // Гейт телефона: формат → IPQS → занятость (все три должны пройти).
   const isPhoneFieldValid = () => {
     if (!isPhoneFormatValid()) return false;
-    // Гейт телефона: формат → IPQS → занятость (все три должны пройти).
     if (isPhoneGuardPending()) return false; // ждём вердикт IPQS
     if (!isPhoneGuardValid()) return false; // valid:false/active:false → блок
     const st = getPhoneStatus(currentPhoneE164());
@@ -477,6 +532,19 @@ if (twoStepFormSecondStep) {
     }
   };
 
+  // Поля, из которых игрок уже уходил (blur). Пересчёт на вводе идёт с
+  // нейтральным цветом и раньше красил им ВСЕ невалидные поля шага: печатаешь в
+  // почте — уже покрасневший короткий пароль снова фиолетовый (и наоборот).
+  // Теперь нейтральный цвет — только у поля, в котором сейчас печатают, и у
+  // ещё не тронутых; тронутое невалидное поле остаётся красным.
+  const touchedFields = new WeakSet();
+  [twoStepFormPhoneInput, twoStepFormEmailInput, twoStepFormPasswordInput].forEach(
+    (input) =>
+      input?.addEventListener("focusout", () => touchedFields.add(input)),
+  );
+  const NEUTRAL_COLOR = "#8726FF";
+  const ERROR_COLOR = "#ff5530";
+
   const validateInputs = (validColor, invalidColor) => {
     const fields = isPhoneOnlyMode
       ? [
@@ -491,31 +559,44 @@ if (twoStepFormSecondStep) {
 
     let validCount = 0;
     fields.forEach(({ input, isValid }) => {
-      // Во время проверки занятости — нейтральный цвет, не красный.
+      // Во время проверки (занятость или IPQS) — нейтральный цвет, не красный.
       const checkingAvail =
-        (input === twoStepFormPhoneInput && isPhoneChecking()) ||
+        (input === twoStepFormPhoneInput &&
+          (isPhonePending() || isPhoneChecking())) ||
         (input === twoStepFormEmailInput && isEmailAvailPending());
       if (checkingAvail) {
-        input.style.color = "#8726FF";
+        input.style.color = NEUTRAL_COLOR;
+      } else if (isValid) {
+        input.style.color = validColor;
       } else {
-        input.style.color = isValid ? validColor : invalidColor;
+        const keepError =
+          invalidColor === NEUTRAL_COLOR &&
+          touchedFields.has(input) &&
+          input !== document.activeElement;
+        input.style.color = keepError ? ERROR_COLOR : invalidColor;
       }
       if (isValid) validCount++;
     });
-    btnOverlap.style.left = `${(validCount / fields.length) * 100}%`;
 
     updatePhoneAlert();
     updatePhoneSpinner();
     updateEmailAlert();
 
-    if (validCount === fields.length) {
+    const percentage = (validCount / fields.length) * 100;
+    btnOverlap.style.left = `${percentage}%`;
+
+    if (percentage === 100) {
       const dialCode = twoStepiti.getSelectedCountryData().dialCode;
-      const digits = twoStepFormPhoneInput.value.replace(/\D/g, "");
-      twoStepFormData.phone = `${dialCode}${digits}`;
+      const sanitizedPhone = twoStepFormPhoneInput.value.replace(/\D/g, "");
+      twoStepFormData.phone = `${dialCode}${sanitizedPhone}`;
       twoStepFormData.password = twoStepFormPasswordInput.value;
-      twoStepFormData.email = isPhoneOnlyMode
-        ? ""
-        : twoStepFormEmailInput.value;
+
+      if (!isPhoneOnlyMode) {
+        twoStepFormData.email = twoStepFormEmailInput.value;
+      } else {
+        twoStepFormData.email = "";
+      }
+
       twoStepFormSecondStepBtn.disabled = false;
     } else {
       twoStepFormSecondStepBtn.disabled = true;
@@ -533,12 +614,12 @@ if (twoStepFormSecondStep) {
       validateInputs("#4ED937", "#8726FF");
     });
   };
-  // Телефон: на blur запускаем проверку занятости, на вердикт — пересчёт кнопки.
+
+  // Телефон: на blur запускаем IPQS (сниппет сам, по data-атрибутам) + проверку
+  // занятости, на вердикт — пересчёт кнопки.
   const triggerPhoneCheck = () => {
-    // Покормить IPQS актуальным номером до того, как сниппет прочтёт его на blur,
-    // и поднять флаг спиннера, пока летит вердикт IPQS.
-    syncPhoneGuardData();
-    if (isPhoneGuardPending()) isIpqsChecking = true;
+    syncPhoneGuardData(); // отдать сниппету номер до того, как он прочтёт на blur
+    if (isPhoneGuardPending()) isIpqsChecking = true; // запустился IPQS → крутим спиннер
     if (isPhoneFormatValid()) {
       checkPhoneAvailability(currentPhoneE164()).then(() =>
         validateInputs("#4ED937", "#ff5530"),
@@ -553,44 +634,16 @@ if (twoStepFormSecondStep) {
     validateInputs("#4ED937", "#8726FF");
   });
 
-  // Вердикт IPQS приходит асинхронно — снимаем флаг спиннера и пересчитываем
-  // заливку/блок кнопки (хинт ошибки рисует сам сниппет).
+  // Вердикт IPQS прилетел асинхронно → снять спиннер и пересчитать кнопку/рамку.
   twoStepFormPhoneInput.addEventListener("phoneguard:result", () => {
     isIpqsChecking = false;
     validateInputs("#4ED937", "#ff5530");
   });
   attachListeners(twoStepFormPasswordInput);
-  if (!isPhoneOnlyMode) attachListeners(twoStepFormEmailInput);
-
-  // email-guard: вердикт Zeruh приходит асинхронно (после blur) — пересчитываем
-  // заливку и блок кнопки, чтобы они отражали реальную валидность почты.
-  // Плюс крутим спиннер в инпуте, пока идёт проверка (улучшение UX).
   if (!isPhoneOnlyMode) {
-    const emailSpinner = twoStepFormSecondStep.querySelector(
-      ".two-step-email-spinner",
-    );
-    const showSpinner = () => emailSpinner?.classList.remove("hidden");
-    const hideSpinner = () => emailSpinner?.classList.add("hidden");
+    attachListeners(twoStepFormEmailInput);
 
-    // После blur синтаксически валидная почта уходит в Zeruh (isPending) —
-    // показываем спиннер, пока не придёт вердикт.
-    twoStepFormEmailInput.addEventListener("focusout", () => {
-      if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) showSpinner();
-    });
-    // Правка поля = активной проверки нет → прячем (перезапустится на blur).
-    twoStepFormEmailInput.addEventListener("input", hideSpinner);
-
-    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
-      // Прячем спиннер только когда вердикт реально получен (не на
-      // промежуточном синхронном setState до ответа Zeruh).
-      if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
-      validateInputs("#4ED937", "#ff5530");
-    });
-  }
-
-  // Проверка занятости почты (наш API) — отдельным блоком, чтобы не пересекаться
-  // с email-guard-блоком выше.
-  if (!isPhoneOnlyMode) {
+    // Проверка занятости почты (наш API) — запускаем ПОСЛЕ Zeruh.
     twoStepFormEmailInput.addEventListener("emailguard:result", () => {
       maybeCheckEmailAvailability(); // Zeruh подтвердил → запускаем проверку занятости
       validateInputs("#4ED937", "#ff5530");
@@ -600,6 +653,29 @@ if (twoStepFormSecondStep) {
       "focusout",
       maybeCheckEmailAvailability,
     );
+
+    // ? EMAIL-GUARD (Zeruh): пересчёт кнопки по async-вердикту + спиннер проверки
+    const emailSpinner = twoStepFormSecondStep.querySelector(
+      ".two-step-email-spinner",
+    );
+    const hideSpinner = () => emailSpinner?.classList.add("hidden");
+
+    // вердикт Zeruh прилетел асинхронно → убрать спиннер. Пересчёт делает
+    // обработчик того же события выше, и делает его красным цветом ошибки.
+    // Второго пересчёта тут быть не должно: он шёл нейтральным #8726FF и, как
+    // более поздний слушатель, перекрашивал обратно уже покрасневшее поле —
+    // некорректная почта после blur оставалась фиолетовой.
+    twoStepFormEmailInput.addEventListener("emailguard:result", () => {
+      if (!window.EmailGuard?.isPending?.(twoStepFormEmailInput)) hideSpinner();
+    });
+    // почта ушла в Zeruh (синтаксис ок, вердикта ещё нет) → показать спиннер
+    twoStepFormEmailInput.addEventListener("focusout", () => {
+      if (window.EmailGuard?.isPending?.(twoStepFormEmailInput)) {
+        emailSpinner?.classList.remove("hidden");
+      }
+    });
+    // правка поля → активной проверки нет, перезапустится на blur
+    twoStepFormEmailInput.addEventListener("input", hideSpinner);
   }
 
   twoStepFormPhoneInput.addEventListener("countrychange", () => {
@@ -612,7 +688,7 @@ if (twoStepFormSecondStep) {
   new MutationObserver(() => {
     updatePhoneAlert();
     updateEmailAlert();
-    // Перерисовать хинт IPQS на новом языке (текст вшит в сниппет по <html lang>).
+    // Перерисовать хинт IPQS на новом языке, если номер заблокирован.
     if (
       window.PhoneGuard &&
       twoStepFormPhoneInput.getAttribute("data-pg-state") === "blocked"
@@ -717,13 +793,29 @@ if (twoStepFormThirdStep) {
   const minBirthDate = new Date();
   minBirthDate.setFullYear(minBirthDate.getFullYear() - 100);
 
+  // flatpickr по умолчанию цепляется к самому инпуту, а инпут даты — средняя
+  // колонка грида: он обрывается левее иконки календаря, и всплывашка со
+  // стрелкой уезжала от неё (заметно на Android). Якорим на всю строку поля —
+  // тогда край календаря совпадает с краем поля, а стрелку доводим до центра
+  // иконки в CSS (.flatpickr-calendar.arrowRight::before).
   const calendar = flatpickr(twoStepBirthdayInput, {
     allowInput: true,
     dateFormat: "d.m.Y",
     maxDate: "today",
     minDate: minBirthDate,
     disableMobile: true,
+    positionElement: twoStepBirthdayInput.closest(".two-step-birthday-wrapper"),
   });
+
+  // В RTL иконка переезжает в левый край поля — вместе с ней и точка привязки.
+  const syncCalendarPosition = () => {
+    calendar.set(
+      "position",
+      document.documentElement.dir === "rtl" ? "auto left" : "auto right",
+    );
+  };
+  syncCalendarPosition();
+  window.addEventListener("lang:changed", syncCalendarPosition);
 
   document
     .querySelector(".two-step-birthday-btn")
@@ -890,7 +982,7 @@ if (twoStepFormThirdStep) {
   });
 }
 
-// | STEP 4 -- FIRST NAME, LAST NAME, DATE, GENDER
+// | POSTAL CODE / STATE — режим поля индекса и видимость региона по стране.
 // Текущий режим поля Postal Code: "hidden" | "optional" | "required".
 export let postalCodeMode = "required";
 
@@ -981,11 +1073,21 @@ export const applyRegionField = (countryCode) => {
 // по справочнику CAP, IE — графство по routing key Eircode.
 const applyRegionFromPostalCode = (postal) => {
   if (regionMode !== "select" && regionMode !== "auto") return;
-  if (regionChosenManually) return;
+
+  const region = getRegionByPostalCode(twoStepFormData.country, postal) || "";
+
+  // Ручной выбор в селекте раньше блокировал подстановку насовсем: игрок
+  // выбрал Clare, потом ввёл дублинский Eircode — County так и оставался Clare.
+  // Теперь побеждает последнее действие: индекс, который даёт регион, его и
+  // ставит (и снимает флаг ручного выбора). Индекс, который региона не даёт
+  // (недописан / чужой формат), ручной выбор не трогает.
+  if (regionChosenManually) {
+    if (!region) return;
+    regionChosenManually = false;
+  }
 
   // Если новый индекс провинцию не даёт, подставленное по прежнему индексу
   // значение уже неверно — сбрасываем, а не оставляем чужой регион.
-  const region = getRegionByPostalCode(twoStepFormData.country, postal) || "";
 
   twoStepFormData.state = region;
   if (regionMode === "select") {
@@ -1093,6 +1195,7 @@ export const applyAddressFieldOrder = (countryCode) => {
   });
 };
 
+// | STEP 4 -- FIRST NAME, LAST NAME, DATE, GENDER
 const twoStepFormFourthStep = document.querySelector(".two-step-form-step-4");
 if (twoStepFormFourthStep) {
   // ? Country
@@ -1195,7 +1298,12 @@ if (twoStepFormFourthStep) {
   applyDetectedCountry();
   // Adding countries to dropdown
 
+  // последний поисковый запрос: нужен, чтобы перерисовать список после смены
+  // языка — заглушка «страна не найдена» переводится вместе со страницей
+  let countryFilter = "";
+
   const renderCountries = (filter = "") => {
+    countryFilter = filter;
     twoStepCountryList.innerHTML = ""; // Clear existing list
 
     // Filter countries based on the search input
@@ -1231,11 +1339,15 @@ if (twoStepFormFourthStep) {
     // If no countries match the search, show a message
     if (filteredCountries.length === 0) {
       const noResult = document.createElement("li");
-      noResult.className = "text-gray-500 py-2";
-      noResult.textContent = "No countries found.";
+      noResult.className = "two-step-country-empty";
+      const lang = document.documentElement.getAttribute("lang") || "en";
+      noResult.textContent = translate(lang, "countryNotFound");
       twoStepCountryList.appendChild(noResult);
     }
   };
+
+  // список рисуется из JS, updateContent() его не трогает — перерисовываем сами
+  window.addEventListener("lang:changed", () => renderCountries(countryFilter));
 
   // Event listener for the search input
   twoStepCountrySearchInput.addEventListener("input", (e) => {
@@ -1359,6 +1471,9 @@ if (twoStepFormFourthStep) {
   // ? VALIDATION
   const submitBtn = twoStepFormFourthStep.querySelector(".submit-btn");
   const btnOverlap = twoStepFormFourthStep.querySelector(".disable-overlap");
+  const twoStepCityInput = twoStepFormFourthStep.querySelector(
+    ".two-step-city-input",
+  );
   const twoStepStreetInput = twoStepFormFourthStep.querySelector(
     ".two-step-street-input",
   );
@@ -1368,20 +1483,14 @@ if (twoStepFormFourthStep) {
   const twoStepApartmentInput = twoStepFormFourthStep.querySelector(
     ".two-step-apartment-input",
   );
-  const twoStepCityInput = twoStepFormFourthStep.querySelector(
-    ".two-step-city-input",
-  );
   const twoStepZipcodeInput = twoStepFormFourthStep.querySelector(
     ".two-step-zipcode-input",
-  );
-  const twoStepStateInput = twoStepFormFourthStep.querySelector(
-    ".two-step-state-input",
   );
   const twoStepRegionInput = twoStepFormFourthStep.querySelector(
     ".two-step-region-input",
   );
 
-  // Авто-формат индекса по стране (вставка разделителей, верхний регистр).
+  // Авто-форматирование индекса по стране (вставка разделителей, верхний регистр).
   twoStepZipcodeInput.addEventListener("input", () => {
     const formatted = formatPostalCode(
       twoStepFormData.country,
@@ -1396,8 +1505,20 @@ if (twoStepFormFourthStep) {
   });
 
   // State/Province — обычный текстовый инпут (необязательный).
+  const twoStepStateInput = twoStepFormFourthStep.querySelector(
+    ".two-step-state-input",
+  );
   twoStepStateInput.addEventListener("input", () => {
     twoStepFormData.state = validateStringInput(twoStepStateInput.value);
+  });
+
+  // Apartment / Suite — тоже необязательный и в inputValidations1 не входит, а
+  // в twoStepFormData он попадал только из validateInputs1, которую дёргают
+  // события ОБЯЗАТЕЛЬНЫХ полей. Стёр квартиру последним действием перед
+  // сабмитом — пересчёта не было, и в /register уходило старое значение.
+  // Пишем на каждый ввод, как у State.
+  twoStepApartmentInput.addEventListener("input", () => {
+    twoStepFormData.apartment = validateStringInput(twoStepApartmentInput.value);
   });
 
   submitBtn.disabled = true;
@@ -1423,6 +1544,10 @@ if (twoStepFormFourthStep) {
       // необязательное — сабмит не блокируем.
       input: twoStepRegionInput,
       condition: (value) => regionMode !== "select" || value !== "",
+      // Это селект, а не текстовое поле: выбранное значение держит свой цвет
+      // из разметки (#755EEB — как у выбранных страны и валюты), зелёным/
+      // красным от валидации его не красим. Валидность по-прежнему считаем.
+      keepColor: true,
     },
     {
       // REQUIRED — индекс обязателен и должен совпадать с форматом страны;
@@ -1438,20 +1563,38 @@ if (twoStepFormFourthStep) {
     },
   ];
 
+  // Как на шаге 2: тронутое (blur) невалидное поле не гаснет в фиолетовый,
+  // пока игрок печатает в соседнем.
+  const touchedAddressFields = new WeakSet();
+  inputValidations1.forEach(({ input }) =>
+    input.addEventListener("focusout", () => touchedAddressFields.add(input)),
+  );
+
   const validateInputs1 = (validColor, invalidColor) => {
     let validCount = 0;
     const totalInputs = inputValidations1.length;
 
-    inputValidations1.forEach(({ input, condition, liveInvalid }) => {
+    // Validate each input
+    inputValidations1.forEach(({ input, condition, liveInvalid, keepColor }) => {
       const value = input.value.trim();
       const isValid = condition(value); // Check validity
+      if (keepColor) {
+        input.style.color = ""; // цвет из класса разметки
+        if (isValid) validCount++;
+        return;
+      }
       // liveInvalid — поля, где ошибка красная даже во время ввода.
+      const keepError =
+        invalidColor === "#8726FF" &&
+        touchedAddressFields.has(input) &&
+        input !== document.activeElement;
       const errorColor =
-        !isValid && liveInvalid?.(value) ? "#ff5530" : invalidColor;
+        !isValid && (liveInvalid?.(value) || keepError) ? "#ff5530" : invalidColor;
       input.style.color = isValid ? validColor : errorColor; // Apply text color
       if (isValid) validCount++;
     });
 
+    // Calculate and update button overlap position
     const percentage = (validCount / totalInputs) * 100;
     btnOverlap.style.left = `${percentage}%`;
 
@@ -1459,12 +1602,8 @@ if (twoStepFormFourthStep) {
       submitBtn.disabled = false;
       twoStepFormData.city = validateStringInput(twoStepCityInput.value);
       twoStepFormData.street = validateStringInput(twoStepStreetInput.value);
-      twoStepFormData.houseNumber = validateStringInput(
-        twoStepHouseInput.value,
-      );
-      twoStepFormData.apartment = validateStringInput(
-        twoStepApartmentInput.value,
-      );
+      twoStepFormData.houseNumber = validateStringInput(twoStepHouseInput.value);
+      twoStepFormData.apartment = validateStringInput(twoStepApartmentInput.value);
       twoStepFormData.zipCode = validateStringInput(twoStepZipcodeInput.value);
     } else {
       submitBtn.disabled = true;
@@ -1476,15 +1615,15 @@ if (twoStepFormFourthStep) {
       validateInputs1("#4ED937", "#ff5530"),
     );
   });
-  inputValidations1.forEach(({ input, liveInvalid }) => {
+  inputValidations1.forEach(({ input, liveInvalid, keepColor }) => {
     input.addEventListener("input", () => {
       validateInputs1("#4ED937", "#8726FF");
       // Поля с liveInvalid оставляем с цветом от валидации — не гасим красный.
-      if (!liveInvalid) input.style.color = "#8726FF";
+      if (!liveInvalid && !keepColor) input.style.color = "#8726FF";
     });
   });
 
-  // Тултип-hint индекса (OPTIONAL-страны): тап на мобилке (на десктопе — hover в CSS).
+  // Тултип hint Postal Code — тап на мобилке (на десктопе — hover из CSS).
   const zipcodeInfoBtn = twoStepFormFourthStep.querySelector(
     ".two-step-zipcode-info",
   );
@@ -1513,7 +1652,46 @@ const twoStepFormSteps = document.querySelectorAll(".two-step-form-step");
 
 let initialStep = 1;
 
-const showStep = (step) => {
+// Курсор ставим в первое НЕзаполненное поле открытого шага, иначе игрок
+// сначала целится в инпут и только потом печатает.
+// Что пропускаем:
+//   readonly — так помечены поля-селекты (страна), у них своё выпадающее меню,
+//   фокус уходит на следующее текстовое;
+//   radio/checkbox — выбор бонуса и пола, печатать там нечего;
+//   .iti__search-input — поиск стран у телефона, в DOM он идёт раньше самого
+//   телефона, но полем формы не является;
+//   .two-step-promocode-input — промокод на первом шаге пустой чаще всего
+//   (его вводят вручную), и одной проверки на пустоту мало: фокус вставал бы
+//   в него, хотя шаг про выбор бонуса;
+//   невидимые (offsetParent === null) — скрытый промокод, «State» для стран
+//   без штатов, свёрнутые выпадающие списки;
+//   заполненные — по «Назад» и повторным переходам фокус вставал в уже
+//   введённые данные и без нужды поднимал клавиатуру. Телефон читается как
+//   пустой корректно: при separateDialCode код страны живёт вне value.
+// Все поля шага заполнены — не фокусируем ничего.
+const focusFirstFieldIn = (stepEl) => {
+  const field = [
+    ...(stepEl?.querySelectorAll(
+      "input:not([type='hidden']):not([type='radio']):not([type='checkbox']):not([disabled]):not([readonly]):not(.iti__search-input):not(.two-step-promocode-input)",
+    ) || []),
+  ].find((el) => el.offsetParent !== null && el.value.trim() === "");
+
+  // без rAF намеренно: showStep зовётся из обработчика клика, а на iOS Safari
+  // клавиатура поднимается только внутри пользовательского жеста
+  field?.focus({ preventScroll: true });
+};
+
+const focusFirstField = (step) =>
+  focusFirstFieldIn(document.querySelector(`.two-step-form-step-${step}`));
+
+// Для открытия модалки: шаг не обязательно первый — игрок мог закрыть форму
+// на третьем и вернуться, is-active к этому моменту уже проставлен.
+export const focusActiveStep = () =>
+  focusFirstFieldIn(document.querySelector(".two-step-form-step.is-active"));
+
+// focus: false — для «Назад»: игрок возвращается на уже пройденный шаг, поля
+// там заполнены, и автофокус на мобилке зря поднимал клавиатуру
+const showStep = (step, { focus = true } = {}) => {
   twoStepFormSteps.forEach((stepWrapper) => {
     stepWrapper.classList.remove("is-active");
     document
@@ -1533,6 +1711,8 @@ const showStep = (step) => {
   } else {
     headerbackBtn.classList.remove("is-visible");
   }
+
+  if (focus) focusFirstField(step);
 };
 // showStep(3);
 
@@ -1548,7 +1728,7 @@ nextStepBtn.forEach((btn) => {
 if (headerbackBtn) {
   headerbackBtn.addEventListener("click", () => {
     initialStep--;
-    showStep(initialStep);
+    showStep(initialStep, { focus: false });
   });
 }
 
@@ -1604,27 +1784,24 @@ twoStepFormMain.addEventListener("submit", (e) => {
     ? ""
     : `&email=${encodeURIComponent(email)}`;
 
-  // Теги качества почты (Zeruh): email_status / reason / score / flags.
-  const emailGuardTags = isPhoneOnlyMode
-    ? ""
-    : window.EmailGuard?.tags?.() || "";
-
-  window.location.href =
-    `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
-      promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
-    }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
-      lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
-    }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
-      country ? "&country=" + country : ""
-    }${state ? "&state=" + encodeURIComponent(state) : ""}${
-      city ? "&city=" + encodeURIComponent(city) : ""
-    }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
-      street ? "&street=" + encodeURIComponent(street) : ""
-    }${houseNumber ? "&house_number=" + encodeURIComponent(houseNumber) : ""}${
-      apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
-    }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
-      offer ? "&offer=" + offer : ""
-    }` + emailGuardTags;
+  window.location.href = `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
+    promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
+  }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
+    lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
+  }${birthday ? "&birth=" + birthday : ""}${gender ? "&gender=" + gender : ""}${
+    country ? "&country=" + country : ""
+  }${state ? "&state=" + encodeURIComponent(state) : ""}${
+    city ? "&city=" + encodeURIComponent(city) : ""
+  }${zipCode ? "&postal=" + encodeURIComponent(zipCode) : ""}${
+    street ? "&street=" + encodeURIComponent(street) : ""
+  }${houseNumber ? "&house_number=" + encodeURIComponent(houseNumber) : ""}${
+    apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
+  }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
+    offer ? "&offer=" + offer : ""
+  }${
+    // в режиме «только телефон» почты нет — и тегов email-guard тоже
+    isPhoneOnlyMode ? "" : window.EmailGuard?.tags?.() || ""
+  }${window.PhoneGuard?.tags?.() || ""}`;
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
@@ -1653,6 +1830,7 @@ gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
 const twoStepModalCloseBtn = document.querySelector(
   ".two-step-modal-close-btn",
 );
+const twoStepOverlay = document.querySelector(".two-step-overlay");
 const twoStepFormInner = document.querySelector(".two-step-modal");
 const twoStepDeclineInner = document.querySelector(".two-step-decline");
 const twoStepKeepBtn = document.querySelector(".two-step-keep-btn");
@@ -1662,6 +1840,8 @@ if (twoStepModalCloseBtn) {
   twoStepModalCloseBtn.addEventListener("click", () => {
     twoStepFormInner.classList.add("hidden");
     twoStepDeclineInner.classList.remove("hidden");
+    // на этом экране выход только через его собственные кнопки — шапку прячем
+    twoStepOverlay?.classList.add("is-declining");
   });
 }
 
@@ -1669,12 +1849,13 @@ if (twoStepKeepBtn) {
   twoStepKeepBtn.addEventListener("click", () => {
     twoStepFormInner.classList.remove("hidden");
     twoStepDeclineInner.classList.add("hidden");
+    twoStepOverlay?.classList.remove("is-declining");
   });
 }
 
 if (twoStepReturnBtn) {
   twoStepReturnBtn.addEventListener("click", () => {
-    document.querySelector(".two-step-overlay").classList.remove("is-open");
+    twoStepOverlay.classList.remove("is-open", "is-declining");
     twoStepFormInner.classList.remove("hidden");
     twoStepDeclineInner.classList.add("hidden");
     document.body.style.overflow = "visible";
