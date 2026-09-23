@@ -1,3 +1,4 @@
+import { translations } from "/public/translations";
 import {
   countryLanguagesMap,
   SupportedLanguages,
@@ -40,10 +41,29 @@ export const getSupportedLanguage = (countryCode) => {
   return "en";
 };
 
-localStorage.setItem(
-  "preferredLanguage",
-  getSupportedLanguage(geoData.countryCode)
-);
+// Коды браузера, расходящиеся с кодами словарей ленда. Датский здесь лежит
+// под своим ISO-кодом da — алиас ему не нужен.
+const BROWSER_LANG_ALIASES = {
+  no: "nb", // норвежский: браузер шлёт макро-код
+  nn: "nb", // нюнорск отдаём на букмоле
+  lg: "lm", // луганда: ISO-код lg, словарь лежит под lm
+  ak: "tw", // акан: словарь лежит под tw (чви)
+};
+
+// Ленд открывается на языке браузера; гео на язык не влияет. Берём язык,
+// только если для него есть словарь: в SupportedLanguages есть uz/bn/tr/id/kk/
+// ky, а переводов под них на этом ленде нет — updateContent упал бы.
+// Считаем здесь, а не в language.js: twoStepForm читает preferredLanguage
+// раньше, чем language.js успевает отработать.
+export const getInitialLanguage = () => {
+  const browserLang = (navigator.language || "").split("-")[0].toLowerCase();
+  const lang = BROWSER_LANG_ALIASES[browserLang] ?? browserLang;
+
+  return SupportedLanguages.includes(lang) && translations[lang] ? lang : "en";
+};
+
+localStorage.setItem("preferredLanguage", getInitialLanguage());
+export const language = localStorage.getItem("preferredLanguage");
 
 function setHeaderFlag(countryCode) {
   const headerFlagImage = document.querySelector(".header-country-flag");

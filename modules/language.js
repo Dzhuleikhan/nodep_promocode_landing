@@ -1,6 +1,5 @@
 import { translations } from "/public/translations";
-import { geoData } from "./geoLocation";
-import { getSupportedLanguage } from "./geoLocation";
+import { language } from "./geoLocation";
 import { twoStepFormData } from "./twoStepForm";
 // import { settingNodepBonus } from "./modalCurrency";
 import { settingInitialBonusValue } from "./twoStepForm";
@@ -47,58 +46,6 @@ export const languageOptions = [
   { code: "tw", name: "TW", flag: "gh" },
 ];
 
-const countryLangMap = {
-  EN: "en",
-  GB: "en",
-  FR: "fr",
-  RO: "ro",
-  HU: "hu",
-  PL: "pl",
-  CZ: "cs",
-  SI: "sl",
-  GR: "el",
-  NO: "nb",
-  SE: "sv",
-  SK: "sk",
-  RU: "ru",
-  ES: "es",
-  PT: "pt",
-  DE: "de",
-  AT: "de",
-  IT: "it",
-  EE: "et",
-  LV: "lv",
-  LT: "lt",
-  HR: "hr",
-  BG: "bg",
-  DK: "da",
-  NL: "nl",
-  BE: "nl",
-  FI: "fi",
-  UA: "uk",
-  CN: "zh",
-  IE: "ga",
-  LU: "lb",
-  MT: "mt",
-  TZ: "sw",
-  KE: "sw",
-  RW: "rw",
-  ET: "am",
-  UG: "lm",
-  GH: "tw",
-  SA: "ar",
-  AE: "ar",
-  EG: "ar",
-  IQ: "ar",
-  JO: "ar",
-  KW: "ar",
-  LB: "ar",
-  MA: "ar",
-  QA: "ar",
-  OM: "ar",
-  BH: "ar",
-};
-
 const html = document.querySelector("html");
 const headerLangBtn = document.querySelector(".header-lang-btn");
 const headerLangList = document.querySelector(".header-lang-list");
@@ -127,10 +74,9 @@ function buildLanguageList() {
     const targetLang = link.getAttribute("data-lang");
     changeLanguage(targetLang);
     headerLangList.classList.remove("is-open");
-    localStorage.setItem(
-      "preferredLanguage",
-      getSupportedLanguage(targetLang.toUpperCase()),
-    );
+    // targetLang — уже код языка, а не страны: getSupportedLanguage() ждёт
+    // countryCode и затирала выбор игрока
+    localStorage.setItem("preferredLanguage", targetLang);
     const currencyData = JSON.parse(localStorage.getItem("currencyData"));
     settingInitialBonusValue(currencyData.abbr);
     // settingNodepBonus(currencyData.abbr);
@@ -169,6 +115,10 @@ function changeLanguage(lang) {
   }
 
   updateTelInputLanguage(lang);
+
+  // Заглушки, которые рисуются из JS, а не через data-translate:
+  // «страна не найдена» у телефона и у селекта страны. updateContent их не видит.
+  window.dispatchEvent(new CustomEvent("lang:changed", { detail: lang }));
 }
 
 function setActiveLanguageBtn(currentLang) {
@@ -195,17 +145,9 @@ function updateButtonText(lang) {
   html.setAttribute("lang", lang);
 }
 
+// язык уже выбран в geoLocation.js по браузеру
 async function determineLanguage() {
-  const location = geoData;
-
-  if (location.countryCode === "NG") {
-    const nigeriaLangs = ["ha", "yo", "ig"];
-    const browserLang = (navigator.language || "").split("-")[0].toLowerCase();
-    lang = nigeriaLangs.includes(browserLang) ? browserLang : "ha";
-    return lang;
-  }
-
-  lang = countryLangMap[location.countryCode] || "en";
+  lang = language;
   return lang;
 }
 
@@ -214,10 +156,7 @@ async function mainFunction() {
     buildLanguageList();
     lang = await determineLanguage();
     changeLanguage(lang);
-    localStorage.setItem(
-      "preferredLanguage",
-      getSupportedLanguage(lang.toUpperCase()),
-    );
+    localStorage.setItem("preferredLanguage", lang);
     setTimeout(() => {
       const currencyData = JSON.parse(localStorage.getItem("currencyData"));
       // settingNodepBonus(currencyData.abbr);

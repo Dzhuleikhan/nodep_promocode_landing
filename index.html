@@ -10,12 +10,12 @@
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script defer src="/email-guard.js?v=1.0.8" data-eg-debug="false"></script>
+    <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open. Скоуп-селектор -->
     <!-- т.к. на ленде есть второй input[type=tel] (дата рождения). -->
     <script
       defer
-      src="/phone-guard.js?v=1.0.2"
+      src="/phone-guard.js?v=1.0.3"
       data-pg-debug="false"
       data-pg-phone-selector="[data-pg='phone']"
     ></script>
@@ -412,7 +412,7 @@
           class="two-step-modal mt-auto mb-auto two-step-modal-socials flex items-center justify-center"
         >
           <div class="w-full max-w-[500px] p-[30px] max-[576px]:p-0">
-            <form action="#" class="two-step-form">
+            <form action="#" autocomplete="off" class="two-step-form">
               <!-- FIRST BONUS STEP -->
               <div class="two-step-form-step is-active two-step-form-step-1">
                 <div class="space-y-[5px] text-center">
@@ -424,7 +424,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-[15px] text-white space-y-[15px] xs:mt-[10px] xs:space-y-[10px]"
+                  class="mt-[10px] text-white space-y-[10px] xs:mt-[7px] xs:space-y-[7px]"
                 >
                   <label class="two-step-bonus-checkbox relative block">
                     <input
@@ -555,7 +555,7 @@
                 </div>
                 <!-- promocode -->
                 <div
-                  class="form-promocode-wrapper pointer-events-none mt-[15px] hidden xs:mt-[10px]"
+                  class="form-promocode-wrapper mt-[10px] hidden xs:mt-[7px]"
                 >
                   <p
                     data-translate="iHavePromoCode"
@@ -580,13 +580,14 @@
                       />
                     </svg>
                     <input
+                      autocomplete="off"
                       id="promocode"
                       class="two-step-promocode-input two-step-general-input relative w-full bg-transparent text-base font-bold uppercase tracking-[-0.02em] text-[#755eeb] outline-none"
                       type="text"
                     />
                     <!-- <label
                       data-translate="promoCodePlaceHolder"
-                      class="two-step-promocode-label two-step-general-label pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 text-base font-bold tracking-[-0.02em] text-[#585858] transition-all"
+                      class="two-step-promocode-label two-step-general-label pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 text-base font-bold tracking-[-0.02em] text-[#858585] transition-all"
                       >Promo Code</label
                     > -->
                     <div>
@@ -619,7 +620,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn mt-[15px] cursor-pointer grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn mt-[10px] cursor-pointer grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[7px] xs:py-4"
                 >
                   <span class="h-6 w-6"></span>
                   <p data-translate="continueBtn">Continue</p>
@@ -643,7 +644,7 @@
               </div>
               <!-- SECOND STEP -->
               <div
-                class="two-step-form-step two-step-form-step-2 space-y-[15px]"
+                class="two-step-form-step two-step-form-step-2 space-y-[10px]"
               >
                 <div class="space-y-[5px] text-center">
                   <p
@@ -655,7 +656,7 @@
                 </div>
                 <!-- Bonus applied -->
                 <div
-                  class="applied-bonus-wrapper text-white relative mt-[15px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
+                  class="applied-bonus-wrapper text-white relative mt-[10px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[7px]"
                 >
                   <div class="flex items-center gap-[10px]">
                     <div
@@ -712,6 +713,7 @@
                     />
                   </svg>
                   <input
+                    autocomplete="off"
                     dir="ltr"
                     data-eg="email"
                     class="two-step-general-input rtl:text-right two-step-email-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
@@ -719,13 +721,13 @@
                   />
                   <label
                     data-translate="emailPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-email-label rtl:right-[45px] rtl:left-auto pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-email-label rtl:right-[45px] rtl:left-auto pointer-events-none absolute left-[45px] top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                     >Enter E-mail</label
                   >
                   <span class="two-step-email-spinner hidden"></span>
                 </div>
                 <p
-                  class="two-step-email-alert hidden text-center text-xs text-[#FF5530]"
+                  class="two-step-email-alert hidden text-center text-xs font-bold text-[#FF5530]"
                 ></p>
                 <!-- password input -->
                 <div
@@ -744,13 +746,14 @@
                     />
                   </svg>
                   <input
+                    autocomplete="new-password"
                     dir="ltr"
                     class="two-step-general-input rtl:text-right two-step-password-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="password"
                   />
                   <label
                     data-translate="passwordPlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-password-label pointer-events-none absolute left-[45px] rtl:left-auto rtl:right-[45px] top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-password-label pointer-events-none absolute left-[45px] rtl:left-auto rtl:right-[45px] top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                     >Enter Password</label
                   >
                   <div class="two-step-password-show-btn cursor-pointer">
@@ -763,7 +766,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn cursor-pointer mt-[10px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[7px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <span class="h-6 w-6"></span>
@@ -788,7 +791,7 @@
               </div>
               <!-- THIRD STEP -->
               <div
-                class="two-step-form-step two-step-form-step-3 space-y-[15px] xs:space-y-[10px]"
+                class="two-step-form-step two-step-form-step-3 space-y-[10px] xs:space-y-[7px]"
               >
                 <div class="space-y-[5px] text-center">
                   <p
@@ -800,7 +803,7 @@
                 </div>
                 <!-- Bonus applied -->
                 <div
-                  class="applied-bonus-wrapper text-white relative mt-[15px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
+                  class="applied-bonus-wrapper text-white relative mt-[10px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[7px]"
                 >
                   <div class="flex items-center gap-[10px]">
                     <div
@@ -845,12 +848,13 @@
                   class="two-step-input-wrapper two-step-first-name-wrapper relative rounded-2xl bg-white p-4"
                 >
                   <input
+                    autocomplete="off"
                     class="two-step-general-input two-step-first-name-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="text"
                   />
                   <label
                     data-translate="namePlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-first-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-first-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                     >First Name</label
                   >
                 </div>
@@ -859,12 +863,13 @@
                   class="two-step-input-wrapper two-step-last-name-wrapper relative rounded-2xl bg-white p-4"
                 >
                   <input
+                    autocomplete="off"
                     class="two-step-general-input two-step-last-name-input relative -bottom-1 w-full bg-transparent text-base font-bold text-[#755EEB] outline-none"
                     type="text"
                   />
                   <label
                     data-translate="lastNamePlaceholder"
-                    class="two-step-general-label two-step-required-label two-step-last-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                    class="two-step-general-label two-step-required-label two-step-last-name-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                     >Last Name</label
                   >
                 </div>
@@ -888,10 +893,11 @@
                   <div class="grid">
                     <label
                       data-translate="birthdayPlaceholder"
-                      class="text-[12px] font-bold text-[#585858]"
+                      class="two-step-required-label text-[12px] font-bold text-[#858585]"
                       >Select Birthday Date</label
                     >
                     <input
+                      autocomplete="off"
                       dir="ltr"
                       class="two-step-birthday-input rtl:text-right w-full bg-transparent font-bold tracking-[-0.02em] text-[#755eeb] outline-none placeholder:font-bold placeholder:text-[#858585]"
                       type="tel"
@@ -1032,7 +1038,7 @@
                 </div>
                 <button
                   type="button"
-                  class="next-step-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
+                  class="next-step-btn cursor-pointer mt-[10px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[7px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <span class="h-6 w-6"></span>
@@ -1057,7 +1063,7 @@
               </div>
               <!-- FOURTH STEP -->
               <div
-                class="two-step-form-step two-step-form-step-4 space-y-[15px] xs:space-y-[10px]"
+                class="two-step-form-step two-step-form-step-4 space-y-[10px] xs:space-y-[7px]"
               >
                 <div class="space-y-[5px] text-center">
                   <p
@@ -1069,7 +1075,7 @@
                 </div>
                 <!-- Bonus applied -->
                 <div
-                  class="applied-bonus-wrapper text-white relative mt-[15px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[10px]"
+                  class="applied-bonus-wrapper text-white relative mt-[10px] flex items-center justify-between gap-5 rounded-2xl border-[3px] border-[#2ba943] bg-[#2BA943]/25 p-[10px] xs:mt-[7px]"
                 >
                   <div class="flex items-center gap-[10px]">
                     <div
@@ -1119,7 +1125,7 @@
                     <div class="">
                       <p
                         data-translate="countryPlaceholder"
-                        class="pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
+                        class="two-step-required-label pointer-events-none text-xs font-bold tracking-[0.02em] text-[#858585]"
                       >
                         Select Country
                       </p>
@@ -1132,6 +1138,7 @@
                           alt="Flag"
                         />
                         <input
+                          autocomplete="off"
                           readonly
                           class="two-step-country-input w-full bg-transparent text-base font-bold tracking-[-0.02em] text-[#755EEB] outline-none"
                           type="text"
@@ -1175,6 +1182,7 @@
                         />
                       </svg>
                       <input
+                        autocomplete="off"
                         class="two-step-country-search-input w-full bg-transparent font-bold text-[#755EEB] outline-none"
                         type="text"
                       />
@@ -1185,7 +1193,7 @@
                     </div>
                     <p
                       data-translate="countryPlaceholder"
-                      class="mt-[10px] text-xs font-bold tracking-[-0.02em] text-[#585858]"
+                      class="mt-[10px] text-xs font-bold tracking-[-0.02em] text-[#858585]"
                     >
                       Выберите страну
                     </p>
@@ -1193,7 +1201,7 @@
                   </div>
                 </div>
                 <!-- Currency -->
-                <div class="form-currency relative mt-[15px]">
+                <div class="form-currency relative mt-[10px]">
                   <input
                     class="currency-input"
                     name="currency"
@@ -1209,7 +1217,7 @@
                     <div>
                       <p
                         data-translate="currencyPlaceholder"
-                        class="text-xs font-bold text-[#585858]"
+                        class="two-step-required-label text-xs font-bold text-[#858585]"
                       >
                         Choose Currency
                       </p>
@@ -1257,10 +1265,11 @@
                 >
                   <span
                     data-translate="phoneNumberPlaceholder"
-                    class="block text-xs font-bold leading-none tracking-tight text-[#585858]"
+                    class="two-step-phone-label block text-xs font-bold leading-none tracking-tight text-[#858585]"
                     >Phone Number</span
                   >
                   <input
+                    autocomplete="off"
                     class="two-step-phone-input w-full bg-transparent text-lg font-bold tracking-tight text-[#755EEB] outline-none"
                     type="tel"
                     name="phone"
@@ -1269,7 +1278,7 @@
                   <span class="two-step-phone-spinner hidden"></span>
                 </div>
                 <p
-                  class="two-step-phone-alert hidden text-center text-xs text-[#FF5530]"
+                  class="two-step-phone-alert hidden text-center text-xs font-bold text-[#FF5530]"
                 ></p>
                 <!-- Адресные поля. Порядок внутри задаёт страна: applyAddressFieldOrder
                      в modules/twoStepForm.js переставляет узлы, поэтому внутри — только
@@ -1286,7 +1295,7 @@
                     />
                     <label
                       data-translate="streetPlaceholder"
-                      class="two-step-general-label two-step-required-label two-step-street-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-required-label two-step-street-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >Enter Street</label
                     >
                   </div>
@@ -1301,7 +1310,7 @@
                     />
                     <label
                       data-translate="houseNumberPlaceholder"
-                      class="two-step-general-label two-step-required-label two-step-house-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-required-label two-step-house-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >House / Building No.</label
                     >
                   </div>
@@ -1316,7 +1325,7 @@
                     />
                     <label
                       data-translate="apartmentPlaceholder"
-                      class="two-step-general-label two-step-apartment-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-apartment-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >Apartment / Suite</label
                     >
                   </div>
@@ -1331,7 +1340,7 @@
                     />
                     <label
                       data-translate="cityPlaceholder"
-                      class="two-step-general-label two-step-required-label two-step-city-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-required-label two-step-city-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >Enter City</label
                     >
                   </div>
@@ -1346,7 +1355,7 @@
                     />
                     <label
                       data-translate="statePlaceholder"
-                      class="two-step-general-label two-step-state-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-state-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >State / Province</label
                     >
                   </div>
@@ -1363,7 +1372,7 @@
                       <div>
                         <p
                           data-translate="statePlaceholder"
-                          class="two-step-region-label two-step-required-label pointer-events-none text-xs font-bold tracking-[0.02em] text-[#585858]"
+                          class="two-step-region-label two-step-required-label pointer-events-none text-xs font-bold tracking-[0.02em] text-[#858585]"
                         >
                           State / Province
                         </p>
@@ -1408,7 +1417,7 @@
                       type="text"
                     />
                     <label
-                      class="two-step-general-label two-step-required-label two-step-zipcode-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#585858] transition-all"
+                      class="two-step-general-label two-step-required-label two-step-zipcode-label pointer-events-none absolute rtl:left-auto rtl:right-4 left-4 top-1/2 -translate-y-1/2 font-bold text-[#858585] transition-all"
                       >ZIP Code</label
                     >
                     <button
@@ -1452,7 +1461,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="submit-btn mt-[15px] cursor-pointer flex min-h-[68px] w-full justify-center gap-[6px] rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[10px] xs:py-4"
+                  class="submit-btn mt-[10px] cursor-pointer flex min-h-[68px] w-full justify-center gap-[6px] rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-lg font-bold tracking-[0.02em] text-[#0f0f0f] max-[576px]:text-base xs:mt-[7px] xs:py-4"
                 >
                   <span class="disable-overlap"></span>
                   <svg
@@ -1566,7 +1575,7 @@
           </p>
           <!-- Bonus applied -->
           <div
-            class="applied-bonus-wrapper text-white relative mt-[15px] flex w-full items-center justify-between gap-5 rounded-2xl border-[3px] border-[#FF5530] bg-[#FF5530]/25 p-[10px] xs:mt-[10px]"
+            class="applied-bonus-wrapper text-white relative mt-[10px] flex w-full items-center justify-between gap-5 rounded-2xl border-[3px] border-[#FF5530] bg-[#FF5530]/25 p-[10px] xs:mt-[7px]"
           >
             <div class="flex items-center gap-[10px]">
               <div
@@ -1607,7 +1616,7 @@
             </svg>
           </div>
           <button
-            class="two-step-keep-btn cursor-pointer mt-[15px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-base font-bold tracking-[-0.02em] text-[#0f0f0f]"
+            class="two-step-keep-btn cursor-pointer mt-[10px] grid w-full grid-cols-[auto_1fr_auto] gap-1 rounded-2xl bg-[#f4fd2b] px-[14px] py-5 text-base font-bold tracking-[-0.02em] text-[#0f0f0f]"
           >
             <svg
               width="24"
