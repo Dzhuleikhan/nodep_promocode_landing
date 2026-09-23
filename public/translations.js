@@ -28,7 +28,7 @@ export const translations = {
     highRollerBonusText: "250% on Deposits Over $500",
     withoutBonus: "Without Bonus",
     withoutBonusText: "You will not get any bonus",
-    iHavePromoCode: "I Have a Promo-Code",
+    iHavePromoCode: "I have a promo code",
     promoCodePlaceHolder: "Promo Code",
     promoCodeApplyBtn: "Apply",
     continueBtn: "Continue",
@@ -113,7 +113,7 @@ export const translations = {
     // | Step 2
     step2Title: "Entrez votre e-mail",
     step2TitlePhone: "Entrez votre numéro de téléphone",
-    emailPlaceholder: "Entrez E-mail",
+    emailPlaceholder: "Entrez Email",
     passwordPlaceholder: "Entrez de passe",
     // | Step 3
     step3Title: "Quel est ton nom?",
@@ -191,7 +191,7 @@ export const translations = {
     // | Step 2
     step2Title: "Introdu E-mailul Tău",
     step2TitlePhone: "Introduceți numărul dvs. de telefon",
-    emailPlaceholder: "Introdu E-mail",
+    emailPlaceholder: "Introdu Email",
     passwordPlaceholder: "Introdu Parola",
     // | Step 3
     step3Title: "Care este numele tău?",
@@ -269,7 +269,7 @@ export const translations = {
     // | Step 2
     step2Title: "Add meg az e-mail címedet",
     step2TitlePhone: "Adja meg a telefonszámát",
-    emailPlaceholder: "E-mail megadása",
+    emailPlaceholder: "Email megadása",
     passwordPlaceholder: "Jelszó megadása",
     // | Step 3
     step3Title: "Mi a neved?",
@@ -1117,7 +1117,7 @@ export const translations = {
     welcomeBonus: "Willkommensbonus",
     welcomeBonusText: "auf Ihre erste Einzahlung",
     cryptoBonus: "Satoshi-Bonus",
-    cryptoBonusText: "150% auf Krypto-Einzahlungen",
+    cryptoBonusText: "150 % auf Krypto-Einzahlungen",
     highRollerBonus: "High Roller Bonus",
     highRollerBonusText: "250% auf Einzahlungen über 500$",
     withoutBonus: "Ohne Bonus",
@@ -1207,7 +1207,7 @@ export const translations = {
     // | Step 2
     step2Title: "Введіть свій Email",
     step2TitlePhone: "Введіть свій номер телефону",
-    emailPlaceholder: "Введіть E-mail",
+    emailPlaceholder: "Введіть Email",
     passwordPlaceholder: "Введіть пароль",
     // | Step 3
     step3Title: "Як вас звати?",
@@ -1285,7 +1285,7 @@ export const translations = {
     // | Step 2
     step2Title: "Inserisci la tua Email",
     step2TitlePhone: "Inserisci il tuo numero di telefono",
-    emailPlaceholder: "Inserisci E-mail",
+    emailPlaceholder: "Inserisci Email",
     passwordPlaceholder: "Inserisci Password",
     // | Step 3
     step3Title: "Come ti chiami?",
@@ -2677,7 +2677,7 @@ export const translations = {
     // | Step 2
     step2Title: "Shigar da Imel ɗinka",
     step2TitlePhone: "Shigar da Lambar Wayarka",
-    emailPlaceholder: "Shigar da E-mail",
+    emailPlaceholder: "Shigar da Email",
     passwordPlaceholder: "Shigar da Kalmar Sirri",
     // | Step 3
     step3Title: "Menene Sunanka?",
@@ -2754,7 +2754,7 @@ export const translations = {
     // | Step 2
     step2Title: "Tẹ Imeeli rẹ sii",
     step2TitlePhone: "Tẹ Nọmba Foonu rẹ sii",
-    emailPlaceholder: "Tẹ E-mail sii",
+    emailPlaceholder: "Tẹ Email sii",
     passwordPlaceholder: "Tẹ Ọrọigbaniwọle sii",
     // | Step 3
     step3Title: "Kí ni Orúkọ rẹ?",
@@ -2831,7 +2831,7 @@ export const translations = {
     // | Step 2
     step2Title: "Tinye Email gị",
     step2TitlePhone: "Tinye Nọmba Foonu gị",
-    emailPlaceholder: "Tinye E-mail",
+    emailPlaceholder: "Tinye Email",
     passwordPlaceholder: "Tinye Okwuntughe",
     // | Step 3
     step3Title: "Kedu aha gị?",
@@ -2908,7 +2908,7 @@ export const translations = {
     // | Step 2
     step2Title: "Hyɛ wo Email",
     step2TitlePhone: "Hyɛ wo Telefon Nɔma",
-    emailPlaceholder: "Hyɛ E-mail",
+    emailPlaceholder: "Hyɛ Email",
     passwordPlaceholder: "Hyɛ Password",
     // | Step 3
     step3Title: "Wo din ne dɛn?",
