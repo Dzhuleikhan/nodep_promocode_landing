@@ -123,7 +123,12 @@ async function settingModalCurrency() {
 
     const currencyData = {
       abbr: currencyCode.currency,
-      name: currencyCode.currencyName,
+      // В nodepBonuses имена заглавными («SWISS FRANC») — в поле валюты берём
+      // обычное полное имя из countryCurrencyData, как в выпадающем списке.
+      name:
+        countryCurrencyData.find(
+          (c) => c.countryCurrency === currencyCode.currency,
+        )?.countryCurrencyFullName || currencyCode.currencyName,
       icon: currencyCode.countryCurrencyIcon,
       symbol: currencyCode.symbol,
     };
