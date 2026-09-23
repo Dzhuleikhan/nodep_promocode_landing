@@ -58,6 +58,27 @@ const getPromocodeForCheckedBonus = () => {
 
 // | PROMOCODE FIELD
 // Поле промокода на ленде показывается только когда код пришёл из URL
+// Код из URL правке не подлежит. pointer-events-none закрывает мышь и тап,
+// но не клавиатуру: табом можно встать в поле и переписать код, а на «Apply»
+// нажать Enter и обнулить промокод. Свой код игрок вводит как обычно.
+const lockPromocodeField = (locked) => {
+  const formWrapper = document.querySelector(".form-promocode-wrapper");
+  const promoInput = document.querySelector(".two-step-promocode-input");
+  const applyBtn = document.querySelector(".two-step-promocode-apply-btn");
+  if (!promoInput) return;
+
+  formWrapper?.classList.toggle("pointer-events-none", locked);
+  promoInput.readOnly = locked;
+
+  if (locked) {
+    promoInput.setAttribute("tabindex", "-1");
+    applyBtn?.setAttribute("tabindex", "-1");
+  } else {
+    promoInput.removeAttribute("tabindex");
+    applyBtn?.removeAttribute("tabindex");
+  }
+};
+
 export const togglePromocodeWrapper = (state) => {
   const formWrapper = document.querySelector(".form-promocode-wrapper");
   const promoWrapper = document.querySelector(".two-step-promocode-wrapper");
@@ -75,11 +96,13 @@ export const togglePromocodeWrapper = (state) => {
     // там тот же код.
     promoInput.setAttribute("value", receivedPromocode);
     promoInput.value = receivedPromocode;
+    lockPromocodeField(true);
   } else {
     formWrapper.classList.add("hidden");
     promoWrapper.classList.remove("is-visible", "is-valid");
     promoInput.removeAttribute("value");
     promoInput.value = "";
+    lockPromocodeField(false);
   }
 };
 
