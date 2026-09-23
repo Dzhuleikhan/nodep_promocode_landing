@@ -1,8 +1,18 @@
 import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
-import { geoData } from "./geoLocation";
+import { geoData, initialUiLang } from "./geoLocation";
 import { Metadata } from "libphonenumber-js/core";
 import minMetadata from "libphonenumber-js/metadata.min.json";
 import { isValidPhoneNumber } from "libphonenumber-js";
+import { translations } from "/public/translations";
+
+const translate = (lang, key) =>
+  translations[lang]?.[key] ?? translations.en[key];
+
+// ключ словаря: html lang (ставит language.js) или выбранный по браузеру.
+// preferredLanguage тут не годится — в нём код для /register (cs), а словарь
+// лежит под своим ключом (cz).
+const currentLang = () =>
+  document.documentElement.getAttribute("lang") || initialUiLang || "en";
 
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
@@ -23,7 +33,33 @@ export const twoStepiti = intlTelInput(twoStepPhoneInput, {
   customPlaceholder: function (selectedCountryPlaceholder) {
     return selectedCountryPlaceholder.replace(/[0-9]/g, "X");
   },
+  // Собственные строки библиотеки английские — отдаём переводы
+  i18n: {
+    searchPlaceholder: translate(currentLang(), "searchPlaceholder"),
+    zeroSearchResults: translate(currentLang(), "countryNotFound"),
+  },
 });
+
+// Инстанс здесь создаётся один раз и при смене языка не пересоздаётся, а
+// опции i18n библиотека читает только при создании. Поэтому при смене языка
+// переводим поиск стран прямо в DOM. «Ничего не найдено» библиотека кладёт
+// только в скрытый .iti__a11y-text, а список молча пустеет — видимую заглушку
+// рисует CSS (.iti__country-list:empty::after), текст отдаём ей переменной.
+const syncItiI18n = () => {
+  const lang = currentLang();
+  const placeholder = translate(lang, "searchPlaceholder");
+  document.querySelectorAll(".iti__search-input").forEach((el) => {
+    el.setAttribute("placeholder", placeholder);
+    el.setAttribute("aria-label", placeholder);
+  });
+  document.documentElement.style.setProperty(
+    "--iti-zero-results",
+    JSON.stringify(translate(lang, "countryNotFound")),
+  );
+};
+
+syncItiI18n();
+window.addEventListener("lang:changed", syncItiI18n);
 
 const getPossibleLengths = (countryCode) => {
   try {

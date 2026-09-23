@@ -1,3 +1,4 @@
+import { translations } from "/public/translations";
 import {
   countryLanguagesMap,
   SupportedLanguages,
@@ -36,9 +37,37 @@ export const getSupportedLanguage = (countryCode) => {
   return "en";
 };
 
+// Ленд открывается на языке браузера; гео на язык не влияет.
+// Словари этого ленда лежат не под кодами языков, а под своими ключами
+// (cz, si, gr, no, se, ee, kz, dk) — переводим код браузера в ключ словаря.
+// Язык без словаря → en.
+const BROWSER_LANG_TO_UI = {
+  cs: "cz",
+  sl: "si",
+  el: "gr",
+  nb: "no",
+  nn: "no",
+  sv: "se",
+  et: "ee",
+  kk: "kz",
+  da: "dk",
+};
+
+export const getInitialUiLang = () => {
+  const browserLang = (navigator.language || "").split("-")[0].toLowerCase();
+  const key = BROWSER_LANG_TO_UI[browserLang] ?? browserLang;
+
+  return translations[key] ? key : "en";
+};
+
+export const initialUiLang = getInitialUiLang();
+
+// В /register уходит код языка (cs, sl …), а не ключ словаря — как и при
+// ручном выборе в хедере, берём его через getSupportedLanguage(ключ).
+// Считаем здесь: twoStepForm читает preferredLanguage раньше language.js.
 localStorage.setItem(
   "preferredLanguage",
-  getSupportedLanguage(geoData.countryCode)
+  getSupportedLanguage(initialUiLang.toUpperCase())
 );
 
 function setHeaderFlag(countryCode) {

@@ -1,6 +1,5 @@
 import { translations } from "/public/translations";
-import { geoData } from "./geoLocation";
-import { getSupportedLanguage } from "./geoLocation";
+import { getSupportedLanguage, initialUiLang } from "./geoLocation";
 import { settingInitialBonusValue, twoStepFormData } from "./twoStepForm";
 import { setSpinAmount } from "./promocodeCheck";
 
@@ -38,6 +37,10 @@ function changeLanguage(lang) {
   updateContent(lang);
   updateButtonText(lang);
   setActiveLanguageBtn(lang);
+
+  // Заглушки, которые рисуются из JS, а не через data-translate:
+  // «страна не найдена» у телефона и у селекта страны. updateContent их не видит.
+  window.dispatchEvent(new CustomEvent("lang:changed", { detail: lang }));
 }
 
 function setActiveLanguageBtn(currentLang) {
@@ -54,32 +57,34 @@ function updateButtonText(lang) {
   const headerLangBtn = document.querySelector(".header-lang-btn img");
   const headerLangName = document.querySelector(".header-lang-btn span");
 
+  // В кнопке и списке — короткие коды, как на остальных лендах: полные
+  // названия («Portuguese») не влезали в узкий список и обрезались.
   const languageNames = {
-    en: "English",
-    fr: "French",
-    ro: "Romainan",
-    hu: "Hungarian",
-    pl: "Polish",
-    cz: "Czech",
-    si: "Slovenian",
-    gr: "Greek",
-    no: "Norwegian",
-    se: "Swedish",
-    sk: "Slovak",
-    ru: "Russian",
-    es: "Spanish",
-    pt: "Portuguese",
-    de: "Deutsch",
-    az: "Azerbaijani",
-    it: "Italian",
-    ee: "Estonian",
-    lv: "Latvian",
-    lt: "Lithuanian",
-    hr: "Croatian",
-    kz: "Kazakh",
-    fi: "Finnish",
-    dk: "Danish",
-    bg: "Bulgarian",
+    en: "EN",
+    fr: "FR",
+    ro: "RO",
+    hu: "HU",
+    pl: "PL",
+    cz: "CS",
+    si: "SL",
+    gr: "EL",
+    no: "NB",
+    se: "SV",
+    sk: "SK",
+    ru: "RU",
+    es: "ES",
+    pt: "PT",
+    de: "DE",
+    az: "AZ",
+    it: "IT",
+    ee: "ET",
+    lv: "LV",
+    lt: "LT",
+    hr: "HR",
+    kz: "KK",
+    fi: "FI",
+    dk: "DK",
+    bg: "BG",
   };
   headerLangBtn.setAttribute(
     "src",
@@ -92,39 +97,9 @@ function updateButtonText(lang) {
 
 export const availableLang = ["en", "fr"];
 
+// язык уже выбран в geoLocation.js по браузеру
 async function determineLanguage() {
-  const location = geoData;
-
-  const countryLangMap = {
-    EN: "en",
-    FR: "fr",
-    RO: "ro",
-    HU: "hu",
-    PL: "pl",
-    CZ: "cz",
-    SI: "si",
-    GR: "gr",
-    NO: "no",
-    SE: "se",
-    SK: "sk",
-    RU: "ru",
-    ES: "es",
-    PT: "pt",
-    DE: "de",
-    AZ: "az",
-    IT: "it",
-    EE: "ee",
-    LV: "lv",
-    LT: "lt",
-    HR: "hr",
-    KZ: "kz",
-    DK: "dk",
-    FI: "fi",
-    BG: "bg",
-    // Add more country codes and their corresponding languages as needed
-  };
-  lang = countryLangMap[location.countryCode] || "en";
-
+  lang = initialUiLang;
   return lang;
 }
 
