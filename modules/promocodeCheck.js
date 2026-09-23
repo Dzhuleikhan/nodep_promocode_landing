@@ -12,7 +12,7 @@ headerLogoLink.setAttribute(
   "href",
   `https://${newDomain}?promocode=${
     receivedPromocode ? receivedPromocode : defaulPromocode
-  }`,
+  }`
 );
 
 export const defaulSpinAmount = "100";
@@ -30,7 +30,7 @@ document
   .querySelector(".hero-modal-open-btn")
   .setAttribute(
     "data-promocode",
-    receivedPromocode ? receivedPromocode : defaulPromocode,
+    receivedPromocode ? receivedPromocode : defaulPromocode
   );
 
 // Код из URL правке не подлежит. pointer-events-none закрывает мышь и тап,
@@ -79,7 +79,7 @@ export const togglePromocodeWrapper = (state) => {
     lockPromocodeField(false);
   } else {
     console.warn(
-      "Invalid state passed to togglePromocodeWrapper. Use 'show' or 'hide'.",
+      "Invalid state passed to togglePromocodeWrapper. Use 'show' or 'hide'."
     );
   }
 };
@@ -96,11 +96,11 @@ export const applyPromocodeFromBonus = () => {
   }
 
   const bonusValue = document.querySelector(
-    'input[name="bonus"]:checked',
+    'input[name="bonus"]:checked'
   )?.value;
 
   togglePromocodeWrapper(
-    bonusValue === "welcome-bonus-1" || bonusValue === "0" ? "hide" : "show",
+    bonusValue === "welcome-bonus-1" || bonusValue === "0" ? "hide" : "show"
   );
 };
 
