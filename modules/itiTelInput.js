@@ -3,6 +3,26 @@ import { Metadata } from "libphonenumber-js/core";
 import minMetadata from "libphonenumber-js/metadata.min.json";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import { geoData } from "./geoLocation";
+import { translations } from "/public/translations";
+
+const translate = (lang, key) =>
+  translations[lang]?.[key] ?? translations.en[key];
+
+// В поиске стран нет видимого «ничего не найдено»: библиотека кладёт этот текст
+// только в скрытый для глаза .iti__a11y-text, а список молча пустеет. Рисуем
+// заглушку через CSS (.iti__country-list:empty::after), а текст отдаём ей
+// переменной — так он переводится вместе со страницей.
+const syncNoResultsText = () => {
+  const lang = document.documentElement.lang || "en";
+
+  document.documentElement.style.setProperty(
+    "--iti-zero-results",
+    JSON.stringify(translate(lang, "countryNotFound")),
+  );
+};
+
+syncNoResultsText();
+window.addEventListener("lang:changed", syncNoResultsText);
 
 const getPossibleLengths = (countryCode) => {
   try {
@@ -38,17 +58,6 @@ const stripDuplicatedDialCode = (digits, countryCode, dialCode) => {
 // страны, в E.164 ему места нет.
 const stripTrunkPrefix = (digits) => digits.replace(/^0+/, "");
 
-// Позиция сразу за n-й цифрой отформатированной строки (n=0 - самое начало).
-// Нужна, чтобы вернуть курсор туда же, где он стоял до переформатирования.
-const caretAfterDigits = (text, n) => {
-  if (n <= 0) return 0;
-  let seen = 0;
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] >= "0" && text[i] <= "9" && ++seen === n) return i + 1;
-  }
-  return text.length;
-};
-
 const twoStepPhoneInput = document.querySelector(".two-step-phone-input");
 
 const geoIpLookup = (success, failure) => {
@@ -57,6 +66,18 @@ const geoIpLookup = (success, failure) => {
   } else {
     success("PL");
   }
+};
+
+// Собственные строки библиотеки английские. Свой словарь тут не подставить
+// один раз навсегда: язык меняется на лету, а опции читаются при создании
+// инпута — поэтому i18n считаем на каждое пересоздание.
+const buildI18n = () => {
+  const lang = document.documentElement.lang || "en";
+
+  return {
+    searchPlaceholder: translate(lang, "searchPlaceholder"),
+    zeroSearchResults: translate(lang, "countryNotFound"),
+  };
 };
 
 const baseOptions = {
@@ -81,7 +102,14 @@ const fixItiLTR = () => {
   }
 };
 
-export let twoStepiti = intlTelInput(twoStepPhoneInput, baseOptions);
+// опции для нового инстанса: база плюс актуальные переводы
+const withI18n = (extra = {}) => ({
+  ...baseOptions,
+  ...extra,
+  i18n: buildI18n(),
+});
+
+export let twoStepiti = intlTelInput(twoStepPhoneInput, withI18n());
 fixItiLTR();
 
 let currentFormat = null;
@@ -92,20 +120,31 @@ const updatePhoneFormat = () => {
   currentFormat = placeholder;
 };
 
-const formatPhoneValue = () => {
-  const countryData = twoStepiti.getSelectedCountryData();
-  const countryCode = countryData.iso2?.toUpperCase();
-  const dialCode = countryData.dialCode;
-  const maxDigits = getMaxDigitsForCountry(countryCode);
+// Позиция сразу за n-й цифрой отформатированной строки (n=0 - самое начало).
+// Нужна, чтобы вернуть курсор туда же, где он стоял до переформатирования.
+const caretAfterDigits = (text, n) => {
+  if (n <= 0) return 0;
+  let seen = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] >= "0" && text[i] <= "9" && ++seen === n) return i + 1;
+  }
+  return text.length;
+};
 
+const formatPhoneValue = () => {
   // Курсор считаем В ЦИФРАХ, а не в символах: разделители при переформатировании
   // сдвигаются, а количество цифр слева от курсора - нет. Без этого курсор
   // улетал в конец номера при любой правке в середине.
-  const selStart = twoStepPhoneInput.selectionStart ?? twoStepPhoneInput.value.length;
+  const selStart =
+    twoStepPhoneInput.selectionStart ?? twoStepPhoneInput.value.length;
   const digitsBeforeCaret = (
     twoStepPhoneInput.value.slice(0, selStart).match(/\d/g) || []
   ).length;
 
+  const countryData = twoStepiti.getSelectedCountryData();
+  const countryCode = countryData.iso2?.toUpperCase();
+  const dialCode = countryData.dialCode;
+  const maxDigits = getMaxDigitsForCountry(countryCode);
   // Внешний вызов нужен для вставки вида "0048 501 234 567": сначала снимается
   // префикс выхода на межгород, потом дублирующий код страны, потом остаток.
   const raw = stripTrunkPrefix(
@@ -116,7 +155,6 @@ const formatPhoneValue = () => {
     ),
   );
   const digits = raw.slice(0, maxDigits);
-
   // Цифр могло стать меньше, чем было слева от курсора (обрезка по maxDigits,
   // снятие ведущего нуля или дубля кода страны) - прижимаем к последней цифре.
   const caretDigits = Math.min(digitsBeforeCaret, digits.length);
@@ -161,7 +199,10 @@ const formatPhoneValue = () => {
 window.addEventListener("geoReady", (e) => {
   const countryCode = e.detail?.countryCode?.toLowerCase() || "pl";
   twoStepiti.destroy();
-  twoStepiti = intlTelInput(twoStepPhoneInput, { ...baseOptions, initialCountry: countryCode });
+  twoStepiti = intlTelInput(
+    twoStepPhoneInput,
+    withI18n({ initialCountry: countryCode }),
+  );
   fixItiLTR();
   currentFormat = null;
 });
@@ -178,7 +219,7 @@ export function updateTelInputLanguage() {
   const currentCountry = twoStepiti.getSelectedCountryData().iso2;
   twoStepiti.destroy();
 
-  const options = { ...baseOptions, initialCountry: currentCountry || "auto" };
+  const options = withI18n({ initialCountry: currentCountry || "auto" });
 
   twoStepiti = intlTelInput(twoStepPhoneInput, options);
   fixItiLTR();
