@@ -84,8 +84,8 @@ function changeLanguage(lang) {
 
   updateTelInputLanguage(lang);
 
-  // Заглушки, которые рисуются из JS, а не через data-translate:
-  // «страна не найдена» у телефона и у селекта страны. updateContent их не видит.
+  // Заглушка, которая рисуется из JS, а не через data-translate:
+  // «страна не найдена» у телефона. updateContent её не видит.
   window.dispatchEvent(new CustomEvent("lang:changed", { detail: lang }));
 }
 

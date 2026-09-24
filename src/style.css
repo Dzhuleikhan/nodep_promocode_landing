@@ -84,7 +84,6 @@
   --saira: "Saira", "sans-serif";
 }
 
-
 #hero {
   background: radial-gradient(49.93% 49.93% at 50% 50.07%, #377bbe 0%, #120803 100%);
 }
@@ -139,8 +138,7 @@
   display: flex;
 }
 
-.two-step-bonus-checkbox-circle::before,
-.gender-checkbox-circle::before {
+.two-step-bonus-checkbox-circle::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -153,62 +151,11 @@
   opacity: 0;
 }
 
-.two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div>.two-step-bonus-checkbox-circle::before,
-.gender-checkbox input:checked+.gender-checkbox-div>.gender-checkbox-circle::before {
+.two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div>.two-step-bonus-checkbox-circle::before {
   opacity: 1;
 }
 
-/* Кнопки пола: на длинных переводах («Mężczyzna», «Masculino», «Männlich»)
-   текст вплотную упирался в кружок справа — между ними не было зазора
-   (justify-between без gap), а на мобилке текст оставался 16px: xs:text-sm в
-   разметке мёртвый, брейкпоинта xs в @theme нет. Даём гарантированный зазор,
-   запрещаем кружку и иконке сжиматься, а на узких экранах ужимаем шрифт,
-   иконку и кружок, чтобы длинное слово влезало. */
-.gender-checkbox-div {
-  gap: 8px;
-}
-
-.gender-checkbox-div > p {
-  min-width: 0;
-}
-
-.gender-checkbox-div > p > svg {
-  flex-shrink: 0;
-}
-
-.gender-checkbox-div > p > span {
-  min-width: 0;
-  hyphens: auto; /* крайний случай — перенос по слогам, а не наезд на кружок */
-}
-
-@media (max-width: 576px) {
-  .gender-checkbox-div {
-    padding-inline: 10px;
-  }
-
-  .gender-checkbox-div > p {
-    gap: 4px;
-    font-size: 14px;
-  }
-
-  .gender-checkbox-div > p > svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .gender-checkbox-circle {
-    width: 24px;
-    height: 24px;
-  }
-
-  .gender-checkbox-circle::before {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-.two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div,
-.gender-checkbox input:checked+.gender-checkbox-div {
+.two-step-bonus-checkbox input:checked+.two-step-bonus-checkbox-div {
   background-color: #8726ff;
   border-color: #57179b;
 }
@@ -245,9 +192,7 @@
   font-size: 12px;
 }
 
-/* Длинные лейблы полей (напр. швейцарский индекс сразу в три языка:
-   «Postleitzahl / Numéro postal / Numero postale (8001)») вылезали за правый
-   край поля: лейбл — absolute left-4 без ограничения справа, и коробка
+/* Длинные лейблы полей вылезали за правый край поля: лейбл — absolute left-4 без ограничения справа, и коробка
    тянулась до самой рамки. Ограничиваем ширину отступом слева + справа.
    В RTL left/right меняются местами, max-width от этого не зависит. */
 .two-step-general-label {
@@ -263,11 +208,6 @@
 /* у пароля ещё и «глаз» справа */
 .two-step-password-label {
   max-width: calc(100% - 95px); /* 45px + иконка 24px + gap 6px + 16px + запас */
-}
-
-/* у индекса справа может быть иконка-подсказка (i) */
-.two-step-zipcode-wrapper.has-info .two-step-zipcode-label {
-  max-width: calc(100% - 60px); /* 16px + иконка 20px + 8px + 16px */
 }
 
 /* Поднятый лейбл (фокус / есть значение) стоит над текстом: вторая строка
@@ -306,7 +246,6 @@
 .two-step-promocode-wrapper.is-visible {
   display: grid;
 }
-
 
 .two-step-form-step {
   display: none;
@@ -409,32 +348,6 @@
   cursor: pointer;
 }
 
-.qs-num.qs-current,
-.qs-day {
-  color: #755EEB !important;
-}
-
-.qs-controls {
-  background-color: #755EEB !important;
-}
-
-.qs-month-year {
-  color: #ffffff !important;
-}
-
-.qs-arrow.qs-left:after {
-  border-right-color: #ffffff !important;
-}
-
-.qs-arrow.qs-right:after {
-  border-left-color: #ffffff !important;
-}
-
-.form-currency-dropdown {
-  max-height: 225px;
-  overflow-y: auto;
-}
-
 .two-step-form .iti,
 .two-step-form .iti * {
   direction: ltr !important;
@@ -448,7 +361,6 @@
   font-weight: 700;
   line-height: 100% !important;
 }
-
 
 .two-step-form .iti__selected-country-primary:hover {
   background-color: transparent !important;
@@ -575,10 +487,6 @@
   color: #FF5530;
 }
 
-.air-datepicker-global-container {
-  z-index: 500;
-}
-
 /* Звёздочка не влезала в 52px после того, как лейбл получил её через ::after;
    align-content держит содержимое по центру, иначе строки грида липнут к низу */
 .two-step-form .two-step-group-phone {
@@ -611,21 +519,10 @@
   text-align: center;
 }
 
-/* Та же заглушка для селекта страны на последнем шаге — те же паддинги, что у
-   телефонного дропдауна; текст рисует renderCountries в modules/twoStepForm.js */
-.two-step-country-empty {
-  padding: 14px 16px;
-  color: #585858;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-align: center;
-}
-
 /* Звезда идёт в потоке сразу за текстом лейбла, а не позиционируется по его
    правому краю: у плавающих лейблов коробка тянется до края поля, и на длинных
-   переводах (напр. швейцарский индекс сразу в три языка переносится на вторую
-   строку) абсолютная звезда вылезала за белый блок.
+   переводах (лейбл переносится на вторую строку) абсолютная звезда вылезала
+   за белый блок.
    position: relative + top сдвигают её вверх, не влияя на высоту строки,
    margin-inline-start сам переезжает на другую сторону в RTL. */
 .two-step-required-label::after {
@@ -657,51 +554,6 @@
   font-style: normal;
 }
 
-/* Календарь даты рождения.
-   Всплывашка привязана к строке поля (positionElement в twoStepForm.js), так
-   что её край совпадает с краем поля. Стрелку flatpickr ставит в 22px от края —
-   доводим до центра иконки: 16px внутреннего отступа поля (p-4) + половина
-   иконки 32px. margin у псевдоэлементов отрицательный на половину ширины,
-   поэтому 32px — это ровно остриё стрелки. rightMost обязателен: этот класс
-   срабатывает на узких экранах и несёт своё right: 22px. */
-.flatpickr-calendar.arrowRight:before,
-.flatpickr-calendar.arrowRight:after,
-.flatpickr-calendar.rightMost:before,
-.flatpickr-calendar.rightMost:after {
-  left: auto;
-  right: 32px;
-}
-
-[dir="rtl"] .flatpickr-calendar.arrowLeft:before,
-[dir="rtl"] .flatpickr-calendar.arrowLeft:after {
-  right: auto;
-  left: 32px;
-}
-
-/* States dropdown */
-
-.two-step-state-list-item {
-  border-bottom: 1px solid #755EEB30;
-  padding: 16px 12px;
-}
-
-/* Самописные селекты с клавиатуры (modules/keyboardSelect.js).
-   Рамка фокуса — только при навигации с клавиатуры, мышью её не видно. */
-.form-currency-btn:focus-visible,
-.two-step-country-wrapper:has(.two-step-country-input:focus-visible),
-.two-step-region-wrapper:has(.two-step-region-input:focus-visible) {
-  outline: none;
-  box-shadow: 0 0 0 2px #8726FF;
-}
-
-/* Пункт, на котором стоит выбор стрелками */
-.two-step-country-list-item.is-highlighted,
-.two-step-state-list-item.is-highlighted,
-.form-currency-dropdown li.is-highlighted {
-  background-color: #755EEB26;
-}
-
-
 /* RTL Support */
 
 [dir="rtl"] .step-slider .swiper-slide {
@@ -714,8 +566,7 @@
   transform-origin: top right;
 }
 
-[dir="rtl"] .two-step-bonus-checkbox-circle::before,
-[dir="rtl"] .gender-checkbox-circle::before {
+[dir="rtl"] .two-step-bonus-checkbox-circle::before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -747,87 +598,6 @@
     inset-inline-start: auto;
     margin-inline-start: calc(50% - 300px);
   }
-}
-
-
-/* Postal Code hint tooltip */
-.two-step-zipcode-info {
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-/* display:flex только когда кнопка не скрыта — чтобы не перебивать Tailwind .hidden */
-.two-step-zipcode-info:not(.hidden) {
-  display: flex;
-}
-
-.two-step-zipcode-info:hover {
-  color: #4f3bcf;
-}
-
-.two-step-zipcode-wrapper.has-info .two-step-zipcode-input {
-  padding-right: 28px;
-}
-
-[dir='rtl'] .two-step-zipcode-wrapper.has-info .two-step-zipcode-input {
-  padding-right: 0;
-  padding-left: 28px;
-}
-
-.two-step-zipcode-tooltip {
-  position: absolute;
-  bottom: calc(100% + 10px);
-  right: 0;
-  width: 240px;
-  max-width: 78vw;
-  padding: 10px 12px;
-  border-radius: 12px;
-  background: #fff;
-  color: #755eeb;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.35;
-  text-align: left;
-  white-space: normal;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(4px);
-  transition:
-    opacity 0.18s ease,
-    transform 0.18s ease,
-    visibility 0.18s ease;
-  z-index: 30;
-  pointer-events: none;
-}
-
-.two-step-zipcode-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  right: 14px;
-  border: 6px solid transparent;
-  border-top-color: #fff;
-}
-
-[dir='rtl'] .two-step-zipcode-tooltip {
-  right: auto;
-  left: 0;
-  text-align: right;
-}
-
-[dir='rtl'] .two-step-zipcode-tooltip::after {
-  right: auto;
-  left: 14px;
-}
-
-.two-step-zipcode-info:hover .two-step-zipcode-tooltip,
-.two-step-zipcode-tooltip.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
 }
 
 /* WAGER BADGE */

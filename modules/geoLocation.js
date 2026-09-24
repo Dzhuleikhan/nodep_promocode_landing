@@ -1,9 +1,4 @@
-import {
-  countryLanguagesMap,
-  SupportedLanguages,
-  countryZipCodeTranslates,
-  getPostalCodeFormat,
-} from "../public/data";
+import { countryLanguagesMap, SupportedLanguages } from "../public/data";
 
 export async function getLocation() {
   const fallback = { countryCode: "PL", currency: { code: "PLN" } };
@@ -70,11 +65,3 @@ function setHeaderFlag(countryCode) {
   headerFlagImage.classList.remove("hidden");
 }
 setHeaderFlag(geoData.countryCode);
-
-export const settingZipCodePlaceholder = (countryCode) => {
-  const zipCodeLabel = document.querySelector(".two-step-zipcode-label");
-  const base = countryZipCodeTranslates[countryCode] || "ZIP Code";
-  const format = getPostalCodeFormat(countryCode);
-  // Подсказываем юзеру ожидаемый формат прямо в лейбле, напр. "Kod pocztowy (00-001)"
-  zipCodeLabel.textContent = format?.example ? `${base} (${format.example})` : base;
-};

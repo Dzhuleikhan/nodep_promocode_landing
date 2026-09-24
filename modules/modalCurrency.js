@@ -1,11 +1,6 @@
 import { geoData } from "./geoLocation";
-import { enableKeyboardSelect } from "./keyboardSelect";
 import { countryCurrencyData, nodepBonuses } from "../public/data";
-import {
-  checkTir1CurrencyMatch,
-  twoStepFormData,
-  settingInitialBonusValue,
-} from "./twoStepForm";
+import { twoStepFormData, settingInitialBonusValue } from "./twoStepForm";
 
 const CDN = "https://3344112-img.b-cdn.net";
 
@@ -43,30 +38,6 @@ function getCountryCurrencySymbol(inputCountry) {
     }
   }
   return "$"; // or some default value if country is not found
-}
-
-function setCurrency(abbr, name, icon) {
-  const formCurrency = document.querySelectorAll(".form-currency");
-  formCurrency.forEach((cur) => {
-    let input = cur.querySelector("input");
-    let currencyName = cur.querySelector(".main-currency-name");
-    let currencyIcon = cur.querySelector(".main-currency-icon");
-    input.value = abbr;
-    currencyName.textContent = name;
-    currencyIcon.src = icon;
-    currencyIcon.alt = abbr;
-
-    const currencyListItem = cur.querySelectorAll(
-      ".form-currency-dropdown ul li"
-    );
-
-    currencyListItem.forEach((item) => {
-      const itemAbbr = item.querySelector(".currency-item-abbr").textContent;
-      if (itemAbbr.includes(abbr)) {
-        item.classList.add("active");
-      }
-    });
-  });
 }
 
 const settingFooterPayments = (currencyAbbr) => {
@@ -120,7 +91,6 @@ async function settingModalCurrency() {
     // Save to local storage
     localStorage.setItem("currencyData", JSON.stringify(currencyData));
 
-    setCurrency(currencyAbbr, currencyFullName, currencyIcon);
     settingFooterPayments(currencyAbbr);
 
     twoStepFormData.currency = currencyData.abbr;
@@ -133,110 +103,3 @@ async function settingModalCurrency() {
 }
 
 settingModalCurrency();
-
-/**
- *  Currency dropdownxw
- */
-export const settingBonusOnCurrencyChange = (
-  currencyDataArray,
-  targetCurrency
-) => {
-  const matchedObject = currencyDataArray.find(
-    (item) => item.countryCurrency === targetCurrency.abbr
-  );
-  const amount = matchedObject ? matchedObject.amount : null;
-  const symbol = matchedObject ? matchedObject.countryCurrencySymbol : null;
-  const spins = matchedObject ? matchedObject.spins : null;
-
-  document.querySelectorAll(".bonus-value").forEach((el) => {
-    el.innerHTML = amount;
-  });
-  document.querySelectorAll(".bonus-currency").forEach((el) => {
-    el.innerHTML = symbol;
-  });
-  document.querySelectorAll(".bonus-spins").forEach((el) => {
-    el.innerHTML = spins;
-  });
-};
-
-const formCurrency = document.querySelectorAll(".form-currency");
-
-formCurrency.forEach((cur) => {
-  if (cur) {
-    const currencyDropdownBtn = cur.querySelector(".form-currency-btn");
-    const currencyDropdownList = cur.querySelector(".form-currency-dropdown");
-
-    function hideDropdown() {
-      currencyDropdownBtn.classList.remove("active");
-      currencyDropdownList.classList.remove("active");
-    }
-
-    currencyDropdownBtn.addEventListener("click", () => {
-      currencyDropdownBtn.classList.toggle("active");
-      currencyDropdownList.classList.toggle("active");
-    });
-
-    const currencyListItems = currencyDropdownList.querySelectorAll("li");
-
-    currencyListItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        currencyListItems.forEach((el) => {
-          el.classList.remove("active");
-        });
-        item.classList.add("active");
-        hideDropdown();
-
-        // Taking currency value from item
-        let curIcon = item.querySelector(".currency-item-icon").src;
-        let curName = item.querySelector(".currency-item-name").textContent;
-        let curAbbr = item
-          .querySelector(".currency-item-abbr")
-          .textContent.toUpperCase();
-        let curAlt = item.querySelector(".currency-item-icon").alt;
-
-        // Update all currency inputs on the page
-        setCurrency(curAbbr, curName, curIcon);
-
-        // Update local storage
-        const currencyData = {
-          abbr: curAbbr,
-          name: curName,
-          icon: curIcon,
-          alt: curAlt,
-        };
-        localStorage.setItem("currencyData", JSON.stringify(currencyData));
-
-        // Two step currency update
-        settingBonusOnCurrencyChange(countryCurrencyData, currencyData);
-        twoStepFormData.currency = currencyData.abbr;
-        settingInitialBonusValue(twoStepFormData.currency);
-
-        twoStepFormData.bonus = checkTir1CurrencyMatch(
-          twoStepFormData.currency,
-          twoStepFormData.bonus
-        );
-      });
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!cur.contains(event.target)) {
-        hideDropdown();
-      }
-    });
-
-    // Кнопка валюты — div с tabindex="0": без него Tab её пропускал.
-    enableKeyboardSelect({
-      root: cur,
-      trigger: currencyDropdownBtn,
-      getItems: () => [...currencyListItems],
-      getSelected: (items) =>
-        items.find((item) => item.classList.contains("active")),
-      isOpen: () => currencyDropdownList.classList.contains("active"),
-      open: () => {
-        currencyDropdownBtn.classList.add("active");
-        currencyDropdownList.classList.add("active");
-      },
-      close: hideDropdown,
-    });
-  }
-});
