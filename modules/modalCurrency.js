@@ -64,17 +64,36 @@ function setCurrency(abbr, name, icon) {
 
 // | setting no deposit bonus amount and currency
 
+// Сумма велком-бонуса в hero («+100% up to 4.500 CHF & 200FS») — из
+// countryCurrencyData, где есть все валюты выпадающего списка (как на
+// BuffalosSun). Раньше она бралась из nodepBonuses, где только 8 валют tier-1:
+// для остальных (TRY, USD, KZT…) find ничего не находил, фолбэк на USD тоже
+// (USD там нет) — settingNodepBonus падал с TypeError, и hero оставался со
+// старой валютой.
+const settingHeroBonus = (currencyAbbr) => {
+  const entry = countryCurrencyData.find(
+    (c) => c.countryCurrency === currencyAbbr,
+  );
+  if (!entry) return;
+  document.querySelectorAll(".bonus-total-amount").forEach((el) => {
+    el.textContent = entry.amount;
+  });
+  document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
+    el.textContent = entry.countryCurrency;
+  });
+  // Фриспины (200FS / 25FS) ставит settingInitialBonusValue по tier-1 —
+  // в countryCurrencyData у части валют формат другой («25», «200 FS»).
+};
+
 export const settingNodepBonus = (currencyAbbr) => {
   const nodepBonusAmount = document.querySelectorAll(".nodep-bonus-amount");
   const nodepBonusCurrency = document.querySelectorAll(".nodep-bonus-currency");
-  const nodepBonusTotalAmoun = document.querySelectorAll(".bonus-total-amount");
-  const nodepBonusCurrencySymbol = document.querySelectorAll(
-    ".bonus-currency-symbol"
-  );
 
+  // Бездеп-бонус есть только для валют из nodepBonuses; для остальных — EUR
+  // (USD в списке нет, прежний фолбэк на него возвращал undefined).
   const selectedCurrency =
     nodepBonuses.find((c) => c.currency === currencyAbbr) ||
-    nodepBonuses.find((c) => c.currency === "USD");
+    nodepBonuses.find((c) => c.currency === "EUR");
 
   nodepBonusAmount.forEach((text) => {
     text.textContent = selectedCurrency.bonusAmount;
@@ -82,12 +101,8 @@ export const settingNodepBonus = (currencyAbbr) => {
   nodepBonusCurrency.forEach((text) => {
     text.textContent = selectedCurrency.currency;
   });
-  nodepBonusTotalAmoun.forEach((text) => {
-    text.textContent = selectedCurrency.moneyAmount;
-  });
-  nodepBonusCurrencySymbol.forEach((text) => {
-    text.textContent = selectedCurrency.symbol;
-  });
+
+  settingHeroBonus(currencyAbbr);
 };
 
 const settingFooterPayments = (currencyAbbr) => {
@@ -226,8 +241,6 @@ formCurrency.forEach((cur) => {
         twoStepFormData.currency = currencyData.abbr;
         settingInitialBonusValue(twoStepFormData.currency);
         settingNodepBonus(currencyData.abbr);
-        document.querySelector(".bonus-currency-symbol").innerHTML =
-          currencyData.symbol;
       });
     });
 

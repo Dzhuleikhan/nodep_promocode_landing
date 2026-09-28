@@ -2,7 +2,7 @@ export const translations = {
   en: {
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
     heroBtn: "get bonus",
     lowWager: "Low wager!",
     slideStep1Title: "Register",
@@ -78,7 +78,7 @@ export const translations = {
   fr: {
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>sweet bonanza</span>.`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
     heroBtn: "obtenir un bonus",
     lowWager: "Mise faible !",
     slideStep1Title: "Registre",
@@ -155,7 +155,7 @@ export const translations = {
   ro: {
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
     heroBtn: "obține bonus",
     lowWager: "Rulaj redus!",
     slideStep1Title: "Înregistrează-te",
@@ -232,7 +232,7 @@ export const translations = {
   hu: {
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>sweet bonanza</span> játékban`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
     heroBtn: "bónusz igénylése",
     lowWager: "Alacsony megforgatás!",
     slideStep1Title: "Regisztrálj",
@@ -310,7 +310,7 @@ export const translations = {
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
       "ODBIERZ SWÓJ BONUS <br/> <span>100 darmowych spinów</span> <br/> w <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> darmowych spinów przy Twojej pierwszej wpłacie`,
     heroBtn: "odbierz bonus",
     lowWager: "Niski obrót!",
     slideStep1Title: "Zarejestruj się",
@@ -387,7 +387,7 @@ export const translations = {
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> volných točení při vaší první depozitu`,
     heroBtn: "získat bonus",
     lowWager: "Nízký obrat!",
     slideStep1Title: "Registrovat se",
@@ -466,7 +466,7 @@ export const translations = {
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>sweet bonanza</span>",
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> brezplačnih vrtljajev ob vaši prvi nakazilu`,
     heroBtn: "prevzemite bonus",
     lowWager: "Nizke stave!",
     slideStep1Title: "Registrirajte se",
@@ -543,7 +543,7 @@ export const translations = {
   el: {
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
     heroBtn: "πάρε το μπόνους",
     lowWager: "Χαμηλός τζίρος!",
     slideStep1Title: "Εγγραφή",
@@ -621,7 +621,7 @@ export const translations = {
   nb: {
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
     heroBtn: "få bonus",
     lowWager: "Lav omsetning!",
     slideStep1Title: "Registrer deg",
@@ -697,7 +697,7 @@ export const translations = {
   sv: {
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
     heroBtn: "hämta bonus",
     lowWager: "Lågt omsättningskrav!",
     slideStep1Title: "Registrera dig",
@@ -774,7 +774,7 @@ export const translations = {
   sk: {
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
     heroBtn: "získať bonus",
     lowWager: "Nízky obrat!",
     slideStep1Title: "Registrovať sa",
@@ -851,7 +851,7 @@ export const translations = {
   ru: {
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
     heroBtn: "получить бонус",
     lowWager: "Низкий вейджер!",
     slideStep1Title: "Зарегистрируйтесь",
@@ -928,7 +928,7 @@ export const translations = {
   es: {
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
     heroBtn: "obtener bono",
     lowWager: "¡Rollover bajo!",
     slideStep1Title: "Regístrate",
@@ -1005,7 +1005,7 @@ export const translations = {
   pt: {
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
     heroBtn: "obter bônus",
     lowWager: "Rollover baixo!",
     slideStep1Title: "Cadastre-se",
@@ -1081,7 +1081,7 @@ export const translations = {
   de: {
     pageTitle: "🎁 Ihr Bonus wartet auf Sie - Goldbet",
     heroTitle: `sichere dir deinen bonus <br/> <span>100 Freispiele</span> <br/> in <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
     heroBtn: "bonus holen",
     lowWager: "Niedrige Umsatzbedingung!",
     slideStep1Title: "Registrieren",
@@ -1158,7 +1158,7 @@ export const translations = {
   it: {
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
     heroTitle: `richiedi il tuo bonus <br/> <span>100 giri gratuiti</span> <br/> in <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
     heroBtn: "ottieni bonus",
     lowWager: "Puntata bassa!",
     slideStep1Title: "Registrati",
@@ -1235,7 +1235,7 @@ export const translations = {
   et: {
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
     heroBtn: "saada boonus",
     lowWager: "Madal läbimängunõue!",
     slideStep1Title: "Registreeru",
@@ -1312,7 +1312,7 @@ export const translations = {
   lv: {
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
     heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
     heroBtn: "saņemt bonusu",
     lowWager: "Zems apgrozījums!",
     slideStep1Title: "Reģistrējieties",
@@ -1389,7 +1389,7 @@ export const translations = {
   lt: {
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
     heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
     heroBtn: "gauti premiją",
     lowWager: "Mažas apyvartos reikalavimas!",
     slideStep1Title: "Užsiregistruokite",
@@ -1466,7 +1466,7 @@ export const translations = {
   hr: {
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
     heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
     heroBtn: "preuzmi bonus",
     lowWager: "Niski uvjet igranja!",
     slideStep1Title: "Registrirajte se",
@@ -1543,7 +1543,7 @@ export const translations = {
   uk: {
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
     heroTitle: `отримайте свій бонус <br/> <span>100 безкоштовних обертань</span> <br/> у <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим 1-м депозитом`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних обертань з вашим 1-м депозитом`,
     heroBtn: "отримати бонус",
     lowWager: "Низький вейджер!",
     slideStep1Title: "Реєстрація",
@@ -1620,7 +1620,7 @@ export const translations = {
   zh: {
     pageTitle: "🎁 您的奖金已准备就绪 - Goldbet",
     heroTitle: `领取您的奖金 <br/> <span>100 次免费旋转</span> <br/> 在 <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> 最高 <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> 及 <span class="two-step-bonus-spins"></span> 次免费旋转，首次存款即可获得`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> 最高 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> 及 <span class="two-step-bonus-spins"></span> 次免费旋转，首次存款即可获得`,
     heroBtn: "领取奖金",
     lowWager: "低流水！",
     slideStep1Title: "注册",
@@ -1694,7 +1694,7 @@ export const translations = {
   bn: {
     pageTitle: "🎁 আপনার বোনাস প্রস্তুত - Goldbet",
     heroTitle: `আপনার বোনাস দাবি করুন <br/> <span>১০০ ফ্রি স্পিন</span> <br/> <span>sweet bonanza</span>-তে`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> পর্যন্ত <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> এবং <span class="two-step-bonus-spins"></span> ফ্রি স্পিন আপনার ১ম জমার সাথে`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> পর্যন্ত <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> এবং <span class="two-step-bonus-spins"></span> ফ্রি স্পিন আপনার ১ম জমার সাথে`,
     heroBtn: "বোনাস নিন",
     lowWager: "কম ওয়েজার!",
     slideStep1Title: "নিবন্ধন করুন",
@@ -1771,7 +1771,7 @@ export const translations = {
   id: {
     pageTitle: "🎁 Bonus Anda sudah siap - Goldbet",
     heroTitle: `klaim bonus Anda <br/> <span>100 putaran gratis</span> <br/> di <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hingga <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Putaran Gratis dengan setoran pertama Anda`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hingga <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Putaran Gratis dengan setoran pertama Anda`,
     heroBtn: "dapatkan bonus",
     lowWager: "Wager rendah!",
     slideStep1Title: "Daftar",
@@ -1847,7 +1847,7 @@ export const translations = {
   fi: {
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
     heroTitle: `lunasta bonuksesi <br/> <span>100 ilmaiskierrosta</span> <br/> pelissä <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ilmaiskierrosta ensimmäisellä talletuksellasi`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ilmaiskierrosta ensimmäisellä talletuksellasi`,
     heroBtn: "hae bonus",
     lowWager: "Matala kierrätysvaatimus!",
     slideStep1Title: "Rekisteröidy",
@@ -1923,7 +1923,7 @@ export const translations = {
   dk: {
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span>100 gratis spins</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
     heroBtn: "få bonus",
     lowWager: "Lavt omsætningskrav!",
     slideStep1Title: "Registrer",
@@ -1999,7 +1999,7 @@ export const translations = {
   bg: {
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
     heroTitle: `вземете своя бонус <br/> <span>100 безплатни завъртания</span> <br/> в <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> безплатни завъртания с първия ви депозит`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> безплатни завъртания с първия ви депозит`,
     heroBtn: "вземи бонус",
     lowWager: "Нисък оборот!",
     slideStep1Title: "Регистрация",
@@ -2076,7 +2076,7 @@ export const translations = {
   nl: {
     pageTitle: "🎁 Je bonus staat klaar - Goldbet",
     heroTitle: `claim je bonus <br/> <span>100 gratis spins</span> <br/> in <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> tot <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins bij je 1e storting`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> tot <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins bij je 1e storting`,
     heroBtn: "bonus ophalen",
     lowWager: "Lage inzetvereiste!",
     slideStep1Title: "Registreren",
@@ -2152,7 +2152,7 @@ export const translations = {
   sw: {
     pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
     heroTitle: `dai bonasi yako <br/> <span>mizunguko 100 ya bure</span> <br/> katika <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> na mizunguko <span class="two-step-bonus-spins"></span> ya bure kwa amana yako ya 1`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> na mizunguko <span class="two-step-bonus-spins"></span> ya bure kwa amana yako ya 1`,
     heroBtn: "pata bonasi",
     lowWager: "Wager ndogo!",
     slideStep1Title: "Jisajili",
@@ -2228,7 +2228,7 @@ export const translations = {
   am: {
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
     heroTitle: `ቦነስዎን ይውሰዱ <br/> <span>100 ነፃ ሽክርክሪቶች</span> <br/> በ<span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> እና <span class="two-step-bonus-spins"></span> ነፃ ሽክርክሪቶች በመጀመሪያ ተቀማጭዎ`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> እና <span class="two-step-bonus-spins"></span> ነፃ ሽክርክሪቶች በመጀመሪያ ተቀማጭዎ`,
     heroBtn: "ቦነስ ያግኙ",
     lowWager: "ዝቅተኛ ውርርድ!",
     slideStep1Title: "ይመዝገቡ",
@@ -2302,7 +2302,7 @@ export const translations = {
   lm: {
     pageTitle: "🎁 Bonasi yo eteekeddwa - Goldbet",
     heroTitle: `funa bonasi yo <br/> <span>spins 100 ez'obwereere</span> <br/> mu <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & spins <span class="two-step-bonus-spins"></span> ez'obwereere ne deposit yo ey'olubereberye`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & spins <span class="two-step-bonus-spins"></span> ez'obwereere ne deposit yo ey'olubereberye`,
     heroBtn: "funa bonasi",
     lowWager: "Wager ntono!",
     slideStep1Title: "Wewandiise",
@@ -2378,7 +2378,7 @@ export const translations = {
   rw: {
     pageTitle: "🎁 Bonus yawe yiteguye - Goldbet",
     heroTitle: `fata bonus yawe <br/> <span>kuzenguruka 100 ku buntu</span> <br/> muri <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Kuzenguruka ku buntu hamwe na depo yawe ya 1`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Kuzenguruka ku buntu hamwe na depo yawe ya 1`,
     heroBtn: "fata bonus",
     lowWager: "Wager nke!",
     slideStep1Title: "Iyandikishe",
@@ -2454,7 +2454,7 @@ export const translations = {
   ar: {
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
     heroTitle: `احصل على مكافأتك <br/> <span>100 لفة مجانية</span> <br/> في <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> و<span class="two-step-bonus-spins"></span> لفة مجانية مع إيداعك الأول`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> و<span class="two-step-bonus-spins"></span> لفة مجانية مع إيداعك الأول`,
     heroBtn: "احصل على المكافأة",
     lowWager: "شرط رهان منخفض!",
     slideStep1Title: "التسجيل",
@@ -2529,7 +2529,7 @@ export const translations = {
   mt: {
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
     heroTitle: `iġbor il-bonus tiegħek <br/> <span>100 spin b'xejn</span> <br/> fi <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> u <span class="two-step-bonus-spins"></span> Spins b'xejn mal-ewwel depożitu tiegħek`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> u <span class="two-step-bonus-spins"></span> Spins b'xejn mal-ewwel depożitu tiegħek`,
     heroBtn: "iġbor il-bonus",
     lowWager: "Wager baxx!",
     slideStep1Title: "Irreġistra",
@@ -2606,7 +2606,7 @@ export const translations = {
   lb: {
     pageTitle: "🎁 Däre Bonus ass prett - Goldbet",
     heroTitle: `sécher der däre Bonus <br/> <span>100 gratis Spins</span> <br/> an <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat dengem 1. Depot`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat dengem 1. Depot`,
     heroBtn: "Bonus kréien",
     lowWager: "Niddreg Wager!",
     slideStep1Title: "Registréieren",
@@ -2683,7 +2683,7 @@ export const translations = {
   ga: {
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
     heroTitle: `éiligh do bhónas <br/> <span>100 casadh saor in aisce</span> <br/> i <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Casadh Saor in Aisce le do 1ú thaisce`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Casadh Saor in Aisce le do 1ú thaisce`,
     heroBtn: "faigh bónas",
     lowWager: "Wager íseal!",
     slideStep1Title: "Cláraigh",
@@ -2761,7 +2761,7 @@ export const translations = {
   ha: {
     pageTitle: "🎁 Bonus ɗinka yana shirye - Goldbet",
     heroTitle: `karɓi bonus ɗinka <br/> <span>juya 100 kyauta</span> <br/> a cikin <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> da <span class="two-step-bonus-spins"></span> Juya Kyauta tare da ajiyarka ta 1`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> da <span class="two-step-bonus-spins"></span> Juya Kyauta tare da ajiyarka ta 1`,
     heroBtn: "samu bonus",
     lowWager: "Ƙananan wager!",
     slideStep1Title: "Yi rajista",
@@ -2837,7 +2837,7 @@ export const translations = {
   yo: {
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetán - Goldbet",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span>àyíká ọ̀fẹ́ 100</span> <br/> nínú <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> tó dé <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> àti <span class="two-step-bonus-spins"></span> Àyíká Ọ̀fẹ́ pẹ̀lú ìdọ̀wó àkọ́kọ́ rẹ`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> tó dé <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> àti <span class="two-step-bonus-spins"></span> Àyíká Ọ̀fẹ́ pẹ̀lú ìdọ̀wó àkọ́kọ́ rẹ`,
     heroBtn: "gba ẹ̀bùn",
     lowWager: "Wager kékeré!",
     slideStep1Title: "Forúkọ sílẹ̀",
@@ -2913,7 +2913,7 @@ export const translations = {
   ig: {
     pageTitle: "🎁 Ọnyinye gị adịla njikere - Goldbet",
     heroTitle: `nweta ọnyinye gị <br/> <span>ntụgharị efu 100</span> <br/> na <span>sweet bonanza</span>`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> na <span class="two-step-bonus-spins"></span> Ntụgharị Efu site na ntinye ego mbụ gị`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> na <span class="two-step-bonus-spins"></span> Ntụgharị Efu site na ntinye ego mbụ gị`,
     heroBtn: "nweta ọnyinye",
     lowWager: "Wager dị ala!",
     slideStep1Title: "Debanye aha",
@@ -2989,7 +2989,7 @@ export const translations = {
   tw: {
     pageTitle: "🎁 Wo akyɛde no ayɛ krado - Goldbet",
     heroTitle: `gye wo akyɛde <br/> <span>spins 100 a ɛyɛ kwa</span> <br/> wɔ <span>sweet bonanza</span> mu`,
-    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kɔsi <span class='bonus-total-amount'></span><span class='bonus-currency-symbol'></span> ne <span class="two-step-bonus-spins"></span> Spins a Ɛyɛ Kwa wɔ wo deposit a ɛto so 1 no`,
+    heroSubtitle: `+<span class="two-step-bonus-percent"></span> kɔsi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> ne <span class="two-step-bonus-spins"></span> Spins a Ɛyɛ Kwa wɔ wo deposit a ɛto so 1 no`,
     heroBtn: "gye akyɛde",
     lowWager: "Wager ketewa!",
     slideStep1Title: "Kyerɛw wo din",
