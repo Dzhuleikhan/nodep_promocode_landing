@@ -585,6 +585,29 @@
 }
 
 /* Подсказка «вы имели в виду ...?» — не ошибка, поэтому белым. */
+/* Хинты сниппетов (Zeruh / IPQS) встают сразу после поля, прямым ребёнком
+   шага. Шаг раздвигает детей через space-y — в Tailwind v4 это margin-bottom
+   у ПРЕДЫДУЩЕГО элемента (10px / 7px на xs). Положительный margin-top хинта с
+   ним схлопывается, и хинт оказывался на те же 10px от поля, что и следующее
+   поле. Поэтому, как у наших алертов занятости (-mt-[5px] / xs:-mt-[3px]),
+   тянем хинт вверх отрицательным отступом → 5px (4px на xs) от поля.
+   Шрифт — как у алертов (text-xs, bold, leading-tight): сниппеты вставляют
+   свой CSS позже нашего (13px / 1.3), поэтому селектор усилен и с !important. */
+.two-step-form-step > .eg-hint,
+.two-step-form-step > .pg-hint {
+  margin-top: -5px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+}
+
+@media (max-width: 360px) {
+  .two-step-form-step > .eg-hint,
+  .two-step-form-step > .pg-hint {
+    margin-top: -3px !important;
+  }
+}
+
 .eg-hint[data-eg-state="suggest"] {
   color: #ffffff;
 }
