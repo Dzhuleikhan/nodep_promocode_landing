@@ -37,6 +37,14 @@ if (headerLangBtn) {
   headerLangBtn.addEventListener("click", () => {
     headerLangList.classList.toggle("is-open");
   });
+
+  // Клик мимо кнопки и списка — закрываем список (раньше он оставался
+  // открытым, пока не нажмёшь на кнопку ещё раз).
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".header-lang-box")) {
+      headerLangList.classList.remove("is-open");
+    }
+  });
 }
 
 function updateButtonText(lang) {
