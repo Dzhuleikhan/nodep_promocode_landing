@@ -2,7 +2,8 @@ import { countryFlags, countryCurrencyData } from "../public/data";
 import { geoData } from "./geoLocation";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import gsap from "gsap";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import {
@@ -876,7 +877,9 @@ twoStepFormMain.addEventListener("submit", (e) => {
   }${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
 
   console.log(registerUrl);
-  window.location.href = registerUrl + (window.EmailGuard?.tags?.() || "");
+  goToRegister(
+    registerUrl + (window.EmailGuard?.tags?.() || "") + getTestUserParams(),
+  );
 });
 
 gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
