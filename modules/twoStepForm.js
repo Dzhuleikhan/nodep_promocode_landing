@@ -3,7 +3,8 @@ import { geoData, settingZipCodePlaceholder } from "./geoLocation";
 import { translations } from "/public/translations";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import gsap from "gsap";
 import { enableKeyboardSelect } from "./keyboardSelect";
 import {
@@ -1720,7 +1721,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
 
   console.log(twoStepFormData);
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
+  goToRegister(`https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
     email,
   )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
@@ -1736,7 +1737,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }`;
+  }${getTestUserParams()}`);
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
