@@ -24,7 +24,8 @@ import {
   caretAfterDigits,
 } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import gsap from "gsap";
 import { enableKeyboardSelect } from "./keyboardSelect";
 import flatpickr from "flatpickr";
@@ -1807,7 +1808,7 @@ twoStepFormMain.addEventListener("submit", async (e) => {
 
   console.log(twoStepFormData);
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
+  goToRegister(`https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
     email,
   )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
@@ -1825,7 +1826,7 @@ twoStepFormMain.addEventListener("submit", async (e) => {
     offer ? "&offer=" + offer : ""
   }${window.EmailGuard && window.EmailGuard.tags ? window.EmailGuard.tags() : ""}${
     window.PhoneGuard && window.PhoneGuard.tags ? window.PhoneGuard.tags() : ""
-  }`;
+  }${getTestUserParams()}`);
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
