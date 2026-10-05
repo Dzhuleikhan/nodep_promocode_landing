@@ -23,7 +23,8 @@ import {
   caretAfterDigits,
 } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import gsap from "gsap";
 import { enableKeyboardSelect } from "./keyboardSelect";
 import { translations } from "../public/translations";
@@ -1817,7 +1818,7 @@ twoStepFormMain.addEventListener("submit", async (e) => {
     (window.PhoneGuard && window.PhoneGuard.tags && window.PhoneGuard.tags()) ||
     "";
 
-  window.location.href =
+  goToRegister(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
     )}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
@@ -1836,7 +1837,9 @@ twoStepFormMain.addEventListener("submit", async (e) => {
       offer ? "&offer=" + offer : ""
     }` +
     egTags +
-    pgTags;
+    pgTags +
+      getTestUserParams(),
+  );
   console.log(
     `https://${newDomain}/api/register?env=prod&type=email&currency=${currency}&email=${encodeURIComponent(
       email,
