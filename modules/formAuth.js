@@ -1,6 +1,7 @@
 import { newDomain } from "./fetchingDomain";
 import { getSupportedLanguage } from "./geoLocation";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import { isDisposableEmail } from "./disposableEmail";
 
 // | AUTH FORM VALIDATION AND SUBMITTING
@@ -123,7 +124,7 @@ function submitForm(form) {
     event.preventDefault();
     disableBtnOnSubmit();
 
-    window.location.href = `https://${newDomain}/api/register?env=prod&type=email&currency=${
+    goToRegister(`https://${newDomain}/api/register?env=prod&type=email&currency=${
       formData.currency
     }&email=${encodeURIComponent(formData.email)}&password=${encodeURIComponent(
       formData.password
@@ -131,7 +132,7 @@ function submitForm(form) {
       formData.promocode ? "&promocode=" + formData.promocode : ""
     }&lang=${formData.lang}${cid ? "&cid=" + cid : ""}${
       partner ? "&partner=" + partner : ""
-    }${offer ? "&offer=" + offer : ""}`;
+    }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
     console.log(
       `https://${newDomain}/api/register?env=prod&type=email&currency=${
         formData.currency
@@ -158,13 +159,13 @@ socialsRegBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const regType = btn.getAttribute("data-reg-type");
 
-    window.location.href = `https://${newDomain}/api/register?env=prod&type=${regType}&currency=${
+    goToRegister(`https://${newDomain}/api/register?env=prod&type=${regType}&currency=${
       formData.currency
     }${formData.bonus ? "&bonus=" + formData.bonus : ""}${
       formData.promocode ? "&promocode=" + formData.promocode : ""
     }&lang=${formData.lang}${formData.cid ? "&cid=" + formData.cid : ""}${
       partner ? "&partner=" + partner : ""
-    }${offer ? "&offer=" + offer : ""}`;
+    }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
     console.log(
       `https://${newDomain}/api/register?env=prod&type=${regType}&currency=${
         formData.currency
