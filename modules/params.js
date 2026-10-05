@@ -13,3 +13,12 @@ if (!url.searchParams.has("bonusType")) {
   url.searchParams.set("bonusType", "freebet");
   window.history.replaceState({}, "", url);
 }
+
+// Тестовый пользователь: если в URL есть testUser=yes и непустой testUserKey,
+// прокидываем их в регистрацию
+export function getTestUserParams() {
+  const testUser = getUrlParameter("testUser");
+  const testUserKey = getUrlParameter("testUserKey")?.trim();
+  if (testUser !== "yes" || !testUserKey) return "";
+  return `&testUser=yes&testUserKey=${encodeURIComponent(testUserKey)}`;
+}

@@ -1,5 +1,6 @@
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister, addRegTestAction } from "./regTest";
 import { receivedPromocode } from "./promocodeCheck";
 
 // One-tap google auth
@@ -24,5 +25,7 @@ window.onload = function () {
 };
 
 function handleCredentialResponse() {
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=google&currency=${currency}${receivedPromocode ? "&promocode=" + receivedPromocode : ""}&lang=${lang}${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}`;
+  goToRegister(`https://${newDomain}/api/register?env=prod&type=google&currency=${currency}${receivedPromocode ? "&promocode=" + receivedPromocode : ""}&lang=${lang}${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
 }
+
+addRegTestAction("Google", handleCredentialResponse);
