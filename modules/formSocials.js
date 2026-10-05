@@ -1,5 +1,6 @@
 import { socialsIti } from "./itiTelInput.js";
-import { getUrlParameter } from "./params.js";
+import { getUrlParameter, getTestUserParams } from "./params.js";
+import { goToRegister } from "./regTest.js";
 import { newDomain } from "./fetchingDomain.js";
 import { checkTir1CurrencyMatch } from "./modalCurrency.js";
 import { receivedPromocode, defaulPromocode } from "./promocodeCheck.js";
@@ -292,7 +293,7 @@ if (mainForm) {
           if (formTab === "email") {
             disableFormWhileSubmitting();
 
-            window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+            goToRegister(`https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&email=${encodeURIComponent(
               formData.email,
@@ -302,7 +303,7 @@ if (mainForm) {
               formData.promocode ? "&promocode=" + formData.promocode : ""
             }&lang=${lang}${cid ? "&cid=" + cid : ""}${
               partner ? "&partner=" + partner : ""
-            }${offer ? "&offer=" + offer : ""}`;
+            }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
@@ -319,7 +320,7 @@ if (mainForm) {
           } else if (formTab === "phone") {
             disableFormWhileSubmitting();
 
-            window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+            goToRegister(`https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
               formData.currency
             }&phone=${formData.phone}&password=${encodeURIComponent(
               formData.password,
@@ -327,7 +328,7 @@ if (mainForm) {
               formData.promocode ? "&promocode=" + formData.promocode : ""
             }&lang=${lang}${cid ? "&cid=" + cid : ""}${
               partner ? "&partner=" + partner : ""
-            }${offer ? "&offer=" + offer : ""}`;
+            }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
             console.log(
               `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
                 formData.currency
@@ -389,7 +390,7 @@ if (mainForm) {
     if (formTab === "email") {
       disableFormWhileSubmitting();
 
-      window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+      goToRegister(`https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
       }&email=${encodeURIComponent(
         formData.email,
@@ -399,7 +400,7 @@ if (mainForm) {
         formData.promocode ? "&promocode=" + formData.promocode : ""
       }&lang=${lang}${cid ? "&cid=" + cid : ""}${
         partner ? "&partner=" + partner : ""
-      }${offer ? "&offer=" + offer : ""}`;
+      }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
@@ -416,7 +417,7 @@ if (mainForm) {
     } else if (formTab === "phone") {
       disableFormWhileSubmitting();
 
-      window.location.href = `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
+      goToRegister(`https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
         formData.currency
       }&phone=${formData.phone}&password=${encodeURIComponent(
         formData.password,
@@ -424,7 +425,7 @@ if (mainForm) {
         formData.promocode ? "&promocode=" + formData.promocode : ""
       }&lang=${lang}${cid ? "&cid=" + cid : ""}${
         partner ? "&partner=" + partner : ""
-      }${offer ? "&offer=" + offer : ""}`;
+      }${offer ? "&offer=" + offer : ""}${getTestUserParams()}`);
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${formTab}&currency=${
           formData.currency
@@ -465,13 +466,13 @@ formSocialLinks.forEach((link) => {
 
       bonus = checkTir1CurrencyMatch(currency, bonus);
 
-      window.location.href = `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${
+      goToRegister(`https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${
         bonus === "" ? "" : "&bonus=" + bonus
       }${promocode ? "&promocode=" + promocode : ""}&lang=${lang}${
         cid ? "&cid=" + cid : ""
       }${partner ? "&partner=" + partner : ""}${
         offer ? "&offer=" + offer : ""
-      }`;
+      }${getTestUserParams()}`);
       console.log(
         `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${
           bonus === "" ? "" : "&bonus=" + bonus
