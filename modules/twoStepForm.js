@@ -18,7 +18,8 @@ import { geoData, getLocation, settingZipCodePlaceholder } from "./geoLocation";
 import { translations } from "/public/translations";
 import { twoStepiti } from "./itiTelInput";
 import { newDomain } from "./fetchingDomain";
-import { getUrlParameter } from "./params";
+import { getUrlParameter, getTestUserParams } from "./params";
+import { goToRegister } from "./regTest";
 import gsap from "gsap";
 import { enableKeyboardSelect } from "./keyboardSelect";
 import { isValidPhoneNumber } from "libphonenumber-js";
@@ -1784,7 +1785,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     ? ""
     : `&email=${encodeURIComponent(email)}`;
 
-  window.location.href = `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
+  goToRegister(`https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
     promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
   }&lang=${lang}${firstName ? "&f_name=" + encodeURIComponent(firstName) : ""}${
     lastName ? "&l_name=" + encodeURIComponent(lastName) : ""
@@ -1798,7 +1799,7 @@ twoStepFormMain.addEventListener("submit", (e) => {
     apartment ? "&apartment=" + encodeURIComponent(apartment) : ""
   }${cid ? "&cid=" + cid : ""}${partner ? "&partner=" + partner : ""}${
     offer ? "&offer=" + offer : ""
-  }${window.EmailGuard?.tags?.() || ""}${window.PhoneGuard?.tags?.() || ""}`;
+  }${window.EmailGuard?.tags?.() || ""}${window.PhoneGuard?.tags?.() || ""}${getTestUserParams()}`);
   console.log(
     `https://${newDomain}/api/register?env=prod&type=${type}&currency=${currency}${emailParam}&password=${encodeURIComponent(password)}&phone=${phone}&bonus=${bonus}${
       promocode ? "&promocode=" + encodeURIComponent(promocode) : ""
