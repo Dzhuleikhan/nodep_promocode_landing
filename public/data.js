@@ -188,7 +188,7 @@ export const countryFlags = [
   { name: "Ukraine", slug: "ua" },
   { name: "United Arab Emirates", slug: "ae" },
   { name: "United Kingdom", slug: "gb" },
-  { name: "United States of America", slug: "us" },
+  // { name: "United States of America", slug: "us" },
   { name: "Uruguay", slug: "uy" },
   { name: "Uzbekistan", slug: "uz" },
   { name: "Vanuatu", slug: "vu" },
@@ -206,72 +206,72 @@ export const countryCurrencyData = [
     countryCurrency: "COP",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "Colombian Peso",
-    countryCurrencyIcon: "./img/currencies/cop.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/COP.svg",
     amount: "4.17 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AR"],
     countryCurrency: "ARS",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "Argentine Peso",
-    countryCurrencyIcon: "./img/currencies/ars.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ARS.svg",
     amount: "9 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AU", "CX", "CC", "KI", "NR", "NF", "TV"],
     countryCurrency: "AUD",
     countryCurrencySymbol: "AU$",
     countryCurrencyFullName: "Australian Dollar",
-    countryCurrencyIcon: "./img/currencies/aud.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/AUD.svg",
     amount: "7.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["AZ"],
     countryCurrency: "AZN",
     countryCurrencySymbol: "₼",
     countryCurrencyFullName: "Azerbaijani Manat",
-    countryCurrencyIcon: "./img/currencies/azn.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/AZN.svg",
     amount: "17.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["BD"],
     countryCurrency: "BDT",
     countryCurrencySymbol: "৳",
     countryCurrencyFullName: "Bangladeshi Taka",
-    countryCurrencyIcon: "./img/currencies/bdt.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/BDT.svg",
     amount: "1 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["BR"],
     countryCurrency: "BRL",
     countryCurrencySymbol: "R$",
     countryCurrencyFullName: "Brazilian Real",
-    countryCurrencyIcon: "./img/currencies/brl.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/BRL.svg",
     amount: "54.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["CA"],
     countryCurrency: "CAD",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "Canadian Dollar",
-    countryCurrencyIcon: "./img/currencies/cad.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CAD.svg",
     amount: "6.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CL"],
     countryCurrency: "CLP",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "Chilean Peso",
-    countryCurrencyIcon: "./img/currencies/clp.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CLP.svg",
     amount: "9 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: [
@@ -313,99 +313,99 @@ export const countryCurrencyData = [
     countryCurrency: "EUR",
     countryCurrencySymbol: "€",
     countryCurrencyFullName: "Euro",
-    countryCurrencyIcon: "./img/currencies/eur.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/EUR.svg",
     amount: "4.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["ID"],
     countryCurrency: "IDR",
     countryCurrencySymbol: "Rp",
     countryCurrencyFullName: "Indonesian Rupiah",
-    countryCurrencyIcon: "./img/currencies/idr.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/IDR.svg",
     amount: "150 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["IN", "BT", "NP"],
     countryCurrency: "INR",
     countryCurrencySymbol: "₹",
     countryCurrencyFullName: "Indian Rupee",
-    countryCurrencyIcon: "./img/currencies/inr.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/INR.svg",
     amount: "830.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["KG"],
     countryCurrency: "KGS",
     countryCurrencySymbol: "с",
     countryCurrencyFullName: "Kyrgyzstani Som",
-    countryCurrencyIcon: "./img/currencies/kgs.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KGS.svg",
     amount: "850.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["KZ"],
     countryCurrency: "KZT",
     countryCurrencySymbol: "₸",
     countryCurrencyFullName: "Kazakhstani Tenge",
-    countryCurrencyIcon: "./img/currencies/kzt.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KZT.svg",
     amount: "4.7 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["MX"],
     countryCurrency: "MXN",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "Mexican Peso",
-    countryCurrencyIcon: "./img/currencies/mxn.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/MXN.svg",
     amount: "190.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["NZ", "CK", "NU", "PN", "TK"],
     countryCurrency: "NZD",
     countryCurrencySymbol: "NZ$",
     countryCurrencyFullName: "New Zealand Dollar",
-    countryCurrencyIcon: "./img/currencies/nzd.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NZD.svg",
     amount: "7.500",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["RU"],
     countryCurrency: "RUB",
     countryCurrencySymbol: "₽",
     countryCurrencyFullName: "Russian Ruble",
-    countryCurrencyIcon: "./img/currencies/rub.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/RUB.svg",
     amount: "900.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["TH"],
     countryCurrency: "THB",
     countryCurrencySymbol: "฿",
     countryCurrencyFullName: "Thai Baht",
-    countryCurrencyIcon: "./img/currencies/thb.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/THB.svg",
     amount: "320.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["TR", "CY"],
     countryCurrency: "TRY",
     countryCurrencySymbol: "₺",
     countryCurrencyFullName: "Turkish Lira",
-    countryCurrencyIcon: "./img/currencies/try.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/TRY.svg",
     amount: "340.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: ["UA"],
     countryCurrency: "UAH",
     countryCurrencySymbol: "₴",
     countryCurrencyFullName: "Ukrainian Hryvnia",
-    countryCurrencyIcon: "./img/currencies/uah.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UAH.svg",
     amount: "400.000",
-    spins: "25FS",
+    spins: "25",
   },
   {
     countries: [
@@ -426,18 +426,18 @@ export const countryCurrencyData = [
     countryCurrency: "USD",
     countryCurrencySymbol: "$",
     countryCurrencyFullName: "US Dollar",
-    countryCurrencyIcon: "./img/currencies/usd.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/USD.svg",
     amount: "5.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["UZ"],
     countryCurrency: "UZS",
     countryCurrencySymbol: "SO’M",
     countryCurrencyFullName: "Uzbekistani Som",
-    countryCurrencyIcon: "./img/currencies/uzs.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UZS.svg",
     amount: "127 MLN",
-    spins: "25FS",
+    spins: "25",
   },
   // | New currencies
   {
@@ -445,74 +445,156 @@ export const countryCurrencyData = [
     countryCurrency: "RON",
     countryCurrencySymbol: "lei",
     countryCurrencyFullName: "Romanian Leu",
-    countryCurrencyIcon: "./img/currencies/ron.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/RON.svg",
     amount: "24.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["DK"],
     countryCurrency: "DKK",
     countryCurrencySymbol: "kr",
     countryCurrencyFullName: "Danish Krone",
-    countryCurrencyIcon: "./img/currencies/dkk.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/DKK.svg",
     amount: "36.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["HU"],
     countryCurrency: "HUF",
     countryCurrencySymbol: "Ft",
     countryCurrencyFullName: "Hungarian Forint",
-    countryCurrencyIcon: "./img/currencies/huf.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/HUF.svg",
     amount: "2 MLN",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CZ"],
     countryCurrency: "CZK",
     countryCurrencySymbol: "Kč",
     countryCurrencyFullName: "Czech Koruna",
-    countryCurrencyIcon: "./img/currencies/czk.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CZK.svg",
     amount: "120.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["CH"],
     countryCurrency: "CHF",
     countryCurrencySymbol: "CHF",
     countryCurrencyFullName: "Swiss Franc",
-    countryCurrencyIcon: "./img/currencies/chf.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CHF.svg",
     amount: "4.500",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["PL"],
     countryCurrency: "PLN",
     countryCurrencySymbol: "zł",
     countryCurrencyFullName: "Polish Zloty",
-    countryCurrencyIcon: "./img/currencies/pln.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/PLN.svg",
     amount: "20.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["NO"],
     countryCurrency: "NOK",
     countryCurrencySymbol: "kr",
     countryCurrencyFullName: "Norwegian krone",
-    countryCurrencyIcon: "./img/currencies/nok.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NOK.svg",
     amount: "56.000",
-    spins: "200FS",
+    spins: "200",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
     countryCurrency: "ZAR",
     countryCurrencySymbol: "R",
     countryCurrencyFullName: "South African Rand",
-    countryCurrencyIcon: "./img/currencies/zar.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ZAR.svg",
     amount: "88.000",
-    spins: "200 FS",
+    spins: "200",
     highrollerAmount: "3600",
   },
+  // NEW AFRICAN CURRENCIES
+  {
+    countries: ["NG"],
+    countryCurrency: "NGN",
+    countryCurrencySymbol: "₦",
+    countryCurrencyFullName: "Nigerian Naira",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NGN.svg",
+    amount: "12.2 MLN",
+    spins: "25",
+  },
+  {
+    countries: ["KE"],
+    countryCurrency: "KES",
+    countryCurrencySymbol: "KSh",
+    countryCurrencyFullName: "Kenyan Shilling",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/KES.svg",
+    amount: "430 K",
+    spins: "25",
+  },
+  {
+    countries: ["GH"],
+    countryCurrency: "GHS",
+    countryCurrencySymbol: "₵",
+    countryCurrencyFullName: "Ghanaian Cedi",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/GHS.svg",
+    amount: "55 K",
+    spins: "25",
+  },
+  {
+    countries: ["UG"],
+    countryCurrency: "UGX",
+    countryCurrencySymbol: "USh",
+    countryCurrencyFullName: "Ugandan Shilling",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/UGX.svg",
+    amount: "7.4 MLN",
+    spins: "25",
+  },
+  {
+    countries: ["TZ"],
+    countryCurrency: "TZS",
+    countryCurrencySymbol: "TSh",
+    countryCurrencyFullName: "Tanzanian Shilling",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/TZS.svg",
+    amount: "5 MLN",
+    spins: "25",
+  },
+  {
+    countries: ["ZM"],
+    countryCurrency: "ZMW",
+    countryCurrencySymbol: "ZK",
+    countryCurrencyFullName: "Zambian Kwacha",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ZMW.svg",
+    amount: "45 K",
+    spins: "25",
+  },
+  {
+    countries: ["CM", "CG"],
+    countryCurrency: "XAF",
+    countryCurrencySymbol: "Fr",
+    countryCurrencyFullName: "Central African CFA Franc",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XAF.svg",
+    amount: "1.9 MLN",
+    spins: "25",
+  },
+  {
+    countries: ["SN", "CI"],
+    countryCurrency: "XOF",
+    countryCurrencySymbol: "Fr",
+    countryCurrencyFullName: "West African CFA Franc",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/XOF.svg",
+    amount: "1.9 MLN",
+    spins: "25",
+  },
+  // {
+  //   countries: ["SL"],
+  //   countryCurrency: "SLL",
+  //   countryCurrencySymbol: "Le",
+  //   countryCurrencyFullName: "Sierra Leonean Leone",
+  //   countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/SLL.svg",
+  //   amount: "45 K",
+  //   spins: "25",
+  // },
 ];
 
 export const canadaProvincesCities = {
@@ -633,9 +715,7 @@ export const countryLanguagesMap = {
   PA: ["es"],
   UY: ["es"],
   RU: ["ru"],
-  KZ: ["kk"],
   BY: ["ru"],
-  KG: ["ky"],
   TJ: ["ru"],
   TM: ["ru"],
   "GE-AB": ["ru"],
@@ -648,13 +728,10 @@ export const countryLanguagesMap = {
   TL: ["pt"],
   MO: ["pt"],
   EH: ["pt"],
-  AZ: ["az"],
-  UZ: ["uz"],
-  TR: ["tr"],
   BD: ["bn"],
   ID: ["id"],
   CN: ["zh"],
-  DK: ["de"],
+  DK: ["dk"],
   NO: ["nb"],
   RO: ["ro"],
   MD: ["ro"],
@@ -670,24 +747,68 @@ export const countryLanguagesMap = {
   LV: ["lv"],
   LT: ["lt"],
   HR: ["hr"],
+  FI: ["fi"],
+  BG: ["bg"],
+  KE: ["sw"],
+  TZ: ["sw"],
+  ET: ["am"],
+  UG: ["lm"],
+  NG: ["ha", "yo", "ig"],
+  GH: ["tw"],
+};
+
+export const languageOptions = {
+  en: { name: "EN", flag: "gb" },
+  fr: { name: "FR", flag: "fr" },
+  ro: { name: "RO", flag: "ro" },
+  hu: { name: "HU", flag: "hu" },
+  pl: { name: "PL", flag: "pl" },
+  cs: { name: "CS", flag: "cz" },
+  sl: { name: "SL", flag: "si" },
+  el: { name: "EL", flag: "gr" },
+  nb: { name: "NB", flag: "no" },
+  sv: { name: "SV", flag: "se" },
+  sk: { name: "SK", flag: "sk" },
+  ru: { name: "RU", flag: "ru" },
+  es: { name: "ES", flag: "es" },
+  pt: { name: "PT", flag: "pt" },
+  de: { name: "DE", flag: "de" },
+  it: { name: "IT", flag: "it" },
+  et: { name: "ET", flag: "ee" },
+  lv: { name: "LV", flag: "lv" },
+  lt: { name: "LT", flag: "lt" },
+  hr: { name: "HR", flag: "hr" },
+  fi: { name: "FI", flag: "fi" },
+  dk: { name: "DK", flag: "dk" },
+  bg: { name: "BG", flag: "bg" },
+  nl: { name: "NL", flag: "nl" },
+  uk: { name: "UK", flag: "ua" },
+  sw: { name: "SW", flag: "ke" },
+  am: { name: "AM", flag: "et" },
+  lm: { name: "LM", flag: "ug" },
+  rw: { name: "RW", flag: "rw" },
+  ar: { name: "AR", flag: "sa" },
+  ga: { name: "GA", flag: "ie" },
+  lb: { name: "LB", flag: "lu" },
+  mt: { name: "MT", flag: "mt" },
+  zh: { name: "ZH", flag: "cn" },
+  ha: { name: "HA", flag: "ng" },
+  yo: { name: "YO", flag: "ng" },
+  ig: { name: "IG", flag: "ng" },
+  tw: { name: "TW", flag: "gh" },
 };
 
 export const SupportedLanguages = [
   "en",
   "es",
   "fr",
-  "az",
-  "uz",
   "uk",
   "ru",
   "bn",
-  "tr",
   "id",
   "pt",
   "de",
   "zh",
-  "kk",
-  "ky",
   "ro",
   "hu",
   "pl",
@@ -702,15 +823,40 @@ export const SupportedLanguages = [
   "lv",
   "lt",
   "hr",
+  "dk",
+  "fi",
+  "bg",
+  "nl",
+  "sw",
+  "am",
+  "lm",
+  "rw",
+  "ar",
+  "ga",
+  "lb",
+  "mt",
+  "ha",
+  "yo",
+  "ig",
+  "tw",
 ];
 
 export const nodepBonuses = [
+  {
+    currency: "USD",
+    currencyName: "USD",
+    symbol: "$",
+    bonusAmount: "10",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/USD.svg",
+    moneyAmount: "5000",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
+  },
   {
     currency: "EUR",
     currencyName: "EURO",
     symbol: "€",
     bonusAmount: "10",
-    countryCurrencyIcon: "./img/currencies/eur.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/EUR.svg",
     moneyAmount: "4500",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
@@ -719,7 +865,7 @@ export const nodepBonuses = [
     currencyName: "ROMANIAN LEU",
     symbol: "L",
     bonusAmount: "50",
-    countryCurrencyIcon: "./img/currencies/ron.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/RON.svg",
     moneyAmount: "19200",
     paymentMethods: [
       "visa",
@@ -735,7 +881,7 @@ export const nodepBonuses = [
     currencyName: "DANISH KRONE",
     symbol: "kr",
     bonusAmount: "80",
-    countryCurrencyIcon: "./img/currencies/dkk.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/DKK.svg",
     moneyAmount: "28800",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
@@ -744,7 +890,7 @@ export const nodepBonuses = [
     currencyName: "HUNGARIAN FORINT",
     symbol: "Ft",
     bonusAmount: "4400",
-    countryCurrencyIcon: "./img/currencies/huf.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/HUF.svg",
     moneyAmount: "1608000",
     paymentMethods: [
       "visa",
@@ -760,7 +906,7 @@ export const nodepBonuses = [
     currencyName: "CZECH KORUNA",
     symbol: "Kč",
     bonusAmount: "270",
-    countryCurrencyIcon: "./img/currencies/czk.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CZK.svg",
     moneyAmount: "97200",
     paymentMethods: [
       "visa",
@@ -776,7 +922,7 @@ export const nodepBonuses = [
     currencyName: "SWISS FRANC",
     symbol: "CHF",
     bonusAmount: "10",
-    countryCurrencyIcon: "./img/currencies/chf.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/CHF.svg",
     moneyAmount: "3600",
     paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
   },
@@ -785,7 +931,7 @@ export const nodepBonuses = [
     currencyName: "POLISH ZLOTY",
     symbol: "zł",
     bonusAmount: "45",
-    countryCurrencyIcon: "./img/currencies/pln.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/PLN.svg",
     moneyAmount: "16400",
     paymentMethods: [
       "blik",
@@ -801,7 +947,7 @@ export const nodepBonuses = [
     currencyName: "Norwegian Krone",
     symbol: "kr",
     bonusAmount: "45",
-    countryCurrencyIcon: "./img/currencies/nok.svg",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NOK.svg",
     moneyAmount: "16400",
     paymentMethods: [
       "visa",
@@ -815,9 +961,9 @@ export const nodepBonuses = [
 ];
 
 export const countryZipCodeTranslates = {
-  CZ: "PSČ (Poštovní směrovací číslo)",
+  CZ: "PSČ (čes. Poštovní směrovací číslo)",
   PL: "Kod pocztowy",
-  DE: "PLZ (Postleitzahl)",
+  DE: "Postleitzahl",
   US: "ZIP Code (Zone Improvement Plan code)",
   HU: "Irányítószám",
   BR: "CEP (Código de Endereçamento Postal)",
@@ -832,9 +978,9 @@ export const countryZipCodeTranslates = {
   SE: "Postnummer",
   GB: "Postcode",
   FR: "Code postal",
-  AT: "PLZ (Postleitzahl)",
+  AT: "Postleitzahl",
   PT: "Código postal",
-  MX: "Código postal",
+  MX: "Código Postal",
   SK: "PSČ (Poštové smerovacie číslo)",
   BE: "Postcode",
   IE: "Eircode",
@@ -847,10 +993,1197 @@ export const countryZipCodeTranslates = {
   GR: "Ταχυδρομικός Κώδικας",
   AR: "Código Postal",
   UZ: "Pochta indeksi",
-  CH: "PLZ (Postleitzahl)",
+  CH: "Postleitzahl / Numéro postal / Numero postale",
   EE: "Postiindeks",
   LV: "Pasta indekss",
   SI: "Poštna številka",
   LT: "Pašto kodas",
   HR: "Poštanski broj",
+};
+
+// | POSTAL CODE FIELD MODE -----------------------------------------------------
+// Страны, где почтового индекса нет / он не используется — поле скрыто.
+export const postalCodeHiddenCountries = [
+  "AE",
+  "AF",
+  "AG",
+  "AO",
+  "AW",
+  "BB",
+  "BF",
+  "BI",
+  "BJ",
+  "BO",
+  "BQ",
+  "BS",
+  "BW",
+  "BZ",
+  "CD",
+  "CF",
+  "CG",
+  "CI",
+  "CK",
+  "CM",
+  "CU",
+  "CW",
+  "DJ",
+  "DM",
+  "ER",
+  "FJ",
+  "FM",
+  "GA",
+  "GD",
+  "GM",
+  "GN",
+  "GQ",
+  "GW",
+  "GY",
+  "HK",
+  "JM",
+  "KI",
+  "KM",
+  "KN",
+  "KP",
+  "LC",
+  "LR",
+  "LY",
+  "MH",
+  "ML",
+  "MO",
+  "MR",
+  "MW",
+  "NA",
+  "NE",
+  "NR",
+  "NU",
+  "PA",
+  "PG",
+  "PW",
+  "QA",
+  "RW",
+  "SB",
+  "SC",
+  "SL",
+  "SO",
+  "SR",
+  "SS",
+  "ST",
+  "SX",
+  "SY",
+  "SZ",
+  "TD",
+  "TG",
+  "TK",
+  "TL",
+  "TO",
+  "TT",
+  "TV",
+  "TZ",
+  "UG",
+  "VC",
+  "VU",
+  "WS",
+  "YE",
+  "ZM",
+  "ZW",
+];
+
+// Страны, где индекс существует, но не критичен — поле необязательное (с hint).
+export const postalCodeOptionalCountries = [
+  "AL",
+  "AM",
+  "AZ",
+  "BA",
+  "BB",
+  "BD",
+  "BH",
+  "BT",
+  "DO",
+  "EG",
+  "ET",
+  "GB",
+  "GE",
+  "GH",
+  "HT",
+  "IE",
+  "IN",
+  "IQ",
+  "JO",
+  "KE",
+  "KH",
+  "KN",
+  "KW",
+  "LA",
+  "LB",
+  "LC",
+  "LK",
+  "LR",
+  "LS",
+  "MD",
+  "ME",
+  "MG",
+  "MK",
+  "MM",
+  "MN",
+  "MU",
+  "MV",
+  "MZ",
+  "NE",
+  "NG",
+  "NI",
+  "NP",
+  "NZ",
+  "OM",
+  "PG",
+  "PH",
+  "PS",
+  "PY",
+  "RS",
+  "SN",
+  "SV",
+  "SZ",
+  "TN",
+  "TT",
+  "TZ",
+  "VC",
+  "VE",
+  "XK",
+  "ZA",
+  "ZM",
+];
+
+// Определяет режим поля Postal Code для страны.
+// Пересечения HIDDEN/OPTIONAL трактуем как OPTIONAL (приоритет OPTIONAL).
+// Любая страна вне обоих списков (и дефолт) — REQUIRED.
+export const getPostalCodeMode = (countryCode) => {
+  const code = (countryCode || "").toUpperCase();
+  if (postalCodeOptionalCountries.includes(code)) return "optional";
+  if (postalCodeHiddenCountries.includes(code)) return "hidden";
+  return "required";
+};
+
+// | STATE / PROVINCE FIELD -----------------------------------------------------
+// Страны, где штат/провинция/регион реально входят в почтовый адрес (KYC), и мы
+// принимаем его свободным вводом. AU, IT и IE отсюда убраны: у них регион
+// выбирается из списка, а ES — вычисляется по индексу (см. getRegionMode).
+export const stateProvinceCountries = [
+  "US",
+  "CA",
+  "BR",
+  "IN",
+  "MX",
+  "AR",
+  "CN",
+  "JP",
+  "ID",
+  "MY",
+  "PH",
+  "TH",
+  "RU",
+  "ZA",
+  "AE",
+  "SA",
+  "EG",
+  "NG",
+  "PK",
+  "BD",
+  "VN",
+  "KR",
+  "MM",
+  "NP",
+  "LK",
+];
+
+// Видимость поля региона определяет getRegionMode ниже: свободный ввод — это
+// теперь лишь один из режимов, поэтому отдельного hasStateField больше нет.
+
+// | ADDRESS FIELD ORDER --------------------------------------------------------
+// Порядок адресных полей 4-го шага задаётся страной: игрок вводит адрес в том
+// же порядке, в каком пишет его от руки. Ключи — поля формы, селекторы к ним
+// лежат в modules/twoStepForm.js (ADDRESS_FIELD_SELECTORS).
+// Скрытые для страны поля (индекс, регион) в списке остаются: порядок им не
+// мешает, а при смене страны на ту, где поле есть, оно встаёт на своё место.
+
+// A — «Улица 12, 1234 Город»: континентальная Европа. Сюда же IT и ES, у них
+// регион идёт хвостом после города.
+const ADDRESS_ORDER_STREET_FIRST = [
+  "street",
+  "house",
+  "apartment",
+  "zip",
+  "city",
+  "state",
+];
+
+// B — «12 rue de la Paix»: номер дома перед улицей.
+const ADDRESS_ORDER_HOUSE_FIRST = [
+  "house",
+  "street",
+  "apartment",
+  "zip",
+  "city",
+  "state",
+];
+
+// NL — индекс и номер дома первыми, по ним подставляются улица и город.
+// Квартира сразу за домом: это toevoeging, дополнение к номеру («12 A»).
+const ADDRESS_ORDER_NL = [
+  "zip",
+  "house",
+  "apartment",
+  "street",
+  "city",
+  "state",
+];
+
+// HU — «от большого к малому»: 1052 Budapest, Váci utca 12.
+const ADDRESS_ORDER_HU = [
+  "zip",
+  "city",
+  "street",
+  "house",
+  "apartment",
+  "state",
+];
+
+// AU — индекс после штата, иначе адрес выглядит чужеродно.
+const ADDRESS_ORDER_AU = [
+  "apartment",
+  "house",
+  "street",
+  "city",
+  "state",
+  "zip",
+];
+
+// Порядок полей, который ленд показывал всем странам до появления конфига.
+const ADDRESS_ORDER_DEFAULT = [
+  "street",
+  "house",
+  "apartment",
+  "city",
+  "state",
+  "zip",
+];
+
+export const addressFieldOrders = {
+  // A
+  DE: ADDRESS_ORDER_STREET_FIRST,
+  AT: ADDRESS_ORDER_STREET_FIRST,
+  CH: ADDRESS_ORDER_STREET_FIRST,
+  LI: ADDRESS_ORDER_STREET_FIRST,
+  BE: ADDRESS_ORDER_STREET_FIRST,
+  DK: ADDRESS_ORDER_STREET_FIRST,
+  NO: ADDRESS_ORDER_STREET_FIRST,
+  SE: ADDRESS_ORDER_STREET_FIRST,
+  FI: ADDRESS_ORDER_STREET_FIRST,
+  IS: ADDRESS_ORDER_STREET_FIRST,
+  EE: ADDRESS_ORDER_STREET_FIRST,
+  LV: ADDRESS_ORDER_STREET_FIRST,
+  LT: ADDRESS_ORDER_STREET_FIRST,
+  CZ: ADDRESS_ORDER_STREET_FIRST,
+  SK: ADDRESS_ORDER_STREET_FIRST,
+  SI: ADDRESS_ORDER_STREET_FIRST,
+  HR: ADDRESS_ORDER_STREET_FIRST,
+  BG: ADDRESS_ORDER_STREET_FIRST,
+  GR: ADDRESS_ORDER_STREET_FIRST,
+  SM: ADDRESS_ORDER_STREET_FIRST,
+  AD: ADDRESS_ORDER_STREET_FIRST,
+  PT: ADDRESS_ORDER_STREET_FIRST,
+  IT: ADDRESS_ORDER_STREET_FIRST,
+  ES: ADDRESS_ORDER_STREET_FIRST,
+
+  // B
+  FR: ADDRESS_ORDER_HOUSE_FIRST,
+  LU: ADDRESS_ORDER_HOUSE_FIRST,
+  MC: ADDRESS_ORDER_HOUSE_FIRST,
+  IE: ADDRESS_ORDER_HOUSE_FIRST,
+
+  // C
+  NL: ADDRESS_ORDER_NL,
+  HU: ADDRESS_ORDER_HU,
+
+  // D
+  AU: ADDRESS_ORDER_AU,
+};
+
+export const getAddressFieldOrder = (countryCode) =>
+  addressFieldOrders[(countryCode || "").toUpperCase()] ||
+  ADDRESS_ORDER_DEFAULT;
+
+// | НОМЕР ДОМА -----------------------------------------------------------------
+// В IE и IS дом часто без номера: сельские адреса и дома с именами вместо
+// номера. Требовать номер там — значит заставлять выдумывать его.
+export const houseNumberOptionalCountries = ["IE", "IS"];
+
+export const isHouseNumberRequired = (countryCode) =>
+  !houseNumberOptionalCountries.includes((countryCode || "").toUpperCase());
+
+// | КВАРТИРА -------------------------------------------------------------------
+// В DE квартиру в адресе не пишут — адресуют по фамилии на звонке, поле только
+// мешает. Везде остальное поле необязательное, скрываем только тут.
+export const apartmentHiddenCountries = ["DE"];
+
+export const hasApartmentField = (countryCode) =>
+  !apartmentHiddenCountries.includes((countryCode || "").toUpperCase());
+
+// | РЕГИОН / ПРОВИНЦИЯ ---------------------------------------------------------
+// Режимы поля:
+//   "select" — выбор из списка (AU, IT, IE), поле обязательное;
+//   "auto"   — не спрашиваем, вычисляем по индексу (ES);
+//   "text"   — свободный ввод, как было раньше (US, CA, BR и прочие вне ТЗ);
+//   "none"   — региона в адресе нет, поле скрыто.
+// На бэк уходит полное название региона, а не код.
+
+// Австралия: штат обязателен, но однозначно выводится из индекса.
+export const australiaStates = [
+  {
+    name: "Australian Capital Territory",
+    ranges: [
+      [200, 299],
+      [2600, 2618],
+      [2900, 2920],
+    ],
+  },
+  {
+    name: "New South Wales",
+    ranges: [
+      [1000, 2599],
+      [2619, 2899],
+      [2921, 2999],
+    ],
+  },
+  {
+    name: "Northern Territory",
+    ranges: [
+      [800, 899],
+      [900, 999],
+    ],
+  },
+  {
+    name: "Queensland",
+    ranges: [
+      [4000, 4999],
+      [9000, 9999],
+    ],
+  },
+  { name: "South Australia", ranges: [[5000, 5999]] },
+  { name: "Tasmania", ranges: [[7000, 7999]] },
+  {
+    name: "Victoria",
+    ranges: [
+      [3000, 3999],
+      [8000, 8999],
+    ],
+  },
+  {
+    name: "Western Australia",
+    ranges: [
+      [6000, 6797],
+      [6800, 6999],
+    ],
+  },
+];
+
+// Италия: 107 провинций. В адресе пишут двухбуквенный код (MI, RM), но на бэк
+// уходит полное название — так же, как приходило из свободного ввода раньше.
+export const italyProvinces = [
+  "Agrigento",
+  "Alessandria",
+  "Ancona",
+  "Aosta",
+  "Arezzo",
+  "Ascoli Piceno",
+  "Asti",
+  "Avellino",
+  "Bari",
+  "Barletta-Andria-Trani",
+  "Belluno",
+  "Benevento",
+  "Bergamo",
+  "Biella",
+  "Bologna",
+  "Bolzano",
+  "Brescia",
+  "Brindisi",
+  "Cagliari",
+  "Caltanissetta",
+  "Campobasso",
+  "Caserta",
+  "Catania",
+  "Catanzaro",
+  "Chieti",
+  "Como",
+  "Cosenza",
+  "Cremona",
+  "Crotone",
+  "Cuneo",
+  "Enna",
+  "Fermo",
+  "Ferrara",
+  "Firenze",
+  "Foggia",
+  "Forlì-Cesena",
+  "Frosinone",
+  "Genova",
+  "Gorizia",
+  "Grosseto",
+  "Imperia",
+  "Isernia",
+  "La Spezia",
+  "L'Aquila",
+  "Latina",
+  "Lecce",
+  "Lecco",
+  "Livorno",
+  "Lodi",
+  "Lucca",
+  "Macerata",
+  "Mantova",
+  "Massa-Carrara",
+  "Matera",
+  "Messina",
+  "Milano",
+  "Modena",
+  "Monza e della Brianza",
+  "Napoli",
+  "Novara",
+  "Nuoro",
+  "Oristano",
+  "Padova",
+  "Palermo",
+  "Parma",
+  "Pavia",
+  "Perugia",
+  "Pesaro e Urbino",
+  "Pescara",
+  "Piacenza",
+  "Pisa",
+  "Pistoia",
+  "Pordenone",
+  "Potenza",
+  "Prato",
+  "Ragusa",
+  "Ravenna",
+  "Reggio Calabria",
+  "Reggio Emilia",
+  "Rieti",
+  "Rimini",
+  "Roma",
+  "Rovigo",
+  "Salerno",
+  "Sassari",
+  "Savona",
+  "Siena",
+  "Siracusa",
+  "Sondrio",
+  "Sud Sardegna",
+  "Taranto",
+  "Teramo",
+  "Terni",
+  "Torino",
+  "Trapani",
+  "Trento",
+  "Treviso",
+  "Trieste",
+  "Udine",
+  "Varese",
+  "Venezia",
+  "Verbano-Cusio-Ossola",
+  "Vercelli",
+  "Verona",
+  "Vibo Valentia",
+  "Vicenza",
+  "Viterbo",
+];
+
+// CAP → провинция. Таблицы сгенерированы из справочника коммун comuni-json
+// (7904 коммуны) и проверены на всех его CAP, включая общегородские (56100 Pisa).
+// Первые три цифры CAP почти везде однозначно дают провинцию. Для 11 спорных
+// префиксов на границах провинций — точные диапазоны. CAP 12071 (CN/SV) и
+// 18025 (CN/IM) общие для двух провинций, их не определяем: игрок выберет сам.
+const ITALY_PROVINCE_BY_SIGLA = {
+  AG: "Agrigento",
+  AL: "Alessandria",
+  AN: "Ancona",
+  AO: "Aosta",
+  AP: "Ascoli Piceno",
+  AQ: "L'Aquila",
+  AR: "Arezzo",
+  AT: "Asti",
+  AV: "Avellino",
+  BA: "Bari",
+  BG: "Bergamo",
+  BI: "Biella",
+  BL: "Belluno",
+  BN: "Benevento",
+  BO: "Bologna",
+  BR: "Brindisi",
+  BS: "Brescia",
+  BT: "Barletta-Andria-Trani",
+  BZ: "Bolzano",
+  CA: "Cagliari",
+  CB: "Campobasso",
+  CE: "Caserta",
+  CH: "Chieti",
+  CL: "Caltanissetta",
+  CN: "Cuneo",
+  CO: "Como",
+  CR: "Cremona",
+  CS: "Cosenza",
+  CT: "Catania",
+  CZ: "Catanzaro",
+  EN: "Enna",
+  FC: "Forlì-Cesena",
+  FE: "Ferrara",
+  FG: "Foggia",
+  FI: "Firenze",
+  FM: "Fermo",
+  FR: "Frosinone",
+  GE: "Genova",
+  GO: "Gorizia",
+  GR: "Grosseto",
+  IM: "Imperia",
+  IS: "Isernia",
+  KR: "Crotone",
+  LC: "Lecco",
+  LE: "Lecce",
+  LI: "Livorno",
+  LO: "Lodi",
+  LT: "Latina",
+  LU: "Lucca",
+  MB: "Monza e della Brianza",
+  MC: "Macerata",
+  ME: "Messina",
+  MI: "Milano",
+  MN: "Mantova",
+  MO: "Modena",
+  MS: "Massa-Carrara",
+  MT: "Matera",
+  NA: "Napoli",
+  NO: "Novara",
+  NU: "Nuoro",
+  OR: "Oristano",
+  PA: "Palermo",
+  PC: "Piacenza",
+  PD: "Padova",
+  PE: "Pescara",
+  PG: "Perugia",
+  PI: "Pisa",
+  PN: "Pordenone",
+  PO: "Prato",
+  PR: "Parma",
+  PT: "Pistoia",
+  PU: "Pesaro e Urbino",
+  PV: "Pavia",
+  PZ: "Potenza",
+  RA: "Ravenna",
+  RC: "Reggio Calabria",
+  RE: "Reggio Emilia",
+  RG: "Ragusa",
+  RI: "Rieti",
+  RM: "Roma",
+  RN: "Rimini",
+  RO: "Rovigo",
+  SA: "Salerno",
+  SI: "Siena",
+  SO: "Sondrio",
+  SP: "La Spezia",
+  SR: "Siracusa",
+  SS: "Sassari",
+  SU: "Sud Sardegna",
+  SV: "Savona",
+  TA: "Taranto",
+  TE: "Teramo",
+  TN: "Trento",
+  TO: "Torino",
+  TP: "Trapani",
+  TR: "Terni",
+  TS: "Trieste",
+  TV: "Treviso",
+  UD: "Udine",
+  VA: "Varese",
+  VB: "Verbano-Cusio-Ossola",
+  VC: "Vercelli",
+  VE: "Venezia",
+  VI: "Vicenza",
+  VR: "Verona",
+  VT: "Viterbo",
+  VV: "Vibo Valentia",
+};
+
+const ITALY_CAP_PREFIXES = {
+  AG: "920 921",
+  AL: "150 151",
+  AN: "600 601",
+  AO: "110 111",
+  AP: "630 631",
+  AQ: "670 671",
+  AR: "520 521",
+  AT: "140 141",
+  AV: "830 831",
+  BA: "700 701",
+  BG: "240 241",
+  BI: "138 139",
+  BL: "320 321",
+  BN: "820 821",
+  BO: "400 401",
+  BR: "720 721",
+  BS: "250 251",
+  BT: "760 761",
+  BZ: "390 391",
+  CE: "810 811",
+  CH: "660 661",
+  CL: "930 931",
+  CN: "121",
+  CO: "220 221",
+  CR: "260 261",
+  CS: "870 871",
+  CT: "950 951",
+  CZ: "880 881",
+  EN: "940 941",
+  FC: "470 471 475",
+  FE: "440 441",
+  FG: "710 711",
+  FI: "500 501",
+  FM: "638 639",
+  FR: "030 031",
+  GE: "160 161",
+  GR: "580 581",
+  IM: "181",
+  KR: "888 889",
+  LC: "239",
+  LE: "730 731",
+  LI: "570 571",
+  LO: "268 269",
+  LT: "040 041",
+  LU: "550 551",
+  MB: "208 209",
+  MC: "620 621",
+  ME: "980 981",
+  MI: "200 201",
+  MN: "460 461",
+  MO: "410 411",
+  MS: "540 541",
+  MT: "750 751",
+  NA: "800 801",
+  NO: "280 281",
+  NU: "080 081",
+  PA: "900 901",
+  PC: "290 291",
+  PD: "350 351",
+  PE: "650 651",
+  PG: "060 061",
+  PI: "560 561",
+  PO: "590 591",
+  PR: "430 431",
+  PT: "510 511",
+  PU: "610 611",
+  PV: "270 271",
+  PZ: "850 851",
+  RA: "480 481",
+  RC: "890 891",
+  RE: "420 421",
+  RG: "970 971",
+  RI: "020 021",
+  RM: "000 001",
+  RN: "478 479",
+  RO: "450 451",
+  SA: "840 841",
+  SI: "530 531",
+  SO: "230 231",
+  SP: "190 191",
+  SR: "960 961",
+  SS: "070 071",
+  SV: "170 171",
+  TA: "740 741",
+  TE: "640 641",
+  TN: "380 381",
+  TO: "100 101",
+  TP: "910 911",
+  TR: "050 051",
+  TV: "310 311",
+  VA: "210 211",
+  VB: "288 289",
+  VC: "130 131",
+  VE: "300 301",
+  VI: "360 361",
+  VR: "370 371",
+  VT: "010 011",
+  VV: "898 899",
+};
+
+// Спорные префиксы 090 091 120 180 238 330 331 340 341 860 861: [от, до, провинция].
+const ITALY_CAP_RANGES = [
+  ["09010", "09011", "SU"],
+  ["09012", "09012", "CA"],
+  ["09013", "09017", "SU"],
+  ["09018", "09018", "CA"],
+  ["09019", "09027", "SU"],
+  ["09028", "09028", "CA"],
+  ["09029", "09031", "SU"],
+  ["09032", "09033", "CA"],
+  ["09034", "09041", "SU"],
+  ["09042", "09042", "CA"],
+  ["09043", "09043", "SU"],
+  ["09044", "09048", "CA"],
+  ["09049", "09049", "SU"],
+  ["09050", "09050", "CA"],
+  ["09051", "09059", "SU"],
+  ["09060", "09060", "CA"],
+  ["09061", "09066", "SU"],
+  ["09067", "09069", "CA"],
+  ["09070", "09099", "OR"],
+  ["09100", "09134", "CA"],
+  ["09170", "09170", "OR"],
+  ["12010", "12070", "CN"],
+  ["12072", "12089", "CN"],
+  ["18010", "18024", "IM"],
+  ["18026", "18039", "IM"],
+  ["23801", "23805", "LC"],
+  ["23806", "23806", "BG"],
+  ["23807", "23899", "LC"],
+  ["33010", "33061", "UD"],
+  ["33070", "33099", "PN"],
+  ["33100", "33100", "UD"],
+  ["33170", "33170", "PN"],
+  ["34010", "34018", "TS"],
+  ["34070", "34079", "GO"],
+  ["34100", "34151", "TS"],
+  ["34170", "34170", "GO"],
+  ["86010", "86049", "CB"],
+  ["86070", "86097", "IS"],
+  ["86100", "86100", "CB"],
+  ["86170", "86170", "IS"],
+];
+
+const ITALY_CAP_PREFIX_INDEX = Object.fromEntries(
+  Object.entries(ITALY_CAP_PREFIXES).flatMap(([sigla, prefixes]) =>
+    prefixes.split(" ").map((prefix) => [prefix, sigla]),
+  ),
+);
+
+// Ирландия: 26 графств. Eircode знают не все, и без него адрес опознают по
+// графству, а в столице — по почтовому району. Районы Dublin 19, 21 и 23 не
+// существуют, зато есть Dublin 6W.
+const DUBLIN_POSTAL_DISTRICTS = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  "6W",
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  20,
+  22,
+  24,
+].map((district) => `Dublin ${district}`);
+
+export const irelandCounties = [
+  "Carlow",
+  "Cavan",
+  "Clare",
+  "Cork",
+  "Donegal",
+  "Dublin",
+  ...DUBLIN_POSTAL_DISTRICTS,
+  "Galway",
+  "Kerry",
+  "Kildare",
+  "Kilkenny",
+  "Laois",
+  "Leitrim",
+  "Limerick",
+  "Longford",
+  "Louth",
+  "Mayo",
+  "Meath",
+  "Monaghan",
+  "Offaly",
+  "Roscommon",
+  "Sligo",
+  "Tipperary",
+  "Waterford",
+  "Westmeath",
+  "Wexford",
+  "Wicklow",
+];
+
+// Eircode routing key (первые три символа) → почтовое графство, по списку
+// 139 routing areas An Post. D01–D24 и D6W — почтовые районы Дублина, их
+// разбираем отдельно. A82 (Kells / Virginia: Meath и Cavan) и A92 (Ardee /
+// Drogheda: Louth и Meath) покрывают два графства — их не определяем.
+const IRELAND_ROUTING_KEYS = {
+  Carlow: "R21 R93",
+  Cavan: "H12 H14 H16",
+  Clare: "V14 V15 V95",
+  Cork: "P12 P14 P17 P24 P25 P31 P32 P36 P43 P47 P51 P56 P61 P67 P72 P75 P81 P85 T12 T23 T34 T45 T56",
+  Donegal: "F92 F93 F94",
+  Dublin: "A41 A42 A45 A94 A96 K32 K34 K36 K45 K56 K67 K78",
+  Galway: "H53 H54 H62 H65 H71 H91",
+  Kerry: "V23 V31 V92 V93",
+  Kildare: "R14 R51 R56 W12 W23 W34 W91",
+  Kilkenny: "R95",
+  Laois: "R32",
+  Leitrim: "N41",
+  Limerick: "V35 V42 V94",
+  Longford: "N39",
+  Louth: "A91",
+  Mayo: "F12 F23 F26 F28 F31 F35",
+  Meath: "A83 A84 A85 A86 C15",
+  Monaghan: "A75 A81 H18 H23",
+  Offaly: "R35 R42 R45",
+  Roscommon: "F42 F45 F52",
+  Sligo: "F56 F91",
+  Tipperary: "E21 E25 E32 E34 E41 E45 E53 E91",
+  Waterford: "X35 X42 X91",
+  Westmeath: "N37 N91",
+  Wexford: "Y21 Y25 Y34 Y35",
+  Wicklow: "A63 A67 A98 Y14",
+};
+
+const IRELAND_ROUTING_KEY_INDEX = Object.fromEntries(
+  Object.entries(IRELAND_ROUTING_KEYS).flatMap(([county, keys]) =>
+    keys.split(" ").map((key) => [key, county]),
+  ),
+);
+
+const getIrelandCountyByEircode = (postal) => {
+  const key = (postal || "")
+    .replace(/[^a-z0-9]/gi, "")
+    .toUpperCase()
+    .slice(0, 3);
+  if (key.length !== 3) return null;
+
+  // D02 → Dublin 2, D6W → Dublin 6W. Несуществующий район (D19) не подставляем.
+  const district = key.match(/^D(\d{2}|6W)$/);
+  if (district) {
+    const name = `Dublin ${district[1].replace(/^0/, "")}`;
+    return DUBLIN_POSTAL_DISTRICTS.includes(name) ? name : null;
+  }
+
+  return IRELAND_ROUTING_KEY_INDEX[key] || null;
+};
+
+// Испания: провинция однозначно определяется первыми двумя цифрами индекса,
+// поэтому поле не показываем вовсе, а значение подставляем сами.
+export const spainProvincesByCp = {
+  "01": "Álava",
+  "02": "Albacete",
+  "03": "Alicante",
+  "04": "Almería",
+  "05": "Ávila",
+  "06": "Badajoz",
+  "07": "Islas Baleares",
+  "08": "Barcelona",
+  "09": "Burgos",
+  10: "Cáceres",
+  11: "Cádiz",
+  12: "Castellón",
+  13: "Ciudad Real",
+  14: "Córdoba",
+  15: "A Coruña",
+  16: "Cuenca",
+  17: "Girona",
+  18: "Granada",
+  19: "Guadalajara",
+  20: "Gipuzkoa",
+  21: "Huelva",
+  22: "Huesca",
+  23: "Jaén",
+  24: "León",
+  25: "Lleida",
+  26: "La Rioja",
+  27: "Lugo",
+  28: "Madrid",
+  29: "Málaga",
+  30: "Murcia",
+  31: "Navarra",
+  32: "Ourense",
+  33: "Asturias",
+  34: "Palencia",
+  35: "Las Palmas",
+  36: "Pontevedra",
+  37: "Salamanca",
+  38: "Santa Cruz de Tenerife",
+  39: "Cantabria",
+  40: "Segovia",
+  41: "Sevilla",
+  42: "Soria",
+  43: "Tarragona",
+  44: "Teruel",
+  45: "Toledo",
+  46: "Valencia",
+  47: "Valladolid",
+  48: "Bizkaia",
+  49: "Zamora",
+  50: "Zaragoza",
+  51: "Ceuta",
+  52: "Melilla",
+};
+
+export const regionOptionsByCountry = {
+  AU: australiaStates.map((state) => state.name),
+  IT: italyProvinces,
+  IE: irelandCounties,
+};
+
+export const getRegionMode = (countryCode) => {
+  const code = (countryCode || "").toUpperCase();
+  if (regionOptionsByCountry[code]) return "select";
+  if (code === "ES") return "auto";
+  if (stateProvinceCountries.includes(code)) return "text";
+  return "none";
+};
+
+export const getRegionOptions = (countryCode) =>
+  regionOptionsByCountry[(countryCode || "").toUpperCase()] || [];
+
+const inRange = (value, [from, to]) => value >= from && value <= to;
+
+// Регион по индексу. Null — значит однозначно не определяется, спрашиваем.
+export const getRegionByPostalCode = (countryCode, postal) => {
+  const code = (countryCode || "").toUpperCase();
+  const digits = (postal || "").replace(/\D/g, "");
+
+  if (code === "AU") {
+    if (digits.length !== 4) return null;
+    const value = Number(digits);
+    return (
+      australiaStates.find((state) =>
+        state.ranges.some((range) => inRange(value, range)),
+      )?.name || null
+    );
+  }
+
+  if (code === "ES") {
+    if (digits.length < 2) return null;
+    return spainProvincesByCp[digits.slice(0, 2)] || null;
+  }
+
+  if (code === "IT") {
+    if (digits.length !== 5) return null;
+    // CAP одной длины, поэтому диапазоны сравниваем как строки.
+    const sigla =
+      ITALY_CAP_PREFIX_INDEX[digits.slice(0, 3)] ||
+      ITALY_CAP_RANGES.find(
+        ([from, to]) => digits >= from && digits <= to,
+      )?.[2];
+    return ITALY_PROVINCE_BY_SIGLA[sigla] || null;
+  }
+
+  // Графство известно уже по первым трём символам Eircode.
+  if (code === "IE") return getIrelandCountyByEircode(postal);
+
+  return null;
+};
+
+// | ПОДПИСИ ПОЛЕЙ ПО СТРАНЕ ----------------------------------------------------
+// Ключи переводов для стран, где поле называется иначе. Остальные страны берут
+// значения из DEFAULT_FIELD_LABELS.
+export const countryFieldLabels = {
+  AU: {
+    apartment: "apartmentUnitPlaceholder",
+    city: "suburbPlaceholder",
+    state: "stateTerritoryPlaceholder",
+  },
+  IT: { state: "provincePlaceholder" },
+  IE: { state: "countyPlaceholder" },
+};
+
+export const DEFAULT_FIELD_LABELS = {
+  apartment: "apartmentPlaceholder",
+  city: "cityPlaceholder",
+  state: "statePlaceholder",
+};
+
+export const getFieldLabelKey = (countryCode, field) =>
+  countryFieldLabels[(countryCode || "").toUpperCase()]?.[field] ||
+  DEFAULT_FIELD_LABELS[field];
+
+// Местные термины с примером, как в countryZipCodeTranslates: игрок пишет адрес
+// так, как он принят в стране, поэтому от языка сайта подпись не зависит.
+export const countryLocalFieldLabels = {
+  // Скандинавы уточняют квартиру этажом и стороной площадки: «3. tv».
+  DK: { apartment: "Etage / Side (3. tv.)" },
+  // Норвежский номер квартиры — bruksenhetsnummer: этаж + номер, «H0301».
+  NO: { apartment: "Bruksenhet (H0301)" },
+  SE: { apartment: "Våning / Sida" },
+  // Бельгия — «bus», номер ящика в доме.
+  BE: { apartment: "Bus" },
+  // Португалия — «andar», этаж и сторона: «3º Esq».
+  PT: { apartment: "Andar (3º Esq.)" },
+};
+
+export const getLocalFieldLabel = (countryCode, field) =>
+  countryLocalFieldLabels[(countryCode || "").toUpperCase()]?.[field] || null;
+
+// | POSTAL CODE FORMAT (маска ввода + валидация + пример) ----------------------
+// mask: "#" — слот для символа, остальные символы — литералы-разделители.
+// regex — финальная валидация. format — кастомный форматтер (приоритет над mask).
+const cleanPostal = (v) => (v || "").replace(/[^a-z0-9]/gi, "").toUpperCase();
+
+const applyMask = (value, mask) => {
+  const chars = cleanPostal(value);
+  let out = "";
+  let ci = 0;
+  for (const m of mask) {
+    if (ci >= chars.length) break;
+    out += m === "#" ? chars[ci++] : m;
+  }
+  return out;
+};
+
+// UK — переменная длина: пробел перед последними 3 символами.
+const formatUK = (value) => {
+  const s = cleanPostal(value).slice(0, 7);
+  return s.length > 3 ? `${s.slice(0, -3)} ${s.slice(-3)}` : s;
+};
+
+// Индексы с буквенным префиксом страны: LT-12345, LV-1234, L-1234, AD100.
+// Игрок обычно набирает одни цифры, поэтому префикс дописываем сами. Если он
+// всё же ввёл его руками, цифры берём после префикса — иначе вышло бы LV-LV1234.
+const formatPrefixed =
+  (prefix, digits, separator = "-") =>
+  (value) => {
+    const cleaned = cleanPostal(value);
+    const rest = cleaned.startsWith(prefix)
+      ? cleaned.slice(prefix.length)
+      : cleaned;
+    const nums = rest.replace(/\D/g, "").slice(0, digits);
+    return nums ? `${prefix}${separator}${nums}` : "";
+  };
+
+const DIGIT4 = /^\d{4}$/;
+const DIGIT5 = /^\d{5}$/;
+const DIGIT6 = /^\d{6}$/;
+const DIGIT3_2 = /^\d{3} ?\d{2}$/; // NNN NN
+
+export const postalCodeFormats = {
+  // Цифра + разделитель
+  US: { example: "10001", mask: "#####-####", regex: /^\d{5}(-\d{4})?$/ },
+  PL: { example: "00-001", mask: "##-###", regex: /^\d{2}-\d{3}$/ },
+  PT: { example: "4988-565", mask: "####-###", regex: /^\d{4}-\d{3}$/ },
+  BR: { example: "01310-100", mask: "#####-###", regex: /^\d{5}-\d{3}$/ },
+  JP: { example: "100-0001", mask: "###-####", regex: /^\d{3}-\d{4}$/ },
+  SE: { example: "123 45", mask: "### ##", regex: DIGIT3_2 },
+  CZ: { example: "110 00", mask: "### ##", regex: DIGIT3_2 },
+  SK: { example: "010 01", mask: "### ##", regex: DIGIT3_2 },
+  GR: { example: "104 31", mask: "### ##", regex: DIGIT3_2 },
+
+  // Буквенно-цифровые
+  GB: {
+    example: "SW1A 1AA",
+    format: formatUK,
+    regex: /^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$/i,
+  },
+  CA: {
+    example: "M5V 3A8",
+    mask: "### ###",
+    regex: /^[A-Z]\d[A-Z] ?\d[A-Z]\d$/i,
+  },
+  NL: { example: "1234 AB", mask: "#### ##", regex: /^\d{4} ?[A-Z]{2}$/i },
+  IE: {
+    example: "D02 X285",
+    mask: "### ####",
+    regex: /^[A-Z]\d[A-Z\d] ?[A-Z\d]{4}$/i,
+  },
+
+  // 5 цифр
+  DE: { example: "10115", mask: "#####", regex: DIGIT5 },
+  FR: { example: "75001", mask: "#####", regex: DIGIT5 },
+  ES: { example: "28001", mask: "#####", regex: DIGIT5 },
+  IT: { example: "00100", mask: "#####", regex: DIGIT5 },
+  MX: { example: "01000", mask: "#####", regex: DIGIT5 },
+  TR: { example: "34000", mask: "#####", regex: DIGIT5 },
+  UA: { example: "01001", mask: "#####", regex: DIGIT5 },
+  EE: { example: "10111", mask: "#####", regex: DIGIT5 },
+  KR: { example: "06236", mask: "#####", regex: DIGIT5 },
+  FI: { example: "00100", mask: "#####", regex: DIGIT5 },
+  HR: { example: "10000", mask: "#####", regex: DIGIT5 },
+  RS: { example: "11000", mask: "#####", regex: DIGIT5 },
+  MY: { example: "50000", mask: "#####", regex: DIGIT5 },
+  TH: { example: "10200", mask: "#####", regex: DIGIT5 },
+  ID: { example: "10110", mask: "#####", regex: DIGIT5 },
+
+  // 6 цифр
+  SG: { example: "123456", mask: "######", regex: DIGIT6 },
+  IN: { example: "110001", mask: "######", regex: DIGIT6 },
+  CN: { example: "100000", mask: "######", regex: DIGIT6 },
+  RU: { example: "101000", mask: "######", regex: DIGIT6 },
+  RO: { example: "010011", mask: "######", regex: DIGIT6 },
+  KZ: { example: "010000", mask: "######", regex: DIGIT6 },
+
+  // 4 цифры
+  HU: { example: "1051", mask: "####", regex: DIGIT4 },
+  BE: { example: "1000", mask: "####", regex: DIGIT4 },
+  AT: { example: "1010", mask: "####", regex: DIGIT4 },
+  DK: { example: "1050", mask: "####", regex: DIGIT4 },
+  CH: { example: "8001", mask: "####", regex: DIGIT4 },
+  NO: { example: "0001", mask: "####", regex: DIGIT4 },
+  AU: { example: "2000", mask: "####", regex: DIGIT4 },
+  SI: { example: "1000", mask: "####", regex: DIGIT4 },
+  BG: { example: "1000", mask: "####", regex: DIGIT4 },
+  NZ: { example: "6011", mask: "####", regex: DIGIT4 },
+  PH: { example: "1000", mask: "####", regex: DIGIT4 },
+  ZA: { example: "0001", mask: "####", regex: DIGIT4 },
+  LI: { example: "9490", mask: "####", regex: DIGIT4 },
+
+  // 3 цифры
+  IS: { example: "101", mask: "###", regex: /^\d{3}$/ },
+
+  // Буквенный префикс страны
+  LT: {
+    example: "LT-12345",
+    format: formatPrefixed("LT", 5),
+    regex: /^LT-\d{5}$/,
+  },
+  LV: {
+    example: "LV-1234",
+    format: formatPrefixed("LV", 4),
+    regex: /^LV-\d{4}$/,
+  },
+  LU: { example: "L-1234", format: formatPrefixed("L", 4), regex: /^L-\d{4}$/ },
+  // Андорра: семь приходов, AD100…AD700.
+  AD: {
+    example: "AD500",
+    format: formatPrefixed("AD", 3, ""),
+    regex: /^AD[1-7]00$/,
+  },
+
+  // Микрогосударства: индекс всегда из одного диапазона.
+  MC: { example: "98000", mask: "#####", regex: /^980\d{2}$/ },
+  SM: { example: "47890", mask: "#####", regex: /^4789\d$/ },
+};
+
+export const getPostalCodeFormat = (countryCode) =>
+  postalCodeFormats[(countryCode || "").toUpperCase()] || null;
+
+// Авто-форматирование значения по стране (вставка разделителей, верхний регистр).
+export const formatPostalCode = (countryCode, value) => {
+  const spec = getPostalCodeFormat(countryCode);
+  if (!spec) return value;
+  if (spec.format) return spec.format(value);
+  if (spec.mask) return applyMask(value, spec.mask);
+  return value;
+};
+
+// Валидация формата. Если формат для страны не задан — fallback ≥2 символа.
+export const validatePostalCodeFormat = (countryCode, value) => {
+  const spec = getPostalCodeFormat(countryCode);
+  const trimmed = (value || "").trim();
+  if (spec && spec.regex) return spec.regex.test(trimmed);
+  return trimmed.length >= 2;
 };

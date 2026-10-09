@@ -13,23 +13,30 @@ jobs:
       fail-fast: false
       matrix:
         site:
-          - promogb.com
           - goldbet.wiki
-          - goldbet.website
-          - goldbet.click
+          - promogb.com
+          - goldv2k8.xyz
+          - goldx7p3.xyz
+          - goldv5s3w.xyz
+          - golds3s22.xyz
+          - golds0h7.xyz
+          - golds0h7.com
+          - goldm2n4.xyz
+          - goldm2n4.com
+          - goldimh6b.xyz
+          - golde5q1.xyz
+          - golde5q1.com
           - goldbetio.com
+          - goldcvr88.xyz
+          - goldbet.website
           - goldbet.sbs
           - goldbet.monster
           - goldbet.lol
-          - goldbet.cam
-          - goldbet.cfd
-          - goldbet.cyou
           - goldbet.fun
-          - goldcvr88.xyz
-          - goldimh6b.xyz
-          - golds3s22.xyz
-          - goldv5s3w.xyz
-          - goldxe892.xyz
+          - goldbet.cyou
+          - goldbet.click
+          - goldbet.cfd
+          - goldbet.cam
           - goldm5r2.com
           - goldq8n1.com
           - goldv3k7.com

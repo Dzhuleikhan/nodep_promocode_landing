@@ -5,20 +5,27 @@ export const fetchDomain = async (countryCode) => {
   const fallback = "g01d63t1.win";
 
   try {
-    const url = `https://${window.location.host}/domain-api/api/v2/rotator/available-domain?country=${countryCode}`;
-    const response = await fetch(url);
+    const url = `/api/domain/available?country=${countryCode}`;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 2500);
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timer);
 
     if (!response.ok) throw new Error("Bad API response");
 
     const data = await response.json();
-    return data.domain;
+    console.log(data.domains?.[0]);
+    return data.domains?.[0] || fallback;
   } catch (err) {
     console.log("API failed, applying fallback Domain");
     return fallback;
   }
 };
 
-export let newDomain = await fetchDomain(geoData.countryCode);
+export let newDomain = "g01d63t1.win";
+fetchDomain(geoData.countryCode).then((domain) => {
+  newDomain = domain;
+});
 
 function updatingBonusValueNumbers() {
   const dropd = document.querySelectorAll(".form-bonus-dropdown");
@@ -31,7 +38,7 @@ function updatingBonusValueNumbers() {
     }
   });
   const initialBonusValueInput = document.querySelectorAll(
-    ".auth-form-bonus input"
+    ".auth-form-bonus input",
   );
   initialBonusValueInput.forEach((input) => {
     input.value = "welcome-bonus-1";

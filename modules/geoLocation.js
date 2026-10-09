@@ -2,6 +2,7 @@ import {
   countryLanguagesMap,
   SupportedLanguages,
   countryZipCodeTranslates,
+  getPostalCodeFormat,
 } from "../public/data";
 
 export async function getLocation() {
@@ -9,7 +10,11 @@ export async function getLocation() {
 
   try {
     const url = `https://${window.location.host}/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c`;
-    const response = await fetch(url);
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 2500);
+
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timer);
 
     if (!response.ok) throw new Error("Bad API response");
 
@@ -35,20 +40,41 @@ export const getSupportedLanguage = (countryCode) => {
   return "en";
 };
 
-localStorage.setItem(
-  "preferredLanguage",
-  getSupportedLanguage(geoData.countryCode)
-);
+// Коды браузера, расходящиеся с кодами словарей ленда
+const BROWSER_LANG_ALIASES = {
+  da: "dk", // датский: браузер шлёт ISO-код da, словарь лежит под dk
+  no: "nb", // норвежский: браузер шлёт макро-код
+  nn: "nb", // нюнорск отдаём на букмоле
+  lg: "lm", // луганда: ISO-код lg, словарь лежит под lm
+  ak: "tw", // акан: словарь лежит под tw (чви)
+};
+
+// Ленд открывается на языке браузера; не поддерживаем его — показываем en.
+// Гео на выбор языка не влияет.
+// Считаем здесь, а не в language.js: значение уходит в /register как lang,
+// а twoStepForm читает localStorage раньше, чем language.js успевает отработать.
+export const getInitialLanguage = () => {
+  // navigator.language даёт локали вида pt-BR / az-Latn-AZ — берём первый сегмент
+  const browserLang = navigator.language.split("-")[0];
+  const lang = BROWSER_LANG_ALIASES[browserLang] ?? browserLang;
+
+  return SupportedLanguages.includes(lang) ? lang : "en";
+};
+
+localStorage.setItem("preferredLanguage", getInitialLanguage());
+export const language = localStorage.getItem("preferredLanguage");
 
 function setHeaderFlag(countryCode) {
   const headerFlagImage = document.querySelector(".header-country-flag");
-  headerFlagImage.src = `./img/flags/${countryCode.toLowerCase()}.svg`;
+  headerFlagImage.src = `https://3344112-img.b-cdn.net/graphic/flags/flag-${countryCode.toLowerCase()}.svg`;
   headerFlagImage.classList.remove("hidden");
 }
 setHeaderFlag(geoData.countryCode);
 
 export const settingZipCodePlaceholder = (countryCode) => {
   const zipCodeLabel = document.querySelector(".two-step-zipcode-label");
-  const placeholder = countryZipCodeTranslates[countryCode] || "ZIP Code";
-  zipCodeLabel.textContent = placeholder;
+  const base = countryZipCodeTranslates[countryCode] || "ZIP Code";
+  const format = getPostalCodeFormat(countryCode);
+  // Подсказываем юзеру ожидаемый формат прямо в лейбле, напр. "Kod pocztowy (00-001)"
+  zipCodeLabel.textContent = format?.example ? `${base} (${format.example})` : base;
 };
