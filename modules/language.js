@@ -131,6 +131,7 @@ const countryLangMap = {
   LU: "lb",
   MT: "mt",
   GH: "tw",
+  IS: "is",
 };
 
 async function determineLanguage() {
