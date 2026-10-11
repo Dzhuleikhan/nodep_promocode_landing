@@ -310,7 +310,6 @@ export const countryCurrencyData = [
       "VA",
       "BG",
       "HR",
-      "IS",
       "AL",
       "BA",
       "MD",
@@ -529,6 +528,16 @@ export const countryCurrencyData = [
     amount: "56.000",
     spins: "200 FS",
     highrollerAmount: "2.200",
+  },
+  {
+    countries: ["IS"],
+    countryCurrency: "ISK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Icelandic krona",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
+    amount: "1.500.000",
+    spins: "200 FS",
+    highrollerAmount: "25.000",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -766,6 +775,7 @@ export const countryLanguagesMap = {
   TN: ["ar"],
   NG: ["ha", "yo", "ig"],
   GH: ["tw"],
+  IS: ["is"],
 };
 
 export const SupportedLanguages = [
@@ -809,6 +819,7 @@ export const SupportedLanguages = [
   "yo",
   "ig",
   "tw",
+  "is",
 ];
 
 export const languageOptions = {
@@ -850,6 +861,7 @@ export const languageOptions = {
   yo: { name: "YO", flag: "ng" },
   ig: { name: "IG", flag: "ng" },
   tw: { name: "TW", flag: "gh" },
+  is: { name: "IS", flag: "is" },
 };
 
 export const nodepBonuses = [
@@ -1003,4 +1015,5 @@ export const depositBonusAmount = [
   { currency: "CZK", amount: 42000 },
   { currency: "ZAR", amount: 36000 },
   { currency: "SLL", amount: 9000 },
+  { currency: "ISK", amount: 275000 },
 ];
