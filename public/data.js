@@ -300,10 +300,8 @@ export const countryCurrencyData = [
       "ME",
       "SM",
       "VA",
-      "NO",
       "BG",
       "HR",
-      "IS",
       "AL",
       "BA",
       "MD",
@@ -502,6 +500,16 @@ export const countryCurrencyData = [
     countryCurrencyIcon: "./img/currencies/nok.svg",
     amount: "16.400",
     spins: "200FS",
+  },
+  {
+    countries: ["IS"],
+    countryCurrency: "ISK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Icelandic krona",
+    countryCurrencyIcon: "./img/currencies/nok.svg",
+    amount: "1.500.000",
+    spins: "200FS",
+    percent: "550%",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -762,6 +770,7 @@ export const countryLanguagesMap = {
   LY: ["ar"],
   TN: ["ar"],
   MT: ["mt"],
+  IS: ["is"],
 };
 
 export const languageOptions = {
@@ -803,6 +812,7 @@ export const languageOptions = {
   yo: { name: "YO", flag: "ng" },
   ig: { name: "IG", flag: "ng" },
   tw: { name: "TW", flag: "gh" },
+  is: { name: "IS", flag: "is" },
 };
 
 export const SupportedLanguages = [
@@ -844,6 +854,7 @@ export const SupportedLanguages = [
   "yo",
   "ig",
   "tw",
+  "is",
 ];
 
 export const nodepBonuses = [
@@ -954,6 +965,15 @@ export const nodepBonuses = [
       "klarna",
     ],
   },
+  {
+    currency: "ISK",
+    currencyName: "ICELANDIC KRONA",
+    symbol: "kr",
+    bonusAmount: "1400",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
+    moneyAmount: "1500000",
+    paymentMethods: ["visa", "mastercard", "google-pay", "apple-pay", "crypto"],
+  },
 ];
 
 export const countryZipCodeTranslates = {
@@ -995,6 +1015,7 @@ export const countryZipCodeTranslates = {
   SI: "Poštna številka",
   LT: "Pašto kodas",
   HR: "Poštanski broj",
+  IS: "Póstnúmer",
 };
 
 

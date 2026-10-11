@@ -1,5 +1,6 @@
 import {
   countryFlags,
+  countryCurrencyData,
   getPostalCodeMode,
   getPostalCodeFormat,
   getAddressFieldOrder,
@@ -205,39 +206,33 @@ twoStepBonusCheckbox.forEach((checkbox) => {
 });
 
 export const settingInitialBonusValue = (currency) => {
-  if (exceptCurrencies.includes(currency)) {
-    document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-      text.innerHTML = "100%";
-    });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "200FS";
-    });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "100% + 200FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "100%";
-    });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "200FS";
-    });
-  } else {
-    document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
-      text.innerHTML = "200%";
-    });
-    document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
-      text.innerHTML = "25FS";
-    });
-    document
-      .querySelector(".welcome-bonus-input")
-      .setAttribute("data-text", "200% + 25FS on your first deposit");
-    document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
-      el.innerHTML = "200%";
-    });
-    document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
-      el.innerHTML = "25FS";
-    });
-  }
+  const isExcept = exceptCurrencies.includes(currency);
+  // У валюты может быть своя связка процент + спины (напр. ISK — 550% + 200FS)
+  const currencyEntry = countryCurrencyData.find(
+    (entry) => entry.countryCurrency === currency,
+  );
+  const percent = currencyEntry?.percent ?? (isExcept ? "100%" : "200%");
+  const spins = currencyEntry?.percent
+    ? currencyEntry.spins
+    : isExcept
+      ? "200FS"
+      : "25FS";
+
+  document.querySelectorAll(".two-step-bonus-percent").forEach((text) => {
+    text.innerHTML = percent;
+  });
+  document.querySelectorAll(".two-step-bonus-spins").forEach((text) => {
+    text.innerHTML = spins;
+  });
+  document
+    .querySelector(".welcome-bonus-input")
+    .setAttribute("data-text", `${percent} + ${spins} on your first deposit`);
+  document.querySelectorAll(".applied-bonus-percent").forEach((el) => {
+    el.innerHTML = percent;
+  });
+  document.querySelectorAll(".applied-bonus-spins").forEach((el) => {
+    el.innerHTML = spins;
+  });
 };
 
 // | INPUTS
@@ -1697,8 +1692,6 @@ const focusFirstField = (step) =>
 export const focusActiveStep = () =>
   focusFirstFieldIn(document.querySelector(".two-step-form-step.is-active"));
 
-// focus: false — для «Назад»: игрок возвращается на уже пройденный шаг, поля
-// там заполнены, и автофокус на мобилке зря поднимал клавиатуру
 // focus: false — для «Назад»: игрок возвращается на уже пройденный шаг, поля
 // там заполнены, и автофокус на мобилке зря поднимал клавиатуру
 const showStep = (step, { focus = true } = {}) => {
