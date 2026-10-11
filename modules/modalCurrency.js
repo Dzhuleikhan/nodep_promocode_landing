@@ -39,9 +39,10 @@ export function settingHeroBonusValues(currency) {
     (entry) => entry.countryCurrency === currency,
   );
 
-  const percent = exceptCurrenciesForPercent.includes(currency)
-    ? "100%"
-    : "200%";
+  // Процент берём из записи валюты, если он там задан (напр. ISK — 550%)
+  const percent =
+    currencyEntry?.percent ??
+    (exceptCurrenciesForPercent.includes(currency) ? "100%" : "200%");
   document.querySelectorAll(".two-step-bonus-percent").forEach((el) => {
     el.innerHTML = percent;
   });
