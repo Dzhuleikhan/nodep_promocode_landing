@@ -310,7 +310,6 @@ export const countryCurrencyData = [
       "VA",
       "BG",
       "HR",
-      "IS",
       "AL",
       "BA",
       "MD",
@@ -529,6 +528,17 @@ export const countryCurrencyData = [
     amount: "56.000",
     spins: "200 FS",
     highrollerAmount: "2.200",
+  },
+  {
+    countries: ["IS"],
+    countryCurrency: "ISK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Icelandic krona",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
+    amount: "1.500.000",
+    spins: "200 FS",
+    highrollerAmount: "25.000",
+    percent: "550%",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -875,6 +885,7 @@ export const countryLanguagesMap = {
   QA: ["ar"],
   OM: ["ar"],
   BH: ["ar"],
+  IS: ["is"],
 };
 
 export const SupportedLanguages = [
@@ -922,6 +933,7 @@ export const SupportedLanguages = [
   "yo",
   "ig",
   "tw",
+  "is",
 ];
 
 export const nodepBonuses = [
@@ -1092,6 +1104,7 @@ export const countryZipCodeTranslates = {
   QA: "الرمز البريدي",
   OM: "الرمز البريدي",
   BH: "الرمز البريدي",
+  IS: "Póstnúmer",
 };
 
 // | POSTAL CODE FIELD MODE -----------------------------------------------------

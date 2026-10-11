@@ -4,7 +4,7 @@ export const translations = {
     postalCodeHint:
       "If you know your postal code, enter it – this will speed up verification. The information is optional.",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>royal joker</span>`,
-    heroSubtitle: `Activate the <span>welcome bonus</span> and get <span>100% + 200 FS</span> on your first deposit.`,
+    heroSubtitle: `Activate the <span>welcome bonus</span> and get <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> on your first deposit.`,
     heroBtn: "get bonus",
     slideStep1Title: "Register",
     slideStep1Text: 'Click "Get Bonus" and complete the free registration.',
@@ -78,7 +78,7 @@ export const translations = {
     postalCodeHint:
       "Si vous le connaissez, saisissez-le — cela accélère la vérification, mais ce n'est pas obligatoire.",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>royal joker</span>.`,
-    heroSubtitle: `Activez le <span>bonus de bienvenue</span> et recevez <span>100 % + 200 FS</span> sur votre premier dépôt.`,
+    heroSubtitle: `Activez le <span>bonus de bienvenue</span> et recevez <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> sur votre premier dépôt.`,
     heroBtn: "obtenir un bonus",
     slideStep1Title: "Registre",
     slideStep1Text:
@@ -153,7 +153,7 @@ export const translations = {
     postalCodeHint:
       "Dacă îl știți, introduceți-l — accelerează verificarea, dar nu este obligatoriu.",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>royal joker</span>`,
-    heroSubtitle: `Activează <span>bonusul de bun venit</span> și primește <span>100% + 200 FS</span> la prima ta depunere.`,
+    heroSubtitle: `Activează <span>bonusul de bun venit</span> și primește <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> la prima ta depunere.`,
     heroBtn: "obține bonus",
     slideStep1Title: "Înregistrează-te",
     slideStep1Text:
@@ -228,7 +228,7 @@ export const translations = {
     postalCodeHint:
       "Ha tudja, adja meg — felgyorsítja az ellenőrzést, de nem kötelező.",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>royal joker</span> játékban`,
-    heroSubtitle: `Aktiváld a <span>üdvözlő bónuszt</span>, és szerezz <span>100% + 200 ingyenes pörgetést</span> az első befizetésedre.`,
+    heroSubtitle: `Aktiváld a <span>üdvözlő bónuszt</span>, és szerezz <span><span class="two-step-bonus-percent">100%</span> + 200 ingyenes pörgetést</span> az első befizetésedre.`,
     heroBtn: "bónusz igénylése",
     slideStep1Title: "Regisztrálj",
     slideStep1Text:
@@ -304,7 +304,7 @@ export const translations = {
       "Jeśli go znasz, wpisz — przyspieszy to weryfikację, ale nie jest wymagane.",
     heroTitle:
       "odebrój swój bonus <br/> <span>100 darmowych spinów</span> <br/> w <span>royal joker</span>",
-    heroSubtitle: `Aktywuj <span>bonus powitalny</span> i odbierz <span>100% + 200 darmowych spinów</span> przy pierwszym depozycie.`,
+    heroSubtitle: `Aktywuj <span>bonus powitalny</span> i odbierz <span><span class="two-step-bonus-percent">100%</span> + 200 darmowych spinów</span> przy pierwszym depozycie.`,
     heroBtn: "odbierz bonus",
     slideStep1Title: "Zarejestruj się",
     slideStep1Text: 'Kliknij "Odbierz Bonus" i zakończ darmową rejestrację.',
@@ -379,7 +379,7 @@ export const translations = {
       "Pokud jej znáte, zadejte jej — urychlí to ověření, ale není to povinné.",
     heroTitle:
       "získejte svůj bonus <br/> <span>100 volných točení</span> <br/> ve hře <span>royal joker</span>",
-    heroSubtitle: `Aktivujte <span>uvítací bonus</span> a získejte <span>100 % + 200 FS</span> na svůj první vklad.`,
+    heroSubtitle: `Aktivujte <span>uvítací bonus</span> a získejte <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> na svůj první vklad.`,
     heroBtn: "získat bonus",
     slideStep1Title: "Registrovat se",
     slideStep1Text:
@@ -456,7 +456,7 @@ export const translations = {
       "Če ga poznate, ga vnesite — pospeši preverjanje, vendar ni obvezno.",
     heroTitle:
       "prevzemite svoj bonus <br/> <span>100 brezplačnih vrtljajev</span> <br/> v <span>royal joker</span>",
-    heroSubtitle: `Aktiviraj <span>vstopni bonus</span> in prejmi <span>100 % + 200 FS</span> ob svojem prvem pologu.`,
+    heroSubtitle: `Aktiviraj <span>vstopni bonus</span> in prejmi <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> ob svojem prvem pologu.`,
     heroBtn: "prevzemite bonus",
     slideStep1Title: "Registrirajte se",
     slideStep1Text:
@@ -531,7 +531,7 @@ export const translations = {
     postalCodeHint:
       "Αν τον γνωρίζετε, καταχωρίστε τον — επιταχύνει την επαλήθευση, αλλά δεν είναι υποχρεωτικό.",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>royal joker</span>`,
-    heroSubtitle: `Ενεργοποίησε το <span>μπόνους καλωσορίσματος</span> και πάρε <span>100% + 200 FS</span> στην πρώτη σου κατάθεση.`,
+    heroSubtitle: `Ενεργοποίησε το <span>μπόνους καλωσορίσματος</span> και πάρε <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> στην πρώτη σου κατάθεση.`,
     heroBtn: "πάρε το μπόνους",
     slideStep1Title: "Εγγραφή",
     slideStep1Text:
@@ -607,7 +607,7 @@ export const translations = {
     postalCodeHint:
       "Hvis du vet det, skriv det inn — det fremskynder verifiseringen, men er valgfritt.",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `Aktiver <span>velkomstbonusen</span> og få <span>100 % + 200 FS</span> på ditt første innskudd.`,
+    heroSubtitle: `Aktiver <span>velkomstbonusen</span> og få <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> på ditt første innskudd.`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer deg",
     slideStep1Text: 'Klikk på "Få bonus" og fullfør den gratis registreringen.',
@@ -681,7 +681,7 @@ export const translations = {
     postalCodeHint:
       "Om du känner till det, ange det — det snabbar upp verifieringen, men är valfritt.",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `Aktivera <span>välkomstbonusen</span> och få <span>100 % + 200 FS</span> på din första insättning.`,
+    heroSubtitle: `Aktivera <span>välkomstbonusen</span> och få <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> på din första insättning.`,
     heroBtn: "hämta bonus",
     slideStep1Title: "Registrera dig",
     slideStep1Text:
@@ -756,7 +756,7 @@ export const translations = {
     postalCodeHint:
       "Ak ho poznáte, zadajte ho — urýchli to overenie, ale nie je to povinné.",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>royal joker</span>`,
-    heroSubtitle: `Aktivuj <span>uvítací bonus</span> a získaj <span>100 % + 200 FS</span> pri svojom prvom vklade.`,
+    heroSubtitle: `Aktivuj <span>uvítací bonus</span> a získaj <span><span class="two-step-bonus-percent">100 %</span> + 200 FS</span> pri svojom prvom vklade.`,
     heroBtn: "získať bonus",
     slideStep1Title: "Registrovať sa",
     slideStep1Text:
@@ -831,7 +831,7 @@ export const translations = {
     postalCodeHint:
       "Если знаете — введите. Это ускорит верификацию, но не обязательно.",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>royal joker</span>`,
-    heroSubtitle: `Активируйте <span>приветственный бонус</span> и получите <span>100% + 200 FS</span> на первый депозит.`,
+    heroSubtitle: `Активируйте <span>приветственный бонус</span> и получите <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> на первый депозит.`,
     heroBtn: "получить бонус",
     slideStep1Title: "Зарегистрируйтесь",
     slideStep1Text:
@@ -906,7 +906,7 @@ export const translations = {
     postalCodeHint:
       "Si lo conoce, ingréselo: acelera la verificación, pero no es obligatorio.",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>royal joker</span>`,
-    heroSubtitle: `Activa el <span>bono de bienvenida</span> y recibe <span>100 % + 200 giros gratis</span> en tu primer depósito.`,
+    heroSubtitle: `Activa el <span>bono de bienvenida</span> y recibe <span><span class="two-step-bonus-percent">100 %</span> + 200 giros gratis</span> en tu primer depósito.`,
     heroBtn: "obtener bono",
     slideStep1Title: "Regístrate",
     slideStep1Text:
@@ -981,7 +981,7 @@ export const translations = {
     postalCodeHint:
       "Se souber, insira — acelera a verificação, mas não é obrigatório.",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>royal joker</span>`,
-    heroSubtitle: `Ativa o <span>bónus de boas-vindas</span> e recebe <span>100% + 200 FS</span> no teu primeiro depósito.`,
+    heroSubtitle: `Ativa o <span>bónus de boas-vindas</span> e recebe <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> no teu primeiro depósito.`,
     heroBtn: "obter bônus",
     slideStep1Title: "Cadastre-se",
     slideStep1Text: 'Clique em "Obter Bônus" e complete o cadastro gratuito.',
@@ -1055,7 +1055,7 @@ export const translations = {
     postalCodeHint:
       "Wenn Sie Ihre Postleitzahl kennen, geben Sie sie ein – so beschleunigen Sie die Verifizierung. Die Angabe ist optional.",
     heroTitle: `Beanspruche deinen Bonus <br/> <span>100 Freispiele</span> <br/> in <span>Royal Joker</span>`,
-    heroSubtitle: `Aktiviere den <span>Willkommensbonus</span> und erhalte <span>100% + 200 FS</span> auf Ihre erste Einzahlung.`,
+    heroSubtitle: `Aktiviere den <span>Willkommensbonus</span> und erhalte <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> auf Ihre erste Einzahlung.`,
     heroBtn: "Bonus erhalten",
     slideStep1Title: "Registrieren",
     slideStep1Text:
@@ -1130,7 +1130,7 @@ export const translations = {
     postalCodeHint:
       "Se lo conosci, inseriscilo: velocizza la verifica, ma non è obbligatorio.",
     heroTitle: `Richiedi il tuo bonus <br/> <span>100 giri gratuiti</span> <br/> su <span>Royal Joker</span>`,
-    heroSubtitle: `Attiva il <span>bonus di benvenuto</span> e ottieni <span>100% + 200 FS</span> sul tuo primo deposito.`,
+    heroSubtitle: `Attiva il <span>bonus di benvenuto</span> e ottieni <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> sul tuo primo deposito.`,
     heroBtn: "ottieni bonus",
     slideStep1Title: "Registrati",
     slideStep1Text:
@@ -1205,7 +1205,7 @@ export const translations = {
     postalCodeHint:
       "Kui tead, sisesta see — see kiirendab kontrolli, kuid pole kohustuslik.",
     heroTitle: `nõua oma boonus <br/> <span>100 tasuta keerutust</span> <br/> mängus <span>royal joker</span>`,
-    heroSubtitle: `Aktiveeri <span>tervitamisboonus</span> ja saa oma esimesel sissemaksel <span>100% + 200 FS</span>.`,
+    heroSubtitle: `Aktiveeri <span>tervitamisboonus</span> ja saa oma esimesel sissemaksel <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span>.`,
     heroBtn: "saada boonus",
     slideStep1Title: "Registreeru",
     slideStep1Text:
@@ -1280,7 +1280,7 @@ export const translations = {
     postalCodeHint:
       "Ja zināt, ievadiet to — tas paātrina pārbaudi, taču nav obligāti.",
     heroTitle: `saņemiet savu bonusu <br/> <span>100 bezmaksas griezieni</span> <br/> spēlē <span>royal joker</span>`,
-    heroSubtitle: `Aktivizējiet <span>laipni lūdzam bonusu</span> un saņemiet pirmā depozīta gadījumā <span>100% + 200 FS</span>.`,
+    heroSubtitle: `Aktivizējiet <span>laipni lūdzam bonusu</span> un saņemiet pirmā depozīta gadījumā <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span>.`,
     heroBtn: "saņemt bonusu",
     slideStep1Title: "Reģistrējieties",
     slideStep1Text:
@@ -1355,7 +1355,7 @@ export const translations = {
     postalCodeHint:
       "Jei žinote, įveskite — tai paspartins patikrą, bet nėra privaloma.",
     heroTitle: `atsiimkite savo premiją <br/> <span>100 nemokamų sukimų</span> <br/> žaidime <span>royal joker</span>`,
-    heroSubtitle: `Aktyvuokite <span>pasveikinimo premiją</span> ir gaukite pirmojo įnašo metu <span>100% + 200 FS</span>.`,
+    heroSubtitle: `Aktyvuokite <span>pasveikinimo premiją</span> ir gaukite pirmojo įnašo metu <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span>.`,
     heroBtn: "gauti premiją",
     slideStep1Title: "Registracija",
     slideStep1Text:
@@ -1430,7 +1430,7 @@ export const translations = {
     postalCodeHint:
       "Ako ga znate, unesite ga — ubrzava provjeru, ali nije obavezno.",
     heroTitle: `preuzmite svoj bonus <br/> <span>100 besplatnih okretaja</span> <br/> u igri <span>royal joker</span>`,
-    heroSubtitle: `Aktivirajte <span>bonus dobrodošlice</span> i osvojite <span>100% + 200 FS</span> na vaš prvi depozit.`,
+    heroSubtitle: `Aktivirajte <span>bonus dobrodošlice</span> i osvojite <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> na vaš prvi depozit.`,
     heroBtn: "preuzmi bonus",
     slideStep1Title: "Registracija",
     slideStep1Text:
@@ -1505,7 +1505,7 @@ export const translations = {
     postalCodeHint:
       "Ukijua, iweke — inaharakisha uthibitishaji, lakini si lazima.",
     heroTitle: `dai bonasi yako <br/> <span>mizunguko 100 bure</span> <br/> katika <span>royal joker</span>`,
-    heroSubtitle: `Washa <span>bonasi ya kukaribisha</span> na upate <span>100% + 200 FS</span> kwenye amana yako ya kwanza.`,
+    heroSubtitle: `Washa <span>bonasi ya kukaribisha</span> na upate <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> kwenye amana yako ya kwanza.`,
     heroBtn: "pata bonasi",
     slideStep1Title: "Jisajili",
     slideStep1Text: 'Bonyeza "Pata Bonasi" na ukamilishe usajili wa bure.',
@@ -1579,7 +1579,7 @@ export const translations = {
     postalCodeHint:
       "Niba uyizi, andika — byihutisha kugenzura, ariko ntibitegekwa.",
     heroTitle: `akira bonus yawe <br/> <span>100 free spins</span> <br/> muri <span>royal joker</span>`,
-    heroSubtitle: `Koresha <span>welcome bonus</span> ubone <span>100% + 200 FS</span> ku ishyiramo rya mbere.`,
+    heroSubtitle: `Koresha <span>welcome bonus</span> ubone <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> ku ishyiramo rya mbere.`,
     heroBtn: "akira bonus",
     slideStep1Title: "Iyandikishe",
     slideStep1Text: 'Kanda "Akira Bonus" urangize kwiyandikisha ku buntu.',
@@ -1653,7 +1653,7 @@ export const translations = {
     postalCodeHint:
       "إذا كنت تعرفه، فأدخله — فهذا يسرّع عملية التحقق، لكنه ليس إلزاميًا.",
     heroTitle: `احصل على مكافأتك <br/> <span>100 دورة مجانية</span> <br/> في <span>royal joker</span>`,
-    heroSubtitle: `قم بتفعيل <span>مكافأة الترحيب</span> واحصل على <span>100% + 200 FS</span> على أول إيداع.`,
+    heroSubtitle: `قم بتفعيل <span>مكافأة الترحيب</span> واحصل على <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> على أول إيداع.`,
     heroBtn: "احصل على المكافأة",
     slideStep1Title: "التسجيل",
     slideStep1Text: 'اضغط على "احصل على المكافأة" وأكمل التسجيل المجاني.',
@@ -1727,7 +1727,7 @@ export const translations = {
     postalCodeHint:
       "Ако го знаете, въведете го — ускорява проверката, но не е задължително.",
     heroTitle: `вземете своя бонус <br/> <span>100 безплатни завъртания</span> <br/> в <span>royal joker</span>`,
-    heroSubtitle: `Активирайте <span>бонуса за добре дошли</span> и получете <span>100% + 200 безплатни завъртания</span> при първия си депозит.`,
+    heroSubtitle: `Активирайте <span>бонуса за добре дошли</span> и получете <span><span class="two-step-bonus-percent">100%</span> + 200 безплатни завъртания</span> при първия си депозит.`,
     heroBtn: "вземи бонус",
     slideStep1Title: "Регистрация",
     slideStep1Text:
@@ -1802,7 +1802,7 @@ export const translations = {
     postalCodeHint:
       "Hvis du kender den, så indtast den — det fremskynder verificeringen, men er valgfrit.",
     heroTitle: `få din bonus <br/> <span>100 gratis spins</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `Aktivér <span>velkomstbonussen</span> og få <span>100% + 200 gratis spins</span> på din første indbetaling.`,
+    heroSubtitle: `Aktivér <span>velkomstbonussen</span> og få <span><span class="two-step-bonus-percent">100%</span> + 200 gratis spins</span> på din første indbetaling.`,
     heroBtn: "få bonus",
     slideStep1Title: "Registrer",
     slideStep1Text: 'Klik på "Få bonus" og gennemfør den gratis registrering.',
@@ -1876,7 +1876,7 @@ export const translations = {
     postalCodeHint:
       "Als u het weet, vul het in — het versnelt de verificatie, maar is niet verplicht.",
     heroTitle: `claim je bonus <br/> <span>100 gratis spins</span> <br/> in <span>royal joker</span>`,
-    heroSubtitle: `Activeer de <span>welkomstbonus</span> en krijg <span>100% + 200 gratis spins</span> bij je eerste storting.`,
+    heroSubtitle: `Activeer de <span>welkomstbonus</span> en krijg <span><span class="two-step-bonus-percent">100%</span> + 200 gratis spins</span> bij je eerste storting.`,
     heroBtn: "pak bonus",
     slideStep1Title: "Registreren",
     slideStep1Text: 'Klik op "Pak bonus" en voltooi de gratis registratie.',
@@ -1951,7 +1951,7 @@ export const translations = {
     postalCodeHint:
       "Jos tiedät sen, syötä se — se nopeuttaa vahvistusta, mutta ei ole pakollista.",
     heroTitle: `lunasta bonuksesi <br/> <span>100 ilmaiskierrosta</span> <br/> pelissä <span>royal joker</span>`,
-    heroSubtitle: `Aktivoi <span>tervetuliaisbonus</span> ja saat <span>100% + 200 ilmaiskierrosta</span> ensimmäiselle talletuksellesi.`,
+    heroSubtitle: `Aktivoi <span>tervetuliaisbonus</span> ja saat <span><span class="two-step-bonus-percent">100%</span> + 200 ilmaiskierrosta</span> ensimmäiselle talletuksellesi.`,
     heroBtn: "lunasta bonus",
     slideStep1Title: "Rekisteröidy",
     slideStep1Text:
@@ -2026,7 +2026,7 @@ export const translations = {
     postalCodeHint:
       "Якщо знаєте — введіть. Це пришвидшить верифікацію, але не обов'язково.",
     heroTitle: `отримайте свій бонус <br/> <span>100 безкоштовних обертань</span> <br/> у <span>royal joker</span>`,
-    heroSubtitle: `Активуйте <span>вітальний бонус</span> та отримайте <span>100% + 200 безкоштовних обертань</span> на свій перший депозит.`,
+    heroSubtitle: `Активуйте <span>вітальний бонус</span> та отримайте <span><span class="two-step-bonus-percent">100%</span> + 200 безкоштовних обертань</span> на свій перший депозит.`,
     heroBtn: "отримати бонус",
     slideStep1Title: "Реєстрація",
     slideStep1Text:
@@ -2100,7 +2100,7 @@ export const translations = {
     pageTitle: "🎁 您的奖金已准备好 - Goldbet",
     postalCodeHint: "如果知道，请填写——这会加快验证速度，但不是必填项。",
     heroTitle: `领取您的奖金 <br/> <span>100 次免费旋转</span> <br/> 在 <span>royal joker</span>`,
-    heroSubtitle: `激活<span>欢迎奖金</span>并在首次存款时获得<span>100% + 200 次免费旋转</span>。`,
+    heroSubtitle: `激活<span>欢迎奖金</span>并在首次存款时获得<span><span class="two-step-bonus-percent">100%</span> + 200 次免费旋转</span>。`,
     heroBtn: "领取奖金",
     slideStep1Title: "注册",
     slideStep1Text: "点击“领取奖金”并完成免费注册。",
@@ -2173,7 +2173,7 @@ export const translations = {
     postalCodeHint:
       "Má tá sé ar eolas agat, cuir isteach é — luathaíonn sé an fíorú, ach níl sé éigeantach.",
     heroTitle: `faigh do bhónas <br/> <span>100 rothlú saor in aisce</span> <br/> i <span>royal joker</span>`,
-    heroSubtitle: `Gníomhachtaigh an <span>bónas fáilte</span> agus faigh <span>100% + 200 rothlú saor in aisce</span> ar do chéad taisce.`,
+    heroSubtitle: `Gníomhachtaigh an <span>bónas fáilte</span> agus faigh <span><span class="two-step-bonus-percent">100%</span> + 200 rothlú saor in aisce</span> ar do chéad taisce.`,
     heroBtn: "faigh bónas",
     slideStep1Title: "Cláraigh",
     slideStep1Text:
@@ -2249,7 +2249,7 @@ export const translations = {
     postalCodeHint:
       "Wann Dir et kennt, gitt et an — et beschleunegt d'Verifikatioun, ass awer net obligatoresch.",
     heroTitle: `huel däi Bonus <br/> <span>100 gratis Dréihungen</span> <br/> am <span>royal joker</span>`,
-    heroSubtitle: `Aktivéier de <span>Wëllkomm-Bonus</span> a kréien <span>100% + 200 gratis Dréihungen</span> op deng éischt Abezuelung.`,
+    heroSubtitle: `Aktivéier de <span>Wëllkomm-Bonus</span> a kréien <span><span class="two-step-bonus-percent">100%</span> + 200 gratis Dréihungen</span> op deng éischt Abezuelung.`,
     heroBtn: "Bonus kréien",
     slideStep1Title: "Registréieren",
     slideStep1Text: 'Klick op "Bonus kréien" a fëll déi gratis Umeldung aus.',
@@ -2323,7 +2323,7 @@ export const translations = {
     postalCodeHint:
       "Jekk tafu, daħħlu — iħaffef il-verifika, iżda mhux obbligatorju.",
     heroTitle: `ikseb il-bonus tiegħek <br/> <span>100 spins b'xejn</span> <br/> fi <span>royal joker</span>`,
-    heroSubtitle: `Attiva l-<span>bonus ta' merħba</span> u ikseb <span>100% + 200 spins b'xejn</span> fuq l-ewwel depożitu tiegħek.`,
+    heroSubtitle: `Attiva l-<span>bonus ta' merħba</span> u ikseb <span><span class="two-step-bonus-percent">100%</span> + 200 spins b'xejn</span> fuq l-ewwel depożitu tiegħek.`,
     heroBtn: "ikseb bonus",
     slideStep1Title: "Irreġistra",
     slideStep1Text: 'Ikklikkja "Ikseb Bonus" u imla r-reġistrazzjoni bla ħlas.',
@@ -2396,7 +2396,7 @@ export const translations = {
     pageTitle: "🎁 የእርስዎ ቦነስ ዝግጁ ነው - Goldbet",
     postalCodeHint: "የሚያውቁት ከሆነ ያስገቡት — ማረጋገጡን ያፋጥናል፣ ግን አስገዳጅ አይደለም።",
     heroTitle: `ቦነስዎን ይጠይቁ <br/> <span>100 ነፃ ሽክርክሮች</span> <br/> በ <span>royal joker</span>`,
-    heroSubtitle: `የ<span>እንኳን ደህና መጡ</span> ቦነስን ያንቁ እና <span>100% + 200 FS</span> በመጀመሪያ ተቀማጭዎ ይቀበሉ።`,
+    heroSubtitle: `የ<span>እንኳን ደህና መጡ</span> ቦነስን ያንቁ እና <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> በመጀመሪያ ተቀማጭዎ ይቀበሉ።`,
     heroBtn: "ቦነስ ይውሰዱ",
     slideStep1Title: "ይመዝገቡ",
     slideStep1Text: "“ቦነስ ይውሰዱ” የሚለውን ይጫኑ እና ነፃ ምዝገባውን ያጠናቅቁ።",
@@ -2463,7 +2463,7 @@ export const translations = {
     postalCodeHint:
       "Bw'oba ogimanyi, giwandiike — kyanguyako okukakasa, naye si kya buwaze.",
     heroTitle: `Saba bonus yo <br/> <span>100 free spins</span> <br/> mu <span>royal joker</span>`,
-    heroSubtitle: `Tandika <span>welcome bonus</span> ofune <span>100% + 200 FS</span> ku deposit yo esooka.`,
+    heroSubtitle: `Tandika <span>welcome bonus</span> ofune <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> ku deposit yo esooka.`,
     heroBtn: "funa bonus",
     slideStep1Title: "Wewandiise",
     slideStep1Text: 'Nyiga "Funa Bonus" okomeewo ku kwewandiisa okw’obwereere.',
@@ -2531,7 +2531,7 @@ export const translations = {
     postalCodeHint:
       "Idan ka sani, shigar da shi — yana hanzarta tabbatarwa, amma ba dole ba ne.",
     heroTitle: `karɓi bonus ɗinka <br/> <span>100 free spins</span> <br/> a cikin <span>royal joker</span>`,
-    heroSubtitle: `Kunna <span>bonus na maraba</span> ka samu <span>100% + 200 FS</span> a ajiya na farko.`,
+    heroSubtitle: `Kunna <span>bonus na maraba</span> ka samu <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> a ajiya na farko.`,
     heroBtn: "karɓi bonus",
     slideStep1Title: "Yi Rajista",
     slideStep1Text: 'Danna "Karɓi Bonus" ka kammala rajistar kyauta.',
@@ -2605,7 +2605,7 @@ export const translations = {
     postalCodeHint:
       "Tí o bá mọ̀ ọ́n, tẹ̀ ẹ́ sí i — yóò mú ìfọwọ́sí yá, ṣùgbọ́n kì í ṣe dandan.",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span>100 free spins</span> <br/> ní <span>royal joker</span>`,
-    heroSubtitle: `Mu <span>bonus ìbẹ̀rẹ̀</span> ṣiṣẹ́ ki o gba <span>100% + 200 FS</span> lori idogo akọkọ rẹ.`,
+    heroSubtitle: `Mu <span>bonus ìbẹ̀rẹ̀</span> ṣiṣẹ́ ki o gba <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> lori idogo akọkọ rẹ.`,
     heroBtn: "gba ẹ̀bùn",
     slideStep1Title: "Forúkọ sílẹ̀",
     slideStep1Text: 'Tẹ "Gba Bonus" ki o pari ìforúkọsílẹ̀ ọfẹ.',
@@ -2679,7 +2679,7 @@ export const translations = {
     postalCodeHint:
       "Ọ bụrụ na ị maara ya, tinye ya — ọ na-eme ka nkwenye dị ngwa, mana ọ abụghị mmecha.",
     heroTitle: `nata onyinye gị <br/> <span>100 free spins</span> <br/> na <span>royal joker</span>`,
-    heroSubtitle: `Mee ka <span>bonus nnabata</span> rụọ ọrụ ma nweta <span>100% + 200 FS</span> na nkwụnye ego mbụ gị.`,
+    heroSubtitle: `Mee ka <span>bonus nnabata</span> rụọ ọrụ ma nweta <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> na nkwụnye ego mbụ gị.`,
     heroBtn: "nata onyinye",
     slideStep1Title: "Debanye aha",
     slideStep1Text: "Pịa 'Nata Bonus' ma mezue ndebanye aha n'efu.",
@@ -2753,7 +2753,7 @@ export const translations = {
     postalCodeHint:
       "Sɛ wunim a, kyerɛw — ɛbɛma adansedi no ayɛ ntɛm, nanso ɛnhia.",
     heroTitle: `gye wo boni <br/> <span>100 free spins</span> <br/> wɔ <span>royal joker</span> mu`,
-    heroSubtitle: `Ma <span>akyɛde a wɔde ma foforo</span> no nyɛ adwuma na nya <span>100% + 200 FS</span> wɔ wo nsɛm a wode bɛto mu mprenu no so.`,
+    heroSubtitle: `Ma <span>akyɛde a wɔde ma foforo</span> no nyɛ adwuma na nya <span><span class="two-step-bonus-percent">100%</span> + 200 FS</span> wɔ wo nsɛm a wode bɛto mu mprenu no so.`,
     heroBtn: "gye boni",
     slideStep1Title: "Kyerɛw Wo Din",
     slideStep1Text: 'Klik "Gye Boni" na wie ahyɛde a wontua hwee no.',
@@ -2821,5 +2821,70 @@ export const translations = {
     areYouSure: `Wo gyidi mu? <br /> Wo nkɔso bɛyera`,
     keepRegistering: "Kɔ so kyerɛw wo din",
     returnToWebsite: "San kɔ wɛbsaet no so",
+  },
+  is: {
+    pageTitle: "🎁 Bónusinn þinn er tilbúinn - Goldbet",
+    postalCodeHint: "Ef þú veist póstnúmerið þitt skaltu slá það inn – það flýtir fyrir staðfestingu. Upplýsingarnar eru valfrjálsar.",
+    heroTitle: "sæktu bónusinn þinn <br/> <span>100 ókeypis snúninga</span> <br/> í <span>royal joker</span>",
+    heroSubtitle: "Virkjaðu <span>móttökubónusinn</span> og fáðu <span><span class='two-step-bonus-percent'>100%</span> + 200 FS</span> á fyrstu innborgun þinni.",
+    heroBtn: "fá bónus",
+    slideStep1Title: "Skráðu þig",
+    slideStep1Text: "Smelltu á „Fá bónus“ og ljúktu við ókeypis skráningu.",
+    slideStep2Title: "Virkjaðu bónusinn",
+    slideStep2Text: "Finndu bónusinn þinn í „Bónusmiðstöðinni“ og virkjaðu hann til að byrja að spila.",
+    slideStep3Title: "Spilaðu",
+    slideStep3Text: "Ókeypis snúningarnir þínir eru tilbúnir. Góða skemmtun!",
+    footerText: "Allt efni á þessari vefsíðu er eingöngu veitt í markaðs- og upplýsingaskyni. Það telst ekki fagleg, lagaleg, fjárhagsleg, læknisfræðileg eða önnur ráðgjöf. Við veitum engar yfirlýsingar eða ábyrgðir af neinu tagi varðandi nákvæmni, heilleika eða hæfi upplýsinganna. Öll notkun þín á þessu efni er alfarið á þína eigin ábyrgð. Vefsíðan ber enga ábyrgð á tjóni eða skaða sem kann að hljótast af notkun þinni á vefsíðunni eða efni hennar.",
+    backBtn: "Til baka",
+    closeBtn: "Loka",
+    depToBalance: "<span>100 ÓKEYPIS SNÚNINGAR</span>",
+    withoutDeposit: "Án innborgunar",
+    step1Title: "Veldu bónusinn þinn",
+    welcomeBonus: "Móttökubónus",
+    welcomeBonusText: "Allt að <span class='two-step-welcome-amount'>120,000</span> <span class='two-step-welcome-symbol'></span> + <span class='two-step-bonus-spins'></span> á fyrstu innborgun þinni",
+    cryptoBonus: "Satoshi-bónus",
+    cryptoBonusText: "150% á innborganir í rafmynt",
+    highRollerBonus: "High Roller-bónus",
+    highRollerBonusText: "200% á innborganir yfir <span class='bonus-highroller-amount'></span> <span class='two-step-welcome-symbol'></span>",
+    withoutBonus: "Án bónuss",
+    withoutBonusText: "Þú færð engan bónus",
+    iHavePromoCode: "Ég er með kynningarkóða",
+    promoCodePlaceHolder: "Kynningarkóði",
+    promoCodeApplyBtn: "Nota",
+    continueBtn: "Halda áfram",
+    step2Title: "Sláðu inn netfangið þitt",
+    emailPlaceholder: "Sláðu inn netfang",
+    passwordPlaceholder: "Sláðu inn lykilorð",
+    step3Title: "Hvað heitir þú?",
+    namePlaceholder: "Fornafn",
+    lastNamePlaceholder: "Eftirnafn",
+    birthdayPlaceholder: "Veldu fæðingardaginn þinn",
+    age18Alert: "Þú verður að vera 18 ára eða eldri.",
+    invalidDate: "Ógild dagsetning",
+    male: "Karl",
+    female: "Kona",
+    finalStepBtn: "Lokaskref",
+    step4Title: "Veldu gjaldmiðil",
+    countryPlaceholder: "Veldu land",
+    currencyPlaceholder: "Veldu gjaldmiðil",
+    phoneNumberPlaceholder: "Símanúmer",
+    countryNotFound: "Land fannst ekki",
+    searchPlaceholder: "Leita",
+    addressPlaceholder: "Sláðu inn heimilisfang",
+    cityPlaceholder: "Sláðu inn bæ / borg",
+    statePlaceholder: "Fylki / hérað",
+    streetPlaceholder: "Sláðu inn götuheiti",
+    houseNumberPlaceholder: "Húsnúmer",
+    apartmentPlaceholder: "Íbúð",
+    apartmentUnitPlaceholder: "Eining",
+    suburbPlaceholder: "Hverfi",
+    stateTerritoryPlaceholder: "Fylki / svæði",
+    provincePlaceholder: "Hérað",
+    countyPlaceholder: "Sýsla",
+    zipCodePlaceholder: "Sláðu inn póstnúmer",
+    createAccountBtn: "Stofna aðgang",
+    areYouSure: "Ertu viss? <br /> Framvindan þín mun glatast",
+    keepRegistering: "Halda skráningu áfram",
+    returnToWebsite: "Aftur á vefsíðuna",
   },
 };

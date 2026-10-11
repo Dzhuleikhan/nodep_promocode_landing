@@ -213,6 +213,13 @@ export const settingInitialBonusValue = (currency) => {
     (entry) => entry.countryCurrency === currency,
   );
 
+  // Процент в подзаголовке: у валюты может быть свой (напр. ISK — 550%),
+  // иначе оставляем тот, что написан в переводе
+  document.querySelectorAll(".two-step-bonus-percent").forEach((el) => {
+    el.dataset.defaultPercent ??= el.textContent;
+    el.textContent = currencyEntry?.percent ?? el.dataset.defaultPercent;
+  });
+
   if (currencyEntry) {
     document.querySelectorAll(".two-step-welcome-amount").forEach((el) => {
       el.innerHTML = currencyEntry.amount;
@@ -1630,8 +1637,6 @@ const focusFirstField = (step) =>
 export const focusActiveStep = () =>
   focusFirstFieldIn(document.querySelector(".two-step-form-step.is-active"));
 
-// focus: false — для «Назад»: игрок возвращается на уже пройденный шаг, поля
-// там заполнены, и автофокус на мобилке зря поднимал клавиатуру
 // focus: false — для «Назад»: игрок возвращается на уже пройденный шаг, поля
 // там заполнены, и автофокус на мобилке зря поднимал клавиатуру
 const showStep = (step, { focus = true } = {}) => {

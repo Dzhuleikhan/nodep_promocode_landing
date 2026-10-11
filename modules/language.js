@@ -44,6 +44,7 @@ export const languageOptions = [
   { code: "yo", name: "YO", flag: "ng" },
   { code: "ig", name: "IG", flag: "ng" },
   { code: "tw", name: "TW", flag: "gh" },
+  { code: "is", name: "IS", flag: "is" },
 ];
 
 const html = document.querySelector("html");
