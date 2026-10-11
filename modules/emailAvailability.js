@@ -80,7 +80,7 @@ export function checkEmailAvailability(email) {
 
 // Локализованный текст для занятой почты (как у phoneAvailability — вшито сюда).
 // Языки без своего перевода → en-фолбэк.
-// NB: переводы am/ha/yo/ig/tw/rw/sw/mt/ga/lb — best-effort, нужна вычитка носителями.
+// NB: переводы am/ha/yo/ig/tw/rw/sw/mt/ga/lb/is — best-effort, нужна вычитка носителями.
 const TAKEN_MESSAGES = {
   en: "This email can't be used, please enter another",
   ru: "Этот e-mail нельзя использовать, укажите другой",
@@ -119,6 +119,7 @@ const TAKEN_MESSAGES = {
   yo: "A kò lè lo imeèlì yìí, jọ̀wọ́ tẹ òmíràn sí i",
   ig: "Enweghị ike iji email a, biko tinye nke ọzọ",
   tw: "Wontumi mfa saa email yi nni dwuma, fa foforɔ",
+  is: "Ekki er hægt að nota þetta netfang, sláðu inn annað",
 };
 
 export function emailTakenMessage(lang) {
