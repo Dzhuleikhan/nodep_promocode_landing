@@ -93,6 +93,7 @@ function updateButtonText(lang) {
     fi: "FI",
     dk: "DK",
     bg: "BG",
+    is: "IS",
   };
   headerLangBtn.setAttribute(
     "src",
