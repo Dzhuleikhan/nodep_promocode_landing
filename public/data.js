@@ -300,10 +300,8 @@ export const countryCurrencyData = [
       "ME",
       "SM",
       "VA",
-      "NO",
       "BG",
       "HR",
-      "IS",
       "AL",
       "BA",
       "MD",
@@ -502,6 +500,16 @@ export const countryCurrencyData = [
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NOK.svg",
     amount: "56.000",
     spins: "200FS",
+  },
+  {
+    countries: ["IS"],
+    countryCurrency: "ISK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Icelandic krona",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
+    amount: "1.500.000",
+    spins: "200FS",
+    percent: "550%",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -726,6 +734,7 @@ export const countryLanguagesMap = {
   UG: ["lm"],
   NG: ["ha", "yo", "ig"],
   GH: ["tw"],
+  IS: ["is"],
 };
 
 export const SupportedLanguages = [
@@ -764,6 +773,7 @@ export const SupportedLanguages = [
   "yo",
   "ig",
   "tw",
+  "is",
 ];
 
 export const nodepBonuses = [
@@ -915,6 +925,7 @@ export const languageOptions = {
   ga: { name: "GA", flag: "ie" },
   lb: { name: "LB", flag: "lu" },
   mt: { name: "MT", flag: "mt" },
+  is: { name: "IS", flag: "is" },
 };
 
 export const bonusSumAndWager = [
@@ -957,4 +968,5 @@ export const bonusSumAndWager = [
   { currency: "TZS", amount: 25000 },
   { currency: "UGX", amount: 40000 },
   { currency: "SLL", amount: 250 },
+  { currency: "ISK", amount: 1400 },
 ];
