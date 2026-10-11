@@ -300,10 +300,8 @@ export const countryCurrencyData = [
       "ME",
       "SM",
       "VA",
-      "NO",
       "BG",
       "HR",
-      "IS",
       "AL",
       "BA",
       "MD",
@@ -502,6 +500,16 @@ export const countryCurrencyData = [
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/NOK.svg",
     amount: "56.000",
     spins: "200",
+  },
+  {
+    countries: ["IS"],
+    countryCurrency: "ISK",
+    countryCurrencySymbol: "kr",
+    countryCurrencyFullName: "Icelandic krona",
+    countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
+    amount: "1.500.000",
+    spins: "200",
+    percent: "550%",
   },
   {
     countries: ["ZA", "NA", "LS", "SZ", "BW", "MZ", "AO", "MW", "ZM"],
@@ -778,6 +786,7 @@ export const countryLanguagesMap = {
   LY: ["ar"],
   TN: ["ar"],
   MT: ["mt"],
+  IS: ["is"],
 };
 
 export const languageOptions = {
@@ -819,6 +828,7 @@ export const languageOptions = {
   yo: { name: "YO", flag: "ng" },
   ig: { name: "IG", flag: "ng" },
   tw: { name: "TW", flag: "gh" },
+  is: { name: "IS", flag: "is" },
 };
 
 export const SupportedLanguages = [
@@ -863,6 +873,7 @@ export const SupportedLanguages = [
   "yo",
   "ig",
   "tw",
+  "is",
 ];
 
 export const nodepBonuses = [
@@ -1037,4 +1048,5 @@ export const countryZipCodeTranslates = {
   TZ: "Postal Code",
   UG: "Postal Code",
   RW: "Postal Code",
+  IS: "Póstnúmer",
 };
