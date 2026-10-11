@@ -74,7 +74,7 @@ export function checkPhoneAvailability(e164) {
 
 // Локализованный текст для занятого номера. Текст вшит сюда (как у email-guard),
 // чтобы не размазывать по translations.js. Языки без своего перевода → en-фолбэк.
-// NB: переводы am/ha/yo/ig/tw/rw/sw/mt/ga/lb/lm — best-effort, нужна вычитка носителями.
+// NB: переводы am/ha/yo/ig/tw/rw/sw/mt/ga/lb/is/lm — best-effort, нужна вычитка носителями.
 const TAKEN_MESSAGES = {
   en: "This number can't be used, please enter another",
   ru: "Номер нельзя использовать, укажите другой",
@@ -113,6 +113,7 @@ const TAKEN_MESSAGES = {
   yo: "A kò lè lo nọ́mbà yìí, jọ̀wọ́ tẹ òmíràn sí i",
   ig: "Enweghị ike iji nọmba a, biko tinye nke ọzọ",
   tw: "Wontumi mfa saa nɔma yi nni dwuma, fa foforɔ",
+  is: "Ekki er hægt að nota þetta númer, sláðu inn annað",
 };
 
 export function phoneTakenMessage(lang) {
