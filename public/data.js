@@ -508,7 +508,7 @@ export const countryCurrencyData = [
     countryCurrencyFullName: "Icelandic krona",
     countryCurrencyIcon: "https://3344112-img.b-cdn.net/currency_icons/ISK.svg",
     amount: "1.500.000",
-    spins: "200FS",
+    spins: "200",
     percent: "550%",
   },
   {
