@@ -228,8 +228,12 @@ export const settingInitialBonusValue = (currency) => {
     document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
       el.innerHTML = currencyEntry.countryCurrencySymbol;
     });
+    // В hero перевод сам дописывает после числа «Free Spins» — туда только число,
+    // иначе выходит «200FS Free Spins». В карточке бонуса «FS» оставляем.
     document.querySelectorAll(".two-step-bonus-spins").forEach((el) => {
-      el.innerHTML = currencyEntry.spins;
+      el.innerHTML = el.closest('[data-translate="heroSubtitle"]')
+        ? currencyEntry.spins.replace(/\s*FS$/i, "")
+        : currencyEntry.spins;
     });
     document.querySelectorAll(".bonus-currency-symbol").forEach((el) => {
       el.innerHTML = currencyEntry.countryCurrency;
