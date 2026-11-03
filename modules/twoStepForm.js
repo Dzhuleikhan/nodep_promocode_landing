@@ -881,7 +881,11 @@ twoStepFormMain.addEventListener("submit", (e) => {
   );
 });
 
-gsap.to(".preloader", { opacity: 0, duration: 0.25, delay: 0.5 });
+gsap.to(".preloader", {
+  opacity: 0,
+  duration: 0.2,
+  onComplete: () => document.querySelector(".preloader")?.remove(),
+});
 
 // Closing modal
 
