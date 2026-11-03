@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS, JS и шрифты сборки (Vite ставит им crossorigin) -->
+    <link rel="preconnect" href="https://landing-res.b-cdn.net" crossorigin />
+    <link rel="preconnect" href="https://3344112-img.b-cdn.net" />
     <title data-translate="pageTitle">🎁 Your bonus is ready - Goldbet</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Гео-запрос стартует сразу, параллельно с загрузкой бандла; geoLocation.js забирает этот промис -->
+    <script>
+      window.__geoPromise = (function () {
+        var controller = new AbortController();
+        var timer = setTimeout(function () {
+          controller.abort();
+        }, 2500);
+        return fetch(
+          "https://" +
+            location.host +
+            "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
+          { signal: controller.signal },
+        ).then(function (response) {
+          clearTimeout(timer);
+          if (!response.ok) throw new Error("Bad API response");
+          return response.json();
+        });
+      })();
+      window.__geoPromise.catch(function () {});
+    </script>
     <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open.
          Селектор сужён до data-pg="phone" — на ленде есть второй type="tel" (дата рождения). -->
@@ -83,6 +101,7 @@
             class="absolute leading-0 bottom-[50px] max-[576px]:hidden rtl:rotate-180 max-w-[200px] max-[1500px]:max-w-[150px]"
             width="256"
             height="392"
+            loading="lazy"
             src="https://3344112-img.b-cdn.net/graphic/landings/thedoghouse/dog-2.webp"
             alt="Dog"
           />
@@ -90,6 +109,7 @@
             class="absolute left-[35%] top-0 max-w-[315px] max-[992px]:max-w-[200px] max-[576px]:hidden"
             width="473"
             height="197"
+            loading="lazy"
             src="https://3344112-img.b-cdn.net/graphic/landings/thedoghouse/belt.webp"
             alt="Belt"
           />
@@ -124,14 +144,20 @@
                     </p>
                   </div>
                 </div>
+                <!-- Английский текст сразу в HTML и резерв высоты на мобиле: раньше h1/p были пустыми -->
+                <!-- до отработки JS, и hero-картинка под ними прыгала (CLS ~0.15) -->
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                ></h1>
+                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] max-[576px]:min-h-[3lh] gilroy font-black hero-title leading-[112%] text-white"
+                >
+                  claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>the dog house</span>
+                </h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[992px]:mt-[300px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                ></p>
+                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[992px]:mt-[300px] max-[576px]:text-[24px] max-[576px]:min-h-[2lh] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                >
+                  +<span class="two-step-bonus-percent">100%</span> up to <span class='bonus-total-amount'>5.000</span> <span class='bonus-currency-symbol'>USD</span> & <span class="two-step-bonus-spins">200FS</span> Free Spins With your 1st deposit
+                </p>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
@@ -141,14 +167,18 @@
                 </button>
               </div>
             </div>
-            <img
-              dir="ltr"
-              class="absolute hero-img left-[535px] rtl:left-0 max-[992px]:rtl:left-1/2 max-[576px]:rtl:left-[20%] max-[576px]:rtl:-translate-x-1/2 max-[576px]:max-w-[250px] top-1/2 -translate-y-[40%] max-[992px]:max-w-[300px] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[300px] max-[576px]:relative max-[576px]:bottom-auto"
-              width="429"
-              height="476"
-              src="https://3344112-img.b-cdn.net/graphic/landings/thedoghouse/hero-img.webp"
-              alt="The dog image"
-            />
+            <picture>
+              <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/thedoghouse/hero-img-m.webp" />
+              <img
+                dir="ltr"
+                class="absolute hero-img left-[535px] rtl:left-0 max-[992px]:rtl:left-1/2 max-[576px]:rtl:left-[20%] max-[576px]:rtl:-translate-x-1/2 max-[576px]:max-w-[250px] top-1/2 -translate-y-[40%] max-[992px]:max-w-[300px] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[300px] max-[576px]:relative max-[576px]:bottom-auto"
+                width="429"
+                height="476"
+                fetchpriority="high"
+                src="https://3344112-img.b-cdn.net/graphic/landings/thedoghouse/hero-img.webp"
+                alt="The dog image"
+              />
+            </picture>
           </div>
         </section>
         <!-- container -->
