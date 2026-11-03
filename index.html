@@ -95,27 +95,36 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="absolute left-0 bottom-0 z-10 pointer-events-none"
-            width="768"
-            height="408"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
-            width="948"
-            height="390"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle.webp"
-            alt="Thunder"
-          />
-          <img
-            class="absolute right-0 bottom-0 z-[3] pointer-events-none"
-            width="849"
-            height="486"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right.webp"
-            alt="Thunder"
-          />
+          <picture>
+            <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left-m.webp" />
+            <img
+              class="absolute left-0 bottom-0 z-10 pointer-events-none"
+              width="768"
+              height="408"
+              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-left.webp"
+              alt="Thunder"
+            />
+          </picture>
+          <picture>
+            <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle-m.webp" />
+            <img
+              class="absolute left-[50%] -translate-x-[50%] bottom-0 z-10 pointer-events-none"
+              width="948"
+              height="390"
+              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-middle.webp"
+              alt="Thunder"
+            />
+          </picture>
+          <picture>
+            <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right-m.webp" />
+            <img
+              class="absolute right-0 bottom-0 z-[3] pointer-events-none"
+              width="849"
+              height="486"
+              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/thunder-right.webp"
+              alt="Thunder"
+            />
+          </picture>
           <img
             class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
             loading="lazy"
@@ -133,11 +142,14 @@
             src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/watermelon.webp"
             alt="watermelon"
           />
-          <img
-            class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
-            src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star.webp"
-            alt="star"
-          />
+          <picture>
+            <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star-m.webp" />
+            <img
+              class="absolute star-img -right-[300px] max-[576px]:max-w-[300px] max-[576px]:-right-[200px] max-[576px]:-translate-y-0 max-[576px]:top-[50px] max-[576px]:z-[1] max-[992px]:top-[50%] max-[992px]:-translate-y-[50%] max-[1500px]:max-w-[500px] max-[1500px]:-top-[200px] z-[8] -top-[300px]"
+              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/star.webp"
+              alt="star"
+            />
+          </picture>
           <img
             class="absolute right-[130px] max-[576px]:-right-[100px] max-[576px]:max-w-[200px] max-[576px]:top-auto max-[576px]:bottom-[100px] z-[1] top-[200px]"
             src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/plum.webp"
@@ -177,14 +189,17 @@
                 </button>
               </div>
             </div>
-            <img
-              class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] z-[3] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
-              width="1024"
-              height="610"
-              fetchpriority="high"
-              src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
-              alt="Zeus"
-            />
+            <picture>
+              <source media="(max-width: 576px)" srcset="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus-m.webp" />
+              <img
+                class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] z-[3] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
+                width="1024"
+                height="610"
+                fetchpriority="high"
+                src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
+                alt="Zeus"
+              />
+            </picture>
           </div>
         </section>
         <!-- container -->
