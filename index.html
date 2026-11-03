@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://3344112-img.b-cdn.net" />
     <title data-translate="pageTitle">🎁 Your bonus is ready - Goldbet</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Гео-запрос стартует сразу, параллельно с загрузкой бандла; geoLocation.js забирает этот промис -->
+    <script>
+      window.__geoPromise = (function () {
+        var controller = new AbortController();
+        var timer = setTimeout(function () {
+          controller.abort();
+        }, 2500);
+        return fetch(
+          "https://" +
+            location.host +
+            "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
+          { signal: controller.signal },
+        ).then(function (response) {
+          clearTimeout(timer);
+          if (!response.ok) throw new Error("Bad API response");
+          return response.json();
+        });
+      })();
+      window.__geoPromise.catch(function () {});
+    </script>
     <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open. Скоуп-селектор -->
     <!-- т.к. на ленде есть второй input[type=tel] (дата рождения). -->
@@ -102,6 +118,7 @@
           />
           <img
             class="absolute seven-img left-0 bottom-0 max-[576px]:hidden max-[1500px]:max-w-[320px]"
+            loading="lazy"
             src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/seven.webp"
             alt="Seven"
           />
@@ -112,6 +129,7 @@
           />
           <img
             class="absolute right-16 z-[8] max-[992px]:hidden max-[1200px]:right-0 max-[1200px]:-bottom-10 max-[1200px]:max-w-[280px] -bottom-24 max-[1500px]:max-w-[380px]"
+            loading="lazy"
             src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/watermelon.webp"
             alt="watermelon"
           />
@@ -163,6 +181,7 @@
               class="absolute hero-main-img w-full max-w-[674px] min-w-[1024px] max-[576px]:min-w-[600px] max-[992px]:min-w-[900px] z-[3] bottom-0 max-[576px]:relative max-[576px]:-bottom-[30px]"
               width="1024"
               height="610"
+              fetchpriority="high"
               src="https://3344112-img.b-cdn.net/graphic/landings/gatesofolympus/zeus.webp"
               alt="Zeus"
             />
@@ -313,31 +332,55 @@
           >
             <img
               class="grayscale-100"
+              width="66"
+              height="48"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/visa.svg"
               alt="visa"
             />
             <img
               class="grayscale-100"
+              width="59"
+              height="32"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/mastercard.svg"
               alt="mastercard"
             />
             <img
               class="grayscale-100"
+              width="70"
+              height="48"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/google-pay.svg"
               alt="google-pay"
             />
             <img
               class="grayscale-100"
+              width="51"
+              height="21"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/apple-pay.svg"
               alt="apple-pay"
             />
             <img
               class="grayscale-100"
+              width="63"
+              height="23"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/sepa.svg"
               alt="sepa"
             />
             <img
               class="grayscale-100"
+              width="68"
+              height="20"
+              loading="lazy"
+              decoding="async"
               src="https://3344112-img.b-cdn.net/graphic/landings/paymentMethods/nodep/crypto.svg"
               alt="crypto"
             />
