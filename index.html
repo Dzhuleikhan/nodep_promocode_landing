@@ -172,14 +172,20 @@
                     </p>
                   </div>
                 </div>
+                <!-- Английский текст сразу в HTML и резерв высоты на мобиле: раньше h1/p были пустыми -->
+                <!-- до отработки JS, и zeus под ними прыгал на ~160px (CLS ~0.15) -->
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                ></h1>
+                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] max-[576px]:min-h-[3lh] gilroy font-black hero-title leading-[112%] text-white"
+                >
+                  claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>gates of olympus</span>
+                </h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                ></p>
+                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:min-h-[2lh] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                >
+                  +<span class="two-step-bonus-percent">100%</span> up to <span class='bonus-total-amount'>5.000</span> <span class='bonus-currency-symbol'>USD</span> & <span class="two-step-bonus-spins">200FS</span> Free Spins With your 1st deposit
+                </p>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
