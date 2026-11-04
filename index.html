@@ -2,14 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS, JS, шрифты и картинки сборки с CDN (Vite ставит CSS/JS crossorigin) -->
+    <link rel="preconnect" href="https://landing-res.b-cdn.net" crossorigin />
+    <link rel="preconnect" href="https://landing-res.b-cdn.net" />
+    <link rel="preconnect" href="https://3344112-img.b-cdn.net" />
     <title data-translate="pageTitle">🎁 Your bonus is ready - Goldbet</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Гео-запрос стартует сразу, параллельно с загрузкой бандла; geoLocation.js забирает этот промис -->
+    <script>
+      window.__geoPromise = (function () {
+        var controller = new AbortController();
+        var timer = setTimeout(function () {
+          controller.abort();
+        }, 2500);
+        return fetch(
+          "https://" +
+            location.host +
+            "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
+          { signal: controller.signal },
+        ).then(function (response) {
+          clearTimeout(timer);
+          if (!response.ok) throw new Error("Bad API response");
+          return response.json();
+        });
+      })();
+      window.__geoPromise.catch(function () {});
+    </script>
     <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open.
          Скоуп-селектор: на ленде есть второе input[type=tel] (дата рождения). -->
@@ -31,7 +50,7 @@
               <img
                 width="114"
                 height="39"
-                src="./img/logo.svg"
+                src="/img/logo.svg"
                 alt="Goldbet logo"
               />
               <img
@@ -79,18 +98,21 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="absolute left-0 bottom-0 max-[576px]:max-w-[200px]"
-            width="395"
-            height="192"
-            src="./img/car.webp"
-            alt="Car"
-          />
+          <picture>
+            <source media="(max-width: 576px)" srcset="/img/car-m.webp" />
+            <img
+              class="absolute left-0 bottom-0 max-[576px]:max-w-[200px]"
+              width="395"
+              height="192"
+              src="/img/car.webp"
+              alt="Car"
+            />
+          </picture>
           <img
             class="absolute left-4 top-[60px] max-[576px]:max-w-[80px] max-[576px]:left-0 max-[576px]:top-10"
             width="140"
             height="133"
-            src="./img/pig.webp"
+            src="/img/pig.webp"
             alt="Pig"
           />
           <!-- container -->
@@ -102,14 +124,20 @@
               <div
                 class="max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center"
               >
+                <!-- Английский текст сразу в HTML и резерв высоты на мобиле: раньше h1/p были пустыми -->
+                <!-- до отработки JS, и hero-картинка под ними прыгала (CLS ~0.15) -->
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                ></h1>
+                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] max-[576px]:min-h-[3lh] gilroy font-black hero-title leading-[112%] text-white"
+                >
+                  claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>money fest</span>
+                </h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                ></p>
+                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:min-h-[2lh] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                >
+                  +<span class="two-step-bonus-percent">100%</span> up to <span class='bonus-total-amount'>5.000</span> <span class='bonus-currency-symbol'>USD</span> & <span class="two-step-bonus-spins">200FS</span> Free Spins With your 1st deposit
+                </p>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
@@ -119,33 +147,38 @@
                 </button>
               </div>
             </div>
-            <img
-              dir="ltr"
-              class="absolute hero-img left-[535px] rtl:left-0 max-[992px]:rtl:left-[25%] max-w-[464px] max-[576px]:max-w-[280px] top-1/2 -translate-y-[40%] max-[992px]:max-w-[300px] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[180px] max-[576px]:relative max-[576px]:bottom-auto"
-              width="464"
-              height="464"
-              src="./img/hero-img.webp"
-              alt="Hounds Of Hell"
-            />
+            <picture>
+              <source media="(max-width: 576px)" srcset="/img/hero-img-m.webp" />
+              <img
+                dir="ltr"
+                class="absolute hero-img left-[535px] rtl:left-0 max-[992px]:rtl:left-[25%] max-w-[464px] max-[576px]:max-w-[280px] top-1/2 -translate-y-[40%] max-[992px]:max-w-[300px] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[180px] max-[576px]:relative max-[576px]:bottom-auto"
+                width="464"
+                height="464"
+                fetchpriority="high"
+                src="/img/hero-img.webp"
+                alt="Money Fest"
+              />
+            </picture>
             <img
               class="absolute -left-[160px] top-1/2 -translate-y-1/2 max-[992px]:left-0 max-[576px]:max-w-[100px] max-[576px]:-left-[30px]"
               width="146"
               height="116"
-              src="./img/money-1.webp"
+              src="/img/money-1.webp"
               alt="Money"
             />
             <img
               class="absolute bottom-10 left-[35%] max-[992px]:left-[75%] -translate-x-1/2 max-[576px]:hidden"
               width="127"
               height="129"
-              src="./img/money-2.webp"
+              loading="lazy"
+              src="/img/money-2.webp"
               alt="Money"
             />
             <img
               class="absolute right-0 top-[140px] max-[576px]:top-1/2 -translate-y-1/2 max-[576px]:max-w-[110px] max-[576px]:-right-[20px]"
               width="136"
               height="102"
-              src="./img/money-3.webp"
+              src="/img/money-3.webp"
               alt="Money"
             />
           </div>
@@ -368,7 +401,7 @@
               class="tbl:max-w-[100px]"
               width="134"
               height="46"
-              src="./img/logo.svg"
+              src="/img/logo.svg"
               alt="Goldbet"
             />
             <img
