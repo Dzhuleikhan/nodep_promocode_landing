@@ -5,11 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-translate="pageTitle">🎁 Your bonus is ready - Goldbet</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Гео-запрос стартует сразу, параллельно с загрузкой бандла; geoLocation.js забирает этот промис -->
+    <script>
+      window.__geoPromise = (function () {
+        return fetch(
+          "https://" +
+            location.host +
+            "/geo-api/api/check?accessKey=0439ba6e-6092-46c2-9aeb-8662065bc43c",
+        ).then(function (response) {
+          if (!response.ok) throw new Error("Bad API response");
+          return response.json();
+        });
+      })();
+      window.__geoPromise.catch(function () {});
+    </script>
     <script defer src="/email-guard.js?v=1.0.9" data-eg-debug="false"></script>
     <!-- phone-guard: проверка телефона (IPQS valid/active), fail-open.
          Селектор сужен — на ленде есть второе input[type=tel] (дата рождения). -->
@@ -79,24 +88,31 @@
       </header>
       <main>
         <section id="hero" class="w-full relative overflow-hidden">
-          <img
-            class="cloud-left absolute left-0 bottom-0 max-[576px]:-left-[100px] pointer-events-none"
-            width="726"
-            height="602"
-            src="./img/cloud-left.webp"
-            alt="Cloud image"
-          />
-          <img
-            class="cloud-right absolute right-0 bottom-0 pointer-events-none"
-            width="1280"
-            height="695"
-            src="./img/cloud-right.webp"
-            alt="Cloud image"
-          />
+          <picture>
+            <source media="(max-width: 576px)" srcset="./img/cloud-left-m.webp" />
+            <img
+              class="cloud-left absolute left-0 bottom-0 max-[576px]:-left-[100px] pointer-events-none"
+              width="726"
+              height="602"
+              src="./img/cloud-left.webp"
+              alt="Cloud image"
+            />
+          </picture>
+          <picture>
+            <source media="(max-width: 576px)" srcset="./img/cloud-right-m.webp" />
+            <img
+              class="cloud-right absolute right-0 bottom-0 pointer-events-none"
+              width="1280"
+              height="695"
+              src="./img/cloud-right.webp"
+              alt="Cloud image"
+            />
+          </picture>
           <img
             class="absolute lollipop right-0 top-0 pointer-events-none max-w-[358px] max-[992px]:hidden"
             width="242"
             height="331"
+            loading="lazy"
             src="./img/lollipop.webp"
             alt="Lollipop"
           />
@@ -104,6 +120,7 @@
             class="absolute bomb top-1/2 left-0 max-[992px]:hidden -translate-y-1/2 pointer-events-none max-w-[350px] max-[1500px]:-left-[120px] max-[1500px]:top-0 max-[1500px]:translate-y-0"
             width="408"
             height="364"
+            loading="lazy"
             src="./img/bomb.webp"
             alt="Bomb"
           />
@@ -145,14 +162,20 @@
                     </p>
                   </div>
                 </div>
+                <!-- Английский текст сразу в HTML и резерв высоты на мобиле: раньше h1/p были пустыми -->
+                <!-- до отработки JS, и hero-картинка под ними прыгала (CLS ~0.15) -->
                 <h1
                   data-translate="heroTitle"
-                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] gilroy font-black hero-title leading-[112%] text-white"
-                ></h1>
+                  class="hero-title text-[48px] uppercase hero-title max-[350px]:text-[24px] max-[576px]:text-[28px] max-[576px]:min-h-[3lh] gilroy font-black hero-title leading-[112%] text-white"
+                >
+                  claim your bonus <br/> <span>100 free spins</span> <br/> in <span>sweet bonanza</span>
+                </h1>
                 <p
                   data-translate="heroSubtitle"
-                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
-                ></p>
+                  class="hero-subtitle max-[350px]:text-[20px] text-white max-w-[459px] max-[576px]:text-[24px] max-[576px]:min-h-[2lh] max-[576px]:mt-2 mt-[14px] font-bold gilroy text-[28px] leading-[143%]"
+                >
+                  +<span class="two-step-bonus-percent">100%</span> up to <span class='bonus-total-amount'>5.000</span> <span class='bonus-currency-symbol'>USD</span> & <span class="two-step-bonus-spins">200FS</span> Free Spins With your 1st deposit
+                </p>
                 <button
                   data-translate="heroBtn"
                   data-promocode=""
@@ -162,13 +185,17 @@
                 </button>
               </div>
             </div>
-            <img
-              class="absolute hero-img left-[480px] top-1/2 -translate-y-[50%] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[576px]:max-w-[90%] max-[576px]:bottom-auto max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[200px] max-[576px]:relative"
-              width="615"
-              height="324"
-              src="./img/hero-img.webp"
-              alt="Sweet Bonanza"
-            />
+            <picture>
+              <source media="(max-width: 576px)" srcset="./img/hero-img-m.webp" />
+              <img
+                class="absolute hero-img left-[480px] top-1/2 -translate-y-[50%] max-[992px]:left-1/2 max-[992px]:-translate-x-1/2 max-[576px]:max-w-[90%] max-[576px]:bottom-auto max-[992px]:translate-y-0 max-[992px]:top-auto max-[992px]:bottom-[200px] max-[576px]:relative"
+                width="615"
+                height="324"
+                fetchpriority="high"
+                src="./img/hero-img.webp"
+                alt="Sweet Bonanza"
+              />
+            </picture>
           </div>
         </section>
         <!-- container -->
