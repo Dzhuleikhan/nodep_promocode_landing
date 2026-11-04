@@ -4,7 +4,8 @@ import { defineConfig } from "vite";
 const DEV_PROXY_TARGET = "https://goldbet.fun";
 
 export default defineConfig({
-  base: "",
+  // JS, CSS, шрифты и картинки из HTML отдаёт Bunny CDN (как на лендах golda8n1)
+  base: "https://landing-res.b-cdn.net/freespins/sweetbonanza/",
   esbuild: {
     supported: {
       "top-level-await": true,
