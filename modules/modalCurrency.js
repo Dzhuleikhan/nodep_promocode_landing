@@ -105,6 +105,21 @@ export const settingNodepBonus = (currencyAbbr) => {
   settingHeroBonus(currencyAbbr);
 };
 
+// Реальные размеры SVG платёжек: без width/height футер даёт CLS
+const PAYMENT_ICON_SIZES = {
+  visa: [66, 48],
+  mastercard: [59, 32],
+  "google-pay": [70, 48],
+  "apple-pay": [51, 21],
+  sepa: [63, 23],
+  crypto: [68, 20],
+  axept: [58, 32],
+  blik: [54, 29],
+  klarna: [70, 48],
+  viabil: [69, 15],
+  vipps: [70, 48],
+};
+
 const settingFooterPayments = (currencyAbbr) => {
   const selectedCurrency =
     nodepBonuses.find((c) => c.currency === currencyAbbr) ||
@@ -118,6 +133,14 @@ const settingFooterPayments = (currencyAbbr) => {
     img.classList.add("grayscale-100");
     img.classList.add("transition");
     img.classList.add("hover:grayscale-0");
+    const size = PAYMENT_ICON_SIZES[payment];
+    if (size) {
+      img.width = size[0];
+      img.height = size[1];
+    }
+    img.alt = payment;
+    img.loading = "lazy";
+    img.decoding = "async";
     img.setAttribute("src", `./img/payments/${payment}.svg`);
     footerPaymentsList.appendChild(img);
   });
