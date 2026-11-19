@@ -1,5 +1,7 @@
 export const translations = {
   en: {
+    loginBtn: "Log In",
+    alreadyHaveAnAccount: "Already have an account?",
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> in <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> up to <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Free Spins With your 1st deposit`,
@@ -77,6 +79,8 @@ export const translations = {
     countyPlaceholder: "County",
   },
   fr: {
+    loginBtn: "Se connecter",
+    alreadyHaveAnAccount: "Déjà un compte ?",
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de <i class="actual-spin-amount">100</i> tours gratuits</span> <br/> dans <span>money fest</span>.`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jusqu'à <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Tours Gratuits avec votre 1er dépôt`,
@@ -155,6 +159,8 @@ export const translations = {
     countyPlaceholder: "Comté",
   },
   ro: {
+    loginBtn: "Autentificare",
+    alreadyHaveAnAccount: "Ai deja un cont?",
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span><i class="actual-spin-amount">100</i> rotiri gratuite</span> <br/> în <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> până la <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Rotiri Gratuite Cu prima ta depunere`,
@@ -233,6 +239,8 @@ export const translations = {
     countyPlaceholder: "Comitat",
   },
   hu: {
+    loginBtn: "Bejelentkezés",
+    alreadyHaveAnAccount: "Már van fiókod?",
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span><i class='actual-spin-amount'>100</i> ingyenes pörgetés</span> <br/> a <span>money fest</span> játékban`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> akár <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ingyenes pörgetés az első befizetéseddel`,
@@ -311,6 +319,8 @@ export const translations = {
     countyPlaceholder: "Megye",
   },
   pl: {
+    loginBtn: "Zaloguj się",
+    alreadyHaveAnAccount: "Masz już konto?",
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
       "ODBIERZ SWÓJ BONUS <br/> <span><i class='actual-spin-amount'>100</i> darmowych spinów</span> <br/> w <span>money fest</span>",
@@ -389,6 +399,8 @@ export const translations = {
     countyPlaceholder: "Hrabstwo",
   },
   cs: {
+    loginBtn: "Přihlásit se",
+    alreadyHaveAnAccount: "Již máš účet?",
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
       "získejte svůj bonus <br/> <span><i class='actual-spin-amount'>100</i> volných točení</span> <br/> ve hře <span>money fest</span>",
@@ -469,6 +481,8 @@ export const translations = {
     countyPlaceholder: "Hrabství",
   },
   sl: {
+    loginBtn: "Prijava",
+    alreadyHaveAnAccount: "Že imaš račun?",
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
       "prevzemite svoj bonus <br/> <span><i class='actual-spin-amount'>100</i> brezplačnih vrtljajev</span> <br/> v <span>money fest</span>",
@@ -548,6 +562,8 @@ export const translations = {
     countyPlaceholder: "Grofija",
   },
   el: {
+    loginBtn: "Σύνδεση",
+    alreadyHaveAnAccount: "Έχεις ήδη λογαριασμό;",
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span><i class='actual-spin-amount'>100</i> δωρεάν περιστροφές</span> <br/> στο <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> έως <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> δωρεάν περιστροφές με την πρώτη σας κατάθεση`,
@@ -627,6 +643,8 @@ export const translations = {
     countyPlaceholder: "Κομητεία",
   },
   nb: {
+    loginBtn: "Logg inn",
+    alreadyHaveAnAccount: "Har du allerede en konto?",
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span><i class='actual-spin-amount'>100</i> gratisspinn</span> <br/> i <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> opptil <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratisspinn med ditt første innskudd`,
@@ -704,6 +722,8 @@ export const translations = {
     countyPlaceholder: "Grevskap",
   },
   sv: {
+    loginBtn: "Logga in",
+    alreadyHaveAnAccount: "Har du redan ett konto?",
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span><i class='actual-spin-amount'>100</i> gratissnurr</span> <br/> i <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> upp till <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratissnurr med din första insättning`,
@@ -782,6 +802,8 @@ export const translations = {
     countyPlaceholder: "Grevskap",
   },
   sk: {
+    loginBtn: "Prihlásiť sa",
+    alreadyHaveAnAccount: "Už máš účet?",
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span><i class='actual-spin-amount'>100</i> voľných spinov</span> <br/> v <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> až do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> voľných spinov pri vašom 1. vklade`,
@@ -860,6 +882,8 @@ export const translations = {
     countyPlaceholder: "Grófstvo",
   },
   ru: {
+    loginBtn: "Войти",
+    alreadyHaveAnAccount: "Уже есть аккаунт?",
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span><i class='actual-spin-amount'>100</i> фриспинов</span> <br/> в <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> и <span class="two-step-bonus-spins"></span> фриспинов с вашим первым депозитом`,
@@ -938,6 +962,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   es: {
+    loginBtn: "Iniciar sesión",
+    alreadyHaveAnAccount: "¿Ya tienes una cuenta?",
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span><i class='actual-spin-amount'>100</i> giros gratis</span> <br/> en <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hasta <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> y <span class="two-step-bonus-spins"></span> giros gratis con tu primer depósito`,
@@ -1016,6 +1042,8 @@ export const translations = {
     countyPlaceholder: "Condado",
   },
   pt: {
+    loginBtn: "Entrar",
+    alreadyHaveAnAccount: "Já tens uma conta?",
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span><i class='actual-spin-amount'>100</i> rodadas grátis</span> <br/> em <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> até <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> e <span class="two-step-bonus-spins"></span> rodadas grátis com seu primeiro depósito`,
@@ -1093,6 +1121,8 @@ export const translations = {
     countyPlaceholder: "Condado",
   },
   de: {
+    loginBtn: "Anmelden",
+    alreadyHaveAnAccount: "Bereits ein Konto?",
     pageTitle: "🎁 Ihr Bonus wartet auf Sie - Goldbet",
     heroTitle: `sichere dir deinen bonus <br/> <span><i class='actual-spin-amount'>100</i> Freispiele</span> <br/> in <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> und <span class="two-step-bonus-spins"></span> Freispiele mit deiner ersten Einzahlung`,
@@ -1171,6 +1201,8 @@ export const translations = {
     countyPlaceholder: "Grafschaft",
   },
   uk: {
+    loginBtn: "Увійти",
+    alreadyHaveAnAccount: "Вже є акаунт?",
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
     heroTitle: `отримайте свій бонус <br/> <span><i class="actual-spin-amount">100</i> безкоштовних спінів</span> <br/> у <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> та <span class="two-step-bonus-spins"></span> безкоштовних спінів з вашим першим депозитом`,
@@ -1249,6 +1281,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   it: {
+    loginBtn: "Accedi",
+    alreadyHaveAnAccount: "Hai già un account?",
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
     heroTitle: `richiedi il tuo bonus <br/> <span><i class="actual-spin-amount">100</i> giri gratuiti</span> <br/> in <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> fino a <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Giri Gratuiti con il tuo 1° deposito`,
@@ -1327,6 +1361,8 @@ export const translations = {
     countyPlaceholder: "Contea",
   },
   et: {
+    loginBtn: "Logi sisse",
+    alreadyHaveAnAccount: "Sul on juba konto?",
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kuni <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> tasuta keerutust esimese sissemaksega`,
@@ -1405,6 +1441,8 @@ export const translations = {
     countyPlaceholder: "Krahvkond",
   },
   lv: {
+    loginBtn: "Pieteikties",
+    alreadyHaveAnAccount: "Jau ir konts?",
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
     heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> līdz <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Bezmaksas griezieni ar pirmo iemaksu`,
@@ -1483,6 +1521,8 @@ export const translations = {
     countyPlaceholder: "Grāfiste",
   },
   lt: {
+    loginBtn: "Prisijungti",
+    alreadyHaveAnAccount: "Jau turi paskyrą?",
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
     heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> iki <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Nemokamų Sukimų su pirmuoju įnašu`,
@@ -1561,6 +1601,8 @@ export const translations = {
     countyPlaceholder: "Grafystė",
   },
   hr: {
+    loginBtn: "Prijava",
+    alreadyHaveAnAccount: "Već imaš račun?",
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
     heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> do <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Besplatnih okretaja s vašim prvim depozitom`,
@@ -1639,6 +1681,8 @@ export const translations = {
     countyPlaceholder: "Grofovija",
   },
   dk: {
+    loginBtn: "Log ind",
+    alreadyHaveAnAccount: "Har du allerede en konto?",
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `kræv din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Gratis Spins med din 1. indbetaling`,
@@ -1716,6 +1760,8 @@ export const translations = {
     countyPlaceholder: "Grevskab",
   },
   fi: {
+    loginBtn: "Kirjaudu sisään",
+    alreadyHaveAnAccount: "Onko sinulla jo tili?",
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
     heroTitle: `lunasta bonuksesi <br/> <span><i class="actual-spin-amount">100</i> ilmaiskierrosta</span> <br/> pelissä <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> jopa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Ilmaiskierrosta ensimmäisellä talletuksellasi`,
@@ -1794,6 +1840,8 @@ export const translations = {
     countyPlaceholder: "Kreivikunta",
   },
   bg: {
+    loginBtn: "Влезте",
+    alreadyHaveAnAccount: "Вече имаш акаунт?",
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
     heroTitle: `вземете своя бонус <br/> <span><i class="actual-spin-amount">100</i> безплатни завъртания</span> <br/> в <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> до <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Безплатни завъртания с първия ви депозит`,
@@ -1872,6 +1920,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   nl: {
+    loginBtn: "Inloggen",
+    alreadyHaveAnAccount: "Al een account?",
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span><i class="actual-spin-amount">100</i> gratis spins</span> <br/> i <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> op til <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis spins med din 1. indbetaling`,
@@ -1949,6 +1999,8 @@ export const translations = {
     countyPlaceholder: "Graafschap",
   },
   sw: {
+    loginBtn: "Ingia",
+    alreadyHaveAnAccount: "Una akaunti tayari?",
     pageTitle: "🎁 Bonasi yako ipo tayari - Goldbet",
     heroTitle: `dai bonasi yako <br/> <span><i class="actual-spin-amount">100</i> spins za bure</span> <br/> kwenye <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> hadi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins za Bure kwa amana yako ya kwanza`,
@@ -2026,6 +2078,8 @@ export const translations = {
     countyPlaceholder: "Kaunti",
   },
   rw: {
+    loginBtn: "Injira",
+    alreadyHaveAnAccount: "Ufite konti?",
     pageTitle: "🎁 Inyongera yawe iri ready - Goldbet",
     heroTitle: `saba inyongera yawe <br/> <span><i class="actual-spin-amount">100</i> spins z'ubuntu</span> <br/> muri <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kugeza kuri <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Spins z'Ubuntu kuri depositi yawe ya mbere`,
@@ -2104,6 +2158,8 @@ export const translations = {
     countyPlaceholder: "Akarere",
   },
   ar: {
+    loginBtn: "تسجيل الدخول",
+    alreadyHaveAnAccount: "هل لديك حساب بالفعل؟",
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
     heroTitle: `اطلب مكافأتك <br/> <span><i class="actual-spin-amount">100</i> لفة مجانية</span> <br/> في <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> حتى <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> لفات مجانية مع إيداعك الأول`,
@@ -2181,6 +2237,8 @@ export const translations = {
     countyPlaceholder: "المقاطعة",
   },
   zh: {
+    loginBtn: "登录",
+    alreadyHaveAnAccount: "已有账户?",
     pageTitle: "🎁 您的奖励已准备好 - Goldbet",
     heroTitle: `领取您的奖励 <br/> <span><i class="actual-spin-amount">100</i> 次免费旋转</span> <br/> 在 <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> 高达 <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> 次免费旋转，首存即可获得`,
@@ -2256,6 +2314,8 @@ export const translations = {
     countyPlaceholder: "郡",
   },
   ga: {
+    loginBtn: "Logáil isteach",
+    alreadyHaveAnAccount: "An bhfuil cuntas agat cheana féin?",
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
     heroTitle: `éiligh do bhónas <br/> <span><i class="actual-spin-amount">100</i> casadh saor in aisce</span> <br/> i <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> suas le <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> casadh saor in aisce le do chéad taisce`,
@@ -2335,6 +2395,8 @@ export const translations = {
     countyPlaceholder: "Contae",
   },
   lb: {
+    loginBtn: "Aloggen",
+    alreadyHaveAnAccount: "Hutt Dir schonn e Kont?",
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
     heroTitle: `fuer däi Bonus <br/> <span><i class="actual-spin-amount">100</i> gratis Spins</span> <br/> am <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> bis zu <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> gratis Spins mat denger éischter Depositioun`,
@@ -2412,6 +2474,8 @@ export const translations = {
     countyPlaceholder: "Grofschaft",
   },
   mt: {
+    loginBtn: "Idħol",
+    alreadyHaveAnAccount: "Diġà għandek kont?",
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
     heroTitle: `itlob il-bonus tiegħek <br/> <span><i class="actual-spin-amount">100</i> spins b'xejn</span> <br/> f'<span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> sa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> spins b'xejn mal-ewwel depożitu tiegħek`,
@@ -2490,6 +2554,8 @@ export const translations = {
     countyPlaceholder: "Kontea",
   },
   am: {
+    loginBtn: "ግባ",
+    alreadyHaveAnAccount: "ቀድሞውኑ አካውንት አለዎ?",
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
     heroTitle: `ቦነስዎን ይውሰዱ <br/> <span><i class="actual-spin-amount">100</i> ነፃ ስፒኖች</span> <br/> በ <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> እስከ <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ነፃ ስፒኖች በመጀመሪያዎ ተቀማጭ`,
@@ -2565,6 +2631,8 @@ export const translations = {
     countyPlaceholder: "ካውንቲ",
   },
   lm: {
+    loginBtn: "Yingira",
+    alreadyHaveAnAccount: "Olina akawunti?",
     pageTitle: "🎁 Bonus yo yetegefu - Goldbet",
     heroTitle: `funa bonus yo <br/> <span><i class="actual-spin-amount">100</i> spins za bwereere</span> <br/> mu <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> okutuuka ku <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> spins za bwereere ku deposit yo esooka`,
@@ -2642,6 +2710,8 @@ export const translations = {
     countyPlaceholder: "Essaza",
   },
   ha: {
+    loginBtn: "Shiga",
+    alreadyHaveAnAccount: "Kana da asusu?",
     pageTitle: "🎁 Kyautarka ta shirya - Goldbet",
     heroTitle: `karɓi kyautarka <br/> <span><i class="actual-spin-amount">100</i> juyawa kyauta</span> <br/> a cikin <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> har zuwa <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Juyawa Kyauta tare da ajiyar ka ta farko`,
@@ -2719,6 +2789,8 @@ export const translations = {
     countyPlaceholder: "Gunduma",
   },
   yo: {
+    loginBtn: "Wọ̀lé",
+    alreadyHaveAnAccount: "Ṣé o ti ní àkọọ́lẹ̀ tẹ́lẹ̀?",
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetan - Goldbet",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span><i class="actual-spin-amount">100</i> àwọn yíyí ọfẹ</span> <br/> ninu <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> to de <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> Awọn yíyí ọfẹ pẹ̀lú idogo rẹ akọkọ`,
@@ -2796,6 +2868,8 @@ export const translations = {
     countyPlaceholder: "Kóńtì",
   },
   ig: {
+    loginBtn: "Banye",
+    alreadyHaveAnAccount: "Ị nwere akaụntụ?",
     pageTitle: "🎁 Onyinye gị dị njikere - Goldbet",
     heroTitle: `nata onyinye gị <br/> <span><i class="actual-spin-amount">100</i> ntụgharị efu</span> <br/> na <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> ruo <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ntụgharị efu na nkwụnye ego mbụ gị`,
@@ -2873,6 +2947,8 @@ export const translations = {
     countyPlaceholder: "Kaụnti",
   },
   tw: {
+    loginBtn: "Log in",
+    alreadyHaveAnAccount: "Wowɔ akontaa dedaw?",
     pageTitle: "🎁 Wo akyɛde no ayɛ krado - Goldbet",
     heroTitle: `gye wo bonasi <br/> <span><i class="actual-spin-amount">100</i> free spins</span> <br/> wɔ <span>money fest</span> mu`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> kosi <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> free spins ne wo sika a wode to gua a edi kan`,
@@ -2950,6 +3026,8 @@ export const translations = {
     countyPlaceholder: "Kaunti",
   },
   is: {
+    loginBtn: "Innskráning",
+    alreadyHaveAnAccount: "Ertu nú þegar með aðgang?",
     pageTitle: "🎁 Bónusinn þinn er tilbúinn - Goldbet",
     heroTitle: `sæktu bónusinn þinn <br/> <span><i class="actual-spin-amount">100</i> ókeypis snúninga</span> <br/> í <span>money fest</span>`,
     heroSubtitle: `+<span class="two-step-bonus-percent"></span> allt að <span class='bonus-total-amount'></span> <span class='bonus-currency-symbol'></span> & <span class="two-step-bonus-spins"></span> ókeypis snúningar með fyrstu innborgun þinni`,
