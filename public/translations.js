@@ -1,5 +1,7 @@
 export const translations = {
   en: {
+    loginBtn: "Log In",
+    alreadyHaveAnAccount: "Already have an account?",
     geoRestrictTitle: `{host} is not available in {country}`,
     pageTitle: "🎁 Your bonus is ready - Goldbet",
     heroTitle: `claim your bonus <br/> <span>100 free spins</span> <br/> in <span>royal joker</span>`,
@@ -76,6 +78,8 @@ export const translations = {
     countyPlaceholder: "County",
   },
   fr: {
+    loginBtn: "Se connecter",
+    alreadyHaveAnAccount: "Déjà un compte ?",
     geoRestrictTitle: `{host} n’est pas disponible en {country}`,
     pageTitle: "🎁 Votre bonus est prêt - Goldbet",
     heroTitle: `Réclamez un bonus <br/> <span>de 100 tours gratuits</span> <br/> dans <span>royal joker</span>.`,
@@ -153,6 +157,8 @@ export const translations = {
     countyPlaceholder: "Comté",
   },
   ro: {
+    loginBtn: "Autentificare",
+    alreadyHaveAnAccount: "Ai deja un cont?",
     geoRestrictTitle: `{host} nu este disponibil în {country}`,
     pageTitle: "🎁 Bonusul tău este gata - Goldbet",
     heroTitle: `reivindică-ți bonusul <br/> <span>100 rotiri gratuite</span> <br/> în <span>royal joker</span>`,
@@ -230,6 +236,8 @@ export const translations = {
     countyPlaceholder: "Comitat",
   },
   hu: {
+    loginBtn: "Bejelentkezés",
+    alreadyHaveAnAccount: "Már van fiókod?",
     geoRestrictTitle: `A(z) {host} nem érhető el itt: {country}`,
     pageTitle: "🎁 A bónuszod készen áll - Goldbet",
     heroTitle: `igényeld a bónuszod <br/> <span>100 ingyenes pörgetés</span> <br/> a <span>royal joker</span> játékban`,
@@ -307,6 +315,8 @@ export const translations = {
     countyPlaceholder: "Megye",
   },
   pl: {
+    loginBtn: "Zaloguj się",
+    alreadyHaveAnAccount: "Masz już konto?",
     geoRestrictTitle: `{host} nie jest dostępny w kraju {country}`,
     pageTitle: "🎁 Twój bonus jest gotowy - Goldbet",
     heroTitle:
@@ -384,6 +394,8 @@ export const translations = {
     countyPlaceholder: "Hrabstwo",
   },
   cs: {
+    loginBtn: "Přihlásit se",
+    alreadyHaveAnAccount: "Již máš účet?",
     geoRestrictTitle: `{host} není dostupný v zemi {country}`,
     pageTitle: "🎁 Váš bonus je připraven - Goldbet",
     heroTitle:
@@ -463,6 +475,8 @@ export const translations = {
     countyPlaceholder: "Hrabství",
   },
   sl: {
+    loginBtn: "Prijava",
+    alreadyHaveAnAccount: "Že imaš račun?",
     geoRestrictTitle: `{host} ni na voljo v državi {country}`,
     pageTitle: "🎁 Vaš bonus je pripravljen - Goldbet",
     heroTitle:
@@ -541,6 +555,8 @@ export const translations = {
     countyPlaceholder: "Grofija",
   },
   el: {
+    loginBtn: "Σύνδεση",
+    alreadyHaveAnAccount: "Έχεις ήδη λογαριασμό;",
     geoRestrictTitle: `Το {host} δεν είναι διαθέσιμο στη χώρα {country}`,
     pageTitle: "🎁 Το μπόνους σας είναι έτοιμο - Goldbet",
     heroTitle: `διεκδικήστε το μπόνους σας <br/> <span>100 δωρεάν περιστροφές</span> <br/> στο <span>royal joker</span>`,
@@ -619,6 +635,8 @@ export const translations = {
     countyPlaceholder: "Κομητεία",
   },
   nb: {
+    loginBtn: "Logg inn",
+    alreadyHaveAnAccount: "Har du allerede en konto?",
     geoRestrictTitle: `{host} er ikke tilgjengelig i {country}`,
     pageTitle: "🎁 Bonusen din er klar - Goldbet",
     heroTitle: `kreve din bonus <br/> <span>100 gratisspinn</span> <br/> i <span>royal joker</span>`,
@@ -695,6 +713,8 @@ export const translations = {
     countyPlaceholder: "Grevskap",
   },
   sv: {
+    loginBtn: "Logga in",
+    alreadyHaveAnAccount: "Har du redan ett konto?",
     geoRestrictTitle: `{host} är inte tillgängligt i {country}`,
     pageTitle: "🎁 Din bonus är redo - Goldbet",
     heroTitle: `hämta din bonus <br/> <span>100 gratissnurr</span> <br/> i <span>royal joker</span>`,
@@ -772,6 +792,8 @@ export const translations = {
     countyPlaceholder: "Grevskap",
   },
   sk: {
+    loginBtn: "Prihlásiť sa",
+    alreadyHaveAnAccount: "Už máš účet?",
     geoRestrictTitle: `{host} nie je dostupný v krajine {country}`,
     pageTitle: "🎁 Vaša bonusová ponuka je pripravená - Goldbet",
     heroTitle: `získajte svoj bonus <br/> <span>100 voľných spinov</span> <br/> v <span>royal joker</span>`,
@@ -849,6 +871,8 @@ export const translations = {
     countyPlaceholder: "Grófstvo",
   },
   ru: {
+    loginBtn: "Войти",
+    alreadyHaveAnAccount: "Уже есть аккаунт?",
     geoRestrictTitle: `{host} недоступен в стране {country}`,
     pageTitle: "🎁 Ваш бонус готов - Goldbet",
     heroTitle: `заберите свой бонус <br/> <span>100 фриспинов</span> <br/> в <span>royal joker</span>`,
@@ -926,6 +950,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   es: {
+    loginBtn: "Iniciar sesión",
+    alreadyHaveAnAccount: "¿Ya tienes una cuenta?",
     geoRestrictTitle: `{host} no está disponible en {country}`,
     pageTitle: "🎁 Tu bono está listo - Goldbet",
     heroTitle: `reclama tu bono <br/> <span>100 giros gratis</span> <br/> en <span>royal joker</span>`,
@@ -1003,6 +1029,8 @@ export const translations = {
     countyPlaceholder: "Condado",
   },
   pt: {
+    loginBtn: "Entrar",
+    alreadyHaveAnAccount: "Já tens uma conta?",
     geoRestrictTitle: `{host} não está disponível em {country}`,
     pageTitle: "🎁 Seu bônus está pronto - Goldbet",
     heroTitle: `resgate seu bônus <br/> <span>100 rodadas grátis</span> <br/> em <span>royal joker</span>`,
@@ -1079,6 +1107,8 @@ export const translations = {
     countyPlaceholder: "Condado",
   },
   de: {
+    loginBtn: "Anmelden",
+    alreadyHaveAnAccount: "Bereits ein Konto?",
     geoRestrictTitle: `{host} ist in {country} nicht verfügbar`,
     pageTitle: "🎁 Ihr Bonus wartet auf Sie - Goldbet",
     heroTitle: `sichere dir deinen bonus <br/> <span>100 Freispiele</span> <br/> in <span>royal joker</span>`,
@@ -1156,6 +1186,8 @@ export const translations = {
     countyPlaceholder: "Grafschaft",
   },
   it: {
+    loginBtn: "Accedi",
+    alreadyHaveAnAccount: "Hai già un account?",
     geoRestrictTitle: `{host} non è disponibile in {country}`,
     pageTitle: "🎁 Il tuo bonus è pronto - Goldbet",
     heroTitle: `richiedi il tuo bonus <br/> <span>100 giri gratuiti</span> <br/> in <span>royal joker</span>`,
@@ -1233,6 +1265,8 @@ export const translations = {
     countyPlaceholder: "Contea",
   },
   et: {
+    loginBtn: "Logi sisse",
+    alreadyHaveAnAccount: "Sul on juba konto?",
     geoRestrictTitle: `{host} ei ole saadaval riigis {country}`,
     pageTitle: "🎁 Teie boonus on valmis - Goldbet",
     heroTitle: `nõua oma boonus <br/> <span><i class="actual-spin-amount">100</i> tasuta keerutust</span> <br/> mängus <span>royal joker</span>`,
@@ -1310,6 +1344,8 @@ export const translations = {
     countyPlaceholder: "Krahvkond",
   },
   lv: {
+    loginBtn: "Pieteikties",
+    alreadyHaveAnAccount: "Jau ir konts?",
     geoRestrictTitle: `{host} nav pieejams valstī {country}`,
     pageTitle: "🎁 Jūsu bonuss ir gatavs - Goldbet",
     heroTitle: `prasiet savu bonusu <br/> <span><i class="actual-spin-amount">100</i> bezmaksas griezieni</span> <br/> spēlē <span>royal joker</span>`,
@@ -1387,6 +1423,8 @@ export const translations = {
     countyPlaceholder: "Grāfiste",
   },
   lt: {
+    loginBtn: "Prisijungti",
+    alreadyHaveAnAccount: "Jau turi paskyrą?",
     geoRestrictTitle: `{host} nepasiekiamas šalyje {country}`,
     pageTitle: "🎁 Jūsų premija paruošta - Goldbet",
     heroTitle: `atsiimkite savo premiją <br/> <span><i class="actual-spin-amount">100</i> nemokamų sukimų</span> <br/> žaidime <span>royal joker</span>`,
@@ -1464,6 +1502,8 @@ export const translations = {
     countyPlaceholder: "Grafystė",
   },
   hr: {
+    loginBtn: "Prijava",
+    alreadyHaveAnAccount: "Već imaš račun?",
     geoRestrictTitle: `{host} nije dostupan u državi {country}`,
     pageTitle: "🎁 Vaš bonus je spreman - Goldbet",
     heroTitle: `preuzmite svoj bonus <br/> <span><i class="actual-spin-amount">100</i> besplatnih okretaja</span> <br/> u igri <span>royal joker</span>`,
@@ -1541,6 +1581,8 @@ export const translations = {
     countyPlaceholder: "Grofovija",
   },
   fi: {
+    loginBtn: "Kirjaudu sisään",
+    alreadyHaveAnAccount: "Onko sinulla jo tili?",
     geoRestrictTitle: `{host} ei ole käytettävissä maassa {country}`,
     pageTitle: "🎁 Bonuksesi on valmis - Goldbet",
     heroTitle: `lunasta bonuksesi <br/> <span>100 ilmaiskierrosta</span> <br/> pelissä <span>royal joker</span>`,
@@ -1617,6 +1659,8 @@ export const translations = {
     countyPlaceholder: "Kreivikunta",
   },
   dk: {
+    loginBtn: "Log ind",
+    alreadyHaveAnAccount: "Har du allerede en konto?",
     geoRestrictTitle: `{host} er ikke tilgængelig i {country}`,
     pageTitle: "🎁 Din bonus er klar - Goldbet",
     heroTitle: `gør krav på din bonus <br/> <span>100 gratis spins</span> <br/> i <span>royal joker</span>`,
@@ -1693,6 +1737,8 @@ export const translations = {
     countyPlaceholder: "Grevskab",
   },
   bg: {
+    loginBtn: "Влезте",
+    alreadyHaveAnAccount: "Вече имаш акаунт?",
     geoRestrictTitle: `{host} не е достъпен в {country}`,
     pageTitle: "🎁 Вашият бонус е готов - Goldbet",
     heroTitle: `вземете своя бонус <br/> <span>100 безплатни завъртания</span> <br/> в <span>royal joker</span>`,
@@ -1770,6 +1816,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   nl: {
+    loginBtn: "Inloggen",
+    alreadyHaveAnAccount: "Al een account?",
     geoRestrictTitle: `{host} is niet beschikbaar in {country}`,
     pageTitle: "🎁 Je bonus staat klaar - Goldbet",
     heroTitle: `claim je bonus <br/> <span>100 gratis spins</span> <br/> in <span>royal joker</span>`,
@@ -1847,6 +1895,8 @@ export const translations = {
     countyPlaceholder: "Graafschap",
   },
   uk: {
+    loginBtn: "Увійти",
+    alreadyHaveAnAccount: "Вже є акаунт?",
     geoRestrictTitle: `{host} недоступний у країні {country}`,
     pageTitle: "🎁 Ваш бонус готовий - Goldbet",
     heroTitle: `отримайте свій бонус <br/> <span>100 безкоштовних обертань</span> <br/> у <span>royal joker</span>`,
@@ -1924,6 +1974,8 @@ export const translations = {
     countyPlaceholder: "Графство",
   },
   sw: {
+    loginBtn: "Ingia",
+    alreadyHaveAnAccount: "Una akaunti tayari?",
     geoRestrictTitle: `{host} haipatikani nchini {country}`,
     pageTitle: "🎁 Bonasi yako iko tayari - Goldbet",
     heroTitle: `dai bonasi yako <br/> <span>mizunguko 100 ya bure</span> <br/> katika <span>royal joker</span>`,
@@ -2000,6 +2052,8 @@ export const translations = {
     countyPlaceholder: "Kaunti",
   },
   am: {
+    loginBtn: "ግባ",
+    alreadyHaveAnAccount: "ቀድሞውኑ አካውንት አለዎ?",
     geoRestrictTitle: `{host} በ{country} አይገኝም`,
     pageTitle: "🎁 ቦነስዎ ዝግጁ ነው - Goldbet",
     heroTitle: `ቦነስዎን ይውሰዱ <br/> <span>100 ነፃ ሽክርክሪቶች</span> <br/> በ <span>royal joker</span>`,
@@ -2074,6 +2128,8 @@ export const translations = {
     countyPlaceholder: "ካውንቲ",
   },
   lm: {
+    loginBtn: "Yingira",
+    alreadyHaveAnAccount: "Olina akawunti?",
     geoRestrictTitle: `{host} tekozesebwa mu {country}`,
     pageTitle: "🎁 Bboonasi yo ​​etegese - Goldbet",
     heroTitle: `funa bboonasi yo <br/> <span>100 free spins</span> <br/> mu <span>royal joker</span>`,
@@ -2150,6 +2206,8 @@ export const translations = {
     countyPlaceholder: "Essaza",
   },
   rw: {
+    loginBtn: "Injira",
+    alreadyHaveAnAccount: "Ufite konti?",
     geoRestrictTitle: `{host} ntiboneka muri {country}`,
     pageTitle: "🎁 Bonus yawe yiteguye - Goldbet",
     heroTitle: `saba bonus yawe <br/> <span>100 free spins</span> <br/> muri <span>royal joker</span>`,
@@ -2226,6 +2284,8 @@ export const translations = {
     countyPlaceholder: "Akarere",
   },
   ar: {
+    loginBtn: "تسجيل الدخول",
+    alreadyHaveAnAccount: "هل لديك حساب بالفعل؟",
     geoRestrictTitle: `{host} غير متاح في {country}`,
     pageTitle: "🎁 مكافأتك جاهزة - Goldbet",
     heroTitle: `احصل على مكافأتك <br/> <span>100 لفة مجانية</span> <br/> في <span>royal joker</span>`,
@@ -2301,6 +2361,8 @@ export const translations = {
     countyPlaceholder: "المقاطعة",
   },
   mt: {
+    loginBtn: "Idħol",
+    alreadyHaveAnAccount: "Diġà għandek kont?",
     geoRestrictTitle: `{host} mhuwiex disponibbli fi {country}`,
     pageTitle: "🎁 Il-bonus tiegħek lest - Goldbet",
     heroTitle: `iġbor il-bonus tiegħek <br/> <span>100 free spins</span> <br/> fi <span>royal joker</span>`,
@@ -2378,6 +2440,8 @@ export const translations = {
     countyPlaceholder: "Kontea",
   },
   lb: {
+    loginBtn: "Aloggen",
+    alreadyHaveAnAccount: "Hutt Dir schonn e Kont?",
     geoRestrictTitle: `{host} ass net verfügbar an {country}`,
     pageTitle: "🎁 Däi Bonus ass prett - Goldbet",
     heroTitle: `hël däi Bonus <br/> <span>100 free spins</span> <br/> am <span>royal joker</span>`,
@@ -2455,6 +2519,8 @@ export const translations = {
     countyPlaceholder: "Grofschaft",
   },
   zh: {
+    loginBtn: "登录",
+    alreadyHaveAnAccount: "已有账户?",
     geoRestrictTitle: `{host} 在{country}不可用`,
     pageTitle: "🎁 您的奖金已就绪 - Goldbet",
     heroTitle: `领取您的奖金 <br/> <span>100 次免费旋转</span> <br/> 在 <span>royal joker</span>`,
@@ -2529,6 +2595,8 @@ export const translations = {
     countyPlaceholder: "郡",
   },
   ga: {
+    loginBtn: "Logáil isteach",
+    alreadyHaveAnAccount: "An bhfuil cuntas agat cheana féin?",
     geoRestrictTitle: `Níl {host} ar fáil i {country}`,
     pageTitle: "🎁 Tá do bhónas réidh - Goldbet",
     heroTitle: `faigh do bhónas <br/> <span>100 sciord saor in aisce</span> <br/> i <span>royal joker</span>`,
@@ -2607,6 +2675,8 @@ export const translations = {
     countyPlaceholder: "Contae",
   },
   ha: {
+    loginBtn: "Shiga",
+    alreadyHaveAnAccount: "Kana da asusu?",
     geoRestrictTitle: `{host} ba ya samuwa a {country}`,
     pageTitle: "🎁 Bonus ɗinka yana shirye - Goldbet",
     heroTitle: `karɓi bonus ɗinka <br/> <span>100 free spins</span> <br/> a <span>royal joker</span>`,
@@ -2683,6 +2753,8 @@ export const translations = {
     countyPlaceholder: "Gunduma",
   },
   yo: {
+    loginBtn: "Wọ̀lé",
+    alreadyHaveAnAccount: "Ṣé o ti ní àkọọ́lẹ̀ tẹ́lẹ̀?",
     geoRestrictTitle: `{host} kò sí ní {country}`,
     pageTitle: "🎁 Ẹ̀bùn rẹ ti ṣetán - Goldbet",
     heroTitle: `gba ẹ̀bùn rẹ <br/> <span>100 free spins</span> <br/> ní <span>royal joker</span>`,
@@ -2759,6 +2831,8 @@ export const translations = {
     countyPlaceholder: "Kóńtì",
   },
   ig: {
+    loginBtn: "Banye",
+    alreadyHaveAnAccount: "Ị nwere akaụntụ?",
     geoRestrictTitle: `{host} adịghị arụ ọrụ na {country}`,
     pageTitle: "🎁 Onyinye gị adịla njikere - Goldbet",
     heroTitle: `nara onyinye gị <br/> <span>100 free spins</span> <br/> na <span>royal joker</span>`,
@@ -2835,6 +2909,8 @@ export const translations = {
     countyPlaceholder: "Kaụnti",
   },
   tw: {
+    loginBtn: "Log in",
+    alreadyHaveAnAccount: "Wowɔ akontaa dedaw?",
     geoRestrictTitle: `{host} nni hɔ wɔ {country}`,
     pageTitle: "🎁 Wo bonus no ayɛ krado - Goldbet",
     heroTitle: `gye wo bonus <br/> <span>100 free spins</span> <br/> wɔ <span>royal joker</span> mu`,
@@ -2911,6 +2987,8 @@ export const translations = {
     countyPlaceholder: "Kaunti",
   },
   is: {
+    loginBtn: "Innskráning",
+    alreadyHaveAnAccount: "Ertu nú þegar með aðgang?",
     geoRestrictTitle: "{host} er ekki í boði í {country}",
     pageTitle: "🎁 Bónusinn þinn er tilbúinn - Goldbet",
     heroTitle: "sæktu bónusinn þinn <br/> <span>100 ókeypis snúninga</span> <br/> í <span>royal joker</span>",

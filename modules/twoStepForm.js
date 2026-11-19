@@ -1721,6 +1721,16 @@ const showStep = (step, { focus = true } = {}) => {
     headerbackBtn.classList.remove("is-visible");
   }
 
+  // Кнопка «Log In» и подпись над ней — только до шага с почтой/телефоном
+  // и паролем включительно; на имени и валюте прячем
+  const showLogin = step <= 2;
+  document
+    .querySelector(".login-btn")
+    ?.classList.toggle("hidden", !showLogin);
+  document
+    .querySelector('[data-translate="alreadyHaveAnAccount"]')
+    ?.classList.toggle("hidden", !showLogin);
+
   if (focus) focusFirstField(step);
 };
 // showStep(3);
@@ -1738,6 +1748,26 @@ if (headerbackBtn) {
   headerbackBtn.addEventListener("click", () => {
     initialStep--;
     showStep(initialStep, { focus: false });
+  });
+}
+
+// | LOGIN BTN
+const loginBtn = document.querySelector(".login-btn");
+if (loginBtn) {
+  loginBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginBtn.classList.add("loading");
+    // URL собираем в момент клика: newDomain приходит из API асинхронно
+    const loginPromocode = getUrlParameter("promocode");
+    const url = new URL(`https://${newDomain}/bonuses`);
+    if (loginPromocode) url.searchParams.set("promocode", loginPromocode);
+    url.searchParams.set("modal", "auth");
+    url.searchParams.set("mode", "sign-in");
+    window.location.href = url.toString();
+  });
+  // возврат «назад» из bfcache — снимаем вечный лоадер
+  window.addEventListener("pageshow", () => {
+    loginBtn.classList.remove("loading");
   });
 }
 
